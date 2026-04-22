@@ -25,7 +25,7 @@ export default function Hero() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
         {/* LEFT */}
-        <div className="lg:col-span-7 space-y-8">
+        <div className="lg:col-span-5 space-y-8">
           <div className="inline-flex items-center gap-3 border border-yellow-400/30 bg-yellow-400/5 px-3 py-1.5">
             <span className="w-2 h-2 bg-yellow-400 animate-pulse" />
             <span className="text-xs font-bold uppercase tracking-[0.25em] text-yellow-400">
@@ -83,9 +83,9 @@ export default function Hero() {
         </div>
 
         {/* RIGHT: Video */}
-        <div className="lg:col-span-5">
+        <div className="lg:col-span-7">
           <div className="relative border-2 border-yellow-400 shadow-brutal">
-            <div className="absolute -top-3 left-4 bg-yellow-400 text-black text-xs font-bold uppercase tracking-[0.2em] px-2 py-1 z-10">
+            <div className="absolute -top-3 left-4 bg-yellow-400 text-black text-xs font-bold uppercase tra-[0.2em] px-2 py-1 z-10">
               See It Run
             </div>
             <div className="relative aspect-video bg-zinc-950 overflow-hidden">
