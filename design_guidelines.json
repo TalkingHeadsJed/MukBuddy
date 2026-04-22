@@ -1,0 +1,132 @@
+{
+  "project_name": "Muk Buddy Landing Page",
+  "theme": "dark",
+  "archetype": "Archetype 2 (Performance Pro) + Archetype 4 (Swiss & High-Contrast)",
+  "emotional_tone": "Rugged, heavy-duty, reliable, industrial, money-saving, no-nonsense.",
+  "colors": {
+    "background": {
+      "primary": "#0A0A0A",
+      "secondary": "#141414",
+      "tertiary": "#1A1A1A"
+    },
+    "text": {
+      "primary": "#FFFFFF",
+      "secondary": "#A1A1AA",
+      "accent": "#FACC15",
+      "inverse": "#000000"
+    },
+    "brand": {
+      "primary": "#FACC15",
+      "primary_hover": "#EAB308",
+      "warning": "#EF4444",
+      "border": "#27272A"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "heading": "Anton, sans-serif",
+      "body": "Manrope, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "rules": {
+      "h1": "text-5xl sm:text-6xl+ uppercase tracking-tighter leading-none",
+      "h2": "text-4xl sm:text-5xl uppercase tracking-tight leading-tight",
+      "h3": "text-2xl sm:text-3xl font-bold tracking-tight",
+      "body": "text-base sm:text-lg leading-relaxed text-zinc-400",
+      "overline": "uppercase text-xs sm:text-sm tracking-[0.2em] font-bold text-yellow-400"
+    }
+  },
+  "spacing_and_layout": {
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "section_padding": "py-20 sm:py-32",
+    "corners": "rounded-none sm:rounded-sm",
+    "borders": "border border-zinc-800",
+    "bento_grid": "grid grid-cols-1 md:grid-cols-12 gap-6"
+  },
+  "ui_elements": {
+    "buttons": {
+      "primary": "bg-yellow-400 text-black font-bold uppercase tracking-wide hover:bg-yellow-500 transition-colors px-8 py-4 rounded-none border-2 border-transparent hover:border-black shadow-[4px_4px_0px_0px_rgba(255,255,255,0.1)]",
+      "secondary": "bg-transparent text-white font-bold uppercase tracking-wide hover:bg-zinc-800 transition-colors px-8 py-4 rounded-none border-2 border-zinc-600 hover:border-zinc-400"
+    },
+    "cards": {
+      "base": "bg-zinc-900 border border-zinc-800 p-8 sm:p-10 transition-colors hover:border-zinc-700"
+    },
+    "inputs": {
+      "base": "bg-zinc-950 border border-zinc-800 text-white p-4 rounded-none focus:border-yellow-400 focus:ring-1 focus:ring-yellow-400 transition-all outline-none",
+      "label": "text-sm font-bold uppercase tracking-wider text-zinc-400 mb-2 block"
+    }
+  },
+  "sections_strategy": {
+    "header": {
+      "layout": "Sticky top, absolute high z-index. Flex between. Logo on left, Primary CTA on right.",
+      "visuals": "Backdrop blur lg, bg-black/80, 1px bottom border border-white/10."
+    },
+    "hero": {
+      "layout": "Two column on desktop (Text left, Video right). 1 column on mobile (Text top, Video bottom).",
+      "visuals": "Background uses dark concrete texture (hero_bg). Overlay with bg-gradient-to-r from-black via-black/80 to-black/40 to ensure text legibility. Vimeo embed prominent.",
+      "content": "H1 heading, subheadline, dual CTAs (Watch Video [secondary], Order Now [primary])."
+    },
+    "problem_vs_solution": {
+      "layout": "Split screen or side-by-side cards.",
+      "visuals": "Problem side: red tint (border-red-500/30, bg-red-950/20). Solution side: yellow tint (border-yellow-400/30, bg-yellow-900/10). Brutalist comparison."
+    },
+    "the_difference_airflow": {
+      "layout": "Bento grid (Mode A: Tetris). 1 dominant card for the 2-chamber diagram, smaller cards for specific specs (airflow stats, motor protection).",
+      "visuals": "Use high contrast. Technical/blueprint aesthetic for the diagram area."
+    },
+    "performance_dry_wet": {
+      "layout": "Alternating rows. Row 1: Drywall/silica (Image Left, Text Right). Row 2: Wet Performance (Text Left, Image Right).",
+      "visuals": "Massive typography. Gritty construction site dust images."
+    },
+    "the_money_roi": {
+      "layout": "Full width banner section. Text centered.",
+      "visuals": "CRITICAL INVERSION: Background is solid brand primary (Yellow-400). Text is solid Black. This creates a shock in the dark theme and focuses entirely on the $12k/year savings. 'The Money' section."
+    },
+    "proof_testimonials": {
+      "layout": "Masonry grid or simple flex column of chunky quotes.",
+      "visuals": "Use massive quotation marks in yellow-400/20. Bold text."
+    },
+    "faq": {
+      "layout": "Narrow container (max-w-3xl) centered.",
+      "visuals": "Customized Shadcn Accordion. Square corners, borders between items, hover states light up the text to yellow-400."
+    },
+    "lead_form": {
+      "layout": "Two columns: Left side text/objections/close, Right side form.",
+      "visuals": "Form container uses solid zinc-900 background with harsh zinc-700 border. Form inputs are flat black (zinc-950)."
+    }
+  },
+  "media_urls": {
+    "hero_bg": {
+      "url": "https://images.unsplash.com/photo-1690983320828-c01b88baacb0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODF8MHwxfHNlYXJjaHwxfHxkYXJrJTIwY29uY3JldGUlMjB0ZXh0dXJlfGVufDB8fHx8MTc3NjkwMDQ5M3ww&ixlib=rb-4.1.0&q=85",
+      "category": "background",
+      "description": "Dark concrete texture for hero background."
+    },
+    "dry_dust": {
+      "url": "https://images.unsplash.com/photo-1679797878543-66c1e502d413?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MTJ8MHwxfHNlYXJjaHwzfHxjb25zdHJ1Y3Rpb24lMjBzaXRlJTIwd29ya2VyJTIwY29udHJhY3RvcnxlbnwwfHx8fDE3NzY5MDA0ODF8MA&ixlib=rb-4.1.0&q=85",
+      "category": "performance",
+      "description": "Construction site dust for Dry Performance section."
+    },
+    "vacuum_context": {
+      "url": "https://images.pexels.com/photos/3616735/pexels-photo-3616735.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "category": "product_context",
+      "description": "Industrial shop vacuum in use."
+    },
+    "video_embed": {
+      "url": "https://vimeo.com/1183206006/8f6358ab2b",
+      "category": "video",
+      "description": "Main product video for hero section."
+    }
+  },
+  "instructions_to_main_agent": [
+    "Install custom fonts from Google Fonts: Anton (400), Manrope (400, 700, 800), and JetBrains Mono.",
+    "Do NOT use any border-radius greater than rounded-sm. The UI must feel square, rugged, and brutalist. Remove default rounded-lg from Shadcn components.",
+    "Ensure all buttons have the custom hover effect defined in UI elements.",
+    "The 'The Money' ROI section MUST be a yellow background with black text to stand out.",
+    "Use Phosphor Icons or Lucide with sharp/straight edges (e.g., hard corners if using Phosphor).",
+    "All interactive elements must include 'data-testid' attributes per requirements.",
+    "Form must be implemented as a React component submitting to a FastAPI backend endpoint.",
+    "Apply overlay 'bg-black/60' (or darker/gradient) on the hero image to ensure Anton white text is 100% readable.",
+    "NEVER use placeholder text or generic fake logos. If you need a logo, build it with Typography (e.g., <span class=\"font-anton\">MUK BUDDY</span>).",
+    "All components must be mobile-first. Contractors use their phones. Stacking order matters."
+  ]
+}
