@@ -24,7 +24,7 @@ export default function Performance() {
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-6">
               <span className="font-mono text-xs text-yellow-400 uppercase tracking-[0.2em]">
-                Drywall · Concrete · Silica
+                Drywall · Concrete · Fine Dust
               </span>
             </div>
           </div>
@@ -36,7 +36,7 @@ export default function Performance() {
             <span className="text-yellow-400">without killing</span> performance.
           </h2>
           <p className="text-lg text-zinc-400 max-w-xl">
-            Drywall. Concrete. Silica. That's what destroys filters. Fine dust
+            Drywall. Concrete. Fine dust. That's what destroys filters. Fine dust
             packs in, compresses, and shuts airflow down. Muk Buddy stops that
             before it starts.
           </p>

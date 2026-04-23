@@ -23,7 +23,7 @@ export const IMAGES = {
   benefitsBanner:
     "https://images.pexels.com/photos/1216544/pexels-photo-1216544.jpeg?auto=compress&cs=tinysrgb&w=2000",
 
-  // Dry performance — drywall/silica dust
+  // Dry performance — drywall / fine dust
   dry: "https://images.unsplash.com/photo-1679797878543-66c1e502d413?crop=entropy&cs=srgb&fm=jpg&w=1400&q=70",
 
   // Wet performance — vac in use
