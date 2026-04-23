@@ -46,4 +46,8 @@ export const IMAGES = {
   // Final CTA — wide jobsite
   finalCta:
     "https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=2000",
+
+  // 2-Chamber product / cutaway diagram — REPLACE with real image when available
+  twoChamberDiagram:
+    "https://images.pexels.com/photos/3616735/pexels-photo-3616735.jpeg?auto=compress&cs=tinysrgb&w=1400",
 };
