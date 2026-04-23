@@ -7,6 +7,7 @@ import {
   ShieldCheck,
   Clock,
 } from "lucide-react";
+import { IMAGES } from "@/lib/images";
 
 const benefits = [
   { icon: Gauge, title: "Consistent Suction", desc: "From the first inch to the last." },
@@ -27,7 +28,27 @@ export default function Benefits() {
           you use <span className="text-yellow-400">Muk Buddy.</span>
         </h2>
 
-        <div className="mt-14 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+        {/* Wide banner image */}
+        <div className="relative mt-12 border-2 border-yellow-400 overflow-hidden">
+          <img
+            src={IMAGES.benefitsBanner}
+            alt="Construction crew on jobsite"
+            className="w-full h-64 sm:h-80 object-cover"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/50 to-transparent" />
+          <div className="absolute inset-0 flex flex-col justify-center p-8 sm:p-12 max-w-xl">
+            <span className="font-mono text-xs text-yellow-400 uppercase tracking-[0.3em] mb-3">
+              // Field-Proven Advantage
+            </span>
+            <p className="font-anton text-2xl sm:text-4xl text-white leading-tight">
+              Built to take a beating. <br />
+              <span className="text-yellow-400">Every crew. Every day.</span>
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {benefits.map(({ icon: Icon, title, desc }, i) => (
             <div
               key={title}

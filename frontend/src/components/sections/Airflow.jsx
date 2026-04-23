@@ -1,5 +1,6 @@
 import { Wind, Thermometer, Flame, Filter, Gauge } from "lucide-react";
 import { Overline } from "@/components/sections/Problem";
+import { IMAGES } from "@/lib/images";
 
 const points = [
   { icon: Gauge, label: "Suction drops" },
@@ -15,7 +16,15 @@ export default function Airflow() {
       data-testid="airflow-section"
       className="relative py-24 sm:py-32 overflow-hidden"
     >
+      {/* Full-width background */}
+      <div
+        className="absolute inset-0 -z-10 bg-cover bg-center opacity-20"
+        style={{ backgroundImage: `url(${IMAGES.airflowBg})` }}
+        aria-hidden
+      />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-black via-black/90 to-black" aria-hidden />
       <div className="absolute inset-0 grit opacity-40" aria-hidden />
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <Overline>02 · The Real Issue</Overline>
         <h2 className="font-anton text-5xl sm:text-7xl lg:text-8xl text-white mt-4 leading-[0.9]">
@@ -29,7 +38,7 @@ export default function Airflow() {
             <div
               key={label}
               data-testid={`airflow-point-${i}`}
-              className="group bg-zinc-900 border border-zinc-800 p-6 hover:border-yellow-400 transition-colors"
+              className="group bg-zinc-900/90 backdrop-blur-sm border border-zinc-800 p-6 hover:border-yellow-400 transition-colors"
             >
               <Icon className="w-8 h-8 text-yellow-400 mb-4" />
               <p className="text-sm sm:text-base font-bold uppercase tracking-wide text-white leading-tight">

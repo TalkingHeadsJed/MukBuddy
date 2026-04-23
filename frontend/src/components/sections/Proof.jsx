@@ -1,10 +1,11 @@
 import { Overline } from "@/components/sections/Problem";
+import { IMAGES } from "@/lib/images";
 
 const quotes = [
-  { text: "It keeps pulling.", attr: "Drywall Contractor" },
-  { text: "Feels like a different machine.", attr: "Remodel Crew Lead" },
-  { text: "Filter lasts way longer.", attr: "Concrete Cutter" },
-  { text: "Way less stopping.", attr: "Finish Carpenter" },
+  { text: "It keeps pulling.", attr: "Drywall Contractor", portrait: IMAGES.portrait1 },
+  { text: "Feels like a different machine.", attr: "Remodel Crew Lead", portrait: IMAGES.portrait2 },
+  { text: "Filter lasts way longer.", attr: "Concrete Cutter", portrait: IMAGES.portrait3 },
+  { text: "Way less stopping.", attr: "Finish Carpenter", portrait: IMAGES.portrait4 },
 ];
 
 export default function Proof() {
@@ -30,11 +31,21 @@ export default function Proof() {
               <p className="relative font-anton text-3xl sm:text-4xl text-white leading-tight">
                 {q.text}
               </p>
-              <footer className="mt-6 pt-6 border-t border-zinc-800 flex items-center gap-3">
-                <span className="w-8 h-px bg-yellow-400" />
-                <span className="text-xs font-bold uppercase tracking-[0.3em] text-zinc-400">
-                  {q.attr}
-                </span>
+              <footer className="mt-6 pt-6 border-t border-zinc-800 flex items-center gap-4">
+                <div className="relative w-12 h-12 shrink-0 border border-yellow-400/40 overflow-hidden grayscale group-hover:grayscale-0 transition-all">
+                  <img
+                    src={q.portrait}
+                    alt=""
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="flex items-center gap-3">
+                  <span className="w-6 h-px bg-yellow-400" />
+                  <span className="text-xs font-bold uppercase tracking-[0.3em] text-zinc-400">
+                    {q.attr}
+                  </span>
+                </div>
               </footer>
             </blockquote>
           ))}

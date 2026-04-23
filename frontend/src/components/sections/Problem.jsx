@@ -1,4 +1,5 @@
 import { X, AlertTriangle } from "lucide-react";
+import { IMAGES } from "@/lib/images";
 
 export default function Problem() {
   return (
@@ -24,11 +25,13 @@ export default function Problem() {
           <Card
             testId="problem-card-bags"
             title="Disposable Bags"
+            img={IMAGES.problemBags}
             items={["Rip open mid-job", "Get expensive fast", "Lose suction as they fill"]}
           />
           <Card
             testId="problem-card-bagless"
             title="Bag-less"
+            img={IMAGES.problemBagless}
             items={[
               "All that dust hits your filter",
               "Filter clogs fast",
@@ -51,26 +54,40 @@ export default function Problem() {
   );
 }
 
-function Card({ testId, title, items }) {
+function Card({ testId, title, items, img }) {
   return (
     <div
       data-testid={testId}
-      className="relative bg-zinc-900 border border-red-500/20 p-8 sm:p-10 hover:border-red-500/50 transition-colors"
+      className="relative bg-zinc-900 border border-red-500/20 hover:border-red-500/50 transition-colors overflow-hidden"
     >
-      <div className="flex items-center gap-3 mb-6">
-        <div className="w-10 h-10 bg-red-500/10 border border-red-500/30 flex items-center justify-center">
-          <AlertTriangle className="w-5 h-5 text-red-500" />
+      <div className="relative h-48 sm:h-56 overflow-hidden border-b border-red-500/20">
+        <img
+          src={img}
+          alt=""
+          className="w-full h-full object-cover grayscale contrast-125"
+          loading="lazy"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/40 to-transparent" />
+        <div className="absolute top-4 left-4 bg-red-500 text-white text-[10px] font-bold uppercase tracking-[0.25em] px-2 py-1">
+          ✕ The Old Way
         </div>
-        <h3 className="font-anton text-2xl sm:text-3xl text-white">{title}</h3>
       </div>
-      <ul className="space-y-3">
-        {items.map((t) => (
-          <li key={t} className="flex items-start gap-3 text-zinc-300">
-            <X className="w-5 h-5 text-red-500 shrink-0 mt-0.5" />
-            <span className="text-base sm:text-lg">{t}</span>
-          </li>
-        ))}
-      </ul>
+      <div className="p-8 sm:p-10">
+        <div className="flex items-center gap-3 mb-6">
+          <div className="w-10 h-10 bg-red-500/10 border border-red-500/30 flex items-center justify-center">
+            <AlertTriangle className="w-5 h-5 text-red-500" />
+          </div>
+          <h3 className="font-anton text-2xl sm:text-3xl text-white">{title}</h3>
+        </div>
+        <ul className="space-y-3">
+          {items.map((t) => (
+            <li key={t} className="flex items-start gap-3 text-zinc-300">
+              <X className="w-5 h-5 text-red-500 shrink-0 mt-0.5" />
+              <span className="text-base sm:text-lg">{t}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }
