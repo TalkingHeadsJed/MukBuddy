@@ -15,9 +15,9 @@ export default function WasteScale() {
         <div className="grid md:grid-cols-2 gap-6 mt-14">
           <div
             data-testid="waste-before"
-            className="relative bg-white border border-red-500/20 overflow-hidden"
+            className="relative bg-white border border-muk/30 overflow-hidden"
           >
-            <div className="relative h-56 overflow-hidden border-b border-red-500/20">
+            <div className="relative h-56 overflow-hidden border-b border-muk/30">
               <img
                 src={IMAGES.waste}
                 alt="Disposable bag waste"
@@ -25,12 +25,12 @@ export default function WasteScale() {
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-white via-white/40 to-transparent" />
-              <div className="absolute top-4 left-4 bg-red-500 text-ink text-[10px] font-bold uppercase tracking-[0.25em] px-2 py-1">
+              <div className="absolute top-4 left-4 bg-muk text-cream text-[10px] font-bold uppercase tracking-[0.25em] px-2 py-1">
                 Today
               </div>
             </div>
             <div className="p-8 sm:p-10">
-              <Trash2 className="w-8 h-8 text-red-500 mb-6" />
+              <Trash2 className="w-8 h-8 text-muk mb-6" />
               <h3 className="font-anton text-3xl text-ink">Piles Up Fast</h3>
               <ul className="mt-6 space-y-2 text-ink/80 text-lg">
                 <li>• Hundreds of bags per crew per year</li>

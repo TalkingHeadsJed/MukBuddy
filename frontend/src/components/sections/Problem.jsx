@@ -12,9 +12,9 @@ export default function Problem() {
         <Overline>01 · The Problem</Overline>
         <h2 className="font-anton text-4xl sm:text-6xl lg:text-7xl leading-[0.95] text-ink mt-4 max-w-5xl">
           Your crew either uses{" "}
-          <span className="text-red-500">disposable bags…</span>{" "}
+          <span className="text-muk">disposable bags…</span>{" "}
           <br className="hidden sm:block" />
-          or runs <span className="text-red-500">bag-less.</span>
+          or runs <span className="text-muk">bag-less.</span>
         </h2>
         <p className="mt-6 text-lg text-ink/70 max-w-3xl">
           There are only two ways crews run wet/dry vacs — and both are
@@ -58,9 +58,9 @@ function Card({ testId, title, items, img }) {
   return (
     <div
       data-testid={testId}
-      className="relative bg-white border border-red-500/20 hover:border-red-500/50 transition-colors overflow-hidden"
+      className="relative bg-white border border-muk/30 hover:border-muk/60 transition-colors overflow-hidden"
     >
-      <div className="relative h-48 sm:h-56 overflow-hidden border-b border-red-500/20">
+      <div className="relative h-48 sm:h-56 overflow-hidden border-b border-muk/30">
         <img
           src={img}
           alt=""
@@ -68,21 +68,21 @@ function Card({ testId, title, items, img }) {
           loading="lazy"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-white via-white/40 to-transparent" />
-        <div className="absolute top-4 left-4 bg-red-500 text-ink text-[10px] font-bold uppercase tracking-[0.25em] px-2 py-1">
+        <div className="absolute top-4 left-4 bg-muk text-cream text-[10px] font-bold uppercase tracking-[0.25em] px-2 py-1">
           ✕ The Old Way
         </div>
       </div>
       <div className="p-8 sm:p-10">
         <div className="flex items-center gap-3 mb-6">
-          <div className="w-10 h-10 bg-red-500/10 border border-red-500/30 flex items-center justify-center">
-            <AlertTriangle className="w-5 h-5 text-red-500" />
+          <div className="w-10 h-10 bg-muk/10 border border-muk/40 flex items-center justify-center">
+            <AlertTriangle className="w-5 h-5 text-muk" />
           </div>
           <h3 className="font-anton text-2xl sm:text-3xl text-ink">{title}</h3>
         </div>
         <ul className="space-y-3">
           {items.map((t) => (
             <li key={t} className="flex items-start gap-3 text-ink/80">
-              <X className="w-5 h-5 text-red-500 shrink-0 mt-0.5" />
+              <X className="w-5 h-5 text-muk shrink-0 mt-0.5" />
               <span className="text-base sm:text-lg">{t}</span>
             </li>
           ))}
