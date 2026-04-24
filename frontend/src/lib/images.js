@@ -6,9 +6,9 @@ export const IMAGES = {
   logoText:
     "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/i3n3whj9_muk_buddy_textonly.png",
   mascotAnimation:
-    "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/fdb7j9ng_Muk_Buddy_Animation_gif%20%281%29.webm",
+    "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/rhas5fxa_Muk_Buddy_Animation_gif.webm",
   productVideo:
-    "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/t3vymfej_MukBuddy.mov",
+    "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/rhas5fxa_Muk_Buddy_Animation_gif.webm",
 
   // === SUPPORTING IMAGERY (swap with real product shots later) ===
   heroBg:
