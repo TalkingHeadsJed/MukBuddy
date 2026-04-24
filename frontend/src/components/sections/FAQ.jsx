@@ -1,4 +1,5 @@
 import { Overline } from "@/components/sections/Problem";
+import MascotPeek from "@/components/sections/MascotPeek";
 import {
   Accordion,
   AccordionContent,
@@ -43,8 +44,18 @@ const faqs = [
 
 export default function FAQ() {
   return (
-    <section id="faq" data-testid="faq-section" className="relative py-24 sm:py-32">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="faq" data-testid="faq-section" className="relative py-24 sm:py-32 overflow-hidden">
+      {/* Mascot peek — left edge, leaning in beside the FAQ */}
+      <MascotPeek
+        side="left"
+        tilt={6}
+        bubble="ASK ME!"
+        bubbleColor="muk"
+        size={170}
+        className="hidden lg:block top-24 left-4"
+        testId="peek-faq"
+      />
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <Overline>12 · FAQ</Overline>
         <h2 className="font-anton text-4xl sm:text-6xl lg:text-7xl text-ink mt-4 leading-[0.95]">
           Straight answers, <br />

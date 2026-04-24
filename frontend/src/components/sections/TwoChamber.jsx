@@ -1,4 +1,5 @@
 import { Overline } from "@/components/sections/Problem";
+import MascotPeek from "@/components/sections/MascotPeek";
 import { ArrowDown, Wind, Trash2, Droplets, ShieldCheck, ArrowRight } from "lucide-react";
 import { IMAGES } from "@/lib/images";
 
@@ -37,23 +38,34 @@ const steps = [
 
 export default function TwoChamber() {
   return (
-    <section data-testid="two-chamber-section" className="relative py-24 sm:py-32 overflow-hidden">
+    <section data-testid="two-chamber-section" className="relative py-24 sm:py-32 overflow-hidden bg-cream">
       {/* Blueprint grid background */}
       <div
         className="absolute inset-0 opacity-[0.06] -z-10"
         style={{
           backgroundImage:
-            "linear-gradient(#ffffff 1px, transparent 1px), linear-gradient(90deg, #ffffff 1px, transparent 1px)",
+            "linear-gradient(#1A0625 1px, transparent 1px), linear-gradient(90deg, #1A0625 1px, transparent 1px)",
           backgroundSize: "48px 48px",
         }}
         aria-hidden
+      />
+
+      {/* Mascot peek — top right, pointing at the explainer */}
+      <MascotPeek
+        side="right"
+        tilt={-8}
+        bubble="WATCH ME EAT!"
+        bubbleColor="slime"
+        size={180}
+        className="hidden lg:block top-12 right-4"
+        testId="peek-twochamber"
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Overline>04 · How It Works</Overline>
         <h2 className="font-anton text-4xl sm:text-6xl lg:text-7xl text-ink mt-4 leading-[0.95] max-w-5xl">
           Debris and airflow <br />
-          <span className="text-slime">shouldn't fight each other.</span>
+          <span className="text-muk">shouldn't fight each other.</span>
         </h2>
         <p className="mt-6 text-lg text-ink/70 max-w-3xl">
           Disposable bags force everything through the same space — that's why

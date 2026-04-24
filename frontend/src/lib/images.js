@@ -9,6 +9,16 @@ export const IMAGES = {
     "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/ai7m3ptx_gx4EB43hTDqcrh7-VK5-n_wum4bLZ2.png",
   spokesperson:
     "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/ateqxovx_AngieMukBuddy.png",
+  // Product shots
+  productShot:
+    "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/nn8s1cjy_Product%20Shot2.png",
+  productShotBox:
+    "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/ydis8ste_Product%20Shot.png",
+  // Real contractor photos (provided by user)
+  contractorVac:
+    "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/r61bro8a_generated-image%20%2816%29.png",
+  contractorBag:
+    "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/w9xec8bp_ChatGPT%20Image%20Apr%2023%2C%202026%2C%2009_50_47%20AM.png",
   mascotAnimation:
     "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/rhas5fxa_Muk_Buddy_Animation_gif.webm",
   productVideo:
@@ -18,9 +28,8 @@ export const IMAGES = {
   heroBg:
     "https://images.unsplash.com/photo-1690983320828-c01b88baacb0?crop=entropy&cs=srgb&fm=jpg&w=2400&q=70",
 
-  // Problem section — disposable bag / messy jobsite chaos
-  problemBags:
-    "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=70",
+  // Problem section — disposable bag chaos (real photo)
+  problemBags: "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/w9xec8bp_ChatGPT%20Image%20Apr%2023%2C%202026%2C%2009_50_47%20AM.png",
   problemBagless:
     "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1400&q=70",
 

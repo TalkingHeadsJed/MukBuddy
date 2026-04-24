@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import MascotPeek from "@/components/sections/MascotPeek";
 
 export default function Money() {
   return (
@@ -9,6 +10,17 @@ export default function Money() {
     >
       <div className="slime-drip-muk absolute top-0 inset-x-0" aria-hidden />
       <div className="absolute inset-0 grit opacity-30" aria-hidden />
+
+      {/* Mascot peek — leaning in from right edge with a "$$$" speech bubble */}
+      <MascotPeek
+        side="right"
+        tilt={-12}
+        bubble="$$$ STOP IT!"
+        bubbleColor="slime"
+        size={200}
+        className="hidden lg:block top-32 right-4"
+        testId="peek-money"
+      />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative pt-8">
         <div className="flex items-center gap-3">
