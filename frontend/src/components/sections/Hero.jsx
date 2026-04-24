@@ -107,26 +107,15 @@ export default function Hero() {
             </span>
           </div>
 
-          {/* Big Mascot Card */}
+          {/* Big Hero Composite Card (mascot + spokesperson + actual product) */}
           <div
             data-testid="hero-mascot"
-            className="relative bg-ink border-4 border-ink rounded-sm shadow-brutal-muk overflow-hidden"
+            className="relative bg-cream border-4 border-ink rounded-sm shadow-brutal-muk overflow-hidden"
           >
-            {/* Subtle moving starfield behind */}
-            <div
-              className="absolute inset-0 opacity-40"
-              style={{
-                backgroundImage:
-                  "radial-gradient(#39FF14 1.5px, transparent 2px), radial-gradient(#7A6FE0 1.2px, transparent 2px)",
-                backgroundSize: "60px 60px, 90px 90px",
-                backgroundPosition: "0 0, 30px 30px",
-              }}
-              aria-hidden
-            />
             <img
-              src={IMAGES.logo}
-              alt="Muk Buddy mascot"
-              className="relative w-full h-auto object-contain animate-bounce-slow"
+              src={IMAGES.heroComposite}
+              alt="Muk Buddy mascot with the patented 2-chamber product in hand"
+              className="relative w-full h-auto object-contain"
             />
           </div>
 

@@ -5,6 +5,10 @@ export const IMAGES = {
     "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/osa3czix_Muk%20Buddy%20Logo.png",
   logoText:
     "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/i3n3whj9_muk_buddy_textonly.png",
+  heroComposite:
+    "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/ai7m3ptx_gx4EB43hTDqcrh7-VK5-n_wum4bLZ2.png",
+  spokesperson:
+    "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/ateqxovx_AngieMukBuddy.png",
   mascotAnimation:
     "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/rhas5fxa_Muk_Buddy_Animation_gif.webm",
   productVideo:
