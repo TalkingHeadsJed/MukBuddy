@@ -36,9 +36,9 @@ export const IMAGES = {
   // Problem — Disposable Bags card (USER PHOTO)
   problemBags:
     "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/w9xec8bp_ChatGPT%20Image%20Apr%2023%2C%202026%2C%2009_50_47%20AM.png",
-  // Problem — Bag-less card (USER PHOTO — jacket contractor staring at messy floor)
+  // Problem — Bag-less card (USER PHOTO — contractor showing dirty clogged filter inside vac)
   problemBagless:
-    "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/artehkve_rG9W0_LOMloE0ETffKBEC_NKsgEj17.png",
+    "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/8d796pub_tJBwXjtJYkt4E5VEQ402d_cxF6tjyA.png",
 
   // Airflow bg (no longer rendered in Airflow.jsx; kept for safety)
   airflowBg:
