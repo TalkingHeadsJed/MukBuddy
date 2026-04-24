@@ -1,21 +1,12 @@
 import { Play, Sparkles, Star } from "lucide-react";
-import { ORDER_URL } from "@/lib/constants";
+import { ORDER_URL, VIMEO_EMBED } from "@/lib/constants";
 import { IMAGES } from "@/lib/images";
-import { useRef, useState } from "react";
+import { useState } from "react";
 
 export default function Hero() {
   const [playing, setPlaying] = useState(false);
-  const videoRef = useRef(null);
 
-  const handlePlay = () => {
-    setPlaying(true);
-    setTimeout(() => {
-      if (videoRef.current) {
-        videoRef.current.muted = false;
-        videoRef.current.play().catch(() => {});
-      }
-    }, 50);
-  };
+  const handlePlay = () => setPlaying(true);
 
   return (
     <section
@@ -135,26 +126,28 @@ export default function Hero() {
             <span className="ml-auto font-bangers text-2xl text-muk pr-2">→</span>
           </button>
 
-          {/* Video modal/inline */}
+          {/* Video modal (Vimeo) */}
           {playing && (
             <div className="fixed inset-0 z-50 bg-ink/90 flex items-center justify-center p-4" onClick={() => setPlaying(false)}>
-              <div className="relative w-full max-w-4xl bg-ink border-4 border-slime shadow-brutal rounded-sm overflow-hidden" onClick={(e) => e.stopPropagation()}>
+              <div className="relative w-full max-w-5xl bg-ink border-4 border-slime shadow-brutal rounded-sm overflow-hidden" onClick={(e) => e.stopPropagation()}>
                 <button
                   onClick={() => setPlaying(false)}
+                  data-testid="hero-video-close"
                   className="absolute top-2 right-2 z-10 w-10 h-10 bg-slime text-ink font-bangers text-2xl border-2 border-ink flex items-center justify-center"
                   aria-label="Close video"
                 >
                   ×
                 </button>
-                <video
-                  ref={videoRef}
-                  data-testid="hero-video"
-                  src={IMAGES.productVideo}
-                  className="w-full h-auto"
-                  controls
-                  autoPlay
-                  playsInline
-                />
+                <div className="relative aspect-video">
+                  <iframe
+                    data-testid="hero-video"
+                    src={`${VIMEO_EMBED}&autoplay=1`}
+                    className="absolute inset-0 w-full h-full"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowFullScreen
+                    title="Muk Buddy in action"
+                  />
+                </div>
               </div>
             </div>
           )}
