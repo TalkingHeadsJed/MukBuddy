@@ -28,5 +28,5 @@
   "seed_data_creation": "Tests create TEST_-prefixed leads in mongo and clean them up via pymongo after each test.",
   "retest_needed": false,
   "main_agent_can_self_test": true,
-  "context_for_next_testing_agent": "Backend tests at /app/backend/tests/test_mukbuddy_api.py; rerun with: pytest backend/tests/test_mukbuddy_api.py -v. Rate-limit test uses unique X-Forwarded-For per test to avoid cross-test 429s. Frontend live URL: https://muk-buddy-demo.preview.emergentagent.com. All key elements have data-testid attributes (hero-*, header-*, lead-*, faq-item-N, *-section)."
+  "context_for_next_testing_agent": "Backend tests at /app/backend/tests/test_mukbuddy_api.py; rerun with: pytest backend/tests/test_mukbuddy_api.py -v. Rate-limit test uses unique X-Forwarded-For per test to avoid cross-test 429s. Frontend live URL: https://two-chamber-test.preview.emergentagent.com. All key elements have data-testid attributes (hero-*, header-*, lead-*, faq-item-N, *-section)."
 }
