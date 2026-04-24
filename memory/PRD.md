@@ -7,92 +7,90 @@ debris from airflow, maintains suction, protects motors, reduces filter wear,
 and eliminates disposable bag costs. Domain: **mukbuddy.com**. Source product
 page: https://thefloorlord.com/product/muk-buddy/
 
-## User Choices
-- Aesthetic: **Rugged industrial contractor / jobsite** feel
-- Main video: Vimeo embed — https://vimeo.com/1183206006/8f6358ab2b
-- Placeholder imagery OK for now
-- CTAs link to thefloorlord.com product page (fulfillment)
-- Tracking pixel slots present in `index.html` (to be filled in later)
-- **Security-first** build (no open doors for attackers)
-- Lead form for questions
-- FAQ section
+## Active Design Direction (as of Feb 2026 fork)
+- Aesthetic: **Bold Consumer / DTC** — light cream background, sticker-style,
+  playful chunky type, big monster mascot (Liquid Death × Dr. Squatch energy)
+- Brand palette (from logo):
+  - Cream `#FFF4D6` (page bg)
+  - Slime green `#39FF14` (primary accent)
+  - Muk purple `#7A6FE0` (secondary accent)
+  - Deep ink `#1A0625` (text/borders)
+- Typefaces:
+  - `Nosifer` — drippy horror-movie title (matches logo)
+  - `Bowlby One` / `Paytone One` — chunky H1/H2
+  - `Bangers` — comic accent (buttons, ribbons)
+  - `Nunito` — body
+- Brand assets provided by user:
+  - Logo PNG (monster + MUK BUDDY drippy text)
+  - Text-only logo PNG
+  - `.webm` product animation (dust flowing into 2-chamber)
+  - `.mov` product demo video
+- Previous "Rugged Industrial / Brutalism" design exists in git history if user
+  wants to A/B or revert.
 
 ## Personas
-- **Contractor owner / GC**: wants to equip crews, cares about $/year savings
-  and fewer breakdowns
-- **Foreman / crew lead**: needs the tool to work wet or dry, wants less
-  downtime
-- **Procurement / fleet buyer**: needs volume pricing, fit compatibility info
+- Contractor owner / GC — wants crew equipment, $/year savings, fewer breakdowns
+- Foreman / crew lead — needs wet+dry performance, less downtime
+- Procurement / fleet buyer — needs volume pricing + fit compatibility
 
-## Core Requirements (Static)
+## Core Requirements
 1. High-conversion landing page — hero, problem, science, benefits, ROI,
-   testimonials, FAQ, contact, final CTA
-2. Dual CTAs: "Order Muk Buddy Now" (external to thefloorlord.com) and
-   "Watch The Video" (in-page Vimeo embed)
-3. Lead capture form for presale questions
-4. FAQ section (Shadcn accordion)
-5. Tracking pixel slots (Meta, GA4, Google Ads, TikTok, LinkedIn)
-6. Mobile-first responsive
-7. Security: input validation, rate limiting, honeypot, strict CORS,
-   security headers, disabled public API docs
+   testimonials, objections, FAQ, contact, final CTA
+2. Dual CTAs: "Feed The Monster" / "Grab One" / "Unleash Muk Buddy" all
+   external to thefloorlord.com product page
+3. Secure lead form (POST /api/leads) — honeypot + rate limiting + input
+   validation (Pydantic v2). Real email provider integration pending.
+4. FAQ accordion
+5. Fully responsive (desktop + mobile with hamburger nav)
 
-## Architecture
-- **Frontend**: React 19 + React Router + Tailwind + Shadcn UI. Anton / Manrope
-  / JetBrains Mono fonts. Industrial brutalist theme (black background, safety
-  yellow `#FACC15` accent, square corners, hazard stripes).
-- **Backend**: FastAPI + Motor (MongoDB async). Single POST `/api/leads`
-  endpoint with Pydantic validation, in-memory sliding-window rate limiter,
-  honeypot field rejection, security-headers middleware, CORS middleware,
-  `/docs` `/redoc` `/openapi.json` disabled.
-- **DB**: MongoDB collection `leads` (id, name, email, phone, crew_size,
-  message, created_at, meta{ip, user_agent}).
+## Tech Stack
+- Frontend: React 19 + Tailwind (custom DTC palette) + Shadcn UI primitives
+- Backend: FastAPI + Motor (MongoDB async)
+- DB: **MongoDB** currently. **Supabase migration PENDING** — user is
+  collecting Transaction Pooler URI from their web guy. The integration
+  playbook is saved — drop-in replacement via SQLAlchemy async + Alembic.
 
-## What's Been Implemented (Dec 2025 — initial build)
-- Landing page with 15 sections: Header, Hero (Vimeo play-on-click),
-  Problem, Airflow, Difference, TwoChamber (flow diagram), Dry Performance,
-  Wet Performance, Benefits grid, Money (yellow inverse ROI), Waste+Scale,
-  Proof quotes, Objections, FAQ accordion, Lead Form, Final CTA, Footer
-- Secure `/api/leads` endpoint + `/api/health`
-- Tracking pixel slots in `/app/frontend/public/index.html` (commented)
-- SEO meta + OG tags
-- data-testid on all interactive elements
-- Tests: 11/11 backend pytest + 25/25 frontend Playwright passing
+## Section Map (15 sections)
+1. Header (sticky, mobile hamburger)
+2. Hero (mascot logo + drippy title + dual CTA + product video modal)
+3. Problem (disposable vs bag-less failure modes)
+4. Airflow (5 failure points + slime banner)
+5. Difference (intro to 2-chamber thesis)
+6. TwoChamber (5-step walkthrough with product animation)
+7. Performance — Dry (fine dust)
+8. Performance — Wet (moisture)
+9. Benefits (6-card grid)
+10. Money (3 ROI blocks on dark ink)
+11. WasteScale (before/after)
+12. Proof (4 field testimonials)
+13. Objections (4 myth/real responses)
+14. FAQ (8-item accordion)
+15. LeadForm (#contact)
+16. FinalCTA (purple halftone + monster + "this isn't a bag, it's a fix")
+17. Footer
 
-## Backlog
-### P0
-- Add real tracking pixel snippets when user provides them
-- Swap placeholder imagery for real product photography
+## CHANGELOG
+- **Feb 2026**: Pivoted design from "Rugged Industrial (dark)" to "Bold
+  Consumer DTC (light cream)". Swapped palette, type stack, and core layout
+  while preserving all 16 sections + data-testids + secure /api/leads flow.
+  Added mobile hamburger nav. Wired user's logo + .webm + .mov brand assets.
+  Frontend testing agent: 100% pass, no critical issues.
+- **Previous fork**: Built initial "Rugged Industrial" variant (Black +
+  Safety Yellow) with 11/11 backend + 25/25 frontend tests passing.
 
-### P1
-- Volume pricing tier display (once pricing matrix is confirmed)
-- Compatibility-check widget (user selects vac model → fit confirmation)
-- Lead notification email integration (Resend or SendGrid) — requires API key
-
-### P2
-- Move in-memory rate limiter to Redis-backed (for multi-replica deploy)
-- Admin dashboard to view captured leads (secured)
-- Add customer logo strip (contractors using Muk Buddy)
-- A/B test different hero headlines
-- Spanish-language variant for bilingual crews
-
-## Routes
-- Frontend: `/` — Landing page (SPA)
-- Backend:
-  - `GET  /api/` — service ping
-  - `GET  /api/health` — health check
-  - `POST /api/leads` — create lead (validated, rate-limited, honeypot-protected)
-
-## Security Posture
-- Pydantic validation with max lengths + EmailStr + phone regex
-- Honeypot hidden field rejects bots with 400
-- Per-IP sliding window rate limiter (5 req / 60 sec) → 429
-- Security headers middleware: X-Content-Type-Options, X-Frame-Options: DENY,
-  Referrer-Policy, Permissions-Policy, HSTS
-- FastAPI public docs disabled (`docs_url`/`redoc_url`/`openapi_url = None`)
-- CORS methods restricted to `GET, POST, OPTIONS`
-- No sensitive fields (meta.ip, meta.user_agent) returned in API response
-- `_id` excluded / response model enforces shape
-
-## Next Tasks
-- Collect tracking pixel snippets from user → paste into `index.html` slots
-- Decide on email notification provider (Resend recommended) and wire up
+## Backlog / Upcoming
+- **P0 — Waiting on user**: Supabase Transaction Pooler URI →  migrate
+  /api/leads persistence. Playbook already fetched (SQLAlchemy async +
+  Alembic, statement_cache_size=0, expire_on_commit=False).
+- **P1**: Email notification on lead creation (Resend or SendGrid) so the
+  user is pinged when a lead comes in.
+- **P1**: Replace `twoChamberDiagram` placeholder image with real
+  product/cutaway photo when user provides.
+- **P2**: Product photography swap across all sections once user provides
+  real product shots (currently using Unsplash/Pexels fallbacks).
+- **P2**: Add tracking pixels (GA4, Meta Pixel) in `public/index.html` when
+  user has pixel IDs.
+- **P2**: Add `.mp4`/`.webm` fallback `<source>` for `productVideo` (.mov
+  doesn't play in Firefox) — test agent suggestion.
+- **P3**: A/B test hook-up (the user now has TWO design variants — rugged
+  industrial and bold consumer — to A/B test with their client).
