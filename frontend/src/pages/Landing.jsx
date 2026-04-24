@@ -17,7 +17,7 @@ import Footer from "@/components/sections/Footer";
 
 export default function Landing() {
   return (
-    <main data-testid="landing-page" className="bg-black text-white overflow-x-hidden">
+    <main data-testid="landing-page" className="bg-cream text-ink overflow-x-hidden">
       <Header />
       <Hero />
       <Problem />

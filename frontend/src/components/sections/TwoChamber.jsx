@@ -51,11 +51,11 @@ export default function TwoChamber() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Overline>04 · How It Works</Overline>
-        <h2 className="font-anton text-4xl sm:text-6xl lg:text-7xl text-white mt-4 leading-[0.95] max-w-5xl">
+        <h2 className="font-anton text-4xl sm:text-6xl lg:text-7xl text-ink mt-4 leading-[0.95] max-w-5xl">
           Debris and airflow <br />
-          <span className="text-yellow-400">shouldn't fight each other.</span>
+          <span className="text-slime">shouldn't fight each other.</span>
         </h2>
-        <p className="mt-6 text-lg text-zinc-400 max-w-3xl">
+        <p className="mt-6 text-lg text-ink/70 max-w-3xl">
           Disposable bags force everything through the same space — that's why
           they clog. Muk Buddy's 2-chamber design separates the two jobs.
           Here's exactly how it runs:
@@ -67,20 +67,23 @@ export default function TwoChamber() {
           <div className="lg:col-span-5 lg:sticky lg:top-24">
             <div
               data-testid="two-chamber-image"
-              className="relative border-2 border-yellow-400 bg-zinc-950 shadow-brutal"
+              className="relative border-2 border-slime bg-white shadow-brutal"
             >
-              <div className="absolute -top-3 left-4 bg-yellow-400 text-black text-xs font-bold uppercase tracking-[0.2em] px-2 py-1 z-10">
-                Fig.01 · Cutaway View
+              <div className="absolute -top-3 left-4 bg-slime text-ink text-xs font-bangers tracking-[0.15em] px-3 py-1.5 z-10 border-2 border-ink">
+                ★ FIG.01 · HOW IT WORKS ★
               </div>
 
-              <div className="relative aspect-[4/5] overflow-hidden">
-                <img
-                  src={IMAGES.twoChamberDiagram}
-                  alt="Muk Buddy 2-chamber design cutaway"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
+              <div className="relative aspect-[4/5] overflow-hidden bg-ink">
+                <video
+                  src={IMAGES.mascotAnimation}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-full object-contain"
+                  aria-label="Muk Buddy 2-chamber design animation"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-black/30" />
+                <div className="absolute inset-0 bg-gradient-to-t from-ink/60 via-transparent to-ink/20" />
 
                 {/* Call-out label: Airflow column */}
                 <Callout
@@ -105,12 +108,12 @@ export default function TwoChamber() {
                 />
 
                 {/* Caption strip */}
-                <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black via-black/80 to-transparent px-5 pt-10 pb-4">
+                <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-ink via-ink/70 to-transparent px-5 pt-10 pb-4">
                   <div className="flex items-center justify-between">
-                    <span className="font-mono text-[10px] text-yellow-400 uppercase tracking-[0.2em]">
-                      // Patent-pending 2-chamber design
+                    <span className="font-bangers text-sm text-slime tracking-[0.15em]">
+                      ★ PATENT-PENDING 2-CHAMBER
                     </span>
-                    <span className="font-mono text-[10px] text-zinc-500">
+                    <span className="font-mono text-[10px] text-cream/70">
                       MB—01
                     </span>
                   </div>
@@ -118,7 +121,7 @@ export default function TwoChamber() {
               </div>
             </div>
 
-            <p className="mt-3 font-mono text-[10px] uppercase tracking-[0.25em] text-zinc-500">
+            <p className="mt-3 font-mono text-[10px] uppercase tracking-[0.25em] text-ink/50">
               * Diagram for illustration. Real product photo replaces this.
             </p>
           </div>
@@ -130,21 +133,21 @@ export default function TwoChamber() {
                 <li
                   key={n}
                   data-testid={`chamber-step-${i}`}
-                  className="group relative bg-zinc-900/70 backdrop-blur-sm border border-zinc-800 hover:border-yellow-400 transition-colors"
+                  className="group relative bg-white/80 backdrop-blur-sm border border-ink/20 hover:border-slime transition-colors"
                 >
                   <div className="grid grid-cols-[auto_1fr] gap-5 p-5 sm:p-6">
                     {/* Number + icon column */}
                     <div className="flex flex-col items-center gap-3">
-                      <div className="w-12 h-12 bg-yellow-400 text-black flex items-center justify-center font-anton text-xl">
+                      <div className="w-12 h-12 bg-slime text-black flex items-center justify-center font-anton text-xl">
                         {n}
                       </div>
-                      <div className="w-px flex-1 bg-zinc-800 group-hover:bg-yellow-400 transition-colors min-h-[30px]" />
-                      <Icon className="w-5 h-5 text-yellow-400" />
+                      <div className="w-px flex-1 bg-ink/20 group-hover:bg-slime transition-colors min-h-[30px]" />
+                      <Icon className="w-5 h-5 text-slime" />
                     </div>
                     {/* Content */}
                     <div className="pt-1">
-                      <h3 className="font-anton text-2xl sm:text-3xl text-white">{title}</h3>
-                      <p className="mt-2 text-base sm:text-lg text-zinc-400 leading-relaxed">{desc}</p>
+                      <h3 className="font-anton text-2xl sm:text-3xl text-ink">{title}</h3>
+                      <p className="mt-2 text-base sm:text-lg text-ink/70 leading-relaxed">{desc}</p>
                     </div>
                   </div>
                 </li>
@@ -152,8 +155,8 @@ export default function TwoChamber() {
             </ol>
 
             {/* Outcome banner */}
-            <div className="mt-6 bg-yellow-400 text-black p-6 sm:p-8 flex items-start gap-5">
-              <div className="shrink-0 w-10 h-10 bg-black text-yellow-400 flex items-center justify-center">
+            <div className="mt-6 bg-slime text-black p-6 sm:p-8 flex items-start gap-5">
+              <div className="shrink-0 w-10 h-10 bg-cream text-slime flex items-center justify-center">
                 <ArrowRight className="w-5 h-5" />
               </div>
               <div>
@@ -176,19 +179,19 @@ function Callout({ className, label, tag, dir = "right" }) {
     <div className={`absolute ${className} flex items-center gap-2`}>
       {isRight ? (
         <>
-          <div className="bg-yellow-400 text-black font-anton text-sm px-2 py-0.5">{tag}</div>
-          <div className="w-8 h-px bg-yellow-400" />
-          <div className="bg-black/90 border border-yellow-400 text-yellow-400 text-[10px] font-bold uppercase tracking-[0.2em] px-2 py-1">
+          <div className="bg-slime text-black font-anton text-sm px-2 py-0.5">{tag}</div>
+          <div className="w-8 h-px bg-slime" />
+          <div className="bg-cream/90 border border-slime text-slime text-[10px] font-bold uppercase tracking-[0.2em] px-2 py-1">
             {label}
           </div>
         </>
       ) : (
         <>
-          <div className="bg-black/90 border border-yellow-400 text-yellow-400 text-[10px] font-bold uppercase tracking-[0.2em] px-2 py-1">
+          <div className="bg-cream/90 border border-slime text-slime text-[10px] font-bold uppercase tracking-[0.2em] px-2 py-1">
             {label}
           </div>
-          <div className="w-8 h-px bg-yellow-400" />
-          <div className="bg-yellow-400 text-black font-anton text-sm px-2 py-0.5">{tag}</div>
+          <div className="w-8 h-px bg-slime" />
+          <div className="bg-slime text-black font-anton text-sm px-2 py-0.5">{tag}</div>
         </>
       )}
     </div>

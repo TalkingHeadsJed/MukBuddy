@@ -23,27 +23,27 @@ export default function Benefits() {
     <section data-testid="benefits-section" className="relative py-24 sm:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Overline>07 · What You Get</Overline>
-        <h2 className="font-anton text-4xl sm:text-6xl lg:text-7xl text-white mt-4 leading-[0.95] max-w-5xl">
+        <h2 className="font-anton text-4xl sm:text-6xl lg:text-7xl text-ink mt-4 leading-[0.95] max-w-5xl">
           What changes when <br />
-          you use <span className="text-yellow-400">Muk Buddy.</span>
+          you use <span className="text-muk">Muk Buddy.</span>
         </h2>
 
         {/* Wide banner image */}
-        <div className="relative mt-12 border-2 border-yellow-400 overflow-hidden">
+        <div className="relative mt-12 border-2 border-slime overflow-hidden">
           <img
             src={IMAGES.benefitsBanner}
             alt="Construction crew on jobsite"
             className="w-full h-64 sm:h-80 object-cover"
             loading="lazy"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/50 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-cream via-cream/50 to-transparent" />
           <div className="absolute inset-0 flex flex-col justify-center p-8 sm:p-12 max-w-xl">
-            <span className="font-mono text-xs text-yellow-400 uppercase tracking-[0.3em] mb-3">
+            <span className="font-mono text-xs text-muk uppercase tracking-[0.3em] mb-3">
               // Field-Proven Advantage
             </span>
-            <p className="font-anton text-2xl sm:text-4xl text-white leading-tight">
+            <p className="font-anton text-2xl sm:text-4xl text-ink leading-tight">
               Built to take a beating. <br />
-              <span className="text-yellow-400">Every crew. Every day.</span>
+              <span className="text-muk">Every crew. Every day.</span>
             </p>
           </div>
         </div>
@@ -53,18 +53,18 @@ export default function Benefits() {
             <div
               key={title}
               data-testid={`benefit-${i}`}
-              className="group relative bg-zinc-900 border border-zinc-800 p-7 hover:border-yellow-400 transition-colors"
+              className="group relative bg-white border border-ink/20 p-7 hover:border-slime transition-colors"
             >
               <div className="flex items-start justify-between mb-6">
-                <div className="w-12 h-12 bg-yellow-400/10 border border-yellow-400/40 flex items-center justify-center group-hover:bg-yellow-400 transition-colors">
-                  <Icon className="w-6 h-6 text-yellow-400 group-hover:text-black transition-colors" />
+                <div className="w-12 h-12 bg-slime/10 border border-slime/40 flex items-center justify-center group-hover:bg-slime transition-colors">
+                  <Icon className="w-6 h-6 text-muk group-hover:text-black transition-colors" />
                 </div>
-                <span className="font-mono text-xs text-zinc-600">
+                <span className="font-mono text-xs text-ink/40">
                   0{i + 1}
                 </span>
               </div>
-              <h3 className="font-anton text-2xl text-white">{title}</h3>
-              <p className="mt-3 text-zinc-400 leading-relaxed">{desc}</p>
+              <h3 className="font-anton text-2xl text-ink">{title}</h3>
+              <p className="mt-3 text-ink/70 leading-relaxed">{desc}</p>
             </div>
           ))}
         </div>

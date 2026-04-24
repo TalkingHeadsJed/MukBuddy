@@ -1,24 +1,31 @@
+import { IMAGES } from "@/lib/images";
+
 export default function Footer() {
   return (
-    <footer data-testid="site-footer" className="relative bg-black border-t border-white/10 py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-        <div className="flex items-center gap-3">
-          <span className="hazard-stripe w-6 h-6" aria-hidden />
-          <span className="font-anton text-xl tracking-tight text-white">
-            MUK<span className="text-yellow-400">BUDDY</span>
+    <footer data-testid="site-footer" className="relative bg-ink text-cream py-16 overflow-hidden">
+      <div className="slime-drip absolute top-0 inset-x-0" aria-hidden />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <a href="#top" className="flex items-center gap-3 group">
+          <img
+            src={IMAGES.logo}
+            alt="Muk Buddy"
+            className="h-14 w-14 object-contain group-hover:animate-wobble"
+          />
+          <span className="font-bangers text-3xl tracking-wider text-cream">
+            Muk <span className="text-slime">Buddy</span>
           </span>
+        </a>
+        <div className="font-bangers text-base uppercase tracking-[0.2em] text-cream/70">
+          © {new Date().getFullYear()} · Built by a contractor, for contractors.
         </div>
-        <div className="text-xs font-mono uppercase tracking-[0.25em] text-zinc-500">
-          © {new Date().getFullYear()} Muk Buddy · Built by a contractor, for contractors.
-        </div>
-        <div className="flex gap-6 text-xs font-bold uppercase tracking-[0.25em] text-zinc-400">
-          <a href="#faq" className="hover:text-yellow-400 transition-colors" data-testid="footer-faq">FAQ</a>
-          <a href="#contact" className="hover:text-yellow-400 transition-colors" data-testid="footer-contact">Contact</a>
+        <div className="flex gap-6 font-bangers text-lg uppercase tracking-[0.2em] text-cream">
+          <a href="#faq" className="hover:text-slime transition-colors" data-testid="footer-faq">FAQ</a>
+          <a href="#contact" className="hover:text-slime transition-colors" data-testid="footer-contact">Contact</a>
           <a
             href="https://thefloorlord.com/product/muk-buddy/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-yellow-400 transition-colors"
+            className="hover:text-slime transition-colors"
             data-testid="footer-order"
           >
             Order

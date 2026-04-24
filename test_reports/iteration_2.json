@@ -1,0 +1,48 @@
+{
+  "summary": "Frontend smoke + e2e testing of the rewritten Muk Buddy landing (LIGHT DTC theme). All 16 sections render, external links + video modal + FAQ accordion + LeadForm work. Backend POST /api/leads returns 201 end-to-end. No console errors, no broken images, no horizontal overflow on desktop or mobile.",
+  "backend_issues": {
+    "critical": [],
+    "minor": []
+  },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": [
+      {"screen": "Header (mobile < 768px)", "issues": ["No mobile hamburger / nav menu. The 4 nav links (How It Works / The Money / FAQ / Contact) are hidden on <md screens via `hidden md:flex` with no replacement — mobile users can only tap the logo or 'Grab One'. Minor UX gap, not blocking."]}
+    ]
+  },
+  "test_report_links": ["/app/test_reports/iteration_2.json"],
+  "action_items": [
+    "Consider adding a mobile nav (hamburger drawer) so mobile visitors can reach FAQ / The Money / Contact without manual scrolling. Low priority."
+  ],
+  "critical_code_review_comments": [
+    "Hero.jsx video modal uses conditional render + setTimeout(50ms) + videoRef.current.play() — works but is brittle. A more robust pattern: set ref then call play in a useEffect keyed off `playing`. Currently no functional issue observed.",
+    "LeadForm.jsx honeypot field `website` is a nice touch; backend accepts it (confirmed 201). No issue.",
+    "IMAGES.productVideo uses a .mov file served directly in a <video> tag — works in Chromium in testing, but .mov is not universally supported (Firefox). Consider providing an .mp4/.webm fallback <source> for cross-browser reliability.",
+    "Header.jsx: nav links are hidden below md breakpoint with no mobile menu alternative — minor accessibility/UX concern."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "100% (1/1 endpoint — /api/leads POST tested, 201)", "frontend": "100% (all spec'd flows passing)"},
+  "test_credentials": "n/a (no auth on this landing)",
+  "seed_data_creation": "Created 2 TEST_ leads in MongoDB via POST /api/leads during smoke + form test. If cleanup matters, filter by email like testsmoke@example.com and agent@example.com.",
+  "retest_needed": false,
+  "main_agent_can_self_test": true,
+  "context_for_next_testing_agent": "Preview URL https://two-chamber-test.preview.emergentagent.com. Light cream background IS the intended design — not a bug. Drippy Nosifer font on headings, Bowlby/Bangers accents are intentional. Video modal test must click the watch button then wait ~1500ms before querying [data-testid=hero-video] (conditional render + setTimeout inside component). FAQ accordion uses shadcn Accordion with data-state='open'|'closed' on the trigger button. Leadform POST goes to ${REACT_APP_BACKEND_URL}/api/leads and returns 201 with a generated uuid.",
+  "tested_flows": [
+    "Page load (no console errors)",
+    "All 11 data-testid sections present (landing-page, site-header, hero-section, hero-headline, hero-mascot, hero-order-btn, hero-watch-btn, hero-watch-btn-mini, faq-section, lead-form-section, final-cta-section)",
+    "Nav link 'FAQ' smooth-scrolls (scrollY=13169 after click)",
+    "'Grab One', 'Feed The Monster', 'Unleash Muk Buddy' all href=https://thefloorlord.com/product/muk-buddy/ with target=_blank",
+    "Watch It Eat modal opens and loads .mov video src",
+    "SEE IT RUN mini card also opens the same video modal",
+    "FAQ items 0, 1, 2 expand correctly (data-state=open)",
+    "LeadForm: empty submit -> 'Please enter your name.' toast",
+    "LeadForm: invalid email -> 'Please enter a valid email.' toast",
+    "LeadForm: valid submit -> 201 + 'Message sent. We'll be in touch.' toast (verified end-to-end with MongoDB via REACT_APP_BACKEND_URL)",
+    "All <img> tags load (naturalWidth > 0, 0 broken images)",
+    "Mascot .webm <video> loads to readyState=4",
+    "Desktop (1920): no horizontal overflow",
+    "Mobile (375): no horizontal overflow, all sections stack cleanly at full-width"
+  ],
+  "rca of the issue": "No unresolved issues."
+}

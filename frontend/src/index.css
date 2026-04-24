@@ -1,175 +1,251 @@
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nosifer&family=Bowlby+One&family=Bangers&family=Paytone+One&family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html {
-    scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
     margin: 0;
-    font-family: "Manrope", system-ui, sans-serif;
-    background: #0a0a0a;
-    color: #ffffff;
+    font-family: "Nunito", system-ui, sans-serif;
+    background: #FFF4D6;
+    color: #1A0625;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-.font-anton {
-    font-family: "Anton", "Impact", sans-serif;
-    letter-spacing: -0.01em;
-}
-.font-manrope {
-    font-family: "Manrope", system-ui, sans-serif;
-}
-.font-mono {
-    font-family: "JetBrains Mono", monospace;
+/* ---------- Typography ---------- */
+.font-nosifer { font-family: "Nosifer", "Impact", sans-serif; letter-spacing: 0.02em; }
+.font-bowlby  { font-family: "Bowlby One", "Impact", sans-serif; letter-spacing: 0; }
+.font-paytone { font-family: "Paytone One", "Impact", sans-serif; letter-spacing: -0.01em; }
+.font-bangers { font-family: "Bangers", "Impact", sans-serif; letter-spacing: 0.04em; }
+.font-nunito  { font-family: "Nunito", system-ui, sans-serif; }
+.font-mono    { font-family: "JetBrains Mono", monospace; }
+
+/* Kept for backward compat — redefine to new fonts */
+.font-anton   { font-family: "Bowlby One", "Impact", sans-serif; letter-spacing: -0.01em; }
+.font-manrope { font-family: "Nunito", system-ui, sans-serif; }
+
+/* Drippy MUK BUDDY logo-matching text (use sparingly on hero only) */
+.drip-title {
+    font-family: "Nosifer", "Impact", sans-serif;
+    color: #39FF14;
+    -webkit-text-stroke: 2px #1A0625;
+    text-shadow:
+        4px 4px 0 #1A0625,
+        8px 8px 0 #7A6FE0;
+    letter-spacing: 0.02em;
+    line-height: 0.95;
 }
 
-/* Grit / noise overlay */
+/* ---------- Cartoon/sticker shadows ---------- */
+.shadow-brutal    { box-shadow: 6px 6px 0 0 #1A0625; }
+.shadow-brutal-sm { box-shadow: 4px 4px 0 0 #1A0625; }
+.shadow-brutal-slime  { box-shadow: 6px 6px 0 0 #39FF14; }
+.shadow-brutal-muk    { box-shadow: 6px 6px 0 0 #7A6FE0; }
+.shadow-brutal-cream  { box-shadow: 6px 6px 0 0 #FFF4D6; }
+
+/* Slime highlight */
+.hl-yellow {
+    background-image: linear-gradient(transparent 55%, #39FF14 55%);
+    padding: 0 2px;
+}
+.hl-muk {
+    background-image: linear-gradient(transparent 55%, #C6BFEF 55%);
+    padding: 0 2px;
+}
+
+/* ---------- Slime drip divider ---------- */
+.slime-drip { position: relative; background: #39FF14; height: 10px; }
+.slime-drip::after {
+    content: "";
+    position: absolute;
+    inset: 100% 0 auto 0;
+    height: 36px;
+    background-image:
+        radial-gradient(ellipse 14px 28px at 8% 0, #39FF14 99%, transparent 100%),
+        radial-gradient(ellipse 10px 22px at 22% 0, #39FF14 99%, transparent 100%),
+        radial-gradient(ellipse 18px 36px at 38% 0, #39FF14 99%, transparent 100%),
+        radial-gradient(ellipse 12px 18px at 54% 0, #39FF14 99%, transparent 100%),
+        radial-gradient(ellipse 16px 32px at 70% 0, #39FF14 99%, transparent 100%),
+        radial-gradient(ellipse 10px 24px at 84% 0, #39FF14 99%, transparent 100%),
+        radial-gradient(ellipse 14px 20px at 96% 0, #39FF14 99%, transparent 100%);
+    background-repeat: no-repeat;
+}
+.slime-drip-muk { background: #7A6FE0; }
+.slime-drip-muk::after {
+    background-image:
+        radial-gradient(ellipse 14px 28px at 8% 0, #7A6FE0 99%, transparent 100%),
+        radial-gradient(ellipse 10px 22px at 22% 0, #7A6FE0 99%, transparent 100%),
+        radial-gradient(ellipse 18px 36px at 38% 0, #7A6FE0 99%, transparent 100%),
+        radial-gradient(ellipse 12px 18px at 54% 0, #7A6FE0 99%, transparent 100%),
+        radial-gradient(ellipse 16px 32px at 70% 0, #7A6FE0 99%, transparent 100%),
+        radial-gradient(ellipse 10px 24px at 84% 0, #7A6FE0 99%, transparent 100%),
+        radial-gradient(ellipse 14px 20px at 96% 0, #7A6FE0 99%, transparent 100%);
+}
+.slime-drip-ink { background: #1A0625; }
+.slime-drip-ink::after {
+    background-image:
+        radial-gradient(ellipse 14px 28px at 8% 0, #1A0625 99%, transparent 100%),
+        radial-gradient(ellipse 10px 22px at 22% 0, #1A0625 99%, transparent 100%),
+        radial-gradient(ellipse 18px 36px at 38% 0, #1A0625 99%, transparent 100%),
+        radial-gradient(ellipse 12px 18px at 54% 0, #1A0625 99%, transparent 100%),
+        radial-gradient(ellipse 16px 32px at 70% 0, #1A0625 99%, transparent 100%),
+        radial-gradient(ellipse 10px 24px at 84% 0, #1A0625 99%, transparent 100%),
+        radial-gradient(ellipse 14px 20px at 96% 0, #1A0625 99%, transparent 100%);
+}
+
+/* ---------- Halftone dots bg (candy poster) ---------- */
+.halftone-cream {
+    background-image: radial-gradient(#1A0625 1.2px, transparent 1.6px);
+    background-size: 18px 18px;
+    background-color: #FFF4D6;
+}
+.halftone-slime {
+    background-image: radial-gradient(#1A0625 1.2px, transparent 1.6px);
+    background-size: 18px 18px;
+    background-color: #39FF14;
+}
+.halftone-muk {
+    background-image: radial-gradient(#FFF4D6 1.2px, transparent 1.6px);
+    background-size: 18px 18px;
+    background-color: #7A6FE0;
+}
+
+/* Hazard stripes */
+.hazard-stripe {
+    background-image: repeating-linear-gradient(45deg, #39FF14, #39FF14 14px, #1A0625 14px, #1A0625 28px);
+}
+.hazard-stripe-muk {
+    background-image: repeating-linear-gradient(45deg, #7A6FE0, #7A6FE0 14px, #1A0625 14px, #1A0625 28px);
+}
+
+/* Sunburst badge */
+.sunburst {
+    background: conic-gradient(from 0deg,
+        #39FF14 0 15deg, #FFF4D6 15deg 30deg,
+        #39FF14 30deg 45deg, #FFF4D6 45deg 60deg,
+        #39FF14 60deg 75deg, #FFF4D6 75deg 90deg,
+        #39FF14 90deg 105deg, #FFF4D6 105deg 120deg,
+        #39FF14 120deg 135deg, #FFF4D6 135deg 150deg,
+        #39FF14 150deg 165deg, #FFF4D6 165deg 180deg,
+        #39FF14 180deg 195deg, #FFF4D6 195deg 210deg,
+        #39FF14 210deg 225deg, #FFF4D6 225deg 240deg,
+        #39FF14 240deg 255deg, #FFF4D6 255deg 270deg,
+        #39FF14 270deg 285deg, #FFF4D6 285deg 300deg,
+        #39FF14 300deg 315deg, #FFF4D6 315deg 330deg,
+        #39FF14 330deg 345deg, #FFF4D6 345deg 360deg);
+}
+
+/* Marquee */
+@keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+.animate-marquee { animation: marquee 30s linear infinite; }
+
+/* Selection */
+::selection { background: #39FF14; color: #1A0625; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: #FFF4D6; }
+::-webkit-scrollbar-thumb { background: #7A6FE0; border: 2px solid #FFF4D6; }
+::-webkit-scrollbar-thumb:hover { background: #39FF14; }
+
+/* Sticker button (tilt on hover) */
+.sticker-btn {
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+    will-change: transform;
+}
+.sticker-btn:hover {
+    transform: translate(-2px, -2px) rotate(-1.2deg);
+    box-shadow: 9px 9px 0 0 #1A0625;
+}
+.sticker-btn:active {
+    transform: translate(2px, 2px) rotate(0.5deg);
+    box-shadow: 2px 2px 0 0 #1A0625;
+}
+
+/* Grit/paper texture */
 .grit::before {
     content: "";
     position: absolute;
     inset: 0;
     pointer-events: none;
-    opacity: 0.06;
-    mix-blend-mode: overlay;
+    opacity: 0.08;
+    mix-blend-mode: multiply;
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
 }
 
-/* Brutalist card shadow */
-.shadow-brutal {
-    box-shadow: 6px 6px 0 0 rgba(250, 204, 21, 0.9);
-}
-.shadow-brutal-sm {
-    box-shadow: 4px 4px 0 0 rgba(255, 255, 255, 0.08);
-}
-
-/* Yellow underline highlight */
-.hl-yellow {
-    background-image: linear-gradient(
-        transparent 60%,
-        rgba(250, 204, 21, 0.35) 60%
-    );
+/* Wavy section divider (SVG-free) */
+.wave-divider {
+    height: 32px;
+    background:
+        radial-gradient(ellipse 24px 16px at 0 0, transparent 100%, #FFF4D6 0) -24px 0/48px 16px repeat-x,
+        radial-gradient(ellipse 24px 16px at 48px 16px, transparent 100%, #FFF4D6 0) 0 16px/48px 16px repeat-x;
 }
 
-/* Diagonal hazard stripe */
-.hazard-stripe {
-    background-image: repeating-linear-gradient(
-        45deg,
-        #facc15,
-        #facc15 14px,
-        #0a0a0a 14px,
-        #0a0a0a 28px
-    );
-}
-
-/* Marquee */
-@keyframes marquee {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
-}
-.animate-marquee {
-    animation: marquee 30s linear infinite;
-}
-
-/* Selection */
-::selection {
-    background: #facc15;
-    color: #000;
-}
-
-/* Scrollbar */
-::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-}
-::-webkit-scrollbar-track {
-    background: #0a0a0a;
-}
-::-webkit-scrollbar-thumb {
-    background: #27272a;
-    border: 2px solid #0a0a0a;
-}
-::-webkit-scrollbar-thumb:hover {
-    background: #facc15;
+/* Ribbon/tag */
+.ribbon {
+    position: relative;
+    background: #39FF14;
+    color: #1A0625;
+    padding: 6px 14px;
+    font-family: "Bangers", sans-serif;
+    letter-spacing: 0.08em;
+    transform: rotate(-2deg);
+    border: 2px solid #1A0625;
+    box-shadow: 3px 3px 0 0 #1A0625;
+    display: inline-block;
 }
 
 @layer base {
     :root {
-        --background: 0 0% 4%;
-        --foreground: 0 0% 100%;
-        --card: 0 0% 8%;
-        --card-foreground: 0 0% 100%;
-        --popover: 0 0% 4%;
-        --popover-foreground: 0 0% 100%;
-        --primary: 48 96% 53%;
-        --primary-foreground: 0 0% 0%;
-        --secondary: 0 0% 10%;
+        --background: 42 100% 92%;      /* cream */
+        --foreground: 274 74% 8%;       /* ink */
+        --card: 0 0% 100%;
+        --card-foreground: 274 74% 8%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 274 74% 8%;
+        --primary: 108 100% 54%;        /* slime */
+        --primary-foreground: 274 74% 8%;
+        --secondary: 249 64% 65%;       /* muk purple */
         --secondary-foreground: 0 0% 100%;
-        --muted: 0 0% 12%;
-        --muted-foreground: 0 0% 63%;
-        --accent: 48 96% 53%;
-        --accent-foreground: 0 0% 0%;
-        --destructive: 0 80% 50%;
+        --muted: 42 40% 88%;
+        --muted-foreground: 274 20% 30%;
+        --accent: 108 100% 54%;
+        --accent-foreground: 274 74% 8%;
+        --destructive: 0 80% 55%;
         --destructive-foreground: 0 0% 100%;
-        --border: 0 0% 16%;
-        --input: 0 0% 10%;
-        --ring: 48 96% 53%;
-        --radius: 0rem;
+        --border: 274 74% 8%;
+        --input: 0 0% 100%;
+        --ring: 108 100% 54%;
+        --radius: 0.25rem;
     }
 }
 
 @layer base {
-    * {
-        @apply border-border;
-    }
-    body {
-        @apply bg-background text-foreground;
-    }
-    h1,
-    h2,
-    h3,
-    h4 {
-        font-family: "Anton", "Impact", sans-serif;
+    * { @apply border-border; }
+    body { @apply bg-cream text-ink; }
+    h1, h2, h3, h4 {
+        font-family: "Bowlby One", "Impact", sans-serif;
         letter-spacing: -0.01em;
         text-transform: uppercase;
     }
 }
 
 @layer base {
-    [data-debug-wrapper="true"] {
-        display: contents !important;
-    }
+    [data-debug-wrapper="true"] { display: contents !important; }
     [data-debug-wrapper="true"] > * {
-        margin-left: inherit;
-        margin-right: inherit;
-        margin-top: inherit;
-        margin-bottom: inherit;
-        padding-left: inherit;
-        padding-right: inherit;
-        padding-top: inherit;
-        padding-bottom: inherit;
-        column-gap: inherit;
-        row-gap: inherit;
-        gap: inherit;
-        border-left-width: inherit;
-        border-right-width: inherit;
-        border-top-width: inherit;
-        border-bottom-width: inherit;
-        border-left-style: inherit;
-        border-right-style: inherit;
-        border-top-style: inherit;
-        border-bottom-style: inherit;
-        border-left-color: inherit;
-        border-right-color: inherit;
-        border-top-color: inherit;
-        border-bottom-color: inherit;
+        margin-left: inherit; margin-right: inherit;
+        margin-top: inherit; margin-bottom: inherit;
+        padding-left: inherit; padding-right: inherit;
+        padding-top: inherit; padding-bottom: inherit;
+        column-gap: inherit; row-gap: inherit; gap: inherit;
+        border-left-width: inherit; border-right-width: inherit;
+        border-top-width: inherit; border-bottom-width: inherit;
+        border-left-style: inherit; border-right-style: inherit;
+        border-top-style: inherit; border-bottom-style: inherit;
+        border-left-color: inherit; border-right-color: inherit;
+        border-top-color: inherit; border-bottom-color: inherit;
     }
 }

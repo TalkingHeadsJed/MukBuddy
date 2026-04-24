@@ -1,6 +1,5 @@
 import { Wind, Thermometer, Flame, Filter, Gauge } from "lucide-react";
 import { Overline } from "@/components/sections/Problem";
-import { IMAGES } from "@/lib/images";
 
 const points = [
   { icon: Gauge, label: "Suction drops" },
@@ -14,23 +13,24 @@ export default function Airflow() {
   return (
     <section
       data-testid="airflow-section"
-      className="relative py-24 sm:py-32 overflow-hidden"
+      className="relative py-24 sm:py-32 overflow-hidden bg-cream"
     >
-      {/* Full-width background */}
+      <div className="absolute inset-0 halftone-cream opacity-80" aria-hidden />
       <div
-        className="absolute inset-0 -z-10 bg-cover bg-center opacity-20"
-        style={{ backgroundImage: `url(${IMAGES.airflowBg})` }}
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background:
+            "radial-gradient(ellipse 70% 60% at 20% 30%, rgba(122,111,224,0.15), transparent 60%)",
+        }}
         aria-hidden
       />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-black via-black/90 to-black" aria-hidden />
-      <div className="absolute inset-0 grit opacity-40" aria-hidden />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <Overline>02 · The Real Issue</Overline>
-        <h2 className="font-anton text-5xl sm:text-7xl lg:text-8xl text-white mt-4 leading-[0.9]">
+        <h2 className="font-bowlby text-5xl sm:text-7xl lg:text-8xl text-ink mt-4 leading-[0.9]">
           Everything <br />
           comes down to <br />
-          <span className="text-yellow-400">airflow.</span>
+          <span className="text-muk">airflow.</span>
         </h2>
 
         <div className="mt-14 grid grid-cols-2 md:grid-cols-5 gap-4">
@@ -38,18 +38,18 @@ export default function Airflow() {
             <div
               key={label}
               data-testid={`airflow-point-${i}`}
-              className="group bg-zinc-900/90 backdrop-blur-sm border border-zinc-800 p-6 hover:border-yellow-400 transition-colors"
+              className="group bg-white border-4 border-ink p-6 shadow-brutal-sm hover:shadow-brutal transition-all hover:-translate-y-1"
             >
-              <Icon className="w-8 h-8 text-yellow-400 mb-4" />
-              <p className="text-sm sm:text-base font-bold uppercase tracking-wide text-white leading-tight">
+              <Icon className="w-9 h-9 text-muk mb-4" />
+              <p className="font-bangers text-lg tracking-wider text-ink leading-tight">
                 {label}
               </p>
             </div>
           ))}
         </div>
 
-        <div className="mt-12 bg-yellow-400 text-black p-8 sm:p-10 max-w-4xl">
-          <p className="font-anton text-3xl sm:text-5xl leading-[0.95]">
+        <div className="mt-14 bg-slime text-ink p-8 sm:p-10 max-w-4xl border-4 border-ink shadow-brutal -rotate-1">
+          <p className="font-bowlby text-3xl sm:text-5xl leading-[1]">
             Restricted airflow is what's costing you money.
           </p>
         </div>

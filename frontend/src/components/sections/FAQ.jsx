@@ -46,15 +46,15 @@ export default function FAQ() {
     <section id="faq" data-testid="faq-section" className="relative py-24 sm:py-32">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <Overline>12 · FAQ</Overline>
-        <h2 className="font-anton text-4xl sm:text-6xl lg:text-7xl text-white mt-4 leading-[0.95]">
+        <h2 className="font-anton text-4xl sm:text-6xl lg:text-7xl text-ink mt-4 leading-[0.95]">
           Straight answers, <br />
-          <span className="text-yellow-400">no fluff.</span>
+          <span className="text-muk">no fluff.</span>
         </h2>
 
         <Accordion
           type="single"
           collapsible
-          className="mt-12 border-y border-white/10 divide-y divide-white/10"
+          className="mt-12 border-y border-ink/15 divide-y divide-ink/15"
         >
           {faqs.map((f, i) => (
             <AccordionItem
@@ -63,10 +63,10 @@ export default function FAQ() {
               data-testid={`faq-item-${i}`}
               className="border-b-0"
             >
-              <AccordionTrigger className="font-anton text-xl sm:text-2xl text-white uppercase hover:no-underline hover:text-yellow-400 py-6 text-left">
+              <AccordionTrigger className="font-anton text-xl sm:text-2xl text-ink uppercase hover:no-underline hover:text-muk py-6 text-left">
                 {f.q}
               </AccordionTrigger>
-              <AccordionContent className="text-base sm:text-lg text-zinc-400 leading-relaxed pb-6">
+              <AccordionContent className="text-base sm:text-lg text-ink/70 leading-relaxed pb-6">
                 {f.a}
               </AccordionContent>
             </AccordionItem>
