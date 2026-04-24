@@ -83,29 +83,7 @@ export default function TwoChamber() {
                   className="w-full h-full object-contain"
                   aria-label="Muk Buddy 2-chamber design animation"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-ink/60 via-transparent to-ink/20" />
-
-                {/* Call-out label: Airflow column */}
-                <Callout
-                  className="top-[14%] left-[6%]"
-                  label="Airflow Column"
-                  tag="01"
-                  dir="right"
-                />
-                {/* Call-out label: Filter */}
-                <Callout
-                  className="top-[38%] right-[6%]"
-                  label="Reusable Filter Fabric"
-                  tag="02"
-                  dir="left"
-                />
-                {/* Call-out label: Debris chamber */}
-                <Callout
-                  className="bottom-[14%] left-[6%]"
-                  label="Debris Chamber"
-                  tag="03"
-                  dir="right"
-                />
+                <div className="absolute inset-0 bg-gradient-to-t from-ink/40 via-transparent to-transparent" />
 
                 {/* Caption strip */}
                 <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-ink via-ink/70 to-transparent px-5 pt-10 pb-4">
