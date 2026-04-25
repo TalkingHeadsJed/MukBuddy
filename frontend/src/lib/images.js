@@ -51,9 +51,9 @@ export const IMAGES = {
   difference:
     "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/r61bro8a_generated-image%20%2816%29.png",
 
-  // Benefits — wide crew banner (still stock — needs a real positive crew shot)
+  // Benefits — wide crew banner (USER PHOTO — vest contractor in the field)
   benefitsBanner:
-    "https://images.pexels.com/photos/1216544/pexels-photo-1216544.jpeg?auto=compress&cs=tinysrgb&w=2000",
+    "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/r61bro8a_generated-image%20%2816%29.png",
 
   // Dry performance — drywall / fine dust (USER PHOTO — vest contractor in demolished drywall room)
   dry:

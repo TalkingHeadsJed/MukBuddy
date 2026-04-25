@@ -32,6 +32,7 @@ export default function Problem() {
             testId="problem-card-bagless"
             title="Bag-less"
             img={IMAGES.problemBagless}
+            badge={{ title: "DUST PARTICLE COUNT:", value: "☠ HIGH", unit: "ppm" }}
             items={[
               "All that dust hits your filter",
               "Filter clogs fast",
@@ -54,11 +55,11 @@ export default function Problem() {
   );
 }
 
-function Card({ testId, title, items, img }) {
+function Card({ testId, title, items, img, badge }) {
   return (
     <div
       data-testid={testId}
-      className="relative bg-white border border-muk/30 hover:border-muk/60 transition-colors overflow-hidden"
+      className="relative bg-white border border-muk/30 hover:border-muk/60 transition-colors"
     >
       <div className="relative h-48 sm:h-56 overflow-hidden border-b border-muk/30">
         <img
@@ -72,6 +73,24 @@ function Card({ testId, title, items, img }) {
           ✕ The Old Way
         </div>
       </div>
+
+      {badge && (
+        <div
+          className="absolute z-20 right-4 sm:right-6 top-[160px] sm:top-[185px] rotate-[-6deg] bg-slime border-4 border-ink shadow-brutal px-4 py-2.5 max-w-[210px] hover:rotate-[-3deg] transition-transform"
+          data-testid={`${testId}-lab-badge`}
+        >
+          <div className="font-mono text-[9px] tracking-[0.18em] text-ink/70 leading-tight uppercase">
+            // Lab analysis · MB-2026
+          </div>
+          <div className="font-bangers text-base sm:text-lg leading-[1.05] text-ink tracking-wider mt-0.5">
+            {badge.title}
+          </div>
+          <div className="flex items-baseline gap-1.5 mt-1">
+            <span className="font-bangers text-2xl text-ink leading-none">{badge.value}</span>
+            <span className="font-mono text-[9px] text-ink/70 uppercase tracking-widest">{badge.unit}</span>
+          </div>
+        </div>
+      )}
       <div className="p-8 sm:p-10">
         <div className="flex items-center gap-3 mb-6">
           <div className="w-10 h-10 bg-muk/10 border border-muk/40 flex items-center justify-center">
