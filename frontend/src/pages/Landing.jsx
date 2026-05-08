@@ -14,6 +14,7 @@ import FAQ from "@/components/sections/FAQ";
 import LeadForm from "@/components/sections/LeadForm";
 import FinalCTA from "@/components/sections/FinalCTA";
 import Footer from "@/components/sections/Footer";
+import MoneyReminder from "@/components/sections/MoneyReminder";
 
 export default function Landing() {
   return (
@@ -30,6 +31,7 @@ export default function Landing() {
       <WasteScale />
       <Proof />
       <Objections />
+      <MoneyReminder />
       <FAQ />
       <LeadForm />
       <FinalCTA />
