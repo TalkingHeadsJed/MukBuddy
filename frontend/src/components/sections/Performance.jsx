@@ -1,10 +1,9 @@
 import { Overline } from "@/components/sections/Problem";
 import { Check, Droplets } from "lucide-react";
+import { IMAGES } from "@/lib/images";
 
-const DRY_IMG =
-  "https://images.unsplash.com/photo-1679797878543-66c1e502d413?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MTJ8MHwxfHNlYXJjaHwzfHxjb25zdHJ1Y3Rpb24lMjBzaXRlJTIwd29ya2VyJTIwY29udHJhY3RvcnxlbnwwfHx8fDE3NzY5MDA0ODF8MA&ixlib=rb-4.1.0&q=85";
-const WET_IMG =
-  "https://images.pexels.com/photos/3616735/pexels-photo-3616735.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940";
+const DRY_IMG = IMAGES.dry;
+const WET_IMG = IMAGES.wet;
 
 export default function Performance() {
   return (
