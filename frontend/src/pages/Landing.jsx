@@ -15,6 +15,7 @@ import LeadForm from "@/components/sections/LeadForm";
 import FinalCTA from "@/components/sections/FinalCTA";
 import Footer from "@/components/sections/Footer";
 import MoneyReminder from "@/components/sections/MoneyReminder";
+import BleedTicker from "@/components/sections/BleedTicker";
 
 export default function Landing() {
   return (
@@ -36,6 +37,7 @@ export default function Landing() {
       <LeadForm />
       <FinalCTA />
       <Footer />
+      <BleedTicker />
     </main>
   );
 }
