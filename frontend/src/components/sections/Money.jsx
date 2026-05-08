@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import MascotPeek from "@/components/sections/MascotPeek";
+import CountUp from "@/components/sections/CountUp";
 
 export default function Money() {
   return (
@@ -35,9 +36,28 @@ export default function Money() {
         </h2>
 
         <div className="mt-14 grid md:grid-cols-3 gap-6">
-          <Row label="Typical Crew" items={["1–3 bags / day", "~$10 / bag", "~$200 / month"]} />
-          <Row label="5 Crews" emphasis items={["~$1,000 / month", "~$12,000 / year", "On bags alone."]} />
-          <Row label="With Muk Buddy" highlight items={["One reusable system", "No recurring bag cost", "Filters last longer"]} />
+          <Row
+            label="Typical Crew"
+            items={[
+              "1–3 bags / day",
+              "~$10 / bag",
+              { prefix: "~$", value: 200, suffix: " / month" },
+            ]}
+          />
+          <Row
+            label="5 Crews"
+            emphasis
+            items={[
+              { prefix: "~$", value: 1000, suffix: " / month" },
+              { prefix: "~$", value: 12000, suffix: " / year" },
+              "On bags alone.",
+            ]}
+          />
+          <Row
+            label="With Muk Buddy"
+            highlight
+            items={["One reusable system", "No recurring bag cost", "Filters last longer"]}
+          />
         </div>
 
         <div className="mt-14 border-t-2 border-slime/40 pt-10">
@@ -71,8 +91,12 @@ function Row({ label, items, emphasis, highlight }) {
       </div>
       <ul className="mt-5 space-y-2">
         {items.map((t, i) => (
-          <li key={i} className={`font-bowlby text-2xl sm:text-3xl leading-tight`}>
-            {t}
+          <li key={i} className="font-bowlby text-2xl sm:text-3xl leading-tight">
+            {typeof t === "object" ? (
+              <CountUp prefix={t.prefix} to={t.value} suffix={t.suffix} duration={1600} />
+            ) : (
+              t
+            )}
           </li>
         ))}
       </ul>
