@@ -98,17 +98,36 @@ export default function Hero() {
             </span>
           </div>
 
-          {/* Big Hero Composite Card (mascot + spokesperson + actual product) */}
-          <div
+          {/* Big Hero Composite Card — clickable, plays video on click */}
+          <button
+            type="button"
+            onClick={handlePlay}
             data-testid="hero-mascot"
-            className="relative bg-cream border-4 border-ink rounded-sm shadow-brutal-muk overflow-hidden"
+            aria-label="Watch Muk Buddy demo"
+            className="group relative bg-cream border-4 border-ink rounded-sm shadow-brutal-muk overflow-hidden block w-full text-left cursor-pointer"
           >
             <img
               src={IMAGES.heroComposite}
               alt="Muk Buddy mascot with the patented 2-chamber product in hand"
               className="relative w-full h-auto object-contain"
             />
-          </div>
+            {/* Play button overlay */}
+            <span
+              aria-hidden
+              className="pointer-events-none absolute inset-0 flex items-center justify-center"
+            >
+              <span className="absolute inset-0 bg-ink/0 group-hover:bg-ink/15 transition-colors" />
+              <span className="relative w-24 h-24 sm:w-28 sm:h-28 bg-slime border-4 border-ink shadow-brutal flex items-center justify-center group-hover:scale-110 group-active:scale-95 transition-transform">
+                <Play className="w-10 h-10 text-ink fill-current translate-x-0.5" />
+              </span>
+            </span>
+            <span
+              aria-hidden
+              className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-ink text-cream font-bangers text-base sm:text-lg px-3 py-1 tracking-wider whitespace-nowrap shadow-brutal-sm"
+            >
+              ▶ WATCH IT EAT
+            </span>
+          </button>
 
           {/* Mini video demo card */}
           <button

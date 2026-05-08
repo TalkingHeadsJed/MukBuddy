@@ -73,9 +73,8 @@ export const IMAGES = {
     "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/lqckq2qo_contractor%20testimonial%201.png",
   portrait3:
     "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/7kfllotw_ChatGPT%20Image%20May%208%2C%202026%2C%2003_58_47%20PM.png",
-  // Fourth testimonial — reuse one of the contractor scene photos until a 4th headshot arrives
   portrait4:
-    "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/r61bro8a_generated-image%20%2816%29.png",
+    "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/qlw07r5c_Contractor%20Testimonial%204.png",
 
   // Final CTA bg (mostly hidden behind purple halftone overlay; kept stock for now)
   finalCta:
