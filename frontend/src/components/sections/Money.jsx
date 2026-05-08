@@ -30,8 +30,8 @@ export default function Money() {
           </span>
         </div>
         <h2 className="font-bowlby text-4xl sm:text-6xl lg:text-7xl mt-6 leading-[1] max-w-5xl text-cream">
-          What this is costing <br />
-          you right now.
+          Disposable bags are <br />
+          costing you <span className="text-slime">this much!</span>
         </h2>
 
         <div className="mt-14 grid md:grid-cols-3 gap-6">
