@@ -59,22 +59,23 @@ export const IMAGES = {
   dry:
     "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/kd9yw6ds_DK-bg-Ynwa-0U6hvMcal9_Xq9oD6fj.png",
 
-  // Wet performance (still stock — needs a real wet jobsite shot)
-  wet: "https://images.pexels.com/photos/3616735/pexels-photo-3616735.jpeg?auto=compress&cs=tinysrgb&w=1400",
+  // Wet performance (USER PHOTO — contractor squeegeeing wet floor in demoed room with shop-vac)
+  wet: "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/9jy241z6_mukbuddy%20wet%20dry%20vac.png",
 
   // Waste / "Today's mess" card (USER PHOTO — jacket contractor at messy floor reused)
   waste:
     "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/artehkve_rG9W0_LOMloE0ETffKBEC_NKsgEj17.png",
 
-  // Testimonial portraits (still stock — needs real customer photos)
+  // Testimonial portraits (USER PHOTOS)
   portrait1:
-    "https://images.pexels.com/photos/8961068/pexels-photo-8961068.jpeg?auto=compress&cs=tinysrgb&w=400",
+    "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/5ozdyih6_siding%20contractor%20testimonial%202.png",
   portrait2:
-    "https://images.pexels.com/photos/5691659/pexels-photo-5691659.jpeg?auto=compress&cs=tinysrgb&w=400",
+    "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/lqckq2qo_contractor%20testimonial%201.png",
   portrait3:
-    "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=400&q=70",
+    "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/7kfllotw_ChatGPT%20Image%20May%208%2C%202026%2C%2003_58_47%20PM.png",
+  // Fourth testimonial — reuse one of the contractor scene photos until a 4th headshot arrives
   portrait4:
-    "https://images.pexels.com/photos/3769138/pexels-photo-3769138.jpeg?auto=compress&cs=tinysrgb&w=400",
+    "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/r61bro8a_generated-image%20%2816%29.png",
 
   // Final CTA bg (mostly hidden behind purple halftone overlay; kept stock for now)
   finalCta:
