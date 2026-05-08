@@ -60,6 +60,35 @@ export default function Money() {
           />
         </div>
 
+        {/* And then there's the motor... */}
+        <div className="mt-6 grid md:grid-cols-12 gap-6 items-stretch">
+          <div className="md:col-span-3 bg-slime text-ink p-6 border-4 border-cream shadow-brutal-slime flex flex-col justify-center -rotate-1">
+            <span className="font-bangers text-base sm:text-lg uppercase tracking-[0.2em] text-ink/70">
+              + Bonus Bleed
+            </span>
+            <span className="font-bowlby text-3xl sm:text-4xl leading-[1] mt-1">
+              Burned <br /> motors.
+            </span>
+          </div>
+          <div className="md:col-span-9 bg-cream text-ink p-6 sm:p-8 border-4 border-cream shadow-brutal-slime flex flex-col sm:flex-row sm:items-end gap-4 sm:gap-6">
+            <div className="flex-1">
+              <div className="font-bangers text-base uppercase tracking-[0.2em] text-ink/70 mb-1">
+                Motor Replacement
+              </div>
+              <div className="font-bowlby text-4xl sm:text-6xl leading-[0.95]">
+                <CountUp prefix="~$" to={850} suffix=" / motor" duration={1800} />
+              </div>
+            </div>
+            <p
+              className="font-bangers text-lg sm:text-xl text-ink/80 leading-tight max-w-xs"
+              data-testid="motor-cost-line"
+            >
+              Burned-out motors don't <br />
+              fix themselves. <span className="text-muk">Bag cost is just half the bleed.</span>
+            </p>
+          </div>
+        </div>
+
         <div className="mt-14 border-t-2 border-slime/40 pt-10">
           <p className="font-bowlby text-3xl sm:text-5xl leading-[1.05] max-w-4xl">
             Even if you cut those numbers in half —{" "}
