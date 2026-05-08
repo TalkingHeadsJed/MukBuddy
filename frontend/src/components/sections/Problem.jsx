@@ -1,5 +1,6 @@
 import { X, AlertTriangle } from "lucide-react";
 import { IMAGES } from "@/lib/images";
+import GeoStamp from "@/components/sections/GeoStamp";
 
 export default function Problem() {
   return (
@@ -26,6 +27,7 @@ export default function Problem() {
             testId="problem-card-bags"
             title="Disposable Bags"
             img={IMAGES.problemBags}
+            stamp={{ label: "Real Crew", date: "MAR '26" }}
             items={["Rip open mid-job", "Get expensive fast", "Lose suction as they fill"]}
           />
           <Card
@@ -33,6 +35,7 @@ export default function Problem() {
             title="Bag-less"
             img={IMAGES.problemBagless}
             badge={{ title: "DUST PARTICLE COUNT:", value: "☠ HIGH", unit: "ppm" }}
+            stamp={{ label: "Real Contractor", date: "APR '26" }}
             items={[
               "All that dust hits your filter",
               "Filter clogs fast",
@@ -55,7 +58,7 @@ export default function Problem() {
   );
 }
 
-function Card({ testId, title, items, img, badge }) {
+function Card({ testId, title, items, img, badge, stamp }) {
   return (
     <div
       data-testid={testId}
@@ -72,6 +75,15 @@ function Card({ testId, title, items, img, badge }) {
         <div className="absolute top-4 left-4 bg-muk text-cream text-[10px] font-bold uppercase tracking-[0.25em] px-2 py-1">
           ✕ The Old Way
         </div>
+        {stamp && (
+          <GeoStamp
+            label={stamp.label}
+            date={stamp.date}
+            tilt={3}
+            className="absolute top-4 right-4 z-10"
+            testId={`${testId}-geo`}
+          />
+        )}
       </div>
 
       {badge && (

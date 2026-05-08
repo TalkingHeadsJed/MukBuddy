@@ -1,6 +1,7 @@
 import { Overline } from "@/components/sections/Problem";
 import { Zap } from "lucide-react";
 import { IMAGES } from "@/lib/images";
+import GeoStamp from "@/components/sections/GeoStamp";
 
 export default function Difference() {
   return (
@@ -29,6 +30,13 @@ export default function Difference() {
             <div className="absolute top-4 left-4 bg-slime text-black text-xs font-bold uppercase tracking-[0.2em] px-3 py-1.5">
               In The Field
             </div>
+            <GeoStamp
+              label="Active Crew"
+              date="2026"
+              tilt={4}
+              className="absolute top-4 right-4"
+              testId="difference-geo"
+            />
             <div className="absolute bottom-4 left-4 right-4">
               <span className="font-mono text-xs text-muk uppercase tracking-[0.2em]">
                 // Standard wet/dry vac + Muk Buddy

@@ -1,6 +1,7 @@
 import { Overline } from "@/components/sections/Problem";
 import { Check, Droplets } from "lucide-react";
 import { IMAGES } from "@/lib/images";
+import GeoStamp from "@/components/sections/GeoStamp";
 
 const DRY_IMG = IMAGES.dry;
 const WET_IMG = IMAGES.wet;
@@ -21,6 +22,13 @@ export default function Performance() {
               className="w-full h-full object-cover grayscale contrast-125"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-cream via-cream/30 to-transparent" />
+            <GeoStamp
+              label="Drywall Remodel"
+              date="MAR '26"
+              tilt={-3}
+              className="absolute top-4 right-4"
+              testId="dry-geo"
+            />
             <div className="absolute bottom-0 left-0 right-0 p-6">
               <span className="font-mono text-xs text-muk uppercase tracking-[0.2em]">
                 Drywall · Concrete · Fine Dust
@@ -100,6 +108,13 @@ export default function Performance() {
             <div className="absolute top-4 left-4 bg-slime text-black text-xs font-bold uppercase tracking-[0.2em] px-3 py-1.5">
               Field-tested
             </div>
+            <GeoStamp
+              label="Basement Flood"
+              date="APR '26"
+              tilt={3}
+              className="absolute top-4 right-4"
+              testId="wet-geo"
+            />
           </div>
         </div>
       </div>
