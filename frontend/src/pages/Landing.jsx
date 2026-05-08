@@ -21,12 +21,12 @@ export default function Landing() {
       <Header />
       <Hero />
       <Problem />
+      <Money />
       <Airflow />
       <Difference />
       <TwoChamber />
       <Performance />
       <Benefits />
-      <Money />
       <WasteScale />
       <Proof />
       <Objections />

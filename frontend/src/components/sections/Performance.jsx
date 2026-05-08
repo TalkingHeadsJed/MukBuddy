@@ -37,7 +37,7 @@ export default function Performance() {
           </div>
         </div>
         <div className="lg:col-span-7 order-1 lg:order-2 space-y-6">
-          <Overline>05 · Dry Performance</Overline>
+          <Overline>06 · Dry Performance</Overline>
           <h2 className="font-anton text-4xl sm:text-6xl lg:text-7xl text-ink leading-[0.95]">
             Handles fine dust <br />
             <span className="text-muk">without killing</span> performance.
@@ -67,7 +67,7 @@ export default function Performance() {
       {/* WET */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32 grid lg:grid-cols-12 gap-10 items-center">
         <div className="lg:col-span-7 space-y-6">
-          <Overline>06 · Wet Performance</Overline>
+          <Overline>07 · Wet Performance</Overline>
           <h2 className="font-anton text-4xl sm:text-6xl lg:text-7xl text-ink leading-[0.95]">
             Wet jobs don't have <br />
             to <span className="text-muk">kill your suction.</span>

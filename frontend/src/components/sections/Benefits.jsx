@@ -22,7 +22,7 @@ export default function Benefits() {
   return (
     <section data-testid="benefits-section" className="relative py-24 sm:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <Overline>07 · What You Get</Overline>
+        <Overline>08 · What You Get</Overline>
         <h2 className="font-anton text-4xl sm:text-6xl lg:text-7xl text-ink mt-4 leading-[0.95] max-w-5xl">
           What changes when <br />
           you use <span className="text-muk">Muk Buddy.</span>

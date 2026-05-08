@@ -53,7 +53,7 @@ export default function WasteScale() {
                 <span className="font-anton text-5xl sm:text-6xl leading-none">1</span>
                 <span className="text-sm font-bold uppercase tracking-[0.25em]">
                   reusable system <br />
-                  replaces thousands of bags.
+                  replaces hundreds of bags.
                 </span>
               </div>
             </div>

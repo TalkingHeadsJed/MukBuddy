@@ -26,7 +26,7 @@ export default function Airflow() {
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <Overline>02 · The Real Issue</Overline>
+        <Overline>03 · The Real Issue</Overline>
         <h2 className="font-bowlby text-5xl sm:text-7xl lg:text-8xl text-ink mt-4 leading-[0.9]">
           Everything <br />
           comes down to <br />

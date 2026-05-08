@@ -11,7 +11,7 @@ export default function Difference() {
       className="relative py-24 sm:py-32 bg-white border-y border-ink/10"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <Overline>03 · The Difference</Overline>
+        <Overline>04 · The Difference</Overline>
         <h2 className="font-anton text-4xl sm:text-6xl lg:text-7xl text-ink mt-4 leading-[0.95] max-w-5xl">
           This is where Muk Buddy{" "}
           <span className="text-muk">changes everything.</span>

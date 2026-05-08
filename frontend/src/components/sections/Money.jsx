@@ -27,7 +27,7 @@ export default function Money() {
         <div className="flex items-center gap-3">
           <span className="w-8 h-px bg-slime" />
           <span className="font-bangers text-xl text-slime uppercase tracking-[0.2em]">
-            08 · The Money
+            02 · The Money
           </span>
         </div>
         <h2 className="font-bowlby text-4xl sm:text-6xl lg:text-7xl mt-6 leading-[1] max-w-5xl text-cream">
