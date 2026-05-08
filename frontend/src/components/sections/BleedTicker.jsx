@@ -27,9 +27,10 @@ export default function BleedTicker() {
       const money = document.getElementById("the-money");
       const contact = document.getElementById("contact");
       if (!money) return;
-      const moneyBottom = money.getBoundingClientRect().bottom;
+      const moneyTop = money.getBoundingClientRect().top;
       const contactTop = contact ? contact.getBoundingClientRect().top : Infinity;
-      const past = moneyBottom < 0;
+      // Trigger as soon as the Money section enters the viewport (top crosses bottom 85%)
+      const past = moneyTop < window.innerHeight * 0.85;
       const atContact = contactTop < window.innerHeight * 0.6;
       setVisible(past && !atContact);
     };
