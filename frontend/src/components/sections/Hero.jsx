@@ -56,7 +56,7 @@ export default function Hero() {
           <p className="text-lg sm:text-xl text-ink/80 max-w-xl leading-relaxed font-semibold">
             A patented{" "}
             <span className="text-muk font-extrabold">2-chamber monster</span>{" "}
-            that fits most 12–16 gallon Shop-Vac, Ridgid, Craftsman, Stanley and DeWalt wet/dry vacs.
+            that fits most 12–20 gallon Shop-Vac, Ridgid, Craftsman, Stanley and DeWalt wet/dry vacs (and works on smaller sizes too).
             Devours dust, drinks up water, keeps suction strong, and{" "}
             <span className="text-ink font-extrabold">
               eats disposable bag costs for breakfast.
