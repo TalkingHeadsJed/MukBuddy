@@ -76,7 +76,7 @@ export default function Money() {
                 Motor Replacement
               </div>
               <div className="font-bowlby text-4xl sm:text-6xl leading-[0.95]">
-                <CountUp prefix="~$" to={850} suffix=" / motor" duration={1800} />
+                <CountUp prefix="~$" to={850} suffix=" / motor" duration={4000} />
               </div>
             </div>
             <p
@@ -122,7 +122,7 @@ function Row({ label, items, emphasis, highlight }) {
         {items.map((t, i) => (
           <li key={i} className="font-bowlby text-2xl sm:text-3xl leading-tight">
             {typeof t === "object" ? (
-              <CountUp prefix={t.prefix} to={t.value} suffix={t.suffix} duration={1600} />
+              <CountUp prefix={t.prefix} to={t.value} suffix={t.suffix} duration={3500} />
             ) : (
               t
             )}

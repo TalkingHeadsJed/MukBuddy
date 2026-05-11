@@ -18,7 +18,7 @@ export default function MoneyReminder() {
           <p className="font-bowlby text-2xl sm:text-4xl lg:text-5xl leading-[1.05] text-cream">
             While you've been reading, you've still been losing{" "}
             <span className="text-slime whitespace-nowrap">
-              <CountUp prefix="~$" to={2400} suffix="/yr" duration={1800} />
+              <CountUp prefix="~$" to={2400} suffix="/yr" duration={3500} />
             </span>{" "}
             on bags.
           </p>
