@@ -36,28 +36,34 @@ export default function Hero() {
             ★ PATENTED · BUILT BY A CONTRACTOR ★
           </div>
 
+          <div className="font-bangers text-2xl sm:text-3xl tracking-wider text-muk -mb-3 sm:-mb-4">
+            Meet Muk Buddy:
+          </div>
+
           <h1
             data-testid="hero-headline"
-            className="drip-title text-6xl sm:text-8xl lg:text-[7rem] leading-[0.9]"
+            className="drip-title text-5xl sm:text-6xl lg:text-[3.75rem] xl:text-[4.5rem] leading-[0.95]"
           >
-            MEET <br /> MUK BUDDY.
+            REUSABLE <br /> WET/DRY <br /> VAC BAG.
             <span className="sr-only">
-              {" "}— The Reusable Wet/Dry Vac Bag Alternative. A patented 2-chamber filter
-              system for shop vacuums and wet/dry vacuums that maintains suction,
-              protects motors, and eliminates disposable bag costs for contractors.
+              {" "}— A patented 2-chamber reusable filter system for shop vacuums
+              and wet/dry vacuums. Fits Shop-Vac, Ridgid, Craftsman, Stanley,
+              DeWalt and most 12–20 gallon wet/dry vacs. Maintains suction,
+              protects motors, eliminates disposable bag costs for contractors.
             </span>
           </h1>
 
-          <p className="font-paytone text-2xl sm:text-3xl lg:text-4xl text-ink leading-[1.05]">
-            The first real innovation in shop vacs and wet/dry vacuums in{" "}
-            <span className="hl-yellow">50 years.</span>
+          <p className="font-paytone text-2xl sm:text-4xl lg:text-5xl text-ink leading-[1.05]">
+            <span className="hl-yellow">NEVER buy a disposable</span> <br />
+            wet/dry vac bag again.
           </p>
 
-          <p className="text-lg sm:text-xl text-ink/80 max-w-xl leading-relaxed font-semibold">
+          <p className="text-base sm:text-lg text-ink/80 max-w-xl leading-relaxed font-semibold">
             A patented{" "}
             <span className="text-muk font-extrabold">2-chamber monster</span>{" "}
-            that fits most 12–20 gallon Shop-Vac, Ridgid, Craftsman, Stanley and DeWalt wet/dry vacs (and works on smaller sizes too).
-            Devours dust, drinks up water, keeps suction strong, and{" "}
+            that fits most 12–20 gallon Shop-Vac, Ridgid, Craftsman, Stanley
+            and DeWalt wet/dry vacs (and works on smaller sizes too). Devours
+            dust, drinks up water, keeps suction strong, and{" "}
             <span className="text-ink font-extrabold">
               eats disposable bag costs for breakfast.
             </span>
