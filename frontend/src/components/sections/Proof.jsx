@@ -4,7 +4,7 @@ import { IMAGES } from "@/lib/images";
 const quotes = [
   { text: "It keeps pulling.", attr: "Drywall Contractor", portrait: IMAGES.portrait1 },
   { text: "Feels like a different machine.", attr: "Remodel Crew Lead", portrait: IMAGES.portrait2 },
-  { text: "Filter lasts way longer.", attr: "Concrete Cutter", portrait: IMAGES.portrait3 },
+  { text: "I haven't had to replace the filter for over a year.", attr: "Concrete Cutter", portrait: IMAGES.portrait3 },
   { text: "Way less stopping.", attr: "Finish Carpenter", portrait: IMAGES.portrait4 },
 ];
 
