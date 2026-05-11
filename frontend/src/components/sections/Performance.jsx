@@ -18,7 +18,7 @@ export default function Performance() {
           <div className="relative aspect-[4/5] border-2 border-slime overflow-hidden">
             <img
               src={DRY_IMG}
-              alt="Construction dust"
+              alt="Drywall and concrete dust on a contractor jobsite — fine debris that clogs wet/dry vac filters"
               className="w-full h-full object-cover grayscale contrast-125"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-cream via-cream/30 to-transparent" />
@@ -101,7 +101,7 @@ export default function Performance() {
           <div className="relative aspect-[4/5] border-2 border-ink/15 overflow-hidden">
             <img
               src={WET_IMG}
-              alt="Wet vacuum operation"
+              alt="Contractor using a wet/dry vac to clean up water and slurry on a flooded basement floor"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-cream via-cream/20 to-transparent" />

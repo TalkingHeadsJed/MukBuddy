@@ -22,7 +22,7 @@ export default function Difference() {
           <div className="relative lg:col-span-5 min-h-[320px] border-2 border-ink/20 overflow-hidden">
             <img
               src={IMAGES.difference}
-              alt="Wet/dry vacuum in contractor use"
+              alt="Standard wet/dry vacuum being used by a contractor with Muk Buddy reusable bag installed"
               className="absolute inset-0 w-full h-full object-cover"
               loading="lazy"
             />

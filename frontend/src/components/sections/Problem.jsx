@@ -67,7 +67,7 @@ function Card({ testId, title, items, img, badge, stamp }) {
       <div className="relative h-48 sm:h-56 overflow-hidden border-b border-muk/30">
         <img
           src={img}
-          alt=""
+          alt="Contractor with dirty disposable wet/dry vac bag — old way of running a shop vacuum"
           className="w-full h-full object-cover grayscale contrast-125"
           loading="lazy"
         />

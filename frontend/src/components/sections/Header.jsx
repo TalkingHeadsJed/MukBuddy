@@ -41,7 +41,7 @@ export default function Header() {
         >
           <img
             src={IMAGES.logo}
-            alt="Muk Buddy"
+            alt="Muk Buddy logo — reusable wet/dry vac bag and shop vacuum filter brand"
             className="h-14 w-14 object-contain group-hover:animate-wobble"
           />
           <span className="hidden sm:inline-block font-bangers text-3xl tracking-wider text-ink">

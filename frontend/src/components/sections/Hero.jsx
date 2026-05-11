@@ -41,6 +41,11 @@ export default function Hero() {
             className="drip-title text-6xl sm:text-8xl lg:text-[7rem] leading-[0.9]"
           >
             MEET <br /> MUK BUDDY.
+            <span className="sr-only">
+              {" "}— The Reusable Wet/Dry Vac Bag Alternative. A patented 2-chamber filter
+              system for shop vacuums and wet/dry vacuums that maintains suction,
+              protects motors, and eliminates disposable bag costs for contractors.
+            </span>
           </h1>
 
           <p className="font-paytone text-2xl sm:text-3xl lg:text-4xl text-ink leading-[1.05]">
@@ -108,7 +113,7 @@ export default function Hero() {
           >
             <img
               src={IMAGES.heroComposite}
-              alt="Muk Buddy mascot with the patented 2-chamber product in hand"
+              alt="Muk Buddy patented 2-chamber reusable wet/dry vac bag held by contractor — alternative to disposable shop vacuum bags"
               className="relative w-full h-auto object-contain"
             />
             {/* Play button overlay */}

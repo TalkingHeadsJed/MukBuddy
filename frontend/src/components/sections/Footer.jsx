@@ -8,7 +8,7 @@ export default function Footer() {
         <a href="#top" className="flex items-center gap-3 group">
           <img
             src={IMAGES.logo}
-            alt="Muk Buddy"
+            alt="Muk Buddy — reusable shop vac and wet/dry vacuum filter system"
             className="h-14 w-14 object-contain group-hover:animate-wobble"
           />
           <span className="font-bangers text-3xl tracking-wider text-cream">
