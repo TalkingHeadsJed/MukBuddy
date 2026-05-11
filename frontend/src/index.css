@@ -98,18 +98,18 @@ body {
 
 /* ---------- Halftone dots bg (candy poster) ---------- */
 .halftone-cream {
-    background-image: radial-gradient(#1A0625 1.2px, transparent 1.6px);
-    background-size: 18px 18px;
+    background-image: radial-gradient(rgba(26, 6, 37, 0.22) 1px, transparent 1.4px);
+    background-size: 22px 22px;
     background-color: #FFF4D6;
 }
 .halftone-slime {
-    background-image: radial-gradient(#1A0625 1.2px, transparent 1.6px);
-    background-size: 18px 18px;
+    background-image: radial-gradient(rgba(26, 6, 37, 0.35) 1px, transparent 1.4px);
+    background-size: 22px 22px;
     background-color: #39FF14;
 }
 .halftone-muk {
-    background-image: radial-gradient(#FFF4D6 1.2px, transparent 1.6px);
-    background-size: 18px 18px;
+    background-image: radial-gradient(rgba(255, 244, 214, 0.35) 1px, transparent 1.4px);
+    background-size: 22px 22px;
     background-color: #7A6FE0;
 }
 
