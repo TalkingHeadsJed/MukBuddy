@@ -52,12 +52,12 @@ export default function Problem() {
 
             <div className="relative h-72 sm:h-96 overflow-hidden bg-cream">
               <img
-                src={IMAGES.baglessDisaster}
-                alt="A clogged, dust-caked shop-vac filter next to a smoking, burnt-out wet/dry vacuum motor — what running bagless actually does to your shop vac"
-                className="absolute inset-0 w-full h-full object-cover"
+                src={IMAGES.problemBagless}
+                alt="Real contractor in Carhartt holding a dust-caked, clogged shop-vac filter — what running bagless does to your wet/dry vac filter"
+                className="absolute inset-0 w-full h-full object-cover grayscale contrast-125"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/15 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-ink/10" />
             </div>
 
             <div className="p-6 sm:p-8 space-y-4">
