@@ -1,6 +1,6 @@
 import Header from "@/components/sections/Header";
 import Hero from "@/components/sections/Hero";
-import BagsVsMukBuddy from "@/components/sections/BagsVsMukBuddy";
+import BaglessLie from "@/components/sections/BaglessLie";
 import Problem from "@/components/sections/Problem";
 import Airflow from "@/components/sections/Airflow";
 import Difference from "@/components/sections/Difference";
@@ -23,7 +23,7 @@ export default function Landing() {
     <main data-testid="landing-page" className="bg-cream text-ink overflow-x-hidden">
       <Header />
       <Hero />
-      <BagsVsMukBuddy />
+      <BaglessLie />
       <Problem />
       <Money />
       <Airflow />

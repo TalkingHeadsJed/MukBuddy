@@ -86,6 +86,9 @@ export const IMAGES = {
   finalCta:
     "https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=2000",
 
+  // Bagless Lie section — generated illustration (clogged filter + smoking motor)
+  baglessDisaster: "/bagless-disaster.png",
+
   // 2-Chamber visual (legacy; TwoChamber section now plays mascotAnimation)
   twoChamberDiagram:
     "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/nn8s1cjy_Product%20Shot2.png",
