@@ -36,15 +36,11 @@ export default function Hero() {
             ★ PATENTED · BUILT BY A CONTRACTOR ★
           </div>
 
-          <div className="font-bangers text-2xl sm:text-3xl tracking-wider text-muk -mb-3 sm:-mb-4">
-            Meet Muk Buddy:
-          </div>
-
           <h1
             data-testid="hero-headline"
-            className="drip-title text-5xl sm:text-6xl lg:text-[3.75rem] xl:text-[4.5rem] leading-[0.95]"
+            className="drip-title text-[4.5rem] sm:text-[6rem] lg:text-[6.5rem] xl:text-[7.5rem] leading-[0.85] break-words"
           >
-            REUSABLE <br /> WET/DRY <br /> VAC BAG.
+            MUK<br />BUDDY
             <span className="sr-only">
               {" "}— A patented 2-chamber reusable filter system for shop vacuums
               and wet/dry vacuums. Fits Shop-Vac, Ridgid, Craftsman, Stanley,
@@ -53,19 +49,21 @@ export default function Hero() {
             </span>
           </h1>
 
-          <p className="font-paytone text-2xl sm:text-4xl lg:text-5xl text-ink leading-[1.05]">
-            <span className="hl-yellow">NEVER buy a disposable</span> <br />
-            wet/dry vac bag again.
+          <p
+            data-testid="hero-subhead"
+            className="font-bowlby text-3xl sm:text-4xl lg:text-5xl text-ink leading-[1.05]"
+          >
+            The reusable bag your{" "}
+            <span className="hl-yellow">wet/dry vac loves.</span>
           </p>
 
           <p className="text-base sm:text-lg text-ink/80 max-w-xl leading-relaxed font-semibold">
-            A patented{" "}
-            <span className="text-muk font-extrabold">2-chamber monster</span>{" "}
-            that fits most 12–20 gallon Shop-Vac, Ridgid, Craftsman, Stanley
-            and DeWalt wet/dry vacs (and works on smaller sizes too). Devours
-            dust, drinks up water, keeps suction strong, and{" "}
+            Patented{" "}
+            <span className="text-muk font-extrabold">2-chamber design</span>{" "}
+            fits most 12–20 gallon Shop-Vac, Ridgid, Craftsman, Stanley and
+            DeWalt wet/dry vacs.{" "}
             <span className="text-ink font-extrabold">
-              eats disposable bag costs for breakfast.
+              One purchase. Done.
             </span>
           </p>
 
