@@ -61,23 +61,23 @@ export default function BleedTicker() {
       role="complementary"
       aria-label="Live cost reminder"
     >
-      <div className="relative bg-ink text-cream border-4 border-slime shadow-brutal rounded-sm p-4 pr-9 -rotate-1 hover:rotate-0 transition-transform">
+      <div className="relative bg-ink text-cream border-4 border-bleed shadow-brutal rounded-sm p-4 pr-9 -rotate-1 hover:rotate-0 transition-transform">
         <button
           type="button"
           onClick={() => setDismissed(true)}
           aria-label="Dismiss reminder"
           data-testid="bleed-ticker-close"
-          className="absolute top-1.5 right-1.5 w-6 h-6 bg-slime text-ink border-2 border-cream flex items-center justify-center hover:scale-110 transition-transform"
+          className="absolute top-1.5 right-1.5 w-6 h-6 bg-bleed text-cream border-2 border-cream flex items-center justify-center hover:scale-110 transition-transform"
         >
           <X className="w-3.5 h-3.5" />
         </button>
 
-        <div className="font-bangers text-xs sm:text-sm uppercase tracking-[0.22em] text-slime mb-1.5">
+        <div className="font-bangers text-xs sm:text-sm uppercase tracking-[0.22em] text-bleed mb-1.5 animate-pulse">
           ★ Live Bleed Counter ★
         </div>
         <div className="font-bowlby text-xl sm:text-2xl leading-tight text-cream">
           You've lost{" "}
-          <span className="text-slime tabular-nums">
+          <span className="text-bleed tabular-nums">
             ${bleed.toFixed(4)}
           </span>{" "}
           on bags since landing.
@@ -89,7 +89,7 @@ export default function BleedTicker() {
           href="#contact"
           data-testid="bleed-ticker-cta"
           onClick={() => setDismissed(true)}
-          className="mt-3 inline-flex items-center gap-1.5 bg-slime text-ink font-bangers text-sm tracking-wider uppercase px-3 py-1.5 border-2 border-cream hover:translate-x-0.5 transition-transform"
+          className="mt-3 inline-flex items-center gap-1.5 bg-bleed text-cream font-bangers text-sm tracking-wider uppercase px-3 py-1.5 border-2 border-cream hover:translate-x-0.5 transition-transform"
         >
           Stop The Bleed
           <ArrowRight className="w-3.5 h-3.5" />

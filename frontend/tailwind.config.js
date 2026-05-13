@@ -68,6 +68,12 @@ module.exports = {
                                 900: '#15123D',
                         },
                         bubblegum: '#FFB3D9',   // playful accent pink
+                        bleed: {
+                                DEFAULT: '#FF1F2D',   // bright alarm red for live bleed counter
+                                400: '#FF4855',
+                                500: '#FF1F2D',
+                                600: '#E60018',
+                        },
                         chart: {
                                 '1': 'hsl(var(--chart-1))',
                                 '2': 'hsl(var(--chart-2))',
