@@ -12,7 +12,7 @@ export default function Hero() {
     <section
       id="top"
       data-testid="hero-section"
-      className="relative min-h-screen pt-28 pb-28 overflow-hidden halftone-cream"
+      className="relative pt-28 pb-12 sm:pb-16 overflow-hidden halftone-cream"
     >
       {/* Soft glows */}
       <div

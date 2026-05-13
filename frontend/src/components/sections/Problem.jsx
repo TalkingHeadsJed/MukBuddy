@@ -8,7 +8,7 @@ export default function Problem() {
     <section
       id="the-problem"
       data-testid="problem-section"
-      className="relative bg-cream py-24 sm:py-32 overflow-hidden border-y border-ink/10"
+      className="relative bg-cream py-16 sm:py-20 overflow-hidden border-y border-ink/10"
     >
       <div className="absolute inset-0 halftone-cream opacity-90" aria-hidden />
       <div className="slime-drip-muk absolute top-0 inset-x-0" aria-hidden />
@@ -20,24 +20,23 @@ export default function Problem() {
         {/* Headline */}
         <h2
           data-testid="bagless-headline"
-          className="font-bowlby text-5xl sm:text-7xl lg:text-[5.5rem] mt-6 leading-[0.95] text-ink max-w-5xl"
+          className="font-bowlby text-4xl sm:text-5xl lg:text-6xl mt-4 leading-[1.0] text-ink max-w-4xl"
         >
           You thought going bagless was{" "}
-          <span className="line-through decoration-[6px] decoration-muk">
+          <span className="line-through decoration-[5px] decoration-muk">
             saving money.
-          </span>
-          <br />
+          </span>{" "}
           It's <span className="text-muk">burning up your motor.</span>
         </h2>
-        <p className="mt-6 font-paytone text-2xl sm:text-3xl text-ink/80 max-w-3xl leading-tight">
-          Running bagless feels free. <br />
+        <p className="mt-5 font-paytone text-xl sm:text-2xl text-ink/80 max-w-3xl leading-tight">
+          Running bagless feels free —{" "}
           <span className="hl-yellow">
-            Until your filter clogs and your vac eats itself.
+            until your filter clogs and your vac eats itself.
           </span>
         </p>
 
         {/* The comparison */}
-        <div className="mt-16 grid lg:grid-cols-2 gap-6 lg:gap-8 items-stretch">
+        <div className="mt-12 grid lg:grid-cols-2 gap-6 lg:gap-8 items-stretch">
           {/* LEFT — Bagless = disaster */}
           <div
             data-testid="bagless-card"
@@ -157,10 +156,10 @@ export default function Problem() {
         </div>
 
         {/* Kicker / CTA */}
-        <div className="mt-14 grid md:grid-cols-12 gap-6 items-center">
+        <div className="mt-12 grid md:grid-cols-12 gap-6 items-center">
           <p
             data-testid="bagless-kicker"
-            className="md:col-span-8 font-bowlby text-3xl sm:text-5xl leading-[1.05] text-ink"
+            className="md:col-span-8 font-bowlby text-2xl sm:text-3xl lg:text-4xl leading-[1.1] text-ink"
           >
             Bagless isn't free.{" "}
             <span className="bg-muk text-cream px-2">
@@ -172,7 +171,7 @@ export default function Problem() {
             target="_blank"
             rel="noopener noreferrer"
             data-testid="bagless-cta"
-            className="md:col-span-4 sticker-btn inline-flex items-center justify-center gap-3 bg-slime text-ink font-bangers text-2xl uppercase tracking-wider px-8 py-5 border-4 border-ink rounded-sm shadow-brutal whitespace-nowrap"
+            className="md:col-span-4 sticker-btn inline-flex items-center justify-center gap-3 bg-slime text-ink font-bangers text-xl sm:text-2xl uppercase tracking-wider px-6 py-4 border-4 border-ink rounded-sm shadow-brutal whitespace-nowrap"
           >
             Save The Motor →
           </a>
