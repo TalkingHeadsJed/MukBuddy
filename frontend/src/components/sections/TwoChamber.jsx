@@ -116,46 +116,41 @@ export default function TwoChamber() {
             </p>
           </div>
 
-          {/* STEPS */}
+          {/* STEPS — 2-column grid (3 rows × 2 cols) so 5 steps + outcome match video height */}
           <div className="lg:col-span-7">
-            <ol className="space-y-4">
+            <ol className="grid grid-cols-1 sm:grid-cols-2 gap-3" data-testid="chamber-steps-grid">
               {steps.map(({ n, icon: Icon, title, desc }, i) => (
                 <li
                   key={n}
                   data-testid={`chamber-step-${i}`}
-                  className="group relative bg-white/80 backdrop-blur-sm border border-ink/20 hover:border-slime transition-colors"
+                  className="group relative bg-white/80 backdrop-blur-sm border border-ink/20 hover:border-slime transition-colors p-4 sm:p-5"
                 >
-                  <div className="grid grid-cols-[auto_1fr] gap-5 p-5 sm:p-6">
-                    {/* Number + icon column */}
-                    <div className="flex flex-col items-center gap-3">
-                      <div className="w-12 h-12 bg-slime text-black flex items-center justify-center font-anton text-xl">
-                        {n}
-                      </div>
-                      <div className="w-px flex-1 bg-ink/20 group-hover:bg-slime transition-colors min-h-[30px]" />
-                      <Icon className="w-5 h-5 text-slime" />
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="w-9 h-9 bg-slime text-black flex items-center justify-center font-anton text-base shrink-0">
+                      {n}
                     </div>
-                    {/* Content */}
-                    <div className="pt-1">
-                      <h3 className="font-anton text-2xl sm:text-3xl text-ink">{title}</h3>
-                      <p className="mt-2 text-base sm:text-lg text-ink/70 leading-relaxed">{desc}</p>
-                    </div>
+                    <Icon className="w-4 h-4 text-slime shrink-0" />
+                    <h3 className="font-anton text-lg sm:text-xl text-ink leading-tight">
+                      {title}
+                    </h3>
                   </div>
+                  <p className="text-sm text-ink/70 leading-snug">{desc}</p>
                 </li>
               ))}
-            </ol>
 
-            {/* Outcome banner */}
-            <div className="mt-6 bg-slime text-black p-6 sm:p-8 flex items-start gap-5">
-              <div className="shrink-0 w-10 h-10 bg-cream text-slime flex items-center justify-center">
-                <ArrowRight className="w-5 h-5" />
-              </div>
-              <div>
-                <span className="font-mono text-[10px] uppercase tracking-[0.3em] font-bold">The Outcome</span>
-                <p className="mt-2 font-anton text-2xl sm:text-3xl leading-[1.05]">
+              {/* Outcome — 6th cell in the same grid */}
+              <li className="relative bg-slime text-black p-4 sm:p-5 border-2 border-ink shadow-brutal-sm">
+                <div className="flex items-center gap-2 mb-1">
+                  <ArrowRight className="w-4 h-4" />
+                  <span className="font-mono text-[10px] uppercase tracking-[0.25em] font-bold">
+                    The Outcome
+                  </span>
+                </div>
+                <p className="font-anton text-base sm:text-lg leading-tight">
                   Suction stays strong. Filter stays open. Motor keeps breathing — wet or dry.
                 </p>
-              </div>
-            </div>
+              </li>
+            </ol>
           </div>
         </div>
       </div>

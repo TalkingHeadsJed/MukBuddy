@@ -29,9 +29,9 @@ export const IMAGES = {
   messyJobsite2:
     "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/kd9yw6ds_DK-bg-Ynwa-0U6hvMcal9_Xq9oD6fj.png",
   mascotAnimation:
-    "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/rhas5fxa_Muk_Buddy_Animation_gif.webm",
+    "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/oyaig8os_Muk_Buddy_Animation_gif_v2.webm",
   productVideo:
-    "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/rhas5fxa_Muk_Buddy_Animation_gif.webm",
+    "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/oyaig8os_Muk_Buddy_Animation_gif_v2.webm",
 
   // === SECTION SLOTS — point to user-provided where possible, stock as fallback ===
 
