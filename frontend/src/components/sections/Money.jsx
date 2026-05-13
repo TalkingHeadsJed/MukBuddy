@@ -7,7 +7,7 @@ export default function Money() {
     <section
       id="the-money"
       data-testid="money-section"
-      className="relative bg-ink text-cream py-24 sm:py-32 overflow-hidden"
+      className="relative bg-ink text-cream py-16 sm:py-20 overflow-hidden"
     >
       <div className="slime-drip-muk absolute top-0 inset-x-0" aria-hidden />
       <div className="absolute inset-0 grit opacity-30" aria-hidden />
@@ -56,35 +56,35 @@ export default function Money() {
           <Row
             label="With Muk Buddy"
             highlight
-            items={["One reusable system", "No recurring bag cost", "Filters last longer"]}
+            items={["One reusable system", "No recurring bag cost"]}
           />
         </div>
 
         {/* And then there's the motor... */}
-        <div className="mt-6 grid md:grid-cols-12 gap-6 items-stretch">
-          <div className="md:col-span-3 bg-slime text-ink p-6 border-4 border-cream shadow-brutal-slime flex flex-col justify-center -rotate-1">
-            <span className="font-bangers text-base sm:text-lg uppercase tracking-[0.2em] text-ink/70">
-              + Bonus Bleed
+        <div className="mt-6 grid md:grid-cols-12 gap-4 items-stretch">
+          <div className="md:col-span-3 bg-slime text-ink px-5 py-4 border-4 border-cream shadow-brutal-slime flex items-center gap-3 -rotate-1">
+            <span className="font-bangers text-sm uppercase tracking-[0.2em] text-ink/70 shrink-0">
+              + Bonus<br />Bleed
             </span>
-            <span className="font-bowlby text-3xl sm:text-4xl leading-[1] mt-1">
-              Burned <br /> motors.
+            <span className="font-bowlby text-2xl sm:text-3xl leading-[0.95]">
+              Burned motors.
             </span>
           </div>
-          <div className="md:col-span-9 bg-cream text-ink p-6 sm:p-8 border-4 border-cream shadow-brutal-slime flex flex-col sm:flex-row sm:items-end gap-4 sm:gap-6">
+          <div className="md:col-span-9 bg-cream text-ink px-5 py-4 sm:px-6 border-4 border-cream shadow-brutal-slime flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6">
             <div className="flex-1">
-              <div className="font-bangers text-base uppercase tracking-[0.2em] text-ink/70 mb-1">
+              <div className="font-bangers text-sm uppercase tracking-[0.2em] text-ink/70 mb-0.5">
                 Motor Replacement
               </div>
-              <div className="font-bowlby text-4xl sm:text-6xl leading-[0.95]">
+              <div className="font-bowlby text-3xl sm:text-5xl leading-[0.95]">
                 <CountUp prefix="~$" to={850} suffix=" / motor" duration={4000} />
               </div>
             </div>
             <p
-              className="font-bangers text-lg sm:text-xl text-ink/80 leading-tight max-w-xs"
+              className="font-bangers text-sm sm:text-base text-ink/80 leading-tight max-w-xs"
               data-testid="motor-cost-line"
             >
-              Burned-out motors don't <br />
-              fix themselves. <span className="text-muk">Bag cost is just half the bleed.</span>
+              Burned-out motors don't fix themselves.{" "}
+              <span className="text-muk">Bag cost is half the bleed.</span>
             </p>
           </div>
         </div>
@@ -114,13 +114,13 @@ function Row({ label, items, emphasis, highlight }) {
   const bg = emphasis ? "bg-muk text-cream" : highlight ? "bg-slime text-ink" : "bg-cream text-ink";
   const labelColor = emphasis ? "text-cream" : "text-ink";
   return (
-    <div className={`p-6 sm:p-8 border-4 border-cream ${bg} shadow-brutal-slime`}>
+    <div className={`p-5 sm:p-6 border-4 border-cream ${bg} shadow-brutal-slime`}>
       <div className={`font-bangers text-xl uppercase tracking-[0.2em] ${labelColor}`}>
         {label}
       </div>
-      <ul className="mt-5 space-y-2">
+      <ul className="mt-4 space-y-1.5">
         {items.map((t, i) => (
-          <li key={i} className="font-bowlby text-2xl sm:text-3xl leading-tight">
+          <li key={i} className="font-bowlby text-xl sm:text-2xl leading-tight">
             {typeof t === "object" ? (
               <CountUp prefix={t.prefix} to={t.value} suffix={t.suffix} duration={3500} />
             ) : (
