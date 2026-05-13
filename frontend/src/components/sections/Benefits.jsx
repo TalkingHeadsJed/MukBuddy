@@ -20,51 +20,53 @@ const benefits = [
 
 export default function Benefits() {
   return (
-    <section data-testid="benefits-section" className="relative py-24 sm:py-32">
+    <section data-testid="benefits-section" className="relative py-12 sm:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Overline>08 · What You Get</Overline>
-        <h2 className="font-anton text-4xl sm:text-6xl lg:text-7xl text-ink mt-4 leading-[0.95] max-w-5xl">
-          What changes when <br />
-          you use <span className="text-muk">Muk Buddy.</span>
+        <h2 className="font-anton text-3xl sm:text-4xl lg:text-5xl text-ink mt-3 leading-[1.0] max-w-4xl">
+          What changes when you use{" "}
+          <span className="text-muk">Muk Buddy.</span>
         </h2>
 
         {/* Wide banner image */}
-        <div className="relative mt-12 border-2 border-slime overflow-hidden">
+        <div className="relative mt-8 border-2 border-slime overflow-hidden">
           <img
             src={IMAGES.benefitsBanner}
             alt="Construction crew on jobsite"
-            className="w-full h-64 sm:h-80 object-cover"
+            className="w-full h-40 sm:h-52 object-cover"
             loading="lazy"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-cream via-cream/50 to-transparent" />
-          <div className="absolute inset-0 flex flex-col justify-center p-8 sm:p-12 max-w-xl">
-            <span className="font-mono text-xs text-muk uppercase tracking-[0.3em] mb-3">
+          <div className="absolute inset-0 flex flex-col justify-center p-6 sm:p-8 max-w-xl">
+            <span className="font-mono text-[10px] text-muk uppercase tracking-[0.3em] mb-1.5">
               // Field-Proven Advantage
             </span>
-            <p className="font-anton text-2xl sm:text-4xl text-ink leading-tight">
-              Built to take a beating. <br />
+            <p className="font-anton text-xl sm:text-3xl text-ink leading-tight">
+              Built to take a beating.{" "}
               <span className="text-muk">Every crew. Every day.</span>
             </p>
           </div>
         </div>
 
-        <div className="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="mt-6 grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {benefits.map(({ icon: Icon, title, desc }, i) => (
             <div
               key={title}
               data-testid={`benefit-${i}`}
-              className="group relative bg-white border border-ink/20 p-7 hover:border-slime transition-colors"
+              className="group relative bg-white border border-ink/20 p-4 sm:p-5 hover:border-slime transition-colors"
             >
-              <div className="flex items-start justify-between mb-6">
-                <div className="w-12 h-12 bg-slime/10 border border-slime/40 flex items-center justify-center group-hover:bg-slime transition-colors">
-                  <Icon className="w-6 h-6 text-muk group-hover:text-black transition-colors" />
+              <div className="flex items-center gap-3 mb-2">
+                <div className="w-9 h-9 bg-slime/10 border border-slime/40 flex items-center justify-center group-hover:bg-slime transition-colors shrink-0">
+                  <Icon className="w-4 h-4 text-muk group-hover:text-black transition-colors" />
                 </div>
-                <span className="font-mono text-xs text-ink/40">
+                <h3 className="font-anton text-lg sm:text-xl text-ink leading-tight">
+                  {title}
+                </h3>
+                <span className="ml-auto font-mono text-[10px] text-ink/40">
                   0{i + 1}
                 </span>
               </div>
-              <h3 className="font-anton text-2xl text-ink">{title}</h3>
-              <p className="mt-3 text-ink/70 leading-relaxed">{desc}</p>
+              <p className="text-sm text-ink/70 leading-snug">{desc}</p>
             </div>
           ))}
         </div>
