@@ -2,7 +2,6 @@ import Header from "@/components/sections/Header";
 import Hero from "@/components/sections/Hero";
 import BagsVsMukBuddy from "@/components/sections/BagsVsMukBuddy";
 import Problem from "@/components/sections/Problem";
-import Airflow from "@/components/sections/Airflow";
 import Difference from "@/components/sections/Difference";
 import TwoChamber from "@/components/sections/TwoChamber";
 import Performance from "@/components/sections/Performance";
@@ -26,7 +25,6 @@ export default function Landing() {
       <BagsVsMukBuddy />
       <Problem />
       <Money />
-      <Airflow />
       <Difference />
       <TwoChamber />
       <Performance />
