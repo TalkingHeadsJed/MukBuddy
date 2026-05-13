@@ -122,7 +122,7 @@ export default function BagsVsMukBuddy() {
                 {[
                   "Rugged fabric",
                   "Suction stays strong",
-                  "Clean filter for years",
+                  "No filter needed!",
                   "$0 recurring",
                 ].map((t) => (
                   <span
