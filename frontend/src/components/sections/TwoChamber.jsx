@@ -63,14 +63,13 @@ export default function TwoChamber() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Overline>05 · How It Works</Overline>
-        <h2 className="font-anton text-4xl sm:text-6xl lg:text-7xl text-ink mt-4 leading-[0.95] max-w-5xl">
-          Debris and airflow <br />
-          <span className="text-muk">shouldn't fight each other.</span>
+        <h2 className="font-anton text-3xl sm:text-4xl lg:text-5xl text-ink mt-4 leading-[1.0] max-w-4xl">
+          2 Chambers keep{" "}
+          <span className="text-muk">air flowing.</span>
         </h2>
-        <p className="mt-6 text-lg text-ink/70 max-w-3xl">
+        <p className="mt-4 text-base sm:text-lg text-ink/70 max-w-3xl">
           Disposable bags force everything through the same space — that's why
-          they clog. Muk Buddy's 2-chamber design separates the two jobs.
-          Here's exactly how it runs:
+          they clog. Muk Buddy's 2-chamber design separates the two jobs:
         </p>
 
         {/* Explainer grid: image left, steps right */}
