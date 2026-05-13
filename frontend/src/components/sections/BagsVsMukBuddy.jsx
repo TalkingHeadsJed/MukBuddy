@@ -49,7 +49,7 @@ export default function BagsVsMukBuddy() {
               1 Year. 1 Crew.
             </div>
 
-            <div className="relative h-72 sm:h-96 overflow-hidden bg-ink">
+            <div className="relative h-44 sm:h-52 overflow-hidden bg-ink">
               <img
                 src={IMAGES.bagPileMountain}
                 alt="A mountain of hundreds of disposable wet/dry vac bags piled in a warehouse — the recurring waste of running disposable shop vac bags"
@@ -58,23 +58,22 @@ export default function BagsVsMukBuddy() {
               <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent" />
             </div>
 
-            <div className="p-6 sm:p-8 space-y-4">
-              <div className="font-bangers text-3xl sm:text-5xl text-cream leading-[1]">
+            <div className="p-5 sm:p-6 space-y-2.5">
+              <div className="font-bangers text-3xl sm:text-4xl text-cream leading-[1]">
                 <CountUp to={500} duration={3500} suffix="+ bags" />
               </div>
-              <div className="font-mono text-xs text-cream/70 tracking-wider uppercase">
+              <div className="font-mono text-[11px] text-cream/70 tracking-wider uppercase">
                 // ~1–3 bags / day · $10 / bag · forever
               </div>
-              <ul className="space-y-2 pt-2 text-cream/90">
+              <ul className="space-y-1.5 pt-1 text-cream/90">
                 {[
                   "Rip open mid-job",
                   "Suction drops as they fill",
-                  "Filter clogs anyway",
-                  "$$$ every single month",
+                  "$$$ every month, forever",
                   "Mountain of trash by year's end",
                 ].map((t) => (
-                  <li key={t} className="flex items-start gap-2 font-bangers text-lg tracking-wider">
-                    <X className="w-5 h-5 text-muk shrink-0 mt-0.5" />
+                  <li key={t} className="flex items-start gap-2 font-bangers text-base tracking-wider leading-tight">
+                    <X className="w-4 h-4 text-muk shrink-0 mt-1" />
                     <span>{t}</span>
                   </li>
                 ))}
@@ -94,34 +93,33 @@ export default function BagsVsMukBuddy() {
               Years. Same Crew.
             </div>
 
-            <div className="relative h-72 sm:h-96 overflow-hidden bg-cream-100">
+            <div className="relative h-44 sm:h-52 overflow-hidden bg-cream-100">
               <img
                 src={IMAGES.productShot}
                 alt="Muk Buddy reusable wet/dry vac bag with retail packaging — patented 2-chamber filter alternative to disposable shop vac bags"
-                className="absolute inset-0 w-full h-full object-contain p-6"
+                className="absolute inset-0 w-full h-full object-contain p-4"
               />
-              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-ink text-slime font-bangers text-base sm:text-lg tracking-wider px-4 py-1.5 border-2 border-ink shadow-brutal-sm">
+              <div className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-ink text-slime font-bangers text-sm sm:text-base tracking-wider px-3 py-1 border-2 border-ink shadow-brutal-sm">
                 ONE-TIME PURCHASE
               </div>
             </div>
 
-            <div className="p-6 sm:p-8 space-y-4">
-              <div className="font-bangers text-3xl sm:text-5xl text-ink leading-[1]">
+            <div className="p-5 sm:p-6 space-y-2.5">
+              <div className="font-bangers text-3xl sm:text-4xl text-ink leading-[1]">
                 1 Muk Buddy.
               </div>
-              <div className="font-mono text-xs text-ink/70 tracking-wider uppercase">
+              <div className="font-mono text-[11px] text-ink/70 tracking-wider uppercase">
                 // Reusable · 2-chamber · empties &amp; rinses clean
               </div>
-              <ul className="space-y-2 pt-2 text-ink">
+              <ul className="space-y-1.5 pt-1 text-ink">
                 {[
                   "Doesn't rip — rugged fabric",
                   "Suction stays strong all job",
                   "Filter stays clean for years",
                   "$0 recurring cost",
-                  "Zero bag waste, ever",
                 ].map((t) => (
-                  <li key={t} className="flex items-start gap-2 font-bangers text-lg tracking-wider">
-                    <Check className="w-5 h-5 text-slime-600 shrink-0 mt-0.5" />
+                  <li key={t} className="flex items-start gap-2 font-bangers text-base tracking-wider leading-tight">
+                    <Check className="w-4 h-4 text-slime-600 shrink-0 mt-1" />
                     <span>{t}</span>
                   </li>
                 ))}
