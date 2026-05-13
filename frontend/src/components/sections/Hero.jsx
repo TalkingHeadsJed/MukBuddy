@@ -1,12 +1,13 @@
 import { Play, Sparkles, Star } from "lucide-react";
-import { ORDER_URL, VIMEO_EMBED } from "@/lib/constants";
+import { ORDER_URL, VIMEO_EMBED, VIMEO_EMBED_SEEITRUN } from "@/lib/constants";
 import { IMAGES } from "@/lib/images";
 import { useState } from "react";
 
 export default function Hero() {
-  const [playing, setPlaying] = useState(false);
+  const [playing, setPlaying] = useState(null); // null | url string
 
-  const handlePlay = () => setPlaying(true);
+  const playMain = () => setPlaying(VIMEO_EMBED);
+  const playSeeItRun = () => setPlaying(VIMEO_EMBED_SEEITRUN);
 
   return (
     <section
@@ -80,7 +81,7 @@ export default function Hero() {
             </a>
             <button
               data-testid="hero-watch-btn"
-              onClick={handlePlay}
+              onClick={playMain}
               className="sticker-btn inline-flex items-center justify-center gap-3 bg-cream text-ink font-bangers text-xl sm:text-2xl uppercase tracking-wider px-8 py-5 border-4 border-ink rounded-sm"
             >
               <Play className="w-5 h-5 fill-current" />
@@ -111,7 +112,7 @@ export default function Hero() {
           {/* Big Hero Composite Card — clickable, plays video on click */}
           <button
             type="button"
-            onClick={handlePlay}
+            onClick={playMain}
             data-testid="hero-mascot"
             aria-label="Watch Muk Buddy demo"
             className="group relative bg-cream border-4 border-ink rounded-sm shadow-brutal-muk overflow-hidden block w-full text-left cursor-pointer"
@@ -142,7 +143,7 @@ export default function Hero() {
           {/* Mini video demo card */}
           <button
             data-testid="hero-watch-btn-mini"
-            onClick={handlePlay}
+            onClick={playSeeItRun}
             className="sticker-btn mt-5 w-full bg-cream border-4 border-ink flex items-center gap-4 p-3 rounded-sm text-left"
           >
             <div className="shrink-0 w-14 h-14 bg-slime border-2 border-ink flex items-center justify-center">
@@ -157,10 +158,10 @@ export default function Hero() {
 
           {/* Video modal (Vimeo) */}
           {playing && (
-            <div className="fixed inset-0 z-50 bg-ink/90 flex items-center justify-center p-4" onClick={() => setPlaying(false)}>
+            <div className="fixed inset-0 z-50 bg-ink/90 flex items-center justify-center p-4" onClick={() => setPlaying(null)}>
               <div className="relative w-full max-w-5xl bg-ink border-4 border-slime shadow-brutal rounded-sm overflow-hidden" onClick={(e) => e.stopPropagation()}>
                 <button
-                  onClick={() => setPlaying(false)}
+                  onClick={() => setPlaying(null)}
                   data-testid="hero-video-close"
                   className="absolute top-2 right-2 z-10 w-10 h-10 bg-slime text-ink font-bangers text-2xl border-2 border-ink flex items-center justify-center"
                   aria-label="Close video"
@@ -170,7 +171,7 @@ export default function Hero() {
                 <div className="relative aspect-video">
                   <iframe
                     data-testid="hero-video"
-                    src={`${VIMEO_EMBED}&autoplay=1`}
+                    src={`${playing}&autoplay=1`}
                     className="absolute inset-0 w-full h-full"
                     allow="autoplay; fullscreen; picture-in-picture"
                     allowFullScreen
