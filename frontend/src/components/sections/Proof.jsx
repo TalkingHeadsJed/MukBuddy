@@ -3,8 +3,8 @@ import { IMAGES } from "@/lib/images";
 
 const quotes = [
   { text: "With Muk Buddy the suction is stronger and more consistent through the entire job. So we get done faster.", attr: "Drywall Contractor", portrait: IMAGES.portrait1 },
-  { text: "Feels like a brand new machine.", attr: "Remodel Crew Lead", portrait: IMAGES.portrait2 },
   { text: "I haven't used a filter or disposable bag in over a year. More money for me!", attr: "Concrete Cutter", portrait: IMAGES.portrait3 },
+  { text: "Feels like a brand new machine.", attr: "Remodel Crew Lead", portrait: IMAGES.portrait2 },
   { text: "It's paid for itself in less than a month!", attr: "Finish Carpenter", portrait: IMAGES.portrait4 },
 ];
 
