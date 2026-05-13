@@ -2,6 +2,7 @@ import { Overline } from "@/components/sections/Problem";
 import { Zap } from "lucide-react";
 import { IMAGES } from "@/lib/images";
 import GeoStamp from "@/components/sections/GeoStamp";
+import HeadlinePeek from "@/components/sections/HeadlinePeek";
 
 export default function Difference() {
   return (
@@ -10,7 +11,8 @@ export default function Difference() {
       data-testid="difference-section"
       className="relative py-24 sm:py-32 bg-white border-y border-ink/10"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <HeadlinePeek variant="straight" rotate={0} className="top-16 right-4 lg:top-8 lg:right-8" testId="peek-difference" />
         <Overline>05 · The Difference</Overline>
         <h2 className="font-anton text-4xl sm:text-6xl lg:text-7xl text-ink mt-4 leading-[0.95] max-w-5xl">
           Your motor runs like{" "}

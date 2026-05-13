@@ -14,6 +14,13 @@ export const IMAGES = {
     "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/dq01bb5d_Product%20Shot.png",
   productShotBox:
     "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/ydis8ste_Product%20Shot.png",
+  // Headline peek-in variants (transparent PNGs of the Muk Buddy product)
+  productStraight:
+    "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/vwt7hg78_MukBuddyproduct2.png",
+  productTilted1:
+    "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/q7nti1r1_MukBuddyTilted1.png",
+  productTilted2:
+    "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/hghh14sa_MukBuddyTilted2a.png",
   bagPileMountain:
     "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/4277znce_generated-image%20%2818%29.png",
   disposableBagsFan:

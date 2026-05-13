@@ -2,6 +2,7 @@ import { ArrowRight, X, Check } from "lucide-react";
 import { IMAGES } from "@/lib/images";
 import { ORDER_URL } from "@/lib/constants";
 import CountUp from "@/components/sections/CountUp";
+import HeadlinePeek from "@/components/sections/HeadlinePeek";
 
 export default function BagsVsMukBuddy() {
   return (
@@ -14,6 +15,7 @@ export default function BagsVsMukBuddy() {
       <div className="slime-drip-muk absolute top-0 inset-x-0" aria-hidden />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <HeadlinePeek variant="tilt1" rotate={-8} className="top-10 right-4 lg:top-6 lg:right-8" testId="peek-bags" />
         {/* Overline */}
         <div className="flex items-center gap-3 pt-8">
           <span className="w-8 h-[3px] bg-muk" />

@@ -2,6 +2,7 @@ import { X, Check, Flame } from "lucide-react";
 import { IMAGES } from "@/lib/images";
 import { ORDER_URL } from "@/lib/constants";
 import CountUp from "@/components/sections/CountUp";
+import HeadlinePeek from "@/components/sections/HeadlinePeek";
 
 export default function Problem() {
   return (
@@ -14,6 +15,7 @@ export default function Problem() {
       <div className="slime-drip-muk absolute top-0 inset-x-0" aria-hidden />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <HeadlinePeek variant="tilt2" rotate={6} className="top-8 right-4 lg:top-2 lg:right-8" testId="peek-problem" />
         {/* Overline */}
         <Overline>01 · The Bagless Lie</Overline>
 

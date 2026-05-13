@@ -1,11 +1,13 @@
 import { Overline } from "@/components/sections/Problem";
 import { Trash2, Recycle } from "lucide-react";
 import { IMAGES } from "@/lib/images";
+import HeadlinePeek from "@/components/sections/HeadlinePeek";
 
 export default function WasteScale() {
   return (
     <section data-testid="waste-section" className="relative py-12 sm:py-16 bg-white border-y border-ink/10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <HeadlinePeek variant="tilt2" rotate={8} className="top-4 right-4 lg:top-0 lg:right-8" testId="peek-waste" />
         <Overline>09 · Waste + Scale</Overline>
         <h2 className="font-anton text-3xl sm:text-4xl lg:text-5xl text-ink mt-3 leading-[1.0] max-w-4xl">
           Stop throwing away bags{" "}

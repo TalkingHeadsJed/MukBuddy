@@ -8,6 +8,7 @@ import {
   Clock,
 } from "lucide-react";
 import { IMAGES } from "@/lib/images";
+import HeadlinePeek from "@/components/sections/HeadlinePeek";
 
 const benefits = [
   { icon: Gauge, title: "Consistent Suction", desc: "From the first inch to the last." },
@@ -21,7 +22,8 @@ const benefits = [
 export default function Benefits() {
   return (
     <section data-testid="benefits-section" className="relative py-12 sm:py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <HeadlinePeek variant="tilt1" rotate={-6} className="top-6 right-4 lg:top-2 lg:right-8" testId="peek-benefits" />
         <Overline>08 · What You Get</Overline>
         <h2 className="font-anton text-3xl sm:text-4xl lg:text-5xl text-ink mt-3 leading-[1.0] max-w-4xl">
           What changes when you use{" "}
