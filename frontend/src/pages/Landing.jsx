@@ -25,8 +25,8 @@ export default function Landing() {
       <BagsVsMukBuddy />
       <Problem />
       <Money />
-      <Difference />
       <TwoChamber />
+      <Difference />
       <Performance />
       <Benefits />
       <WasteScale />
