@@ -22,11 +22,9 @@ export default function Problem() {
           data-testid="bagless-headline"
           className="font-bowlby text-4xl sm:text-5xl lg:text-6xl mt-4 leading-[1.0] text-ink max-w-4xl"
         >
-          You thought going bagless was{" "}
-          <span className="line-through decoration-[5px] decoration-muk">
-            saving money.
-          </span>{" "}
-          It's <span className="text-muk">burning up your motor.</span>
+          Going bag-less saves money.{" "}
+          <span className="text-muk">WRONG!</span> It{" "}
+          <span className="text-muk">burns up motors!</span>
         </h2>
         <p className="mt-5 font-paytone text-xl sm:text-2xl text-ink/80 max-w-3xl leading-tight">
           Running bagless feels free —{" "}
