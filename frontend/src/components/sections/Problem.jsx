@@ -127,9 +127,9 @@ export default function Problem() {
 
             <div className="p-6 sm:p-8 space-y-4">
               <div className="font-bangers text-3xl sm:text-5xl text-ink leading-[1]">
-                Filter stays clean
+                No filter needed
                 <br />
-                <span className="text-muk">for years.</span>
+                <span className="text-muk">anymore!</span>
               </div>
               <div className="font-mono text-[11px] text-ink/70 tracking-wider uppercase">
                 // 2-chamber design · dust trapped in chamber 1, never hits the filter
