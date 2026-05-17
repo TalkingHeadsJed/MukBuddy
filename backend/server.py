@@ -1,9 +1,9 @@
-from fastapi import FastAPI, APIRouter, HTTPException, Request, status
+from fastapi import FastAPI, APIRouter, Depends, HTTPException, Request, status
 from fastapi.responses import JSONResponse
 from dotenv import load_dotenv
 from starlette.middleware.cors import CORSMiddleware
 from starlette.middleware.base import BaseHTTPMiddleware
-from motor.motor_asyncio import AsyncIOMotorClient
+from sqlalchemy.ext.asyncio import AsyncSession
 import os
 import re
 import logging
@@ -15,14 +15,11 @@ from typing import Optional, Deque, Dict
 import uuid
 from datetime import datetime, timezone
 
-
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / ".env")
 
-# MongoDB connection
-mongo_url = os.environ["MONGO_URL"]
-client = AsyncIOMotorClient(mongo_url)
-db = client[os.environ["DB_NAME"]]
+# Database layer (SQLAlchemy async — SQLite in dev, MySQL on Pair).
+from db import Lead, get_session, init_db  # noqa: E402
 
 # Logging
 logging.basicConfig(
@@ -33,7 +30,7 @@ logger = logging.getLogger("mukbuddy")
 
 app = FastAPI(
     title="Muk Buddy API",
-    docs_url=None,   # disable public docs to reduce attack surface
+    docs_url=None,
     redoc_url=None,
     openapi_url=None,
 )
@@ -57,7 +54,7 @@ class SecurityHeadersMiddleware(BaseHTTPMiddleware):
         return response
 
 
-# ---------- Simple in-memory rate limiter (per-IP sliding window) ----------
+# ---------- In-memory rate limiter (per-IP sliding window) ----------
 _RATE_WINDOW_SEC = 60
 _RATE_MAX_REQUESTS = 5
 _rate_buckets: Dict[str, Deque[float]] = defaultdict(deque)
@@ -110,7 +107,7 @@ class LeadCreate(BaseModel):
         return re.sub(r"[\x00-\x1f\x7f]", "", v).strip()
 
 
-class Lead(BaseModel):
+class LeadOut(BaseModel):
     model_config = ConfigDict(extra="ignore")
 
     id: str
@@ -133,8 +130,16 @@ async def health():
     return {"status": "healthy", "time": datetime.now(timezone.utc).isoformat()}
 
 
-@api_router.post("/leads", response_model=Lead, status_code=status.HTTP_201_CREATED)
-async def create_lead(payload: LeadCreate, request: Request):
+@api_router.post(
+    "/leads",
+    response_model=LeadOut,
+    status_code=status.HTTP_201_CREATED,
+)
+async def create_lead(
+    payload: LeadCreate,
+    request: Request,
+    session: AsyncSession = Depends(get_session),
+):
     ip = _client_ip(request)
 
     # Honeypot: silently reject bots
@@ -144,47 +149,49 @@ async def create_lead(payload: LeadCreate, request: Request):
 
     if not _rate_limit_check(ip):
         logger.warning("Rate limit exceeded from %s", ip)
-        raise HTTPException(status_code=429, detail="Too many requests. Please try again later.")
+        raise HTTPException(
+            status_code=429,
+            detail="Too many requests. Please try again later.",
+        )
 
-    lead_id = str(uuid.uuid4())
-    created_at = datetime.now(timezone.utc)
-
-    doc = {
-        "id": lead_id,
-        "name": payload.name,
-        "email": payload.email,
-        "phone": payload.phone,
-        "crew_size": payload.crew_size,
-        "message": payload.message,
-        "created_at": created_at.isoformat(),
-        "meta": {
-            "ip": ip,
-            "user_agent": (request.headers.get("user-agent") or "")[:300],
-        },
-    }
-
-    try:
-        await db.leads.insert_one(doc)
-    except Exception as e:
-        logger.exception("Failed to insert lead: %s", e)
-        raise HTTPException(status_code=500, detail="Unable to save. Please try again.")
-
-    logger.info("Lead captured: %s (%s)", lead_id, payload.email)
-
-    return Lead(
-        id=lead_id,
+    lead = Lead(
+        id=str(uuid.uuid4()),
         name=payload.name,
         email=payload.email,
         phone=payload.phone,
         crew_size=payload.crew_size,
         message=payload.message,
-        created_at=created_at,
+        created_at=datetime.now(timezone.utc),
+        ip=ip,
+        user_agent=(request.headers.get("user-agent") or "")[:300],
+        notified=False,
+    )
+
+    try:
+        session.add(lead)
+        await session.commit()
+    except Exception as e:
+        await session.rollback()
+        logger.exception("Failed to insert lead: %s", e)
+        raise HTTPException(
+            status_code=500, detail="Unable to save. Please try again."
+        )
+
+    logger.info("Lead captured: %s (%s)", lead.id, payload.email)
+
+    return LeadOut(
+        id=lead.id,
+        name=lead.name,
+        email=lead.email,
+        phone=lead.phone,
+        crew_size=lead.crew_size,
+        message=lead.message,
+        created_at=lead.created_at,
     )
 
 
 # ---------- App wiring ----------
 app.include_router(api_router)
-
 app.add_middleware(SecurityHeadersMiddleware)
 
 # CORS
@@ -203,9 +210,12 @@ app.add_middleware(
 @app.exception_handler(Exception)
 async def unhandled_exception_handler(request: Request, exc: Exception):
     logger.exception("Unhandled error: %s", exc)
-    return JSONResponse(status_code=500, content={"detail": "Internal server error"})
+    return JSONResponse(
+        status_code=500, content={"detail": "Internal server error"}
+    )
 
 
-@app.on_event("shutdown")
-async def shutdown_db_client():
-    client.close()
+@app.on_event("startup")
+async def on_startup() -> None:
+    await init_db()
+    logger.info("DB ready. URL=%s", os.environ["DATABASE_URL"].split("@")[-1])
