@@ -20,6 +20,7 @@ load_dotenv(ROOT_DIR / ".env")
 
 # Database layer (SQLAlchemy async — SQLite in dev, MySQL on Pair).
 from db import Lead, get_session, init_db  # noqa: E402
+from email_service import send_lead_notification  # noqa: E402
 
 # Logging
 logging.basicConfig(
@@ -178,6 +179,24 @@ async def create_lead(
         )
 
     logger.info("Lead captured: %s (%s)", lead.id, payload.email)
+
+    # Notify owner via Resend. Non-blocking; failure does NOT affect this response.
+    sent = await send_lead_notification(
+        name=lead.name,
+        email=lead.email,
+        phone=lead.phone,
+        crew_size=lead.crew_size,
+        message=lead.message,
+        ip=lead.ip,
+        user_agent=lead.user_agent,
+        created_at=lead.created_at,
+    )
+    if sent:
+        try:
+            lead.notified = True
+            await session.commit()
+        except Exception:
+            await session.rollback()
 
     return LeadOut(
         id=lead.id,
