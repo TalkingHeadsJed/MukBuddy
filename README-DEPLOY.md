@@ -107,6 +107,21 @@ journalctl -u mukbuddy-api -f
 
 ## 5. Frontend build
 
+### 5a. ⚠️ PRODUCTION SCRUB (required, security-sensitive)
+
+The `frontend/public/index.html` from the Emergent preview includes three things
+that **must be removed before going live on mukbuddy.com**:
+
+1. The `<script src="https://assets.emergent.sh/scripts/emergent-main.js"></script>` line
+2. The entire `<a id="emergent-badge">...</a>` "Made with Emergent" link block
+3. The entire bottom `<script>...posthog.init(...)</script>` analytics block (this is Emergent's internal telemetry, not yours)
+
+These are dev-environment tooling — they should not ship to production. Open
+`frontend/public/index.html` and delete those three blocks. If you plan to add
+Google Analytics 4 or another tracker, drop that snippet in their place.
+
+### 5b. Build
+
 The frontend is already built locally (see `frontend/build/`). If you need to rebuild from source on the server:
 
 ```bash
@@ -115,6 +130,23 @@ cd ~/app/frontend
 yarn install --frozen-lockfile
 REACT_APP_BACKEND_URL=https://mukbuddy.com yarn build
 ```
+
+### 5c. Favicons
+
+The placeholder `<link rel="icon">` tags in `index.html` point to `/favicon.ico`,
+`/favicon-32x32.png`, and `/apple-touch-icon.png`. Drop your real favicon files
+into `frontend/public/` before building (or directly into `/var/www/mukbuddy/build/`
+after build). Google uses these in search-result snippets.
+
+### 5d. Move OG/product images to your own domain (recommended)
+
+`index.html` and `sitemap.xml` currently reference image URLs at
+`customer-assets.emergentagent.com`. These work today but they're not stable.
+After launch, re-upload these images to `https://mukbuddy.com/images/` and
+update the URLs in `index.html` + `sitemap.xml`. Long-term, social previews
+should live on your own domain.
+
+### 5e. Copy build output to Apache
 
 Copy the build output to Apache's web root:
 ```bash

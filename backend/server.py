@@ -55,6 +55,27 @@ class SecurityHeadersMiddleware(BaseHTTPMiddleware):
         return response
 
 
+# Hard cap on request body size — defense-in-depth alongside Apache's LimitRequestBody.
+_MAX_BODY_BYTES = 64 * 1024  # 64 KB
+
+
+class BodySizeLimitMiddleware(BaseHTTPMiddleware):
+    async def dispatch(self, request: Request, call_next):
+        cl = request.headers.get("content-length")
+        if cl is not None:
+            try:
+                if int(cl) > _MAX_BODY_BYTES:
+                    return JSONResponse(
+                        status_code=413,
+                        content={"detail": "Request body too large"},
+                    )
+            except ValueError:
+                return JSONResponse(
+                    status_code=400, content={"detail": "Bad request"}
+                )
+        return await call_next(request)
+
+
 # ---------- In-memory rate limiter (per-IP sliding window) ----------
 _RATE_WINDOW_SEC = 60
 _RATE_MAX_REQUESTS = 5
@@ -212,6 +233,7 @@ async def create_lead(
 # ---------- App wiring ----------
 app.include_router(api_router)
 app.add_middleware(SecurityHeadersMiddleware)
+app.add_middleware(BodySizeLimitMiddleware)
 
 # CORS
 _cors = os.environ.get("CORS_ORIGINS", "*")

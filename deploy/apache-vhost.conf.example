@@ -54,6 +54,9 @@
     ProxyPass           /api/   http://127.0.0.1:8001/api/
     ProxyPassReverse    /api/   http://127.0.0.1:8001/api/
 
+    # Reject oversize request bodies BEFORE they hit FastAPI (32KB is plenty for a lead form).
+    LimitRequestBody    32768
+
     # Forward real client IP to FastAPI (used by rate limiter)
     RequestHeader set X-Forwarded-Proto "https"
 
@@ -72,6 +75,24 @@
     Header always set Referrer-Policy "strict-origin-when-cross-origin"
     Header always set Permissions-Policy "geolocation=(), microphone=(), camera=(), payment=()"
     Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+
+    # Content Security Policy — locks what scripts/iframes/etc the browser will execute.
+    # If you add Google Ads / Meta Pixel / GA4, ADD their script + connect domains here
+    # (e.g. https://www.googletagmanager.com, https://connect.facebook.net).
+    Header always set Content-Security-Policy "\
+default-src 'self'; \
+script-src 'self' 'unsafe-inline'; \
+style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; \
+font-src 'self' https://fonts.gstatic.com data:; \
+img-src 'self' data: blob: https:; \
+media-src 'self' https:; \
+connect-src 'self' https://mukbuddy.com; \
+frame-src https://player.vimeo.com; \
+frame-ancestors 'none'; \
+form-action 'self'; \
+base-uri 'self'; \
+object-src 'none'; \
+upgrade-insecure-requests"
 
     # === Logs ===
     ErrorLog  ${APACHE_LOG_DIR}/mukbuddy_error.log
