@@ -13,6 +13,9 @@ sys.path.insert(0, str(ROOT))
 TEST_DB = ROOT / "tests_leads.db"
 os.environ["DATABASE_URL"] = f"sqlite+aiosqlite:///{TEST_DB}"
 os.environ.setdefault("CORS_ORIGINS", "*")
+# Disable real email sending during tests.
+os.environ.pop("RESEND_API_KEY", None)
+os.environ.pop("LEAD_NOTIFY_TO", None)
 
 import pytest
 from httpx import AsyncClient, ASGITransport
@@ -20,6 +23,13 @@ from httpx import AsyncClient, ASGITransport
 from server import app  # noqa: E402
 from db import init_db, engine, AsyncSessionLocal, Lead  # noqa: E402
 from sqlalchemy import select  # noqa: E402
+
+# Force-disable email after server.py has loaded its .env, so real emails
+# never fire during tests even if RESEND_API_KEY is set in the dev .env.
+import email_service  # noqa: E402
+
+email_service._API_KEY = None
+email_service.LEAD_NOTIFY_TO = ""
 
 
 @pytest.fixture(scope="session")

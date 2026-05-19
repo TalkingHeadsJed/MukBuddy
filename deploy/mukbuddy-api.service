@@ -1,0 +1,56 @@
+# systemd unit for the Muk Buddy FastAPI backend.
+#
+# Install steps (on Pair VPS, as root):
+#   1. Copy this file to /etc/systemd/system/mukbuddy-api.service
+#   2. Edit User=, Group=, WorkingDirectory=, EnvironmentFile= to match your paths
+#   3. systemctl daemon-reload
+#   4. systemctl enable --now mukbuddy-api.service
+#   5. systemctl status mukbuddy-api.service  (verify it's active/running)
+#   6. journalctl -u mukbuddy-api -f          (tail logs)
+#
+# The backend binds to 127.0.0.1:8001 — only reachable LOCALLY.
+# Apache/Nginx reverse-proxies external HTTPS traffic to it.
+
+[Unit]
+Description=Muk Buddy FastAPI backend (uvicorn)
+After=network.target mysql.service
+Wants=mysql.service
+
+[Service]
+Type=simple
+
+# CHANGE THESE to match your VPS layout:
+User=mukbuddy
+Group=mukbuddy
+WorkingDirectory=/home/mukbuddy/app/backend
+EnvironmentFile=/home/mukbuddy/app/backend/.env
+
+# Use the project's virtualenv:
+ExecStart=/home/mukbuddy/app/.venv/bin/uvicorn server:app \
+          --host 127.0.0.1 \
+          --port 8001 \
+          --workers 2 \
+          --proxy-headers \
+          --forwarded-allow-ips=127.0.0.1 \
+          --log-level info
+
+Restart=on-failure
+RestartSec=5
+KillSignal=SIGINT
+TimeoutStopSec=20
+
+# Security hardening
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=read-only
+ReadWritePaths=/home/mukbuddy/app/backend
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+LockPersonality=true
+RestrictRealtime=true
+RestrictNamespaces=true
+
+[Install]
+WantedBy=multi-user.target

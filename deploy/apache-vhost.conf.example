@@ -1,0 +1,79 @@
+# Apache vhost config for mukbuddy.com — example.
+#
+# Install:
+#   1. Save as /etc/apache2/sites-available/mukbuddy.conf
+#   2. a2ensite mukbuddy
+#   3. a2enmod proxy proxy_http headers rewrite ssl
+#   4. systemctl reload apache2
+#   5. Run certbot:  certbot --apache -d mukbuddy.com -d www.mukbuddy.com
+#
+# This serves:
+#   • Static React build from /var/www/mukbuddy/build/
+#   • /api/*  → reverse-proxied to local FastAPI on 127.0.0.1:8001
+#   • All other URLs → fall through to React Router (e.g. /thank-you)
+
+<VirtualHost *:80>
+    ServerName mukbuddy.com
+    ServerAlias www.mukbuddy.com
+    # Force HTTPS for everything
+    RewriteEngine On
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}$1 [R=301,L]
+</VirtualHost>
+
+<VirtualHost *:443>
+    ServerName mukbuddy.com
+    ServerAlias www.mukbuddy.com
+
+    # === SSL — managed by certbot ===
+    SSLEngine on
+    SSLCertificateFile      /etc/letsencrypt/live/mukbuddy.com/fullchain.pem
+    SSLCertificateKeyFile   /etc/letsencrypt/live/mukbuddy.com/privkey.pem
+    SSLProtocol             all -SSLv2 -SSLv3 -TLSv1 -TLSv1.1
+    SSLCipherSuite          HIGH:!aNULL:!MD5
+
+    # === Static React build ===
+    DocumentRoot /var/www/mukbuddy/build
+
+    <Directory /var/www/mukbuddy/build>
+        Options -Indexes +FollowSymLinks
+        AllowOverride None
+        Require all granted
+
+        # Long cache for hashed JS/CSS, short for index.html
+        <FilesMatch "\.(?:js|css|woff2?|svg|png|jpe?g|gif|webp|ico)$">
+            Header set Cache-Control "public, max-age=31536000, immutable"
+        </FilesMatch>
+        <FilesMatch "^index\.html$">
+            Header set Cache-Control "no-cache, no-store, must-revalidate"
+        </FilesMatch>
+    </Directory>
+
+    # === Proxy /api/* → FastAPI (uvicorn on localhost) ===
+    ProxyPreserveHost   On
+    ProxyRequests       Off
+    ProxyPass           /api/   http://127.0.0.1:8001/api/
+    ProxyPassReverse    /api/   http://127.0.0.1:8001/api/
+
+    # Forward real client IP to FastAPI (used by rate limiter)
+    RequestHeader set X-Forwarded-Proto "https"
+
+    # === React Router SPA fallback ===
+    # If the request is NOT for an existing file/dir AND NOT under /api/,
+    # rewrite to index.html so client-side routes (/thank-you etc) work.
+    RewriteEngine On
+    RewriteCond %{REQUEST_URI} !^/api/
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^ /index.html [L]
+
+    # === Security headers ===
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "DENY"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "geolocation=(), microphone=(), camera=(), payment=()"
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+
+    # === Logs ===
+    ErrorLog  ${APACHE_LOG_DIR}/mukbuddy_error.log
+    CustomLog ${APACHE_LOG_DIR}/mukbuddy_access.log combined
+</VirtualHost>
