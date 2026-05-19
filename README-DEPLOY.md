@@ -87,20 +87,53 @@ If that prints a Connection object, MySQL is reachable. The `leads` table auto-c
 
 ---
 
-## 4. Install the systemd service
+## 4. Backend process management
+
+You have two options for keeping uvicorn alive. **Use Option A unless you have
+root and want full control.**
+
+### Option A — Pair supervisord (recommended)
+
+Pair support manages a system-wide supervisord and will add your app to it if
+you give them the startup command. Two files to hand them:
+
+1. **`/home/mukbuddy/app/deploy/run-mukbuddy-api.sh`** — the non-daemonized
+   command Pair asked for. Make sure it is executable on the server:
+   ```bash
+   chmod +x /home/mukbuddy/app/deploy/run-mukbuddy-api.sh
+   ```
+
+2. **`/home/mukbuddy/app/deploy/pair-supervisord.conf.example`** — the
+   supervisord program block. Replace the four `<PLACEHOLDER>` values
+   inside before sending.
+
+Open a ticket with Pair support saying:
+
+> *"Please add the attached supervisord program block (`mukbuddy-api`) to your
+> supervisord config and reload supervisord. The wrapper script is at
+> `<APP_DIR>/deploy/run-mukbuddy-api.sh`. The app must run as
+> `<ACCOUNT_USERNAME>`, listen on `127.0.0.1:8001`, and load its environment
+> from `<ENV_FILE>`."*
+
+Once Pair confirms, verify with:
+```bash
+curl http://127.0.0.1:8001/api/health   # from the VPS shell
+# → {"status":"healthy","time":"..."}
+```
+
+### Option B — Self-managed systemd (only if you have root / dedicated)
 
 ```bash
-# Back to root:
-cp /home/mukbuddy/app/deploy/mukbuddy-api.service /etc/systemd/system/
+sudo cp /home/mukbuddy/app/deploy/mukbuddy-api.service /etc/systemd/system/
 # Edit paths/user if they differ from the defaults in the file
-systemctl daemon-reload
-systemctl enable --now mukbuddy-api.service
-systemctl status mukbuddy-api.service
+sudo systemctl daemon-reload
+sudo systemctl enable --now mukbuddy-api.service
+sudo systemctl status mukbuddy-api.service
 ```
 
 You should see `Active: active (running)`. Logs:
 ```bash
-journalctl -u mukbuddy-api -f
+sudo journalctl -u mukbuddy-api -f
 ```
 
 ---
@@ -209,7 +242,10 @@ cd ~/app
 git pull
 .venv/bin/pip install -r backend/requirements.txt  # only if requirements changed
 exit
-sudo systemctl restart mukbuddy-api.service
+# Restart the backend so code changes take effect:
+#   Pair-managed:  ask support to `supervisorctl restart mukbuddy-api`
+#                  (or use their control-panel restart button if they expose one)
+#   Self-managed:  sudo systemctl restart mukbuddy-api.service
 # If the frontend was rebuilt locally and committed:
 sudo rsync -av --delete /home/mukbuddy/app/frontend/build/ /var/www/mukbuddy/build/
 ```

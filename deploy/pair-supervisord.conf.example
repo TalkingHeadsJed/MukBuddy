@@ -1,0 +1,46 @@
+# Pair supervisord program block for the Muk Buddy FastAPI backend.
+#
+# Hand this entire file to Pair support. They will splice it into their
+# supervisord.conf and reload supervisord.
+#
+# ──────────────────────────────────────────────────────────────────────
+# IMPORTANT — replace the four placeholders before sending:
+#   <ACCOUNT_USERNAME>     your Pair shell user that owns the app files
+#   <APP_DIR>              full path to the cloned repo on the VPS
+#                          (default suggestion: /home/<ACCOUNT_USERNAME>/app)
+#   <LOG_DIR>              full path to a writable logs directory
+#                          (default suggestion: /home/<ACCOUNT_USERNAME>/logs)
+#   <ENV_FILE>             full path to the production backend .env
+#                          (default suggestion: <APP_DIR>/backend/.env)
+# ──────────────────────────────────────────────────────────────────────
+
+[program:mukbuddy-api]
+command=/bin/bash <APP_DIR>/deploy/run-mukbuddy-api.sh
+directory=<APP_DIR>/backend
+user=<ACCOUNT_USERNAME>
+
+; Auto-restart on crash. Backoff so a broken build doesn't flap.
+autostart=true
+autorestart=true
+startretries=5
+startsecs=5
+stopsignal=INT
+stopwaitsecs=20
+
+; Environment — supervisord supports an env file via this directive.
+; (If your supervisord version doesn't support `environment_file`, paste the
+;  key=value lines directly into `environment=` instead.)
+environment=APP_DIR="<APP_DIR>",VENV_PYTHON="<APP_DIR>/.venv/bin/python"
+; The actual secrets (DATABASE_URL, RESEND_API_KEY, etc.) should be loaded
+; into the process environment by sourcing <ENV_FILE> before supervisord starts,
+; OR by using your supervisord's env_file / include_environment_file feature.
+; Easiest: convert <ENV_FILE> to supervisord-style `key=value\n` and reference it
+; directly in the `environment=` line. Pair's team can advise on their syntax.
+
+; Logs — supervisord will rotate these.
+stdout_logfile=<LOG_DIR>/mukbuddy-api.out.log
+stderr_logfile=<LOG_DIR>/mukbuddy-api.err.log
+stdout_logfile_maxbytes=10MB
+stdout_logfile_backups=5
+stderr_logfile_maxbytes=10MB
+stderr_logfile_backups=5
