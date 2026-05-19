@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 import { toast } from "sonner";
 import { API } from "@/lib/constants";
 import { Overline } from "@/components/sections/Problem";
@@ -10,7 +11,7 @@ const emptyForm = { name: "", email: "", phone: "", crew_size: "", message: "", 
 export default function LeadForm() {
   const [form, setForm] = useState(emptyForm);
   const [submitting, setSubmitting] = useState(false);
-  const [sent, setSent] = useState(false);
+  const navigate = useNavigate();
 
   const onChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
@@ -38,13 +39,15 @@ export default function LeadForm() {
         message: form.message.trim(),
         website: form.website || null,
       };
-      await axios.post(`${API}/leads`, payload, {
+      const { data } = await axios.post(`${API}/leads`, payload, {
         headers: { "Content-Type": "application/json" },
         timeout: 15000,
       });
-      setSent(true);
       setForm(emptyForm);
-      toast.success("Message sent. We'll be in touch.");
+      // Hard navigate to /thank-you so conversion pixels & ad-platform
+      // URL-based goals can fire on a real, distinct page view.
+      const leadId = data?.id ? `?lead_id=${encodeURIComponent(data.id)}` : "";
+      navigate(`/thank-you${leadId}`);
     } catch (e2) {
       const msg =
         e2?.response?.status === 429
@@ -175,7 +178,7 @@ export default function LeadForm() {
                 data-testid="lead-submit"
                 className="sticker-btn inline-flex items-center justify-center gap-2 bg-slime text-ink font-bangers text-2xl uppercase tracking-wider px-8 py-4 border-4 border-ink rounded-sm shadow-brutal-sm disabled:opacity-60 disabled:cursor-not-allowed"
               >
-                {submitting ? "Sending..." : sent ? "Sent — Send Another?" : "Send Message"}
+                {submitting ? "Sending..." : "Send Message"}
                 <Send className="w-5 h-5" />
               </button>
             </div>
