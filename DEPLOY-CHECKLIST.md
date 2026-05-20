@@ -8,6 +8,33 @@ If anything in a step fails, **STOP and reply with the error message** — don't
 
 ---
 
+## ⚠️ CRITICAL: Directory layout (read this before you start)
+
+The backend code and the public webroot must be in **DIFFERENT places**. If you put the backend inside `public_html/`, Apache will serve your `.env`, `server.py`, etc. as static files to the internet, leaking secrets and code.
+
+Correct layout (use exactly this):
+
+```
+/usr/home/working/                        ← OUTSIDE webroot, not web-accessible
+├── app/                                  ← the cloned git repo — backend lives HERE
+│   ├── backend/
+│   │   ├── server.py
+│   │   └── .env                          ← NEVER inside public_html
+│   ├── .venv/                            ← Python virtualenv lives HERE, not in public_html
+│   ├── frontend/                         ← source frontend (we build it then copy out)
+│   └── deploy/
+│
+└── public_html/
+    └── mukbuddy.com/                     ← ONLY the React build/ contents go here
+        ├── index.html
+        ├── static/
+        └── favicon.ico
+```
+
+Replace `/usr/home/working/` with your actual Pair user home directory throughout.
+
+---
+
 ## PART 1 — Set up the server (one time)
 
 ### Step 1. Check what OS the VPS is running
