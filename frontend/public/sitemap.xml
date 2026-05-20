@@ -1,29 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-    <url>
-        <loc>https://mukbuddy.com/</loc>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-        <image:image>
-            <image:loc>https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/ai7m3ptx_gx4EB43hTDqcrh7-VK5-n_wum4bLZ2.png</image:loc>
-            <image:title>Muk Buddy — Reusable Wet/Dry Vac Bag</image:title>
-            <image:caption>Patented 2-chamber reusable wet/dry vacuum filter system held by contractor.</image:caption>
-        </image:image>
-        <image:image>
-            <image:loc>https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/nn8s1cjy_Product%20Shot2.png</image:loc>
-            <image:title>Muk Buddy product shot</image:title>
-            <image:caption>Muk Buddy reusable wet/dry vac filter bag — standalone product photo.</image:caption>
-        </image:image>
-    </url>
-    <url>
-        <loc>https://mukbuddy.com/#contact</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://mukbuddy.com/#faq</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://mukbuddy.com/</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://mukbuddy.com/blog</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mukbuddy.com/#contact</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mukbuddy.com/blog/disposable-vs-reusable-shop-vac-bags</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

@@ -164,15 +164,19 @@ c) The entire `<script>` block at the bottom that contains `posthog.init(...)` �
 
 Save and exit.
 
-### Step 12. Build the production frontend
+### Step 12. Build the production frontend (includes blog)
 
 ```
-cd /home/mukbuddy/app/frontend
+cd /usr/home/working/app/frontend
 yarn install --frozen-lockfile
-REACT_APP_BACKEND_URL=https://mukbuddy.com yarn build
+REACT_APP_BACKEND_URL=https://mukbuddy.com yarn build:blog
 ```
 
-This takes 1–2 minutes. When it finishes there will be a `/home/mukbuddy/app/frontend/build/` folder.
+`yarn build:blog` does both: (a) renders any new blog posts from
+`content/blog/*.md` into static HTML, and (b) builds the React app on top.
+Run this every time you change blog content or the frontend code.
+
+This takes 1–2 minutes. When it finishes there will be a `/usr/home/working/app/frontend/build/` folder.
 
 ---
 
