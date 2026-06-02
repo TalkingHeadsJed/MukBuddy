@@ -91,12 +91,14 @@ if [ "$OLD_HEAD" != "$NEW_HEAD" ] && git diff --name-only "$OLD_HEAD" "$NEW_HEAD
 fi
 
 # -- build ---------------------------------------------------------------
-say "yarn install + build (REACT_APP_BACKEND_URL=$BACKEND_URL)"
+say "yarn install + build:blog (REACT_APP_BACKEND_URL=$BACKEND_URL)"
 cd "$FRONTEND"
 yarn install 2>&1 | tail -15 || die "yarn install failed"
 rm -rf build
-CI=false GENERATE_SOURCEMAP=false REACT_APP_BACKEND_URL="$BACKEND_URL" yarn build 2>&1 | tail -20 \
-  || die "yarn build failed"
+# build:blog regenerates static blog HTML from /content/blog/*.md AND runs the
+# React build. BLOG_DRAFT_TOKEN (if present in frontend/.env) gates draft previews.
+CI=false GENERATE_SOURCEMAP=false REACT_APP_BACKEND_URL="$BACKEND_URL" yarn build:blog 2>&1 | tail -25 \
+  || die "yarn build:blog failed"
 [ -s build/index.html ] || die "build produced no index.html"
 
 if grep -rqF "$BACKEND_URL" build/static/js/ 2>/dev/null; then

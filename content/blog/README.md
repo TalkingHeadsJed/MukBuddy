@@ -82,3 +82,34 @@ If you're tired of buying disposable bags every month, [grab a Muk Buddy](https:
 5. Regenerates `sitemap.xml` to include all posts
 6. Regenerates `/feed.xml` (RSS)
 7. Apache serves the static HTML files directly — zero database calls, zero new attack surface
+
+---
+
+## Draft previews (preview before going live)
+
+You can preview a post on the live site **before** publishing it, without ever exposing a login.
+
+### How it works
+- Add a Markdown file with `published: false` in the frontmatter (see `sample-draft-...md` for an example).
+- The build emits the page at a **secret URL**:
+  `https://mukbuddy.com/blog/draft-preview/<TOKEN>/<slug>/`
+- The token is stored in `frontend/.env` as `BLOG_DRAFT_TOKEN` (only on your machine and your VPS, **never** in GitHub — the `draft-preview/` folder is `.gitignore`'d).
+- Drafts are excluded from `posts.json`, `sitemap.xml`, `feed.xml`, and the public `/blog` index.
+- Each draft page carries `<meta name="robots" content="noindex, nofollow">` plus `Disallow: /blog/draft-preview/` in `robots.txt`.
+
+### Workflow
+1. Write your draft `.md` in `content/blog/` with `published: false`.
+2. Commit + push (Apache auto-deploys via webhook).
+3. The VPS rebuilds with its `BLOG_DRAFT_TOKEN` and writes the draft pages.
+4. Visit `https://mukbuddy.com/blog/draft-preview/<TOKEN>/` (find the token in the server's `frontend/.env`).
+5. Review, share the URL privately with a teammate if needed.
+6. When ready: flip `published: true` (and update `publish_date` if needed). Push. It goes live at `/blog/<slug>`.
+
+### Rotating the token
+Edit `BLOG_DRAFT_TOKEN` in `frontend/.env` on the VPS, then run `yarn build:blog`. The old draft URLs immediately become 404.
+
+### Get the token (local dev)
+```bash
+grep BLOG_DRAFT_TOKEN /app/frontend/.env
+```
+Visit: `http://<preview-url>/blog/draft-preview/<TOKEN>/`

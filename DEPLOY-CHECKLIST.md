@@ -169,10 +169,28 @@ Save and exit.
 ```
 cd /home/mukbuddy/app/frontend
 yarn install --frozen-lockfile
-REACT_APP_BACKEND_URL=https://mukbuddy.com yarn build
+REACT_APP_BACKEND_URL=https://mukbuddy.com BLOG_DRAFT_TOKEN="$(grep BLOG_DRAFT_TOKEN .env | cut -d= -f2)" yarn build:blog
 ```
 
 This takes 1–2 minutes. When it finishes there will be a `/home/mukbuddy/app/frontend/build/` folder.
+
+**Why `yarn build:blog` and not `yarn build`?**
+`yarn build:blog` runs `scripts/build-blog.js` first — which compiles every Markdown file in `/content/blog/` into static HTML pages (under `/blog/<slug>/`), regenerates `sitemap.xml` and `feed.xml`, and (if `BLOG_DRAFT_TOKEN` is set) generates token-gated draft previews under `/blog/draft-preview/<TOKEN>/`. Then it runs the React build. **Always use `yarn build:blog` on this site.**
+
+### Step 12a. (optional) Set up draft previews
+
+If Jed wants to preview unpublished posts on the live site before they go public:
+
+1. Create `/home/mukbuddy/app/frontend/.env` if it doesn't exist.
+2. Add a random 48-char hex token to it:
+   ```
+   echo "BLOG_DRAFT_TOKEN=$(openssl rand -hex 24)" >> /home/mukbuddy/app/frontend/.env
+   chmod 600 /home/mukbuddy/app/frontend/.env
+   ```
+3. Tell Jed the value — he'll visit `https://mukbuddy.com/blog/draft-preview/<TOKEN>/` to see all drafts.
+4. To rotate the token: regenerate it, save to `.env`, re-run Step 12. Old URLs immediately 404.
+
+**Security note:** This token is the secret. Never commit `frontend/.env` to GitHub, never paste the token into chat, and don't share it over insecure channels. The `draft-preview/` folder is already in `.gitignore`.
 
 ---
 

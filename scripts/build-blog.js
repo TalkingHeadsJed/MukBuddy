@@ -37,6 +37,39 @@ const BUILD_DIR = PUBLIC_DIR;
 const BLOG_OUT = path.join(PUBLIC_DIR, "blog");
 const SITE_URL = "https://mukbuddy.com";
 
+// Lightweight .env loader (no external dep). Reads frontend/.env and
+// populates process.env for any keys that aren't already set. We only care
+// about BLOG_DRAFT_TOKEN here, but the loader is generic.
+function loadDotEnv() {
+  const envPath = path.join(ROOT, "frontend", ".env");
+  if (!fs.existsSync(envPath)) return;
+  const raw = fs.readFileSync(envPath, "utf-8");
+  for (const rawLine of raw.split("\n")) {
+    const line = rawLine.trim();
+    if (!line || line.startsWith("#")) continue;
+    const eq = line.indexOf("=");
+    if (eq <= 0) continue;
+    const key = line.slice(0, eq).trim();
+    let val = line.slice(eq + 1).trim();
+    if (
+      (val.startsWith('"') && val.endsWith('"')) ||
+      (val.startsWith("'") && val.endsWith("'"))
+    ) {
+      val = val.slice(1, -1);
+    }
+    if (process.env[key] === undefined) process.env[key] = val;
+  }
+}
+loadDotEnv();
+
+// Secret token for unpublished draft previews. If unset, draft generation is skipped.
+// Drafts render to /blog/draft-preview/<TOKEN>/<slug>/ — the URL itself is the secret.
+// Rotate by changing this env var (and rebuilding).
+const DRAFT_TOKEN = (process.env.BLOG_DRAFT_TOKEN || "").trim();
+const DRAFT_OUT_ROOT = DRAFT_TOKEN
+  ? path.join(BLOG_OUT, "draft-preview", DRAFT_TOKEN)
+  : null;
+
 /* ──────────────────────────── helpers ──────────────────────────── */
 
 function esc(s) {
@@ -88,9 +121,9 @@ const sanitizeOpts = {
 /* ──────────────────────── parse all posts ──────────────────────── */
 
 function loadPosts() {
-  if (!fs.existsSync(CONTENT_DIR)) return [];
+  if (!fs.existsSync(CONTENT_DIR)) return { published: [], drafts: [] };
   const today = new Date().toISOString().slice(0, 10);
-  return fs
+  const all = fs
     .readdirSync(CONTENT_DIR)
     .filter((f) => f.endsWith(".md") && f !== "README.md")
     .map((f) => {
@@ -117,11 +150,20 @@ function loadPosts() {
         author: data.author || "Muk Buddy",
         tags: Array.isArray(data.tags) ? data.tags : [],
         publish_date: data.publish_date || today,
+        // Explicit `published: false` => draft. Future-dated => draft too.
+        _isDraft:
+          data.published === false || (data.publish_date || today) > today,
         html,
       };
-    })
-    .filter((p) => p.publish_date <= today) // hide future-dated drafts
+    });
+
+  const published = all
+    .filter((p) => !p._isDraft)
     .sort((a, b) => (a.publish_date < b.publish_date ? 1 : -1));
+  const drafts = all
+    .filter((p) => p._isDraft)
+    .sort((a, b) => (a.publish_date < b.publish_date ? 1 : -1));
+  return { published, drafts };
 }
 
 /* ─────────────────────── HTML templates ─────────────────────── */
@@ -292,6 +334,89 @@ function renderPost(p) {
   });
 }
 
+/* ───────────── draft preview (token-gated, noindex) ───────────── */
+
+const DRAFT_BANNER = `
+<div style="background:#FFD400;color:#1A0625;border:4px solid #1A0625;padding:14px 18px;margin:0 0 24px;font-family:Anton,Impact,sans-serif;font-size:16px;letter-spacing:.08em;text-transform:uppercase;line-height:1.3">
+  🚧 DRAFT PREVIEW — not published. This page is hidden from search engines and the public blog index. Set <code>published: true</code> in the post's frontmatter to go live.
+</div>`;
+
+function renderDraftPost(p, token) {
+  const heroImg = p.hero_image
+    ? `<img class="hero-img" src="${esc(p.hero_image)}" alt="${esc(p.hero_alt)}" />`
+    : "";
+  const tags = p.tags.length
+    ? `<div style="margin-bottom:24px">${p.tags
+        .map((t) => `<span class="tag">${esc(t)}</span>`)
+        .join("")}</div>`
+    : "";
+
+  const body = `
+<main>
+  ${DRAFT_BANNER}
+  <p class="kicker">Draft Preview</p>
+  <h1 class="title">${esc(p.title)}</h1>
+  <div class="byline">
+    By ${esc(p.author)}<span class="dot">·</span>
+    <time datetime="${esc(p.publish_date)}">${new Date(p.publish_date).toLocaleDateString(
+      "en-US",
+      { year: "numeric", month: "long", day: "numeric" }
+    )}</time>
+  </div>
+  ${heroImg}
+  ${tags}
+  <article class="post">${p.html}</article>
+
+  <p style="margin-top:32px"><a href="/blog/draft-preview/${esc(token)}/">← All drafts</a></p>
+</main>`;
+
+  return pageShell({
+    title: `[DRAFT] ${p.title}`,
+    description: p.excerpt,
+    canonical: `${SITE_URL}/blog/${p.slug}`, // canonical to future live URL
+    ogImage: p.hero_image,
+    robots: "noindex, nofollow",
+    body,
+  });
+}
+
+function renderDraftIndex(drafts, token) {
+  const cards = drafts
+    .map((p) => {
+      const bg = p.hero_image ? `background-image:url('${esc(p.hero_image)}')` : "";
+      return `<a class="card" href="/blog/draft-preview/${esc(token)}/${esc(p.slug)}">
+  <div class="ph" style="${bg}"></div>
+  <div class="body">
+    <div class="meta">Draft · ${esc(p.publish_date)}</div>
+    <h2>${esc(p.title)}</h2>
+    <p>${esc(p.excerpt)}</p>
+  </div>
+</a>`;
+    })
+    .join("\n");
+
+  const empty = `<p style="margin-top:32px;color:#5A4A72">No drafts. Add a <code>.md</code> with <code>published: false</code> to <code>/content/blog/</code>.</p>`;
+
+  const body = `
+<main class="wide">
+  ${DRAFT_BANNER}
+  <p class="kicker">Internal</p>
+  <h1 class="title">Draft Previews</h1>
+  <p style="font-size:18px;color:#5A4A72;max-width:560px">
+    Unpublished posts. Set <code>published: true</code> in frontmatter to promote them to the public blog.
+  </p>
+  ${drafts.length ? `<div class="list-grid">${cards}</div>` : empty}
+</main>`;
+
+  return pageShell({
+    title: "Draft Previews",
+    description: "Internal draft preview index.",
+    canonical: `${SITE_URL}/blog/draft-preview/${token}/`,
+    robots: "noindex, nofollow",
+    body,
+  });
+}
+
 function renderIndex(posts) {
   const url = `${SITE_URL}/blog`;
   const cards = posts
@@ -408,8 +533,8 @@ function main() {
     process.exit(1);
   }
 
-  const posts = loadPosts();
-  console.log(`Found ${posts.length} published blog post(s).`);
+  const { published: posts, drafts } = loadPosts();
+  console.log(`Found ${posts.length} published post(s) and ${drafts.length} draft(s).`);
 
   ensureDir(BLOG_OUT);
 
@@ -441,6 +566,45 @@ function main() {
     JSON.stringify(manifest, null, 2)
   );
   console.log(`  → wrote build/blog/posts.json`);
+
+  /* ────────── draft preview pipeline (token-gated) ────────── */
+  // First, scrub any old draft-preview output so a rotated token leaves nothing behind.
+  const draftRoot = path.join(BLOG_OUT, "draft-preview");
+  if (fs.existsSync(draftRoot)) {
+    fs.rmSync(draftRoot, { recursive: true, force: true });
+    console.log(`  → cleared old draft-preview output`);
+  }
+
+  if (drafts.length === 0) {
+    console.log("No drafts present — skipping draft-preview build.");
+  } else if (!DRAFT_TOKEN) {
+    console.warn(
+      `WARN  ${drafts.length} draft(s) found but BLOG_DRAFT_TOKEN is not set. ` +
+        `Skipping draft preview generation. Set BLOG_DRAFT_TOKEN in frontend/.env to enable.`
+    );
+  } else if (DRAFT_TOKEN.length < 16) {
+    console.warn(
+      `WARN  BLOG_DRAFT_TOKEN is too short (${DRAFT_TOKEN.length} chars). ` +
+        `Use at least 16 random chars. Skipping draft preview generation.`
+    );
+  } else {
+    ensureDir(DRAFT_OUT_ROOT);
+    writeFile(
+      path.join(DRAFT_OUT_ROOT, "index.html"),
+      renderDraftIndex(drafts, DRAFT_TOKEN)
+    );
+    console.log(`  → wrote build/blog/draft-preview/<TOKEN>/index.html`);
+    for (const p of drafts) {
+      writeFile(
+        path.join(DRAFT_OUT_ROOT, p.slug, "index.html"),
+        renderDraftPost(p, DRAFT_TOKEN)
+      );
+      console.log(`  → wrote build/blog/draft-preview/<TOKEN>/${p.slug}/index.html`);
+    }
+    console.log(
+      `✓ Draft previews ready. Visit /blog/draft-preview/${DRAFT_TOKEN}/ to view.`
+    );
+  }
 
   console.log("✓ Blog build complete.");
 }

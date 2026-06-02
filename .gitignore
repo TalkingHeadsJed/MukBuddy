@@ -125,3 +125,6 @@ credentials.json
 *.pem
 *.key
 .credentials
+
+# Generated draft blog previews (token-gated, never commit)
+frontend/public/blog/draft-preview/
