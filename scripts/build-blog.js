@@ -367,6 +367,7 @@ function renderSitemap(posts) {
     { loc: `${SITE_URL}/`, priority: "1.0", changefreq: "weekly" },
     { loc: `${SITE_URL}/blog`, priority: "0.8", changefreq: "weekly" },
     { loc: `${SITE_URL}/#contact`, priority: "0.7", changefreq: "monthly" },
+    { loc: `${SITE_URL}/#faq`, priority: "0.6", changefreq: "monthly" },
   ];
   const postUrls = posts.map((p) => ({
     loc: `${SITE_URL}/blog/${p.slug}`,

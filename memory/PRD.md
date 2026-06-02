@@ -1,40 +1,73 @@
-# Muk Buddy — Landing Page PRD
+# Muk Buddy — Product Requirements & State
 
 ## Original Problem Statement
-Build a high-converting, SEO-optimized landing page for **Muk Buddy** — a patented 2-chamber reusable wet/dry vac accessory (replaces disposable bags AND saves your motor from the "bagless tax"). Domain: mukbuddy.com. Tone: Bold DTC (Liquid Death / Dr. Squatch) — purple monster mascot, slime green, cream background. Secure lead form, FAQ, real jobsite proof, JSON-LD SEO.
+Build a high-converting Bold DTC light-mode landing page for "Muk Buddy" — a patented 2-chamber reusable wet/dry vacuum filter/bag accessory (mukbuddy.com). Includes:
+- Bold DTC light-mode design (slime green / purple / cream, mascot peeks)
+- Secure lead form (rate-limited, honeypot, validated)
+- Heavy SEO (sitemap, RSS, structured data)
+- MySQL backend (SQLite locally; MySQL on Pair VPS)
+- Resend email notifications to Jed@websitetalkingheads.com
+- Static Markdown-based blog system (no live admin UI for security)
+- Robust deploy scripts for Pair VPS / Apache reverse proxy
+- Auto-deploy via GitHub webhook on push to main (web-guy added)
 
-## Stack
-- Frontend: React 19 + Tailwind + Shadcn UI
-- Backend: FastAPI + MongoDB (local) — Supabase migration BLOCKED on user credentials
-- Image generation: Gemini Nano Banana (via EMERGENT_LLM_KEY)
-- SEO: JSON-LD (Product, Organization, FAQPage, HowTo) in `index.html`
+## Architecture
+```
+/app/
+├── backend/          FastAPI + SQLAlchemy async (SQLite dev / MySQL prod) + Resend
+├── content/blog/     Markdown source for blog posts
+├── deploy/           VPS scripts: deploy-mukbuddy.sh, start-mukbuddy.sh,
+│                     webhook-listener.py, run-mukbuddy-api.sh, supervisord/apache configs
+├── frontend/         React 19 + Tailwind + Shadcn UI
+│   ├── public/
+│   │   ├── blog/         Generated static blog HTML (built by scripts/build-blog.js)
+│   │   ├── sitemap.xml   Regenerated to include /blog/* URLs
+│   │   └── feed.xml      RSS feed for blog
+│   └── src/components/sections/  Landing sections incl. BlogStrip
+├── scripts/
+│   ├── build-blog.js   Static blog generator (marked + sanitize-html + gray-matter)
+│   └── gen_bagless_image.py
+└── DEPLOY-CHECKLIST.md  28-step VPS deploy guide
+```
 
-## Landing Page Section Order
-1. Header
-2. Hero (Vimeo modal)
-3. **BagsVsMukBuddy** — "One Muk Buddy replaces 500+ disposable bags"
-4. **Problem (The Bagless Lie)** — NEW (Feb 2026): "You thought going bagless was saving money. It's burning up your motor." With generated illustration of clogged filter + smoking motor. `$300+/yr filters`, `$200+ motor replacement` counters. CTA: "Save The Motor".
-5. Money / Airflow / Difference / TwoChamber / Performance / Benefits / WasteScale / Proof / Objections / MoneyReminder / FAQ / LeadForm / FinalCTA / Footer
-6. BleedTicker (sticky)
+## Build pipeline
+Frontend production build: `cd frontend && yarn build:blog`
+(Compiles MD → static HTML in /frontend/public/blog/, regenerates sitemap.xml & feed.xml, then runs CRA build.)
 
-## CHANGELOG
-- **Feb 2026 — Bagless Lie pivot**: Replaced original "Problem" section (which had Disposable Bags + Bag-less duality) with a single, sharper bagless-focused message. New AI-generated illustration at `/app/frontend/public/bagless-disaster.png` (Gemini Nano Banana). `Overline` export preserved for downstream sections.
-- Earlier this session — generated `bagless-disaster.png` via `/app/scripts/gen_bagless_image.py` (one-shot Nano Banana script).
-- `EMERGENT_LLM_KEY` added to `/app/backend/.env`.
+## Key API endpoints
+- `POST /api/leads` — Save lead + queue Resend email
+- `GET /api/health` — Health probe
 
-## Backlog (P0 → P2)
-- **P1**: Email notification on lead form submission (Resend integration suggested). Needs API key from user.
-- **P1**: Supabase DB migration — BLOCKED on user's Supabase URL + `service_role` key.
-- **P2**: AggregateRating JSON-LD schema for testimonial star-snippets in Google.
+## DB schema (leads)
+`id (UUID), name, email, phone, crew_size, message, created_at, notified, last_seen_at`
 
-## Files of Note
-- `/app/frontend/src/components/sections/Problem.jsx` — now the "Bagless Lie" section (keeps `Overline` export used by 10 other section files)
-- `/app/frontend/src/components/sections/BagsVsMukBuddy.jsx` — intact
-- `/app/frontend/src/lib/images.js` — `baglessDisaster: "/bagless-disaster.png"` added
-- `/app/frontend/public/bagless-disaster.png` — generated illustration (clogged filter + smoking motor, no text, on-brand)
-- `/app/scripts/gen_bagless_image.py` — Nano Banana one-shot for regenerating the image
+## 3rd-party integrations
+- **Resend** — Lead notifications (key in `backend/.env`)
+- **Vimeo** — Embedded hero video
 
-## Brand Rules
-- DO NOT replace user-provided contractor photos with stock.
-- Maintain Bold DTC tone (Liquid Death / Dr. Squatch).
-- Preserve all JSON-LD schemas in `index.html`.
+## Implementation history
+- **Phase 1 (initial fork):** Bold DTC light-mode design system, 15 landing sections, FastAPI + Mongo lead form
+- **Phase 2:** Migrated backend Mongo → SQLAlchemy async (SQLite dev / MySQL prod), added Resend, /thank-you page
+- **Phase 3:** Static Markdown blog system (build-blog.js + BlogStrip), VPS deploy suite
+- **Phase 4 (web guy on GitHub):** host-side adaptations (deploy/start-mukbuddy.sh, deploy-mukbuddy.sh, webhook-listener.py for auto-deploy), backend/db.py tweaks
+- **Phase 5 (2026-06-02 — current fork session):** Pulled web-guy's GitHub production code back into Emergent workspace, smart-merged blog system on top:
+  - Cloned github.com/TalkingHeadsJed/MukBuddy → /app (preserved .env files)
+  - Re-applied content/blog/, scripts/build-blog.js, BlogStrip.jsx, public/blog/, feed.xml
+  - Merged package.json (added marked, sanitize-html, gray-matter + build:blog/blog:render scripts)
+  - Injected <BlogStrip /> into Landing.jsx (between FinalCTA and Footer)
+  - Added /#faq to sitemap base list
+  - Smoke-tested: /api/health 200, /api/leads 201, /blog 200, /sitemap.xml 200, /feed.xml 200, BlogStrip renders
+
+## Pending / Backlog
+- **P1**: Verify web-guy completed VPS security remediation (move backend/ out of public_html, rotate Resend API key)
+- **P2**: Write/publish real Muk Buddy blog posts (replace sample disposable-vs-reusable-shop-vac-bags.md)
+- **P2**: Add Google Search Console verification token to frontend/public/index.html
+- **P2**: Replace placeholder favicons in frontend/public/
+- **P3**: Consider Cloudflare in front of Pair VPS for WAF/DDoS protection
+
+## Critical agent notes for future sessions
+- **Build command is `yarn build:blog`, NOT `yarn build`** — needed for blog HTML compilation
+- Backend uses SQLite locally (dev_leads.db) and MySQL via DATABASE_URL on prod
+- Emergent UI on user's account has only "Save to GitHub" (push) — no "Pull from GitHub" button. To pull from GitHub, use `git clone` via terminal.
+- GitHub repo: `https://github.com/TalkingHeadsJed/MukBuddy` (public)
+- Production deploy is auto-triggered by webhook-listener.py on push to main

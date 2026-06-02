@@ -69,7 +69,9 @@ class Lead(Base):
 async def init_db() -> None:
     """Create tables if they don't exist. Safe to call on every startup."""
     async with engine.begin() as conn:
-        await conn.run_sync(Base.metadata.create_all)
+        await conn.run_sync(
+            lambda sync_conn: Base.metadata.create_all(sync_conn, checkfirst=True)
+        )
 
 
 async def get_session() -> AsyncGenerator[AsyncSession, None]:

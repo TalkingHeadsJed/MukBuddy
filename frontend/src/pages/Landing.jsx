@@ -15,8 +15,8 @@ import LeadForm from "@/components/sections/LeadForm";
 import FinalCTA from "@/components/sections/FinalCTA";
 import Footer from "@/components/sections/Footer";
 import MoneyReminder from "@/components/sections/MoneyReminder";
-import BlogStrip from "@/components/sections/BlogStrip";
 import BleedTicker from "@/components/sections/BleedTicker";
+import BlogStrip from "@/components/sections/BlogStrip";
 
 export default function Landing() {
   return (
