@@ -604,7 +604,7 @@ function SavingsCalc({ savingsRef, vacQuantity, setVacQuantity }) {
   const annualBagSpend = machines * SPEND_PER_MACHINE_PER_YEAR;
   const fiveYearSpend = annualBagSpend * 5;
   // Conservative: 1 Muk Buddy per machine, $0 ongoing
-  const mukBuddyYear1 = machines * 89; // assume ~$89 each (placeholder, edit to taste)
+  const mukBuddyYear1 = machines * 99; // Muk Buddy list price
   const mukBuddy5Year = mukBuddyYear1; // one purchase, no recurring
   const fiveYearSavings = fiveYearSpend - mukBuddy5Year;
 
@@ -719,7 +719,7 @@ function SavingsCalc({ savingsRef, vacQuantity, setVacQuantity }) {
             </a>
             <p className="text-[11px] text-slate-500 mt-3 leading-relaxed">
               Estimate based on field data: avg crew burns ~$1,000 / vac / year on
-              disposable bags. Muk Buddy at ~$89 / vac, one-time, no replacement
+              disposable bags. Muk Buddy at $99 / vac, one-time, no replacement
               filters required.
             </p>
           </div>
