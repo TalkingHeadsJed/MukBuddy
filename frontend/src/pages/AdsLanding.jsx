@@ -220,7 +220,7 @@ function Hero({ scrollToSavings }) {
             className="text-5xl sm:text-6xl lg:text-7xl font-bold text-slate-900 leading-[1.02] tracking-tight"
             style={{ letterSpacing: "-0.03em" }}
           >
-            The last bag <span className="text-red-600">you'll buy.</span>
+            Reusable bag. <span className="text-red-600">Saves thousands.</span>
           </h1>
           <p className="text-lg sm:text-xl text-slate-600 max-w-xl leading-relaxed">
             One reusable Muk Buddy replaces years of disposable bags. Fits
