@@ -215,9 +215,14 @@ function Hero({ scrollToSavings }) {
         style={{ backgroundImage: `url('${IMAGES.wet}')` }}
         aria-hidden="true"
       />
-      {/* Dark gradient overlay — heavier on the left (where copy sits) */}
+      {/* Lighter overlay — keeps contractor visible while preserving text legibility */}
       <div
-        className="absolute inset-0 bg-gradient-to-r from-slate-950/95 via-slate-950/80 to-slate-950/40"
+        className="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-950/45 to-slate-950/10"
+        aria-hidden="true"
+      />
+      {/* Stronger left-side vignette specifically behind copy */}
+      <div
+        className="absolute inset-0 lg:bg-gradient-to-r lg:from-slate-950/40 lg:via-transparent lg:to-transparent"
         aria-hidden="true"
       />
       {/* Bottom fade for visual anchor */}
@@ -267,16 +272,16 @@ function Hero({ scrollToSavings }) {
               target="_blank"
               rel="noopener noreferrer"
               data-testid="ads-hero-order-btn"
-              className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-bold text-base px-6 py-4 transition-colors uppercase tracking-wide shadow-xl"
+              className="relative inline-flex items-center justify-center gap-3 bg-red-600 hover:bg-red-700 text-white font-bold text-xl sm:text-2xl px-8 sm:px-10 py-5 sm:py-6 transition-all uppercase tracking-wider shadow-2xl ring-4 ring-red-600/30 hover:ring-red-600/50 hover:scale-[1.02]"
             >
               Order Muk Buddy
-              <ArrowRight className="w-5 h-5" />
+              <ArrowRight className="w-6 h-6 sm:w-7 sm:h-7" strokeWidth={2.5} />
             </a>
             <button
               type="button"
               onClick={scrollToSavings}
               data-testid="ads-hero-savings-btn"
-              className="inline-flex items-center justify-center gap-2 bg-white/10 backdrop-blur border-2 border-white/40 hover:bg-white/20 text-white font-semibold text-base px-6 py-4 transition-colors"
+              className="inline-flex items-center justify-center gap-2 bg-transparent backdrop-blur border-2 border-white/40 hover:bg-white/10 text-white font-semibold text-base px-6 py-4 transition-colors"
             >
               See my savings
             </button>
@@ -466,90 +471,125 @@ function AirflowDemo() {
   );
 }
 
-/* ─────────────────────────────── 3 Benefits ─────────────────────────────── */
+/* ─────────────────────────────── 3 Big Benefits ─────────────────────────────── */
 function Benefits() {
   const benefits = [
     {
       icon: DollarSign,
-      kicker: "01",
-      title: "Saves money on filters & bags",
+      num: "01",
+      title: "Save Money.",
       body:
-        "Disposable bags run $8–$10 each. A working crew burns through them every week. One Muk Buddy lasts year after year — you stop paying the bag tax.",
-      stat: "~$1,000/yr",
-      statLabel: "saved per machine",
+        "Stop the bag tax. Contractors burn ~$1,000/year on disposables for every vac they run. One Muk Buddy replaces years of them.",
+      stat: "$1,000+",
+      statLabel: "per vac · per year",
     },
     {
       icon: Gauge,
-      kicker: "02",
-      title: "Improves suction performance",
+      num: "02",
+      title: "Improve Suction.",
       body:
-        "The patented 2-chamber design captures fines before they cake onto your filter. Air keeps moving. Suction stays strong from job one to job five hundred.",
-      stat: "Full suction",
-      statLabel: "every load",
+        "The patented 2-chamber design captures dust before it cakes onto your filter. Airflow stays open. Suction stays strong all day.",
+      stat: "Full",
+      statLabel: "suction · every load",
     },
     {
       icon: ShieldCheck,
-      kicker: "03",
-      title: "Supports motor life",
+      num: "03",
+      title: "Increase Motor Life.",
       body:
-        "Clogged filters force your motor to run hot. Hot motors die early. Muk Buddy keeps the airflow path clean so the motor stays cool — and stays alive longer.",
+        "Clogged filters cook your motor. Muk Buddy keeps the airflow path clean — your motor stays cool and stays alive longer.",
       stat: "Cooler",
-      statLabel: "running motor",
+      statLabel: "running · longer life",
     },
   ];
 
   return (
     <section
       data-testid="ads-benefits"
-      className="bg-white py-20 sm:py-24 border-b border-slate-200"
+      className="bg-white py-20 sm:py-28 border-y-4 border-slate-900"
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mb-12">
-          <p className="text-xs font-semibold uppercase tracking-widest text-red-600 mb-3">
-            Why every crew is switching
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center max-w-3xl mx-auto mb-14 sm:mb-20">
+          <p className="text-xs font-bold uppercase tracking-[0.2em] text-red-600 mb-4">
+            Built to do three things
           </p>
           <h2
-            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight tracking-tight"
-            style={{ letterSpacing: "-0.02em" }}
+            className="text-5xl sm:text-6xl lg:text-7xl font-bold text-slate-900 leading-[0.95] tracking-tight"
+            style={{ letterSpacing: "-0.035em" }}
           >
-            One reusable bag. Three problems gone.
+            Why every crew is{" "}
+            <span className="text-red-600">switching.</span>
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid md:grid-cols-3 gap-5 lg:gap-6">
           {benefits.map((b) => {
             const Icon = b.icon;
             return (
               <div
-                key={b.kicker}
-                data-testid={`ads-benefit-${b.kicker}`}
-                className="group bg-slate-50 border border-slate-200 p-7 hover:border-slate-900 transition-colors"
+                key={b.num}
+                data-testid={`ads-benefit-${b.num}`}
+                className="group relative bg-slate-950 text-white p-8 sm:p-10 lg:p-12 overflow-hidden transition-all hover:bg-red-600 cursor-default"
               >
-                <div className="flex items-start justify-between mb-6">
-                  <div className="w-12 h-12 bg-slate-900 group-hover:bg-red-600 transition-colors flex items-center justify-center">
-                    <Icon className="w-6 h-6 text-white" strokeWidth={2} />
-                  </div>
-                  <span className="text-xs font-semibold tracking-widest text-slate-400">
-                    {b.kicker}
-                  </span>
+                {/* Giant number watermark */}
+                <span
+                  aria-hidden="true"
+                  className="absolute -top-6 -right-4 text-[10rem] sm:text-[12rem] font-bold text-white/[0.06] leading-none select-none tracking-tighter"
+                  style={{ letterSpacing: "-0.05em" }}
+                >
+                  {b.num}
+                </span>
+
+                {/* Icon */}
+                <div className="relative w-16 h-16 sm:w-20 sm:h-20 bg-red-600 group-hover:bg-slate-950 flex items-center justify-center mb-8 transition-colors">
+                  <Icon
+                    className="w-9 h-9 sm:w-11 sm:h-11 text-white"
+                    strokeWidth={2.25}
+                  />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3 leading-snug">
+
+                {/* HUGE headline */}
+                <h3
+                  className="relative text-4xl sm:text-5xl lg:text-[3.25rem] font-bold leading-[0.95] mb-5 tracking-tight"
+                  style={{ letterSpacing: "-0.03em" }}
+                >
                   {b.title}
                 </h3>
-                <p className="text-slate-600 leading-relaxed text-[15px]">
+
+                {/* Body */}
+                <p className="relative text-base sm:text-lg text-slate-300 group-hover:text-red-50 leading-relaxed mb-8 transition-colors">
                   {b.body}
                 </p>
-                <div className="mt-6 pt-6 border-t border-slate-200">
-                  <p className="text-2xl font-bold text-red-600 leading-none">
+
+                {/* Stat strip at bottom */}
+                <div className="relative pt-6 border-t border-white/15 group-hover:border-white/30 transition-colors">
+                  <p className="text-3xl sm:text-4xl font-bold text-red-500 group-hover:text-white leading-none transition-colors tracking-tight">
                     {b.stat}
                   </p>
-                  <p className="text-xs uppercase tracking-wider text-slate-500 font-semibold mt-1">
+                  <p className="text-[11px] uppercase tracking-[0.2em] text-slate-400 group-hover:text-red-100 font-semibold mt-2 transition-colors">
                     {b.statLabel}
                   </p>
                 </div>
               </div>
             );
           })}
+        </div>
+
+        {/* Big CTA below benefits */}
+        <div className="text-center mt-14 sm:mt-20">
+          <a
+            href={ORDER_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            data-testid="ads-benefits-order-btn"
+            className="inline-flex items-center justify-center gap-3 bg-red-600 hover:bg-red-700 text-white font-bold text-xl sm:text-2xl px-10 py-6 transition-all uppercase tracking-wider shadow-2xl ring-4 ring-red-600/20 hover:ring-red-600/40 hover:scale-[1.02]"
+          >
+            Order Muk Buddy
+            <ArrowRight className="w-6 h-6 sm:w-7 sm:h-7" strokeWidth={2.5} />
+          </a>
+          <p className="text-sm text-slate-500 mt-4">
+            Free shipping · 30-day return · Patented 2-chamber design
+          </p>
         </div>
       </div>
     </section>
