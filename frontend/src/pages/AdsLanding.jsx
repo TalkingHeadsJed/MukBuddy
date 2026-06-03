@@ -118,6 +118,7 @@ export default function AdsLanding() {
         setVacQuantity={setVacQuantity}
         scrollToForm={scrollToForm}
       />
+      <AirflowDemo />
       <Benefits />
       <SavingsCalc vacQuantity={vacQuantity} setVacQuantity={setVacQuantity} />
       <ComparisonTable />
@@ -331,17 +332,75 @@ function Hero({ vacQuantity, setVacQuantity, scrollToForm }) {
           </div>
         </div>
 
-        {/* Right: product image */}
+        {/* Right: side-by-side comparison — disposable (X'd out) vs Muk Buddy */}
         <div className="lg:col-span-5 relative">
-          <div className="aspect-square bg-gradient-to-br from-slate-100 to-slate-200 border border-slate-200 flex items-center justify-center overflow-hidden p-8 sm:p-12">
-            <img
-              src={IMAGES.productStraight}
-              alt="Muk Buddy reusable wet/dry vacuum filter bag"
-              className="w-full h-full object-contain drop-shadow-2xl"
-              loading="eager"
-              data-testid="ads-hero-product-image"
-            />
+          <div className="bg-gradient-to-br from-slate-100 to-slate-200 border border-slate-200 p-4 sm:p-6">
+            <div className="grid grid-cols-2 gap-2 sm:gap-3">
+              {/* Disposable bag — crossed out */}
+              <div
+                className="relative bg-white border border-slate-300 aspect-square overflow-hidden"
+                data-testid="ads-hero-disposable"
+              >
+                <img
+                  src={IMAGES.disposableBagYellow}
+                  alt="Disposable shop vac bag — the old way"
+                  className="w-full h-full object-contain p-2 grayscale opacity-70"
+                  loading="eager"
+                />
+                {/* Red X overlay */}
+                <svg
+                  viewBox="0 0 100 100"
+                  preserveAspectRatio="none"
+                  className="absolute inset-0 w-full h-full pointer-events-none"
+                  aria-hidden="true"
+                >
+                  <line
+                    x1="8" y1="8" x2="92" y2="92"
+                    stroke="#DC2626" strokeWidth="6" strokeLinecap="round"
+                  />
+                  <line
+                    x1="92" y1="8" x2="8" y2="92"
+                    stroke="#DC2626" strokeWidth="6" strokeLinecap="round"
+                  />
+                </svg>
+                <div className="absolute bottom-0 inset-x-0 bg-slate-900/90 text-white text-center py-2">
+                  <p className="text-[10px] uppercase tracking-widest font-bold text-red-400">
+                    Stop buying
+                  </p>
+                  <p className="text-xs font-semibold">Disposable bags</p>
+                </div>
+              </div>
+
+              {/* Muk Buddy — the new way */}
+              <div
+                className="relative bg-white border-2 border-red-600 aspect-square overflow-hidden"
+                data-testid="ads-hero-mukbuddy"
+              >
+                <img
+                  src={IMAGES.productStraight}
+                  alt="Muk Buddy reusable wet/dry vacuum filter bag"
+                  className="w-full h-full object-contain p-3 drop-shadow-lg"
+                  loading="eager"
+                  data-testid="ads-hero-product-image"
+                />
+                <div className="absolute bottom-0 inset-x-0 bg-red-600 text-white text-center py-2">
+                  <p className="text-[10px] uppercase tracking-widest font-bold text-red-100">
+                    Start using
+                  </p>
+                  <p className="text-xs font-semibold">Muk Buddy</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Big arrow between (desktop only, sits over the gap) */}
+            <div className="hidden sm:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none z-10">
+              <div className="bg-slate-900 text-white w-10 h-10 flex items-center justify-center shadow-lg rounded-full border-2 border-white">
+                <ArrowRight className="w-5 h-5" />
+              </div>
+            </div>
           </div>
+
+          {/* Floating spec badges */}
           <div className="absolute -bottom-3 -left-3 sm:-left-6 bg-slate-900 text-white px-4 py-3 shadow-lg">
             <p className="text-[10px] uppercase tracking-widest text-slate-400 font-semibold">
               Patented
@@ -353,6 +412,99 @@ function Hero({ vacQuantity, setVacQuantity, scrollToForm }) {
               Replaces
             </p>
             <p className="text-sm font-bold">100s of disposables</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ─────────────────────── Airflow demo (webm video, 2nd fold) ────────────────────── */
+function AirflowDemo() {
+  return (
+    <section
+      data-testid="ads-airflow-demo"
+      className="bg-slate-950 text-white py-16 sm:py-20 border-b border-slate-800 relative overflow-hidden"
+    >
+      {/* Subtle technical-grid background */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 opacity-[0.04] pointer-events-none"
+        style={{
+          backgroundImage:
+            "linear-gradient(to right, #fff 1px, transparent 1px), linear-gradient(to bottom, #fff 1px, transparent 1px)",
+          backgroundSize: "32px 32px",
+        }}
+      />
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div className="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+          {/* Copy */}
+          <div className="lg:col-span-5 space-y-5">
+            <p className="text-xs font-bold uppercase tracking-widest text-red-500">
+              How it works
+            </p>
+            <h2
+              className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight tracking-tight text-white"
+              style={{ letterSpacing: "-0.02em" }}
+            >
+              The patented 2-chamber airflow.
+            </h2>
+            <p className="text-slate-300 text-lg leading-relaxed">
+              Air pulls debris into the outer chamber, where heavier dust and
+              fines drop out before they ever touch your filter. Only clean air
+              continues through to the motor. That's why your suction stays
+              strong and your motor runs cool.
+            </p>
+            <ul className="space-y-2 pt-2 text-slate-300">
+              <li className="flex items-start gap-2">
+                <Check className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+                <span>
+                  <strong className="text-white">Outer chamber</strong> traps
+                  heavy debris and fines
+                </span>
+              </li>
+              <li className="flex items-start gap-2">
+                <Check className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+                <span>
+                  <strong className="text-white">Inner chamber</strong>{" "}
+                  delivers clean airflow to the motor
+                </span>
+              </li>
+              <li className="flex items-start gap-2">
+                <Check className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+                <span>
+                  <strong className="text-white">Filter stays clean</strong>{" "}
+                  load after load
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Video */}
+          <div className="lg:col-span-7">
+            <div className="relative bg-slate-900 border-2 border-red-600 overflow-hidden aspect-video">
+              <video
+                src={IMAGES.mascotAnimation}
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="w-full h-full object-cover"
+                data-testid="ads-airflow-video"
+                aria-label="Muk Buddy 2-chamber airflow demonstration"
+              />
+              {/* Corner technical labels */}
+              <div className="absolute top-3 left-3 bg-slate-950/90 text-red-500 text-[10px] font-bold uppercase tracking-widest px-2 py-1 border border-red-600/40">
+                ▶ Live demo · 2-chamber airflow
+              </div>
+              <div className="absolute bottom-3 right-3 bg-red-600 text-white text-[10px] font-bold uppercase tracking-widest px-2 py-1">
+                US patented design
+              </div>
+            </div>
+            <p className="mt-3 text-xs text-slate-400 text-center">
+              Real-time visualization of how Muk Buddy captures dust before it
+              reaches your filter.
+            </p>
           </div>
         </div>
       </div>
