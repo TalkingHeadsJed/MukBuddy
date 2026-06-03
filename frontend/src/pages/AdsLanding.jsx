@@ -210,19 +210,19 @@ function Hero({ scrollToSavings }) {
       className="relative bg-slate-50 border-b border-slate-200 overflow-hidden"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20 lg:py-24 grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
-        {/* Left: copy */}
-        <div className="lg:col-span-7 space-y-7">
+        {/* Left: copy (narrower) */}
+        <div className="lg:col-span-5 space-y-6">
           <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-red-600 border border-red-600/30 bg-red-50 px-2.5 py-1">
             <span className="w-1.5 h-1.5 bg-red-600 rounded-full animate-pulse" />
             Reusable shop vac bag
           </div>
           <h1
-            className="text-5xl sm:text-6xl lg:text-7xl font-bold text-slate-900 leading-[1.02] tracking-tight"
+            className="text-4xl sm:text-5xl lg:text-[3.25rem] font-bold text-slate-900 leading-[1.02] tracking-tight"
             style={{ letterSpacing: "-0.03em" }}
           >
             Reusable bag. <span className="text-red-600">Saves thousands.</span>
           </h1>
-          <p className="text-lg sm:text-xl text-slate-600 max-w-xl leading-relaxed">
+          <p className="text-base sm:text-lg text-slate-600 max-w-md leading-relaxed">
             One reusable Muk Buddy replaces years of disposable bags. Fits
             16-gallon Shop-Vac, Ridgid, Craftsman & Stanley.
           </p>
@@ -236,7 +236,7 @@ function Hero({ scrollToSavings }) {
             ].map((b) => (
               <li
                 key={b}
-                className="flex items-center gap-3 text-base sm:text-lg text-slate-800 font-medium"
+                className="flex items-center gap-3 text-base text-slate-800 font-medium"
               >
                 <Check className="w-5 h-5 text-red-600 flex-shrink-0" strokeWidth={3} />
                 <span>{b}</span>
@@ -278,19 +278,19 @@ function Hero({ scrollToSavings }) {
           </div>
         </div>
 
-        {/* Right: side-by-side comparison — disposable (X'd out, in color) vs Muk Buddy */}
-        <div className="lg:col-span-5 relative">
-          <div className="bg-gradient-to-br from-slate-100 to-slate-200 border border-slate-200 p-4 sm:p-6">
-            <div className="grid grid-cols-2 gap-2 sm:gap-3">
+        {/* Right: BIG side-by-side comparison — disposable (X'd out, in color) vs Muk Buddy */}
+        <div className="lg:col-span-7 relative">
+          <div className="bg-gradient-to-br from-slate-100 to-slate-200 border border-slate-200 p-5 sm:p-8 lg:p-10">
+            <div className="grid grid-cols-2 gap-3 sm:gap-5">
               {/* Disposable bag — IN COLOR with red X on top */}
               <div
-                className="relative bg-white border border-slate-300 aspect-square overflow-hidden"
+                className="relative bg-white border border-slate-300 aspect-[4/5] overflow-hidden"
                 data-testid="ads-hero-disposable"
               >
                 <img
                   src={IMAGES.disposableBagYellow}
                   alt="Disposable shop vac bag — the old way"
-                  className="w-full h-full object-contain p-2"
+                  className="w-full h-full object-contain p-4 sm:p-6"
                   loading="eager"
                 />
                 {/* Red X overlay */}
@@ -301,63 +301,63 @@ function Hero({ scrollToSavings }) {
                   aria-hidden="true"
                 >
                   <line
-                    x1="8" y1="8" x2="92" y2="92"
-                    stroke="#DC2626" strokeWidth="7" strokeLinecap="round"
+                    x1="6" y1="6" x2="94" y2="94"
+                    stroke="#DC2626" strokeWidth="8" strokeLinecap="round"
                   />
                   <line
-                    x1="92" y1="8" x2="8" y2="92"
-                    stroke="#DC2626" strokeWidth="7" strokeLinecap="round"
+                    x1="94" y1="6" x2="6" y2="94"
+                    stroke="#DC2626" strokeWidth="8" strokeLinecap="round"
                   />
                 </svg>
-                <div className="absolute bottom-0 inset-x-0 bg-slate-900/90 text-white text-center py-2">
+                <div className="absolute bottom-0 inset-x-0 bg-slate-900/95 text-white text-center py-2.5">
                   <p className="text-[10px] uppercase tracking-widest font-bold text-red-400">
                     Disposable
                   </p>
-                  <p className="text-xs font-semibold">Buy again. And again.</p>
+                  <p className="text-sm font-semibold">Buy again. And again.</p>
                 </div>
               </div>
 
               {/* Muk Buddy — the new way */}
               <div
-                className="relative bg-white border-2 border-red-600 aspect-square overflow-hidden"
+                className="relative bg-white border-2 border-red-600 aspect-[4/5] overflow-hidden"
                 data-testid="ads-hero-mukbuddy"
               >
                 <img
                   src={IMAGES.productStraight}
                   alt="Muk Buddy reusable wet/dry vacuum filter bag"
-                  className="w-full h-full object-contain p-3 drop-shadow-lg"
+                  className="w-full h-full object-contain p-5 sm:p-8 drop-shadow-xl"
                   loading="eager"
                   data-testid="ads-hero-product-image"
                 />
-                <div className="absolute bottom-0 inset-x-0 bg-red-600 text-white text-center py-2">
+                <div className="absolute bottom-0 inset-x-0 bg-red-600 text-white text-center py-2.5">
                   <p className="text-[10px] uppercase tracking-widest font-bold text-red-100">
                     Muk Buddy
                   </p>
-                  <p className="text-xs font-semibold">Reusable. Forever.</p>
+                  <p className="text-sm font-semibold">Reusable. Forever.</p>
                 </div>
               </div>
             </div>
 
             {/* Big arrow between (desktop only, sits over the gap) */}
             <div className="hidden sm:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none z-10">
-              <div className="bg-slate-900 text-white w-10 h-10 flex items-center justify-center shadow-lg rounded-full border-2 border-white">
-                <ArrowRight className="w-5 h-5" />
+              <div className="bg-slate-900 text-white w-12 h-12 flex items-center justify-center shadow-xl rounded-full border-2 border-white">
+                <ArrowRight className="w-6 h-6" />
               </div>
             </div>
           </div>
 
           {/* Floating spec badges */}
-          <div className="absolute -bottom-3 -left-3 sm:-left-6 bg-slate-900 text-white px-4 py-3 shadow-lg">
+          <div className="absolute -bottom-4 -left-3 sm:-left-6 bg-slate-900 text-white px-5 py-3.5 shadow-lg">
             <p className="text-[10px] uppercase tracking-widest text-slate-400 font-semibold">
               Patented
             </p>
-            <p className="text-sm font-bold">2-Chamber Design</p>
+            <p className="text-base font-bold">2-Chamber Design</p>
           </div>
-          <div className="absolute -top-3 -right-3 sm:-right-6 bg-red-600 text-white px-4 py-3 shadow-lg">
+          <div className="absolute -top-4 -right-3 sm:-right-6 bg-red-600 text-white px-5 py-3.5 shadow-lg">
             <p className="text-[10px] uppercase tracking-widest text-red-100 font-semibold">
               Replaces
             </p>
-            <p className="text-sm font-bold">100s of disposables</p>
+            <p className="text-base font-bold">100s of disposables</p>
           </div>
         </div>
       </div>
