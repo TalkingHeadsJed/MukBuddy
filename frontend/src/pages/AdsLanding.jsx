@@ -15,7 +15,6 @@ import {
   Award,
   Lock,
   Users,
-  Wrench,
   ChevronDown,
 } from "lucide-react";
 import { API, ORDER_URL } from "@/lib/constants";
@@ -98,8 +97,12 @@ export default function AdsLanding() {
   const [vacQuantity, setVacQuantity] = useState(null);
 
   const formRef = useRef(null);
+  const savingsRef = useRef(null);
   const scrollToForm = () => {
     formRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+  const scrollToSavings = () => {
+    savingsRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
   return (
@@ -113,14 +116,14 @@ export default function AdsLanding() {
     >
       <AdsHeader scrollToForm={scrollToForm} />
       <TrustStrip />
-      <Hero
-        vacQuantity={vacQuantity}
-        setVacQuantity={setVacQuantity}
-        scrollToForm={scrollToForm}
-      />
+      <Hero scrollToSavings={scrollToSavings} />
       <AirflowDemo />
       <Benefits />
-      <SavingsCalc vacQuantity={vacQuantity} setVacQuantity={setVacQuantity} />
+      <SavingsCalc
+        savingsRef={savingsRef}
+        vacQuantity={vacQuantity}
+        setVacQuantity={setVacQuantity}
+      />
       <ComparisonTable />
       <SocialProof />
       <GuaranteeBar />
@@ -200,143 +203,91 @@ function TrustStrip() {
 }
 
 /* ─────────────────────────────── Hero ─────────────────────────────── */
-function Hero({ vacQuantity, setVacQuantity, scrollToForm }) {
-  const selected = QUANTITY_OPTIONS.find((q) => q.id === vacQuantity);
-  const dynamicSavings = selected
-    ? selected.machines * SPEND_PER_MACHINE_PER_YEAR
-    : null;
-
+function Hero({ scrollToSavings }) {
   return (
     <section
       data-testid="ads-hero"
       className="relative bg-slate-50 border-b border-slate-200 overflow-hidden"
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
-        {/* Left: copy + qualifier */}
-        <div className="lg:col-span-7 space-y-6">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20 lg:py-24 grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        {/* Left: copy */}
+        <div className="lg:col-span-7 space-y-7">
           <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-red-600 border border-red-600/30 bg-red-50 px-2.5 py-1">
             <span className="w-1.5 h-1.5 bg-red-600 rounded-full animate-pulse" />
-            Built for working crews
+            Reusable shop vac bag
           </div>
           <h1
             className="text-4xl sm:text-5xl lg:text-[3.75rem] font-bold text-slate-900 leading-[1.02] tracking-tight"
             style={{ letterSpacing: "-0.025em" }}
           >
-            Stop buying shop vac bags. <span className="text-red-600">Forever.</span>
+            The reusable shop vac bag that{" "}
+            <span className="text-red-600">saves you thousands</span> — and runs your vac stronger.
           </h1>
           <p className="text-lg sm:text-xl text-slate-600 max-w-xl leading-relaxed">
-            One patented reusable bag per vac — replaces years of disposables,
-            keeps suction strong, and adds life to your motor. Fits 16-gallon
-            Shop-Vac, Ridgid, Craftsman & Stanley.
+            One Muk Buddy replaces years of disposable bags. Stronger suction,
+            longer motor life, and hundreds to thousands of dollars saved every
+            year per machine. Fits 16-gallon Shop-Vac, Ridgid, Craftsman &
+            Stanley.
           </p>
 
-          {/* QUALIFIER — assumptive close */}
-          <div
-            data-testid="ads-qualifier"
-            className="bg-white border-2 border-slate-900 p-5 sm:p-6 mt-4"
-          >
-            <div className="flex items-center gap-2 mb-3">
-              <Wrench className="w-4 h-4 text-red-600" />
-              <p className="text-xs font-bold uppercase tracking-widest text-slate-700">
-                Step 1 · How many wet/dry vacs does your crew run?
-              </p>
-            </div>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
-              {QUANTITY_OPTIONS.map((opt) => {
-                const active = vacQuantity === opt.id;
-                return (
-                  <button
-                    key={opt.id}
-                    type="button"
-                    onClick={() => setVacQuantity(opt.id)}
-                    data-testid={`ads-qualifier-${opt.id}`}
-                    className={[
-                      "px-3 py-3 text-left transition-all border-2 group",
-                      active
-                        ? "bg-slate-900 border-slate-900 text-white"
-                        : "bg-white border-slate-300 text-slate-900 hover:border-slate-900",
-                    ].join(" ")}
-                  >
-                    <div className="font-bold text-base leading-tight">
-                      {opt.label}
-                    </div>
-                    <div
-                      className={[
-                        "text-[11px] mt-0.5",
-                        active ? "text-slate-300" : "text-slate-500",
-                      ].join(" ")}
-                    >
-                      {opt.helper}
-                    </div>
-                  </button>
-                );
-              })}
-            </div>
-
-            {/* Reveal: savings + CTA */}
-            {selected && (
-              <div
-                data-testid="ads-qualifier-reveal"
-                className="mt-5 pt-5 border-t border-slate-200 space-y-4"
+          {/* 3 micro-claims */}
+          <ul className="grid sm:grid-cols-3 gap-3 pt-1">
+            {[
+              { stat: "$1,000+", label: "saved per vac / year" },
+              { stat: "Stronger", label: "suction, longer" },
+              { stat: "Cooler", label: "running motor" },
+            ].map((c) => (
+              <li
+                key={c.label}
+                className="border-l-2 border-red-600 pl-3 py-1"
               >
-                <div className="flex items-start gap-3 text-slate-900">
-                  <DollarSign className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
-                  <p className="text-sm sm:text-base">
-                    Your crew is burning about{" "}
-                    <span className="font-bold text-red-600">
-                      ${dynamicSavings.toLocaleString()}/yr
-                    </span>{" "}
-                    on disposable bags. One Muk Buddy per vac stops that cold.
-                  </p>
-                </div>
-                <div className="flex flex-col sm:flex-row gap-3">
-                  <a
-                    href={ORDER_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    data-testid="ads-hero-order-btn"
-                    className="flex-1 inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-bold text-base px-5 py-3.5 transition-colors uppercase tracking-wide"
-                  >
-                    Equip my {selected.machines === 1 ? "vac" : `${selected.machines} vacs`}
-                    <ArrowRight className="w-5 h-5" />
-                  </a>
-                  <button
-                    type="button"
-                    onClick={scrollToForm}
-                    data-testid="ads-hero-info-btn"
-                    className="inline-flex items-center justify-center gap-2 bg-white border-2 border-slate-900 hover:bg-slate-50 text-slate-900 font-semibold text-base px-5 py-3.5 transition-colors"
-                  >
-                    Get crew pricing
-                  </button>
-                </div>
-              </div>
-            )}
-            {!selected && (
-              <p className="mt-3 text-xs text-slate-500">
-                Most crews run 3–5 machines. Pick one to see your savings.
-              </p>
-            )}
+                <p className="text-lg font-bold text-slate-900 leading-tight">
+                  {c.stat}
+                </p>
+                <p className="text-xs text-slate-600 mt-0.5">{c.label}</p>
+              </li>
+            ))}
+          </ul>
+
+          {/* CTAs */}
+          <div className="flex flex-col sm:flex-row gap-3 pt-2">
+            <a
+              href={ORDER_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="ads-hero-order-btn"
+              className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-bold text-base px-6 py-4 transition-colors uppercase tracking-wide"
+            >
+              Order Muk Buddy
+              <ArrowRight className="w-5 h-5" />
+            </a>
+            <button
+              type="button"
+              onClick={scrollToSavings}
+              data-testid="ads-hero-savings-btn"
+              className="inline-flex items-center justify-center gap-2 bg-white border-2 border-slate-900 hover:bg-slate-50 text-slate-900 font-semibold text-base px-6 py-4 transition-colors"
+            >
+              See my savings
+            </button>
           </div>
 
-          <div className="flex items-center gap-4 pt-2 text-xs text-slate-500">
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-1 pt-1 text-xs text-slate-500">
             <span className="inline-flex items-center gap-1">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} className="w-3.5 h-3.5 fill-red-600 text-red-600" />
               ))}
-              <span className="ml-1 font-semibold text-slate-700">
-                4.9 / 5
-              </span>
+              <span className="ml-1 font-semibold text-slate-700">4.9 / 5</span>
             </span>
             <span>·</span>
-            <span>Trusted by working contractors across North America</span>
+            <span>Free US shipping · 30-day return</span>
           </div>
         </div>
 
-        {/* Right: side-by-side comparison — disposable (X'd out) vs Muk Buddy */}
+        {/* Right: side-by-side comparison — disposable (X'd out, in color) vs Muk Buddy */}
         <div className="lg:col-span-5 relative">
           <div className="bg-gradient-to-br from-slate-100 to-slate-200 border border-slate-200 p-4 sm:p-6">
             <div className="grid grid-cols-2 gap-2 sm:gap-3">
-              {/* Disposable bag — crossed out */}
+              {/* Disposable bag — IN COLOR with red X on top */}
               <div
                 className="relative bg-white border border-slate-300 aspect-square overflow-hidden"
                 data-testid="ads-hero-disposable"
@@ -344,7 +295,7 @@ function Hero({ vacQuantity, setVacQuantity, scrollToForm }) {
                 <img
                   src={IMAGES.disposableBagYellow}
                   alt="Disposable shop vac bag — the old way"
-                  className="w-full h-full object-contain p-2 grayscale opacity-70"
+                  className="w-full h-full object-contain p-2"
                   loading="eager"
                 />
                 {/* Red X overlay */}
@@ -356,18 +307,18 @@ function Hero({ vacQuantity, setVacQuantity, scrollToForm }) {
                 >
                   <line
                     x1="8" y1="8" x2="92" y2="92"
-                    stroke="#DC2626" strokeWidth="6" strokeLinecap="round"
+                    stroke="#DC2626" strokeWidth="7" strokeLinecap="round"
                   />
                   <line
                     x1="92" y1="8" x2="8" y2="92"
-                    stroke="#DC2626" strokeWidth="6" strokeLinecap="round"
+                    stroke="#DC2626" strokeWidth="7" strokeLinecap="round"
                   />
                 </svg>
                 <div className="absolute bottom-0 inset-x-0 bg-slate-900/90 text-white text-center py-2">
                   <p className="text-[10px] uppercase tracking-widest font-bold text-red-400">
-                    Stop buying
+                    Disposable
                   </p>
-                  <p className="text-xs font-semibold">Disposable bags</p>
+                  <p className="text-xs font-semibold">Buy again. And again.</p>
                 </div>
               </div>
 
@@ -385,9 +336,9 @@ function Hero({ vacQuantity, setVacQuantity, scrollToForm }) {
                 />
                 <div className="absolute bottom-0 inset-x-0 bg-red-600 text-white text-center py-2">
                   <p className="text-[10px] uppercase tracking-widest font-bold text-red-100">
-                    Start using
+                    Muk Buddy
                   </p>
-                  <p className="text-xs font-semibold">Muk Buddy</p>
+                  <p className="text-xs font-semibold">Reusable. Forever.</p>
                 </div>
               </div>
             </div>
@@ -603,7 +554,7 @@ function Benefits() {
 }
 
 /* ───────────────────── Savings calc (anchoring + loss aversion) ────────────────────── */
-function SavingsCalc({ vacQuantity, setVacQuantity }) {
+function SavingsCalc({ savingsRef, vacQuantity, setVacQuantity }) {
   const selected = QUANTITY_OPTIONS.find((q) => q.id === vacQuantity);
   const machines = selected?.machines ?? 3; // default preview = 3 machines
 
@@ -616,6 +567,8 @@ function SavingsCalc({ vacQuantity, setVacQuantity }) {
 
   return (
     <section
+      ref={savingsRef}
+      id="savings"
       data-testid="ads-savings"
       className="bg-slate-900 text-white py-20 sm:py-24"
     >
