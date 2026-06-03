@@ -217,34 +217,29 @@ function Hero({ scrollToSavings }) {
             Reusable shop vac bag
           </div>
           <h1
-            className="text-4xl sm:text-5xl lg:text-[3.75rem] font-bold text-slate-900 leading-[1.02] tracking-tight"
-            style={{ letterSpacing: "-0.025em" }}
+            className="text-5xl sm:text-6xl lg:text-7xl font-bold text-slate-900 leading-[1.02] tracking-tight"
+            style={{ letterSpacing: "-0.03em" }}
           >
-            The reusable shop vac bag that{" "}
-            <span className="text-red-600">saves you thousands</span> — and runs your vac stronger.
+            The last bag <span className="text-red-600">you'll buy.</span>
           </h1>
           <p className="text-lg sm:text-xl text-slate-600 max-w-xl leading-relaxed">
-            One Muk Buddy replaces years of disposable bags. Stronger suction,
-            longer motor life, and hundreds to thousands of dollars saved every
-            year per machine. Fits 16-gallon Shop-Vac, Ridgid, Craftsman &
-            Stanley.
+            One reusable Muk Buddy replaces years of disposable bags. Fits
+            16-gallon Shop-Vac, Ridgid, Craftsman & Stanley.
           </p>
 
-          {/* 3 micro-claims */}
-          <ul className="grid sm:grid-cols-3 gap-3 pt-1">
+          {/* 3 short bullets */}
+          <ul className="space-y-2 pt-1">
             {[
-              { stat: "$1,000+", label: "saved per vac / year" },
-              { stat: "Stronger", label: "suction, longer" },
-              { stat: "Cooler", label: "running motor" },
-            ].map((c) => (
+              "Saves you thousands on bags & filters",
+              "Stronger, longer-lasting suction",
+              "Extends your motor's life",
+            ].map((b) => (
               <li
-                key={c.label}
-                className="border-l-2 border-red-600 pl-3 py-1"
+                key={b}
+                className="flex items-center gap-3 text-base sm:text-lg text-slate-800 font-medium"
               >
-                <p className="text-lg font-bold text-slate-900 leading-tight">
-                  {c.stat}
-                </p>
-                <p className="text-xs text-slate-600 mt-0.5">{c.label}</p>
+                <Check className="w-5 h-5 text-red-600 flex-shrink-0" strokeWidth={3} />
+                <span>{b}</span>
               </li>
             ))}
           </ul>
