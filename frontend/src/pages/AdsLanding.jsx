@@ -436,14 +436,14 @@ function AirflowDemo() {
 
           {/* Video */}
           <div className="lg:col-span-7">
-            <div className="relative bg-slate-900 border-2 border-red-600 overflow-hidden aspect-video">
+            <div className="relative bg-slate-900 border-2 border-red-600 overflow-hidden aspect-[4/5] sm:aspect-[3/4] max-h-[640px] mx-auto">
               <video
                 src={IMAGES.mascotAnimation}
                 autoPlay
                 muted
                 loop
                 playsInline
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
                 data-testid="ads-airflow-video"
                 aria-label="Muk Buddy 2-chamber airflow demonstration"
               />
