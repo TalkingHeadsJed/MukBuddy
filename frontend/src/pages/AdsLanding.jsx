@@ -17,7 +17,7 @@ import {
   Users,
   ChevronDown,
 } from "lucide-react";
-import { API, ORDER_URL } from "@/lib/constants";
+import { API, buildAddToCartUrl } from "@/lib/constants";
 import { IMAGES } from "@/lib/images";
 
 /* ──────────────────────────────────────────────────────────────────────────
@@ -96,6 +96,28 @@ export default function AdsLanding() {
   // Lifted state — qualifier selection drives savings calc, CTAs, and form
   const [vacQuantity, setVacQuantity] = useState(null);
 
+  // Capture Meta-ads UTM/tracking params on landing so they flow through
+  // to the WooCommerce add-to-cart URL for attribution. Lazy init = run once.
+  const [utmSuffix] = useState(() => {
+    if (typeof window === "undefined") return "";
+    const search = new URLSearchParams(window.location.search);
+    const keep = [
+      "utm_source",
+      "utm_medium",
+      "utm_campaign",
+      "utm_term",
+      "utm_content",
+      "fbclid",
+      "gclid",
+    ];
+    const parts = [];
+    for (const k of keep) {
+      const v = search.get(k);
+      if (v) parts.push(`${k}=${encodeURIComponent(v)}`);
+    }
+    return parts.join("&");
+  });
+
   const formRef = useRef(null);
   const savingsRef = useRef(null);
   const scrollToForm = () => {
@@ -114,30 +136,31 @@ export default function AdsLanding() {
           "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
       }}
     >
-      <AdsHeader scrollToForm={scrollToForm} />
+      <AdsHeader scrollToForm={scrollToForm} utmSuffix={utmSuffix} />
       <TrustStrip />
-      <Hero scrollToSavings={scrollToSavings} />
+      <Hero scrollToSavings={scrollToSavings} utmSuffix={utmSuffix} />
       <AirflowDemo />
-      <Benefits />
+      <Benefits utmSuffix={utmSuffix} />
       <SavingsCalc
         savingsRef={savingsRef}
         vacQuantity={vacQuantity}
         setVacQuantity={setVacQuantity}
+        utmSuffix={utmSuffix}
       />
       <ComparisonTable />
       <SocialProof />
       <GuaranteeBar />
       <LeadFormSection formRef={formRef} vacQuantity={vacQuantity} />
       <FAQ />
-      <FinalCTA vacQuantity={vacQuantity} />
+      <FinalCTA vacQuantity={vacQuantity} utmSuffix={utmSuffix} />
       <Footer />
-      <StickyMobileCTA scrollToForm={scrollToForm} />
+      <StickyMobileCTA scrollToForm={scrollToForm} utmSuffix={utmSuffix} />
     </main>
   );
 }
 
 /* ─────────────────────────────── Header ─────────────────────────────── */
-function AdsHeader({ scrollToForm }) {
+function AdsHeader({ scrollToForm, utmSuffix }) {
   return (
     <header
       data-testid="ads-header"
@@ -162,7 +185,7 @@ function AdsHeader({ scrollToForm }) {
             Crew pricing
           </button>
           <a
-            href={ORDER_URL}
+            href={buildAddToCartUrl(1, utmSuffix)}
             target="_blank"
             rel="noopener noreferrer"
             data-testid="ads-header-order-btn"
@@ -203,7 +226,7 @@ function TrustStrip() {
 }
 
 /* ─────────────────────────────── Hero ─────────────────────────────── */
-function Hero({ scrollToSavings }) {
+function Hero({ scrollToSavings, utmSuffix }) {
   return (
     <section
       data-testid="ads-hero"
@@ -268,7 +291,7 @@ function Hero({ scrollToSavings }) {
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-3 pt-3">
             <a
-              href={ORDER_URL}
+              href={buildAddToCartUrl(1, utmSuffix)}
               target="_blank"
               rel="noopener noreferrer"
               data-testid="ads-hero-order-btn"
@@ -411,7 +434,7 @@ function AirflowDemo() {
             <p className="text-slate-300 text-lg leading-relaxed">
               Air pulls debris into the outer chamber, where heavier dust and
               fines drop out before they ever touch your filter. Only clean air
-              continues through to the motor. That's why your suction stays
+              continues through to the motor. That&apos;s why your suction stays
               strong and your motor runs cool.
             </p>
             <ul className="space-y-2 pt-2 text-slate-300">
@@ -472,7 +495,7 @@ function AirflowDemo() {
 }
 
 /* ─────────────────────────────── 3 Big Benefits ─────────────────────────────── */
-function Benefits() {
+function Benefits({ utmSuffix }) {
   const benefits = [
     {
       icon: DollarSign,
@@ -578,7 +601,7 @@ function Benefits() {
         {/* Big CTA below benefits */}
         <div className="text-center mt-14 sm:mt-20">
           <a
-            href={ORDER_URL}
+            href={buildAddToCartUrl(1, utmSuffix)}
             target="_blank"
             rel="noopener noreferrer"
             data-testid="ads-benefits-order-btn"
@@ -597,7 +620,7 @@ function Benefits() {
 }
 
 /* ───────────────────── Savings calc (anchoring + loss aversion) ────────────────────── */
-function SavingsCalc({ savingsRef, vacQuantity, setVacQuantity }) {
+function SavingsCalc({ savingsRef, vacQuantity, setVacQuantity, utmSuffix }) {
   const selected = QUANTITY_OPTIONS.find((q) => q.id === vacQuantity);
   const machines = selected?.machines ?? 3; // default preview = 3 machines
 
@@ -629,7 +652,7 @@ function SavingsCalc({ savingsRef, vacQuantity, setVacQuantity }) {
               <span className="text-red-500">real money.</span>
             </h2>
             <p className="text-slate-300 mt-5 text-lg leading-relaxed">
-              Run the math on your own crew. We'll show you what disposable
+              Run the math on your own crew. We&apos;ll show you what disposable
               bags cost over five years vs. one Muk Buddy per machine.
             </p>
           </div>
@@ -708,7 +731,7 @@ function SavingsCalc({ savingsRef, vacQuantity, setVacQuantity }) {
             </div>
 
             <a
-              href={ORDER_URL}
+              href={buildAddToCartUrl(machines, utmSuffix)}
               target="_blank"
               rel="noopener noreferrer"
               data-testid="ads-savings-order-btn"
@@ -875,7 +898,7 @@ function SocialProof() {
                 ))}
               </div>
               <blockquote className="text-slate-700 leading-relaxed flex-1">
-                "{q.quote}"
+                &ldquo;{q.quote}&rdquo;
               </blockquote>
               <figcaption className="mt-5 pt-5 border-t border-slate-200 flex items-center gap-3">
                 <img
@@ -960,13 +983,6 @@ function LeadFormSection({ formRef, vacQuantity }) {
   });
   const [submitting, setSubmitting] = useState(false);
 
-  // Sync machine count when qualifier changes
-  useEffect(() => {
-    if (selected) {
-      setForm((f) => ({ ...f, machine_count: selected.machines.toString() }));
-    }
-  }, [selected]);
-
   const onChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
   const validate = () => {
@@ -1044,7 +1060,7 @@ function LeadFormSection({ formRef, vacQuantity }) {
             Get your crew set up.
           </h2>
           <p className="text-slate-600 mt-4 max-w-xl mx-auto">
-            Tell us what you run and we'll come back with crew pricing within
+            Tell us what you run and we&apos;ll come back with crew pricing within
             one business day. A real human replies — no call center, no spam.
           </p>
         </div>
@@ -1250,7 +1266,7 @@ function FaqRow({ q, a, testid }) {
 }
 
 /* ─────────────────────────────── Final CTA ─────────────────────────────── */
-function FinalCTA({ vacQuantity }) {
+function FinalCTA({ vacQuantity, utmSuffix }) {
   const selected = QUANTITY_OPTIONS.find((q) => q.id === vacQuantity);
   const machines = selected?.machines;
   return (
@@ -1265,10 +1281,10 @@ function FinalCTA({ vacQuantity }) {
         </h2>
         <p className="text-lg text-slate-300 mt-5 max-w-xl mx-auto">
           One reusable bag per vac. Stronger suction. Longer motor life. Free
-          shipping. 30 days to send it back if it doesn't pay for itself.
+          shipping. 30 days to send it back if it doesn&apos;t pay for itself.
         </p>
         <a
-          href={ORDER_URL}
+          href={buildAddToCartUrl(machines || 1, utmSuffix)}
           target="_blank"
           rel="noopener noreferrer"
           data-testid="ads-final-order-btn"
@@ -1308,7 +1324,7 @@ function Footer() {
 }
 
 /* ──────────────────── Sticky Mobile Bottom CTA Bar ──────────────────── */
-function StickyMobileCTA({ scrollToForm }) {
+function StickyMobileCTA({ scrollToForm, utmSuffix }) {
   return (
     <div
       data-testid="ads-sticky-cta"
@@ -1323,7 +1339,7 @@ function StickyMobileCTA({ scrollToForm }) {
         Crew pricing
       </button>
       <a
-        href={ORDER_URL}
+        href={buildAddToCartUrl(1, utmSuffix)}
         target="_blank"
         rel="noopener noreferrer"
         data-testid="ads-sticky-order-btn"
