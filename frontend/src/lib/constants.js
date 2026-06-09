@@ -1,19 +1,22 @@
 export const ORDER_URL = "https://thefloorlord.com/product/muk-buddy/";
 
 // WooCommerce direct-add-to-cart (used by /ads landing page for 1-click checkout).
-// Pattern confirmed from live site: /my-cart/?product_added_to_cart=ID&quantity=N
-export const WC_CART_URL = "https://thefloorlord.com/my-cart/";
+// Pattern confirmed working on thefloorlord.com:
+//   /checkout/?add-to-cart=ID&quantity=N
+// Going straight to /checkout/ skips the cart page entirely.
+export const WC_CHECKOUT_URL = "https://thefloorlord.com/checkout/";
 export const WC_PRODUCT_ID = "6541"; // Muk Buddy product ID
 
 /**
- * Build a WooCommerce add-to-cart URL. Optionally append captured UTM/tracking
- * params so Meta-ads attribution flows through to WooCommerce reports.
+ * Build a WooCommerce add-to-cart URL targeting the checkout page directly.
+ * Optionally append captured UTM/tracking params so Meta-ads attribution
+ * flows through to WooCommerce reports.
  * @param {number} quantity defaults to 1
  * @param {string} utmSuffix already-encoded "utm_source=...&utm_medium=..." string
  */
 export function buildAddToCartUrl(quantity = 1, utmSuffix = "") {
   const qty = Math.max(1, Math.floor(Number(quantity) || 1));
-  const base = `${WC_CART_URL}?product_added_to_cart=${WC_PRODUCT_ID}&quantity=${qty}`;
+  const base = `${WC_CHECKOUT_URL}?add-to-cart=${WC_PRODUCT_ID}&quantity=${qty}`;
   return utmSuffix ? `${base}&${utmSuffix}` : base;
 }
 
