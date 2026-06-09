@@ -979,7 +979,7 @@ function LeadFormSection({ formRef, vacQuantity }) {
     phone: "",
     crew_count: "",
     machine_count: selected?.machines?.toString() ?? "",
-    website: "",
+    site_ref: "",
   });
   const [submitting, setSubmitting] = useState(false);
 
@@ -990,6 +990,9 @@ function LeadFormSection({ formRef, vacQuantity }) {
       return "Please enter your name.";
     if (!/^\S+@\S+\.\S+$/.test(form.email))
       return "Please enter a valid email.";
+    const phone = form.phone.trim();
+    if (phone && !/^[0-9+\-\s().]{7,20}$/.test(phone))
+      return "Please enter a valid phone number (digits only, 7\u201320 characters).";
     return null;
   };
 
@@ -1019,7 +1022,7 @@ function LeadFormSection({ formRef, vacQuantity }) {
         phone: form.phone.trim() || null,
         crew_size: crewSizeStr || null,
         message: messageStr,
-        website: form.website || null,
+        site_ref: form.site_ref || null,
       };
       const { data } = await axios.post(`${API}/leads`, payload, {
         headers: { "Content-Type": "application/json" },
@@ -1074,8 +1077,8 @@ function LeadFormSection({ formRef, vacQuantity }) {
           {/* honeypot */}
           <input
             type="text"
-            name="website"
-            value={form.website}
+            name="site_ref"
+            value={form.site_ref}
             onChange={onChange}
             tabIndex={-1}
             autoComplete="off"

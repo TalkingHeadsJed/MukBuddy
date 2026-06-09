@@ -6,7 +6,7 @@ import { API } from "@/lib/constants";
 import { Overline } from "@/components/sections/Problem";
 import { Send, Mail, Phone, User, Users, MessageSquare } from "lucide-react";
 
-const emptyForm = { name: "", email: "", phone: "", crew_size: "", message: "", website: "" };
+const emptyForm = { name: "", email: "", phone: "", crew_size: "", message: "", site_ref: "" };
 
 export default function LeadForm() {
   const [form, setForm] = useState(emptyForm);
@@ -18,6 +18,9 @@ export default function LeadForm() {
   const validate = () => {
     if (!form.name.trim() || form.name.trim().length < 2) return "Please enter your name.";
     if (!/^\S+@\S+\.\S+$/.test(form.email)) return "Please enter a valid email.";
+    const phone = form.phone.trim();
+    if (phone && !/^[0-9+\-\s().]{7,20}$/.test(phone))
+      return "Please enter a valid phone number (digits only, 7\u201320 characters).";
     if (!form.message.trim() || form.message.trim().length < 5) return "Please add a short message.";
     return null;
   };
@@ -37,7 +40,7 @@ export default function LeadForm() {
         phone: form.phone.trim() || null,
         crew_size: form.crew_size.trim() || null,
         message: form.message.trim(),
-        website: form.website || null,
+        site_ref: form.site_ref || null,
       };
       const { data } = await axios.post(`${API}/leads`, payload, {
         headers: { "Content-Type": "application/json" },
@@ -91,8 +94,8 @@ export default function LeadForm() {
             {/* Honeypot */}
             <input
               type="text"
-              name="website"
-              value={form.website}
+              name="site_ref"
+              value={form.site_ref}
               onChange={onChange}
               tabIndex={-1}
               autoComplete="off"

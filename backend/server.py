@@ -105,14 +105,14 @@ _PHONE_RE = re.compile(r"^[0-9+\-\s().]{7,20}$")
 
 
 class LeadCreate(BaseModel):
-    model_config = ConfigDict(extra="forbid", str_strip_whitespace=True)
+    model_config = ConfigDict(extra="ignore", str_strip_whitespace=True)
 
     name: str = Field(..., min_length=2, max_length=80)
     email: EmailStr
     phone: Optional[str] = Field(default=None, max_length=25)
     crew_size: Optional[str] = Field(default=None, max_length=40)
     message: str = Field(..., min_length=5, max_length=2000)
-    website: Optional[str] = Field(default=None, max_length=200)  # honeypot
+    site_ref: Optional[str] = Field(default=None, max_length=200)  # honeypot
 
     @field_validator("phone")
     @classmethod
@@ -165,7 +165,7 @@ async def create_lead(
     ip = _client_ip(request)
 
     # Honeypot: silently reject bots
-    if payload.website:
+    if payload.site_ref:
         logger.warning("Honeypot triggered from %s", ip)
         raise HTTPException(status_code=400, detail="Invalid submission")
 

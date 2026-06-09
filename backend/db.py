@@ -29,7 +29,11 @@ _connect_args = {"check_same_thread": False} if DATABASE_URL.startswith("sqlite"
 engine = create_async_engine(
     DATABASE_URL,
     echo=False,
-    pool_pre_ping=True,  # detect stale MySQL connections after Pair restarts
+    # pool_pre_ping is broken with aiomysql 0.3.x (ping() signature changed and
+    # SQLAlchemy's do_ping raises TypeError on every checkout -> 500s).
+    # Recycle connections before Pair's MySQL wait_timeout kills them instead.
+    pool_pre_ping=False,
+    pool_recycle=280,
     connect_args=_connect_args,
 )
 
