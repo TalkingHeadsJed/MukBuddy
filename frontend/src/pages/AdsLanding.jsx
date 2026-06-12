@@ -1009,7 +1009,16 @@ function LeadFormSection({ formRef, vacQuantity }) {
         timeout: 15000,
       });
       if (typeof window !== "undefined" && window.fbq) {
-        window.fbq("track", "Lead");
+        // Pass estimated lead value so Meta's algorithm can bid harder
+        // for high-machine-count crews. $99/unit × machines picked in qualifier.
+        const machines = parseInt(form.machine_count, 10) || 1;
+        const leadValue = machines * 99;
+        window.fbq("track", "Lead", {
+          value: leadValue,
+          currency: "USD",
+          content_name: "Ads LP Lead Form",
+          num_items: machines,
+        });
       }
       const leadId = data?.id ? `?lead_id=${encodeURIComponent(data.id)}` : "";
       navigate(`/thank-you${leadId}`);

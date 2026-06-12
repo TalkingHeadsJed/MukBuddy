@@ -49,7 +49,11 @@ export default function LeadForm() {
       setForm(emptyForm);
       // Meta Pixel — fire Lead conversion at the moment of successful submit.
       if (typeof window !== "undefined" && window.fbq) {
-        window.fbq("track", "Lead", { content_name: "Main Site Lead Form" });
+        window.fbq("track", "Lead", {
+          value: 99,
+          currency: "USD",
+          content_name: "Main Site Lead Form",
+        });
       }
       // Hard navigate to /thank-you so conversion pixels & ad-platform
       // URL-based goals can fire on a real, distinct page view.
