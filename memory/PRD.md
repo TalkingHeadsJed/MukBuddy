@@ -81,6 +81,7 @@ Frontend production build: `cd frontend && yarn build:blog`
 - **Phase 5 (2026-06-02 morning):** Pulled web-guy's GitHub code into Emergent, merged blog system back on top
 - **Phase 6 (2026-06-02 midday):** Built token-gated draft preview system (`/blog/draft-preview/<TOKEN>/<slug>/`, banner, noindex, gitignored, robots disallow, dotenv loader); switched deploy script to `yarn build:blog`
 - **Phase 7 (2026-06-02 afternoon):** Built Meta ads landing page at `/ads` — trade-pro style, Inter font, navy + red, 3 benefits, dual CTA (order + lead form), Meta Pixel placeholder, noindex; scoped heading-font CSS override so main `/` cartoon style stays intact
+- **Phase 8 (2026-06-12):** Removed "Made with Emergent" badge HTML + emergent-main.js script tag from `frontend/public/index.html`. Production bundle is now badge-free after next `yarn build:blog` + VPS deploy. (Badge still visible on Emergent preview URL because it's injected by the preview proxy — does NOT affect mukbuddy.com.)
 
 ## Pending / Backlog
 - **P0**: User to click "Save to GitHub" to push merged codebase + draft preview system + Meta ads LP to TalkingHeadsJed/MukBuddy
