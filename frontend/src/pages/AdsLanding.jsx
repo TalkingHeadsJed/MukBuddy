@@ -227,31 +227,26 @@ function Hero({ scrollToSavings, utmSuffix }) {
             loading="eager"
           />
 
-          {/* LIGHT scrim — only enough to keep text legible. Bags clearly visible. */}
+          {/* Very LIGHT scrim — bags must stay clearly visible across most of the pane */}
           <div
             aria-hidden="true"
-            className="absolute inset-0 bg-gradient-to-r from-slate-950/70 via-slate-950/20 to-transparent"
-          />
-          {/* Stronger anchor only at the bottom-left where copy sits */}
-          <div
-            aria-hidden="true"
-            className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-slate-950/85 via-slate-950/40 to-transparent"
+            className="absolute inset-0 bg-slate-950/15"
           />
 
           {/* Subtle red ✕ — diagonal accent, not dominating the photo */}
           <svg
             viewBox="0 0 100 100"
             preserveAspectRatio="none"
-            className="absolute inset-0 w-full h-full pointer-events-none opacity-40"
+            className="absolute inset-0 w-full h-full pointer-events-none opacity-30"
             aria-hidden="true"
           >
             <line
               x1="6" y1="6" x2="94" y2="94"
-              stroke="#DC2626" strokeWidth="1.8" strokeLinecap="round"
+              stroke="#DC2626" strokeWidth="1.6" strokeLinecap="round"
             />
             <line
               x1="94" y1="6" x2="6" y2="94"
-              stroke="#DC2626" strokeWidth="1.8" strokeLinecap="round"
+              stroke="#DC2626" strokeWidth="1.6" strokeLinecap="round"
             />
           </svg>
 
@@ -265,70 +260,71 @@ function Hero({ scrollToSavings, utmSuffix }) {
             </div>
           </div>
 
-          {/* TEXT OVERLAY — compact, lower-left, fits the fold */}
-          <div className="relative z-10 h-full flex flex-col justify-end p-5 sm:p-8 lg:p-10 xl:p-14 pb-8 sm:pb-10 lg:pb-12 space-y-4 max-w-xl">
-            <h1
-              className="text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-bold text-white leading-[0.95] tracking-tight"
-              style={{
-                letterSpacing: "-0.035em",
-                textShadow: "0 2px 16px rgba(0,0,0,0.85), 0 1px 3px rgba(0,0,0,0.95)",
-              }}
-            >
-              Reusable bag.{" "}
-              <span className="text-red-500">Saves thousands.</span>
-            </h1>
-
-            <ul className="space-y-2">
-              {[
-                "Saves you thousands on bags & filters",
-                "Stronger, longer-lasting suction",
-                "Extends your motor's life",
-              ].map((b) => (
-                <li
-                  key={b}
-                  className="flex items-center gap-2.5 text-sm sm:text-base text-white font-semibold"
-                  style={{ textShadow: "0 1px 6px rgba(0,0,0,0.95)" }}
-                >
-                  <span className="w-5 h-5 sm:w-6 sm:h-6 bg-red-600 flex items-center justify-center flex-shrink-0 shadow-lg">
-                    <Check className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-white" strokeWidth={4} />
-                  </span>
-                  <span>{b}</span>
-                </li>
-              ))}
-            </ul>
-
-            {/* CTAs — compact */}
-            <div className="flex flex-col sm:flex-row gap-2.5 pt-1">
-              <a
-                href={buildAddToCartUrl(1, utmSuffix)}
-                target="_blank"
-                rel="noopener noreferrer"
-                data-testid="ads-hero-order-btn"
-                className="relative inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-bold text-base sm:text-lg px-6 sm:px-8 py-3.5 sm:py-4 transition-all uppercase tracking-wider shadow-2xl ring-4 ring-red-600/30 hover:ring-red-600/60 hover:scale-[1.02]"
+          {/* TEXT PANEL — semi-transparent dark card so bags above stay fully visible */}
+          <div className="relative z-10 h-full flex flex-col justify-end p-4 sm:p-6 lg:p-8">
+            <div className="bg-slate-950/85 backdrop-blur-sm border-l-4 border-red-600 p-5 sm:p-6 lg:p-7 space-y-4 max-w-xl shadow-2xl">
+              <h1
+                className="font-bold text-white leading-[0.95] tracking-tight"
+                style={{ letterSpacing: "-0.035em" }}
               >
-                Order Muk Buddy
-                <ArrowRight className="w-5 h-5" strokeWidth={2.5} />
-              </a>
-              <button
-                type="button"
-                onClick={scrollToSavings}
-                data-testid="ads-hero-savings-btn"
-                className="inline-flex items-center justify-center gap-2 bg-white/10 backdrop-blur-md border-2 border-white/50 hover:bg-white/20 text-white font-semibold text-sm px-5 py-3.5 transition-colors"
-              >
-                See my savings
-              </button>
-            </div>
+                <span className="block text-red-500 text-5xl sm:text-6xl lg:text-6xl xl:text-7xl">
+                  STOP
+                </span>
+                <span className="block text-3xl sm:text-4xl lg:text-4xl xl:text-5xl mt-1">
+                  Using Disposable VAC
+                </span>
+              </h1>
 
-            <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] sm:text-xs text-white/95"
-                 style={{ textShadow: "0 1px 3px rgba(0,0,0,0.95)" }}>
-              <span className="inline-flex items-center gap-0.5">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-3.5 h-3.5 fill-red-500 text-red-500" />
+              <ul className="space-y-1.5">
+                {[
+                  "Saves you thousands on bags & filters",
+                  "Stronger, longer-lasting suction",
+                  "Extends your motor's life",
+                ].map((b) => (
+                  <li
+                    key={b}
+                    className="flex items-center gap-2.5 text-sm sm:text-base text-white font-semibold"
+                  >
+                    <span className="w-5 h-5 bg-red-600 flex items-center justify-center flex-shrink-0">
+                      <Check className="w-3 h-3 text-white" strokeWidth={4} />
+                    </span>
+                    <span>{b}</span>
+                  </li>
                 ))}
-                <span className="ml-1 font-bold text-white">4.9 / 5</span>
-              </span>
-              <span className="text-white/60">·</span>
-              <span>Free US shipping · 30-day return</span>
+              </ul>
+
+              {/* CTAs */}
+              <div className="flex flex-col sm:flex-row gap-2.5 pt-1">
+                <a
+                  href={buildAddToCartUrl(1, utmSuffix)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="ads-hero-order-btn"
+                  className="relative inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-bold text-base sm:text-lg px-6 sm:px-7 py-3 sm:py-3.5 transition-all uppercase tracking-wider shadow-2xl ring-4 ring-red-600/30 hover:ring-red-600/60 hover:scale-[1.02]"
+                >
+                  Order Muk Buddy
+                  <ArrowRight className="w-5 h-5" strokeWidth={2.5} />
+                </a>
+                <button
+                  type="button"
+                  onClick={scrollToSavings}
+                  data-testid="ads-hero-savings-btn"
+                  className="inline-flex items-center justify-center gap-2 bg-white/10 backdrop-blur-md border-2 border-white/40 hover:bg-white/20 text-white font-semibold text-sm px-5 py-3 transition-colors"
+                >
+                  See my savings
+                </button>
+              </div>
+
+              <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] text-white/95">
+                <span className="inline-flex items-center gap-0.5">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-3.5 h-3.5 fill-red-500 text-red-500" />
+                  ))}
+                  <span className="ml-1 font-bold text-white">4.9 / 5</span>
+                </span>
+                <span className="text-white/60">·</span>
+                <span>Free US shipping · 30-day return</span>
+              </div>
             </div>
           </div>
         </div>
