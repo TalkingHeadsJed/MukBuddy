@@ -227,23 +227,6 @@ function Hero({ scrollToSavings, utmSuffix }) {
             loading="eager"
           />
 
-          {/* Subtle red ✕ — diagonal accent only */}
-          <svg
-            viewBox="0 0 100 100"
-            preserveAspectRatio="none"
-            className="absolute inset-0 w-full h-full pointer-events-none opacity-25"
-            aria-hidden="true"
-          >
-            <line
-              x1="6" y1="6" x2="94" y2="94"
-              stroke="#DC2626" strokeWidth="1.4" strokeLinecap="round"
-            />
-            <line
-              x1="94" y1="6" x2="6" y2="94"
-              stroke="#DC2626" strokeWidth="1.4" strokeLinecap="round"
-            />
-          </svg>
-
           {/* "DISPOSABLE · THE BAG TAX" stamp at top */}
           <div className="absolute top-5 left-5 sm:top-6 sm:left-8 z-10">
             <div className="inline-flex items-center gap-2 bg-red-600 text-white px-3 py-1.5 shadow-2xl">
@@ -264,10 +247,17 @@ function Hero({ scrollToSavings, utmSuffix }) {
                   "0 6px 32px rgba(0,0,0,0.85), 0 3px 10px rgba(0,0,0,0.95), 0 1px 2px rgba(0,0,0,1)",
               }}
             >
-              <span className="block text-red-500 text-7xl sm:text-8xl lg:text-9xl xl:text-[10rem] font-black">
+              <span
+                className="block text-red-500 text-[8rem] sm:text-[12rem] lg:text-[14rem] xl:text-[17rem] leading-[0.78]"
+                style={{
+                  fontWeight: 900,
+                  letterSpacing: "-0.075em",
+                  WebkitTextStroke: "3px #ef4444",
+                }}
+              >
                 STOP
               </span>
-              <span className="block text-white text-3xl sm:text-5xl lg:text-5xl xl:text-6xl mt-2 sm:mt-3 font-bold">
+              <span className="block text-white text-3xl sm:text-5xl lg:text-5xl xl:text-6xl mt-3 sm:mt-4 font-bold">
                 using disposable bags
               </span>
             </h1>
