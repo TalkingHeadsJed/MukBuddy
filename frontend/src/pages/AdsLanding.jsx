@@ -212,14 +212,14 @@ function Hero({ scrollToSavings, utmSuffix }) {
       data-testid="ads-hero"
       className="relative bg-slate-950 overflow-hidden"
     >
-      {/* Edge-to-edge 50/50 split. Sized to fit in the first fold. */}
-      <div className="relative grid lg:grid-cols-2 lg:min-h-[560px] lg:max-h-[680px]">
-        {/* ═══════════════════ LEFT: BAG PILE + TEXT OVERLAY ═══════════════════ */}
+      {/* Edge-to-edge 50/50 split. Uses more of the fold. */}
+      <div className="relative grid lg:grid-cols-2 lg:min-h-[720px] lg:max-h-[820px]">
+        {/* ═══════════════════ LEFT: BAG PILE + HEADLINE (NO DARK CARD) ═══════════════════ */}
         <div
-          className="relative overflow-hidden order-2 lg:order-1 min-h-[460px] lg:min-h-0"
+          className="relative overflow-hidden order-2 lg:order-1 min-h-[540px] lg:min-h-0 flex flex-col"
           data-testid="ads-hero-disposable"
         >
-          {/* Full-bleed pile of bags — kept BRIGHT so the pile is visible */}
+          {/* Full-bleed pile of bags — fully visible, no scrim across the photo */}
           <img
             src={IMAGES.bagPileMountain}
             alt="A mountain of disposable shop vac bags — the bag tax contractors pay every week."
@@ -227,120 +227,65 @@ function Hero({ scrollToSavings, utmSuffix }) {
             loading="eager"
           />
 
-          {/* Very LIGHT scrim — bags must stay clearly visible across most of the pane */}
-          <div
-            aria-hidden="true"
-            className="absolute inset-0 bg-slate-950/15"
-          />
-
-          {/* Subtle red ✕ — diagonal accent, not dominating the photo */}
+          {/* Subtle red ✕ — diagonal accent only */}
           <svg
             viewBox="0 0 100 100"
             preserveAspectRatio="none"
-            className="absolute inset-0 w-full h-full pointer-events-none opacity-30"
+            className="absolute inset-0 w-full h-full pointer-events-none opacity-25"
             aria-hidden="true"
           >
             <line
               x1="6" y1="6" x2="94" y2="94"
-              stroke="#DC2626" strokeWidth="1.6" strokeLinecap="round"
+              stroke="#DC2626" strokeWidth="1.4" strokeLinecap="round"
             />
             <line
               x1="94" y1="6" x2="6" y2="94"
-              stroke="#DC2626" strokeWidth="1.6" strokeLinecap="round"
+              stroke="#DC2626" strokeWidth="1.4" strokeLinecap="round"
             />
           </svg>
 
           {/* "DISPOSABLE · THE BAG TAX" stamp at top */}
           <div className="absolute top-5 left-5 sm:top-6 sm:left-8 z-10">
-            <div className="inline-flex items-center gap-2 bg-red-600 text-white px-2.5 py-1 shadow-2xl">
-              <X className="w-3 h-3" strokeWidth={3} />
-              <span className="text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.18em]">
+            <div className="inline-flex items-center gap-2 bg-red-600 text-white px-3 py-1.5 shadow-2xl">
+              <X className="w-3.5 h-3.5" strokeWidth={3} />
+              <span className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em]">
                 Disposable · The bag tax
               </span>
             </div>
           </div>
 
-          {/* TEXT PANEL — semi-transparent dark card so bags above stay fully visible */}
-          <div className="relative z-10 h-full flex flex-col justify-end p-4 sm:p-6 lg:p-8">
-            <div className="bg-slate-950/85 backdrop-blur-sm border-l-4 border-red-600 p-5 sm:p-6 lg:p-7 space-y-4 max-w-xl shadow-2xl">
-              <h1
-                className="font-bold text-white leading-[0.95] tracking-tight"
-                style={{ letterSpacing: "-0.035em" }}
-              >
-                <span className="block text-red-500 text-5xl sm:text-6xl lg:text-6xl xl:text-7xl">
-                  STOP
-                </span>
-                <span className="block text-3xl sm:text-4xl lg:text-4xl xl:text-5xl mt-1">
-                  Using Disposable VAC
-                </span>
-              </h1>
-
-              <ul className="space-y-1.5">
-                {[
-                  "Saves you thousands on bags & filters",
-                  "Stronger, longer-lasting suction",
-                  "Extends your motor's life",
-                ].map((b) => (
-                  <li
-                    key={b}
-                    className="flex items-center gap-2.5 text-sm sm:text-base text-white font-semibold"
-                  >
-                    <span className="w-5 h-5 bg-red-600 flex items-center justify-center flex-shrink-0">
-                      <Check className="w-3 h-3 text-white" strokeWidth={4} />
-                    </span>
-                    <span>{b}</span>
-                  </li>
-                ))}
-              </ul>
-
-              {/* CTAs */}
-              <div className="flex flex-col sm:flex-row gap-2.5 pt-1">
-                <a
-                  href={buildAddToCartUrl(1, utmSuffix)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  data-testid="ads-hero-order-btn"
-                  className="relative inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-bold text-base sm:text-lg px-6 sm:px-7 py-3 sm:py-3.5 transition-all uppercase tracking-wider shadow-2xl ring-4 ring-red-600/30 hover:ring-red-600/60 hover:scale-[1.02]"
-                >
-                  Order Muk Buddy
-                  <ArrowRight className="w-5 h-5" strokeWidth={2.5} />
-                </a>
-                <button
-                  type="button"
-                  onClick={scrollToSavings}
-                  data-testid="ads-hero-savings-btn"
-                  className="inline-flex items-center justify-center gap-2 bg-white/10 backdrop-blur-md border-2 border-white/40 hover:bg-white/20 text-white font-semibold text-sm px-5 py-3 transition-colors"
-                >
-                  See my savings
-                </button>
-              </div>
-
-              <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] text-white/95">
-                <span className="inline-flex items-center gap-0.5">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-3.5 h-3.5 fill-red-500 text-red-500" />
-                  ))}
-                  <span className="ml-1 font-bold text-white">4.9 / 5</span>
-                </span>
-                <span className="text-white/60">·</span>
-                <span>Free US shipping · 30-day return</span>
-              </div>
-            </div>
+          {/* HEADLINE — direct on photo, strong text shadow for legibility */}
+          <div className="relative z-10 h-full flex flex-col justify-end p-6 sm:p-10 lg:p-14 pb-10 sm:pb-14 lg:pb-16">
+            <h1
+              className="font-bold leading-[0.85] tracking-tight"
+              style={{
+                letterSpacing: "-0.045em",
+                textShadow:
+                  "0 6px 32px rgba(0,0,0,0.85), 0 3px 10px rgba(0,0,0,0.95), 0 1px 2px rgba(0,0,0,1)",
+              }}
+            >
+              <span className="block text-red-500 text-7xl sm:text-8xl lg:text-9xl xl:text-[10rem] font-black">
+                STOP
+              </span>
+              <span className="block text-white text-3xl sm:text-5xl lg:text-5xl xl:text-6xl mt-2 sm:mt-3 font-bold">
+                using disposable bags
+              </span>
+            </h1>
           </div>
         </div>
 
-        {/* ═══════════════════ RIGHT: MUK BUDDY HERO PRODUCT (LIGHT BG) ═══════════════════ */}
+        {/* ═══════════════════ RIGHT: MUK BUDDY PRODUCT + HEADLINE (LIGHT BG) ═══════════════════ */}
         <div
-          className="relative overflow-hidden bg-gradient-to-br from-slate-50 via-slate-100 to-slate-200 order-1 lg:order-2 min-h-[380px] lg:min-h-0 flex items-center justify-center"
+          className="relative overflow-hidden bg-gradient-to-br from-slate-50 via-slate-100 to-slate-200 order-1 lg:order-2 min-h-[540px] lg:min-h-0 flex flex-col"
           data-testid="ads-hero-mukbuddy"
         >
-          {/* Subtle radial spotlight behind product (warm, light) */}
+          {/* Subtle radial spotlight behind product */}
           <div
             aria-hidden="true"
             className="absolute inset-0"
             style={{
               background:
-                "radial-gradient(circle at 50% 50%, rgba(255,255,255,0.95) 0%, rgba(226,232,240,0.4) 65%, rgba(203,213,225,0) 100%)",
+                "radial-gradient(circle at 60% 35%, rgba(255,255,255,1) 0%, rgba(226,232,240,0.4) 55%, rgba(203,213,225,0) 100%)",
             }}
           />
           {/* Light technical grid */}
@@ -356,48 +301,93 @@ function Hero({ scrollToSavings, utmSuffix }) {
 
           {/* "Reusable · Forever" stamp at top */}
           <div className="absolute top-5 right-5 sm:top-6 sm:right-8 z-10">
-            <div className="inline-flex items-center gap-2 bg-slate-900 text-white px-2.5 py-1 shadow-xl">
-              <Check className="w-3 h-3 text-red-500" strokeWidth={4} />
-              <span className="text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.18em]">
+            <div className="inline-flex items-center gap-2 bg-slate-900 text-white px-3 py-1.5 shadow-xl">
+              <Check className="w-3.5 h-3.5 text-red-500" strokeWidth={4} />
+              <span className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em]">
                 Reusable · Forever
               </span>
             </div>
           </div>
 
-          {/* HERO product shot — large enough to be the visual anchor, fits the fold */}
-          <img
-            src={IMAGES.productStraight}
-            alt="Muk Buddy — the patented reusable wet/dry vacuum bag"
-            className="relative z-[1] w-[70%] sm:w-[60%] lg:w-[68%] max-w-[440px] h-auto object-contain drop-shadow-[0_30px_45px_rgba(15,23,42,0.35)]"
-            loading="eager"
-            data-testid="ads-hero-product-image"
-          />
+          {/* Layout: product on upper-left, headline + CTAs on the right/bottom */}
+          <div className="relative z-[1] flex-1 grid grid-rows-[1fr_auto] sm:grid-cols-[1fr_1.05fr] lg:grid-cols-[1fr_1.1fr] items-center px-6 sm:px-8 lg:px-10 pt-14 sm:pt-16 pb-8 gap-4 sm:gap-6">
+            {/* Muk Buddy product image */}
+            <div className="flex items-center justify-center sm:justify-end">
+              <img
+                src={IMAGES.productStraight}
+                alt="Muk Buddy — the patented reusable wet/dry vacuum bag"
+                className="w-[60%] sm:w-full max-w-[280px] sm:max-w-[340px] lg:max-w-[400px] h-auto object-contain drop-shadow-[0_30px_45px_rgba(15,23,42,0.35)]"
+                loading="eager"
+                data-testid="ads-hero-product-image"
+              />
+            </div>
 
-          {/* "Replaces 100s of disposables" badge — bottom-left, compact */}
+            {/* Right-side LARGE TEXT + CTAs */}
+            <div className="space-y-5 sm:space-y-6 text-center sm:text-left">
+              <h2
+                className="font-bold leading-[0.9] tracking-tight text-slate-900"
+                style={{ letterSpacing: "-0.035em" }}
+              >
+                <span className="block text-2xl sm:text-3xl lg:text-3xl font-bold text-slate-500 uppercase tracking-wide mb-1">
+                  Get the
+                </span>
+                <span className="block text-4xl sm:text-5xl lg:text-6xl xl:text-7xl">
+                  <span className="text-red-600">REUSABLE</span>
+                  <br />
+                  vac bag.
+                </span>
+              </h2>
+
+              {/* CTAs */}
+              <div className="flex flex-col sm:flex-row gap-2.5 pt-1 justify-center sm:justify-start">
+                <a
+                  href={buildAddToCartUrl(1, utmSuffix)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="ads-hero-order-btn"
+                  className="relative inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-bold text-base sm:text-lg px-7 sm:px-8 py-4 sm:py-4 transition-all uppercase tracking-wider shadow-2xl ring-4 ring-red-600/30 hover:ring-red-600/60 hover:scale-[1.02]"
+                >
+                  Order Muk Buddy
+                  <ArrowRight className="w-5 h-5" strokeWidth={2.5} />
+                </a>
+                <button
+                  type="button"
+                  onClick={scrollToSavings}
+                  data-testid="ads-hero-savings-btn"
+                  className="inline-flex items-center justify-center gap-2 bg-white border-2 border-slate-300 hover:border-slate-900 text-slate-900 font-semibold text-sm px-5 py-3.5 transition-colors"
+                >
+                  See my savings
+                </button>
+              </div>
+
+              <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-slate-600 justify-center sm:justify-start">
+                <span className="inline-flex items-center gap-0.5">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-3.5 h-3.5 fill-red-600 text-red-600" />
+                  ))}
+                  <span className="ml-1 font-bold text-slate-900">4.9 / 5</span>
+                </span>
+                <span className="text-slate-400">·</span>
+                <span>Free US shipping · 30-day return</span>
+              </div>
+            </div>
+          </div>
+
+          {/* "Replaces 100s of disposables" badge — bottom-left */}
           <div className="absolute bottom-5 left-5 sm:bottom-6 sm:left-8 bg-red-600 text-white px-3.5 py-2.5 shadow-2xl z-10">
             <p className="text-[9px] uppercase tracking-[0.18em] text-red-100 font-bold">
               Replaces
             </p>
-            <p className="text-base sm:text-lg font-bold leading-tight mt-0.5">
+            <p className="text-base font-bold leading-tight mt-0.5">
               100s of disposables
-            </p>
-          </div>
-
-          {/* MUK·BUDDY wordmark — bottom-right */}
-          <div className="absolute bottom-5 right-5 sm:bottom-6 sm:right-8 z-10 text-right">
-            <p className="text-[9px] uppercase tracking-[0.25em] text-slate-500 font-bold">
-              The new way
-            </p>
-            <p className="text-lg sm:text-xl font-bold text-slate-900 tracking-tight leading-tight">
-              MUK<span className="text-red-600">·</span>BUDDY
             </p>
           </div>
         </div>
 
-        {/* Center divider arrow — only on lg+, smaller */}
+        {/* Center divider arrow — only on lg+ */}
         <div className="hidden lg:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none z-20">
-          <div className="bg-red-600 text-white w-12 h-12 flex items-center justify-center shadow-2xl rounded-full border-[3px] border-white">
-            <ArrowRight className="w-5 h-5" strokeWidth={3} />
+          <div className="bg-red-600 text-white w-14 h-14 flex items-center justify-center shadow-2xl rounded-full border-[3px] border-white">
+            <ArrowRight className="w-6 h-6" strokeWidth={3} />
           </div>
         </div>
       </div>
