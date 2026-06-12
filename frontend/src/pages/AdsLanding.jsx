@@ -35,9 +35,6 @@ import { IMAGES } from "@/lib/images";
      • Scarcity-light (without fake claims — "crew pricing available")
    ────────────────────────────────────────────────────────────────────────── */
 
-// PLACEHOLDER — replace with real Meta Pixel ID when ready.
-const META_PIXEL_ID = "YOUR_PIXEL_ID";
-
 // Annual disposable bag spend per machine (field data, conservative).
 const SPEND_PER_MACHINE_PER_YEAR = 1000;
 
@@ -67,30 +64,13 @@ export default function AdsLanding() {
     };
   }, []);
 
-  // Meta Pixel — fires when a real ID is set
+  // Meta Pixel — base script lives in index.html (site-wide).
+  // Here we just fire PageView on SPA route mount so client-side
+  // navigations into /ads also register as a view in Meta.
   useEffect(() => {
-    if (!META_PIXEL_ID || META_PIXEL_ID === "YOUR_PIXEL_ID") return;
-    if (window.fbq) return;
-    /* eslint-disable */
-    !(function (f, b, e, v, n, t, s) {
-      if (f.fbq) return;
-      n = f.fbq = function () {
-        n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
-      };
-      if (!f._fbq) f._fbq = n;
-      n.push = n;
-      n.loaded = !0;
-      n.version = "2.0";
-      n.queue = [];
-      t = b.createElement(e);
-      t.async = !0;
-      t.src = v;
-      s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s);
-    })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
-    /* eslint-enable */
-    window.fbq("init", META_PIXEL_ID);
-    window.fbq("track", "PageView");
+    if (typeof window !== "undefined" && window.fbq) {
+      window.fbq("track", "PageView");
+    }
   }, []);
 
   // Lifted state — qualifier selection drives savings calc, CTAs, and form

@@ -202,5 +202,13 @@ export default function ThankYou() {
  *
  * ─────────────────────────────────────────────────────────────── */
 function fireConversionPixels(/* { leadId } */) {
-  // No-op until you add tracking IDs in public/index.html and snippets above.
+  // Meta Pixel — fire PageView for the SPA route nav into /thank-you.
+  // (Base pixel + initial PageView load from public/index.html on first
+  // page load; this catches client-side navigations after form submit.)
+  // The `Lead` conversion event is fired at the moment of submit in
+  // LeadForm.jsx and AdsLanding.jsx, so we deliberately do NOT fire it
+  // again here — avoids double-counting in Meta Ads Manager.
+  if (typeof window !== "undefined" && window.fbq) {
+    window.fbq("track", "PageView");
+  }
 }

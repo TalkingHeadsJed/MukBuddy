@@ -47,6 +47,10 @@ export default function LeadForm() {
         timeout: 15000,
       });
       setForm(emptyForm);
+      // Meta Pixel — fire Lead conversion at the moment of successful submit.
+      if (typeof window !== "undefined" && window.fbq) {
+        window.fbq("track", "Lead", { content_name: "Main Site Lead Form" });
+      }
       // Hard navigate to /thank-you so conversion pixels & ad-platform
       // URL-based goals can fire on a real, distinct page view.
       const leadId = data?.id ? `?lead_id=${encodeURIComponent(data.id)}` : "";
