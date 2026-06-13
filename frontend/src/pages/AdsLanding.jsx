@@ -18,7 +18,7 @@ import {
   ChevronDown,
   Play,
 } from "lucide-react";
-import { API, buildAddToCartUrl, VIMEO_EMBED } from "@/lib/constants";
+import { API, buildAddToCartUrl, VIMEO_EMBED_ADS_HERO } from "@/lib/constants";
 import { IMAGES } from "@/lib/images";
 
 /* ──────────────────────────────────────────────────────────────────────────
@@ -439,7 +439,7 @@ function Hero({ scrollToSavings, utmSuffix }) {
             onClick={(e) => e.stopPropagation()}
           >
             <iframe
-              src={`${VIMEO_EMBED}&autoplay=1`}
+              src={`${VIMEO_EMBED_ADS_HERO}&autoplay=1`}
               title="Muk Buddy product video"
               className="absolute inset-0 w-full h-full"
               frameBorder="0"
