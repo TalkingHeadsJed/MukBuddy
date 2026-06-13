@@ -16,8 +16,9 @@ import {
   Lock,
   Users,
   ChevronDown,
+  Play,
 } from "lucide-react";
-import { API, buildAddToCartUrl } from "@/lib/constants";
+import { API, buildAddToCartUrl, VIMEO_EMBED } from "@/lib/constants";
 import { IMAGES } from "@/lib/images";
 
 /* ──────────────────────────────────────────────────────────────────────────
@@ -207,6 +208,22 @@ function TrustStrip() {
 
 /* ─────────────────────────────── Hero ─────────────────────────────── */
 function Hero({ scrollToSavings, utmSuffix }) {
+  const [videoOpen, setVideoOpen] = useState(false);
+
+  // Close modal on Escape key
+  useEffect(() => {
+    if (!videoOpen) return;
+    const handleKey = (e) => {
+      if (e.key === "Escape") setVideoOpen(false);
+    };
+    window.addEventListener("keydown", handleKey);
+    document.body.style.overflow = "hidden";
+    return () => {
+      window.removeEventListener("keydown", handleKey);
+      document.body.style.overflow = "";
+    };
+  }, [videoOpen]);
+
   return (
     <section
       data-testid="ads-hero"
@@ -374,13 +391,64 @@ function Hero({ scrollToSavings, utmSuffix }) {
           </div>
         </div>
 
-        {/* Center divider arrow — only on lg+ */}
-        <div className="hidden lg:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none z-20">
-          <div className="bg-red-600 text-white w-14 h-14 flex items-center justify-center shadow-2xl rounded-full border-[3px] border-white">
-            <ArrowRight className="w-6 h-6" strokeWidth={3} />
+        {/* Center stack: PLAY VIDEO button + arrow below. Visible on all sizes. */}
+        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 flex flex-col items-center gap-3 sm:gap-4">
+          <button
+            type="button"
+            onClick={() => setVideoOpen(true)}
+            data-testid="ads-hero-play-video-btn"
+            className="group inline-flex items-center gap-2.5 sm:gap-3 bg-white text-slate-900 font-bold text-sm sm:text-base px-5 sm:px-7 py-3 sm:py-4 shadow-2xl ring-4 ring-white/30 hover:ring-red-600/50 hover:bg-red-600 hover:text-white transition-all uppercase tracking-[0.15em] hover:scale-105"
+            aria-label="Play product video"
+          >
+            <span className="relative flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 bg-red-600 rounded-full group-hover:bg-white transition-colors">
+              <Play
+                className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white group-hover:text-red-600 fill-current ml-0.5"
+                strokeWidth={2}
+              />
+            </span>
+            Play Video
+          </button>
+
+          {/* Arrow — only on lg+ */}
+          <div className="hidden lg:flex pointer-events-none">
+            <div className="bg-red-600 text-white w-12 h-12 flex items-center justify-center shadow-2xl rounded-full border-[3px] border-white">
+              <ArrowRight className="w-5 h-5" strokeWidth={3} />
+            </div>
           </div>
         </div>
       </div>
+
+      {/* ═══════════════════ VIDEO MODAL ═══════════════════ */}
+      {videoOpen && (
+        <div
+          className="fixed inset-0 z-[100] bg-black/95 backdrop-blur-sm flex items-center justify-center p-4 sm:p-8 animate-in fade-in"
+          onClick={() => setVideoOpen(false)}
+          data-testid="ads-hero-video-modal"
+        >
+          <button
+            type="button"
+            onClick={() => setVideoOpen(false)}
+            className="absolute top-4 right-4 sm:top-6 sm:right-6 z-10 w-12 h-12 flex items-center justify-center bg-white text-slate-900 hover:bg-red-600 hover:text-white shadow-2xl transition-colors"
+            aria-label="Close video"
+            data-testid="ads-hero-video-close-btn"
+          >
+            <X className="w-6 h-6" strokeWidth={3} />
+          </button>
+          <div
+            className="relative w-full max-w-5xl aspect-video bg-black shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <iframe
+              src={`${VIMEO_EMBED}&autoplay=1`}
+              title="Muk Buddy product video"
+              className="absolute inset-0 w-full h-full"
+              frameBorder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      )}
     </section>
   );
 }
