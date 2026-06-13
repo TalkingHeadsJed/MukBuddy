@@ -6,7 +6,7 @@ import { API } from "@/lib/constants";
 import { Overline } from "@/components/sections/Problem";
 import { Send, Mail, Phone, User, Users, MessageSquare } from "lucide-react";
 
-const emptyForm = { name: "", email: "", phone: "", crew_size: "", message: "", site_ref: "" };
+const emptyForm = { name: "", email: "", phone: "", crew_size: "", message: "", mb_meta: "" };
 
 export default function LeadForm() {
   const [form, setForm] = useState(emptyForm);
@@ -40,7 +40,7 @@ export default function LeadForm() {
         phone: form.phone.trim() || null,
         crew_size: form.crew_size.trim() || null,
         message: form.message.trim(),
-        site_ref: form.site_ref || null,
+        mb_meta: form.mb_meta || null,
       };
       const { data } = await axios.post(`${API}/leads`, payload, {
         headers: { "Content-Type": "application/json" },
@@ -102,8 +102,8 @@ export default function LeadForm() {
             {/* Honeypot */}
             <input
               type="text"
-              name="site_ref"
-              value={form.site_ref}
+              name="mb_meta"
+              value={form.mb_meta}
               onChange={onChange}
               tabIndex={-1}
               autoComplete="off"

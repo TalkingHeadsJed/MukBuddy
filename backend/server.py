@@ -112,7 +112,7 @@ class LeadCreate(BaseModel):
     phone: Optional[str] = Field(default=None, max_length=25)
     crew_size: Optional[str] = Field(default=None, max_length=40)
     message: str = Field(..., min_length=5, max_length=2000)
-    site_ref: Optional[str] = Field(default=None, max_length=200)  # honeypot
+    mb_meta: Optional[str] = Field(default=None, max_length=200)  # honeypot (renamed to dodge browser autofill)
 
     @field_validator("phone")
     @classmethod
@@ -165,7 +165,7 @@ async def create_lead(
     ip = _client_ip(request)
 
     # Honeypot: silently reject bots
-    if payload.site_ref:
+    if payload.mb_meta:
         logger.warning("Honeypot triggered from %s", ip)
         raise HTTPException(status_code=400, detail="Invalid submission")
 

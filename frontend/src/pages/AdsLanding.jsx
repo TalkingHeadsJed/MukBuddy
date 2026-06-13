@@ -1031,7 +1031,7 @@ function LeadFormSection({ formRef, vacQuantity }) {
     phone: "",
     crew_count: "",
     machine_count: selected?.machines?.toString() ?? "",
-    site_ref: "",
+    mb_meta: "",
   });
   const [submitting, setSubmitting] = useState(false);
 
@@ -1074,7 +1074,7 @@ function LeadFormSection({ formRef, vacQuantity }) {
         phone: form.phone.trim() || null,
         crew_size: crewSizeStr || null,
         message: messageStr,
-        site_ref: form.site_ref || null,
+        mb_meta: form.mb_meta || null,
       };
       const { data } = await axios.post(`${API}/leads`, payload, {
         headers: { "Content-Type": "application/json" },
@@ -1138,8 +1138,8 @@ function LeadFormSection({ formRef, vacQuantity }) {
           {/* honeypot */}
           <input
             type="text"
-            name="site_ref"
-            value={form.site_ref}
+            name="mb_meta"
+            value={form.mb_meta}
             onChange={onChange}
             tabIndex={-1}
             autoComplete="off"
