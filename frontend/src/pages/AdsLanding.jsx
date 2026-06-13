@@ -440,10 +440,11 @@ function Hero({ scrollToSavings, utmSuffix }) {
           >
             <iframe
               src={`${VIMEO_EMBED_ADS_HERO}&autoplay=1`}
-              title="Muk Buddy product video"
+              title="Muk Buddy Commercial"
               className="absolute inset-0 w-full h-full"
               frameBorder="0"
-              allow="autoplay; fullscreen; picture-in-picture"
+              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
             />
           </div>
