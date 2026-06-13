@@ -119,7 +119,7 @@ export default function AdsLanding() {
     >
       <AdsHeader scrollToForm={scrollToForm} utmSuffix={utmSuffix} />
       <TrustStrip />
-      <Hero scrollToSavings={scrollToSavings} utmSuffix={utmSuffix} />
+      <Hero scrollToSavings={scrollToSavings} scrollToForm={scrollToForm} utmSuffix={utmSuffix} />
       <AirflowDemo />
       <Benefits utmSuffix={utmSuffix} />
       <SavingsCalc
@@ -207,7 +207,7 @@ function TrustStrip() {
 }
 
 /* ─────────────────────────────── Hero ─────────────────────────────── */
-function Hero({ scrollToSavings, utmSuffix }) {
+function Hero({ scrollToSavings, scrollToForm, utmSuffix }) {
   const [videoOpen, setVideoOpen] = useState(false);
 
   // Close modal on Escape key
@@ -345,26 +345,36 @@ function Hero({ scrollToSavings, utmSuffix }) {
                 </span>
               </h2>
 
-              {/* CTAs */}
-              <div className="flex flex-col sm:flex-row gap-2.5 pt-1 justify-center sm:justify-start">
-                <a
-                  href={buildAddToCartUrl(1, utmSuffix)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  data-testid="ads-hero-order-btn"
-                  className="relative inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-bold text-base sm:text-lg px-7 sm:px-8 py-4 sm:py-4 transition-all uppercase tracking-wider shadow-2xl ring-4 ring-red-600/30 hover:ring-red-600/60 hover:scale-[1.02]"
-                >
-                  Order Muk Buddy
-                  <ArrowRight className="w-5 h-5" strokeWidth={2.5} />
-                </a>
+              {/* CTAs — PRIMARY = Crew Pricing (Meta conversion goal), Secondary = Order */}
+              <div className="flex flex-col gap-2.5 pt-1 items-stretch sm:items-start">
                 <button
                   type="button"
-                  onClick={scrollToSavings}
-                  data-testid="ads-hero-savings-btn"
-                  className="inline-flex items-center justify-center gap-2 bg-white border-2 border-slate-300 hover:border-slate-900 text-slate-900 font-semibold text-sm px-5 py-3.5 transition-colors"
+                  onClick={scrollToForm}
+                  data-testid="ads-hero-crew-pricing-btn"
+                  className="group relative inline-flex items-center justify-center gap-3 bg-red-600 hover:bg-red-700 text-white font-black text-lg sm:text-xl px-8 sm:px-10 py-4 sm:py-5 transition-all uppercase tracking-wider shadow-2xl ring-4 ring-red-600/30 hover:ring-red-600/60 hover:scale-[1.02] w-full sm:w-auto"
                 >
-                  See my savings
+                  Get Crew Pricing
+                  <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 group-hover:translate-x-1 transition-transform" strokeWidth={2.75} />
                 </button>
+                <div className="flex flex-col sm:flex-row gap-2.5">
+                  <a
+                    href={buildAddToCartUrl(1, utmSuffix)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-testid="ads-hero-order-btn"
+                    className="inline-flex items-center justify-center gap-2 bg-white border-2 border-slate-900 hover:bg-slate-900 hover:text-white text-slate-900 font-bold text-sm px-5 py-3 transition-colors uppercase tracking-wide"
+                  >
+                    Order Muk Buddy
+                  </a>
+                  <button
+                    type="button"
+                    onClick={scrollToSavings}
+                    data-testid="ads-hero-savings-btn"
+                    className="inline-flex items-center justify-center gap-2 text-slate-600 hover:text-slate-900 font-semibold text-sm px-2 py-3 transition-colors underline-offset-4 hover:underline"
+                  >
+                    See my savings
+                  </button>
+                </div>
               </div>
 
               <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-slate-600 justify-center sm:justify-start">
