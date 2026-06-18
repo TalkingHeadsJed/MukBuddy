@@ -10,6 +10,12 @@ export const IMAGES = {
     "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/ai7m3ptx_gx4EB43hTDqcrh7-VK5-n_wum4bLZ2.png",
   spokesperson:
     "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/ateqxovx_AngieMukBuddy.png",
+  // Newer spokesperson shot — Angie holding the bag (yellow top, looking at camera)
+  spokespersonAngie02:
+    "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/e13k6dqk_angie_02.png",
+  // Background video — contractor vacuuming a floor (Kling-generated, ~12 MB)
+  contractorVacVideo:
+    "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/g4y2gs68_Kling%2030%20Pro%20-%20contractor%20is%20vacuuming%20the%20floor.mp4",
   productShot:
     "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/dq01bb5d_Product%20Shot.png",
   productShotBox:

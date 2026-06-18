@@ -471,6 +471,22 @@ function AirflowDemo() {
       data-testid="ads-airflow-demo"
       className="bg-slate-950 text-white py-16 sm:py-20 border-b border-slate-800 relative overflow-hidden"
     >
+      {/* Contractor vacuuming background video — muted, looped, decorative */}
+      <video
+        src={IMAGES.contractorVacVideo}
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="auto"
+        aria-hidden="true"
+        className="absolute inset-0 w-full h-full object-cover opacity-60 pointer-events-none"
+      />
+      {/* Dark gradient overlay — light enough to see contractor, dark enough to keep copy legible */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 bg-gradient-to-br from-slate-950/85 via-slate-950/55 to-slate-950/80 pointer-events-none"
+      />
       {/* Subtle technical-grid background */}
       <div
         aria-hidden="true"
@@ -489,14 +505,12 @@ function AirflowDemo() {
               How it works
             </p>
             <h2
-              className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight tracking-tight text-white"
-              style={{ letterSpacing: "-0.02em" }}
+              className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.05] tracking-tight text-white"
+              style={{ letterSpacing: "-0.025em" }}
             >
-              The Science of Increased Suction.
+              The Science behind the{" "}
+              <span className="text-red-500">patented 2-chamber airflow.</span>
             </h2>
-            <p className="text-red-400 font-semibold text-lg sm:text-xl tracking-tight">
-              The patented 2-chamber airflow.
-            </p>
             <p className="text-slate-300 text-lg leading-relaxed">
               Air pulls debris into the outer chamber, where heavier dust and
               fines drop out before they ever touch your filter. Only clean air
@@ -598,17 +612,41 @@ function Benefits({ utmSuffix }) {
       className="bg-white py-20 sm:py-28 border-y-4 border-slate-900"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-14 sm:mb-20">
-          <p className="text-xs font-bold uppercase tracking-[0.2em] text-red-600 mb-4">
-            Built to do three things
-          </p>
-          <h2
-            className="text-5xl sm:text-6xl lg:text-7xl font-bold text-slate-900 leading-[0.95] tracking-tight"
-            style={{ letterSpacing: "-0.035em" }}
-          >
-            Why every crew is{" "}
-            <span className="text-red-600">switching.</span>
-          </h2>
+        {/* Header row: Angie spokesperson image + headline */}
+        <div className="grid lg:grid-cols-12 gap-8 lg:gap-14 items-center mb-14 sm:mb-20">
+          {/* Angie holding the bag */}
+          <div className="lg:col-span-5 relative" data-testid="ads-benefits-spokesperson">
+            <div className="relative bg-slate-100 overflow-hidden aspect-[4/5] max-w-md mx-auto lg:mx-0">
+              <img
+                src={IMAGES.spokespersonAngie02}
+                alt="Real contractor holding the Muk Buddy reusable vac bag"
+                className="absolute inset-0 w-full h-full object-cover object-top"
+                loading="lazy"
+              />
+              {/* Bottom caption ribbon */}
+              <div className="absolute bottom-0 inset-x-0 bg-red-600 text-white px-5 py-3">
+                <p className="text-[10px] uppercase tracking-[0.2em] font-bold text-red-100">
+                  Built for working crews
+                </p>
+                <p className="text-lg font-bold leading-tight">
+                  Real contractors. Real savings.
+                </p>
+              </div>
+            </div>
+          </div>
+          {/* Headline */}
+          <div className="lg:col-span-7 text-center lg:text-left">
+            <p className="text-xs font-bold uppercase tracking-[0.2em] text-red-600 mb-4">
+              Built to do three things
+            </p>
+            <h2
+              className="text-5xl sm:text-6xl lg:text-7xl font-bold text-slate-900 leading-[0.95] tracking-tight"
+              style={{ letterSpacing: "-0.035em" }}
+            >
+              Why every crew is{" "}
+              <span className="text-red-600">switching.</span>
+            </h2>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-5 lg:gap-6">
