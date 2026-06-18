@@ -473,7 +473,6 @@ function AirflowDemo() {
     >
       {/* Contractor vacuuming background video — muted, looped, decorative */}
       <video
-        src={IMAGES.contractorVacVideo}
         autoPlay
         muted
         loop
@@ -481,7 +480,10 @@ function AirflowDemo() {
         preload="auto"
         aria-hidden="true"
         className="absolute inset-0 w-full h-full object-cover opacity-60 pointer-events-none"
-      />
+      >
+        <source src={IMAGES.contractorVacVideoWebm} type="video/webm" />
+        <source src={IMAGES.contractorVacVideo} type="video/mp4" />
+      </video>
       {/* Dark gradient overlay — light enough to see contractor, dark enough to keep copy legible */}
       <div
         aria-hidden="true"
