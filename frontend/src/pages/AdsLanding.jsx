@@ -742,9 +742,27 @@ function SavingsCalc({ savingsRef, vacQuantity, setVacQuantity, utmSuffix }) {
       ref={savingsRef}
       id="savings"
       data-testid="ads-savings"
-      className="bg-slate-900 text-white py-20 sm:py-24"
+      className="relative overflow-hidden bg-slate-900 text-white py-20 sm:py-24"
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Contractor vacuuming background video — muted, looped, decorative */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="auto"
+        aria-hidden="true"
+        className="absolute inset-0 w-full h-full object-cover opacity-50 pointer-events-none"
+      >
+        <source src={IMAGES.contractorVacVideoWebm} type="video/webm" />
+        <source src={IMAGES.contractorVacVideo} type="video/mp4" />
+      </video>
+      {/* Dark gradient overlay — keep calc card + copy fully legible */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 bg-gradient-to-br from-slate-900/85 via-slate-900/55 to-slate-900/85 pointer-events-none"
+      />
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
           <div className="lg:col-span-5">
             <p className="text-xs font-semibold uppercase tracking-widest text-red-500 mb-3">
