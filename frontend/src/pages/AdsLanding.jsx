@@ -492,8 +492,11 @@ function AirflowDemo() {
               className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight tracking-tight text-white"
               style={{ letterSpacing: "-0.02em" }}
             >
-              The patented 2-chamber airflow.
+              The Science of Increased Suction.
             </h2>
+            <p className="text-red-400 font-semibold text-lg sm:text-xl tracking-tight">
+              The patented 2-chamber airflow.
+            </p>
             <p className="text-slate-300 text-lg leading-relaxed">
               Air pulls debris into the outer chamber, where heavier dust and
               fines drop out before they ever touch your filter. Only clean air
