@@ -84,4 +84,4 @@ Even if a Muk Buddy lasts you only one year (it lasts longer), you're already se
 
 Disposable bags are an unaudited monthly tax most contractors pay without realizing it. Run the math on your own fleet for sixty seconds: how many bags last month, times twelve. Then add filters. Then add the motor you're going to replace eventually. The number is bigger than you think.
 
-If you're tired of paying that tax, [grab a Muk Buddy](https://thefloorlord.com/product/muk-buddy/) and stop bleeding cash on bags. One purchase. Done.
+If you're tired of paying that tax, [grab a Muk Buddy](/ads) and stop bleeding cash on bags. One purchase. Done.
