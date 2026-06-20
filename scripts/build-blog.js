@@ -88,6 +88,38 @@ function slugify(s) {
     .replace(/^-+|-+$/g, "");
 }
 
+// Canonical post URL — trailing slash matches what /blog/<slug>/index.html
+// is served as. The no-slash form 301-redirects to the slash form, so all
+// canonical/og:url/sitemap/RSS/internal links must include the slash to
+// avoid pointing at a redirect (an SEO penalty).
+function postUrl(slug) {
+  return `${SITE_URL}/blog/${slug}/`;
+}
+
+// Extract the 11-char YouTube video ID from any common URL form:
+//   https://youtu.be/<id>
+//   https://www.youtube.com/watch?v=<id>
+//   https://www.youtube.com/embed/<id>
+//   https://www.youtube.com/shorts/<id>
+//   or a bare 11-char ID.
+// Returns null if no valid ID is found.
+function ytId(v) {
+  if (!v) return null;
+  const s = String(v).trim();
+  if (/^[a-zA-Z0-9_-]{11}$/.test(s)) return s;
+  const patterns = [
+    /youtu\.be\/([a-zA-Z0-9_-]{11})/,
+    /[?&]v=([a-zA-Z0-9_-]{11})/,
+    /youtube\.com\/embed\/([a-zA-Z0-9_-]{11})/,
+    /youtube\.com\/shorts\/([a-zA-Z0-9_-]{11})/,
+  ];
+  for (const re of patterns) {
+    const m = s.match(re);
+    if (m) return m[1];
+  }
+  return null;
+}
+
 const sanitizeOpts = {
   allowedTags: [
     "p", "br", "strong", "em", "a", "ul", "ol", "li",
@@ -148,8 +180,20 @@ function loadPosts() {
         hero_image: data.hero_image || "",
         hero_alt: data.hero_alt || data.title || "",
         author: data.author || "Muk Buddy",
+        author_bio: data.author_bio || "",
         tags: Array.isArray(data.tags) ? data.tags : [],
         publish_date: data.publish_date || today,
+        // ── Optional video block ──
+        video: data.video || "",
+        video_title: data.video_title || data.title || fileSlug,
+        video_desc: data.video_desc || data.excerpt || "",
+        video_thumb: data.video_thumb || "",
+        video_date: data.video_date || data.publish_date || today,
+        video_vertical: data.video_vertical === true,
+        // ── Optional FAQ block ──
+        faq: Array.isArray(data.faq)
+          ? data.faq.filter((f) => f && f.q && f.a)
+          : [],
         // Explicit `published: false` => draft. Future-dated => draft too.
         _isDraft:
           data.published === false || (data.publish_date || today) > today,
@@ -248,6 +292,23 @@ footer.foot a{color:var(--slime);background:transparent}
 .card .meta{font-family:Bangers,sans-serif;font-size:12px;letter-spacing:.2em;color:var(--muk);text-transform:uppercase}
 .card h2{font-family:Anton,sans-serif;font-size:22px;line-height:1.15;margin:6px 0 10px}
 .card p{font-size:14px;color:#5A4A72;margin:0}
+.video-wrap{position:relative;width:100%;padding-top:56.25%;margin:0 0 36px;border:4px solid var(--ink);background:#000;overflow:hidden}
+.video-wrap.vertical{padding-top:0;aspect-ratio:9/16;max-width:380px;margin:0 auto 36px;display:block}
+.video-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+.faq{margin:48px 0 8px;border-top:3px solid var(--ink);padding-top:32px}
+.faq > h2{font-family:Anton,Impact,sans-serif;font-size:28px;margin:0 0 18px}
+.faq details{background:#fff;border:3px solid var(--ink);padding:14px 18px;margin:0 0 12px}
+.faq details[open]{background:var(--cream-2)}
+.faq summary{cursor:pointer;font-family:Anton,Impact,sans-serif;font-size:19px;line-height:1.25;list-style:none;outline-offset:3px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:'+';float:right;font-family:'Bowlby One',sans-serif;color:var(--muk);font-size:22px;line-height:1;margin-left:12px}
+.faq details[open] summary::after{content:'–'}
+.faq .a{margin-top:12px;font-size:16px;line-height:1.6}
+.faq .a p{margin:0 0 12px}
+.faq .a p:last-child{margin:0}
+.author-box{margin:48px 0 8px;padding:20px 22px;background:var(--cream-2);border-left:6px solid var(--muk);font-size:15px;line-height:1.55}
+.author-box .name{font-family:Anton,Impact,sans-serif;font-size:18px;letter-spacing:.04em;margin:0 0 6px;text-transform:uppercase;color:var(--ink)}
+.author-box p{margin:0;color:#3a2a55}
 </style>
 
 ${jsonLd ? `<script type="application/ld+json">${jsonLd}</script>` : ""}
@@ -258,7 +319,7 @@ ${jsonLd ? `<script type="application/ld+json">${jsonLd}</script>` : ""}
   <a href="/" class="brand">MUK&nbsp;BUDDY</a>
   <nav>
     <a href="/">Home</a>
-    <a href="/blog">Blog</a>
+    <a href="/blog/">Blog</a>
     <a href="/#contact">Contact</a>
   </nav>
 </header>
@@ -266,14 +327,14 @@ ${jsonLd ? `<script type="application/ld+json">${jsonLd}</script>` : ""}
 ${body}
 
 <footer class="foot">
-  Muk Buddy · <a href="/">Home</a> · <a href="/blog">Blog</a> · <a href="/#contact">Contact</a><br/>
+  Muk Buddy · <a href="/">Home</a> · <a href="/blog/">Blog</a> · <a href="/#contact">Contact</a><br/>
   <small>© ${new Date().getFullYear()} Muk Buddy</small>
 </footer>
 </body></html>`;
 }
 
 function renderPost(p) {
-  const url = `${SITE_URL}/blog/${p.slug}`;
+  const url = postUrl(p.slug);
   const heroImg = p.hero_image
     ? `<img class="hero-img" src="${esc(p.hero_image)}" alt="${esc(p.hero_alt)}" />`
     : "";
@@ -283,22 +344,55 @@ function renderPost(p) {
         .join("")}</div>`
     : "";
 
-  const jsonLd = JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    mainEntityOfPage: { "@type": "WebPage", "@id": url },
-    headline: p.title,
-    description: p.excerpt,
-    image: p.hero_image ? [p.hero_image] : undefined,
-    datePublished: p.publish_date,
-    dateModified: p.publish_date,
-    author: { "@type": "Person", name: p.author },
-    publisher: {
-      "@type": "Organization",
-      name: "Muk Buddy",
-      logo: { "@type": "ImageObject", url: `${SITE_URL}/favicon.ico` },
+  const videoBlock = renderVideoBlock(p);
+  const faqBlock = renderFaqBlock(p);
+  const authorBlock = renderAuthorBlock(p);
+
+  /* ─── Schema as @graph ─── */
+  const graph = [
+    {
+      "@type": "BlogPosting",
+      mainEntityOfPage: { "@type": "WebPage", "@id": url },
+      headline: p.title,
+      description: p.excerpt,
+      image: p.hero_image ? [p.hero_image] : undefined,
+      datePublished: p.publish_date,
+      dateModified: p.publish_date,
+      author: { "@type": "Person", name: p.author },
+      publisher: {
+        "@type": "Organization",
+        name: "Muk Buddy",
+        logo: { "@type": "ImageObject", url: `${SITE_URL}/favicon.ico` },
+      },
     },
-  });
+  ];
+
+  const vid = ytId(p.video);
+  if (vid) {
+    graph.push({
+      "@type": "VideoObject",
+      name: p.video_title,
+      description: p.video_desc,
+      thumbnailUrl:
+        p.video_thumb || `https://i.ytimg.com/vi/${vid}/maxresdefault.jpg`,
+      uploadDate: p.video_date,
+      embedUrl: `https://www.youtube-nocookie.com/embed/${vid}`,
+      contentUrl: `https://www.youtube.com/watch?v=${vid}`,
+    });
+  }
+
+  if (p.faq.length) {
+    graph.push({
+      "@type": "FAQPage",
+      mainEntity: p.faq.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
+    });
+  }
+
+  const jsonLd = JSON.stringify({ "@context": "https://schema.org", "@graph": graph });
 
   const body = `
 <main>
@@ -312,16 +406,19 @@ function renderPost(p) {
     )}</time>
   </div>
   ${heroImg}
+  ${videoBlock}
   ${tags}
   <article class="post">${p.html}</article>
+  ${faqBlock}
+  ${authorBlock}
 
   <div class="cta-card">
     <h3>Stop paying the bag tax.</h3>
     <p>One reusable Muk Buddy replaces years of disposable bags. No filters. No motor death.</p>
-    <a class="btn" href="https://thefloorlord.com/product/muk-buddy/" rel="noopener noreferrer" target="_blank">Order Muk Buddy →</a>
+    <a class="btn" href="/ads">Get Muk Buddy &rarr;</a>
   </div>
 
-  <p style="margin-top:32px"><a href="/blog">← Back to all posts</a></p>
+  <p style="margin-top:32px"><a href="/blog/">&larr; Back to all posts</a></p>
 </main>`;
 
   return pageShell({
@@ -332,6 +429,51 @@ function renderPost(p) {
     jsonLd,
     body,
   });
+}
+
+/* ─── shared block renderers (used by both published + draft pages) ─── */
+
+function renderVideoBlock(p) {
+  const vid = ytId(p.video);
+  if (!vid) return "";
+  // youtube-nocookie.com avoids dropping a tracking cookie until play.
+  const src = `https://www.youtube-nocookie.com/embed/${vid}?rel=0`;
+  const wrapCls = p.video_vertical ? "video-wrap vertical" : "video-wrap";
+  return `<div class="${wrapCls}">
+  <iframe src="${esc(src)}" title="${esc(p.video_title)}"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen loading="lazy"></iframe>
+</div>`;
+}
+
+function renderFaqBlock(p) {
+  if (!p.faq.length) return "";
+  const items = p.faq
+    .map((f) => {
+      const ans = sanitizeHtml(marked.parse(f.a, { gfm: true, breaks: false }), sanitizeOpts);
+      return `  <details>
+    <summary>${esc(f.q)}</summary>
+    <div class="a">${ans}</div>
+  </details>`;
+    })
+    .join("\n");
+  return `<section class="faq" aria-label="Frequently asked questions">
+  <h2>FAQ</h2>
+${items}
+</section>`;
+}
+
+function renderAuthorBlock(p) {
+  if (!p.author_bio) return "";
+  const bioHtml = sanitizeHtml(
+    marked.parse(p.author_bio, { gfm: true, breaks: false }),
+    sanitizeOpts
+  );
+  return `<aside class="author-box">
+  <p class="name">About ${esc(p.author)}</p>
+  ${bioHtml}
+</aside>`;
 }
 
 /* ───────────── draft preview (token-gated, noindex) ───────────── */
@@ -351,6 +493,10 @@ function renderDraftPost(p, token) {
         .join("")}</div>`
     : "";
 
+  const videoBlock = renderVideoBlock(p);
+  const faqBlock = renderFaqBlock(p);
+  const authorBlock = renderAuthorBlock(p);
+
   const body = `
 <main>
   ${DRAFT_BANNER}
@@ -364,16 +510,19 @@ function renderDraftPost(p, token) {
     )}</time>
   </div>
   ${heroImg}
+  ${videoBlock}
   ${tags}
   <article class="post">${p.html}</article>
+  ${faqBlock}
+  ${authorBlock}
 
-  <p style="margin-top:32px"><a href="/blog/draft-preview/${esc(token)}/">← All drafts</a></p>
+  <p style="margin-top:32px"><a href="/blog/draft-preview/${esc(token)}/">&larr; All drafts</a></p>
 </main>`;
 
   return pageShell({
     title: `[DRAFT] ${p.title}`,
     description: p.excerpt,
-    canonical: `${SITE_URL}/blog/${p.slug}`, // canonical to future live URL
+    canonical: postUrl(p.slug), // canonical to future live URL (with trailing slash)
     ogImage: p.hero_image,
     robots: "noindex, nofollow",
     body,
@@ -384,7 +533,7 @@ function renderDraftIndex(drafts, token) {
   const cards = drafts
     .map((p) => {
       const bg = p.hero_image ? `background-image:url('${esc(p.hero_image)}')` : "";
-      return `<a class="card" href="/blog/draft-preview/${esc(token)}/${esc(p.slug)}">
+      return `<a class="card" href="/blog/draft-preview/${esc(token)}/${esc(p.slug)}/">
   <div class="ph" style="${bg}"></div>
   <div class="body">
     <div class="meta">Draft · ${esc(p.publish_date)}</div>
@@ -418,11 +567,11 @@ function renderDraftIndex(drafts, token) {
 }
 
 function renderIndex(posts) {
-  const url = `${SITE_URL}/blog`;
+  const url = `${SITE_URL}/blog/`;
   const cards = posts
     .map((p) => {
       const bg = p.hero_image ? `background-image:url('${esc(p.hero_image)}')` : "";
-      return `<a class="card" href="/blog/${esc(p.slug)}">
+      return `<a class="card" href="/blog/${esc(p.slug)}/">
   <div class="ph" style="${bg}"></div>
   <div class="body">
     <div class="meta">${esc(
@@ -463,7 +612,7 @@ function renderIndex(posts) {
 function renderRss(posts) {
   const items = posts
     .map((p) => {
-      const link = `${SITE_URL}/blog/${p.slug}`;
+      const link = postUrl(p.slug);
       return `    <item>
       <title>${esc(p.title)}</title>
       <link>${link}</link>
@@ -477,7 +626,7 @@ function renderRss(posts) {
 <rss version="2.0">
   <channel>
     <title>Muk Buddy Blog</title>
-    <link>${SITE_URL}/blog</link>
+    <link>${SITE_URL}/blog/</link>
     <description>Field-tested tips and cost breakdowns for wet/dry vacuum users.</description>
     <language>en-us</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
@@ -490,12 +639,10 @@ function renderSitemap(posts) {
   const today = new Date().toISOString().slice(0, 10);
   const base = [
     { loc: `${SITE_URL}/`, priority: "1.0", changefreq: "weekly" },
-    { loc: `${SITE_URL}/blog`, priority: "0.8", changefreq: "weekly" },
-    { loc: `${SITE_URL}/#contact`, priority: "0.7", changefreq: "monthly" },
-    { loc: `${SITE_URL}/#faq`, priority: "0.6", changefreq: "monthly" },
+    { loc: `${SITE_URL}/blog/`, priority: "0.8", changefreq: "weekly" },
   ];
   const postUrls = posts.map((p) => ({
-    loc: `${SITE_URL}/blog/${p.slug}`,
+    loc: postUrl(p.slug),
     priority: "0.7",
     changefreq: "monthly",
     lastmod: p.publish_date,
