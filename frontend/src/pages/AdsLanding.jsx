@@ -65,26 +65,52 @@ export default function AdsLanding() {
   // Lifted state — qualifier selection drives savings calc, CTAs, and form
   const [vacQuantity, setVacQuantity] = useState(null);
 
-  // Capture Meta-ads UTM/tracking params on landing so they flow through
-  // to the WooCommerce add-to-cart URL for attribution. Lazy init = run once.
+  // Capture ad-attribution params on landing so they flow through to the
+  // WooCommerce add-to-cart URL (and any future outbound link).
+  //
+  // Strategy:
+  //   1. If the current URL has any of the tracked params, capture them and
+  //      persist to sessionStorage — the source of truth for this session.
+  //   2. Otherwise, read whatever was previously stashed (covers the case
+  //      where a visitor lands on /ads?utm_source=facebook, navigates to a
+  //      blog post, then returns to /ads with a clean URL — attribution
+  //      still flows on the eventual checkout click).
+  //
+  // Lazy init = run once per page mount.
   const [utmSuffix] = useState(() => {
     if (typeof window === "undefined") return "";
-    const search = new URLSearchParams(window.location.search);
-    const keep = [
+    const TRACKED = [
       "utm_source",
       "utm_medium",
       "utm_campaign",
       "utm_term",
       "utm_content",
-      "fbclid",
-      "gclid",
+      "fbclid",   // Meta / Facebook
+      "gclid",    // Google Ads
+      "gbraid",   // Google Ads iOS app campaigns
+      "wbraid",   // Google Ads web-to-app
+      "msclkid",  // Microsoft Advertising (Bing)
+      "ttclid",   // TikTok Ads
     ];
-    const parts = [];
-    for (const k of keep) {
+    const search = new URLSearchParams(window.location.search);
+    const fromUrl = [];
+    for (const k of TRACKED) {
       const v = search.get(k);
-      if (v) parts.push(`${k}=${encodeURIComponent(v)}`);
+      if (v) fromUrl.push(`${k}=${encodeURIComponent(v)}`);
     }
-    return parts.join("&");
+    if (fromUrl.length > 0) {
+      const suffix = fromUrl.join("&");
+      try {
+        window.sessionStorage.setItem("mukbuddy_utm", suffix);
+      } catch (_) { /* private mode / storage disabled — non-fatal */ }
+      return suffix;
+    }
+    // No params on current URL → fall back to anything we stashed earlier.
+    try {
+      return window.sessionStorage.getItem("mukbuddy_utm") || "";
+    } catch (_) {
+      return "";
+    }
   });
 
   const formRef = useRef(null);
