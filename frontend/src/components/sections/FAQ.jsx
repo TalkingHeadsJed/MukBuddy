@@ -53,6 +53,10 @@ const faqs = [
     a: "A typical crew spends roughly $200/month on disposable bags — about $12,000/year across 5 crews. Muk Buddy is a one-time system upgrade that replaces that recurring cost.",
   },
   {
+    q: "Can I order in bulk for my teams?",
+    a: "Yes — we offer crew pricing on orders of 5+ Muk Buddys. Most contracting outfits standardize on one Muk Buddy per vac so the whole crew runs the same setup. Use the Crew Pricing form on /ads or send us a note via the contact section with your crew size (number of vacs) and we'll come back with bulk pricing and lead time within 1 business day.",
+  },
+  {
     q: "How do I order?",
     a: "Order directly from the product page at thefloorlord.com. If you have questions about fit, volume pricing, or how it works on your crews, use the contact form below and we'll get back to you.",
   },

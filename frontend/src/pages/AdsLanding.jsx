@@ -402,7 +402,7 @@ function Hero({ scrollToSavings, scrollToForm, utmSuffix }) {
                 <p className="text-[11px] sm:text-xs text-slate-600 max-w-md leading-snug flex items-start gap-1.5">
                   <Lock className="w-3.5 h-3.5 mt-0.5 text-slate-500 flex-shrink-0" strokeWidth={2.5} />
                   <span>
-                    Secure checkout via <strong className="text-slate-900">The Floor Lord</strong>, our fulfillment partner — Visa · Mastercard · Amex · PayPal · 256-bit SSL
+                    Secure checkout via <strong className="text-slate-900">The Floor Lord</strong>, our fulfillment partner — Visa · Mastercard · Amex · 256-bit SSL
                   </span>
                 </p>
 
@@ -777,7 +777,7 @@ function Benefits({ utmSuffix }) {
           <p className="text-xs sm:text-sm text-slate-600 mt-4 max-w-md mx-auto leading-snug flex items-start gap-1.5 justify-center">
             <Lock className="w-3.5 h-3.5 mt-0.5 text-slate-500 flex-shrink-0" strokeWidth={2.5} />
             <span>
-              Secure checkout via <strong className="text-slate-900">The Floor Lord</strong>, our fulfillment partner — Visa · Mastercard · Amex · PayPal · 256-bit SSL
+              Secure checkout via <strong className="text-slate-900">The Floor Lord</strong>, our fulfillment partner — Visa · Mastercard · Amex · 256-bit SSL
             </span>
           </p>
           <p className="text-xs sm:text-sm font-semibold text-slate-700 mt-2">
@@ -1129,7 +1129,7 @@ function GuaranteeBar() {
     {
       icon: Lock,
       title: "Secure checkout",
-      body: "256-bit SSL via TheFloorLord. Cards & PayPal.",
+      body: "256-bit SSL via TheFloorLord. Cards (Visa, Mastercard, Amex).",
     },
   ];
   return (
@@ -1498,7 +1498,7 @@ function FinalCTA({ vacQuantity, utmSuffix }) {
         <p className="text-xs text-slate-300 mt-4 max-w-md mx-auto leading-snug flex items-start gap-1.5 justify-center">
           <Lock className="w-3.5 h-3.5 mt-0.5 text-slate-400 flex-shrink-0" strokeWidth={2.5} />
           <span>
-            Secure checkout via <strong className="text-white">The Floor Lord</strong>, our fulfillment partner — Visa · Mastercard · Amex · PayPal · 256-bit SSL
+            Secure checkout via <strong className="text-white">The Floor Lord</strong>, our fulfillment partner — Visa · Mastercard · Amex · 256-bit SSL
           </span>
         </p>
         <p className="text-xs text-slate-400 mt-3">
