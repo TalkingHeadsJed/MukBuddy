@@ -136,6 +136,7 @@ export default function AdsLanding() {
         description="Get crew pricing on the Muk Buddy reusable wet/dry vac bag. Patented 2-chamber design stops bag clogs, extends motor life, and saves thousands vs disposable bags."
         canonical="https://mukbuddy.com/ads"
         ogImage="https://mukbuddy.com/og-image-home.png"
+        preloadImage={IMAGES.bagPileMountain}
         robots="noindex, follow"
       />
       <AdsHeader scrollToForm={scrollToForm} utmSuffix={utmSuffix} />
@@ -263,6 +264,10 @@ function Hero({ scrollToSavings, scrollToForm, utmSuffix }) {
             alt="A mountain of disposable shop vac bags — the bag tax contractors pay every week."
             className="absolute inset-0 w-full h-full object-cover"
             loading="eager"
+            fetchPriority="high"
+            decoding="async"
+            width="1200"
+            height="900"
           />
 
           {/* "DISPOSABLE · THE BAG TAX" stamp at top */}
@@ -341,13 +346,17 @@ function Hero({ scrollToSavings, scrollToForm, utmSuffix }) {
           <div className="relative z-[1] flex-1 grid grid-rows-[1fr_auto] sm:grid-cols-[1fr_1.05fr] lg:grid-cols-[1fr_1.1fr] items-center px-6 sm:px-8 lg:px-10 pt-14 sm:pt-16 pb-8 gap-4 sm:gap-6">
             {/* Muk Buddy product image */}
             <div className="flex items-center justify-center sm:justify-end">
-              <img
-                src={IMAGES.productStraight}
-                alt="Muk Buddy — the patented reusable wet/dry vacuum bag"
-                className="w-[60%] sm:w-full max-w-[280px] sm:max-w-[340px] lg:max-w-[400px] h-auto object-contain drop-shadow-[0_30px_45px_rgba(15,23,42,0.35)]"
-                loading="eager"
-                data-testid="ads-hero-product-image"
-              />
+          <img
+            src={IMAGES.productStraight}
+            alt="Muk Buddy — the patented reusable wet/dry vacuum bag"
+            className="w-[60%] sm:w-full max-w-[280px] sm:max-w-[340px] lg:max-w-[400px] h-auto object-contain drop-shadow-[0_30px_45px_rgba(15,23,42,0.35)]"
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
+            width="800"
+            height="800"
+            data-testid="ads-hero-product-image"
+          />
             </div>
 
             {/* Right-side LARGE TEXT + CTAs */}
@@ -366,27 +375,46 @@ function Hero({ scrollToSavings, scrollToForm, utmSuffix }) {
                 </span>
               </h2>
 
-              {/* CTAs — PRIMARY = Crew Pricing (Meta conversion goal), Secondary = Order */}
-              <div className="flex flex-col gap-2.5 pt-1 items-stretch sm:items-start">
-                <button
-                  type="button"
-                  onClick={scrollToForm}
-                  data-testid="ads-hero-crew-pricing-btn"
+              {/* Price + what-you-get block */}
+              <div className="bg-slate-50 border-l-4 border-red-600 p-4 text-left max-w-md mx-auto sm:mx-0">
+                <p className="text-3xl sm:text-4xl font-bold text-slate-900 leading-none">
+                  $99 <span className="text-base sm:text-lg font-semibold text-slate-600">— one Muk Buddy bag</span>
+                </p>
+                <p className="mt-2 text-sm text-slate-700 leading-snug">
+                  Replaces hundreds of disposables · Fits most wet/dry vacs · Rinse it, reuse it for years
+                </p>
+              </div>
+
+              {/* CTAs — Google Search Ads brief: Order PRIMARY (single-bag is the
+                  dominant conversion), Crew Pricing SECONDARY (fleet quote form). */}
+              <div className="flex flex-col gap-3 pt-1 items-stretch sm:items-start">
+                <a
+                  href={buildAddToCartUrl(1, utmSuffix)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="ads-hero-order-btn"
                   className="group relative inline-flex items-center justify-center gap-3 bg-red-600 hover:bg-red-700 text-white font-black text-lg sm:text-xl px-8 sm:px-10 py-4 sm:py-5 transition-all uppercase tracking-wider shadow-2xl ring-4 ring-red-600/30 hover:ring-red-600/60 hover:scale-[1.02] w-full sm:w-auto"
                 >
-                  Get Crew Pricing
+                  Order Muk Buddy &mdash; $99
                   <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 group-hover:translate-x-1 transition-transform" strokeWidth={2.75} />
-                </button>
-                <div className="flex flex-col sm:flex-row gap-2.5">
-                  <a
-                    href={buildAddToCartUrl(1, utmSuffix)}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    data-testid="ads-hero-order-btn"
+                </a>
+                {/* Trust line right under primary Order CTA */}
+                <p className="text-[11px] sm:text-xs text-slate-600 max-w-md leading-snug flex items-start gap-1.5">
+                  <Lock className="w-3.5 h-3.5 mt-0.5 text-slate-500 flex-shrink-0" strokeWidth={2.5} />
+                  <span>
+                    Secure checkout via <strong className="text-slate-900">The Floor Lord</strong>, our fulfillment partner — Visa · Mastercard · Amex · PayPal · 256-bit SSL
+                  </span>
+                </p>
+
+                <div className="flex flex-col sm:flex-row gap-2.5 pt-2">
+                  <button
+                    type="button"
+                    onClick={scrollToForm}
+                    data-testid="ads-hero-crew-pricing-btn"
                     className="inline-flex items-center justify-center gap-2 bg-white border-2 border-slate-900 hover:bg-slate-900 hover:text-white text-slate-900 font-bold text-sm px-5 py-3 transition-colors uppercase tracking-wide"
                   >
-                    Order Muk Buddy
-                  </a>
+                    Get Crew Pricing
+                  </button>
                   <button
                     type="button"
                     onClick={scrollToSavings}
@@ -397,6 +425,12 @@ function Hero({ scrollToSavings, scrollToForm, utmSuffix }) {
                   </button>
                 </div>
               </div>
+
+              {/* Risk-reversal — bolder than the prior 30-day return line */}
+              <p className="text-sm sm:text-base text-slate-800 leading-snug max-w-md mx-auto sm:mx-0">
+                <strong className="text-slate-900">Try it 30 days, risk-free.</strong>{" "}
+                If it doesn&rsquo;t outperform your disposable bags, send it back for a full refund — no restocking fee.
+              </p>
 
               <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-slate-600 justify-center sm:justify-start">
                 <span className="inline-flex items-center gap-0.5">
@@ -498,7 +532,7 @@ function AirflowDemo() {
         muted
         loop
         playsInline
-        preload="auto"
+        preload="metadata"
         aria-hidden="true"
         className="absolute inset-0 w-full h-full object-cover opacity-60 pointer-events-none"
       >
@@ -645,6 +679,9 @@ function Benefits({ utmSuffix }) {
                 alt="Real contractor holding the Muk Buddy reusable vac bag"
                 className="absolute inset-0 w-full h-full object-cover object-top"
                 loading="lazy"
+                decoding="async"
+                width="640"
+                height="800"
               />
               {/* Bottom caption ribbon */}
               <div className="absolute bottom-0 inset-x-0 bg-red-600 text-white px-5 py-3">
@@ -734,11 +771,17 @@ function Benefits({ utmSuffix }) {
             data-testid="ads-benefits-order-btn"
             className="inline-flex items-center justify-center gap-3 bg-red-600 hover:bg-red-700 text-white font-bold text-xl sm:text-2xl px-10 py-6 transition-all uppercase tracking-wider shadow-2xl ring-4 ring-red-600/20 hover:ring-red-600/40 hover:scale-[1.02]"
           >
-            Order Muk Buddy
+            Order Muk Buddy &mdash; $99
             <ArrowRight className="w-6 h-6 sm:w-7 sm:h-7" strokeWidth={2.5} />
           </a>
-          <p className="text-sm text-slate-500 mt-4">
-            Free shipping · 30-day return · Patented 2-chamber design
+          <p className="text-xs sm:text-sm text-slate-600 mt-4 max-w-md mx-auto leading-snug flex items-start gap-1.5 justify-center">
+            <Lock className="w-3.5 h-3.5 mt-0.5 text-slate-500 flex-shrink-0" strokeWidth={2.5} />
+            <span>
+              Secure checkout via <strong className="text-slate-900">The Floor Lord</strong>, our fulfillment partner — Visa · Mastercard · Amex · PayPal · 256-bit SSL
+            </span>
+          </p>
+          <p className="text-xs sm:text-sm font-semibold text-slate-700 mt-2">
+            <strong className="text-slate-900">Try it 30 days, risk-free.</strong> Full refund if it doesn&rsquo;t outperform your disposables.
           </p>
         </div>
       </div>
@@ -771,7 +814,7 @@ function SavingsCalc({ savingsRef, vacQuantity, setVacQuantity, utmSuffix }) {
         muted
         loop
         playsInline
-        preload="auto"
+        preload="metadata"
         aria-hidden="true"
         className="absolute inset-0 w-full h-full object-cover opacity-50 pointer-events-none"
       >
@@ -1452,7 +1495,13 @@ function FinalCTA({ vacQuantity, utmSuffix }) {
             : "Order Muk Buddy"}
           <ArrowRight className="w-5 h-5" />
         </a>
-        <p className="text-xs text-slate-400 mt-4">
+        <p className="text-xs text-slate-300 mt-4 max-w-md mx-auto leading-snug flex items-start gap-1.5 justify-center">
+          <Lock className="w-3.5 h-3.5 mt-0.5 text-slate-400 flex-shrink-0" strokeWidth={2.5} />
+          <span>
+            Secure checkout via <strong className="text-white">The Floor Lord</strong>, our fulfillment partner — Visa · Mastercard · Amex · PayPal · 256-bit SSL
+          </span>
+        </p>
+        <p className="text-xs text-slate-400 mt-3">
           Most crews order one per machine. Bulk pricing for 5+ — ask.
         </p>
       </div>

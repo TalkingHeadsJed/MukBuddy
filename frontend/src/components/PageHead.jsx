@@ -16,6 +16,7 @@ export default function PageHead({
   ogImage,
   ogType = "website",
   robots,
+  preloadImage,
 }) {
   return (
     <Helmet>
@@ -32,6 +33,17 @@ export default function PageHead({
 
       {ogImage && <meta property="og:image" content={ogImage} />}
       {ogImage && <meta name="twitter:image" content={ogImage} />}
+
+      {/* Preload the page's LCP image (above-the-fold hero) so it starts
+          downloading in parallel with the JS bundle. Major mobile LCP win. */}
+      {preloadImage && (
+        <link
+          rel="preload"
+          as="image"
+          href={preloadImage}
+          fetchPriority="high"
+        />
+      )}
 
       <meta property="og:type" content={ogType} />
 
