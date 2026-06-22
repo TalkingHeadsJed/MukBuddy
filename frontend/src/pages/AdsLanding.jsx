@@ -19,6 +19,7 @@ import {
   Play,
 } from "lucide-react";
 import { API, buildAddToCartUrl, VIMEO_EMBED_ADS_HERO } from "@/lib/constants";
+import PageHead from "@/components/PageHead";
 import { IMAGES } from "@/lib/images";
 
 /* ──────────────────────────────────────────────────────────────────────────
@@ -47,23 +48,10 @@ const QUANTITY_OPTIONS = [
 ];
 
 export default function AdsLanding() {
-  // noindex + canonical
-  useEffect(() => {
-    document.title =
-      "Muk Buddy — Reusable Shop Vac Bag · Stop the Bag Tax | Order Today";
-    const robots = document.createElement("meta");
-    robots.name = "robots";
-    robots.content = "noindex, nofollow";
-    document.head.appendChild(robots);
-    const canonical = document.createElement("link");
-    canonical.rel = "canonical";
-    canonical.href = "https://mukbuddy.com/";
-    document.head.appendChild(canonical);
-    return () => {
-      document.head.removeChild(robots);
-      document.head.removeChild(canonical);
-    };
-  }, []);
+  // <head> tags (title, description, canonical, robots) are managed by
+  // PageHead.jsx (react-helmet-async) further down in the JSX — see the
+  // <PageHead/> element inside the return block. The prerender (scripts/
+  // prerender.js) bakes them into the static HTML for crawlers.
 
   // Meta Pixel — base script lives in index.html (site-wide).
   // Here we just fire PageView on SPA route mount so client-side
@@ -117,6 +105,13 @@ export default function AdsLanding() {
           "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
       }}
     >
+      <PageHead
+        title="Crew Pricing: Reusable Shop Vac Bag for Contractors | Muk Buddy"
+        description="Get crew pricing on the Muk Buddy reusable wet/dry vac bag. Patented 2-chamber design stops bag clogs, extends motor life, and saves thousands vs disposable bags."
+        canonical="https://mukbuddy.com/ads"
+        ogImage="https://mukbuddy.com/og-image-home.png"
+        robots="noindex, follow"
+      />
       <AdsHeader scrollToForm={scrollToForm} utmSuffix={utmSuffix} />
       <TrustStrip />
       <Hero scrollToSavings={scrollToSavings} scrollToForm={scrollToForm} utmSuffix={utmSuffix} />

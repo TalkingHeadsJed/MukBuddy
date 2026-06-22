@@ -5,14 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#39FF14" />
 
-        <!-- ===== PRIMARY SEO ===== -->
-        <title>Muk Buddy — Reusable Shop Vac Bag & Wet/Dry Vacuum Filter</title>
-        <meta name="description" content="Patented reusable 2-chamber filter for Shop-Vac, Ridgid, Craftsman, Stanley & DeWalt wet/dry vacs. Replaces disposable bags, keeps suction strong, protects the motor." />
+        <!-- ===== PRIMARY SEO =====
+             Per-route <title>, description, and canonical are managed by
+             react-helmet-async via src/components/PageHead.jsx — see each
+             route in src/pages/. They are baked into the prerendered HTML
+             by scripts/prerender.js. Keep this block lean; only stable
+             site-wide defaults below. -->
         <meta name="keywords" content="shop vac bags, wet dry vac bags, shop vac filter, wet dry vacuum filter, reusable shop vac bag, reusable wet dry vac bag, shop vac alternative, wet dry vac bag alternative, shop vac filter replacement, shop vac filter alternative, shop-vac bags, ridgid shop vac bags, craftsman shop vac bags, stanley shop vac bags, dewalt shop vac bags, milwaukee wet dry vac bags, vacmaster bags, armor all shop vac bags, shop vac filter bag, 12 gallon shop vac bags, 14 gallon shop vac bags, 16 gallon shop vac bags, 18 gallon shop vac bags, 20 gallon shop vac bags, hepa shop vac, drywall vacuum, drywall dust vacuum, concrete dust vacuum, construction vacuum, dust collection bag, wet dry vacuum cleaner, contractor shop vac, shop vac accessories, shop vac losing suction, how to clean shop vac filter, 2-chamber wet dry vac, muk buddy" />
         <meta name="author" content="Muk Buddy" />
         <meta name="robots" content="index, follow, max-image-preview:large" />
         <meta name="googlebot" content="index, follow" />
-        <link rel="canonical" href="https://mukbuddy.com/" />
 
         <!-- ===== FAVICONS (PRODUCTION TODO: replace with real /favicon.ico, /apple-touch-icon.png) ===== -->
         <link rel="icon" href="/favicon.ico" sizes="any" />
@@ -22,13 +24,13 @@
         <!-- ===== GOOGLE SEARCH CONSOLE VERIFICATION (paste your code once you claim the domain) ===== -->
         <!-- <meta name="google-site-verification" content="REPLACE_WITH_TOKEN" /> -->
 
-        <!-- ===== OPEN GRAPH (Facebook / LinkedIn) ===== -->
+        <!-- ===== OPEN GRAPH (Facebook / LinkedIn) =====
+             og:title, og:description, og:url and per-route og:image are set
+             by PageHead.jsx and baked in by the prerender. Only stable
+             site-wide defaults remain here. -->
         <meta property="og:type" content="product" />
         <meta property="og:site_name" content="Muk Buddy" />
-        <meta property="og:title" content="Muk Buddy — Reusable Shop Vac Bags & Wet/Dry Vacuum Filter" />
-        <meta property="og:description" content="Patented reusable filter that fits Shop-Vac, Ridgid, Craftsman, Stanley, DeWalt and most 12–20 gallon wet/dry vacuums (also used on smaller sizes). Stop replacing disposable bags forever." />
-        <meta property="og:url" content="https://mukbuddy.com/" />
-        <meta property="og:image" content="https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/ai7m3ptx_gx4EB43hTDqcrh7-VK5-n_wum4bLZ2.png" />
+        <meta property="og:image" content="https://mukbuddy.com/og-image-home.png" />
         <meta property="og:image:alt" content="Muk Buddy patented 2-chamber reusable wet/dry vac bag held by contractor" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
@@ -39,9 +41,7 @@
 
         <!-- ===== TWITTER / X CARD ===== -->
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Muk Buddy — Reusable Shop Vac Bags & Wet/Dry Vacuum Filter" />
-        <meta name="twitter:description" content="Patented reusable filter for Shop-Vac, Ridgid, Craftsman, Stanley & DeWalt wet/dry vacs. Stop buying disposable bags." />
-        <meta name="twitter:image" content="https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/ai7m3ptx_gx4EB43hTDqcrh7-VK5-n_wum4bLZ2.png" />
+        <meta name="twitter:image" content="https://mukbuddy.com/og-image-home.png" />
         <meta name="twitter:image:alt" content="Muk Buddy patented 2-chamber reusable wet/dry vac bag" />
 
         <!-- ===== STRUCTURED DATA / JSON-LD ===== -->

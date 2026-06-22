@@ -4,6 +4,7 @@ import { Check, ArrowRight, Mail, Calendar } from "lucide-react";
 import { IMAGES } from "@/lib/images";
 import { ORDER_URL } from "@/lib/constants";
 import HeadlinePeek from "@/components/sections/HeadlinePeek";
+import PageHead from "@/components/PageHead";
 
 /**
  * Thank-you page after a successful lead submission.
@@ -29,34 +30,10 @@ export default function ThankYou() {
   const leadId = params.get("lead_id");
 
   useEffect(() => {
-    // Override the site-wide robots meta to prevent indexing this URL.
-    const existing = document.querySelector('meta[name="robots"]');
-    const previousContent = existing?.content;
-    if (existing) {
-      existing.content = "noindex,nofollow";
-    } else {
-      const meta = document.createElement("meta");
-      meta.name = "robots";
-      meta.content = "noindex,nofollow";
-      meta.setAttribute("data-thank-you-meta", "true");
-      document.head.appendChild(meta);
-    }
-
-    // Page title for analytics + browser tab.
-    const prevTitle = document.title;
-    document.title = "Thank You — Muk Buddy";
-
+    // Helmet (via <PageHead/>) handles title + noindex meta for both
+    // prerendered HTML and SPA navigation, so no manual DOM edits needed
+    // here — just fire the conversion pixels.
     fireConversionPixels({ leadId });
-
-    return () => {
-      const cur = document.querySelector('meta[name="robots"]');
-      if (cur?.getAttribute("data-thank-you-meta")) {
-        cur.remove();
-      } else if (cur && previousContent !== undefined) {
-        cur.content = previousContent;
-      }
-      document.title = prevTitle;
-    };
   }, [leadId]);
 
   return (
@@ -64,6 +41,12 @@ export default function ThankYou() {
       data-testid="thank-you-page"
       className="relative min-h-screen bg-cream text-ink overflow-hidden"
     >
+      <PageHead
+        title="Thank You — Muk Buddy"
+        description="Thanks — we got your message. We'll be in touch with crew pricing shortly."
+        canonical="https://mukbuddy.com/thank-you"
+        robots="noindex, nofollow"
+      />
       <div className="absolute inset-0 halftone-cream opacity-90" aria-hidden />
       <div className="slime-drip-muk absolute top-0 inset-x-0" aria-hidden />
 

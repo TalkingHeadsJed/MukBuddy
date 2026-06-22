@@ -45,6 +45,7 @@
     "react": "^19.0.0",
     "react-day-picker": "8.10.1",
     "react-dom": "^19.0.0",
+    "react-helmet-async": "^3.0.0",
     "react-hook-form": "^7.56.2",
     "react-resizable-panels": "^3.0.1",
     "react-router-dom": "^7.5.1",
@@ -59,8 +60,9 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
-    "build:blog": "NODE_PATH=./node_modules node ../scripts/build-blog.js && craco build",
+    "build:blog": "NODE_PATH=./node_modules node ../scripts/build-blog.js && craco build && NODE_PATH=./node_modules node ../scripts/prerender.js",
     "blog:render": "NODE_PATH=./node_modules node ../scripts/build-blog.js",
+    "prerender": "NODE_PATH=./node_modules node ../scripts/prerender.js",
     "test": "craco test"
   },
   "browserslist": {
@@ -90,7 +92,10 @@
     "gray-matter": "^4.0.3",
     "marked": "^18.0.4",
     "postcss": "^8.4.49",
+    "puppeteer-core": "^22",
     "sanitize-html": "^2.17.4",
+    "serve": "^14",
+    "serve-handler": "^6.1.7",
     "tailwindcss": "^3.4.17"
   },
   "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"

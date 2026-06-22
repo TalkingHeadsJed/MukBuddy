@@ -17,10 +17,17 @@ import Footer from "@/components/sections/Footer";
 import MoneyReminder from "@/components/sections/MoneyReminder";
 import BleedTicker from "@/components/sections/BleedTicker";
 import BlogStrip from "@/components/sections/BlogStrip";
+import PageHead from "@/components/PageHead";
 
 export default function Landing() {
   return (
     <main data-testid="landing-page" className="bg-cream text-ink overflow-x-hidden">
+      <PageHead
+        title="Muk Buddy — Reusable Wet/Dry Vac Bag That Saves Crews Thousands"
+        description="Patented 2-chamber reusable shop vac bag. Stop bleeding cash on disposables, kill bag clogs, and extend your motor's life. Trusted by contractors nationwide."
+        canonical="https://mukbuddy.com/"
+        ogImage="https://mukbuddy.com/og-image-home.png"
+      />
       <Header />
       <Hero />
       <BagsVsMukBuddy />
