@@ -30,11 +30,25 @@ const sanitizeHtml = require("sanitize-html");
 
 const ROOT = path.resolve(__dirname, "..");
 const CONTENT_DIR = path.join(ROOT, "content", "blog");
-// Render into public/ so the React dev server can preview, and CRA copies
-// everything in public/ into build/ at production build time.
+
+// ─── Output directory ───────────────────────────────────────────────────────
+// In dev / full-build mode (default), render into `frontend/public/` so the
+// React dev server can preview and CRA's production build copies everything
+// in `public/` into `build/`.
+//
+// On the live Pair VPS — where there's no Chromium and the CRA build cannot
+// run — Otto needs to regenerate ONLY the blog static HTML + sitemap/feed
+// directly into the served `build/` tree. Set the env var
+//   BLOG_OUTPUT_DIR=/absolute/path/to/build
+// and this script writes blog/, sitemap.xml, and feed.xml into THAT directory
+// while leaving the prerendered build/index.html, build/ads/, build/thank-you/
+// completely untouched. Pair-friendly: pure Node, no React, no browser.
 const PUBLIC_DIR = path.join(ROOT, "frontend", "public");
-const BUILD_DIR = PUBLIC_DIR;
-const BLOG_OUT = path.join(PUBLIC_DIR, "blog");
+const OUTPUT_DIR = process.env.BLOG_OUTPUT_DIR
+  ? path.resolve(process.env.BLOG_OUTPUT_DIR)
+  : PUBLIC_DIR;
+const BUILD_DIR = OUTPUT_DIR;
+const BLOG_OUT = path.join(OUTPUT_DIR, "blog");
 const SITE_URL = "https://mukbuddy.com";
 
 // Lightweight .env loader (no external dep). Reads frontend/.env and
