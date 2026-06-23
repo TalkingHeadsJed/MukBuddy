@@ -1,5 +1,24 @@
 # Muk Buddy — Prebuilt Deploy Package
 
+> ## ⛔ DO NOT REBUILD ON PAIR
+>
+> **This tarball is already fully built and prerendered.** Pair only needs to
+> *extract* it — no `yarn`, no `npm`, no `node`, no Chromium required.
+>
+> If you run `yarn build` or `yarn build:blog` on Pair, the prerender step
+> will fail (Chromium isn't installed there) and you'll overwrite the good
+> prerendered HTML with empty React SPA shells. The crawler-visible content
+> (`<h1>`, per-route titles, OG tags, canonical URLs) will all disappear.
+>
+> **Just extract and rsync — that's the entire deploy.** See "How Otto deploys
+> this on Pair" below.
+>
+> ### How to verify the tarball is properly prerendered
+> ```sh
+> tar -xzOf mukbuddy-prebuilt-LATEST.tar.gz build/ads/index.html | grep -c "STOP"
+> # Should print a number > 0. If it prints 0, the build is broken — do not deploy.
+> ```
+
 Generated automatically by Emergent. The `build/` tree below is the
 **complete static site** — every page fully prerendered with real
 `<h1>`, per-route head tags, and the 7 published blog posts. Nothing
