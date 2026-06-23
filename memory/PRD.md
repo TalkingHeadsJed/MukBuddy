@@ -83,7 +83,13 @@ Frontend production build: `cd frontend && yarn build:blog`
 - **Phase 7 (2026-06-02 afternoon):** Built Meta ads landing page at `/ads` — trade-pro style, Inter font, navy + red, 3 benefits, dual CTA (order + lead form), Meta Pixel placeholder, noindex; scoped heading-font CSS override so main `/` cartoon style stays intact
 - **Phase 8 (2026-06-12):** Removed "Made with Emergent" badge HTML + emergent-main.js script tag from `frontend/public/index.html`. Production bundle is now badge-free after next `yarn build:blog` + VPS deploy. (Badge still visible on Emergent preview URL because it's injected by the preview proxy — does NOT affect mukbuddy.com.)
 - **Phase 9 (2026-06-12):** Installed Meta Pixel (ID `1536485121326286`) site-wide in `frontend/public/index.html`. Fires `PageView` on initial load for `/`, `/ads`, `/thank-you`, blog. Fires `Lead` conversion event at successful form submit in `LeadForm.jsx` (main site) and `AdsLanding.jsx` (Meta ads LP). `/thank-you` fires a SPA-route PageView (no Lead — already fired at submit, prevents double-counting). Removed old placeholder `META_PIXEL_ID` dynamic loader from `AdsLanding.jsx`.
-- **Phase 10 (2026-06-12):** (a) Enhanced Meta `Lead` event with `value` + `currency: 'USD'`. Ads LP passes `value = machines × $99` from qualifier selection (gives Meta richer bid signal). Main site passes flat `value: 99`. (b) Added Audience Lab ID Pixel (`6a189912fab915af2e99d380`) site-wide via `<script src="https://cdn.idpixel.app/v1/idp-analytics-...min.js" defer>` in `index.html`. Fires on every page. Verified both pixels load on `/` and `/ads`.
+- **Phase 11 (2026-06-22):** Prebuilt-deploy workflow (orphan `prebuilt-deploy` git branch carrying `mukbuddy-prebuilt-LATEST.tar.gz` + datestamped copy for Otto to pull). UTM `sessionStorage` persistence for WooCommerce checkout attribution. Puppeteer prerendering (`scripts/prerender.js`) for `/`, `/ads`, `/thank-you` so crawlers/social scrapers see real HTML. Per-route `<head>` via `react-helmet-async` + `PageHead.jsx`. `build:blog` script now does MD compile → CRA build → prerender. Honeypot field renamed `site_ref` → `mb_meta` to dodge browser autofill 400s.
+- **Phase 12 (2026-06-23):** Self-hosted LCP image assets on Pair (no CDN dependency). 3 compressed PNGs moved into `frontend/public/img/` and served from `mukbuddy.com/img/`:
+  - `hero-composite.png` (146KB, was 1.5MB)
+  - `bag-pile-mountain.png` (216KB, was 1.6MB)
+  - `angie-spokesperson.png` (105KB, was 2.8MB)
+  - `og-image-home.png` (146KB at root, was 1.5MB) — social-share image
+  - Total LCP image weight: **5.9MB → 613KB** (~10x reduction). Tarball now 2.4MB.
 
 ## Pending / Backlog
 - **P0**: User to click "Save to GitHub" to push merged codebase + draft preview system + Meta ads LP to TalkingHeadsJed/MukBuddy

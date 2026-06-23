@@ -6,13 +6,11 @@ export const IMAGES = {
     "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/osa3czix_Muk%20Buddy%20Logo.png",
   logoText:
     "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/i3n3whj9_muk_buddy_textonly.png",
-  heroComposite:
-    "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/ai7m3ptx_gx4EB43hTDqcrh7-VK5-n_wum4bLZ2.png",
+  heroComposite: "/img/hero-composite.png",
   spokesperson:
     "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/ateqxovx_AngieMukBuddy.png",
   // Newer spokesperson shot — Angie holding the bag (yellow top, looking at camera)
-  spokespersonAngie02:
-    "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/e13k6dqk_angie_02.png",
+  spokespersonAngie02: "/img/angie-spokesperson.png",
   // Background video — contractor vacuuming a floor (Kling-generated)
   // WebM (primary, smaller) + MP4 (Safari fallback)
   contractorVacVideoWebm:
@@ -30,8 +28,7 @@ export const IMAGES = {
     "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/q7nti1r1_MukBuddyTilted1.png",
   productTilted2:
     "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/hghh14sa_MukBuddyTilted2a.png",
-  bagPileMountain:
-    "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/4277znce_generated-image%20%2818%29.png",
+  bagPileMountain: "/img/bag-pile-mountain.png",
   disposableBagsFan:
     "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/me3cldqe_image.png",
   disposableBagYellow:
