@@ -46,20 +46,57 @@ build/
 
 ## How Otto deploys this on Pair (FreeBSD shared hosting)
 
-1. **Extract:** untar this into a staging dir on Pair
-   ```sh
-   tar -xzf mukbuddy-prebuilt-<DATE>.tar.gz -C /tmp/mukbuddy-deploy
-   ```
-2. **Mirror to docroot:** rsync the contents into Apache's docroot
-   ```sh
-   rsync -av --delete /tmp/mukbuddy-deploy/ ~/public_html/
-   ```
-   (use `--delete` for a clean swap; omit it if you want additive updates)
-3. **Apache:** no config change needed — the existing vhost serves these
-   static files. SPA routing was previously needed because of the empty
-   `#root` shell; with prerendered `index.html` / `ads/` / `thank-you/`
-   each path is now a real HTML file. SPA fallback for unknown URLs is
-   no longer required for SEO.
+> **Tarball location:** the latest tarball is committed at the **root of the
+> `main` branch** on GitHub as `mukbuddy-prebuilt-LATEST.tar.gz`. The `frontend/build/`
+> directory is also tracked in main as a fallback.
+
+### Step 1 — Fetch the tarball
+
+**Option A — direct curl (fastest, no clone):**
+```sh
+cd ~
+curl -L -o mukbuddy-prebuilt-LATEST.tar.gz \
+  https://raw.githubusercontent.com/TalkingHeadsJed/MukBuddy/main/mukbuddy-prebuilt-LATEST.tar.gz
+ls -lah mukbuddy-prebuilt-LATEST.tar.gz   # expect ~2.4 MB
+```
+
+**Option B — shallow clone main:**
+```sh
+git clone --branch main --single-branch --depth 1 \
+  https://github.com/TalkingHeadsJed/MukBuddy.git mukbuddy-deploy
+cd mukbuddy-deploy
+ls -lah mukbuddy-prebuilt-LATEST.tar.gz
+```
+
+### Step 2 — Sanity check the tarball (catches broken builds)
+```sh
+tar -xzOf mukbuddy-prebuilt-LATEST.tar.gz build/ads/index.html | grep -c "STOP"
+# Expected: a number > 0. If 0, the build is broken — STOP and ping Jed.
+```
+
+### Step 3 — Extract + rsync to docroot
+```sh
+mkdir -p /tmp/mukbuddy-staging && rm -rf /tmp/mukbuddy-staging/*
+tar -xzf mukbuddy-prebuilt-LATEST.tar.gz -C /tmp/mukbuddy-staging
+rsync -av --delete /tmp/mukbuddy-staging/build/ ~/public_html/mukbuddy.com/
+```
+
+That's the entire deploy. **No `yarn`, no `npm`, no `node`, no Chromium.**
+
+### Fallback — use the extracted `frontend/build/` tree directly
+If the tarball ever fails, `main` also tracks the fully-extracted build
+directory at `frontend/build/`. From the cloned repo:
+```sh
+rsync -av --delete ./frontend/build/ ~/public_html/mukbuddy.com/
+```
+
+### Post-deploy health checks
+```sh
+curl -sI https://mukbuddy.com/ | head -1                                       # 200
+curl -s https://mukbuddy.com/ads | grep -c "STOP"                              # > 0
+curl -s https://mukbuddy.com/ | grep -oE "<title>[^<]*</title>"                # Muk Buddy title
+curl -sI https://mukbuddy.com/img/hero-composite.png | head -1                 # 200
+```
 
 ## Routine blog-only deploys (no Emergent needed)
 
