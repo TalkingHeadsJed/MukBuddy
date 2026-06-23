@@ -9,7 +9,9 @@
 /coverage
 
 # production
-/build
+# NOTE: /build is intentionally tracked on the prebuilt-deploy branch as the
+# deploy artifact for Pair. Do NOT re-enable this rule.
+# /build
 
 # misc
 .DS_Store

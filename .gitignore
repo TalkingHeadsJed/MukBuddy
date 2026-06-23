@@ -25,8 +25,9 @@ node_modules/
 next-env.d.ts
 *.tsbuildinfo
 
-# Production builds
-/build
+# Production builds — note: prebuilt-deploy branch INTENTIONALLY tracks /build
+# and *.tar.gz artifacts for Otto to pull from GitHub. Do NOT re-add /build or
+# tarball patterns here without coordinating — it will block the deploy pipeline.
 dist/
 dist
 
@@ -64,11 +65,10 @@ chainlit.md
 # Data and databases
 agenthub/agents/youtube/db
 
-# Archive files and large assets
+# Archive files and large assets — NOTE: *.tar.gz, *.tar, *.tgz are intentionally
+# tracked on the prebuilt-deploy branch as Otto's deploy artifact. Do not re-add
+# those patterns here. Only .zip / .pack / .deb / .dylib remain ignored.
 **/*.zip
-**/*.tar.gz
-**/*.tar
-**/*.tgz
 *.pack
 *.deb
 *.dylib
