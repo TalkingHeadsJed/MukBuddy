@@ -108,5 +108,31 @@ Frontend production build: `cd frontend && yarn build:blog`
 - Emergent UI on user's account has only "Save to GitHub" (push) — no "Pull from GitHub" button. To pull from GitHub, use `git clone` via terminal.
 - GitHub repo: `https://github.com/TalkingHeadsJed/MukBuddy` (public)
 - Production deploy is auto-triggered by webhook-listener.py on push to main
+
+## 🚢 Deploy workflow (READ THIS BEFORE TOUCHING BUILD ARTIFACTS)
+
+**Confirmed in the 2026-06-23 fork:** Emergent's "Save to GitHub" pushes **only `main`**. Orphan branches committed locally (e.g., `prebuilt-deploy`) **never make it to GitHub**. Do NOT create new orphan branches and assume they will sync — they won't.
+
+**The deploy artifact lives on `main`:**
+- `/mukbuddy-prebuilt-LATEST.tar.gz` (root) — the fully-prerendered static build, ~2.4 MB
+- `/frontend/build/` — the extracted version of the same, tracked as a fallback for Otto
+
+**When you make build-affecting changes:**
+1. Edit source under `frontend/src/` as normal
+2. Run `cd frontend && yarn build:blog` (compiles blog MD → static HTML, then CRA build, then `prerender.js` with Chromium for `/`, `/ads`, `/thank-you`)
+3. From repo root: `tar -czf mukbuddy-prebuilt-LATEST.tar.gz -C frontend build` and **also** keep the extracted `frontend/build/` tree in place (committed)
+4. `git add mukbuddy-prebuilt-LATEST.tar.gz frontend/build && git commit -m "..."` directly on `main`
+5. Tell the user to click "Save to GitHub" — Otto pulls from `https://raw.githubusercontent.com/TalkingHeadsJed/MukBuddy/main/mukbuddy-prebuilt-LATEST.tar.gz`
+
+**`.gitignore` rules to preserve:**
+- `/app/.gitignore` and `/app/frontend/.gitignore` have had `**/*.tar.gz`, `**/*.tar`, `**/*.tgz`, and `/build` removed/commented. DO NOT re-add them — the deploy pipeline depends on the tarball + `frontend/build/` being trackable.
+
+**DO NOT REBUILD ON PAIR:** Pair has no Chromium. The tarball ships already-prerendered HTML. Otto's deploy is `curl → tar → rsync`, nothing else. This is documented in `DEPLOY-PREBUILT.md` and the warning block at the top of any deploy README.
+
+**Verification one-liner Otto runs before deploying any tarball:**
+```sh
+tar -xzOf mukbuddy-prebuilt-LATEST.tar.gz build/ads/index.html | grep -c "STOP"
+# must be > 0 (real prerendered HTML); if 0, the build is broken
+```
 - `BLOG_DRAFT_TOKEN` is required in `frontend/.env` for draft previews to render. Build script has a built-in dotenv loader so it picks the var up automatically.
 - **Meta ads LP (`/ads`) uses Inter font** — global `h1..h4` Bowlby rule in `index.css` is scoped-overridden with `[data-testid="ads-landing"] h1..h4`. Don't remove the scoped rule.
