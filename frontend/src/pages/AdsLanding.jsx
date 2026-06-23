@@ -10,8 +10,6 @@ import {
   X,
   ArrowRight,
   Star,
-  Truck,
-  RotateCcw,
   Award,
   Lock,
   Users,
@@ -32,7 +30,7 @@ import { IMAGES } from "@/lib/images";
      • Loss aversion ("you're burning $X/yr")
      • Social proof (testimonials, crew counts, star ratings)
      • Authority (patented, real numbers)
-     • Risk reversal (30-day return, free shipping, secure checkout)
+     • Trust strip (US Patented, Secure checkout)
      • Commitment/consistency (multi-step qualifier → form)
      • Scarcity-light (without fake claims — "crew pricing available")
    ────────────────────────────────────────────────────────────────────────── */
@@ -213,12 +211,6 @@ function TrustStrip() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 flex flex-wrap items-center justify-center gap-x-6 gap-y-1.5">
         <span className="inline-flex items-center gap-1.5">
           <Award className="w-3.5 h-3.5 text-red-500" /> US Patented design
-        </span>
-        <span className="inline-flex items-center gap-1.5">
-          <Truck className="w-3.5 h-3.5 text-red-500" /> Free US shipping
-        </span>
-        <span className="inline-flex items-center gap-1.5">
-          <RotateCcw className="w-3.5 h-3.5 text-red-500" /> 30-day return
         </span>
         <span className="inline-flex items-center gap-1.5">
           <Lock className="w-3.5 h-3.5 text-red-500" /> Secure checkout
@@ -426,11 +418,7 @@ function Hero({ scrollToSavings, scrollToForm, utmSuffix }) {
                 </div>
               </div>
 
-              {/* Risk-reversal — bolder than the prior 30-day return line */}
-              <p className="text-sm sm:text-base text-slate-800 leading-snug max-w-md mx-auto sm:mx-0">
-                <strong className="text-slate-900">Try it 30 days, risk-free.</strong>{" "}
-                If it doesn&rsquo;t outperform your disposable bags, send it back for a full refund — no restocking fee.
-              </p>
+              {/* Risk-reversal removed per client direction */}
 
               <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-slate-600 justify-center sm:justify-start">
                 <span className="inline-flex items-center gap-0.5">
@@ -440,7 +428,7 @@ function Hero({ scrollToSavings, scrollToForm, utmSuffix }) {
                   <span className="ml-1 font-bold text-slate-900">4.9 / 5</span>
                 </span>
                 <span className="text-slate-400">·</span>
-                <span>Free US shipping · 30-day return</span>
+                <span>US Patented · Secure checkout</span>
               </div>
             </div>
           </div>
@@ -780,9 +768,6 @@ function Benefits({ utmSuffix }) {
               Secure checkout via <strong className="text-slate-900">The Floor Lord</strong>, our fulfillment partner — Visa · Mastercard · Amex · 256-bit SSL
             </span>
           </p>
-          <p className="text-xs sm:text-sm font-semibold text-slate-700 mt-2">
-            <strong className="text-slate-900">Try it 30 days, risk-free.</strong> Full refund if it doesn&rsquo;t outperform your disposables.
-          </p>
         </div>
       </div>
     </section>
@@ -1112,16 +1097,6 @@ function SocialProof() {
 function GuaranteeBar() {
   const items = [
     {
-      icon: RotateCcw,
-      title: "30-day return",
-      body: "Not for you? Send it back. No restock fee.",
-    },
-    {
-      icon: Truck,
-      title: "Free US shipping",
-      body: "Ships from US. No surprise fees at checkout.",
-    },
-    {
       icon: Award,
       title: "US patented",
       body: "Real engineering, not a knockoff filter sock.",
@@ -1137,7 +1112,7 @@ function GuaranteeBar() {
       data-testid="ads-guarantee"
       className="bg-white py-12 sm:py-16 border-b border-slate-200"
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 gap-6">
         {items.map(({ icon: Icon, title, body }) => (
           <div key={title} className="flex items-start gap-3">
             <div className="w-10 h-10 flex-shrink-0 bg-red-50 border border-red-600/30 flex items-center justify-center">
@@ -1402,10 +1377,6 @@ function FAQ() {
       q: "Can I use it for wet pickup?",
       a: "Yes. The 2-chamber design separates liquids from fines. Drain it after wet jobs and you're ready for dry on the next one. No swapping filters mid-job.",
     },
-    {
-      q: "What if I don't like it?",
-      a: "30-day no-questions-asked return. If it doesn't pay for itself in the first month, send it back and we refund the order in full.",
-    },
   ];
   return (
     <section
@@ -1480,8 +1451,7 @@ function FinalCTA({ vacQuantity, utmSuffix }) {
           <span className="text-red-500">Today.</span>
         </h2>
         <p className="text-lg text-slate-300 mt-5 max-w-xl mx-auto">
-          One reusable bag per vac. Stronger suction. Longer motor life. Free
-          shipping. 30 days to send it back if it doesn&apos;t pay for itself.
+          One reusable bag per vac. Stronger suction. Longer motor life. US patented design built for daily contractor abuse.
         </p>
         <a
           href={buildAddToCartUrl(machines || 1, utmSuffix)}
