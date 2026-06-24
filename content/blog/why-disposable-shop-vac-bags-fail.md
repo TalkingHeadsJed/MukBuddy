@@ -5,7 +5,7 @@ excerpt: "A disposable vac bag doesn't fade gracefully — it rips or blows out 
 hero_alt: "A torn disposable shop vac bag that blew out and spilled dust on a jobsite"
 hero_image: "https://mukbuddy.com/blog-images/disposable-shop-vac-bag.jpg"
 author: "Jason Brouk"
-author_bio: "Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors — still building the tools contractors wish already existed."
+author_bio: "Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors — and a patent holder who keeps building the tools contractors wish already existed."
 tags: ["shop-vac", "bag-failure", "disposable", "jobsite"]
 publish_date: "2026-06-19"
 published: true
@@ -18,7 +18,6 @@ faq:
     a: "A reusable bag built from heavy-duty material for repeated jobsite use, like Muk Buddy. It's made to be filled, emptied, and run again — no thin paper to tear, no blowouts."
 # hero_image: recommended -> blog-images/disposable-shop-vac-bag.jpg (already on your Desktop)
 # video: pair with the "Bag Failure" reason clip once matched; swap in the YouTube ID.
-video: "KkaqjZcYN0s"
 ---
 
 There's a specific kind of bad day a disposable shop vac bag gives you. You're moving along, the bag's getting full, and then — without warning — it rips. Or the seam lets go and the whole load blows back out into the room you just cleaned. Now you're doing the job twice, breathing the dust, and digging a torn bag out of the tank.

@@ -5,7 +5,7 @@ excerpt: "From suction loss to blowouts to the money you burn on disposables —
 hero_alt: "Reusable 2-chamber Muk Buddy shop vac bag held by a contractor on a jobsite"
 hero_image: "https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg"
 author: "Jason Brouk"
-author_bio: "Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors — still building the tools contractors wish already existed."
+author_bio: "Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors — and a patent holder who keeps building the tools contractors wish already existed."
 tags: ["shop-vac", "reusable", "wet-dry-vac", "contractor"]
 publish_date: "2026-06-19"
 published: true
@@ -18,7 +18,6 @@ faq:
     a: "A 2-chamber reusable bag separates debris from the airflow, so suction stays strong and the filter doesn't clog. It's built to be emptied and reused instead of ripping or blowing out like thin disposable bags."
 # hero_image: recommended -> blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg (already on your Desktop)
 # video: pair with the best overview/2-chamber clip once matched; swap in the YouTube ID.
-video: "jK-Ocvafh24"
 ---
 
 Disposable wet/dry vac bags have been the default for so long that most crews never stop to question them. Then they add up the cost, count the blowouts, and notice the suction dying by lunch — and the math stops making sense.

@@ -4,12 +4,9 @@ slug: "disposable-vs-reusable-shop-vac-bags"
 excerpt: "Disposable wet/dry vac bags feel cheap at the register and brutal at year-end. Here's the real math — and what a reusable bag actually saves a working crew."
 hero_image: "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/qrawjtug_image.png"
 hero_alt: "Real contractor in Carhartt holding a clogged, dust-caked shop vac filter — the price of running disposable bags or no bag at all."
-author: "Jason Brouk"
+author: "Muk Buddy"
 tags: ["shop-vac", "cost", "drywall"]
 publish_date: "2026-05-20"
-video: "8wKa1mR66gk"
-published: true
-author_bio: "Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors — still building the tools contractors wish already existed."
 ---
 
 If you run a crew, you've probably never sat down and added up what disposable wet/dry vac bags actually cost you in a year. The bag's $8. You toss the receipt. Next month, you do it again. And again. After a year, it's a quiet $1,000–$3,000 line item that nobody flagged.
