@@ -1,0 +1,35 @@
+{
+  "summary": "Re-verification of the 3 HIGH severity bugs from iteration_3.json. All 3 bugs are CONFIRMED FIXED in the live preview environment (https://two-chamber-test.preview.emergentagent.com).",
+  "backend_issues": {
+    "critical": [],
+    "minor": []
+  },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "verified_passing": [
+    "BUG 1 FIXED: /ads has exactly 1 meta[name=robots] tag with content='noindex, follow'. Static default removed from public/index.html.",
+    "BUG 1 control: / (homepage) has exactly 1 meta[name=robots] tag with content='index, follow, max-image-preview:large' (set by Landing's PageHead).",
+    "BUG 2 FIXED: /about body innerText does NOT contain 'US patent application' (case-insensitive). 'filed a US patent' is also absent. 'patent pending' still appears (preserved).",
+    "BUG 2 FIXED (JSON-LD): /about has 2 application/ld+json scripts; exactly 1 Person entity. Person.description = 'Inventor of the patent-pending Muk Buddy 2-chamber reusable wet/dry vac filter. 28+ years operating commercial floor and cleanup crews. Patent-pending status held by Floor Lord Industries.' — does NOT contain 'US patent application'.",
+    "BUG 3 FIXED: /blog/disposable-vs-reusable-shop-vac-bags/ byline reads 'By Jason Brouk' (visible in screenshot). 'By Muk Buddy' is absent.",
+    "BUG 3 FIXED: Author bio block 'Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors — and still building the tools contractors wish already existed.' is present on the page.",
+    "BUG 3 preserved: YouTube embed still uses video ID 8wKa1mR66gk via https://www.youtube-nocookie.com/embed/8wKa1mR66gk?rel=0."
+  ],
+  "test_report_links": [],
+  "action_items": [],
+  "critical_code_review_comments": [],
+  "updated_files": [],
+  "success_rate": {
+    "backend": "n/a (skipped per request)",
+    "frontend": "100% (3/3 targeted bugs fixed; 17 previously-passing items not re-tested per instructions)"
+  },
+  "test_credentials": "n/a",
+  "seed_data_creation": "none in this iteration",
+  "retest_needed": false,
+  "main_agent_can_self_test": true,
+  "context_for_next_testing_agent": "All 3 HIGH severity bugs from iteration_3 are resolved in the live preview. The Express server is now correctly serving the per-route prerendered HTML (or react-helmet-async is rewriting meta correctly during hydration) — /ads, /, /about, and the affected blog post all show the expected values in the live DOM. No further action needed.",
+  "rca of the issue": "All 3 fixes verified: (1) /ads now serves the prerendered build with noindex,follow and static default removed from public/index.html; (2) /about copy and Person JSON-LD description both rewritten to drop 'US patent application' while keeping 'patent pending'; (3) blog frontmatter author + author_bio restored and rebuilt via /app/scripts/build-blog.js."
+}
