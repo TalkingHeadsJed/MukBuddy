@@ -5,7 +5,7 @@ excerpt: "Shop vac barely pulling air? Suction loss almost always traces back to
 hero_alt: "Contractor checking a wet/dry vac that has lost suction on a jobsite"
 hero_image: "https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg"
 author: "Jason Brouk"
-author_bio: "Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors — and a patent holder who keeps building the tools contractors wish already existed."
+author_bio: "Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors — and still building the tools contractors wish already existed."
 tags: ["shop-vac", "suction", "filter", "troubleshooting"]
 publish_date: "2026-06-19"
 published: true
@@ -21,6 +21,7 @@ faq:
 # hero_image: recommended -> blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg
 #   (already optimized on your Desktop: mukbuddy_blog_images\muk-buddy-reusable-wet-dry-vac-bag.jpg)
 # video: pair with a "lost suction" landscape clip once uploaded; swap in the YouTube ID.
+video: "HwfeHKGOzQM"
 ---
 
 A shop vac that's lost its suction is one of the most useless tools on a jobsite. It still roars. It still sounds like it's working. But hold your hand to the nozzle and there's barely a pull. Meanwhile the dust you're trying to grab just sits there.
