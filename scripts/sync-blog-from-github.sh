@@ -53,19 +53,29 @@ fi
 UPDATED=0
 UNCHANGED=0
 NEW=0
+PRESERVED=0
 for entry in "${REMOTE_FILES[@]}"; do
   name="${entry%%|*}"
   remote_sha="${entry##*|}"
   local_path="${LOCAL_DIR}/${name}"
 
   if [ -f "${local_path}" ]; then
-    # Git "blob sha" is what GitHub also reports for content sha
-    local_sha="$(git hash-object "${local_path}")"
-    if [ "${local_sha}" = "${remote_sha}" ]; then
+    local_working_sha="$(git hash-object "${local_path}")"
+    if [ "${local_working_sha}" = "${remote_sha}" ]; then
       UNCHANGED=$((UNCHANGED + 1))
       continue
     fi
-    echo "  ↻ ${name} differs (local=${local_sha:0:8} vs github=${remote_sha:0:8}) — pulling GitHub version"
+    # Local differs from GitHub. Is the difference uncommitted local work?
+    # Compare the working tree to what's in HEAD. If they differ, the local
+    # file has uncommitted edits (made by the agent in this session) — DO
+    # NOT overwrite, otherwise we lose agent work that's about to be pushed.
+    local_committed_sha="$(git rev-parse "HEAD:content/blog/${name}" 2>/dev/null || echo "")"
+    if [ -n "${local_committed_sha}" ] && [ "${local_working_sha}" != "${local_committed_sha}" ]; then
+      echo "  ⊘ ${name} has uncommitted LOCAL edits (working=${local_working_sha:0:8}, HEAD=${local_committed_sha:0:8}) — keeping local"
+      PRESERVED=$((PRESERVED + 1))
+      continue
+    fi
+    echo "  ↻ ${name} differs (local=${local_working_sha:0:8} vs github=${remote_sha:0:8}) — pulling GitHub version"
     UPDATED=$((UPDATED + 1))
   else
     echo "  + ${name} is NEW on GitHub — pulling"
@@ -92,5 +102,5 @@ for local_file in "${LOCAL_DIR}"/*.md; do
 done
 
 echo ""
-echo "✓ Sync complete: ${NEW} new, ${UPDATED} updated, ${UNCHANGED} unchanged from GitHub."
+echo "✓ Sync complete: ${NEW} new, ${UPDATED} pulled from GitHub, ${PRESERVED} preserved (uncommitted local work), ${UNCHANGED} unchanged."
 echo "  Now safe to commit and push from Emergent."

@@ -5,7 +5,7 @@ excerpt: "Drywall dust kills shop vac suction in minutes. Here's exactly why it 
 hero_alt: "Contractor opening a wet/dry vac to a dust-caked, clogged pleated filter after a drywall job"
 hero_image: "https://mukbuddy.com/blog-images/contractor-pulling-disposable-shop-vac-bag.jpg"
 author: "Jason Brouk"
-author_bio: "Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors — and a patent holder who keeps building the tools contractors wish already existed."
+author_bio: "Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors — still building the tools contractors wish already existed."
 tags: ["shop-vac", "drywall", "clogging", "filter"]
 publish_date: "2026-06-19"
 published: true
@@ -18,7 +18,7 @@ faq:
     a: "Yes. Bagless on fine dust sends gypsum straight into the pleated filter, which clogs it in a job or two, crashes suction, and makes the motor run hot. It's the fastest way to kill both the filter and the motor."
   - q: "Does a reusable shop vac bag fit my RIDGID, Stanley or Craftsman vac?"
     a: "Most reusable bags, including Muk Buddy, fit the standard 2.5-inch wet/dry vac inlet used by RIDGID, Stanley, Craftsman, Shop-Vac, Vacmaster and most other major brands. Check your inlet size if you're unsure."
-video: "HfsaV45oXJ4"
+video: "qR-Ow0woAmw"
 video_title: "Not Using a Wet/Dry Vac Bag Is Clogging Your Filter"
 # hero_image: upload a clogged-filter / pulling-the-bag still and paste its URL here.
 #   Recommended (already optimized on your Desktop): blog-images/contractor-pulling-disposable-shop-vac-bag.jpg

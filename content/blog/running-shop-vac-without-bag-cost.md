@@ -5,7 +5,7 @@ excerpt: "Going bagless feels free. On fine jobsite dust it's the fastest way to
 hero_alt: "Disposable shop vac bag next to a wet/dry vac — the throwaway cost of running bagless"
 hero_image: "https://mukbuddy.com/blog-images/disposable-shop-vac-bag.jpg"
 author: "Jason Brouk"
-author_bio: "Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors — and a patent holder who keeps building the tools contractors wish already existed."
+author_bio: "Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors — still building the tools contractors wish already existed."
 tags: ["shop-vac", "bagless", "filter", "cost"]
 publish_date: "2026-06-19"
 published: true
