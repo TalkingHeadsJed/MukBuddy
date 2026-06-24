@@ -12,6 +12,8 @@ import {
   Star,
   Award,
   Lock,
+  Flag,
+  HardHat,
   Users,
   ChevronDown,
   Play,
@@ -211,6 +213,12 @@ function TrustStrip() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 flex flex-wrap items-center justify-center gap-x-6 gap-y-1.5">
         <span className="inline-flex items-center gap-1.5">
           <Award className="w-3.5 h-3.5 text-red-500" /> US Patented design
+        </span>
+        <span className="inline-flex items-center gap-1.5">
+          <Flag className="w-3.5 h-3.5 text-red-500" /> Made in the USA
+        </span>
+        <span className="inline-flex items-center gap-1.5">
+          <HardHat className="w-3.5 h-3.5 text-red-500" /> Built for daily contractor use
         </span>
         <span className="inline-flex items-center gap-1.5">
           <Lock className="w-3.5 h-3.5 text-red-500" /> Secure checkout
@@ -418,7 +426,11 @@ function Hero({ scrollToSavings, scrollToForm, utmSuffix }) {
                 </div>
               </div>
 
-              {/* Risk-reversal removed per client direction */}
+              {/* Engineering credibility — replaces prior risk-reversal copy */}
+              <p className="text-sm sm:text-base text-slate-800 leading-snug max-w-md mx-auto sm:mx-0">
+                <strong className="text-slate-900">2-chamber design. US Patented. Made in the USA.</strong>{" "}
+                Liquids and fines stay separated internally so the filter never clogs mid-job. Built for daily contractor use — not weekend DIY.
+              </p>
 
               <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-slate-600 justify-center sm:justify-start">
                 <span className="inline-flex items-center gap-0.5">
@@ -1093,18 +1105,28 @@ function SocialProof() {
   );
 }
 
-/* ─────────────────── Guarantee bar (risk reversal) ─────────────────── */
+/* ─────────────────── Trust bar (made in USA / patented / built / secure) ─────────────────── */
 function GuaranteeBar() {
   const items = [
     {
+      icon: Flag,
+      title: "Made in the USA",
+      body: "Designed and manufactured stateside — not outsourced overseas.",
+    },
+    {
       icon: Award,
-      title: "US patented",
+      title: "US Patented Design",
       body: "Real engineering, not a knockoff filter sock.",
     },
     {
+      icon: HardHat,
+      title: "Built for Daily Use",
+      body: "Drywall, concrete, wet pickup, back-to-back jobs — designed for working crews.",
+    },
+    {
       icon: Lock,
-      title: "Secure checkout",
-      body: "256-bit SSL via TheFloorLord. Cards (Visa, Mastercard, Amex).",
+      title: "Secure Checkout",
+      body: "256-bit SSL via The Floor Lord. Visa · Mastercard · Amex.",
     },
   ];
   return (
@@ -1112,7 +1134,7 @@ function GuaranteeBar() {
       data-testid="ads-guarantee"
       className="bg-white py-12 sm:py-16 border-b border-slate-200"
     >
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 lg:grid-cols-4 gap-6">
         {items.map(({ icon: Icon, title, body }) => (
           <div key={title} className="flex items-start gap-3">
             <div className="w-10 h-10 flex-shrink-0 bg-red-50 border border-red-600/30 flex items-center justify-center">
@@ -1376,6 +1398,10 @@ function FAQ() {
     {
       q: "Can I use it for wet pickup?",
       a: "Yes. The 2-chamber design separates liquids from fines. Drain it after wet jobs and you're ready for dry on the next one. No swapping filters mid-job.",
+    },
+    {
+      q: "Where is Muk Buddy made?",
+      a: "Designed and manufactured in the United States. The 2-chamber housing, filter media, and assembly all happen stateside — not outsourced overseas like the disposable bags it replaces.",
     },
   ];
   return (
