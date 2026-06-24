@@ -3,6 +3,10 @@ import { useEffect, useRef, useState } from "react";
 /**
  * Number that ticks from 0 → target when scrolled into view.
  * Triggers once. Uses requestAnimationFrame for smooth easing.
+ *
+ * SSR/prerender: useState is initialized to `to` so the prerendered HTML
+ * carries the real number (not "$0"). On client mount, we drop back to 0
+ * and animate up when the element enters the viewport.
  */
 export default function CountUp({
   to,
@@ -12,7 +16,8 @@ export default function CountUp({
   format = (n) => Math.round(n).toLocaleString(),
 }) {
   const ref = useRef(null);
-  const [n, setN] = useState(0);
+  // Initialize to target so prerendered HTML shows the final number.
+  const [n, setN] = useState(to);
   const fired = useRef(false);
 
   useEffect(() => {
@@ -22,6 +27,10 @@ export default function CountUp({
     const start = () => {
       if (fired.current) return;
       fired.current = true;
+      // Reset to 0 only when we're about to animate — this way the
+      // prerendered HTML keeps the final target value visible if the
+      // animation never fires (e.g., puppeteer SSR window).
+      setN(0);
       const t0 = performance.now();
       const tick = (t) => {
         const p = Math.min(1, (t - t0) / duration);

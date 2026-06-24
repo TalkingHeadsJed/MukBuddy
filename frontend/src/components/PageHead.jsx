@@ -17,6 +17,8 @@ export default function PageHead({
   ogType = "website",
   robots,
   preloadImage,
+  productPrice,
+  productCurrency = "USD",
 }) {
   return (
     <Helmet>
@@ -33,6 +35,13 @@ export default function PageHead({
 
       {ogImage && <meta property="og:image" content={ogImage} />}
       {ogImage && <meta name="twitter:image" content={ogImage} />}
+
+      {/* Product price metadata (Open Graph product extension). Helps
+          Google/Bing/Pinterest surface price + currency in rich results. */}
+      {productPrice && <meta property="product:price:amount" content={productPrice} />}
+      {productPrice && <meta property="product:price:currency" content={productCurrency} />}
+      {productPrice && <meta property="og:price:amount" content={productPrice} />}
+      {productPrice && <meta property="og:price:currency" content={productCurrency} />}
 
       {/* Preload the page's LCP image (above-the-fold hero) so it starts
           downloading in parallel with the JS bundle. Major mobile LCP win. */}

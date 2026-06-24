@@ -46,7 +46,7 @@ const PORT = process.env.PRERENDER_PORT || 5050;
 // of `build/index.html` doesn't pollute the static-server fallback used
 // when puppeteer navigates to `/ads` or `/thank-you` (those routes don't
 // have their own `build/<route>/index.html` until we write one).
-const ROUTES = ["/ads", "/thank-you", "/"];
+const ROUTES = ["/ads", "/thank-you", "/about", "/"];
 
 // Try to resolve a Chrome/Chromium binary. Production VPS may have a
 // different path — set CHROME_PATH env var to override.

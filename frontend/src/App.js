@@ -4,6 +4,7 @@ import { HelmetProvider } from "react-helmet-async";
 import Landing from "@/pages/Landing";
 import AdsLanding from "@/pages/AdsLanding";
 import ThankYou from "@/pages/ThankYou";
+import About from "@/pages/About";
 import { Toaster } from "@/components/ui/sonner";
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Landing />} />
             <Route path="/ads" element={<AdsLanding />} />
+            <Route path="/about" element={<About />} />
             <Route path="/thank-you" element={<ThankYou />} />
             {/* No catch-all: unknown paths render nothing inside <Routes>
                 so react-helmet-async never momentarily registers Landing's

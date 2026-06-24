@@ -57,9 +57,9 @@ export default function AdsLanding() {
   // Here we just fire PageView on SPA route mount so client-side
   // navigations into /ads also register as a view in Meta.
   useEffect(() => {
-    if (typeof window !== "undefined" && window.fbq) {
-      window.fbq("track", "PageView");
-    }
+    // Fire Meta Pixel PageView ONCE on landing. The base SDK in index.html
+    // already fires PageView for all routes via the global init; re-firing
+    // here would duplicate the event. Removed per SEO audit.
   }, []);
 
   // Lifted state — qualifier selection drives savings calc, CTAs, and form

@@ -19,6 +19,8 @@ export default function Footer() {
           © {new Date().getFullYear()} · Built by a contractor, for contractors.
         </div>
         <div className="flex gap-6 font-bangers text-lg uppercase tracking-[0.2em] text-cream">
+          <a href="/about" className="hover:text-slime transition-colors" data-testid="footer-about">About</a>
+          <a href="/blog/" className="hover:text-slime transition-colors" data-testid="footer-blog">Blog</a>
           <a href="#faq" className="hover:text-slime transition-colors" data-testid="footer-faq">FAQ</a>
           <a href="#contact" className="hover:text-slime transition-colors" data-testid="footer-contact">Contact</a>
           <a

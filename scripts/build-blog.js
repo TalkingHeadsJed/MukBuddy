@@ -429,7 +429,7 @@ function renderPost(p) {
   <div class="cta-card">
     <h3>Stop paying the bag tax.</h3>
     <p>One reusable Muk Buddy replaces years of disposable bags. No filters. No motor death.</p>
-    <a class="btn" href="/ads">Get Muk Buddy &rarr;</a>
+    <a class="btn" href="/">Get Muk Buddy &rarr;</a>
   </div>
 
   <p style="margin-top:32px"><a href="/blog/">&larr; Back to all posts</a></p>
@@ -439,7 +439,7 @@ function renderPost(p) {
     title: `${p.title} | Muk Buddy Blog`,
     description: p.excerpt,
     canonical: url,
-    ogImage: p.hero_image,
+    ogImage: p.hero_image || `${SITE_URL}/og-image-home.png`,
     jsonLd,
     body,
   });
@@ -537,7 +537,7 @@ function renderDraftPost(p, token) {
     title: `[DRAFT] ${p.title}`,
     description: p.excerpt,
     canonical: postUrl(p.slug), // canonical to future live URL (with trailing slash)
-    ogImage: p.hero_image,
+    ogImage: p.hero_image || `${SITE_URL}/og-image-home.png`,
     robots: "noindex, nofollow",
     body,
   });
@@ -619,6 +619,7 @@ function renderIndex(posts) {
     description:
       "Hands-on guides, cost breakdowns, and field-tested tips for contractors using wet/dry vacs.",
     canonical: url,
+    ogImage: `${SITE_URL}/og-image-home.png`,
     body,
   });
 }

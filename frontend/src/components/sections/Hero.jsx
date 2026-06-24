@@ -37,35 +37,34 @@ export default function Hero() {
             ★ PATENTED · BUILT BY A CONTRACTOR ★
           </div>
 
-          <h1
-            data-testid="hero-headline"
+          <div
+            data-testid="hero-brand"
+            role="presentation"
+            aria-hidden="true"
             className="drip-title text-[4.5rem] sm:text-[6rem] lg:text-[6.5rem] xl:text-[7.5rem] leading-[0.85] break-words"
           >
             MUK<br />BUDDY
-            <span className="sr-only">
-              {" "}— A patented 2-chamber reusable filter system for shop vacuums
-              and wet/dry vacuums. Fits Shop-Vac, Ridgid, Craftsman, Stanley,
-              DeWalt and most 12–20 gallon wet/dry vacs. Maintains suction,
-              protects motors, eliminates disposable bag costs for contractors.
-            </span>
+          </div>
+
+          <h1
+            data-testid="hero-headline"
+            className="font-bowlby text-3xl sm:text-4xl lg:text-5xl text-ink leading-[1.05]"
+          >
+            The Reusable Shop Vac Bag{" "}
+            <span className="hl-yellow">That Saves Crews Thousands.</span>
           </h1>
 
           <p
             data-testid="hero-subhead"
-            className="font-bowlby text-3xl sm:text-4xl lg:text-5xl text-ink leading-[1.05]"
+            className="text-base sm:text-lg text-ink/85 max-w-xl leading-relaxed font-semibold"
           >
-            The reusable bag your{" "}
-            <span className="hl-yellow">wet/dry vac loves.</span>
+            High-efficiency reusable shop vac dust bag — a 2-chamber alternative to disposable HEPA-style filter bags. Fits Ridgid, Shop-Vac, DeWalt, Craftsman, Stanley and most 12–20 gallon wet/dry vacs.
           </p>
 
           <p className="text-base sm:text-lg text-ink/80 max-w-xl leading-relaxed font-semibold">
-            Patented{" "}
-            <span className="text-muk font-extrabold">2-chamber design</span>{" "}
-            fits most 12–20 gallon Shop-Vac, Ridgid, Craftsman, Stanley and
-            DeWalt wet/dry vacs.{" "}
-            <span className="text-ink font-extrabold">
-              One purchase. Done.
-            </span>
+            <span className="text-muk font-extrabold text-2xl sm:text-3xl">$99</span>{" "}
+            — one purchase. No filters. No bag tax.{" "}
+            <span className="text-ink font-extrabold">Done.</span>
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-2">
@@ -119,7 +118,11 @@ export default function Hero() {
           >
             <img
               src={IMAGES.heroComposite}
-              alt="Muk Buddy patented 2-chamber reusable wet/dry vac bag held by contractor — alternative to disposable shop vacuum bags"
+              alt="Muk Buddy patent-pending 2-chamber reusable wet/dry vac bag held by contractor — alternative to disposable shop vacuum bags"
+              width="1024"
+              height="1024"
+              fetchPriority="high"
+              decoding="async"
               className="relative w-full h-auto object-contain"
             />
             {/* Play button overlay */}
