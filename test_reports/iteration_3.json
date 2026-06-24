@@ -1,0 +1,89 @@
+{
+  "summary": "Frontend-only SEO/EEAT verification of Muk Buddy after GitHub blog sync. Tested homepage, /ads, /about, 7 blog posts, llms.txt, both lead forms (gtag + fbq tracking with dynamic value), JSON-LD Product schema, robots meta, and patent-pending copy consistency. Most things work; 3 HIGH severity bugs found.",
+  "backend_issues": {
+    "critical": [],
+    "minor": []
+  },
+  "frontend_issues": {
+    "ui_bugs": [
+      {
+        "component": "/ads — meta robots tag",
+        "issue": "robots meta is 'index, follow, max-image-preview:large' — spec requires 'noindex, follow'. /ads is being indexed when it should be intentionally noindex. Likely PageHead/Helmet for /ads is being overridden by the site-wide default; check /app/frontend/src/pages/AdsLanding.jsx PageHead/Helmet usage and prerender output (local build/ads/index.html DOES contain the correct 'noindex, follow' on a second meta tag — but the preview server serves the unprerendered SPA shell so only the site-wide 'index, follow' meta survives).",
+        "selector": "meta[name='robots']",
+        "priority": "HIGH"
+      },
+      {
+        "component": "/about — body copy contains forbidden phrase 'US patent application'",
+        "issue": "About page reads: 'Floor Lord Industries filed a US patent application on the 2-chamber design. It is currently patent pending in the United…'. The spec explicitly forbids 'US patent' on /about (says: 'patent pending (not patented or US patent)'). Rewrite to: 'Floor Lord Industries has filed for a 2-chamber design patent — it is currently patent pending in the United States.' or similar.",
+        "selector": "/about page body",
+        "priority": "HIGH"
+      },
+      {
+        "component": "Blog post /blog/disposable-vs-reusable-shop-vac-bags/",
+        "issue": "Author byline is 'By Muk Buddy' (not 'By Jason Brouk') AND the canonical 'Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors — and still building the tools contractors wish already existed.' bio block is missing from this post. All 6 other blog posts have it. Likely the .md frontmatter for this post was overwritten during the GitHub sync and lost its author field. Fix the .md frontmatter and rerun /app/scripts/build-blog.js.",
+        "selector": "blog post author byline + author bio block",
+        "priority": "HIGH"
+      },
+      {
+        "component": "Server / prerender deployment",
+        "issue": "The preview server (Express, x-powered-by: Express on port 3000) returns the SAME 28KB public/index.html SPA shell for /, /about, /ads, and all /blog/* routes — instead of serving the prerendered HTML in /app/frontend/build/{route}/index.html (which is correctly built locally at 49KB+ each with all SEO content baked in). For example local build/about/index.html is 49,330 bytes with the h1, full body copy, and per-route meta — but curl /about returns the 28,076-byte shell. This kills crawler-visible SEO (h1, JSON-LD, meta robots, title, etc.). The runtime React app still hydrates correctly so human users see everything, but bots see almost nothing. Confirm the server config (likely scripts/serve.js or similar) actually serves the prerendered build directory routes.",
+        "selector": "GET / vs GET /about HTML body",
+        "priority": "HIGH"
+      }
+    ],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "verified_passing": [
+    "Homepage h1 contains 'Shop Vac Bag' — actual: 'The Reusable Shop Vac Bag That Saves Crews Thousands.'",
+    "Homepage subhead contains '12-20 gallon', 'HEPA', 'shop vac dust bag', and '$99'",
+    "Hero ribbon shows 'PATENT PENDING' (not 'PATENTED')",
+    "Hero trust badge shows 'PATENT PEND. 2-CHAMBER' (not 'PATENTED 2-CHAMBER')",
+    "No forbidden patent tokens (US Patented / Patented / patent holder) on / or /ads (in rendered DOM)",
+    "Homepage <title> exact match: 'Reusable Shop Vac Bags & Filter Bags, 12–20 Gal | Muk Buddy'",
+    "Homepage <meta property=product:price:amount content=99.00> present",
+    "JSON-LD Product schema has exactly 1 Product entity with mpn=MUKBUD1420, price=99.00, currency=USD, NO hasMerchantReturnPolicy, additionalProperty includes 'Design: Patent-Pending 2-Chamber'",
+    "/ads trust strip pills present (Patent-Pending design / Made in the USA / Built for daily contractor use / Secure checkout)",
+    "/ads GuaranteeBar has 4 tiles (Made in the USA / Patent-Pending Design / Built for Daily Use / Secure Checkout) with NO '30-day return' or 'Free shipping' anywhere on page",
+    "/about h1 = 'Built by a contractor. Tested by 800 jobs.' and contains 'Jason Brouk' and 'patent pending'",
+    "All 6 blog posts have correct YouTube iframe with expected video ID (jK-Ocvafh24, qR-Ow0woAmw, HwfeHKGOzQM, KkaqjZcYN0s, Ks0oA7Pnogc, 8wKa1mR66gk) using https://www.youtube-nocookie.com/embed/{id}?rel=0",
+    "/blog/running-shop-vac-without-bag-cost/ has NO youtube iframe (correctly)",
+    "Author bio text exact match on the 6 video posts: 'Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors — and still building the tools contractors wish already existed.'",
+    "Homepage lead form (name/email/phone/crew_size) submits → POST /api/leads → 201 → redirects to /thank-you?lead_id=… AND fires window.gtag('event','conversion',{send_to:'AW-1058129782/0FzTCNaD7AgQ9o7H-AM', value:99, currency:'USD', transaction_id:<uuid>}) AND window.fbq('track','Lead',{value:99, currency:'USD', content_name:'Main Site Lead Form'})",
+    "/ads lead form with machine_count=1 fires gtag value=99 and fbq value=99 (1 × $99)",
+    "/ads lead form with machine_count=7 fires gtag value=693 and fbq value=693 num_items=7 (7 × $99 — dynamic multiplication confirmed)",
+    "No customer-assets.emergentagent.com asset references on /; all images load (0 broken)",
+    "/llms.txt returns 200 from CDN with first heading '# Muk Buddy' and contains '12–20 gallon', 'Made in the United States' / 'Manufactured in: United States', and 'Patent Pending' / 'patent-pending'"
+  ],
+  "test_report_links": [
+    "/app/tests/test_static_html.py",
+    "/app/test_reports/pytest/static_html.xml"
+  ],
+  "action_items": [
+    "FIX /ads meta robots → noindex, follow (verify PageHead/Helmet runs and that the production server serves the prerendered build/ads/index.html which already has the correct tag)",
+    "FIX /about copy: replace 'filed a US patent application' with a phrasing that uses ONLY 'patent pending' (e.g., 'has a patent-pending 2-chamber design')",
+    "FIX /blog/disposable-vs-reusable-shop-vac-bags/: restore author=Jason Brouk in the .md frontmatter so the byline says 'By Jason Brouk' and the author bio block renders. The post was likely overwritten during the GitHub manual-commit sync. Re-run /app/scripts/build-blog.js after fixing.",
+    "FIX deployment: the Express server is serving the static public/index.html SPA shell for all routes (28KB) instead of the per-route prerendered HTML in /app/frontend/build/{route}/index.html (49KB+). This is invisible to humans but devastating for SEO (the whole point of this sprint). Inspect the production server config — it should fall through to build/{route}/index.html before the catch-all build/index.html.",
+    "Verify /llms.txt is rendered (currently 200 via curl/CDN; some clients with non-browser User-Agent get 403 from Cloudflare — likely fine)"
+  ],
+  "critical_code_review_comments": [
+    "Lead form value calc on /ads: select options use cardinal midpoints (1=1, 3=2-4 midpoint, 7=5-10 midpoint, 12=10+) — that's a reasonable proxy for $99-multiplication, but be aware the dollar value reported to Google Ads is approximate (a crew with 4 machines bills 297 instead of 396). Fine for ad bidding but worth documenting.",
+    "Spec said homepage crew_size enum should be '1', '2-5', '6-15', '16-50', '50+' but actual options are '1 crew', '2-4 crews', '5-9 crews', '10+ crews' (string values, not numeric). This is just a documentation mismatch; the form still submits + tracks correctly.",
+    "Hero h1 reads 'The Reusable Shop Vac Bag That Saves Crews Thousands.' — there's a trailing period followed by a giant decorative 'MUK BUDDY' div. Fine, but worth noting the h1 text-content ends with '.'",
+    "Homepage form fires fbq('track','PageView') TWICE (Pixel registers two PageViews) — likely the base pixel snippet + a route-change PageView. Mild but worth investigating to avoid double-counting in Meta.",
+    "Express x-powered-by header is exposed (security smell, low). Disable with app.disable('x-powered-by')."
+  ],
+  "updated_files": [
+    "/app/tests/test_static_html.py (new)"
+  ],
+  "success_rate": {
+    "backend": "n/a (skipped per request)",
+    "frontend": "~85% (17/20 spec items pass in rendered DOM; 3 HIGH bugs + 1 deployment/SEO issue)"
+  },
+  "test_credentials": "n/a",
+  "seed_data_creation": "Created 3 TEST_ leads in MongoDB via /api/leads during form testing: test_ads_lead@example.com (machine_count=1), test_ads7@example.com (machine_count=7), test_home_lead2@example.com (crew_size=2-4 crews). Filter by name LIKE 'TEST%' to clean up.",
+  "retest_needed": true,
+  "main_agent_can_self_test": true,
+  "context_for_next_testing_agent": "Preview URL https://two-chamber-test.preview.emergentagent.com. Server is Express and serves public/index.html shell for all routes (28KB) instead of the prerendered build/{route}/index.html (49KB+). Therefore curl-based static HTML assertions fail; use Playwright DOM checks instead. Homepage lead form: actual crew_size option values are '1 crew','2-4 crews','5-9 crews','10+ crews' (NOT '1','2-5','6-15','16-50','50+'). /ads form: machine_count option values are '1','3','7','12' (midpoints of range labels '1 machine','2-4 machines','5-10 machines','10+ machines'); crew_count option values are '1','2-4','5-9','10+'. Both forms route to /thank-you?lead_id=<uuid> after successful POST /api/leads. gtag + fbq are monkey-patchable BEFORE submit to capture call args. To verify a fix for /ads noindex, fetch with curl AND with Playwright — both should show 'noindex, follow' in <meta name=robots>.",
+  "rca of the issue": "Three independent bugs surfaced by this verification:\n1) /ads not noindex: PageHead/Helmet for /ads sets noindex but the served public/index.html shell carries a site-wide 'index, follow, max-image-preview:large' default. Helmet rewrites it at runtime IF /ads is hydrated client-side, but our test reads the static meta after hydration — and even after hydration the meta still showed 'index, follow' (helmet may not be applied or is overridden). Local build/ads/index.html DOES carry the correct noindex when prerender runs. Solution: ensure prerendered HTML is actually being served per route AND verify AdsLanding's <PageHead robots='noindex, follow'/> is wired.\n2) /about 'US patent application': literal copy in /app/frontend/src/pages/About.jsx contains 'Floor Lord Industries filed a US patent application on the 2-chamber design.' This violates the strict 'no US patent' rule on /about. Manual copy edit needed.\n3) Blog post disposable-vs-reusable-shop-vac-bags author byline shows 'By Muk Buddy' and the founder bio block is missing. The user's manual GitHub commit e450508 modified .md files; specifically this post's frontmatter likely lost author: 'Jason Brouk' or the bio rendering condition. Inspect /app/content/blog/disposable-vs-reusable-shop-vac-bags.md frontmatter vs the other 6 posts; restore author and any bio toggle, then rerun /app/scripts/build-blog.js."
+}
