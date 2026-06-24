@@ -7,6 +7,7 @@ hero_alt: "Real contractor in Carhartt holding a clogged, dust-caked shop vac fi
 author: "Muk Buddy"
 tags: ["shop-vac", "cost", "drywall"]
 publish_date: "2026-05-20"
+video: "8wKa1mR66gk"
 ---
 
 If you run a crew, you've probably never sat down and added up what disposable wet/dry vac bags actually cost you in a year. The bag's $8. You toss the receipt. Next month, you do it again. And again. After a year, it's a quiet $1,000–$3,000 line item that nobody flagged.

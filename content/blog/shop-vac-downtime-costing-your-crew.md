@@ -5,7 +5,7 @@ excerpt: "Every time the crew stops to clean a filter, swap a bag, or fight weak
 hero_alt: "Contractor stopped mid-job dealing with a shop vac instead of working"
 hero_image: "https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg"
 author: "Jason Brouk"
-author_bio: "Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors — and a patent holder who keeps building the tools contractors wish already existed."
+author_bio: "Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors — and still building the tools contractors wish already existed."
 tags: ["shop-vac", "downtime", "productivity", "crew"]
 publish_date: "2026-06-19"
 published: true
@@ -18,6 +18,7 @@ faq:
     a: "Use a setup that keeps the filter clear and doesn't need a new bag every couple hours. A reusable 2-chamber bag like Muk Buddy holds suction and keeps running, so the crew keeps working."
 # hero_image: recommended -> blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg (already on your Desktop)
 # video: pair with the "Downtime" reason clip once matched; swap in the YouTube ID.
+video: "Ks0oA7Pnogc"
 ---
 
 Nobody puts "shop vac maintenance" on an invoice. But your crew pays for it every day, in minutes that disappear a few at a time.
