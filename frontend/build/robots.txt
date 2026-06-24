@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /blog/draft-preview/
+
+Sitemap: https://mukbuddy.com/sitemap.xml
