@@ -55,6 +55,17 @@ export default function LeadForm() {
           content_name: "Main Site Lead Form",
         });
       }
+      // Google Ads — Form Submission (lead) conversion. Mirrors Meta value so
+      // Smart Bidding sees the same signal. Conversion ID provided by Jed
+      // 2026-06-24. Sent on submit (not /thank-you) to prevent double-counting.
+      if (typeof window !== "undefined" && typeof window.gtag === "function") {
+        window.gtag("event", "conversion", {
+          send_to: "AW-1058129782/0FzTCNaD7AgQ9o7H-AM",
+          value: 99.0,
+          currency: "USD",
+          transaction_id: data?.id || "",
+        });
+      }
       // Hard navigate to /thank-you so conversion pixels & ad-platform
       // URL-based goals can fire on a real, distinct page view.
       const leadId = data?.id ? `?lead_id=${encodeURIComponent(data.id)}` : "";

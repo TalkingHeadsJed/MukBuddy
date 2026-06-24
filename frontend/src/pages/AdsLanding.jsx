@@ -1224,6 +1224,16 @@ function LeadFormSection({ formRef, vacQuantity }) {
           content_name: "Ads LP Lead Form",
           num_items: machines,
         });
+        // Google Ads — same dynamic value so Smart Bidding sees the same
+        // high-value signal Meta does. Conversion ID provided by Jed 2026-06-24.
+        if (typeof window.gtag === "function") {
+          window.gtag("event", "conversion", {
+            send_to: "AW-1058129782/0FzTCNaD7AgQ9o7H-AM",
+            value: leadValue,
+            currency: "USD",
+            transaction_id: data?.id || "",
+          });
+        }
       }
       const leadId = data?.id ? `?lead_id=${encodeURIComponent(data.id)}` : "";
       navigate(`/thank-you${leadId}`);
