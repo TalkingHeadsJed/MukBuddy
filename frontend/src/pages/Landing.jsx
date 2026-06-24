@@ -29,6 +29,7 @@ export default function Landing() {
         ogImage="https://mukbuddy.com/og-image-home.png"
         productPrice="99.00"
         preloadImage="/img/hero-composite.png"
+        robots="index, follow, max-image-preview:large"
       />
       <Header />
       <Hero />

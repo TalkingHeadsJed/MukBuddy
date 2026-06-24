@@ -35,7 +35,7 @@ export default function About() {
           "Patent-pending 2-chamber filter design",
         ],
         description:
-          "Inventor of the patent-pending Muk Buddy 2-chamber reusable wet/dry vac filter. 28+ years operating commercial floor and cleanup crews. Named applicant on the Muk Buddy US patent application.",
+          "Inventor of the patent-pending Muk Buddy 2-chamber reusable wet/dry vac filter. 28+ years operating commercial floor and cleanup crews. Patent-pending status held by Floor Lord Industries.",
       },
       {
         "@type": "AboutPage",
@@ -129,10 +129,10 @@ export default function About() {
           </p>
 
           <p>
-            Floor Lord Industries filed a US patent application on the
-            2-chamber design. It is currently{" "}
-            <strong>patent pending</strong> in the United States. The Muk Buddy
-            assembly is <strong>designed and manufactured in the USA</strong>
+            Floor Lord Industries has a{" "}
+            <strong>patent pending</strong> on the 2-chamber design in the
+            United States. The Muk Buddy assembly is{" "}
+            <strong>designed and manufactured in the USA</strong>
             {" "}&mdash; not outsourced overseas like the disposable bags it
             replaces.
           </p>
