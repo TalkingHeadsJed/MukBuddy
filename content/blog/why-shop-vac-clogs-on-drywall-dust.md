@@ -62,7 +62,7 @@ Each of these is fighting the same losing battle: dust and airflow are sharing t
 
 The reason filters die is that **the dust and the air go through the same place.** Fix that, and the filter stops clogging.
 
-That's the whole idea behind a reusable [Muk Buddy](/ads) bag. The **two-chamber design keeps the dust load away from the airflow path**, so the pleated filter behind it doesn't get hammered with fine gypsum. The result on a drywall job:
+That's the whole idea behind a reusable [Muk Buddy](/) bag. The **two-chamber design keeps the dust load away from the airflow path**, so the pleated filter behind it doesn't get hammered with fine gypsum. The result on a drywall job:
 
 - Suction holds instead of fading after 20 minutes
 - The filter stays clear, so it lasts **years instead of months**
@@ -82,4 +82,4 @@ If you're cleaning up drywall, concrete, or demo dust:
 
 Clogging on drywall dust isn't a sign you need a stronger vac. It's a sign the dust is reaching the filter. Keep it off the filter and the vac you already own runs like it's supposed to.
 
-Tired of fighting it? [See how Muk Buddy works](/ads) — one reusable bag, no more clogged filters, no more reorders.
+Tired of fighting it? [See how Muk Buddy works](/) — one reusable bag, no more clogged filters, no more reorders.

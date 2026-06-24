@@ -71,11 +71,11 @@ For everything dusty, though, you want a bag — and not just any bag.
 
 ## The fix: a bag that protects the filter
 
-The reason fine dust kills filters is that the dust and the airflow share the same path. A reusable [Muk Buddy](/ads) bag fixes that at the source — the **two-chamber design keeps the dust away from the airflow**, so:
+The reason fine dust kills filters is that the dust and the airflow share the same path. A reusable [Muk Buddy](/) bag fixes that at the source — the **two-chamber design keeps the dust away from the airflow**, so:
 
 - The filter stays clear and lasts years
 - Suction holds through the whole job
 - The motor breathes easy and doesn't cook
 - You buy one bag instead of restocking disposables forever
 
-Bagless feels like saving money right up until the motor dies. [See how Muk Buddy works](/ads) — protect the filter, protect the motor, and stop paying the bill later.
+Bagless feels like saving money right up until the motor dies. [See how Muk Buddy works](/) — protect the filter, protect the motor, and stop paying the bill later.

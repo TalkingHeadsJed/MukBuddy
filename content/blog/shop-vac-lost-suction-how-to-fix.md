@@ -62,7 +62,7 @@ That's why "clean the filter" only buys you twenty minutes. You knock off the su
 
 ## The fix that actually lasts
 
-Keep the dust off the filter and the suction stays. That's the whole idea behind a reusable [Muk Buddy](/ads) bag — the **two-chamber design separates the dust from the airflow path**, so the pleated filter doesn't get packed in the first place.
+Keep the dust off the filter and the suction stays. That's the whole idea behind a reusable [Muk Buddy](/) bag — the **two-chamber design separates the dust from the airflow path**, so the pleated filter doesn't get packed in the first place.
 
 - Suction holds through the whole job instead of fading
 - The filter stays clear and lasts years, not weeks
@@ -80,4 +80,4 @@ Next time the pull dies mid-job:
 
 Find it, clear it, and you're back in business. But if you're doing this every single day, you're not fixing the cause — you're fighting fine dust that keeps reaching the filter.
 
-Stop chasing it. [See how Muk Buddy keeps your suction](/ads) — one reusable bag, a filter that stays clear, and a vac that pulls like new all day.
+Stop chasing it. [See how Muk Buddy keeps your suction](/) — one reusable bag, a filter that stays clear, and a vac that pulls like new all day.
