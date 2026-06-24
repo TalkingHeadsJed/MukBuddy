@@ -59,7 +59,37 @@ Build a high-converting Bold DTC light-mode landing page for "Muk Buddy" — a p
 
 ## Build pipeline
 Frontend production build: `cd frontend && yarn build:blog`
-(Compiles MD → static HTML in /frontend/public/blog/, regenerates sitemap.xml & feed.xml, builds token-gated drafts if BLOG_DRAFT_TOKEN is set, then runs CRA build.)
+
+The `build:blog` script runs FOUR steps in order:
+1. **`bash ../scripts/sync-blog-from-github.sh`** — Pulls latest `/content/blog/*.md`
+   from `TalkingHeadsJed/MukBuddy@main` via the public GitHub raw URLs (no auth).
+   This is CRITICAL — see the "Blog editing workflow" section below.
+2. `node ../scripts/build-blog.js` — Compiles MD → static HTML in `build/blog/`,
+   regenerates `sitemap.xml` + `feed.xml`, optionally builds token-gated drafts.
+3. `craco build` — Standard CRA production build.
+4. `node ../scripts/prerender.js` — Puppeteer prerenders `/`, `/ads`, `/about`,
+   `/thank-you` to static HTML so non-JS crawlers/scrapers see real content.
+
+## ⚠️ Blog editing workflow (READ THIS — easy to break)
+
+**The user edits blog `.md` files directly on the GitHub web UI** (typo fixes,
+adding video embeds, etc.). Emergent's "Save to GitHub" does a `git push --force`
+of `main`, which would normally wipe any edits made on GitHub between syncs.
+
+**The fix is `scripts/sync-blog-from-github.sh`** which the build pipeline now
+runs automatically before every build. It pulls the latest .md content from the
+public repo's raw URLs and writes to `/app/content/blog/` so subsequent commits
+include the GitHub-side edits. The force-push then preserves them.
+
+**Rules for future agents:**
+- NEVER edit `/content/blog/*.md` directly in this pod without first running
+  `bash scripts/sync-blog-from-github.sh` — you may overwrite the user's
+  GitHub edits.
+- BEFORE committing anything, run that sync script (or run `yarn build:blog`
+  which does it for you).
+- If you're adding a NEW blog post, fine — create the .md in the pod, commit,
+  push. The sync script handles it from there.
+- The script uses unauthenticated GitHub API (60 req/hr public limit) — plenty.
 
 ## Key API endpoints
 - `POST /api/leads` — Save lead + queue Resend email
