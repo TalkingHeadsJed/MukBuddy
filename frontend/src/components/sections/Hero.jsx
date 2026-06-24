@@ -34,7 +34,7 @@ export default function Hero() {
         {/* LEFT */}
         <div className="lg:col-span-6 space-y-7 relative">
           <div className="ribbon font-bangers text-xl animate-wobble">
-            ★ PATENTED · BUILT BY A CONTRACTOR ★
+            ★ PATENT PENDING · BUILT BY A CONTRACTOR ★
           </div>
 
           <div
@@ -90,7 +90,7 @@ export default function Hero() {
 
           {/* Trust badges */}
           <div className="grid grid-cols-3 gap-2 pt-6">
-            <Badge label="PATENTED 2-CHAMBER" />
+            <Badge label="PATENT PEND. 2-CHAMBER" />
             <Badge label="REUSABLE FABRIC" color="muk" />
             <Badge label="CONTRACTOR BUILT" />
           </div>

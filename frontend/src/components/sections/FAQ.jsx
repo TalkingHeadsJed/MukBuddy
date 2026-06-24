@@ -10,11 +10,11 @@ import {
 const faqs = [
   {
     q: "What is Muk Buddy exactly?",
-    a: "Muk Buddy is a patented 2-chamber insert that fits inside your existing wet/dry vacuum. It separates debris from airflow so your filter stays clean, your motor stays protected, and your suction stays strong — wet or dry.",
+    a: "Muk Buddy is a patent-pending 2-chamber insert that fits inside your existing wet/dry vacuum. It separates debris from airflow so your filter stays clean, your motor stays protected, and your suction stays strong — wet or dry.",
   },
   {
     q: "Can you use a wet/dry vac without a bag?",
-    a: "Yes — technically — but you shouldn't run it that way for long. Without a bag, all the dust, drywall, and fine debris slams directly into the filter. The filter clogs fast, suction drops, and your motor works overtime trying to pull air through clogged media. That's the exact failure mode Muk Buddy solves: a patented 2-chamber design separates debris from airflow so your filter stays clean and your motor stays protected — no disposable bags required.",
+    a: "Yes — technically — but you shouldn't run it that way for long. Without a bag, all the dust, drywall, and fine debris slams directly into the filter. The filter clogs fast, suction drops, and your motor works overtime trying to pull air through clogged media. That's the exact failure mode Muk Buddy solves: a patent-pending 2-chamber design separates debris from airflow so your filter stays clean and your motor stays protected — no disposable bags required.",
   },
   {
     q: "Why does my wet/dry vac keep losing suction?",

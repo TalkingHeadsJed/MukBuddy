@@ -31,8 +31,8 @@ import { IMAGES } from "@/lib/images";
      • Anchoring (annual disposable cost vs Muk Buddy total)
      • Loss aversion ("you're burning $X/yr")
      • Social proof (testimonials, crew counts, star ratings)
-     • Authority (patented, real numbers)
-     • Trust strip (US Patented, Secure checkout)
+     • Authority (patent-pending, real numbers)
+     • Trust strip (Patent Pending, Secure checkout)
      • Commitment/consistency (multi-step qualifier → form)
      • Scarcity-light (without fake claims — "crew pricing available")
    ────────────────────────────────────────────────────────────────────────── */
@@ -133,7 +133,7 @@ export default function AdsLanding() {
     >
       <PageHead
         title="Crew Pricing: Reusable Shop Vac Bag for Contractors | Muk Buddy"
-        description="Get crew pricing on the Muk Buddy reusable wet/dry vac bag. Patented 2-chamber design stops bag clogs, extends motor life, and saves thousands vs disposable bags."
+        description="Get crew pricing on the Muk Buddy reusable wet/dry vac bag. Patent-pending 2-chamber design stops bag clogs, extends motor life, and saves thousands vs disposable bags."
         canonical="https://mukbuddy.com/ads"
         ogImage="https://mukbuddy.com/og-image-home.png"
         preloadImage={IMAGES.bagPileMountain}
@@ -212,7 +212,7 @@ function TrustStrip() {
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 flex flex-wrap items-center justify-center gap-x-6 gap-y-1.5">
         <span className="inline-flex items-center gap-1.5">
-          <Award className="w-3.5 h-3.5 text-red-500" /> US Patented design
+          <Award className="w-3.5 h-3.5 text-red-500" /> Patent-pending design
         </span>
         <span className="inline-flex items-center gap-1.5">
           <Flag className="w-3.5 h-3.5 text-red-500" /> Made in the USA
@@ -348,7 +348,7 @@ function Hero({ scrollToSavings, scrollToForm, utmSuffix }) {
             <div className="flex items-center justify-center sm:justify-end">
           <img
             src={IMAGES.productStraight}
-            alt="Muk Buddy — the patented reusable wet/dry vacuum bag"
+            alt="Muk Buddy — the patent-pending reusable wet/dry vacuum bag"
             className="w-[60%] sm:w-full max-w-[280px] sm:max-w-[340px] lg:max-w-[400px] h-auto object-contain drop-shadow-[0_30px_45px_rgba(15,23,42,0.35)]"
             loading="eager"
             fetchPriority="high"
@@ -428,7 +428,7 @@ function Hero({ scrollToSavings, scrollToForm, utmSuffix }) {
 
               {/* Engineering credibility — replaces prior risk-reversal copy */}
               <p className="text-sm sm:text-base text-slate-800 leading-snug max-w-md mx-auto sm:mx-0">
-                <strong className="text-slate-900">2-chamber design. US Patented. Made in the USA.</strong>{" "}
+                <strong className="text-slate-900">2-chamber design. Patent Pending. Made in the USA.</strong>{" "}
                 Liquids and fines stay separated internally so the filter never clogs mid-job. Built for daily contractor use — not weekend DIY.
               </p>
 
@@ -440,7 +440,7 @@ function Hero({ scrollToSavings, scrollToForm, utmSuffix }) {
                   <span className="ml-1 font-bold text-slate-900">4.9 / 5</span>
                 </span>
                 <span className="text-slate-400">·</span>
-                <span>US Patented · Secure checkout</span>
+                <span>Patent Pending · Secure checkout</span>
               </div>
             </div>
           </div>
@@ -566,7 +566,7 @@ function AirflowDemo() {
               style={{ letterSpacing: "-0.025em" }}
             >
               The Science behind the{" "}
-              <span className="text-red-500">patented 2-chamber airflow.</span>
+              <span className="text-red-500">patent-pending 2-chamber airflow.</span>
             </h2>
             <p className="text-slate-300 text-lg leading-relaxed">
               Air pulls debris into the outer chamber, where heavier dust and
@@ -617,7 +617,7 @@ function AirflowDemo() {
                 ▶ Live demo · 2-chamber airflow
               </div>
               <div className="absolute bottom-3 right-3 bg-red-600 text-white text-[10px] font-bold uppercase tracking-widest px-2 py-1">
-                US patented design
+                Patent-pending design
               </div>
             </div>
             <p className="mt-3 text-xs text-slate-400 text-center">
@@ -648,7 +648,7 @@ function Benefits({ utmSuffix }) {
       num: "02",
       title: "Improve Suction.",
       body:
-        "The patented 2-chamber design captures dust before it cakes onto your filter. Airflow stays open. Suction stays strong all day.",
+        "The patent-pending 2-chamber design captures dust before it cakes onto your filter. Airflow stays open. Suction stays strong all day.",
       stat: "Full",
       statLabel: "suction · every load",
     },
@@ -1115,7 +1115,7 @@ function GuaranteeBar() {
     },
     {
       icon: Award,
-      title: "US Patented Design",
+      title: "Patent-Pending Design",
       body: "Real engineering, not a knockoff filter sock.",
     },
     {
@@ -1477,7 +1477,7 @@ function FinalCTA({ vacQuantity, utmSuffix }) {
           <span className="text-red-500">Today.</span>
         </h2>
         <p className="text-lg text-slate-300 mt-5 max-w-xl mx-auto">
-          One reusable bag per vac. Stronger suction. Longer motor life. US patented design built for daily contractor abuse.
+          One reusable bag per vac. Stronger suction. Longer motor life. Patent-pending design built for daily contractor abuse.
         </p>
         <a
           href={buildAddToCartUrl(machines || 1, utmSuffix)}
@@ -1517,7 +1517,7 @@ function Footer() {
           MUK<span className="text-red-600">·</span>BUDDY
         </p>
         <p className="text-xs">
-          © {new Date().getFullYear()} Muk Buddy · Patented 2-chamber reusable
+          © {new Date().getFullYear()} Muk Buddy · Patent-pending 2-chamber reusable
           wet/dry vac bag
         </p>
       </div>

@@ -1,6 +1,6 @@
 # Muk Buddy
 
-> A US-patented, reusable, 2-chamber wet/dry shop vac accessory designed and manufactured in the United States. Replaces hundreds of disposable shop vac bags for professional contractors, drywall crews, concrete finishers, and post-construction cleanup operations.
+> A patent-pending, reusable, 2-chamber wet/dry shop vac accessory designed and manufactured in the United States. Replaces hundreds of disposable shop vac bags for professional contractors, drywall crews, concrete finishers, and post-construction cleanup operations.
 
 ## Product
 
@@ -9,13 +9,13 @@
 - **Price:** $99 USD (one-time purchase)
 - **Order page:** https://mukbuddy.com/ads
 - **Checkout partner:** The Floor Lord (fulfillment + payment processing)
-- **Patent status:** US Patented 2-chamber design
+- **Patent status:** Patent Pending 2-chamber design
 - **Manufactured in:** United States
 - **Compatibility:** 12–20 gallon wet/dry vacs (Shop-Vac, Ridgid, Craftsman, Stanley, most DeWalt models). Does not fit 5-gallon units.
 
 ## Key features
 
-- Patented 2-chamber design separates wet pickup from dry pickup internally — no filter swap required between jobs.
+- Patent-pending 2-chamber design separates wet pickup from dry pickup internally — no filter swap required between jobs.
 - One reusable Muk Buddy replaces hundreds of disposable bags over its service life.
 - Industrial-grade fabric — most working crews report 2+ years of daily use on a single Muk Buddy.
 - Maintains stronger suction over time vs. disposable bags (no clogging from fines).
@@ -40,7 +40,7 @@ Muk Buddy is a single reusable accessory engineered to outlast hundreds of dispo
 
 ## Trust signals
 
-- US Patented design
+- Patent-pending design
 - Made in the USA
 - Built for daily contractor use
 - 4.9 / 5 average customer rating

@@ -103,7 +103,7 @@ export default function BagsVsMukBuddy() {
             <div className="relative h-72 sm:h-96 overflow-hidden bg-cream-100">
               <img
                 src={IMAGES.productShot}
-                alt="Muk Buddy reusable wet/dry vac bag with retail packaging — patented 2-chamber filter alternative to disposable shop vac bags"
+                alt="Muk Buddy reusable wet/dry vac bag with retail packaging — patent-pending 2-chamber filter alternative to disposable shop vac bags"
                 className="absolute inset-0 w-full h-full object-contain p-6"
               />
               <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-ink text-slime font-bangers text-base sm:text-lg tracking-wider px-4 py-1.5 border-2 border-ink shadow-brutal-sm">

@@ -92,7 +92,7 @@ export default function TwoChamber() {
                   muted
                   playsInline
                   className="w-full h-full object-contain"
-                  aria-label="Animated diagram of Muk Buddy patented 2-chamber wet/dry vac filter mechanism showing airflow and debris separation"
+                  aria-label="Animated diagram of Muk Buddy patent-pending 2-chamber wet/dry vac filter mechanism showing airflow and debris separation"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink/40 via-transparent to-transparent" />
 
