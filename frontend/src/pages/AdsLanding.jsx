@@ -189,7 +189,7 @@ function AdsHeader({ scrollToForm, utmSuffix }) {
             Crew pricing
           </button>
           <a
-            href={appendAttribution(buildAddToCartUrl(1, utmSuffix))}
+            href={appendAttribution(buildAddToCartUrl(1))}
             target="_blank"
             rel="noopener noreferrer"
             data-testid="ads-header-order-btn"
@@ -390,7 +390,7 @@ function Hero({ scrollToSavings, scrollToForm, utmSuffix }) {
                   dominant conversion), Crew Pricing SECONDARY (fleet quote form). */}
               <div className="flex flex-col gap-3 pt-1 items-stretch sm:items-start">
                 <a
-                  href={appendAttribution(buildAddToCartUrl(1, utmSuffix))}
+                  href={appendAttribution(buildAddToCartUrl(1))}
                   target="_blank"
                   rel="noopener noreferrer"
                   data-testid="ads-hero-order-btn"
@@ -766,7 +766,7 @@ function Benefits({ utmSuffix }) {
         {/* Big CTA below benefits */}
         <div className="text-center mt-14 sm:mt-20">
           <a
-            href={appendAttribution(buildAddToCartUrl(1, utmSuffix))}
+            href={appendAttribution(buildAddToCartUrl(1))}
             target="_blank"
             rel="noopener noreferrer"
             data-testid="ads-benefits-order-btn"
@@ -917,7 +917,7 @@ function SavingsCalc({ savingsRef, vacQuantity, setVacQuantity, utmSuffix }) {
             </div>
 
             <a
-              href={appendAttribution(buildAddToCartUrl(machines, utmSuffix))}
+              href={appendAttribution(buildAddToCartUrl(machines))}
               target="_blank"
               rel="noopener noreferrer"
               data-testid="ads-savings-order-btn"
@@ -1491,7 +1491,7 @@ function FinalCTA({ vacQuantity, utmSuffix }) {
           One reusable bag per vac. Stronger suction. Longer motor life. Patent-pending design built for daily contractor abuse.
         </p>
         <a
-          href={appendAttribution(buildAddToCartUrl(machines || 1, utmSuffix))}
+          href={appendAttribution(buildAddToCartUrl(machines || 1))}
           target="_blank"
           rel="noopener noreferrer"
           data-testid="ads-final-order-btn"
