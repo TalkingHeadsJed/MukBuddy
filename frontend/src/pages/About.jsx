@@ -5,6 +5,7 @@ import Footer from "@/components/sections/Footer";
 import PageHead from "@/components/PageHead";
 import { IMAGES } from "@/lib/images";
 import { ORDER_URL } from "@/lib/constants";
+import { appendAttribution } from "@/lib/attribution";
 
 /* /about — Founder bio + E-E-A-T trust page. Includes Person and Organization
    schema markup so Google's Knowledge Graph can attribute the brand to a
@@ -181,7 +182,7 @@ export default function About() {
         <div className="mt-12 pt-10 border-t-4 border-ink">
           <a
             data-testid="about-cta"
-            href={ORDER_URL}
+            href={appendAttribution(ORDER_URL)}
             target="_blank"
             rel="noopener noreferrer"
             className="sticker-btn inline-flex items-center gap-2 bg-slime text-ink font-bangers text-2xl uppercase tracking-wider px-8 py-5 border-4 border-ink shadow-brutal rounded-sm"

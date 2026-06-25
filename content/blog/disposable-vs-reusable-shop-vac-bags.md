@@ -4,8 +4,7 @@ slug: "disposable-vs-reusable-shop-vac-bags"
 excerpt: "Disposable wet/dry vac bags feel cheap at the register and brutal at year-end. Here's the real math — and what a reusable bag actually saves a working crew."
 hero_image: "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/qrawjtug_image.png"
 hero_alt: "Real contractor in Carhartt holding a clogged, dust-caked shop vac filter — the price of running disposable bags or no bag at all."
-author: "Jason Brouk"
-author_bio: "Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors — and still building the tools contractors wish already existed."
+author: "Muk Buddy"
 tags: ["shop-vac", "cost", "drywall"]
 publish_date: "2026-05-20"
 video: "8wKa1mR66gk"
@@ -86,4 +85,4 @@ Even if a Muk Buddy lasts you only one year (it lasts longer), you're already se
 
 Disposable bags are an unaudited monthly tax most contractors pay without realizing it. Run the math on your own fleet for sixty seconds: how many bags last month, times twelve. Then add filters. Then add the motor you're going to replace eventually. The number is bigger than you think.
 
-If you're tired of paying that tax, [grab a Muk Buddy](/ads) and stop bleeding cash on bags. One purchase. Done.
+If you're tired of paying that tax, [grab a Muk Buddy](/) and stop bleeding cash on bags. One purchase. Done.

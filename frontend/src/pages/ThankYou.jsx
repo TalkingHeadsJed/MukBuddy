@@ -3,6 +3,7 @@ import { useNavigate, useSearchParams } from "react-router-dom";
 import { Check, ArrowRight, Mail, Calendar } from "lucide-react";
 import { IMAGES } from "@/lib/images";
 import { ORDER_URL } from "@/lib/constants";
+import { appendAttribution } from "@/lib/attribution";
 import HeadlinePeek from "@/components/sections/HeadlinePeek";
 import PageHead from "@/components/PageHead";
 
@@ -115,7 +116,7 @@ export default function ThankYou() {
         {/* CTAs */}
         <div className="mt-12 flex flex-wrap items-center gap-4">
           <a
-            href={ORDER_URL}
+            href={appendAttribution(ORDER_URL)}
             target="_blank"
             rel="noopener noreferrer"
             data-testid="thank-you-order-cta"

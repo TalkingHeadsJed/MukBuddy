@@ -35,6 +35,9 @@ export function appendUtms(url, utmSuffix = "") {
  * flows through to WooCommerce reports.
  * @param {number} quantity defaults to 1
  * @param {string} utmSuffix already-encoded "utm_source=...&utm_medium=..." string
+ *                            (legacy — for any caller that has its own UTM source;
+ *                            click-ID attribution from localStorage is appended
+ *                            separately by useAttributedHref or appendAttribution).
  */
 export function buildAddToCartUrl(quantity = 1, utmSuffix = "") {
   const qty = Math.max(1, Math.floor(Number(quantity) || 1));

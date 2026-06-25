@@ -23,7 +23,7 @@ video: "jK-Ocvafh24"
 
 Disposable wet/dry vac bags have been the default for so long that most crews never stop to question them. Then they add up the cost, count the blowouts, and notice the suction dying by lunch — and the math stops making sense.
 
-Here are the 10 reasons contractors are switching to a reusable [Muk Buddy](/ads) bag for good.
+Here are the 10 reasons contractors are switching to a reusable [Muk Buddy](/) bag for good.
 
 ## 1. Your suction dies — and it's not the motor
 When a vac loses pull mid-job, it's almost never the motor. It's airflow getting choked as the bag fills. A 2-chamber design keeps air moving even when it's full. → [Why your shop vac loses suction](/blog/shop-vac-lost-suction-how-to-fix/)
@@ -58,4 +58,4 @@ Skip the bag and all the dust hits the filter directly — it clogs fast and the
 ## The common thread
 Read those back and you'll notice they're all the same problem wearing different clothes: **dust and airflow sharing the same path.** That's what clogs filters, kills suction, fills and bursts bags, and burns out motors. Fix it at the source and most of the list takes care of itself.
 
-That's what a reusable 2-chamber [Muk Buddy](/ads) bag does — keep the dust off the airflow, and the vac you already own runs like it's supposed to. One bag, not a thousand. [See how it works](/ads).
+That's what a reusable 2-chamber [Muk Buddy](/) bag does — keep the dust off the airflow, and the vac you already own runs like it's supposed to. One bag, not a thousand. [See how it works](/).

@@ -1,5 +1,6 @@
 import { Play, Sparkles, Star } from "lucide-react";
 import { ORDER_URL, VIMEO_EMBED, VIMEO_EMBED_SEEITRUN } from "@/lib/constants";
+import { appendAttribution } from "@/lib/attribution";
 import { IMAGES } from "@/lib/images";
 import { useState } from "react";
 
@@ -70,7 +71,7 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 pt-2">
             <a
               data-testid="hero-order-btn"
-              href={ORDER_URL}
+              href={appendAttribution(ORDER_URL)}
               target="_blank"
               rel="noopener noreferrer"
               className="sticker-btn inline-flex items-center justify-center gap-2 bg-slime text-ink font-bangers text-2xl sm:text-3xl uppercase tracking-wider px-8 py-5 border-4 border-ink shadow-brutal rounded-sm"

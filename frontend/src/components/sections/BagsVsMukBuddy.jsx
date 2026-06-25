@@ -1,6 +1,7 @@
 import { ArrowRight, X, Check } from "lucide-react";
 import { IMAGES } from "@/lib/images";
 import { ORDER_URL } from "@/lib/constants";
+import { appendAttribution } from "@/lib/attribution";
 import CountUp from "@/components/sections/CountUp";
 import HeadlinePeek from "@/components/sections/HeadlinePeek";
 
@@ -149,7 +150,7 @@ export default function BagsVsMukBuddy() {
             </span>
           </p>
           <a
-            href={ORDER_URL}
+            href={appendAttribution(ORDER_URL)}
             target="_blank"
             rel="noopener noreferrer"
             data-testid="bags-vs-cta"

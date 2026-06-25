@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { ORDER_URL } from "@/lib/constants";
+import { appendAttribution } from "@/lib/attribution";
 import { IMAGES } from "@/lib/images";
 
 export default function Header() {
@@ -66,7 +67,7 @@ export default function Header() {
         <div className="flex items-center gap-3">
           <a
             data-testid="header-order-btn"
-            href={ORDER_URL}
+            href={appendAttribution(ORDER_URL)}
             target="_blank"
             rel="noopener noreferrer"
             className="sticker-btn inline-flex items-center gap-2 bg-slime text-ink font-bangers text-lg sm:text-xl uppercase tracking-wider px-5 sm:px-7 py-2.5 border-2 border-ink shadow-brutal-sm rounded-sm"

@@ -54,11 +54,11 @@ A lot of guys try to stretch a disposable bag — empty it, knock it out, run it
 
 ## The fix: a bag built to be reused
 
-The reason disposable bags fail is that they were never built to take it. A reusable [Muk Buddy](/ads) bag is the opposite — heavy-duty material made to be filled, emptied, and run again, job after job. The **2-chamber design** also keeps the load off the filter, so you don't get the pressure spike that bursts a thin bag in the first place.
+The reason disposable bags fail is that they were never built to take it. A reusable [Muk Buddy](/) bag is the opposite — heavy-duty material made to be filled, emptied, and run again, job after job. The **2-chamber design** also keeps the load off the filter, so you don't get the pressure spike that bursts a thin bag in the first place.
 
 - No thin paper to tear
 - No glued seams to let go
 - Built to be emptied and reused, not gambled on
 - No surprise blowouts in the middle of a job
 
-A bag failing mid-job isn't bad luck — it's what disposable bags are built to do eventually. [See how Muk Buddy holds up](/ads) — one heavy-duty bag, no blowouts, no redo.
+A bag failing mid-job isn't bad luck — it's what disposable bags are built to do eventually. [See how Muk Buddy holds up](/) — one heavy-duty bag, no blowouts, no redo.

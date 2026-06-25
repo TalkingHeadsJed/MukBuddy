@@ -1,6 +1,7 @@
 import { ArrowRight, Star } from "lucide-react";
 import { ORDER_URL } from "@/lib/constants";
 import { IMAGES } from "@/lib/images";
+import { appendAttribution } from "@/lib/attribution";
 
 export default function FinalCTA() {
   return (
@@ -51,7 +52,7 @@ export default function FinalCTA() {
 
         <a
           data-testid="final-order-btn"
-          href={ORDER_URL}
+          href={appendAttribution(ORDER_URL)}
           target="_blank"
           rel="noopener noreferrer"
           className="sticker-btn mt-14 inline-flex items-center gap-3 bg-slime text-ink font-bangers text-3xl sm:text-4xl uppercase tracking-wider px-12 py-7 border-4 border-ink shadow-brutal rounded-sm"

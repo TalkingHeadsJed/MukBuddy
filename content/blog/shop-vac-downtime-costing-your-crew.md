@@ -55,11 +55,11 @@ Almost all of it traces back to one thing: **fine dust loading the system.** It 
 
 ## Keep the vac running, keep the crew working
 
-A reusable [Muk Buddy](/ads) bag attacks the root cause. The **2-chamber design** keeps dust off the filter and airflow moving, so:
+A reusable [Muk Buddy](/) bag attacks the root cause. The **2-chamber design** keeps dust off the filter and airflow moving, so:
 
 - Suction holds — the job doesn't slow down
 - The filter stays clear — fewer stops to clean it
 - One reusable bag — no resupply runs, no daily swaps
 - Built to be emptied and reused — no blowout cleanups
 
-Downtime isn't free just because it's not on the invoice. [See how Muk Buddy keeps your crew moving](/ads) — fewer stops, steady suction, more billable hours.
+Downtime isn't free just because it's not on the invoice. [See how Muk Buddy keeps your crew moving](/) — fewer stops, steady suction, more billable hours.

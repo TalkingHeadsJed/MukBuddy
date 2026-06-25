@@ -19,6 +19,7 @@ import {
   Play,
 } from "lucide-react";
 import { API, buildAddToCartUrl, VIMEO_EMBED_ADS_HERO } from "@/lib/constants";
+import { appendAttribution } from "@/lib/attribution";
 import PageHead from "@/components/PageHead";
 import { IMAGES } from "@/lib/images";
 
@@ -188,7 +189,7 @@ function AdsHeader({ scrollToForm, utmSuffix }) {
             Crew pricing
           </button>
           <a
-            href={buildAddToCartUrl(1, utmSuffix)}
+            href={appendAttribution(buildAddToCartUrl(1, utmSuffix))}
             target="_blank"
             rel="noopener noreferrer"
             data-testid="ads-header-order-btn"
@@ -389,7 +390,7 @@ function Hero({ scrollToSavings, scrollToForm, utmSuffix }) {
                   dominant conversion), Crew Pricing SECONDARY (fleet quote form). */}
               <div className="flex flex-col gap-3 pt-1 items-stretch sm:items-start">
                 <a
-                  href={buildAddToCartUrl(1, utmSuffix)}
+                  href={appendAttribution(buildAddToCartUrl(1, utmSuffix))}
                   target="_blank"
                   rel="noopener noreferrer"
                   data-testid="ads-hero-order-btn"
@@ -765,7 +766,7 @@ function Benefits({ utmSuffix }) {
         {/* Big CTA below benefits */}
         <div className="text-center mt-14 sm:mt-20">
           <a
-            href={buildAddToCartUrl(1, utmSuffix)}
+            href={appendAttribution(buildAddToCartUrl(1, utmSuffix))}
             target="_blank"
             rel="noopener noreferrer"
             data-testid="ads-benefits-order-btn"
@@ -916,7 +917,7 @@ function SavingsCalc({ savingsRef, vacQuantity, setVacQuantity, utmSuffix }) {
             </div>
 
             <a
-              href={buildAddToCartUrl(machines, utmSuffix)}
+              href={appendAttribution(buildAddToCartUrl(machines, utmSuffix))}
               target="_blank"
               rel="noopener noreferrer"
               data-testid="ads-savings-order-btn"
@@ -1490,7 +1491,7 @@ function FinalCTA({ vacQuantity, utmSuffix }) {
           One reusable bag per vac. Stronger suction. Longer motor life. Patent-pending design built for daily contractor abuse.
         </p>
         <a
-          href={buildAddToCartUrl(machines || 1, utmSuffix)}
+          href={appendAttribution(buildAddToCartUrl(machines || 1, utmSuffix))}
           target="_blank"
           rel="noopener noreferrer"
           data-testid="ads-final-order-btn"
@@ -1551,7 +1552,7 @@ function StickyMobileCTA({ scrollToForm, utmSuffix }) {
         Crew pricing
       </button>
       <a
-        href={buildAddToCartUrl(1, utmSuffix)}
+        href={appendAttribution(buildAddToCartUrl(1, utmSuffix))}
         target="_blank"
         rel="noopener noreferrer"
         data-testid="ads-sticky-order-btn"

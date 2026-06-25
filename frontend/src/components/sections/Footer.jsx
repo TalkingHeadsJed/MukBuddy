@@ -1,4 +1,6 @@
 import { IMAGES } from "@/lib/images";
+import { ORDER_URL } from "@/lib/constants";
+import { appendAttribution } from "@/lib/attribution";
 
 export default function Footer() {
   return (
@@ -24,7 +26,7 @@ export default function Footer() {
           <a href="#faq" className="hover:text-slime transition-colors" data-testid="footer-faq">FAQ</a>
           <a href="#contact" className="hover:text-slime transition-colors" data-testid="footer-contact">Contact</a>
           <a
-            href="https://thefloorlord.com/product/muk-buddy/"
+            href={appendAttribution(ORDER_URL)}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-slime transition-colors"
