@@ -208,6 +208,11 @@ function loadPosts() {
         faq: Array.isArray(data.faq)
           ? data.faq.filter((f) => f && f.q && f.a)
           : [],
+        // ── Optional ItemList block (ranked "best X" roundups) ──
+        item_list_name: data.item_list_name || data.title || fileSlug,
+        item_list: Array.isArray(data.item_list)
+          ? data.item_list.filter((i) => i && i.name)
+          : [],
         // Explicit `published: false` => draft. Future-dated => draft too.
         _isDraft:
           data.published === false || (data.publish_date || today) > today,
@@ -402,6 +407,23 @@ function renderPost(p) {
         "@type": "Question",
         name: f.q,
         acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
+    });
+  }
+
+  if (p.item_list.length) {
+    graph.push({
+      "@type": "ItemList",
+      name: p.item_list_name,
+      url,
+      numberOfItems: p.item_list.length,
+      itemListOrder: "https://schema.org/ItemListOrderAscending",
+      itemListElement: p.item_list.map((it, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        name: it.name,
+        url: it.url || url,
+        description: it.description || undefined,
       })),
     });
   }

@@ -9,6 +9,19 @@ author_bio: "Founder of Floor Lord Industries and inventor of Muk Buddy. Floor L
 tags: ["shop-vac", "shop-vac-bags", "reusable", "wet-dry-vac", "contractor", "buying-guide"]
 publish_date: "2026-06-25"
 published: true
+item_list_name: "The 5 Best Shop Vac Bags for Drywall, Concrete, and Fine Dust"
+item_list:
+  - name: "Muk Buddy — Best Overall (Reusable 2-Chamber Shop Vac Bag)"
+    url: "https://thefloorlord.com/product/muk-buddy/"
+    description: "The only reusable bag on the list. Patent-pending 2-chamber design separates debris from airflow so suction holds on fine drywall and concrete dust. Fits most 12-20 gallon wet/dry vacs. Buy once."
+  - name: "RIDGID VF3502 (Size A) — Best Disposable for RIDGID Owners"
+    description: "Standard single-path disposable for RIDGID 12-16 gallon vacs. Reliable for general cleanup; suction fades on fine dust as it fills."
+  - name: "Shop-Vac Type H (9067100) — Best Disposable for Fine Dust on a Shop-Vac"
+    description: "Fine-dust disposable for compatible Shop-Vac models. Better capture than a basic bag, still single-path."
+  - name: "Dustless WunderBag (HEPA) — Best Disposable for the Finest Dust"
+    description: "HEPA-rated disposable for hazardous dust (silica, lead, mold). Premium per-bag cost; seals waste for clean disposal."
+  - name: "Budget Generic Bags (Casoman, Puroom, etc.) — Cheapest Per Bag"
+    description: "Amazon-brand compatible disposables. Fine for light occasional use; thinner media clogs fastest under fine dust."
 faq:
   - q: "What's the best shop vac bag for fine drywall and concrete dust?"
     a: "For fine dust, the bag's design matters more than the brand. Disposable bags send the dust and the airflow down the same path, so the filter packs and suction dies fast. A 2-chamber reusable bag like Muk Buddy keeps the dust load off the airflow, so suction holds through the job. If you're set on disposables, a HEPA-rated bag (like the Dustless WunderBag) handles fine dust better than a standard one — you'll just keep rebuying it."
