@@ -13,7 +13,7 @@ faq:
   - q: "Why are shop vac bags so expensive?"
     a: "Two reasons. First, a real filter bag isn't just paper — it's multi-layer media that has to trap fine dust and still pass air, which costs more to make than it looks. Second, and bigger: bags are a consumable. The vacuum is a one-time sale; the bags are the recurring revenue. The business is built around you rebuying them for the life of the vac — the same model as printer ink, razor blades, and coffee pods."
   - q: "How much do shop vac bags cost per year?"
-    a: "More than people think, because the cost is recurring. A contractor running fine dust who changes a bag every week or two at $5-8 a bag spends roughly $150-$400 a year — every year. A homeowner using a few bags a year spends less, but it never stops. A reusable bag is one purchase against that running total."
+    a: "More than people think, because the cost is recurring. A busy crew on fine dust burning roughly two bags a week at about $5 a bag spends around $520 a year — per vac, every year — plus the filter wear a packed bag causes. Lighter use runs $200-300 a year. A homeowner spends less, but it never stops. A reusable bag is one purchase against that running total."
   - q: "Are shop vac bags worth the cost?"
     a: "A bag is worth it over going bagless — without one, fine dust packs the pleated filter, kills suction, and shortens the motor's life. The question isn't bag vs. no bag; it's disposable vs. reusable. A reusable bag gives you the bag's benefit (clean filter, steady suction) without the forever cost."
   - q: "Can I just reuse a disposable shop vac bag?"
@@ -61,13 +61,13 @@ It's worth being clear-eyed about the advice around this, too: the strongest "*n
 
 The sticker price of one bag is a distraction. The number that matters is the running total. On my own crews, a bag going out every week on a drywall cleanup was so routine we just built it into the job budget and never questioned it — which is exactly how the consumable model is supposed to work. Here's the rough math for fine-dust work:
 
-| How you use the vac | Bags/year | At ~$6/bag | Over 3 years |
+| How you use the vac | Bags/year | At ~$5/bag | Over 3 years |
 |---|---|---|---|
-| Heavy fine dust (weekly change) | ~50 | ~$300/yr | ~$900 |
-| Steady use (every 2 weeks) | ~25 | ~$150/yr | ~$450 |
-| Occasional / homeowner | ~6 | ~$36/yr | ~$108 |
+| Heavy fine dust (≈2 bags/week) | ~100 | **~$520/yr** | ~$1,560 |
+| Steady use (weekly) | ~50 | ~$260/yr | ~$780 |
+| Occasional / homeowner | ~12 | ~$60/yr | ~$180 |
 
-*Estimate uses ~$6/bag (midpoint of the typical $5–8 fine-dust range). Prices vary by brand and retailer.*
+*Estimate uses ~$5/bag (low end of the typical $5–8 fine-dust range — so this is conservative). Prices vary by brand and retailer. A busy crew running two bags a week is looking at roughly **$520 a year, per vac, every year** — plus the filter wear a packed bag causes.*
 
 And bags aren't even the most expensive part. When a bag packs up with fine dust, the dust starts loading the **pleated filter** behind it and the **motor** works harder against choked airflow — and the filter and motor are what's genuinely costly to replace. (More on that in [why your shop vac loses suction](/blog/shop-vac-lost-suction-how-to-fix/).) So the "cheap" bag quietly drives the expensive failures.
 
@@ -77,7 +77,7 @@ If the expense is the *recurring* part, the fix is obvious: stop the recurrence.
 
 That's the whole idea behind a reusable bag like [Muk Buddy](/). It's a one-time purchase instead of a forever line item, and its **patent-pending 2-chamber design** (dust loads into the first chamber before it ever reaches the filter) keeps the dust off the airflow — so the filter stays clear and the motor isn't fighting a packed bag. You get the thing a bag is supposed to do (clean filter, steady suction) without the thing the bag business is built on (you, buying more bags).
 
-At $99 once, it pays for itself against a $6 bag in a couple months of regular use — and after that, the line item that never used to stop just… stops. We ran the full year-one comparison in [disposable vs. reusable shop vac bags](/blog/disposable-vs-reusable-shop-vac-bags/), and lined it up against the disposable options in [the 5 best shop vac bags](/blog/best-shop-vac-bags/).
+At $99 once, it pays for itself against a few weeks of disposables on a busy crew — and after that, the line item that never used to stop just… stops. We ran the full year-one comparison in [disposable vs. reusable shop vac bags](/blog/disposable-vs-reusable-shop-vac-bags/), and lined it up against the disposable options in [the 5 best shop vac bags](/blog/best-shop-vac-bags/).
 
 So — why are shop vac bags so expensive? A little because of what they're made of, and a lot because they were never meant to be a one-time purchase. You don't have to keep paying that tax.
 
