@@ -28,6 +28,8 @@ A shop vac that's lost its suction is one of the most useless tools on a jobsite
 
 Good news: suction loss almost always comes down to one of four things, and you can find the culprit in about two minutes. Here's the checklist, in the order it's usually the problem.
 
+**Short answer:** A shop vac loses suction when airflow gets choked — and nine times out of ten that's a **clogged filter or a full bag** packed with fine dust. Check those two first: pop the top and look at the filter pleats, then lift the bag. If either is caked, clean or swap it and the pull comes back. If it doesn't, check the hose and inlet for a clog and the lid seals for an air leak. The lasting fix is keeping fine dust off the filter in the first place.
+
 ## 1. A clogged filter (the #1 cause)
 
 This is the one, most of the time. Fine dust — drywall, concrete, joint compound — works into the pleats of the filter and packs in tight. The vac pulls air *through* that filter, so once it's choked, suction dies.
@@ -69,6 +71,30 @@ Keep the dust off the filter and the suction stays. That's the whole idea behind
 - The motor breathes easy — no running hot against a choked filter
 - No bag to empty and refill every few hours
 
+## Clean the filter — or replace it?
+
+Cleaning buys time; eventually a filter is spent. Here's how to tell which one you've got:
+
+| Sign | What it means | Do this |
+|---|---|---|
+| Knocks clean and suction returns | Surface loading | Clean it — tap it out, or rinse a rinsable filter and dry it **fully** |
+| Gray stays ground into the pleats after cleaning | Fine dust packed deep | Replace it — it won't recover |
+| Visible tear, hole, or crushed pleats | Physical damage | Replace it — a torn filter passes dust straight to the motor |
+| Suction fades again within an hour of cleaning | Dust keeps reaching the filter | Fix the *cause* (bag it), not the filter |
+
+A rinsable filter survives a few washes, but only if it dries **completely** before it goes back in — run it damp and the dust cakes into mud that finishes it off. And no filter, new or clean, helps if fine dust reaches it every time you switch the vac on. That's a bagging problem, not a filter problem.
+
+## When lost suction means the motor is dying
+
+Most suction loss is airflow — filter, bag, hose, or seal. But if you've cleared all four and the pull is still weak, the motor itself may be going. The warning signs:
+
+- **The pitch changed** — a higher, screaming whine or a new rattle instead of the usual roar.
+- **It smells hot** — a burning or ozone smell means the motor's been running against choked airflow and overheating.
+- **It cuts out** — a thermal overload trips and the vac shuts off until it cools down.
+- **Weak pull with a clean filter, empty bag, clear hose, and sealed lid** — nothing left to blame but the motor.
+
+Here's the part that matters: a choked filter is usually what *kills* the motor in the first place. When airflow is blocked, the motor pulls against dead air, runs hot, and wears out years early — the cheap clogged bag quietly destroys the expensive part. Keeping the filter clear isn't just about today's suction; it's what keeps the motor alive.
+
 ## Your two-minute suction checklist
 
 Next time the pull dies mid-job:
@@ -80,4 +106,4 @@ Next time the pull dies mid-job:
 
 Find it, clear it, and you're back in business. But if you're doing this every single day, you're not fixing the cause — you're fighting fine dust that keeps reaching the filter.
 
-Stop chasing it. [See how Muk Buddy keeps your suction](/) — one reusable bag, a filter that stays clear, and a vac that pulls like new all day.
+Stop chasing it. [See the reusable shop vac bag that keeps your suction →](/) — one reusable bag, a filter that stays clear, and a vac that pulls like new all day.
