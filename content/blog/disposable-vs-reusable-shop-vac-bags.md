@@ -4,7 +4,7 @@ slug: "disposable-vs-reusable-shop-vac-bags"
 excerpt: "Disposable wet/dry vac bags feel cheap at the register and brutal at year-end. Here's the real math — and what a reusable bag actually saves a working crew."
 hero_image: "https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/qrawjtug_image.png"
 hero_alt: "Real contractor in Carhartt holding a clogged, dust-caked shop vac filter — the price of running disposable bags or no bag at all."
-author: "Muk Buddy"
+author: "Jason Brouk"
 tags: ["shop-vac", "cost", "drywall"]
 publish_date: "2026-05-20"
 published: true
