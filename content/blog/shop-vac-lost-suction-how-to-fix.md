@@ -21,7 +21,7 @@ faq:
 # hero_image: recommended -> blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg
 #   (already optimized on your Desktop: mukbuddy_blog_images\muk-buddy-reusable-wet-dry-vac-bag.jpg)
 # video: pair with a "lost suction" landscape clip once uploaded; swap in the YouTube ID.
-video: "HwfeHKGOzQM"
+video: "POKKMf2BD4Y"
 ---
 
 A shop vac that's lost its suction is one of the most useless tools on a jobsite. It still roars. It still sounds like it's working. But hold your hand to the nozzle and there's barely a pull. Meanwhile the dust you're trying to grab just sits there.

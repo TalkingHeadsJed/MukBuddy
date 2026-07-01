@@ -33,6 +33,8 @@ faq:
     a: "Because the dust and the airflow share the same path. As the bag fills, fine dust packs against the filter media and chokes the air the motor is trying to pull. That's not a defect — it's how a single-chamber bag works. Separating the dust from the airflow (a 2-chamber design) is what keeps suction steady."
   - q: "What about running a bagless vac or a foam sleeve filter?"
     a: "Bagless works for chunky debris but is rough on fine dust — the dust hits the pleated filter directly, clogs it, and chokes the motor. A foam sleeve protects the filter on wet pickup but does little for fine dry dust. For fine dust specifically, a bag that separates the dust from the airflow outperforms both."
+video: "IDudHYFDkLs"
+
 ---
 
 Walk into any supply house and the shop vac bag wall looks the same: a dozen disposables, sized by brand and gallon, all promising to catch dust. Then you run one on a drywall or concrete job and watch the suction die by lunch — and you're back at the wall buying another three-pack next week.

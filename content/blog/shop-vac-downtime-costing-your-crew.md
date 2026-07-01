@@ -18,7 +18,7 @@ faq:
     a: "Use a setup that keeps the filter clear and doesn't need a new bag every couple hours. A reusable 2-chamber bag like Muk Buddy holds suction and keeps running, so the crew keeps working."
 # hero_image: recommended -> blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg (already on your Desktop)
 # video: pair with the "Downtime" reason clip once matched; swap in the YouTube ID.
-video: "Ks0oA7Pnogc"
+video: "QUa8FHTqgws"
 ---
 
 Nobody puts "shop vac maintenance" on an invoice. But your crew pays for it every day, in minutes that disappear a few at a time.

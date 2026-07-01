@@ -21,6 +21,8 @@ faq:
 # hero_image: recommended -> blog-images/disposable-shop-vac-bag.jpg
 #   (already optimized on your Desktop: mukbuddy_blog_images\disposable-shop-vac-bag.jpg)
 # video: pair with a "bagless / dust poofs" landscape clip once uploaded; swap in the YouTube ID.
+video: "HfsaV45oXJ4"
+
 ---
 
 Plenty of contractors run their shop vac bagless. No bag to buy, no bag to empty — just suck it up and dump the tank. On the surface it looks like the cheapest way to work.

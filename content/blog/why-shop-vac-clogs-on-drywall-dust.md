@@ -19,7 +19,6 @@ faq:
   - q: "Does a reusable shop vac bag fit my RIDGID, Stanley or Craftsman vac?"
     a: "Most reusable bags, including Muk Buddy, fit the standard 2.5-inch wet/dry vac inlet used by RIDGID, Stanley, Craftsman, Shop-Vac, Vacmaster and most other major brands. Check your inlet size if you're unsure."
 video: "qR-Ow0woAmw"
-video_title: "Drywall & Concrete Dust Is What Really Kills Your Shop Vac"
 # hero_image: upload a clogged-filter / pulling-the-bag still and paste its URL here.
 #   Recommended (already optimized on your Desktop): blog-images/contractor-pulling-disposable-shop-vac-bag.jpg
 #   -> hero_image: "https://mukbuddy.com/blog-images/contractor-pulling-disposable-shop-vac-bag.jpg"
