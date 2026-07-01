@@ -35,7 +35,7 @@ export default function Proof() {
                 <div className="relative w-12 h-12 shrink-0 border border-slime/40 overflow-hidden grayscale group-hover:grayscale-0 transition-all">
                   <img
                     src={q.portrait}
-                    alt=""
+                    alt={`${q.attr} — contractor using Muk Buddy reusable shop vac bag`}
                     className="w-full h-full object-cover"
                     loading="lazy"
                   />

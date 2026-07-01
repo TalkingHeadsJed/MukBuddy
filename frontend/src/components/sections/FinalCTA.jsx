@@ -18,7 +18,7 @@ export default function FinalCTA() {
         <div className="flex justify-center mb-8">
           <img
             src={IMAGES.logo}
-            alt="Muk Buddy"
+            alt="Muk Buddy logo — patent-pending reusable shop vac bag for 12-20 gallon wet/dry vacs"
             className="w-64 sm:w-80 h-auto animate-bounce-slow drop-shadow-[8px_8px_0_#1A0625] border-4 border-ink"
           />
         </div>

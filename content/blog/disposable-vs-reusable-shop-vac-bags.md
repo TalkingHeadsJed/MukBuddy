@@ -7,6 +7,7 @@ hero_alt: "Real contractor in Carhartt holding a clogged, dust-caked shop vac fi
 author: "Muk Buddy"
 tags: ["shop-vac", "cost", "drywall"]
 publish_date: "2026-05-20"
+published: true
 video: "8wKa1mR66gk"
 ---
 

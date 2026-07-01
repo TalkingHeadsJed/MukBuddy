@@ -63,7 +63,7 @@ export default function MascotPeek({
       >
         <img
           src={IMAGES.logo}
-          alt=""
+          alt="Muk Buddy mascot — reusable shop vac bag"
           className="block"
           style={{
             width: "100%",

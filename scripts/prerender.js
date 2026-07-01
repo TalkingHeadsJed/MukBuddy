@@ -143,7 +143,17 @@ async function main() {
       // Give react-helmet-async + any deferred rendering a final tick.
       await new Promise((r) => setTimeout(r, 600));
 
-      const html = await page.content();
+      const rawHtml = await page.content();
+      // Post-process: replace the prerender-server URL with production so
+      // baked-in tracking pixels (Meta, Google Ads) don't leak "localhost"
+      // strings into the shipped HTML. Any pixel call the SDK made during
+      // headless render includes url=http%3A%2F%2Flocalhost%3A5050%2F and
+      // domain=localhost — swap for the production origin.
+      const html = rawHtml
+        .replace(/http%3A%2F%2Flocalhost%3A5050/g, "https%3A%2F%2Fmukbuddy.com")
+        .replace(/http:\/\/localhost:5050/g, "https://mukbuddy.com")
+        .replace(/domain=localhost/g, "domain=mukbuddy.com")
+        .replace(/localhost:5050/g, "mukbuddy.com");
       // Restore the original CRA shell as the fallback for the NEXT route's
       // prerender. (Skip on the last route — `/` should keep its prerendered
       // content as the served index.html.)
