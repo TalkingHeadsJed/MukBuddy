@@ -139,6 +139,16 @@ export default function WhatIsMukBuddy() {
               </a>{" "}
               &mdash; the physics of fine dust clogging single-chamber bags.
             </li>
+            <li>
+              <a
+                href="/blog/why-are-shop-vac-bags-so-expensive/"
+                className="underline decoration-muk decoration-2 underline-offset-2 hover:text-muk font-semibold"
+                data-testid="link-expensive-bags"
+              >
+                Why Are Shop Vac Bags So Expensive?
+              </a>{" "}
+              &mdash; the markup breakdown and how one reusable pays back in weeks.
+            </li>
           </ul>
         </div>
       </div>
