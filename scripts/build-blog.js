@@ -14,6 +14,7 @@
  *   • Output sanitized with `sanitize-html` (strict allowlist)
  *   • Frontmatter fields HTML-escaped
  *   • Future-dated posts are excluded from the build
+ *   • Internal links to posts that aren't live yet render as plain text
  *   • No script tags ever — content is text + safe tags only
  *
  * Run AFTER `react-scripts build`:
@@ -134,6 +135,37 @@ function ytId(v) {
   return null;
 }
 
+/* ─────────────── internal-link safety guard ───────────────
+ * Staggered rollout rule: never expose a link to a post that isn't live yet.
+ * LIVE_SLUGS is filled by loadPosts() before any body HTML is rendered; any
+ * <a> pointing at /blog/<slug>/ whose slug isn't live is demoted to plain
+ * anchor text (the surrounding sentence still reads normally). Once the target
+ * post's publish_date arrives, the next daily build turns it back into a link.
+ */
+const LIVE_SLUGS = new Set();
+let GUARD_DEMOTED = 0;
+
+function internalSlug(href) {
+  if (!href) return null;
+  const h = String(href).trim();
+  const rel = h.startsWith(SITE_URL) ? h.slice(SITE_URL.length) : h;
+  if (!rel.startsWith("/blog/")) return null;
+  const m = rel.match(/^\/blog\/([a-zA-Z0-9._-]+)\/?(?:[?#].*)?$/);
+  return m ? m[1] : null;
+}
+
+function guardInternalLinks(html) {
+  return String(html).replace(
+    /<a\b[^>]*\bhref="([^"]*)"[^>]*>([\s\S]*?)<\/a>/gi,
+    (whole, href, text) => {
+      const slug = internalSlug(href);
+      if (!slug || LIVE_SLUGS.has(slug)) return whole;
+      GUARD_DEMOTED++;
+      return text;
+    }
+  );
+}
+
 const sanitizeOpts = {
   allowedTags: [
     "p", "br", "strong", "em", "a", "ul", "ol", "li",
@@ -169,7 +201,9 @@ const sanitizeOpts = {
 function loadPosts() {
   if (!fs.existsSync(CONTENT_DIR)) return { published: [], drafts: [] };
   const today = new Date().toISOString().slice(0, 10);
-  const all = fs
+  // ── pass 1: frontmatter only, so we know which slugs are live BEFORE any
+  // body HTML is rendered (the internal-link guard needs that set upfront).
+  const parsed = fs
     .readdirSync(CONTENT_DIR)
     .filter((f) => f.endsWith(".md") && f !== "README.md")
     .map((f) => {
@@ -183,10 +217,25 @@ function loadPosts() {
             `"${fileSlug}". Using filename as authoritative slug.`
         );
       }
-      const html = sanitizeHtml(
+      // Explicit `published: false` => draft. Future-dated => draft too.
+      const isDraft =
+        data.published === false || (data.publish_date || today) > today;
+      return { f, data, content, fileSlug, isDraft };
+    });
+
+  LIVE_SLUGS.clear();
+  for (const p of parsed) if (!p.isDraft) LIVE_SLUGS.add(p.fileSlug);
+
+  // ── pass 2: render bodies, demoting links to not-yet-live posts.
+  const all = parsed
+    .map(({ data, content, fileSlug, isDraft }) => {
+      const rendered = sanitizeHtml(
         marked.parse(content, { gfm: true, breaks: false }),
         sanitizeOpts
       );
+      // Draft previews keep their real links so an editor can navigate the
+      // cluster; only public pages hide links to unpublished targets.
+      const html = isDraft ? rendered : guardInternalLinks(rendered);
       return {
         slug: fileSlug,
         title: data.title || fileSlug,
@@ -208,9 +257,7 @@ function loadPosts() {
         faq: Array.isArray(data.faq)
           ? data.faq.filter((f) => f && f.q && f.a)
           : [],
-        // Explicit `published: false` => draft. Future-dated => draft too.
-        _isDraft:
-          data.published === false || (data.publish_date || today) > today,
+        _isDraft: isDraft,
         html,
       };
     });
@@ -465,7 +512,11 @@ function renderFaqBlock(p) {
   if (!p.faq.length) return "";
   const items = p.faq
     .map((f) => {
-      const ans = sanitizeHtml(marked.parse(f.a, { gfm: true, breaks: false }), sanitizeOpts);
+      const rendered = sanitizeHtml(
+        marked.parse(f.a, { gfm: true, breaks: false }),
+        sanitizeOpts
+      );
+      const ans = p._isDraft ? rendered : guardInternalLinks(rendered);
       return `  <details>
     <summary>${esc(f.q)}</summary>
     <div class="a">${ans}</div>
@@ -697,6 +748,7 @@ function main() {
 
   const { published: posts, drafts } = loadPosts();
   console.log(`Found ${posts.length} published post(s) and ${drafts.length} draft(s).`);
+  console.log(`Live slugs: ${LIVE_SLUGS.size}.`);
 
   ensureDir(BLOG_OUT);
 
@@ -768,6 +820,10 @@ function main() {
     );
   }
 
+  console.log(
+    `Link guard: demoted ${GUARD_DEMOTED} internal link(s) to not-yet-live ` +
+      `posts into plain text.`
+  );
   console.log("✓ Blog build complete.");
 }
 
