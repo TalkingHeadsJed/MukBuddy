@@ -56,7 +56,7 @@ Bagless feels free because you only see the cost at the end. Let's line it up ag
 | Bags | $0 | ~$300–$1,600+ per vac | One-time purchase |
 | Replacement filters | High — they die fast | Moderate | ~$0 (filter protected) |
 | Motor / vac replacement | The big one — $200–$850+ | Occasional | $0 (motor protected) |
-| **Real outlay** | **Looks free, isn't** | **A steady tax** | **Lowest over time** |
+| **Real outlay** | **Looks free, isn't** | **A steady subscription** | **Lowest over time** |
 
 The disposable-bag math is brutal on its own — we broke it down in [the real cost of disposable bags](/blog/disposable-vs-reusable-shop-vac-bags/). But bagless on fine dust is worse, because it trades a visible cost for an invisible one: dead filters and a cooked motor.
 

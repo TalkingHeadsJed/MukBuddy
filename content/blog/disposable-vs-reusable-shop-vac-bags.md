@@ -43,7 +43,7 @@ That's just the bags. We haven't talked about what happens to the **filter** und
 
 > "We were buying $250 in bags every two weeks across our trucks. I added it up at tax time and almost choked." — Drywall contractor, Phoenix
 
-## The hidden tax: dead filters
+## The hidden cost: dead filters
 
 Disposable bags slow the dust loading, but they don't stop it. Fine drywall and concrete dust eventually clogs the **pleated filter** behind the bag. Suction drops. The motor works harder. Eventually you replace the filter.
 
@@ -84,6 +84,6 @@ Even if a Muk Buddy lasts you only one year (it lasts longer), you're already se
 
 ## The take-home
 
-Disposable bags are an unaudited monthly tax most contractors pay without realizing it. Run the math on your own fleet for sixty seconds: how many bags last month, times twelve. Then add filters. Then add the motor you're going to replace eventually. The number is bigger than you think.
+Disposable bags are an unaudited monthly subscription most contractors pay without realizing they signed up for it. Run the math on your own fleet for sixty seconds: how many bags last month, times twelve. Then add filters. Then add the motor you're going to replace eventually. The number is bigger than you think.
 
-If you're tired of paying that tax, [grab a Muk Buddy](/) and stop bleeding cash on bags. One purchase. Done.
+If you're ready to cancel that subscription, [grab a Muk Buddy](/) and stop bleeding cash on bags. One purchase. Done.

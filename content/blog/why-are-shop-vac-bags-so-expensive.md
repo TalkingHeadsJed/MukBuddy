@@ -83,6 +83,6 @@ That's the whole idea behind a reusable bag like [Muk Buddy](/). It's a one-time
 
 At $99 once, it pays for itself against a few weeks of disposables on a busy crew — and after that, the line item that never used to stop just… stops. We ran the full year-one comparison in [disposable vs. reusable shop vac bags](/blog/disposable-vs-reusable-shop-vac-bags/), and lined it up against the disposable options in [the 5 best shop vac bags](/blog/best-shop-vac-bags/).
 
-So — why are shop vac bags so expensive? A little because of what they're made of, and a lot because they were never meant to be a one-time purchase. You don't have to keep paying that tax.
+So — why are shop vac bags so expensive? A little because of what they're made of, and a lot because they were never meant to be a one-time purchase. You don't have to keep renewing that subscription.
 
 [Get the reusable shop vac bag that ends the cycle →](/)

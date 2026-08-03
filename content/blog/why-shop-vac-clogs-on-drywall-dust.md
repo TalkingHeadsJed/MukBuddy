@@ -50,7 +50,7 @@ So it's not that your vac is weak. It's that fine dust is choking the one part t
 Works for about ten minutes. You're knocking loose the surface dust, but the fine stuff is packed *into* the pleats and never fully comes out. You're also standing in a cloud of silica every time you do it. Short-term band-aid.
 
 **2. Disposable filter bags.**
-A real improvement — the bag catches the bulk before it hits the filter. But fine drywall dust still works through, the bags fill fast on a finishing crew (often one every day or two), and at **$8–$10 a bag** you're now paying a running tax to slow the problem down, not solve it. Run the numbers over a year and it stings — we did the math in [the real cost of disposable bags](/blog/disposable-vs-reusable-shop-vac-bags/).
+A real improvement — the bag catches the bulk before it hits the filter. But fine drywall dust still works through, the bags fill fast on a finishing crew (often one every day or two), and at **$8–$10 a bag** you're now paying a running subscription to slow the problem down, not solve it. Run the numbers over a year and it stings — we did the math in [the real cost of disposable bags](/blog/disposable-vs-reusable-shop-vac-bags/).
 
 **3. A cyclone / dust separator.**
 A pre-separator pulls the heavy stuff into a bucket before the vac. Genuinely good for chips and coarse debris. But for *fine* drywall dust, plenty still carries over into the vac, you've added a second can to haul around the site, and it's another $40–$100+ of gear to buy and move.
