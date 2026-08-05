@@ -8,6 +8,7 @@ author: "Jason Brouk"
 author_bio: "Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors — and still building the tools contractors wish already existed."
 tags: ["shop-vac", "filters", "hepa", "fine-dust"]
 publish_date: "2026-08-30"
+video: "WMHK8x2SJkg"
 published: true
 ---
 
