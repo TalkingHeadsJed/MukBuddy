@@ -7,7 +7,7 @@ hero_alt: "Best Shop Vacuum for Drywall Dust — Muk Buddy shop vac guide"
 author: "Jason Brouk"
 author_bio: "Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors — and still building the tools contractors wish already existed."
 tags: ["shop-vac", "drywall-dust", "fine-dust", "contractor"]
-publish_date: "2026-08-18"
+publish_date: "2026-08-13"
 video: "Z0Uv9eFpD_g"
 published: true
 ---

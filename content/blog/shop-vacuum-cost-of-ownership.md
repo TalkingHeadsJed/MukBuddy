@@ -7,7 +7,7 @@ hero_alt: "How Much Does a Shop Vacuum Really Cost to Own? — Muk Buddy shop va
 author: "Jason Brouk"
 author_bio: "Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors — and still building the tools contractors wish already existed."
 tags: ["shop-vac", "buying-guide", "specs"]
-publish_date: "2026-08-12"
+publish_date: "2026-08-10"
 video: "5lIS4CstOHg"
 published: true
 ---

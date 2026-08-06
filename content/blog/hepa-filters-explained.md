@@ -7,7 +7,7 @@ hero_alt: "HEPA Filters Explained — Muk Buddy shop vac guide"
 author: "Jason Brouk"
 author_bio: "Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors — and still building the tools contractors wish already existed."
 tags: ["shop-vac", "filters", "hepa", "fine-dust"]
-publish_date: "2026-08-11"
+publish_date: "2026-08-10"
 video: "oCsZ2XVYRcw"
 published: true
 ---

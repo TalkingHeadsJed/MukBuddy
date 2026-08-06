@@ -7,7 +7,7 @@ hero_alt: "How to Switch a Shop Vacuum From Dry to Wet Pickup — Muk Buddy shop
 author: "Jason Brouk"
 author_bio: "Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors — and still building the tools contractors wish already existed."
 tags: ["wet-dry-vac", "shop-vac", "water-pickup"]
-publish_date: "2026-08-22"
+publish_date: "2026-08-16"
 video: "1eYcj48EaRo"
 published: true
 ---

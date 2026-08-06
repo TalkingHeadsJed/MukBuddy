@@ -7,7 +7,7 @@ hero_alt: "Contractor Shop Vacuum Pre-Use Inspection Checklist — Muk Buddy sho
 author: "Jason Brouk"
 author_bio: "Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors — and still building the tools contractors wish already existed."
 tags: ["shop-vac", "maintenance", "safety", "disposal"]
-publish_date: "2026-09-12"
+publish_date: "2026-08-24"
 video: "z1JpqBmrcvE"
 published: true
 ---

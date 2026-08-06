@@ -7,7 +7,7 @@ hero_alt: "How to Install a Shop Vacuum Bag Correctly — Muk Buddy shop vac gui
 author: "Jason Brouk"
 author_bio: "Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors — and still building the tools contractors wish already existed."
 tags: ["shop-vac", "vacuum-bags", "reusable", "shop-vac-bags"]
-publish_date: "2026-09-07"
+publish_date: "2026-08-22"
 video: "gXKwH2T6IH4"
 published: true
 ---

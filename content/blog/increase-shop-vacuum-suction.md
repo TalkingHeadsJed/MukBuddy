@@ -7,7 +7,7 @@ hero_alt: "How to Increase Shop Vacuum Suction — Muk Buddy shop vac guide"
 author: "Jason Brouk"
 author_bio: "Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors — and still building the tools contractors wish already existed."
 tags: ["shop-vac", "troubleshooting", "suction", "airflow"]
-publish_date: "2026-08-31"
+publish_date: "2026-08-20"
 video: "mQAqRv4ES_0"
 published: true
 ---

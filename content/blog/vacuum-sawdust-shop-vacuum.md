@@ -7,7 +7,7 @@ hero_alt: "Can You Vacuum Sawdust With a Shop Vacuum? — Muk Buddy shop vac gui
 author: "Jason Brouk"
 author_bio: "Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors — and still building the tools contractors wish already existed."
 tags: ["shop-vac", "dust-collection", "woodworking", "power-tools"]
-publish_date: "2026-09-15"
+publish_date: "2026-08-26"
 video: "j6L6Q7Nb-nA"
 published: true
 ---

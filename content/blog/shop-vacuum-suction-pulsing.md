@@ -7,7 +7,7 @@ hero_alt: "Why Is My Shop Vacuum Suction Pulsing or Surging? — Muk Buddy shop 
 author: "Jason Brouk"
 author_bio: "Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors — and still building the tools contractors wish already existed."
 tags: ["shop-vac", "troubleshooting", "suction", "airflow"]
-publish_date: "2026-09-11"
+publish_date: "2026-08-24"
 video: "amjYXCxeC_c"
 published: true
 ---

@@ -7,7 +7,7 @@ hero_alt: "Why Does My Shop Vacuum Filter Keep Clogging So Fast? — Muk Buddy s
 author: "Jason Brouk"
 author_bio: "Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors — and still building the tools contractors wish already existed."
 tags: ["shop-vac", "filters", "hepa", "fine-dust"]
-publish_date: "2026-08-29"
+publish_date: "2026-08-19"
 video: "ZzfpNCDJavU"
 published: true
 ---

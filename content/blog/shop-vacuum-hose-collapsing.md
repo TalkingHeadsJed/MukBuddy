@@ -7,7 +7,7 @@ hero_alt: "Why Is My Shop Vacuum Hose Collapsing, Whistling, or Pulling Flat? â€
 author: "Jason Brouk"
 author_bio: "Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors â€” and still building the tools contractors wish already existed."
 tags: ["shop-vac", "troubleshooting", "suction", "airflow"]
-publish_date: "2026-09-04"
+publish_date: "2026-08-21"
 video: "g6JL6B_bYXM"
 published: true
 ---

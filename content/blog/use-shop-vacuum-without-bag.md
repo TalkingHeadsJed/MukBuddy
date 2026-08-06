@@ -7,7 +7,7 @@ hero_alt: "Can You Use a Shop Vacuum Without a Bag? — Muk Buddy shop vac guide
 author: "Jason Brouk"
 author_bio: "Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors — and still building the tools contractors wish already existed."
 tags: ["shop-vac", "vacuum-bags", "reusable", "shop-vac-bags"]
-publish_date: "2026-09-01"
+publish_date: "2026-08-20"
 video: "RUwJlYFbUAE"
 published: true
 ---

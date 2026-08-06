@@ -7,7 +7,7 @@ hero_alt: "Why Does My Shop Vacuum Hose Give Me Static Shocks? — Muk Buddy sho
 author: "Jason Brouk"
 author_bio: "Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors — and still building the tools contractors wish already existed."
 tags: ["shop-vac", "maintenance", "safety", "disposal"]
-publish_date: "2026-09-14"
+publish_date: "2026-08-25"
 video: "W22hNTN3qKE"
 published: true
 ---

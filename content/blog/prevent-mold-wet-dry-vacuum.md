@@ -7,7 +7,7 @@ hero_alt: "How to Prevent Mold and Bacteria in a Wet/Dry Vacuum — Muk Buddy sh
 author: "Jason Brouk"
 author_bio: "Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors — and still building the tools contractors wish already existed."
 tags: ["wet-dry-vac", "shop-vac", "water-pickup"]
-publish_date: "2026-09-03"
+publish_date: "2026-08-21"
 video: "lymClljTmaM"
 published: true
 ---

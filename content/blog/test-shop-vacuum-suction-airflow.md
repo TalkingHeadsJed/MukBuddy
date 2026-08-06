@@ -7,7 +7,7 @@ hero_alt: "How to Test Shop Vacuum Suction and Airflow — Muk Buddy shop vac gu
 author: "Jason Brouk"
 author_bio: "Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors — and still building the tools contractors wish already existed."
 tags: ["shop-vac", "troubleshooting", "suction", "airflow"]
-publish_date: "2026-09-10"
+publish_date: "2026-08-24"
 video: "O0FjRWQGRX0"
 published: true
 ---

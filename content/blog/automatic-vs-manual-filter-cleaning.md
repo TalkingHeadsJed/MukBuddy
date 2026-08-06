@@ -7,7 +7,7 @@ hero_alt: "Automatic Filter Cleaning vs. Manual Filter Cleaning — Muk Buddy sh
 author: "Jason Brouk"
 author_bio: "Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors — and still building the tools contractors wish already existed."
 tags: ["shop-vac", "filters", "hepa", "fine-dust"]
-publish_date: "2026-09-14"
+publish_date: "2026-08-25"
 video: "pp0jmw15AOw"
 published: true
 ---

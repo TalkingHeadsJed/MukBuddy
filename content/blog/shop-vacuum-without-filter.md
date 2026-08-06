@@ -7,7 +7,7 @@ hero_alt: "What Happens If You Use a Shop Vacuum Without a Filter? — Muk Buddy
 author: "Jason Brouk"
 author_bio: "Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors — and still building the tools contractors wish already existed."
 tags: ["shop-vac", "filters", "hepa", "fine-dust"]
-publish_date: "2026-09-12"
+publish_date: "2026-08-24"
 video: "PY4BmZpLyrE"
 published: true
 ---

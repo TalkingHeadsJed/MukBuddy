@@ -7,7 +7,7 @@ hero_alt: "Shop Vacuum Filter Ratings and Micron Claims Explained — Muk Buddy 
 author: "Jason Brouk"
 author_bio: "Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors — and still building the tools contractors wish already existed."
 tags: ["shop-vac", "filters", "hepa", "fine-dust"]
-publish_date: "2026-09-15"
+publish_date: "2026-08-25"
 video: "shqEzGfBoYk"
 published: true
 ---

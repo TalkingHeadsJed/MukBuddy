@@ -7,7 +7,7 @@ hero_alt: "What Size Shop Vacuum Do I Need? — Muk Buddy shop vac guide"
 author: "Jason Brouk"
 author_bio: "Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors — and still building the tools contractors wish already existed."
 tags: ["shop-vac", "buying-guide", "specs"]
-publish_date: "2026-08-13"
+publish_date: "2026-08-11"
 video: "JqvXL9HrqvE"
 published: true
 ---

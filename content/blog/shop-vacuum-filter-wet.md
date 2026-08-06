@@ -7,7 +7,7 @@ hero_alt: "Why Is My Shop Vacuum Filter Wet? — Muk Buddy shop vac guide"
 author: "Jason Brouk"
 author_bio: "Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors — and still building the tools contractors wish already existed."
 tags: ["wet-dry-vac", "shop-vac", "water-pickup"]
-publish_date: "2026-08-22"
+publish_date: "2026-08-15"
 video: "0xj2QRd1aNA"
 published: true
 ---

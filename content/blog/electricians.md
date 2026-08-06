@@ -7,7 +7,7 @@ hero_alt: "Best Shop Vacuum for Electricians — Muk Buddy shop vac guide"
 author: "Jason Brouk"
 author_bio: "Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors — and still building the tools contractors wish already existed."
 tags: ["shop-vac", "contractor", "industry"]
-publish_date: "2026-08-24"
+publish_date: "2026-08-16"
 video: "yE3klHxUv8s"
 published: true
 ---

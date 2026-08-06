@@ -7,7 +7,7 @@ hero_alt: "Why Is My Shop Vacuum So Loud? — Muk Buddy shop vac guide"
 author: "Jason Brouk"
 author_bio: "Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors — and still building the tools contractors wish already existed."
 tags: ["shop-vac", "troubleshooting", "suction", "airflow"]
-publish_date: "2026-08-29"
+publish_date: "2026-08-19"
 video: "LePSsofVfB0"
 published: true
 ---

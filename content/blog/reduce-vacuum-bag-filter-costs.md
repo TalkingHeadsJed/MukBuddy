@@ -7,7 +7,7 @@ hero_alt: "How to Reduce Shop Vacuum Bag and Filter Costs — Muk Buddy shop vac
 author: "Jason Brouk"
 author_bio: "Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors — and still building the tools contractors wish already existed."
 tags: ["shop-vac", "vacuum-bags", "reusable", "shop-vac-bags"]
-publish_date: "2026-08-16"
+publish_date: "2026-08-12"
 video: "E6KqgUsbydo"
 published: true
 ---
