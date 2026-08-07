@@ -1,0 +1,41 @@
+# mukbuddy.com production .htaccess — VERSIONED TEMPLATE.
+#
+# This is the source of truth. The autopublish deploy compares the live docroot
+# .htaccess against this file every run and restores from it on drift, so any
+# hand-edit on the server WILL be reverted. Change it here, commit, and let the
+# deploy carry it.
+#
+# History: an untracked hand-edit on 2026-07-02 replaced player.vimeo.com in the
+# frame-src allowlist with the two YouTube origins instead of appending to it.
+# That silently broke the product video on the paid /ads landing page for five
+# weeks, because nothing validated this file. Hence: versioned, plus a
+# post-deploy CSP smoke check that fails loudly.
+#
+# frame-src must list EVERY third-party frame origin the frontend embeds.
+# Adding a new video host? Add it here in the same commit, or the smoke check
+# will fail the deploy report.
+
+# Force www -> non-www
+RewriteEngine On
+
+# --- BEGIN sourcemap-deny (audit 2026-07-02): block published JS/CSS source maps ---
+<FilesMatch "\.map$">
+  Require all denied
+</FilesMatch>
+# --- END sourcemap-deny ---
+RewriteCond %{HTTP_HOST} ^www\.mukbuddy\.com$ [NC]
+RewriteRule ^(.*)$ https://mukbuddy.com/$1 [R=301,L]
+
+# Security headers
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Content-Security-Policy "frame-src https://www.youtube-nocookie.com https://www.youtube.com https://player.vimeo.com;"
+</IfModule>
+
+# Noindex the paid /ads landing page
+<If "%{REQUEST_URI} =~ m#^/ads/?#">
+  Header set X-Robots-Tag "noindex, follow"
+</If>
