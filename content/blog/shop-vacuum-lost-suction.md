@@ -423,7 +423,7 @@ Protect the airflow, and you'll protect the performance and lifespan of your vac
 
 - [paper vs. fleece vs. reusable shop vacuum bags](https://mukbuddy.com/blog/paper-vs-fleece-vs-reusable-vacuum-bags/)
 - [complete shop vacuum troubleshooting guide](https://mukbuddy.com/blog/shop-vacuum-troubleshooting/)
-- [the science of airflow inside a shop vacuum](https://mukbuddy.com/blog/shop-vacuum-airflow/)
+- [the airflow that does the cleaning and the cooling](https://mukbuddy.com/blog/shop-vacuum-airflow/)
 - [why vacuum motors overheat](https://mukbuddy.com/blog/vacuum-motor-overheating/)
 
 [learn how Muk Buddy keeps debris out of the airflow path](https://mukbuddy.com/)

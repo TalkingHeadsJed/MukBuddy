@@ -57,6 +57,6 @@ For crystalline silica specifically, OSHA treats it as a regulated respirable ha
 
 Most contractors reaching for a shop vac bag are chasing one thing: a vac that keeps its suction on fine dust without rebuying disposables every week. For that, a reusable 2-chamber bag is the right answer — and Muk Buddy is built for exactly it, on most 12–20 gallon RIDGID, Shop-Vac, Craftsman, DeWalt and Stanley vacs. When the job crosses into hazardous silica, you add HEPA filtration for the capture — and the reusable bag makes that filter last.
 
-We laid the reusable bag next to the disposable field in [the 5 best shop vac bags](/blog/best-shop-vac-bags/), and ran the year-one cost in [disposable vs. reusable shop vac bags](/blog/disposable-vs-reusable-shop-vac-bags/). The bag's job is simple and it does it well: keep the dust off your filter, and stop rebuying bags.
+We laid the reusable bag next to the disposable field in [the bags worth buying for drywall and concrete](/blog/best-shop-vac-bags/), and ran the year-one cost in [disposable vs. reusable shop vac bags](/blog/disposable-vs-reusable-shop-vac-bags/). The bag's job is simple and it does it well: keep the dust off your filter, and stop rebuying bags.
 
 [See how the 2-chamber design protects your filter →](/)

@@ -463,7 +463,7 @@ Do not repeatedly reset the breaker or bypass protective devices.
 
 - [the guide to shop vacuum maintenance checklist](https://mukbuddy.com/blog/shop-vacuum-maintenance-checklist/)
 - [the complete shop vacuum troubleshooting guide](https://mukbuddy.com/blog/shop-vacuum-troubleshooting/)
-- [why is my shop vacuum suction pulsing or surging](https://mukbuddy.com/blog/shop-vacuum-suction-pulsing/)
+- [suction that pulses or surges](https://mukbuddy.com/blog/shop-vacuum-suction-pulsing/)
 - [how to test shop vacuum suction and airflow](https://mukbuddy.com/blog/test-shop-vacuum-suction-airflow/)
 
 [see how Muk Buddy helps protect vacuum airflow](https://mukbuddy.com/)

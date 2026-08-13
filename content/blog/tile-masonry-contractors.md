@@ -388,5 +388,6 @@ The strongest system separates these materials and uses the correct configuratio
 - [complete concrete dust cleanup guide](https://mukbuddy.com/blog/concrete-dust-cleanup/)
 - [learn more about best shop vacuum for concrete dust](https://mukbuddy.com/blog/best-shop-vacuum-concrete-dust/)
 - [learn more about why is dust escaping from my power tool shroud](https://mukbuddy.com/blog/dust-escaping-power-tool-shroud/)
+- [silica-rated collection for masonry crews](https://mukbuddy.com/blog/hepa-shop-vac-bag-fine-dust-silica/)
 
 [check fit for your crew](https://mukbuddy.com/contact/)

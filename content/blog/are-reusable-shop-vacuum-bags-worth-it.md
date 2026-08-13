@@ -2085,7 +2085,8 @@ That is where the real comparison begins.
 
 - [the guide to shop vacuum troubleshooting guide](https://mukbuddy.com/blog/shop-vacuum-troubleshooting/)
 - [the shop vacuum bag comparison guide](https://mukbuddy.com/blog/paper-vs-fleece-vs-reusable-vacuum-bags/)
-- [cyclone dust separator vs. vacuum bag](https://mukbuddy.com/blog/cyclone-separator-vs-vacuum-bag/)
-- [disposable vs. reusable vacuum bags](https://mukbuddy.com/blog/disposable-vs-reusable-vacuum-bags/)
+- [how a cyclone compares to a bag](https://mukbuddy.com/blog/cyclone-separator-vs-vacuum-bag/)
+- [the disposable-versus-reusable comparison](https://mukbuddy.com/blog/disposable-vs-reusable-vacuum-bags/)
+- [the case contractors make for switching to reusable](https://mukbuddy.com/blog/10-reasons-reusable-shop-vac-bag/)
 
 [check Muk Buddy fit and ordering](https://thefloorlord.com/product/muk-buddy/)

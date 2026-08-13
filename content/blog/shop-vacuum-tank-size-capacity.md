@@ -565,5 +565,6 @@ They do not measure:
 - [shop vacuum buying guide](https://mukbuddy.com/blog/shop-vacuum-buying-guide/)
 - [learn more about what shop vacuum hose size do you need](https://mukbuddy.com/blog/shop-vacuum-hose-size/)
 - [learn more about shop vacuum vs. HEPA dust extractor for renovation work](https://mukbuddy.com/blog/shop-vacuum-vs-hepa-dust-extractor-renovation/)
+- [matching a reusable bag to a Craftsman tank](https://mukbuddy.com/blog/reusable-shop-vac-bag-for-dewalt-craftsman/)
 
 [see the Muk Buddy product details](https://thefloorlord.com/product/muk-buddy/)

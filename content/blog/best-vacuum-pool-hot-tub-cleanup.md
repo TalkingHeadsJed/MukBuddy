@@ -355,6 +355,6 @@ Prioritize safe positioning, float protection, practical drainage, and complete 
 - [paper vs. fleece vs. reusable shop vacuum bags](https://mukbuddy.com/blog/paper-vs-fleece-vs-reusable-vacuum-bags/)
 - [complete wet/dry vacuum guide](https://mukbuddy.com/blog/how-wet-dry-vacuum-works/)
 - [how to store a shop vacuum properly](https://mukbuddy.com/blog/store-shop-vacuum/)
-- [can you vacuum mud with a shop vacuum](https://mukbuddy.com/blog/vacuum-mud-with-shop-vacuum/)
+- [picking up mud with a shop vac](https://mukbuddy.com/blog/vacuum-mud-with-shop-vacuum/)
 
 [see the Muk Buddy product details](https://thefloorlord.com/product/muk-buddy/)

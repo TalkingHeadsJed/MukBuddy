@@ -476,6 +476,6 @@ A complete dust-control process should:
 
 - [the guide to paper vs. fleece vs. reusable shop vacuum bags](https://mukbuddy.com/blog/paper-vs-fleece-vs-reusable-vacuum-bags/)
 - [contractor shop vacuum pre-use inspection checklist](https://mukbuddy.com/blog/contractor-vacuum-pre-use-inspection/)
-- [why does my shop vacuum hose give me static shocks](https://mukbuddy.com/blog/shop-vacuum-static-shocks/)
+- [static build-up in a vacuum hose](https://mukbuddy.com/blog/shop-vacuum-static-shocks/)
 
 [see how Muk Buddy helps protect vacuum airflow](https://mukbuddy.com/)

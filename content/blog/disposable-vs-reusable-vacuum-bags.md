@@ -323,7 +323,8 @@ The best choice is the one that maintains airflow, protects the filter, minimize
 
 - [the guide to how much does a shop vacuum really cost to own](https://mukbuddy.com/blog/shop-vacuum-cost-of-ownership/)
 - [the shop vacuum bag comparison guide](https://mukbuddy.com/blog/paper-vs-fleece-vs-reusable-vacuum-bags/)
-- [cyclone dust separator vs. vacuum bag](https://mukbuddy.com/blog/cyclone-separator-vs-vacuum-bag/)
+- [separator or bag - which actually helps](https://mukbuddy.com/blog/cyclone-separator-vs-vacuum-bag/)
 - [can you use a shop vacuum without a bag](https://mukbuddy.com/blog/use-shop-vacuum-without-bag/)
+- [why crews are moving off disposables](https://mukbuddy.com/blog/10-reasons-reusable-shop-vac-bag/)
 
 [check Muk Buddy fit and ordering](https://thefloorlord.com/product/muk-buddy/)

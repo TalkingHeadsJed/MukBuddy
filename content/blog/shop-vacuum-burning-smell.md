@@ -498,6 +498,6 @@ Remember:
 - [paper vs. fleece vs. reusable shop vacuum bags](https://mukbuddy.com/blog/paper-vs-fleece-vs-reusable-vacuum-bags/)
 - [complete shop vacuum troubleshooting guide](https://mukbuddy.com/blog/shop-vacuum-troubleshooting/)
 - [how to increase shop vacuum suction](https://mukbuddy.com/blog/increase-shop-vacuum-suction/)
-- [why is my shop vacuum so loud](https://mukbuddy.com/blog/shop-vacuum-too-loud/)
+- [cutting down vacuum noise](https://mukbuddy.com/blog/shop-vacuum-too-loud/)
 
 [see how Muk Buddy helps protect vacuum airflow](https://mukbuddy.com/)

@@ -1058,10 +1058,10 @@ Whether you're a professional contractor tackling drywall every day or a homeown
 ## Related guides
 
 - [the guide to paper vs. fleece vs. reusable shop vacuum bags](https://mukbuddy.com/blog/paper-vs-fleece-vs-reusable-vacuum-bags/)
-- [Best Shop Vacuum for Drywall Dust](https://mukbuddy.com/blog/best-shop-vacuum-drywall-dust/)
-- [How to Connect a Drywall Sander to a Shop Vacuum](https://mukbuddy.com/blog/connect-drywall-sander-shop-vacuum/)
-- [How to Control Construction Dust in an Occupied Home](https://mukbuddy.com/blog/control-construction-dust-occupied-home/)
-- [Why Drywall Dust Ruins Vacuum Filters](https://mukbuddy.com/blog/drywall-dust-ruins-vacuum-filters/)
-- [How to Vacuum Drywall Dust Without Damaging Your Vacuum](https://mukbuddy.com/blog/vacuum-drywall-dust-safely/)
+- [the right vac for drywall dust](https://mukbuddy.com/blog/best-shop-vacuum-drywall-dust/)
+- [running a drywall sander off a shop vacuum](https://mukbuddy.com/blog/connect-drywall-sander-shop-vacuum/)
+- [dust control when people still live there](https://mukbuddy.com/blog/control-construction-dust-occupied-home/)
+- [the way joint compound blinds a filter](https://mukbuddy.com/blog/drywall-dust-ruins-vacuum-filters/)
+- [the safe way to pull drywall dust](https://mukbuddy.com/blog/vacuum-drywall-dust-safely/)
 
 [see how Muk Buddy’s two-chamber system works](https://mukbuddy.com/)

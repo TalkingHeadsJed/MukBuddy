@@ -371,8 +371,8 @@ The central rule is simple:
 ## Related guides
 
 - [best shop vacuum for remodeling contractors](https://mukbuddy.com/blog/remodeling-contractors/)
-- [complete drywall dust cleanup guide](https://mukbuddy.com/blog/drywall-dust-cleanup/)
-- [how to connect a drywall sander to a shop vacuum](https://mukbuddy.com/blog/connect-drywall-sander-shop-vacuum/)
-- [how to control construction dust in an occupied home](https://mukbuddy.com/blog/control-construction-dust-occupied-home/)
+- [the full drywall dust cleanup process](https://mukbuddy.com/blog/drywall-dust-cleanup/)
+- [hooking a drywall sander to your vac](https://mukbuddy.com/blog/connect-drywall-sander-shop-vacuum/)
+- [keeping dust out of a client's living space](https://mukbuddy.com/blog/control-construction-dust-occupied-home/)
 
 [see the Muk Buddy product details](https://thefloorlord.com/product/muk-buddy/)

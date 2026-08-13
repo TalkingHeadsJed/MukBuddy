@@ -428,5 +428,6 @@ They understand how concrete dust moves through an airflow system—and they pro
 - [Best Shop Vacuum for Concrete Dust](https://mukbuddy.com/blog/best-shop-vacuum-concrete-dust/)
 - [Why Is Dust Escaping From My Power Tool Shroud](https://mukbuddy.com/blog/dust-escaping-power-tool-shroud/)
 - [Best Shop Vacuum for Tile and Masonry Contractors](https://mukbuddy.com/blog/tile-masonry-contractors/)
+- [bag choice for silica and concrete dust](https://mukbuddy.com/blog/hepa-shop-vac-bag-fine-dust-silica/)
 
 [see how Muk Buddy helps protect vacuum airflow](https://mukbuddy.com/)

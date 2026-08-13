@@ -465,7 +465,7 @@ Correct:
 
 - [the guide to shop vacuum maintenance checklist](https://mukbuddy.com/blog/shop-vacuum-maintenance-checklist/)
 - [the complete shop vacuum troubleshooting guide](https://mukbuddy.com/blog/shop-vacuum-troubleshooting/)
-- [the science of airflow inside a shop vacuum](https://mukbuddy.com/blog/shop-vacuum-airflow/)
+- [how airflow actually works inside the vac](https://mukbuddy.com/blog/shop-vacuum-airflow/)
 - [why shop vacuums lose suction](https://mukbuddy.com/blog/shop-vacuum-lost-suction/)
 
 [see how Muk Buddy’s two-chamber system works](https://mukbuddy.com/)

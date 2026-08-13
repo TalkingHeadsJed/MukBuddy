@@ -366,7 +366,7 @@ The best electrician vacuum should be:
 
 - [the guide to how to reduce shop vacuum bag and filter costs](https://mukbuddy.com/blog/reduce-vacuum-bag-filter-costs/)
 - [the shop vacuum guide for contractors](https://mukbuddy.com/blog/contractors/)
-- [best vacuum system for commercial cleaning](https://mukbuddy.com/blog/commercial-cleaning/)
-- [best shop vacuum for flooring contractors](https://mukbuddy.com/blog/flooring-contractors/)
+- [what commercial cleaning work demands from a vac](https://mukbuddy.com/blog/commercial-cleaning/)
+- [vac selection for flooring work](https://mukbuddy.com/blog/flooring-contractors/)
 
 [ask about vacuum fit and crew pricing](https://mukbuddy.com/contact/)

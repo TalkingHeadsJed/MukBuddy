@@ -586,5 +586,6 @@ They simply understand one fundamental principle:
 - [shop vacuum troubleshooting guide](https://mukbuddy.com/blog/shop-vacuum-troubleshooting/)
 - [how to clean a shop vacuum filter](https://mukbuddy.com/blog/clean-shop-vacuum-filter/)
 - [how often should you replace a shop vacuum filter](https://mukbuddy.com/blog/replace-shop-vacuum-filter/)
+- [why bagless running kills filters so fast](https://mukbuddy.com/blog/running-shop-vac-without-bag-cost/)
 
 [learn how Muk Buddy keeps debris out of the airflow path](https://mukbuddy.com/)

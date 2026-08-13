@@ -402,5 +402,6 @@ The longer you can maintain airflow while protecting the HEPA filter from unnece
 - [the guide to shop vacuum troubleshooting guide](https://mukbuddy.com/blog/shop-vacuum-troubleshooting/)
 - [why does my shop vacuum filter keep clogging so fast](https://mukbuddy.com/blog/vacuum-filter-clogging-fast/)
 - [why fine dust destroys vacuums](https://mukbuddy.com/blog/why-fine-dust-destroys-vacuums/)
+- [whether you need a HEPA-rated bag as well as a filter](https://mukbuddy.com/blog/hepa-shop-vac-bag-fine-dust-silica/)
 
 [see how Muk Buddy’s two-chamber system works](https://mukbuddy.com/)

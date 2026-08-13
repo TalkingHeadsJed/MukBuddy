@@ -483,8 +483,8 @@ And your vacuum will perform better for much longer.
 ## Related guides
 
 - [best shop vacuum for remodeling contractors](https://mukbuddy.com/blog/remodeling-contractors/)
-- [complete drywall dust cleanup guide](https://mukbuddy.com/blog/drywall-dust-cleanup/)
-- [best shop vacuum for drywall dust](https://mukbuddy.com/blog/best-shop-vacuum-drywall-dust/)
-- [how to control construction dust in an occupied home](https://mukbuddy.com/blog/control-construction-dust-occupied-home/)
+- [the drywall cleanup method that spares your vac](https://mukbuddy.com/blog/drywall-dust-cleanup/)
+- [vac picks for heavy drywall dust](https://mukbuddy.com/blog/best-shop-vacuum-drywall-dust/)
+- [containing construction dust in an occupied home](https://mukbuddy.com/blog/control-construction-dust-occupied-home/)
 
 [learn how Muk Buddy keeps debris out of the airflow path](https://mukbuddy.com/)

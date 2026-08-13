@@ -450,8 +450,8 @@ Understand that relationship, and you'll understand why drywall dust is one of t
 ## Related guides
 
 - [paper vs. fleece vs. reusable shop vacuum bags](https://mukbuddy.com/blog/paper-vs-fleece-vs-reusable-vacuum-bags/)
-- [complete drywall dust cleanup guide](https://mukbuddy.com/blog/drywall-dust-cleanup/)
-- [best shop vacuum for drywall dust](https://mukbuddy.com/blog/best-shop-vacuum-drywall-dust/)
-- [how to vacuum drywall dust without damaging your vacuum](https://mukbuddy.com/blog/vacuum-drywall-dust-safely/)
+- [drywall dust cleanup start to finish](https://mukbuddy.com/blog/drywall-dust-cleanup/)
+- [which vacuums survive drywall work](https://mukbuddy.com/blog/best-shop-vacuum-drywall-dust/)
+- [drywall dust pickup that won't kill your vac](https://mukbuddy.com/blog/vacuum-drywall-dust-safely/)
 
 [learn how Muk Buddy keeps debris out of the airflow path](https://mukbuddy.com/)

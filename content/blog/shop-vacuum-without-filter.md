@@ -438,5 +438,7 @@ It protects:
 - [the guide to shop vacuum maintenance checklist](https://mukbuddy.com/blog/shop-vacuum-maintenance-checklist/)
 - [automatic filter cleaning vs. manual filter cleaning](https://mukbuddy.com/blog/automatic-vs-manual-filter-cleaning/)
 - [shop vacuum filter ratings and micron claims explained](https://mukbuddy.com/blog/shop-vacuum-filter-ratings-micron-claims/)
+- [what the bag does that the filter can't](https://mukbuddy.com/blog/do-you-need-a-bag-in-a-shop-vac/)
+- [the filter bill you pay for skipping the bag](https://mukbuddy.com/blog/running-shop-vac-without-bag-cost/)
 
 [see how Muk Buddy helps protect vacuum airflow](https://mukbuddy.com/)

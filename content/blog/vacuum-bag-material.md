@@ -580,6 +580,7 @@ Vacuum bag material determines:
 - [the guide to shop vacuum troubleshooting guide](https://mukbuddy.com/blog/shop-vacuum-troubleshooting/)
 - [the shop vacuum bag comparison guide](https://mukbuddy.com/blog/paper-vs-fleece-vs-reusable-vacuum-bags/)
 - [how to reduce shop vacuum bag and filter costs](https://mukbuddy.com/blog/reduce-vacuum-bag-filter-costs/)
-- [reusable vacuum bag vs. cyclone separator](https://mukbuddy.com/blog/reusable-vacuum-bag-vs-cyclone/)
+- [how a reusable bag compares to a cyclone](https://mukbuddy.com/blog/reusable-vacuum-bag-vs-cyclone/)
+- [why paper tears before it fills](https://mukbuddy.com/blog/why-disposable-shop-vac-bags-fail/)
 
 [check Muk Buddy fit and ordering](https://thefloorlord.com/product/muk-buddy/)

@@ -1506,7 +1506,9 @@ The correct size is the machine that provides enough capacity without creating u
 
 - [the guide to shop vacuum maintenance checklist](https://mukbuddy.com/blog/shop-vacuum-maintenance-checklist/)
 - [the shop vacuum buying guide](https://mukbuddy.com/blog/shop-vacuum-buying-guide/)
-- [how long do shop vacuums last](https://mukbuddy.com/blog/how-long-shop-vacuums-last/)
-- [shop vacuum vs. dust extractor](https://mukbuddy.com/blog/shop-vacuum-vs-dust-extractor/)
+- [what actually ends a vacuum's life](https://mukbuddy.com/blog/how-long-shop-vacuums-last/)
+- [the difference between a vac and an extractor](https://mukbuddy.com/blog/shop-vacuum-vs-dust-extractor/)
+- [DeWalt and Craftsman sizing for a reusable bag](https://mukbuddy.com/blog/reusable-shop-vac-bag-for-dewalt-craftsman/)
+- [RIDGID sizing for a reusable bag](https://mukbuddy.com/blog/reusable-shop-vac-bag-for-ridgid/)
 
 [check Muk Buddy fit and ordering](https://thefloorlord.com/product/muk-buddy/)

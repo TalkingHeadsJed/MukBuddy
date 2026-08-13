@@ -506,8 +506,8 @@ A successful drywall-sander connection requires:
 ## Related guides
 
 - [best shop vacuum for remodeling contractors](https://mukbuddy.com/blog/remodeling-contractors/)
-- [complete drywall dust cleanup guide](https://mukbuddy.com/blog/drywall-dust-cleanup/)
-- [why drywall dust ruins vacuum filters](https://mukbuddy.com/blog/drywall-dust-ruins-vacuum-filters/)
-- [how to vacuum drywall dust without damaging your vacuum](https://mukbuddy.com/blog/vacuum-drywall-dust-safely/)
+- [how to clean up after a drywall job](https://mukbuddy.com/blog/drywall-dust-cleanup/)
+- [what drywall dust does to a filter](https://mukbuddy.com/blog/drywall-dust-ruins-vacuum-filters/)
+- [vacuuming drywall dust without damage](https://mukbuddy.com/blog/vacuum-drywall-dust-safely/)
 
 [learn how Muk Buddy keeps debris out of the airflow path](https://mukbuddy.com/)

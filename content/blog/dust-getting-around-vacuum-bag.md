@@ -394,5 +394,8 @@ Dust gets around a vacuum bag through:
 - [shop vacuum bag comparison guide](https://mukbuddy.com/blog/paper-vs-fleece-vs-reusable-vacuum-bags/)
 - [learn more about how to clean a reusable shop vacuum bag](https://mukbuddy.com/blog/clean-reusable-shop-vacuum-bag/)
 - [learn more about why does my shop vacuum bag keep falling off](https://mukbuddy.com/blog/shop-vacuum-bag-falling-off/)
+- [why a reused disposable leaks at the collar](https://mukbuddy.com/blog/can-you-reuse-a-shop-vac-bag/)
+- [getting a clean seal on a RIDGID tank](https://mukbuddy.com/blog/reusable-shop-vac-bag-for-ridgid/)
+- [the failure that dumps dust into the tank](https://mukbuddy.com/blog/why-disposable-shop-vac-bags-fail/)
 
 [see the Muk Buddy product details](https://thefloorlord.com/product/muk-buddy/)

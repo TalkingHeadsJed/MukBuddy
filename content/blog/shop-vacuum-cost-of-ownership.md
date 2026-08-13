@@ -487,7 +487,8 @@ It's based on **cost over time**.
 
 - [the guide to shop vacuum maintenance checklist](https://mukbuddy.com/blog/shop-vacuum-maintenance-checklist/)
 - [the shop vacuum buying guide](https://mukbuddy.com/blog/shop-vacuum-buying-guide/)
-- [shop vacuum vs. dust extractor](https://mukbuddy.com/blog/shop-vacuum-vs-dust-extractor/)
-- [what size shop vacuum do i need](https://mukbuddy.com/blog/what-size-shop-vacuum/)
+- [where an extractor beats a shop vac](https://mukbuddy.com/blog/shop-vacuum-vs-dust-extractor/)
+- [picking the right tank size](https://mukbuddy.com/blog/what-size-shop-vacuum/)
+- [what a reusable bag removes from your running costs](https://mukbuddy.com/blog/10-reasons-reusable-shop-vac-bag/)
 
 [check Muk Buddy fit and ordering](https://thefloorlord.com/product/muk-buddy/)

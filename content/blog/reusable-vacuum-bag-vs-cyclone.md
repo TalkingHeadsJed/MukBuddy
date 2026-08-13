@@ -588,5 +588,6 @@ Choose a cyclone for:
 - [the shop vacuum bag comparison guide](https://mukbuddy.com/blog/paper-vs-fleece-vs-reusable-vacuum-bags/)
 - [learn more about are reusable shop vacuum bags worth it](https://mukbuddy.com/blog/are-reusable-shop-vacuum-bags-worth-it/)
 - [learn more about how to reduce shop vacuum bag and filter costs](https://mukbuddy.com/blog/reduce-vacuum-bag-filter-costs/)
+- [reasons a reusable bag beats bolting on a separator](https://mukbuddy.com/blog/10-reasons-reusable-shop-vac-bag/)
 
 [check Muk Buddy fit and ordering](https://thefloorlord.com/product/muk-buddy/)

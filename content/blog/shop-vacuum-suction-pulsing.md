@@ -464,7 +464,7 @@ First determine whether the motor remains powered.
 
 - [paper vs. fleece vs. reusable shop vacuum bags](https://mukbuddy.com/blog/paper-vs-fleece-vs-reusable-vacuum-bags/)
 - [complete shop vacuum troubleshooting guide](https://mukbuddy.com/blog/shop-vacuum-troubleshooting/)
-- [why is my shop vacuum blowing hot air](https://mukbuddy.com/blog/shop-vacuum-blowing-hot-air/)
+- [hot air coming off the exhaust](https://mukbuddy.com/blog/shop-vacuum-blowing-hot-air/)
 - [why is my shop vacuum leaving dust behind](https://mukbuddy.com/blog/shop-vacuum-leaving-dust/)
 
 [learn how Muk Buddy keeps debris out of the airflow path](https://mukbuddy.com/)

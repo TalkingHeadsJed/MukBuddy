@@ -436,7 +436,7 @@ The complete process includes:
 
 - [shop vacuum maintenance checklist](https://mukbuddy.com/blog/shop-vacuum-maintenance-checklist/)
 - [complete wet/dry vacuum guide](https://mukbuddy.com/blog/how-wet-dry-vacuum-works/)
-- [how to clean a wet/dry vacuum](https://mukbuddy.com/blog/clean-wet-dry-vacuum/)
+- [how to clean the vac after a wet job](https://mukbuddy.com/blog/clean-wet-dry-vacuum/)
 - [why is my shop vacuum filter wet](https://mukbuddy.com/blog/shop-vacuum-filter-wet/)
 
 [learn how Muk Buddy keeps debris out of the airflow path](https://mukbuddy.com/)

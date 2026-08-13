@@ -548,13 +548,13 @@ Wet pickup depends on:
 
 - [paper vs. fleece vs. reusable shop vacuum bags](https://mukbuddy.com/blog/paper-vs-fleece-vs-reusable-vacuum-bags/)
 - [Best Vacuum for Pool and Hot Tub Cleanup](https://mukbuddy.com/blog/best-vacuum-pool-hot-tub-cleanup/)
-- [How to Clean a Wet/Dry Vacuum](https://mukbuddy.com/blog/clean-wet-dry-vacuum/)
+- [cleaning out a wet/dry vac](https://mukbuddy.com/blog/clean-wet-dry-vacuum/)
 - [How to Prevent Mold and Bacteria in a Wet/Dry Vacuum](https://mukbuddy.com/blog/prevent-mold-wet-dry-vacuum/)
 - [Why Is My Shop Vacuum Filter Wet](https://mukbuddy.com/blog/shop-vacuum-filter-wet/)
 - [Why Does My Shop Vacuum Smell Bad](https://mukbuddy.com/blog/shop-vacuum-smells-bad/)
 - [How to Store a Shop Vacuum Properly](https://mukbuddy.com/blog/store-shop-vacuum/)
 - [How to Switch a Shop Vacuum From Dry to Wet Pickup](https://mukbuddy.com/blog/switch-shop-vacuum-dry-to-wet/)
-- [Can You Vacuum Mud With a Shop Vacuum](https://mukbuddy.com/blog/vacuum-mud-with-shop-vacuum/)
-- [Can You Vacuum Water With a Shop Vacuum](https://mukbuddy.com/blog/vacuum-water-with-shop-vacuum/)
+- [whether your vac can handle mud](https://mukbuddy.com/blog/vacuum-mud-with-shop-vacuum/)
+- [picking up water safely](https://mukbuddy.com/blog/vacuum-water-with-shop-vacuum/)
 
 [learn how Muk Buddy keeps debris out of the airflow path](https://mukbuddy.com/)

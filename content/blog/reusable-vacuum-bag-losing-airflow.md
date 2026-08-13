@@ -445,7 +445,7 @@ But every reusable filtration material eventually reaches a point where restrict
 
 - [the guide to how much does a shop vacuum really cost to own](https://mukbuddy.com/blog/shop-vacuum-cost-of-ownership/)
 - [the shop vacuum bag comparison guide](https://mukbuddy.com/blog/paper-vs-fleece-vs-reusable-vacuum-bags/)
-- [reusable vacuum bag vs. cyclone separator](https://mukbuddy.com/blog/reusable-vacuum-bag-vs-cyclone/)
+- [bag or separator for fine dust](https://mukbuddy.com/blog/reusable-vacuum-bag-vs-cyclone/)
 - [how vacuum bag material affects suction, filtration, and capacity](https://mukbuddy.com/blog/vacuum-bag-material/)
 
 [check Muk Buddy fit and ordering](https://thefloorlord.com/product/muk-buddy/)

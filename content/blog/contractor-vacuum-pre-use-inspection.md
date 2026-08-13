@@ -550,6 +550,7 @@ A contractor vacuum should be inspected for:
 - [multi-stage shop vacuum filtration: how bags, filters, and cyclones work together](https://mukbuddy.com/blog/multi-stage-shop-vacuum-filtration/)
 - [shop vacuum maintenance checklist](https://mukbuddy.com/blog/shop-vacuum-maintenance-checklist/)
 - [shop vacuum safety guide](https://mukbuddy.com/blog/shop-vacuum-safety/)
-- [why does my shop vacuum hose give me static shocks](https://mukbuddy.com/blog/shop-vacuum-static-shocks/)
+- [why the hose shocks you](https://mukbuddy.com/blog/shop-vacuum-static-shocks/)
+- [the downtime these checks are meant to prevent](https://mukbuddy.com/blog/shop-vac-downtime-costing-your-crew/)
 
 [see how Muk Buddy helps protect vacuum airflow](https://mukbuddy.com/)

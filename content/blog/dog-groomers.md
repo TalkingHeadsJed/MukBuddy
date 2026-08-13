@@ -382,7 +382,7 @@ Prioritize a clog-resistant airflow path, effective filtration, simple wet/dry c
 
 - [the guide to paper vs. fleece vs. reusable shop vacuum bags](https://mukbuddy.com/blog/paper-vs-fleece-vs-reusable-vacuum-bags/)
 - [the shop vacuum guide for contractors](https://mukbuddy.com/blog/contractors/)
-- [best shop vacuum for electricians](https://mukbuddy.com/blog/electricians/)
+- [vac choice for electrical work](https://mukbuddy.com/blog/electricians/)
 - [best shop vacuum for remodeling contractors](https://mukbuddy.com/blog/remodeling-contractors/)
 
 [ask about vacuum fit and crew pricing](https://mukbuddy.com/contact/)

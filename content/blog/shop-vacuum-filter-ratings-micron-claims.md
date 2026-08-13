@@ -503,5 +503,6 @@ Filter claims should be evaluated through four questions:
 - [the guide to shop vacuum troubleshooting guide](https://mukbuddy.com/blog/shop-vacuum-troubleshooting/)
 - [HEPA filters explained](https://mukbuddy.com/blog/hepa-filters-explained/)
 - [multi-stage shop vacuum filtration: how bags, filters, and cyclones work together](https://mukbuddy.com/blog/multi-stage-shop-vacuum-filtration/)
+- [what micron claims mean for bags and silica](https://mukbuddy.com/blog/hepa-shop-vac-bag-fine-dust-silica/)
 
 [see how Muk Buddy helps protect vacuum airflow](https://mukbuddy.com/)

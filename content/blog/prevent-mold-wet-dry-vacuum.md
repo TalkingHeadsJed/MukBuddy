@@ -538,6 +538,6 @@ Dry the tank, hose, filter, float, and attachments completely.
 - [the guide to paper vs. fleece vs. reusable shop vacuum bags](https://mukbuddy.com/blog/paper-vs-fleece-vs-reusable-vacuum-bags/)
 - [the complete wet/dry vacuum guide](https://mukbuddy.com/blog/how-wet-dry-vacuum-works/)
 - [how to switch a shop vacuum from dry to wet pickup](https://mukbuddy.com/blog/switch-shop-vacuum-dry-to-wet/)
-- [can you vacuum water with a shop vacuum](https://mukbuddy.com/blog/vacuum-water-with-shop-vacuum/)
+- [using the vac for standing water](https://mukbuddy.com/blog/vacuum-water-with-shop-vacuum/)
 
 [see how Muk Buddy helps protect vacuum airflow](https://mukbuddy.com/)

@@ -567,7 +567,7 @@ Protect:
 
 - [how much does a shop vacuum really cost to own](https://mukbuddy.com/blog/shop-vacuum-cost-of-ownership/)
 - [shop vacuum bag comparison guide](https://mukbuddy.com/blog/paper-vs-fleece-vs-reusable-vacuum-bags/)
-- [how long do reusable shop vacuum bags last](https://mukbuddy.com/blog/reusable-vacuum-bag-lifespan/)
+- [how many jobs a reusable bag lasts](https://mukbuddy.com/blog/reusable-vacuum-bag-lifespan/)
 - [why is my reusable vacuum bag losing airflow](https://mukbuddy.com/blog/reusable-vacuum-bag-losing-airflow/)
 
 [see the Muk Buddy product details](https://thefloorlord.com/product/muk-buddy/)

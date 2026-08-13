@@ -533,5 +533,6 @@ Reusable bag lifespan depends on:
 - [the shop vacuum bag comparison guide](https://mukbuddy.com/blog/paper-vs-fleece-vs-reusable-vacuum-bags/)
 - [learn more about why is my reusable vacuum bag losing airflow](https://mukbuddy.com/blog/reusable-vacuum-bag-losing-airflow/)
 - [learn more about how vacuum bag material affects suction, filtration, and capacity](https://mukbuddy.com/blog/vacuum-bag-material/)
+- [reusing a bag vs. replacing it every job](https://mukbuddy.com/blog/can-you-reuse-a-shop-vac-bag/)
 
 [check Muk Buddy fit and ordering](https://thefloorlord.com/product/muk-buddy/)

@@ -363,7 +363,8 @@ Service it when it reaches the first limit:
 
 - [shop vacuum troubleshooting guide](https://mukbuddy.com/blog/shop-vacuum-troubleshooting/)
 - [shop vacuum bag comparison guide](https://mukbuddy.com/blog/paper-vs-fleece-vs-reusable-vacuum-bags/)
-- [why is dust getting around my shop vacuum bag](https://mukbuddy.com/blog/dust-getting-around-vacuum-bag/)
+- [dust bypassing the bag entirely](https://mukbuddy.com/blog/dust-getting-around-vacuum-bag/)
 - [how to install a shop vacuum bag correctly](https://mukbuddy.com/blog/install-shop-vacuum-bag/)
+- [emptying and reusing a bag instead of tossing it](https://mukbuddy.com/blog/can-you-reuse-a-shop-vac-bag/)
 
 [see the Muk Buddy product details](https://thefloorlord.com/product/muk-buddy/)

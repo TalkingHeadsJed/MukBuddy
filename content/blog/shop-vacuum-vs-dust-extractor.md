@@ -1743,7 +1743,7 @@ The most important distinction is simple:
 
 - [the guide to multi-stage shop vacuum filtration: how bags, filters, and cyclones work together](https://mukbuddy.com/blog/multi-stage-shop-vacuum-filtration/)
 - [the shop vacuum buying guide](https://mukbuddy.com/blog/shop-vacuum-buying-guide/)
-- [how long do shop vacuums last](https://mukbuddy.com/blog/how-long-shop-vacuums-last/)
+- [how many years a shop vac gives you](https://mukbuddy.com/blog/how-long-shop-vacuums-last/)
 - [shop vacuum accessories guide](https://mukbuddy.com/blog/shop-vacuum-accessories/)
 
 [check Muk Buddy fit and ordering](https://thefloorlord.com/product/muk-buddy/)

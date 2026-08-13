@@ -467,8 +467,8 @@ Dust control in occupied homes requires:
 ## Related guides
 
 - [best shop vacuum for remodeling contractors](https://mukbuddy.com/blog/remodeling-contractors/)
-- [complete drywall dust cleanup guide](https://mukbuddy.com/blog/drywall-dust-cleanup/)
-- [how to connect a drywall sander to a shop vacuum](https://mukbuddy.com/blog/connect-drywall-sander-shop-vacuum/)
-- [why drywall dust ruins vacuum filters](https://mukbuddy.com/blog/drywall-dust-ruins-vacuum-filters/)
+- [our complete guide to drywall dust](https://mukbuddy.com/blog/drywall-dust-cleanup/)
+- [connecting a sander for dust extraction](https://mukbuddy.com/blog/connect-drywall-sander-shop-vacuum/)
+- [why drywall dust destroys filters](https://mukbuddy.com/blog/drywall-dust-ruins-vacuum-filters/)
 
 [see how Muk Buddy helps protect vacuum airflow](https://mukbuddy.com/)

@@ -74,4 +74,4 @@ So — can you reuse a shop vac bag? Not the disposable in your hand; that advic
 
 [See the bag built to be used again →](/)
 
-*New to this? Start with [do you need a bag in a shop vac](/blog/do-you-need-a-bag-in-a-shop-vac/), or compare your options in [the 5 best shop vac bags](/blog/best-shop-vac-bags/).*
+*New to this? Start with [do you need a bag in a shop vac](/blog/do-you-need-a-bag-in-a-shop-vac/), or compare your options in [which shop vac bags actually hold up](/blog/best-shop-vac-bags/).*

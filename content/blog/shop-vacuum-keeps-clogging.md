@@ -530,6 +530,6 @@ And more time getting work done.
 - [the guide to shop vacuum maintenance checklist](https://mukbuddy.com/blog/shop-vacuum-maintenance-checklist/)
 - [the complete shop vacuum troubleshooting guide](https://mukbuddy.com/blog/shop-vacuum-troubleshooting/)
 - [why does my shop vacuum smell like it’s burning](https://mukbuddy.com/blog/shop-vacuum-burning-smell/)
-- [why is my shop vacuum so loud](https://mukbuddy.com/blog/shop-vacuum-too-loud/)
+- [why the vac got louder](https://mukbuddy.com/blog/shop-vacuum-too-loud/)
 
 [see how Muk Buddy’s two-chamber system works](https://mukbuddy.com/)

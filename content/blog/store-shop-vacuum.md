@@ -473,6 +473,6 @@ Empty it, dry it, inspect it, and protect the airflow path.
 - [shop vacuum maintenance checklist](https://mukbuddy.com/blog/shop-vacuum-maintenance-checklist/)
 - [complete wet/dry vacuum guide](https://mukbuddy.com/blog/how-wet-dry-vacuum-works/)
 - [how to prevent mold and bacteria in a wet/dry vacuum](https://mukbuddy.com/blog/prevent-mold-wet-dry-vacuum/)
-- [can you vacuum water with a shop vacuum](https://mukbuddy.com/blog/vacuum-water-with-shop-vacuum/)
+- [what to change before vacuuming water](https://mukbuddy.com/blog/vacuum-water-with-shop-vacuum/)
 
 [learn how Muk Buddy keeps debris out of the airflow path](https://mukbuddy.com/)

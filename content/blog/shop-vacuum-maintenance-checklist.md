@@ -1383,5 +1383,6 @@ It works better every day of its life.
 - [Contractor Shop Vacuum Pre-Use Inspection Checklist](https://mukbuddy.com/blog/contractor-vacuum-pre-use-inspection/)
 - [shop vacuum dust disposal guide](https://mukbuddy.com/blog/shop-vacuum-dust-disposal/)
 - [shop vacuum safety guide](https://mukbuddy.com/blog/shop-vacuum-safety/)
+- [what a stalled vac costs a crew per hour](https://mukbuddy.com/blog/shop-vac-downtime-costing-your-crew/)
 
 [learn how Muk Buddy keeps debris out of the airflow path](https://mukbuddy.com/)

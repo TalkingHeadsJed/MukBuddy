@@ -462,7 +462,7 @@ Correct the cause before returning the vacuum to service.
 
 - [the guide to paper vs. fleece vs. reusable shop vacuum bags](https://mukbuddy.com/blog/paper-vs-fleece-vs-reusable-vacuum-bags/)
 - [the complete wet/dry vacuum guide](https://mukbuddy.com/blog/how-wet-dry-vacuum-works/)
-- [how to clean a wet/dry vacuum](https://mukbuddy.com/blog/clean-wet-dry-vacuum/)
+- [washing down the tank after wet pickup](https://mukbuddy.com/blog/clean-wet-dry-vacuum/)
 - [why does my shop vacuum smell bad](https://mukbuddy.com/blog/shop-vacuum-smells-bad/)
 
 [see how Muk Buddy helps protect vacuum airflow](https://mukbuddy.com/)

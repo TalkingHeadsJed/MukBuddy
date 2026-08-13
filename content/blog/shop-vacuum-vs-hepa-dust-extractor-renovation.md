@@ -489,6 +489,6 @@ A shop vacuum prioritizes:
 - [the guide to shop vacuum maintenance checklist](https://mukbuddy.com/blog/shop-vacuum-maintenance-checklist/)
 - [the shop vacuum buying guide](https://mukbuddy.com/blog/shop-vacuum-buying-guide/)
 - [how much does a shop vacuum really cost to own](https://mukbuddy.com/blog/shop-vacuum-cost-of-ownership/)
-- [what size shop vacuum do i need](https://mukbuddy.com/blog/what-size-shop-vacuum/)
+- [what size vac the job calls for](https://mukbuddy.com/blog/what-size-shop-vacuum/)
 
 [check Muk Buddy fit and ordering](https://thefloorlord.com/product/muk-buddy/)

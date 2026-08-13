@@ -527,7 +527,7 @@ Test one stage at a time.
 
 - [the guide to shop vacuum maintenance checklist](https://mukbuddy.com/blog/shop-vacuum-maintenance-checklist/)
 - [the complete shop vacuum troubleshooting guide](https://mukbuddy.com/blog/shop-vacuum-troubleshooting/)
-- [why is my shop vacuum blowing hot air](https://mukbuddy.com/blog/shop-vacuum-blowing-hot-air/)
-- [why is my shop vacuum suction pulsing or surging](https://mukbuddy.com/blog/shop-vacuum-suction-pulsing/)
+- [a vac blowing hot air](https://mukbuddy.com/blog/shop-vacuum-blowing-hot-air/)
+- [surging suction under load](https://mukbuddy.com/blog/shop-vacuum-suction-pulsing/)
 
 [see how Muk Buddy’s two-chamber system works](https://mukbuddy.com/)

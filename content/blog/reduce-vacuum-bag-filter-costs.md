@@ -563,6 +563,8 @@ Focus on:
 - [shop vacuum troubleshooting guide](https://mukbuddy.com/blog/shop-vacuum-troubleshooting/)
 - [shop vacuum bag comparison guide](https://mukbuddy.com/blog/paper-vs-fleece-vs-reusable-vacuum-bags/)
 - [are reusable shop vacuum bags worth it](https://mukbuddy.com/blog/are-reusable-shop-vacuum-bags-worth-it/)
-- [disposable vs. reusable vacuum bags](https://mukbuddy.com/blog/disposable-vs-reusable-vacuum-bags/)
+- [the real difference between disposable and reusable](https://mukbuddy.com/blog/disposable-vs-reusable-vacuum-bags/)
+- [the fastest way to stop buying bags every month](https://mukbuddy.com/blog/10-reasons-reusable-shop-vac-bag/)
+- [the real price of going without a bag](https://mukbuddy.com/blog/running-shop-vac-without-bag-cost/)
 
 [see the Muk Buddy product details](https://thefloorlord.com/product/muk-buddy/)

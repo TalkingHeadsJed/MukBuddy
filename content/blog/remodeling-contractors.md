@@ -446,7 +446,7 @@ No single configuration is ideal for every stage.
 
 - [paper vs. fleece vs. reusable shop vacuum bags](https://mukbuddy.com/blog/paper-vs-fleece-vs-reusable-vacuum-bags/)
 - [shop vacuum guide for contractors](https://mukbuddy.com/blog/contractors/)
-- [best shop vacuum for electricians](https://mukbuddy.com/blog/electricians/)
-- [best shop vacuum for flooring contractors](https://mukbuddy.com/blog/flooring-contractors/)
+- [shop vacuums suited to electrical trades](https://mukbuddy.com/blog/electricians/)
+- [shop vacuums built for flooring contractors](https://mukbuddy.com/blog/flooring-contractors/)
 
 [check fit for your crew](https://mukbuddy.com/contact/)

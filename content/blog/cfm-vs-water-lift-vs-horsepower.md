@@ -1421,7 +1421,7 @@ It is the one that maintains the right balance throughout the job.
 
 - [shop vacuum maintenance checklist](https://mukbuddy.com/blog/shop-vacuum-maintenance-checklist/)
 - [complete shop vacuum troubleshooting guide](https://mukbuddy.com/blog/shop-vacuum-troubleshooting/)
-- [why is my shop vacuum hose collapsing, whistling, or pulling flat](https://mukbuddy.com/blog/shop-vacuum-hose-collapsing/)
+- [a hose that collapses or whistles](https://mukbuddy.com/blog/shop-vacuum-hose-collapsing/)
 - [why does my shop vacuum keep tripping the breaker](https://mukbuddy.com/blog/shop-vacuum-trips-breaker/)
 
 [learn how Muk Buddy keeps debris out of the airflow path](https://mukbuddy.com/)

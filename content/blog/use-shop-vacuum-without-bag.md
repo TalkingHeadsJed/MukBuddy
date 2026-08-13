@@ -1524,5 +1524,8 @@ And evaluate performance across the entire job—not only during the first minut
 - [the shop vacuum bag comparison guide](https://mukbuddy.com/blog/paper-vs-fleece-vs-reusable-vacuum-bags/)
 - [how full should a shop vacuum bag be](https://mukbuddy.com/blog/how-full-shop-vacuum-bag/)
 - [why does my shop vacuum bag collapse](https://mukbuddy.com/blog/shop-vacuum-bag-collapses/)
+- [whether a shop vac bag can actually be reused](https://mukbuddy.com/blog/can-you-reuse-a-shop-vac-bag/)
+- [when a bag is required and when it isn't](https://mukbuddy.com/blog/do-you-need-a-bag-in-a-shop-vac/)
+- [what running bagless actually costs you](https://mukbuddy.com/blog/running-shop-vac-without-bag-cost/)
 
 [check Muk Buddy fit and ordering](https://thefloorlord.com/product/muk-buddy/)

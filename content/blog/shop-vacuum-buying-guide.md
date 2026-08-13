@@ -1770,13 +1770,13 @@ Buy a complete system.
 ## Related guides
 
 - [shop vacuum troubleshooting guide](https://mukbuddy.com/blog/shop-vacuum-troubleshooting/)
-- [How Long Do Shop Vacuums Last](https://mukbuddy.com/blog/how-long-shop-vacuums-last/)
+- [the realistic lifespan of a shop vac](https://mukbuddy.com/blog/how-long-shop-vacuums-last/)
 - [Shop Vacuum Accessories Guide](https://mukbuddy.com/blog/shop-vacuum-accessories/)
 - [How Much Does a Shop Vacuum Really Cost to Own](https://mukbuddy.com/blog/shop-vacuum-cost-of-ownership/)
 - [What Shop Vacuum Hose Size Do You Need](https://mukbuddy.com/blog/shop-vacuum-hose-size/)
 - [Shop Vacuum Tank Size vs. Usable Capacity](https://mukbuddy.com/blog/shop-vacuum-tank-size-capacity/)
-- [Shop Vacuum vs. Dust Extractor](https://mukbuddy.com/blog/shop-vacuum-vs-dust-extractor/)
+- [shop vac against a dust extractor](https://mukbuddy.com/blog/shop-vacuum-vs-dust-extractor/)
 - [Shop Vacuum vs. HEPA Dust Extractor for Renovation Work](https://mukbuddy.com/blog/shop-vacuum-vs-hepa-dust-extractor-renovation/)
-- [What Size Shop Vacuum Do I Need](https://mukbuddy.com/blog/what-size-shop-vacuum/)
+- [sizing a shop vac to the work](https://mukbuddy.com/blog/what-size-shop-vacuum/)
 
 [see the Muk Buddy product details](https://thefloorlord.com/product/muk-buddy/)

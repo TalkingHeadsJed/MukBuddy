@@ -573,5 +573,6 @@ The greatest threats are:
 - [shop vacuum buying guide](https://mukbuddy.com/blog/shop-vacuum-buying-guide/)
 - [shop vacuum accessories guide](https://mukbuddy.com/blog/shop-vacuum-accessories/)
 - [shop vacuum tank size vs. usable capacity](https://mukbuddy.com/blog/shop-vacuum-tank-size-capacity/)
+- [downtime as the hidden cost of a dying vac](https://mukbuddy.com/blog/shop-vac-downtime-costing-your-crew/)
 
 [learn how Muk Buddy keeps debris out of the airflow path](https://mukbuddy.com/)

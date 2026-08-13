@@ -557,7 +557,7 @@ Safe shop vacuum use requires:
 ## Related guides
 
 - [the guide to shop vacuum troubleshooting guide](https://mukbuddy.com/blog/shop-vacuum-troubleshooting/)
-- [Why Does My Shop Vacuum Hose Give Me Static Shocks](https://mukbuddy.com/blog/shop-vacuum-static-shocks/)
+- [stopping static shocks off the hose](https://mukbuddy.com/blog/shop-vacuum-static-shocks/)
 - [learn more about contractor shop vacuum pre-use inspection checklist](https://mukbuddy.com/blog/contractor-vacuum-pre-use-inspection/)
 - [learn more about shop vacuum dust disposal guide](https://mukbuddy.com/blog/shop-vacuum-dust-disposal/)
 

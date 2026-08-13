@@ -397,7 +397,11 @@ Correct installation requires:
 
 - [the guide to how much does a shop vacuum really cost to own](https://mukbuddy.com/blog/shop-vacuum-cost-of-ownership/)
 - [the shop vacuum bag comparison guide](https://mukbuddy.com/blog/paper-vs-fleece-vs-reusable-vacuum-bags/)
-- [why is dust getting around my shop vacuum bag](https://mukbuddy.com/blog/dust-getting-around-vacuum-bag/)
+- [why fines end up in the tank instead of the bag](https://mukbuddy.com/blog/dust-getting-around-vacuum-bag/)
 - [why does my shop vacuum bag keep falling off](https://mukbuddy.com/blog/shop-vacuum-bag-falling-off/)
+- [fitting a reusable bag to a DeWalt or Craftsman vac](https://mukbuddy.com/blog/reusable-shop-vac-bag-for-dewalt-craftsman/)
+- [fitting a reusable bag to a RIDGID wet/dry vac](https://mukbuddy.com/blog/reusable-shop-vac-bag-for-ridgid/)
+- [deciding whether your job needs a bag at all](https://mukbuddy.com/blog/do-you-need-a-bag-in-a-shop-vac/)
+- [why a correctly fitted paper bag still splits](https://mukbuddy.com/blog/why-disposable-shop-vac-bags-fail/)
 
 [check Muk Buddy fit and ordering](https://thefloorlord.com/product/muk-buddy/)

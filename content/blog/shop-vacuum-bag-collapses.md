@@ -384,5 +384,6 @@ Bag collapse usually results from:
 - [the shop vacuum bag comparison guide](https://mukbuddy.com/blog/paper-vs-fleece-vs-reusable-vacuum-bags/)
 - [learn more about how full should a shop vacuum bag be](https://mukbuddy.com/blog/how-full-shop-vacuum-bag/)
 - [learn more about how to install a shop vacuum bag correctly](https://mukbuddy.com/blog/install-shop-vacuum-bag/)
+- [how disposable bags fail mid-job](https://mukbuddy.com/blog/why-disposable-shop-vac-bags-fail/)
 
 [check Muk Buddy fit and ordering](https://thefloorlord.com/product/muk-buddy/)

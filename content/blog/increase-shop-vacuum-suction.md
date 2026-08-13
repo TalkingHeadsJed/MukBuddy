@@ -924,6 +924,6 @@ It is restoring the vacuum’s ability to breathe.
 - [the guide to shop vacuum maintenance checklist](https://mukbuddy.com/blog/shop-vacuum-maintenance-checklist/)
 - [the complete shop vacuum troubleshooting guide](https://mukbuddy.com/blog/shop-vacuum-troubleshooting/)
 - [CFM vs. water lift vs. horsepower](https://mukbuddy.com/blog/cfm-vs-water-lift-vs-horsepower/)
-- [why is my shop vacuum hose collapsing, whistling, or pulling flat](https://mukbuddy.com/blog/shop-vacuum-hose-collapsing/)
+- [why your hose is whistling under load](https://mukbuddy.com/blog/shop-vacuum-hose-collapsing/)
 
 [see how Muk Buddy’s two-chamber system works](https://mukbuddy.com/)

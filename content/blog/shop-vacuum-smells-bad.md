@@ -420,6 +420,6 @@ Remove the source instead of masking it.
 - [the guide to shop vacuum maintenance checklist](https://mukbuddy.com/blog/shop-vacuum-maintenance-checklist/)
 - [the complete wet/dry vacuum guide](https://mukbuddy.com/blog/how-wet-dry-vacuum-works/)
 - [best vacuum for pool and hot tub cleanup](https://mukbuddy.com/blog/best-vacuum-pool-hot-tub-cleanup/)
-- [can you vacuum mud with a shop vacuum](https://mukbuddy.com/blog/vacuum-mud-with-shop-vacuum/)
+- [vacuuming mud without wrecking the vac](https://mukbuddy.com/blog/vacuum-mud-with-shop-vacuum/)
 
 [see how Muk Buddy’s two-chamber system works](https://mukbuddy.com/)

@@ -64,7 +64,7 @@ You keep your DeWalt or Craftsman filter in place; the bag's job is to protect i
 
 ## How it stacks up against the other bags
 
-If you're weighing your options, we put Muk Buddy head-to-head with the disposable field in [the 5 best shop vac bags](/blog/best-shop-vac-bags/), and ran the one-year cost side by side in [disposable vs. reusable shop vac bags](/blog/disposable-vs-reusable-shop-vac-bags/). Short version: on a DeWalt or Craftsman that sees real fine-dust work, the reusable bag pays for itself in a couple of months and keeps saving after that.
+If you're weighing your options, we put Muk Buddy head-to-head with the disposable field in [a contractor's shortlist of shop vac bags](/blog/best-shop-vac-bags/), and ran the one-year cost side by side in [disposable vs. reusable shop vac bags](/blog/disposable-vs-reusable-shop-vac-bags/). Short version: on a DeWalt or Craftsman that sees real fine-dust work, the reusable bag pays for itself in a couple of months and keeps saving after that.
 
 ## The bottom line for DeWalt and Craftsman owners
 
