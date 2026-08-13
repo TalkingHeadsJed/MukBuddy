@@ -64,7 +64,7 @@ You keep your RIDGID filter in place; the bag's job is to protect it. That's the
 
 ## How it stacks up against the other bags
 
-If you're comparing your options, we put Muk Buddy head-to-head with the disposable field — VF3502 included — in [the 5 best shop vac bags](/blog/best-shop-vac-bags/), and ran the one-year cost side by side in [disposable vs. reusable shop vac bags](/blog/disposable-vs-reusable-shop-vac-bags/). The short version: on a RIDGID that sees real fine-dust work, the reusable bag pays for itself in a few weeks and keeps saving after that.
+If you're comparing your options, we put Muk Buddy head-to-head with the disposable field — VF3502 included — in [how the common shop vac bags compare](/blog/best-shop-vac-bags/), and ran the one-year cost side by side in [disposable vs. reusable shop vac bags](/blog/disposable-vs-reusable-shop-vac-bags/). The short version: on a RIDGID that sees real fine-dust work, the reusable bag pays for itself in a few weeks and keeps saving after that.
 
 ## The bottom line for RIDGID owners
 

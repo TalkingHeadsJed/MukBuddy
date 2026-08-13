@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Draft Previews</title>
+<meta name="description" content="Internal draft preview index." />
+<link rel="canonical" href="https://mukbuddy.com/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/" />
+<meta name="robots" content="noindex, nofollow" />
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Draft Previews" />
+<meta property="og:description" content="Internal draft preview index." />
+<meta property="og:url" content="https://mukbuddy.com/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/" />
+
+<meta property="og:site_name" content="Muk Buddy" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Draft Previews" />
+<meta name="twitter:description" content="Internal draft preview index." />
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Anton&family=Bangers&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+<link rel="icon" href="/favicon.ico" />
+
+<style>
+:root {
+  --cream:#FFF4D6; --cream-2:#FFF9E8; --ink:#1A0625; --muk:#7A6FE0;
+  --slime:#39FF14; --slime-600:#1FAB07;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.65}
+a{color:var(--muk);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px}
+a:hover{color:var(--ink);background:var(--slime)}
+header.nav{background:var(--ink);color:var(--cream);padding:14px 24px;display:flex;align-items:center;justify-content:space-between;border-bottom:4px solid var(--slime)}
+header.nav a.brand{color:var(--cream);font-family:'Bowlby One',Impact,sans-serif;font-size:22px;text-decoration:none;letter-spacing:.08em}
+header.nav a.brand:hover{background:transparent;color:var(--slime)}
+header.nav nav a{color:var(--cream);font-family:Bangers,Impact,sans-serif;font-size:18px;letter-spacing:.15em;margin-left:18px;text-decoration:none;text-transform:uppercase}
+header.nav nav a:hover{color:var(--slime);background:transparent}
+main{max-width:760px;margin:0 auto;padding:48px 24px 80px}
+main.wide{max-width:1100px}
+.kicker{font-family:Bangers,Impact,sans-serif;font-size:14px;letter-spacing:.3em;color:var(--muk);text-transform:uppercase;margin:0 0 12px}
+h1.title{font-family:'Bowlby One',Impact,sans-serif;font-size:clamp(2rem,4vw,3.5rem);line-height:1.05;margin:0 0 16px;color:var(--ink)}
+.byline{font-family:Inter,sans-serif;font-size:14px;color:#5A4A72;margin-bottom:32px}
+.byline .dot{margin:0 8px;opacity:.5}
+.hero-img{width:100%;border:4px solid var(--ink);margin:8px 0 36px;display:block}
+.post{font-size:18px}
+.post p,.post ul,.post ol,.post blockquote,.post table{margin:0 0 22px}
+.post h2{font-family:Anton,Impact,sans-serif;font-size:32px;line-height:1.1;margin:40px 0 18px;letter-spacing:.01em}
+.post h3{font-family:Anton,Impact,sans-serif;font-size:22px;margin:32px 0 14px}
+.post ul,.post ol{padding-left:24px}
+.post li{margin:6px 0}
+.post blockquote{border-left:4px solid var(--muk);padding:8px 18px;background:var(--cream-2);font-style:italic;font-size:19px}
+.post code{background:var(--cream-2);padding:2px 6px;border-radius:3px;font-size:.92em}
+.post pre{background:var(--ink);color:var(--cream);padding:16px;overflow:auto;border:2px solid var(--ink)}
+.post pre code{background:transparent;color:inherit;padding:0}
+.post img{max-width:100%;height:auto;border:3px solid var(--ink)}
+.post table{width:100%;border-collapse:collapse}
+.post th,.post td{border:2px solid var(--ink);padding:10px;text-align:left}
+.post th{background:var(--muk);color:var(--cream);font-family:Anton,sans-serif;text-transform:uppercase;font-size:14px;letter-spacing:.05em}
+.tag{display:inline-block;background:var(--ink);color:var(--cream);font-family:Bangers,sans-serif;font-size:13px;letter-spacing:.15em;padding:3px 10px;margin-right:6px;text-transform:uppercase}
+.cta-card{margin-top:48px;padding:24px;background:var(--ink);color:var(--cream);border:4px solid var(--slime);text-align:center}
+.cta-card h3{font-family:'Bowlby One',Impact,sans-serif;font-size:28px;margin:0 0 8px;color:var(--cream)}
+.cta-card p{color:var(--cream);opacity:.85;margin:0 0 18px}
+.cta-card a.btn{display:inline-block;background:var(--slime);color:var(--ink);font-family:Bangers,sans-serif;font-size:20px;letter-spacing:.15em;padding:12px 24px;border:3px solid var(--cream);text-decoration:none;text-transform:uppercase}
+.cta-card a.btn:hover{background:var(--cream);background:#a4ff5a}
+footer.foot{background:var(--ink);color:var(--cream);padding:32px 24px;text-align:center;font-size:13px}
+footer.foot a{color:var(--slime);background:transparent}
+.list-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px;margin-top:32px}
+.card{background:#fff;border:3px solid var(--ink);text-decoration:none;color:var(--ink);display:block;transition:transform .15s}
+.card:hover{transform:translate(-2px,-2px);background:#fff}
+.card .ph{height:180px;background:var(--cream-2) center/cover no-repeat;border-bottom:3px solid var(--ink)}
+.card .body{padding:16px 18px}
+.card .meta{font-family:Bangers,sans-serif;font-size:12px;letter-spacing:.2em;color:var(--muk);text-transform:uppercase}
+.card h2{font-family:Anton,sans-serif;font-size:22px;line-height:1.15;margin:6px 0 10px}
+.card p{font-size:14px;color:#5A4A72;margin:0}
+.video-wrap{position:relative;width:100%;padding-top:56.25%;margin:0 0 36px;border:4px solid var(--ink);background:#000;overflow:hidden}
+.video-wrap.vertical{padding-top:0;aspect-ratio:9/16;max-width:380px;margin:0 auto 36px;display:block}
+.video-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+.faq{margin:48px 0 8px;border-top:3px solid var(--ink);padding-top:32px}
+.faq > h2{font-family:Anton,Impact,sans-serif;font-size:28px;margin:0 0 18px}
+.faq details{background:#fff;border:3px solid var(--ink);padding:14px 18px;margin:0 0 12px}
+.faq details[open]{background:var(--cream-2)}
+.faq summary{cursor:pointer;font-family:Anton,Impact,sans-serif;font-size:19px;line-height:1.25;list-style:none;outline-offset:3px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:'+';float:right;font-family:'Bowlby One',sans-serif;color:var(--muk);font-size:22px;line-height:1;margin-left:12px}
+.faq details[open] summary::after{content:'–'}
+.faq .a{margin-top:12px;font-size:16px;line-height:1.6}
+.faq .a p{margin:0 0 12px}
+.faq .a p:last-child{margin:0}
+.author-box{margin:48px 0 8px;padding:20px 22px;background:var(--cream-2);border-left:6px solid var(--muk);font-size:15px;line-height:1.55}
+.author-box .name{font-family:Anton,Impact,sans-serif;font-size:18px;letter-spacing:.04em;margin:0 0 6px;text-transform:uppercase;color:var(--ink)}
+.author-box p{margin:0;color:#3a2a55}
+</style>
+
+
+</head>
+<body>
+
+<header class="nav">
+  <a href="/" class="brand">MUK&nbsp;BUDDY</a>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/blog/">Blog</a>
+    <a href="/#contact">Contact</a>
+  </nav>
+</header>
+
+
+<main class="wide">
+  
+<div style="background:#FFD400;color:#1A0625;border:4px solid #1A0625;padding:14px 18px;margin:0 0 24px;font-family:Anton,Impact,sans-serif;font-size:16px;letter-spacing:.08em;text-transform:uppercase;line-height:1.3">
+  🚧 DRAFT PREVIEW — not published. This page is hidden from search engines and the public blog index. Set <code>published: true</code> in the post's frontmatter to go live.
+</div>
+  <p class="kicker">Internal</p>
+  <h1 class="title">Draft Previews</h1>
+  <p style="font-size:18px;color:#5A4A72;max-width:560px">
+    Unpublished posts. Set <code>published: true</code> in frontmatter to promote them to the public blog.
+  </p>
+  <div class="list-grid"><a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/vacuum-sawdust-shop-vacuum/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-26</div>
+    <h2>Can You Vacuum Sawdust With a Shop Vacuum?</h2>
+    <p>Learn when a shop vacuum can collect sawdust, how fine wood dust affects filters, which hose size to use, when to add a cyclone, and when a dust collector is better.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/shop-vacuum-static-shocks/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-25</div>
+    <h2>Why Does My Shop Vacuum Hose Give Me Static Shocks?</h2>
+    <p>Learn why vacuum hoses build static electricity, which dust and conditions increase shocks, and how anti-static hoses, grounding, humidity, and correct equipment reduce static buildup.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/shop-vacuum-leaving-dust/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-25</div>
+    <h2>Why Is My Shop Vacuum Leaving Dust Behind?</h2>
+    <p>Learn why a shop vacuum leaves dust on floors and surfaces, including weak airflow, wrong attachments, air leaks, clogged filters, fine particles, static, and poor cleaning technique.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/shop-vacuum-hose-size/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-25</div>
+    <h2>What Shop Vacuum Hose Size Do You Need?</h2>
+    <p>Compare small, medium, and large shop vacuum hose sizes for suction, airflow, power tools, fine dust, water, sawdust, pet hair, and construction debris.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/shop-vacuum-filter-ratings-micron-claims/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-25</div>
+    <h2>Shop Vacuum Filter Ratings and Micron Claims Explained</h2>
+    <p>Learn what micron ratings, filtration efficiency, HEPA labels, particle size, airflow resistance, and whole-system sealing mean when choosing a shop vacuum filter.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/automatic-vs-manual-filter-cleaning/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-25</div>
+    <h2>Automatic Filter Cleaning vs. Manual Filter Cleaning</h2>
+    <p>Compare automatic, semi-automatic, and manual shop vacuum filter cleaning by airflow, fine-dust performance, maintenance, noise, cost, and contractor use.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/test-shop-vacuum-suction-airflow/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-24</div>
+    <h2>How to Test Shop Vacuum Suction and Airflow</h2>
+    <p>Learn how to test a shop vacuum for airflow loss, hose restriction, filter clogging, bag loading, air leaks, and declining working performance.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/shop-vacuum-without-filter/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-24</div>
+    <h2>What Happens If You Use a Shop Vacuum Without a Filter?</h2>
+    <p>Learn what happens when a shop vacuum runs without a filter, when wet pickup may use a different configuration, and how dust can damage the motor or blow from the exhaust.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/shop-vacuum-suction-pulsing/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-24</div>
+    <h2>Why Is My Shop Vacuum Suction Pulsing or Surging?</h2>
+    <p>Learn why shop vacuum suction pulses, surges, or repeatedly cuts in and out—and how clogs, float movement, filter cleaning, wet foam, bags, and motor problems cause it.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/shop-vacuum-blowing-hot-air/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-24</div>
+    <h2>Why Is My Shop Vacuum Blowing Hot Air?</h2>
+    <p>Learn why shop vacuum exhaust feels warm or hot, when it is normal, and how clogged filters, bags, hoses, motor wear, and blocked cooling airflow cause overheating.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/contractor-vacuum-pre-use-inspection/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-24</div>
+    <h2>Contractor Shop Vacuum Pre-Use Inspection Checklist</h2>
+    <p>Use this contractor shop vacuum inspection checklist to identify damaged hoses, clogged filters, incorrect bags, wet components, electrical problems, and airflow restrictions before work begins.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/vacuum-bag-material/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-23</div>
+    <h2>How Vacuum Bag Material Affects Suction, Filtration, and Capacity</h2>
+    <p>Learn how paper, fleece, synthetic, and reusable vacuum bag materials affect airflow, fine-dust capture, usable capacity, durability, and filter protection.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/shop-vacuum-tank-size-capacity/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-23</div>
+    <h2>Shop Vacuum Tank Size vs. Usable Capacity</h2>
+    <p>Learn why a shop vacuum’s advertised tank size is different from its usable debris, bag, and liquid capacity—and how to choose the right size for your workload.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/reusable-vacuum-bag-vs-cyclone/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-23</div>
+    <h2>Reusable Vacuum Bag vs. Cyclone Separator</h2>
+    <p>Compare reusable shop vacuum bags and cyclone dust separators by portability, airflow, fine-dust capture, capacity, disposal, filter protection, and contractor operating cost.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/reusable-vacuum-bag-losing-airflow/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-23</div>
+    <h2>Why Is My Reusable Vacuum Bag Losing Airflow?</h2>
+    <p>Learn why reusable shop vacuum bags lose airflow, including embedded fine dust, moisture, overfilling, collapsed material, clogged closures, and permanent filtration-media restriction.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/reusable-vacuum-bag-lifespan/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-23</div>
+    <h2>How Long Do Reusable Shop Vacuum Bags Last?</h2>
+    <p>Learn how long reusable vacuum bags last, what shortens their service life, how to measure cost per use, and when fabric, seams, collars, or closures require replacement.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/shop-vacuum-bag-falling-off/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-22</div>
+    <h2>Why Does My Shop Vacuum Bag Keep Falling Off?</h2>
+    <p>Learn why a shop vacuum bag detaches from the inlet and how collar size, installation, bag weight, pressure, moisture, and incompatible designs cause failure.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/shop-vacuum-bag-collapses/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-22</div>
+    <h2>Why Does My Shop Vacuum Bag Collapse?</h2>
+    <p>Learn why a shop vacuum collection bag or plastic liner collapses, blocks the inlet, reduces suction, or tears—and how to correct installation, airflow, and compatibility problems.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/shop-vacuum-accessories/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-22</div>
+    <h2>Shop Vacuum Accessories Guide</h2>
+    <p>Learn which shop vacuum accessories improve dust capture, suction, filtration, portability, wet pickup, tool extraction, and cleanup productivity.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/install-shop-vacuum-bag/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-22</div>
+    <h2>How to Install a Shop Vacuum Bag Correctly</h2>
+    <p>Learn how to install a shop vacuum bag without blocking the inlet, damaging the collar, interfering with the float, or allowing dust to bypass the collection system.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/how-full-shop-vacuum-bag/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-22</div>
+    <h2>How Full Should a Shop Vacuum Bag Be?</h2>
+    <p>Learn when to change or empty a shop vacuum bag based on suction, airflow, dust type, weight, inlet position, and working capacity—not just visible fullness.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/store-shop-vacuum/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-21</div>
+    <h2>How to Store a Shop Vacuum Properly</h2>
+    <p>Learn how to store a shop vacuum after dry or wet use without trapping moisture, damaging filters, kinking hoses, or creating mold and odors.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/shop-vacuum-trips-breaker/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-21</div>
+    <h2>Why Does My Shop Vacuum Keep Tripping the Breaker?</h2>
+    <p>Learn why a shop vacuum trips a circuit breaker, including overloaded circuits, extension cords, motor problems, wet components, clogged airflow, and tool-startup loads.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/shop-vacuum-hose-collapsing/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-21</div>
+    <h2>Why Is My Shop Vacuum Hose Collapsing, Whistling, or Pulling Flat?</h2>
+    <p>Learn why a shop vacuum hose collapses, whistles, or pulls flat—and how clogs, filters, bags, small attachments, heat, and damaged hose walls affect airflow.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/prevent-mold-wet-dry-vacuum/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-21</div>
+    <h2>How to Prevent Mold and Bacteria in a Wet/Dry Vacuum</h2>
+    <p>Learn how to prevent mold, bacteria, odors, and contamination inside a wet/dry vacuum by cleaning the tank, hose, filter, float, and collection system correctly.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/how-long-shop-vacuums-last/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-21</div>
+    <h2>How Long Do Shop Vacuums Last?</h2>
+    <p>Learn how long shop vacuums typically last, which factors shorten motor life, when repairs make sense, and how bags, filters, airflow, and maintenance affect lifespan.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/vacuum-mud-with-shop-vacuum/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-20</div>
+    <h2>Can You Vacuum Mud With a Shop Vacuum?</h2>
+    <p>Learn when a wet/dry vacuum can collect mud, how to prevent hose clogs, filter damage, excessive weight, hardened residue, and difficult disposal.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/use-shop-vacuum-without-bag/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-20</div>
+    <h2>Can You Use a Shop Vacuum Without a Bag?</h2>
+    <p>Learn when you can use a shop vacuum without a collection bag, when a bag is necessary, and how bagless operation affects filters, suction, dust control, and motor life.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/shop-vacuum-smells-bad/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-20</div>
+    <h2>Why Does My Shop Vacuum Smell Bad?</h2>
+    <p>Learn why a shop vacuum smells musty, sour, burnt, or like sewage—and how to clean the tank, hose, filter, and collection system safely.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/increase-shop-vacuum-suction/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-20</div>
+    <h2>How to Increase Shop Vacuum Suction</h2>
+    <p>Learn how to increase shop vacuum suction by restoring airflow, clearing restrictions, maintaining filters, checking seals, and correcting common performance problems.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/cyclone-separator-vs-vacuum-bag/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-20</div>
+    <h2>Cyclone Dust Separator vs. Vacuum Bag</h2>
+    <p>Compare cyclone dust separators and vacuum bags by filter protection, airflow, dust capture, portability, maintenance, cost, and performance with drywall, concrete, sawdust, and construction debris.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/vacuum-filter-clogging-fast/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-19</div>
+    <h2>Why Does My Shop Vacuum Filter Keep Clogging So Fast?</h2>
+    <p>Does your shop vacuum filter clog after just a few minutes? Learn why filters clog so quickly, how airflow affects filter life, and how to dramatically extend filter performance.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/shop-vacuum-too-loud/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-19</div>
+    <h2>Why Is My Shop Vacuum So Loud?</h2>
+    <p>Is your shop vacuum louder than it used to be? Learn the most common causes of excessive vacuum noise, how to diagnose the problem, and when it&#39;s time for repairs.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/replace-shop-vacuum-filter/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-19</div>
+    <h2>How Often Should You Replace a Shop Vacuum Filter?</h2>
+    <p>Wondering when to replace your shop vacuum filter? Learn how long filters last, the warning signs they&#39;re worn out, and how to maximize filter life while maintaining peak suction.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/dust-collector-vs-shop-vacuum/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-19</div>
+    <h2>Dust Collector vs. Shop Vacuum</h2>
+    <p>Compare dust collectors and shop vacuums by airflow, suction pressure, hose size, filtration, tool compatibility, debris type, cost, and woodworking performance.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/clean-shop-vacuum-filter/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-19</div>
+    <h2>How to Clean a Shop Vacuum Filter</h2>
+    <p>Learn how to properly clean a shop vacuum filter without damaging it. Discover what works, what doesn&#39;t, and how to restore airflow while extending filter life.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/vacuum-motor-overheating/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-18</div>
+    <h2>Why Vacuum Motors Overheat</h2>
+    <p>Learn why shop vacuum motors overheat, how restricted airflow causes excessive heat, and what contractors can do to extend motor life and maintain peak performance.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/shop-vacuum-vs-hepa-dust-extractor-renovation/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-18</div>
+    <h2>Shop Vacuum vs. HEPA Dust Extractor for Renovation Work</h2>
+    <p>Compare shop vacuums and HEPA dust extractors for remodeling, sanding, drilling, cutting, fine-dust cleanup, portability, filtration, and operating cost.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/shop-vacuum-keeps-clogging/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-18</div>
+    <h2>Why Does My Shop Vacuum Keep Clogging?</h2>
+    <p>Does your shop vacuum keep clogging? Learn the most common causes, how to diagnose airflow restrictions, and how to prevent repeated clogs during drywall, concrete, and construction cleanup.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/shop-vacuum-burning-smell/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-18</div>
+    <h2>Why Does My Shop Vacuum Smell Like It’s Burning?</h2>
+    <p>Does your shop vacuum smell like it&#39;s burning? Learn the most common causes, how to diagnose the problem, and when it&#39;s safe to continue using your vacuum.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/shop-vacuum-blowing-dust/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-18</div>
+    <h2>Why Is My Shop Vacuum Blowing Dust Out the Exhaust?</h2>
+    <p>Is your shop vacuum blowing dust out the exhaust? Learn the most common causes, how to diagnose the problem, and how to stop dust from escaping while protecting your vacuum.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/tile-masonry-contractors/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-17</div>
+    <h2>Best Shop Vacuum for Tile and Masonry Contractors</h2>
+    <p>Learn how tile and masonry contractors should choose a vacuum for cutting dust, mortar, grout, tile fragments, slurry, filtration, and jobsite cleanup.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/dust-escaping-power-tool-shroud/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-17</div>
+    <h2>Why Is Dust Escaping From My Power Tool Shroud?</h2>
+    <p>Learn why dust escapes from grinder, sander, saw, and drill shrouds—and how airflow, seals, worn brushes, hose restrictions, and poor positioning affect source capture.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/control-construction-dust-occupied-home/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-17</div>
+    <h2>How to Control Construction Dust in an Occupied Home</h2>
+    <p>Learn how contractors can reduce drywall, sanding, sawdust, and remodeling dust in occupied homes using source capture, barriers, negative pressure, vacuum filtration, and controlled disposal.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/connect-drywall-sander-shop-vacuum/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-17</div>
+    <h2>How to Connect a Drywall Sander to a Shop Vacuum</h2>
+    <p>Learn how to connect a drywall sander to a shop vacuum using the correct hose, adapter, filtration, bag, airflow, and dust-control setup.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/switch-shop-vacuum-dry-to-wet/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-16</div>
+    <h2>How to Switch a Shop Vacuum From Dry to Wet Pickup</h2>
+    <p>Follow the correct process for converting a wet/dry vacuum from dust collection to water pickup without ruining the bag, filter, or motor.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/remodeling-contractors/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-16</div>
+    <h2>Best Shop Vacuum for Remodeling Contractors</h2>
+    <p>Learn how remodeling contractors should choose a shop vacuum for drywall dust, sawdust, demolition debris, water, portability, filtration, and operating cost.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/electricians/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-16</div>
+    <h2>Best Shop Vacuum for Electricians</h2>
+    <p>Learn how electricians should choose a portable shop vacuum for drilling dust, drywall debris, wire scraps, attics, service calls, and finished-home cleanup.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/best-vacuum-pool-hot-tub-cleanup/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-16</div>
+    <h2>Best Vacuum for Pool and Hot Tub Cleanup</h2>
+    <p>Learn how to choose a wet/dry vacuum for pool and hot tub cleanup, remaining water removal, debris, filter cleaning, hose reach, drainage, and safe use.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/vacuum-water-with-shop-vacuum/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-15</div>
+    <h2>Can You Vacuum Water With a Shop Vacuum?</h2>
+    <p>Learn when a shop vacuum can collect water, how to configure it for wet pickup, which bags and filters to remove, and how to avoid motor damage.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/shop-vacuum-filter-wet/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-15</div>
+    <h2>Why Is My Shop Vacuum Filter Wet?</h2>
+    <p>Learn why a wet/dry vacuum filter becomes wet, what it does to airflow and filtration, and how to fix overfilling, foam, float, and setup problems.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/flooring-contractors/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-15</div>
+    <h2>Best Shop Vacuum for Flooring Contractors</h2>
+    <p>Learn how flooring contractors should choose a vacuum for sanding dust, subfloor preparation, demolition debris, adhesives, and final cleanup.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/dog-groomers/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-15</div>
+    <h2>Best Shop Vacuum for Dog Groomers</h2>
+    <p>Learn how dog groomers should choose a shop vacuum for pet hair, nail dust, water, odors, daily cleanup, filtration, and reusable collection.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/shop-vacuum-vs-dust-extractor/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-14</div>
+    <h2>Shop Vacuum vs. Dust Extractor</h2>
+    <p>Compare shop vacuums and dust extractors by airflow, filtration, filter cleaning, tool compatibility, dust containment, cost, and professional applications.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/contractors/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-14</div>
+    <h2>Best Shop Vacuum for Contractors</h2>
+    <p>Learn how contractors should choose a shop vacuum based on debris type, fine-dust control, durability, portability, capacity, airflow, and operating cost.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/commercial-cleaning/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-14</div>
+    <h2>Best Vacuum System for Commercial Cleaning</h2>
+    <p>Learn how to choose a commercial vacuum system based on filtration, airflow, capacity, durability, noise, reusable bags, maintenance, and total ownership cost.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/best-shop-vacuum-concrete-dust/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-08-14</div>
+    <h2>Best Shop Vacuum for Concrete Dust</h2>
+    <p>Learn how to choose a vacuum for concrete dust based on source capture, filtration, filter cleaning, airflow, water lift, containment, and tool compatibility.</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/hepa-shop-vac-bag-fine-dust-silica/">
+  <div class="ph" style="background-image:url('https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-07-05</div>
+    <h2>Do You Need a HEPA Shop Vac Bag? Fine Dust, Silica, and What a Reusable Bag Actually Does</h2>
+    <p>Straight answers on HEPA shop vac bags, fine dust, and silica — what HEPA actually means, when you truly need it, and where a reusable 2-chamber bag fits (it protects your filter; it isn&#39;t a HEPA filter).</p>
+  </div>
+</a>
+<a class="card" href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/sample-draft-how-to-clean-after-drywall-job/">
+  <div class="ph" style="background-image:url('https://customer-assets.emergentagent.com/job_6a1c42fd-4a04-4cd3-85c8-fa888b7ecaa2/artifacts/qrawjtug_image.png')"></div>
+  <div class="body">
+    <div class="meta">Draft · 2026-06-15</div>
+    <h2>How to clean up a drywall job without killing your shop vac</h2>
+    <p>Drywall dust eats vacuum motors faster than anything else on a jobsite. Here&#39;s the field-tested 6-minute cleanup that saves your vac and your lungs.</p>
+  </div>
+</a></div>
+</main>
+
+<footer class="foot">
+  Muk Buddy · <a href="/">Home</a> · <a href="/blog/">Blog</a> · <a href="/#contact">Contact</a><br/>
+  <small>© 2026 Muk Buddy</small>
+</footer>
+</body></html>

@@ -8,7 +8,7 @@ author: "Jason Brouk"
 author_bio: "Founder of Floor Lord Industries and inventor of Muk Buddy. Floor Lord is his flooring contracting business — Muk Buddy is the bag he built after 28 years of watching crews burn through disposables. Still building the tools contractors wish already existed."
 tags: ["shop-vac", "shop-vac-bags", "reusable", "wet-dry-vac", "contractor", "buying-guide"]
 publish_date: "2026-06-30"
-published: false
+published: true
 faq:
   - q: "Can you reuse a disposable shop vac bag?"
     a: "Not safely. Disposable bags are made of thin single-layer media meant to be sealed and tossed. Empty and reuse one and the seams tear, the seal fails, and fine dust leaks back into the air and the motor. So the common 'don't reuse your bag' advice is correct — about disposables. It just isn't the whole story, because bags actually built to be reused exist."
@@ -74,4 +74,4 @@ So — can you reuse a shop vac bag? Not the disposable in your hand; that advic
 
 [See the bag built to be used again →](/)
 
-*New to this? Start with [do you need a bag in a shop vac](/blog/do-you-need-a-bag-in-a-shop-vac/), or compare your options in [the 5 best shop vac bags](/blog/best-shop-vac-bags/).*
+*New to this? Start with [do you need a bag in a shop vac](/blog/do-you-need-a-bag-in-a-shop-vac/), or compare your options in [which shop vac bags actually hold up](/blog/best-shop-vac-bags/).*

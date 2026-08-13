@@ -67,4 +67,4 @@ So: do you need a bag in a shop vac? Not for chips and water. Absolutely for fin
 
 [See how Muk Buddy handles fine dust →](/)
 
-*Want to compare your options first? Here's [the 5 best shop vac bags](/blog/best-shop-vac-bags/), reusable and disposable — and a side-by-side [disposable vs. reusable cost breakdown](/blog/disposable-vs-reusable-shop-vac-bags/).*
+*Want to compare your options first? Here's [our pick of shop vac bags for fine dust](/blog/best-shop-vac-bags/), reusable and disposable — and a side-by-side [disposable vs. reusable cost breakdown](/blog/disposable-vs-reusable-shop-vac-bags/).*

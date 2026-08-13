@@ -18,10 +18,11 @@ export default function Header() {
   const closeNav = () => setOpen(false);
 
   const navItems = [
-    { label: "How It Works", href: "#how-it-works", testId: "nav-how" },
-    { label: "The Money", href: "#the-money", testId: "nav-roi" },
-    { label: "FAQ", href: "#faq", testId: "nav-faq" },
-    { label: "Contact", href: "#contact", testId: "nav-contact" },
+    { label: "Reusable Bag", href: "/muk-buddy-reusable-bag/", testId: "nav-reusable-bag" },
+    { label: "How It Works", href: "/#how-it-works", testId: "nav-how" },
+    { label: "The Money", href: "/#the-money", testId: "nav-roi" },
+    { label: "FAQ", href: "/#faq", testId: "nav-faq" },
+    { label: "Contact", href: "/#contact", testId: "nav-contact" },
   ];
 
   return (

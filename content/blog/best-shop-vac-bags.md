@@ -41,6 +41,8 @@ Walk into any supply house and the shop vac bag wall looks the same: a dozen dis
 
 So we ranked the bags contractors actually use on fine dust. **We judged each one on four things:** suction retention through a full load of fine dust, fitment across common vac brands, motor protection under sustained load, and real cost over a year of regular use — not the sticker price of a single bag. Four of the five are disposables. One isn't. Here's how they stack up.
 
+*Heads up: the four disposable bags below link to Amazon through our affiliate program — we may earn a small commission if you buy through them, at no extra cost to you. Muk Buddy is our own product, sold direct.*
+
 ## Quick comparison
 
 | Bag | Type | Fits | Approx. cost | Suction on fine dust |
@@ -84,11 +86,15 @@ If you run a 12–16 gallon RIDGID and you want a throwaway, the VF3502 ("Size A
 
 **Best for:** RIDGID 12–16 gal owners who want a simple disposable and mostly vac chips and general debris.
 
+[Check the RIDGID VF3502 on Amazon →](https://www.amazon.com/s?k=RIDGID+VF3502+dust+bags&tag=talkinghead02-20) · or [see the reusable option that fits RIDGID](/blog/reusable-shop-vac-bag-for-ridgid/)
+
 ## 3. Shop-Vac Type H (9067100) — Best Disposable for Fine Dust on a Shop-Vac
 
 Shop-Vac's Type H (about $12–16 a 2-pack) is the fine-dust disposable for compatible Shop-Vac models, and it does catch the small stuff better than a basic bag. Same structural catch as the rest, though: single path, so it still chokes and fades as it loads, and it's another recurring line item on every job.
 
 **Best for:** Shop-Vac owners who mostly deal with fine dust and prefer disposables.
+
+[Check the Shop-Vac Type H (9067100) on Amazon →](https://www.amazon.com/s?k=Shop-Vac+Type+H+9067100+bags&tag=talkinghead02-20)
 
 ## 4. Dustless WunderBag (HEPA) — Best Disposable for the Finest Dust
 
@@ -96,11 +102,15 @@ When the dust is genuinely hazardous — silica, lead, mold — the HEPA-rated D
 
 **Best for:** crews who need HEPA-level capture and accept disposable cost.
 
+[Check the Dustless WunderBag on Amazon →](https://www.amazon.com/s?k=Dustless+WunderBag+HEPA&tag=talkinghead02-20)
+
 ## 5. Budget Generic Bags (Casoman, Puroom, etc.) — Cheapest Per Bag
 
 The Amazon-brand compatibles (roughly $8–12 a pack) are the cheapest way to put a bag in your vac, and for light, occasional use they're fine. On fine dust and hard daily use they fail fastest — thinner media, quicker clogs, more blowouts mid-job. Cheap per bag, expensive per year, and a torn bag on a finished floor costs more than the bag ever saved.
 
 **Best for:** light or occasional use where cost-per-bag is all that matters.
+
+[Check budget shop vac dust bags on Amazon →](https://www.amazon.com/s?k=shop+vac+dust+bags&tag=talkinghead02-20)
 
 ## What about bagless or foam-sleeve filters?
 

@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>[DRAFT] Why Is Dust Escaping From My Power Tool Shroud?</title>
+<meta name="description" content="Learn why dust escapes from grinder, sander, saw, and drill shrouds—and how airflow, seals, worn brushes, hose restrictions, and poor positioning affect source capture." />
+<link rel="canonical" href="https://mukbuddy.com/blog/dust-escaping-power-tool-shroud/" />
+<meta name="robots" content="noindex, nofollow" />
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="[DRAFT] Why Is Dust Escaping From My Power Tool Shroud?" />
+<meta property="og:description" content="Learn why dust escapes from grinder, sander, saw, and drill shrouds—and how airflow, seals, worn brushes, hose restrictions, and poor positioning affect source capture." />
+<meta property="og:url" content="https://mukbuddy.com/blog/dust-escaping-power-tool-shroud/" />
+<meta property="og:image" content="https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg" />
+<meta property="og:site_name" content="Muk Buddy" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="[DRAFT] Why Is Dust Escaping From My Power Tool Shroud?" />
+<meta name="twitter:description" content="Learn why dust escapes from grinder, sander, saw, and drill shrouds—and how airflow, seals, worn brushes, hose restrictions, and poor positioning affect source capture." />
+<meta name="twitter:image" content="https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Anton&family=Bangers&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+<link rel="icon" href="/favicon.ico" />
+
+<style>
+:root {
+  --cream:#FFF4D6; --cream-2:#FFF9E8; --ink:#1A0625; --muk:#7A6FE0;
+  --slime:#39FF14; --slime-600:#1FAB07;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.65}
+a{color:var(--muk);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px}
+a:hover{color:var(--ink);background:var(--slime)}
+header.nav{background:var(--ink);color:var(--cream);padding:14px 24px;display:flex;align-items:center;justify-content:space-between;border-bottom:4px solid var(--slime)}
+header.nav a.brand{color:var(--cream);font-family:'Bowlby One',Impact,sans-serif;font-size:22px;text-decoration:none;letter-spacing:.08em}
+header.nav a.brand:hover{background:transparent;color:var(--slime)}
+header.nav nav a{color:var(--cream);font-family:Bangers,Impact,sans-serif;font-size:18px;letter-spacing:.15em;margin-left:18px;text-decoration:none;text-transform:uppercase}
+header.nav nav a:hover{color:var(--slime);background:transparent}
+main{max-width:760px;margin:0 auto;padding:48px 24px 80px}
+main.wide{max-width:1100px}
+.kicker{font-family:Bangers,Impact,sans-serif;font-size:14px;letter-spacing:.3em;color:var(--muk);text-transform:uppercase;margin:0 0 12px}
+h1.title{font-family:'Bowlby One',Impact,sans-serif;font-size:clamp(2rem,4vw,3.5rem);line-height:1.05;margin:0 0 16px;color:var(--ink)}
+.byline{font-family:Inter,sans-serif;font-size:14px;color:#5A4A72;margin-bottom:32px}
+.byline .dot{margin:0 8px;opacity:.5}
+.hero-img{width:100%;border:4px solid var(--ink);margin:8px 0 36px;display:block}
+.post{font-size:18px}
+.post p,.post ul,.post ol,.post blockquote,.post table{margin:0 0 22px}
+.post h2{font-family:Anton,Impact,sans-serif;font-size:32px;line-height:1.1;margin:40px 0 18px;letter-spacing:.01em}
+.post h3{font-family:Anton,Impact,sans-serif;font-size:22px;margin:32px 0 14px}
+.post ul,.post ol{padding-left:24px}
+.post li{margin:6px 0}
+.post blockquote{border-left:4px solid var(--muk);padding:8px 18px;background:var(--cream-2);font-style:italic;font-size:19px}
+.post code{background:var(--cream-2);padding:2px 6px;border-radius:3px;font-size:.92em}
+.post pre{background:var(--ink);color:var(--cream);padding:16px;overflow:auto;border:2px solid var(--ink)}
+.post pre code{background:transparent;color:inherit;padding:0}
+.post img{max-width:100%;height:auto;border:3px solid var(--ink)}
+.post table{width:100%;border-collapse:collapse}
+.post th,.post td{border:2px solid var(--ink);padding:10px;text-align:left}
+.post th{background:var(--muk);color:var(--cream);font-family:Anton,sans-serif;text-transform:uppercase;font-size:14px;letter-spacing:.05em}
+.tag{display:inline-block;background:var(--ink);color:var(--cream);font-family:Bangers,sans-serif;font-size:13px;letter-spacing:.15em;padding:3px 10px;margin-right:6px;text-transform:uppercase}
+.cta-card{margin-top:48px;padding:24px;background:var(--ink);color:var(--cream);border:4px solid var(--slime);text-align:center}
+.cta-card h3{font-family:'Bowlby One',Impact,sans-serif;font-size:28px;margin:0 0 8px;color:var(--cream)}
+.cta-card p{color:var(--cream);opacity:.85;margin:0 0 18px}
+.cta-card a.btn{display:inline-block;background:var(--slime);color:var(--ink);font-family:Bangers,sans-serif;font-size:20px;letter-spacing:.15em;padding:12px 24px;border:3px solid var(--cream);text-decoration:none;text-transform:uppercase}
+.cta-card a.btn:hover{background:var(--cream);background:#a4ff5a}
+footer.foot{background:var(--ink);color:var(--cream);padding:32px 24px;text-align:center;font-size:13px}
+footer.foot a{color:var(--slime);background:transparent}
+.list-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px;margin-top:32px}
+.card{background:#fff;border:3px solid var(--ink);text-decoration:none;color:var(--ink);display:block;transition:transform .15s}
+.card:hover{transform:translate(-2px,-2px);background:#fff}
+.card .ph{height:180px;background:var(--cream-2) center/cover no-repeat;border-bottom:3px solid var(--ink)}
+.card .body{padding:16px 18px}
+.card .meta{font-family:Bangers,sans-serif;font-size:12px;letter-spacing:.2em;color:var(--muk);text-transform:uppercase}
+.card h2{font-family:Anton,sans-serif;font-size:22px;line-height:1.15;margin:6px 0 10px}
+.card p{font-size:14px;color:#5A4A72;margin:0}
+.video-wrap{position:relative;width:100%;padding-top:56.25%;margin:0 0 36px;border:4px solid var(--ink);background:#000;overflow:hidden}
+.video-wrap.vertical{padding-top:0;aspect-ratio:9/16;max-width:380px;margin:0 auto 36px;display:block}
+.video-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+.faq{margin:48px 0 8px;border-top:3px solid var(--ink);padding-top:32px}
+.faq > h2{font-family:Anton,Impact,sans-serif;font-size:28px;margin:0 0 18px}
+.faq details{background:#fff;border:3px solid var(--ink);padding:14px 18px;margin:0 0 12px}
+.faq details[open]{background:var(--cream-2)}
+.faq summary{cursor:pointer;font-family:Anton,Impact,sans-serif;font-size:19px;line-height:1.25;list-style:none;outline-offset:3px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:'+';float:right;font-family:'Bowlby One',sans-serif;color:var(--muk);font-size:22px;line-height:1;margin-left:12px}
+.faq details[open] summary::after{content:'–'}
+.faq .a{margin-top:12px;font-size:16px;line-height:1.6}
+.faq .a p{margin:0 0 12px}
+.faq .a p:last-child{margin:0}
+.author-box{margin:48px 0 8px;padding:20px 22px;background:var(--cream-2);border-left:6px solid var(--muk);font-size:15px;line-height:1.55}
+.author-box .name{font-family:Anton,Impact,sans-serif;font-size:18px;letter-spacing:.04em;margin:0 0 6px;text-transform:uppercase;color:var(--ink)}
+.author-box p{margin:0;color:#3a2a55}
+</style>
+
+
+</head>
+<body>
+
+<header class="nav">
+  <a href="/" class="brand">MUK&nbsp;BUDDY</a>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/blog/">Blog</a>
+    <a href="/#contact">Contact</a>
+  </nav>
+</header>
+
+
+<main>
+  
+<div style="background:#FFD400;color:#1A0625;border:4px solid #1A0625;padding:14px 18px;margin:0 0 24px;font-family:Anton,Impact,sans-serif;font-size:16px;letter-spacing:.08em;text-transform:uppercase;line-height:1.3">
+  🚧 DRAFT PREVIEW — not published. This page is hidden from search engines and the public blog index. Set <code>published: true</code> in the post's frontmatter to go live.
+</div>
+  <p class="kicker">Draft Preview</p>
+  <h1 class="title">Why Is Dust Escaping From My Power Tool Shroud?</h1>
+  <div class="byline">
+    By Jason Brouk<span class="dot">·</span>
+    <time datetime="2026-08-17">August 17, 2026</time>
+  </div>
+  <img class="hero-img" src="https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg" alt="Why Is Dust Escaping From My Power Tool Shroud? — Muk Buddy shop vac guide" />
+  <div class="video-wrap">
+  <iframe src="https://www.youtube-nocookie.com/embed/xzaNaP2DiZo?rel=0" title="Why Is Dust Escaping From My Power Tool Shroud?"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen loading="lazy"></iframe>
+</div>
+  <div style="margin-bottom:24px"><span class="tag">shop-vac</span><span class="tag">concrete-dust</span><span class="tag">silica</span><span class="tag">contractor</span></div>
+  <article class="post"><p>A tool shroud is designed to surround the dust-generation zone and direct particles toward the vacuum port.</p>
+<p>When dust escapes, the problem may involve:</p>
+<ul>
+<li>Inadequate airflow</li>
+<li>Damaged shroud</li>
+<li>Worn brush skirt</li>
+<li>Incorrect tool angle</li>
+<li>Blocked dust port</li>
+<li>Leaking adapter</li>
+<li>Loaded bag</li>
+<li>Clogged filter</li>
+<li>Hose restriction</li>
+<li>Excessive cutting or grinding rate</li>
+</ul>
+<p>The visible escape point does not always identify the underlying cause.</p>
+<p>A shroud may appear to leak because the vacuum system downstream is no longer moving enough air.</p>
+<hr />
+<h2>Quick Answer</h2>
+<p>If dust escapes from a tool shroud:</p>
+<ol>
+<li>Stop the tool.</li>
+<li>Inspect the shroud for damage.</li>
+<li>Check brush skirts and seals.</li>
+<li>Confirm the shroud remains against the surface.</li>
+<li>Clear the tool’s internal dust passage.</li>
+<li>Inspect the adapter and hose.</li>
+<li>Empty or replace the collection bag.</li>
+<li>Service the filter.</li>
+<li>Verify adequate vacuum airflow.</li>
+<li>Reduce the tool feed rate if dust production exceeds capture capacity.</li>
+</ol>
+<p>For continuous concrete or masonry dust, use equipment designed for the application.</p>
+<hr />
+<h2>The Shroud Capture Zone™</h2>
+<pre><code>Tool Creates Dust
+
+↓
+
+Shroud Contains Dust Momentarily
+
+↓
+
+Vacuum Airflow Pulls Dust Into Port
+
+↓
+
+Dust Travels Through Hose
+</code></pre>
+<p>The shroud must hold the dust long enough for airflow to capture it.</p>
+<hr />
+<h2>Cause 1: Insufficient Airflow</h2>
+<p>Airflow may be reduced by:</p>
+<ul>
+<li>Loaded collection bag</li>
+<li>Clogged filter</li>
+<li>Blocked hose</li>
+<li>Small adapter</li>
+<li>Long hose</li>
+<li>Air leak</li>
+<li>Weak vacuum</li>
+<li>Closed float</li>
+</ul>
+<p>Test the vacuum from the inlet outward.</p>
+<hr />
+<h2>The Capture-Demand Gap™</h2>
+<pre><code>Dust Produced Per Second
+
+&gt;
+
+Dust the Airflow Can Transport
+
+↓
+
+Dust Escapes From Shroud
+</code></pre>
+<p>Increasing tool speed or feed rate can exceed the system’s capacity.</p>
+<hr />
+<h2>Cause 2: Damaged Shroud</h2>
+<p>Inspect for:</p>
+<ul>
+<li>Cracks</li>
+<li>Missing pieces</li>
+<li>Warping</li>
+<li>Loose mounting</li>
+<li>Broken clips</li>
+<li>Heat damage</li>
+<li>Abrasion</li>
+</ul>
+<p>Even small gaps can allow fine dust to escape.</p>
+<hr />
+<h2>Cause 3: Worn Brush Skirt</h2>
+<p>Many grinder and sander shrouds use a flexible brush skirt.</p>
+<p>The skirt helps:</p>
+<ul>
+<li>Follow surface irregularities</li>
+<li>Limit outside air entry</li>
+<li>Contain particles</li>
+<li>Maintain the capture zone</li>
+</ul>
+<p>Worn or missing bristles create escape paths.</p>
+<hr />
+<h2>Cause 4: Shroud Lift</h2>
+<p>Dust may escape when the operator:</p>
+<ul>
+<li>Tilts the tool</li>
+<li>Lifts one edge</li>
+<li>Crosses an uneven joint</li>
+<li>Reaches a corner</li>
+<li>Moves over a fastener</li>
+<li>Changes direction abruptly</li>
+</ul>
+<p>Keep the shroud seated whenever the tool design allows.</p>
+<hr />
+<h2>The Edge-Lift Failure™</h2>
+<pre><code>One Shroud Edge Lifts
+
+↓
+
+Large Air Gap Opens
+
+↓
+
+Air Enters Through Gap
+
+↓
+
+Dust Escapes Opposite the Port
+</code></pre>
+<p>Corners and transitions often require specialized technique or attachments.</p>
+<hr />
+<h2>Cause 5: Blocked Tool Port</h2>
+<p>Dust may compact inside:</p>
+<ul>
+<li>Shroud outlet</li>
+<li>Internal elbow</li>
+<li>Dust chute</li>
+<li>Adapter</li>
+<li>Narrow cuff</li>
+</ul>
+<p>Disconnect power and inspect the passage using approved procedures.</p>
+<hr />
+<h2>Cause 6: Adapter Leakage</h2>
+<p>A loose adapter allows room air to enter downstream of the shroud.</p>
+<p>The motor continues moving air, but less airflow reaches the tool.</p>
+<pre><code>Total Vacuum Airflow
+
+−
+
+Adapter Leakage
+
+=
+
+Airflow at Shroud
+</code></pre>
+<p>Seal the connection using compatible components.</p>
+<hr />
+<h2>Cause 7: Hose Restriction</h2>
+<p>Common hose problems include:</p>
+<ul>
+<li>Partial clog</li>
+<li>Tight bend</li>
+<li>Collapsed wall</li>
+<li>Excessive length</li>
+<li>Small diameter</li>
+<li>Multiple reducers</li>
+</ul>
+<p>A hose may appear open while still containing a partial obstruction.</p>
+<hr />
+<h2>Cause 8: Loaded Bag</h2>
+<p>Fine dust may block bag material before the bag appears full.</p>
+<p>Signs include:</p>
+<ul>
+<li>Gradual dust escape</li>
+<li>Higher motor pitch</li>
+<li>Hotter exhaust</li>
+<li>Lower suction at tool</li>
+<li>Primary-filter loading</li>
+</ul>
+<p>Service the bag based on airflow.</p>
+<hr />
+<h2>Cause 9: Clogged Filter</h2>
+<p>Filter loading affects the complete extraction system.</p>
+<p>Automatic filter cleaning may help maintain performance, but the filter still requires inspection and replacement.</p>
+<hr />
+<h2>Cause 10: Tool Speed or Feed Rate</h2>
+<p>Dust production rises when the operator:</p>
+<ul>
+<li>Cuts faster</li>
+<li>Grinds deeper</li>
+<li>Uses aggressive abrasive media</li>
+<li>Removes more material per pass</li>
+<li>Uses larger tooling</li>
+</ul>
+<p>The capture system may be unable to keep up.</p>
+<hr />
+<h2>Cause 11: Incorrect Shroud for the Tool</h2>
+<p>A physically compatible shroud may still have:</p>
+<ul>
+<li>Inadequate enclosure</li>
+<li>Wrong port size</li>
+<li>Poor brush contact</li>
+<li>Insufficient internal volume</li>
+<li>Incorrect mounting position</li>
+</ul>
+<p>Use a shroud designed for the tool and application.</p>
+<hr />
+<h2>Cause 12: Surface Irregularities</h2>
+<p>Dust containment becomes harder on:</p>
+<ul>
+<li>Uneven concrete</li>
+<li>Textured surfaces</li>
+<li>Corners</li>
+<li>Edges</li>
+<li>Curved material</li>
+<li>Joints</li>
+<li>Broken surfaces</li>
+</ul>
+<p>Specialized edge shrouds or local capture may be necessary.</p>
+<hr />
+<h2>Dust Escape Pattern Guide</h2>
+<table>
+<thead>
+<tr>
+<th>Escape Pattern</th>
+<th>Likely Cause</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Dust escapes around entire shroud</td>
+<td>Low airflow</td>
+</tr>
+<tr>
+<td>Dust escapes from one side</td>
+<td>Lifted or damaged edge</td>
+</tr>
+<tr>
+<td>Dust escapes near hose connection</td>
+<td>Adapter leak</td>
+</tr>
+<tr>
+<td>Dust increases over time</td>
+<td>Bag or filter loading</td>
+</tr>
+<tr>
+<td>Dust escapes only on deep cuts</td>
+<td>Capture demand exceeded</td>
+</tr>
+<tr>
+<td>Dust escapes at corners</td>
+<td>Shroud cannot seal</td>
+</tr>
+<tr>
+<td>Dust pulses out</td>
+<td>Intermittent clog or filter cleaning</td>
+</tr>
+<tr>
+<td>Dust exits vacuum exhaust</td>
+<td>Filtration failure</td>
+</tr>
+</tbody></table>
+<hr />
+<h2>Diagnostic Sequence</h2>
+<ol>
+<li>Inspect shroud.</li>
+<li>Inspect brush skirt.</li>
+<li>Clear tool port.</li>
+<li>Test vacuum inlet airflow.</li>
+<li>Add hose and retest.</li>
+<li>Check adapter.</li>
+<li>Inspect bag.</li>
+<li>Inspect filter.</li>
+<li>Test on a small area.</li>
+<li>Adjust tool speed and technique.</li>
+</ol>
+<hr />
+<h2>Source-Capture Performance Test™</h2>
+<p>Use the same:</p>
+<ul>
+<li>Tool</li>
+<li>Abrasive or blade</li>
+<li>Material</li>
+<li>Feed rate</li>
+<li>Hose</li>
+<li>Vacuum configuration</li>
+</ul>
+<p>Compare dust escape:</p>
+<ul>
+<li>With fresh bag and filter</li>
+<li>After normal loading</li>
+<li>At different tool speeds</li>
+</ul>
+<p>This identifies whether the limitation is airflow or enclosure design.</p>
+<hr />
+<h2>Shroud Maintenance Checklist</h2>
+<ul>
+<li> Shroud body intact</li>
+<li> Mount secure</li>
+<li> Brush skirt complete</li>
+<li> Dust port clear</li>
+<li> Adapter sealed</li>
+<li> Hose clear</li>
+<li> Bag below airflow capacity</li>
+<li> Filter functional</li>
+<li> Tool speed appropriate</li>
+<li> Surface contact maintained</li>
+<li> Exhaust dust-free</li>
+<li> Disposal system ready</li>
+</ul>
+<hr />
+<h2>Common Mistakes</h2>
+<h3>Blaming the Shroud Without Testing Airflow</h3>
+<p>The restriction may be inside the vacuum.</p>
+<h3>Replacing the Vacuum Without Inspecting the Brush Skirt</h3>
+<p>A simple worn component may be responsible.</p>
+<h3>Cutting Faster When Dust Appears</h3>
+<p>This increases dust-generation demand.</p>
+<h3>Using Tape as a Permanent Adapter</h3>
+<p>It may loosen, leak, or obstruct the connection.</p>
+<h3>Ignoring Corners and Edges</h3>
+<p>Standard shrouds often lose containment there.</p>
+<h3>Continuing With Dust at the Exhaust</h3>
+<p>This indicates a filtration or seal problem.</p>
+<hr />
+<h2>Frequently Asked Questions</h2>
+<h4>Why does dust escape even with strong suction?</h4>
+<p>The shroud may be damaged, lifted, or unable to contain the dust-generation rate.</p>
+<h4>Can the hose be too small?</h4>
+<p>Yes. A small or long hose may create excessive resistance.</p>
+<h4>Why does capture get worse after several minutes?</h4>
+<p>The bag or filter may be loading.</p>
+<h4>Should the shroud touch the surface?</h4>
+<p>Most surface-grinding and sanding shrouds are designed to maintain controlled contact through a brush or sealing edge.</p>
+<h4>Can excessive suction cause problems?</h4>
+<p>It may increase tool drag, but visible dust escape more often indicates insufficient capture or a shroud gap.</p>
+<h4>Why does dust escape at wall edges?</h4>
+<p>The shroud may not seal when part of it extends beyond the work surface.</p>
+<hr />
+<h2>Key Takeaways</h2>
+<p>Dust escapes from a tool shroud when:</p>
+<ul>
+<li>The enclosure is incomplete</li>
+<li>Airflow is insufficient</li>
+<li>The tool produces dust too quickly</li>
+<li>The downstream system is restricted</li>
+</ul>
+<p><strong>Source capture requires both containment at the tool and maintained airflow through the complete vacuum system.</strong></p>
+<hr />
+<h2>Related guides</h2>
+<ul>
+<li><a href="https://mukbuddy.com/blog/shop-vacuum-safety/" rel="noopener noreferrer" target="_self">shop vacuum safety guide</a></li>
+<li><a href="https://mukbuddy.com/blog/concrete-dust-cleanup/" rel="noopener noreferrer" target="_self">complete concrete dust cleanup guide</a></li>
+<li><a href="https://mukbuddy.com/blog/best-shop-vacuum-concrete-dust/" rel="noopener noreferrer" target="_self">best shop vacuum for concrete dust</a></li>
+<li><a href="https://mukbuddy.com/blog/tile-masonry-contractors/" rel="noopener noreferrer" target="_self">best shop vacuum for tile and masonry contractors</a></li>
+</ul>
+<p><a href="https://mukbuddy.com/" rel="noopener noreferrer" target="_self">see how Muk Buddy helps protect vacuum airflow</a></p>
+</article>
+  
+  <aside class="author-box">
+  <p class="name">About Jason Brouk</p>
+  <p>Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors — and still building the tools contractors wish already existed.</p>
+
+</aside>
+
+  <p style="margin-top:32px"><a href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/">&larr; All drafts</a></p>
+</main>
+
+<footer class="foot">
+  Muk Buddy · <a href="/">Home</a> · <a href="/blog/">Blog</a> · <a href="/#contact">Contact</a><br/>
+  <small>© 2026 Muk Buddy</small>
+</footer>
+</body></html>

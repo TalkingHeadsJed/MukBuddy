@@ -675,6 +675,13 @@ function renderSitemap(posts) {
   const today = new Date().toISOString().slice(0, 10);
   const base = [
     { loc: `${SITE_URL}/`, priority: "1.0", changefreq: "weekly" },
+    {
+      // Money page — dedicated "reusable shop vac bag" SEO destination.
+      // Higher priority than blog index because the blog CTAs point here.
+      loc: `${SITE_URL}/muk-buddy-reusable-bag/`,
+      priority: "0.9",
+      changefreq: "monthly",
+    },
     { loc: `${SITE_URL}/blog/`, priority: "0.8", changefreq: "weekly" },
   ];
   const postUrls = posts.map((p) => ({

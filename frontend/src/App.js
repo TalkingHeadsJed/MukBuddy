@@ -6,6 +6,7 @@ import Landing from "@/pages/Landing";
 import AdsLanding from "@/pages/AdsLanding";
 import ThankYou from "@/pages/ThankYou";
 import About from "@/pages/About";
+import MukBuddyReusableBagPage from "@/pages/MukBuddyReusableBagPage";
 import { Toaster } from "@/components/ui/sonner";
 import { captureFromURL } from "@/lib/attribution";
 
@@ -32,6 +33,14 @@ export default function App() {
             <Route path="/" element={<Landing />} />
             <Route path="/ads" element={<AdsLanding />} />
             <Route path="/about" element={<About />} />
+            <Route
+              path="/muk-buddy-reusable-bag"
+              element={<MukBuddyReusableBagPage />}
+            />
+            <Route
+              path="/muk-buddy-reusable-bag/"
+              element={<MukBuddyReusableBagPage />}
+            />
             <Route path="/thank-you" element={<ThankYou />} />
             {/* No catch-all: unknown paths render nothing inside <Routes>
                 so react-helmet-async never momentarily registers Landing's
