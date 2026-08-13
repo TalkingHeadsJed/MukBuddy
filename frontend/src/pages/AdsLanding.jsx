@@ -527,19 +527,14 @@ function AirflowDemo() {
       data-testid="ads-airflow-demo"
       className="bg-slate-950 text-white py-16 sm:py-20 border-b border-slate-800 relative overflow-hidden"
     >
-      {/* Contractor vacuuming background video — muted, looped, decorative */}
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="metadata"
-        aria-hidden="true"
+      {/* Contractor vacuuming background video — muted, looped, decorative.
+          Lazy: sources only mount when the section scrolls near the viewport,
+          so mobile Lighthouse doesn't pay the WebM/MP4 fetch cost upfront. */}
+      <LazyBackgroundVideo
+        webm={IMAGES.contractorVacVideoWebm}
+        mp4={IMAGES.contractorVacVideo}
         className="absolute inset-0 w-full h-full object-cover opacity-60 pointer-events-none"
-      >
-        <source src={IMAGES.contractorVacVideoWebm} type="video/webm" />
-        <source src={IMAGES.contractorVacVideo} type="video/mp4" />
-      </video>
+      />
       {/* Dark gradient overlay — light enough to see contractor, dark enough to keep copy legible */}
       <div
         aria-hidden="true"
@@ -603,15 +598,11 @@ function AirflowDemo() {
           {/* Video */}
           <div className="lg:col-span-7">
             <div className="relative bg-slate-900 border-2 border-red-600 overflow-hidden aspect-[4/5] sm:aspect-[3/4] max-h-[640px] mx-auto">
-              <video
+              <LazyForegroundVideo
                 src={IMAGES.mascotAnimation}
-                autoPlay
-                muted
-                loop
-                playsInline
                 className="w-full h-full object-contain"
-                data-testid="ads-airflow-video"
-                aria-label="Muk Buddy 2-chamber airflow demonstration"
+                testId="ads-airflow-video"
+                ariaLabel="Muk Buddy 2-chamber airflow demonstration"
               />
               {/* Corner technical labels */}
               <div className="absolute top-3 left-3 bg-slate-950/90 text-red-500 text-[10px] font-bold uppercase tracking-widest px-2 py-1 border border-red-600/40">
@@ -806,19 +797,13 @@ function SavingsCalc({ savingsRef, vacQuantity, setVacQuantity, utmSuffix }) {
       data-testid="ads-savings"
       className="relative overflow-hidden bg-slate-900 text-white py-20 sm:py-24"
     >
-      {/* Contractor vacuuming background video — muted, looped, decorative */}
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="metadata"
-        aria-hidden="true"
+      {/* Contractor vacuuming background video — muted, looped, decorative.
+          LazyBackgroundVideo defers source-mount + autoplay until in-viewport. */}
+      <LazyBackgroundVideo
+        webm={IMAGES.contractorVacVideoWebm}
+        mp4={IMAGES.contractorVacVideo}
         className="absolute inset-0 w-full h-full object-cover opacity-50 pointer-events-none"
-      >
-        <source src={IMAGES.contractorVacVideoWebm} type="video/webm" />
-        <source src={IMAGES.contractorVacVideo} type="video/mp4" />
-      </video>
+      />
       {/* Dark gradient overlay — keep calc card + copy fully legible */}
       <div
         aria-hidden="true"
@@ -1533,6 +1518,88 @@ function Footer() {
         </p>
       </div>
     </footer>
+  );
+}
+
+/* ────────────── Lazy video helpers (Lighthouse TBT / bandwidth) ──────────────
+   The two full-bleed background videos on `/ads` (AirflowDemo + SavingsCalc)
+   and the mascot airflow demo video sit BELOW the hero fold. If they auto-
+   preload/play on mount, Chrome mobile burns 700+ ms of TBT on decode +
+   network + main-thread work before the visitor ever scrolls to them.
+
+   Strategy: don't mount <source> tags (and don't autoplay) until an
+   IntersectionObserver reports the video is within ~400 px of the viewport.
+   Once mounted, keep them mounted so scrolling back doesn't re-fetch.
+
+   Prerender note: Puppeteer only sees the shell before scrolling, so the
+   prerendered HTML will not contain source URLs. This is intentional —
+   crawlers don't need decorative videos, and `/ads` is `noindex` anyway.
+   ─────────────────────────────────────────────────────────────────────────── */
+function useInViewportOnce(rootMargin = "400px") {
+  const ref = useRef(null);
+  const [inView, setInView] = useState(false);
+  useEffect(() => {
+    if (inView || !ref.current || typeof IntersectionObserver === "undefined") {
+      // SSR / older browsers → just mount immediately, no lazy behavior.
+      if (!inView && typeof IntersectionObserver === "undefined") setInView(true);
+      return;
+    }
+    const io = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            setInView(true);
+            io.disconnect();
+            break;
+          }
+        }
+      },
+      { rootMargin }
+    );
+    io.observe(ref.current);
+    return () => io.disconnect();
+  }, [inView, rootMargin]);
+  return [ref, inView];
+}
+
+function LazyBackgroundVideo({ webm, mp4, className }) {
+  const [ref, inView] = useInViewportOnce();
+  return (
+    <video
+      ref={ref}
+      autoPlay={inView}
+      muted
+      loop
+      playsInline
+      preload="none"
+      aria-hidden="true"
+      className={className}
+    >
+      {inView && (
+        <>
+          <source src={webm} type="video/webm" />
+          <source src={mp4} type="video/mp4" />
+        </>
+      )}
+    </video>
+  );
+}
+
+function LazyForegroundVideo({ src, className, testId, ariaLabel }) {
+  const [ref, inView] = useInViewportOnce();
+  return (
+    <video
+      ref={ref}
+      src={inView ? src : undefined}
+      autoPlay={inView}
+      muted
+      loop
+      playsInline
+      preload="none"
+      className={className}
+      data-testid={testId}
+      aria-label={ariaLabel}
+    />
   );
 }
 

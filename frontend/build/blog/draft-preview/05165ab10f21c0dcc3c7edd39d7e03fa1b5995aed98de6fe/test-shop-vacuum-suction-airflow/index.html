@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>[DRAFT] How to Test Shop Vacuum Suction and Airflow</title>
+<meta name="description" content="Learn how to test a shop vacuum for airflow loss, hose restriction, filter clogging, bag loading, air leaks, and declining working performance." />
+<link rel="canonical" href="https://mukbuddy.com/blog/test-shop-vacuum-suction-airflow/" />
+<meta name="robots" content="noindex, nofollow" />
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="[DRAFT] How to Test Shop Vacuum Suction and Airflow" />
+<meta property="og:description" content="Learn how to test a shop vacuum for airflow loss, hose restriction, filter clogging, bag loading, air leaks, and declining working performance." />
+<meta property="og:url" content="https://mukbuddy.com/blog/test-shop-vacuum-suction-airflow/" />
+<meta property="og:image" content="https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg" />
+<meta property="og:site_name" content="Muk Buddy" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="[DRAFT] How to Test Shop Vacuum Suction and Airflow" />
+<meta name="twitter:description" content="Learn how to test a shop vacuum for airflow loss, hose restriction, filter clogging, bag loading, air leaks, and declining working performance." />
+<meta name="twitter:image" content="https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Anton&family=Bangers&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+<link rel="icon" href="/favicon.ico" />
+
+<style>
+:root {
+  --cream:#FFF4D6; --cream-2:#FFF9E8; --ink:#1A0625; --muk:#7A6FE0;
+  --slime:#39FF14; --slime-600:#1FAB07;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.65}
+a{color:var(--muk);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px}
+a:hover{color:var(--ink);background:var(--slime)}
+header.nav{background:var(--ink);color:var(--cream);padding:14px 24px;display:flex;align-items:center;justify-content:space-between;border-bottom:4px solid var(--slime)}
+header.nav a.brand{color:var(--cream);font-family:'Bowlby One',Impact,sans-serif;font-size:22px;text-decoration:none;letter-spacing:.08em}
+header.nav a.brand:hover{background:transparent;color:var(--slime)}
+header.nav nav a{color:var(--cream);font-family:Bangers,Impact,sans-serif;font-size:18px;letter-spacing:.15em;margin-left:18px;text-decoration:none;text-transform:uppercase}
+header.nav nav a:hover{color:var(--slime);background:transparent}
+main{max-width:760px;margin:0 auto;padding:48px 24px 80px}
+main.wide{max-width:1100px}
+.kicker{font-family:Bangers,Impact,sans-serif;font-size:14px;letter-spacing:.3em;color:var(--muk);text-transform:uppercase;margin:0 0 12px}
+h1.title{font-family:'Bowlby One',Impact,sans-serif;font-size:clamp(2rem,4vw,3.5rem);line-height:1.05;margin:0 0 16px;color:var(--ink)}
+.byline{font-family:Inter,sans-serif;font-size:14px;color:#5A4A72;margin-bottom:32px}
+.byline .dot{margin:0 8px;opacity:.5}
+.hero-img{width:100%;border:4px solid var(--ink);margin:8px 0 36px;display:block}
+.post{font-size:18px}
+.post p,.post ul,.post ol,.post blockquote,.post table{margin:0 0 22px}
+.post h2{font-family:Anton,Impact,sans-serif;font-size:32px;line-height:1.1;margin:40px 0 18px;letter-spacing:.01em}
+.post h3{font-family:Anton,Impact,sans-serif;font-size:22px;margin:32px 0 14px}
+.post ul,.post ol{padding-left:24px}
+.post li{margin:6px 0}
+.post blockquote{border-left:4px solid var(--muk);padding:8px 18px;background:var(--cream-2);font-style:italic;font-size:19px}
+.post code{background:var(--cream-2);padding:2px 6px;border-radius:3px;font-size:.92em}
+.post pre{background:var(--ink);color:var(--cream);padding:16px;overflow:auto;border:2px solid var(--ink)}
+.post pre code{background:transparent;color:inherit;padding:0}
+.post img{max-width:100%;height:auto;border:3px solid var(--ink)}
+.post table{width:100%;border-collapse:collapse}
+.post th,.post td{border:2px solid var(--ink);padding:10px;text-align:left}
+.post th{background:var(--muk);color:var(--cream);font-family:Anton,sans-serif;text-transform:uppercase;font-size:14px;letter-spacing:.05em}
+.tag{display:inline-block;background:var(--ink);color:var(--cream);font-family:Bangers,sans-serif;font-size:13px;letter-spacing:.15em;padding:3px 10px;margin-right:6px;text-transform:uppercase}
+.cta-card{margin-top:48px;padding:24px;background:var(--ink);color:var(--cream);border:4px solid var(--slime);text-align:center}
+.cta-card h3{font-family:'Bowlby One',Impact,sans-serif;font-size:28px;margin:0 0 8px;color:var(--cream)}
+.cta-card p{color:var(--cream);opacity:.85;margin:0 0 18px}
+.cta-card a.btn{display:inline-block;background:var(--slime);color:var(--ink);font-family:Bangers,sans-serif;font-size:20px;letter-spacing:.15em;padding:12px 24px;border:3px solid var(--cream);text-decoration:none;text-transform:uppercase}
+.cta-card a.btn:hover{background:var(--cream);background:#a4ff5a}
+footer.foot{background:var(--ink);color:var(--cream);padding:32px 24px;text-align:center;font-size:13px}
+footer.foot a{color:var(--slime);background:transparent}
+.list-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px;margin-top:32px}
+.card{background:#fff;border:3px solid var(--ink);text-decoration:none;color:var(--ink);display:block;transition:transform .15s}
+.card:hover{transform:translate(-2px,-2px);background:#fff}
+.card .ph{height:180px;background:var(--cream-2) center/cover no-repeat;border-bottom:3px solid var(--ink)}
+.card .body{padding:16px 18px}
+.card .meta{font-family:Bangers,sans-serif;font-size:12px;letter-spacing:.2em;color:var(--muk);text-transform:uppercase}
+.card h2{font-family:Anton,sans-serif;font-size:22px;line-height:1.15;margin:6px 0 10px}
+.card p{font-size:14px;color:#5A4A72;margin:0}
+.video-wrap{position:relative;width:100%;padding-top:56.25%;margin:0 0 36px;border:4px solid var(--ink);background:#000;overflow:hidden}
+.video-wrap.vertical{padding-top:0;aspect-ratio:9/16;max-width:380px;margin:0 auto 36px;display:block}
+.video-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+.faq{margin:48px 0 8px;border-top:3px solid var(--ink);padding-top:32px}
+.faq > h2{font-family:Anton,Impact,sans-serif;font-size:28px;margin:0 0 18px}
+.faq details{background:#fff;border:3px solid var(--ink);padding:14px 18px;margin:0 0 12px}
+.faq details[open]{background:var(--cream-2)}
+.faq summary{cursor:pointer;font-family:Anton,Impact,sans-serif;font-size:19px;line-height:1.25;list-style:none;outline-offset:3px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:'+';float:right;font-family:'Bowlby One',sans-serif;color:var(--muk);font-size:22px;line-height:1;margin-left:12px}
+.faq details[open] summary::after{content:'–'}
+.faq .a{margin-top:12px;font-size:16px;line-height:1.6}
+.faq .a p{margin:0 0 12px}
+.faq .a p:last-child{margin:0}
+.author-box{margin:48px 0 8px;padding:20px 22px;background:var(--cream-2);border-left:6px solid var(--muk);font-size:15px;line-height:1.55}
+.author-box .name{font-family:Anton,Impact,sans-serif;font-size:18px;letter-spacing:.04em;margin:0 0 6px;text-transform:uppercase;color:var(--ink)}
+.author-box p{margin:0;color:#3a2a55}
+</style>
+
+
+</head>
+<body>
+
+<header class="nav">
+  <a href="/" class="brand">MUK&nbsp;BUDDY</a>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/blog/">Blog</a>
+    <a href="/#contact">Contact</a>
+  </nav>
+</header>
+
+
+<main>
+  
+<div style="background:#FFD400;color:#1A0625;border:4px solid #1A0625;padding:14px 18px;margin:0 0 24px;font-family:Anton,Impact,sans-serif;font-size:16px;letter-spacing:.08em;text-transform:uppercase;line-height:1.3">
+  🚧 DRAFT PREVIEW — not published. This page is hidden from search engines and the public blog index. Set <code>published: true</code> in the post's frontmatter to go live.
+</div>
+  <p class="kicker">Draft Preview</p>
+  <h1 class="title">How to Test Shop Vacuum Suction and Airflow</h1>
+  <div class="byline">
+    By Jason Brouk<span class="dot">·</span>
+    <time datetime="2026-08-24">August 24, 2026</time>
+  </div>
+  <img class="hero-img" src="https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg" alt="How to Test Shop Vacuum Suction and Airflow — Muk Buddy shop vac guide" />
+  <div class="video-wrap">
+  <iframe src="https://www.youtube-nocookie.com/embed/O0FjRWQGRX0?rel=0" title="How to Test Shop Vacuum Suction and Airflow"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen loading="lazy"></iframe>
+</div>
+  <div style="margin-bottom:24px"><span class="tag">shop-vac</span><span class="tag">troubleshooting</span><span class="tag">suction</span><span class="tag">airflow</span></div>
+  <article class="post"><p>A vacuum can sound powerful while performing poorly.</p>
+<p>Loud motor noise, strong hose pull, and high horsepower claims do not necessarily indicate useful airflow.</p>
+<p>The vacuum must move enough air through:</p>
+<ul>
+<li>Attachment</li>
+<li>Hose</li>
+<li>Bag</li>
+<li>Filter</li>
+<li>Motor path</li>
+<li>Exhaust</li>
+</ul>
+<p>Testing should identify where performance is being lost.</p>
+<p>A practical diagnostic test does not require specialized laboratory equipment.</p>
+<p>It requires comparing each stage of the system in a consistent order.</p>
+<hr />
+<h2>Quick Answer</h2>
+<p>To test shop vacuum performance:</p>
+<ol>
+<li>Empty the tank or collection system.</li>
+<li>Inspect the bag and filter.</li>
+<li>Turn on the vacuum.</li>
+<li>Check airflow at the open hose.</li>
+<li>Remove the hose and test at the inlet.</li>
+<li>Add the hose back.</li>
+<li>Add attachments one at a time.</li>
+<li>Listen for pitch changes.</li>
+<li>Check for air leaks.</li>
+<li>Compare performance before and after servicing the bag and filter.</li>
+</ol>
+<p>For precise measurement, use instruments designed to measure:</p>
+<ul>
+<li>Airflow</li>
+<li>Static pressure</li>
+<li>Electrical current</li>
+<li>Temperature</li>
+</ul>
+<p>Do not place hands or improvised objects where they could be drawn into the vacuum.</p>
+<hr />
+<h2>Suction Is Not One Measurement</h2>
+<p>Vacuum performance depends on two related forces:</p>
+<h3>Static Pressure</h3>
+<p>The ability to maintain pressure through restriction.</p>
+<p>Often represented by water lift.</p>
+<h3>Airflow</h3>
+<p>The quantity of air moving through the system.</p>
+<p>Often represented by CFM.</p>
+<pre><code>Useful Collection
+
+=
+
+Pressure
+
++
+
+Airflow
+</code></pre>
+<p>A vacuum needs both.</p>
+<hr />
+<h2>The Working-Airflow Test™</h2>
+<p>The goal is to compare performance under the actual configuration.</p>
+<pre><code>Vacuum Inlet
+
+↓
+
+Hose
+
+↓
+
+Adapter
+
+↓
+
+Attachment
+
+↓
+
+Tool or Floor
+</code></pre>
+<p>Each added component should cause only the expected performance reduction.</p>
+<p>A dramatic loss identifies a likely restriction.</p>
+<hr />
+<h2>Step 1: Establish a Clean Baseline</h2>
+<p>Before testing:</p>
+<ul>
+<li>Empty the tank.</li>
+<li>Empty or replace the bag.</li>
+<li>Clean or replace the filter when required.</li>
+<li>Clear the hose.</li>
+<li>Open the float.</li>
+<li>Inspect the exhaust.</li>
+<li>Confirm the vacuum is dry when testing dry performance.</li>
+</ul>
+<p>This provides a reference condition.</p>
+<hr />
+<h2>Step 2: Listen to the Motor</h2>
+<p>A healthy vacuum generally has a stable sound.</p>
+<p>Warning changes include:</p>
+<ul>
+<li>Higher pitch</li>
+<li>Pulsing</li>
+<li>Surging</li>
+<li>Grinding</li>
+<li>Rattling</li>
+<li>Sudden pitch increase when hose is open</li>
+</ul>
+<p>A higher pitch often indicates restricted airflow.</p>
+<hr />
+<h2>Step 3: Test at the Vacuum Inlet</h2>
+<p>Remove the hose.</p>
+<p>Turn the vacuum on briefly.</p>
+<p>Evaluate:</p>
+<ul>
+<li>Air movement</li>
+<li>Sound</li>
+<li>Vibration</li>
+<li>Exhaust flow</li>
+</ul>
+<p>Strong inlet airflow suggests the motor and internal air path are functioning reasonably well.</p>
+<p>Weak inlet airflow suggests a restriction inside the vacuum or a motor problem.</p>
+<hr />
+<h2>Step 4: Add the Hose</h2>
+<p>Reconnect the hose without an attachment.</p>
+<p>Compare performance.</p>
+<p>A major decline suggests:</p>
+<ul>
+<li>Hose clog</li>
+<li>Collapsed hose</li>
+<li>Excessive length</li>
+<li>Damaged cuff</li>
+<li>Internal restriction</li>
+</ul>
+<hr />
+<h2>The Stage-Loss Method™</h2>
+<pre><code>Strong at Vacuum Inlet
+
+Weak at Hose End
+
+=
+
+Hose or Connection Problem
+</code></pre>
+<hr />
+<h2>Step 5: Add the Attachment</h2>
+<p>Install the floor nozzle, crevice tool, or tool adapter.</p>
+<p>A narrow attachment should reduce airflow.</p>
+<p>But severe loss, whistling, or hose collapse may indicate:</p>
+<ul>
+<li>Blockage</li>
+<li>Excessively small opening</li>
+<li>Poor adapter</li>
+<li>Debris lodged in the tool</li>
+</ul>
+<hr />
+<h2>Step 6: Test the Collection Bag</h2>
+<p>Compare performance:</p>
+<ul>
+<li>Before servicing bag</li>
+<li>After emptying or replacing bag</li>
+</ul>
+<p>A large improvement indicates bag restriction.</p>
+<p>A bag can be restrictive while appearing physically empty.</p>
+<hr />
+<h2>Step 7: Test the Primary Filter</h2>
+<p>Compare performance after approved filter service.</p>
+<p>If airflow returns substantially, filter loading was a major restriction.</p>
+<p>If it does not, inspect other components.</p>
+<hr />
+<h2>Step 8: Check for Air Leaks</h2>
+<p>Listen and feel carefully around:</p>
+<ul>
+<li>Hose cuffs</li>
+<li>Tank rim</li>
+<li>Drain cap</li>
+<li>Filter gasket</li>
+<li>Bag collar</li>
+<li>Separator lid</li>
+<li>Accessory ports</li>
+</ul>
+<p>Air entering through leaks does not contribute to pickup at the nozzle.</p>
+<hr />
+<h2>The Useful-Air Principle™</h2>
+<pre><code>Total Air Moved by Motor
+
+−
+
+Leakage Air
+
+=
+
+Useful Air at Tool
+</code></pre>
+<p>A vacuum can move air while cleaning poorly because the air enters through the wrong location.</p>
+<hr />
+<h2>Step 9: Test Under Load</h2>
+<p>Performance should be evaluated while collecting the actual material.</p>
+<p>Observe:</p>
+<ul>
+<li>Suction after five minutes</li>
+<li>Suction after half a bag</li>
+<li>Filter-cleaning frequency</li>
+<li>Motor temperature</li>
+<li>Dust at exhaust</li>
+<li>Pickup speed</li>
+</ul>
+<p>First-minute performance is not enough.</p>
+<hr />
+<h2>The Maintained-Performance Test™</h2>
+<pre><code>Start-of-Job Airflow
+
+Compared With
+
+Mid-Job Airflow
+
+Compared With
+
+End-of-Job Airflow
+</code></pre>
+<p>A strong professional system should decline gradually rather than collapse rapidly.</p>
+<hr />
+<h2>Simple Pickup Comparison</h2>
+<p>Use the same:</p>
+<ul>
+<li>Surface</li>
+<li>Material</li>
+<li>Attachment</li>
+<li>Hose</li>
+<li>Distance</li>
+<li>Time</li>
+</ul>
+<p>Measure:</p>
+<ul>
+<li>Time required to collect material</li>
+<li>Number of passes</li>
+<li>Material left behind</li>
+<li>Performance after repeated cycles</li>
+</ul>
+<p>This is not a laboratory test.</p>
+<p>It can reveal practical changes after maintenance or configuration changes.</p>
+<hr />
+<h2>Restriction Diagnostic Table</h2>
+<table>
+<thead>
+<tr>
+<th>Test Result</th>
+<th>Likely Area</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Weak at vacuum inlet</td>
+<td>Internal restriction or motor</td>
+</tr>
+<tr>
+<td>Strong inlet, weak hose end</td>
+<td>Hose</td>
+</tr>
+<tr>
+<td>Strong open hose, weak attachment</td>
+<td>Attachment or adapter</td>
+</tr>
+<tr>
+<td>Improves after bag change</td>
+<td>Bag restriction</td>
+</tr>
+<tr>
+<td>Improves after filter service</td>
+<td>Filter restriction</td>
+</tr>
+<tr>
+<td>Whistles around lid</td>
+<td>Seal leak</td>
+</tr>
+<tr>
+<td>Pulses after wet pickup</td>
+<td>Float or wet filter</td>
+</tr>
+<tr>
+<td>Declines rapidly with fine dust</td>
+<td>Inadequate pre-collection</td>
+</tr>
+</tbody></table>
+<hr />
+<h2>Temperature Check</h2>
+<p>A vacuum may naturally exhaust warm air.</p>
+<p>Concerning signs include:</p>
+<ul>
+<li>Housing becoming unusually hot</li>
+<li>Burning smell</li>
+<li>Heat increasing rapidly</li>
+<li>Performance decline with heat</li>
+<li>Thermal shutdown</li>
+</ul>
+<p>Restrictions reduce cooling airflow.</p>
+<p>Stop if overheating is suspected.</p>
+<hr />
+<h2>Electrical Performance</h2>
+<p>Specialized testing may evaluate:</p>
+<ul>
+<li>Voltage</li>
+<li>Current draw</li>
+<li>Startup load</li>
+<li>Extension-cord voltage drop</li>
+</ul>
+<p>Electrical testing should be performed safely with appropriate equipment and qualifications.</p>
+<hr />
+<h2>Instrumented Testing</h2>
+<p>Professional measurement may use:</p>
+<h3>Airflow Meter</h3>
+<p>Measures air volume.</p>
+<h3>Manometer</h3>
+<p>Measures static pressure.</p>
+<h3>Clamp Meter</h3>
+<p>Measures electrical current.</p>
+<h3>Temperature Probe</h3>
+<p>Tracks exhaust or housing temperature.</p>
+<p>Instrument readings are most useful when compared under identical configurations.</p>
+<hr />
+<h2>The Comparative Measurement Rule™</h2>
+<pre><code>Same Vacuum
+
++
+
+Same Hose
+
++
+
+Same Attachment
+
++
+
+Same Test Method
+
+=
+
+Meaningful Comparison
+</code></pre>
+<p>Changing multiple variables prevents accurate diagnosis.</p>
+<hr />
+<h2>Testing Checklist</h2>
+<ul>
+<li> Tank empty</li>
+<li> Bag serviced</li>
+<li> Filter inspected</li>
+<li> Float open</li>
+<li> Hose clear</li>
+<li> Attachments clear</li>
+<li> Inlet tested</li>
+<li> Hose added and retested</li>
+<li> Attachment added and retested</li>
+<li> Leaks checked</li>
+<li> Motor sound recorded</li>
+<li> Mid-job performance evaluated</li>
+<li> Temperature monitored</li>
+<li> Results documented</li>
+</ul>
+<hr />
+<h2>Common Mistakes</h2>
+<h3>Testing Only by Covering the Hose</h3>
+<p>This measures pressure response more than working airflow and may stress the system.</p>
+<h3>Judging by Sound Alone</h3>
+<p>A restricted vacuum may sound louder or more powerful.</p>
+<h3>Changing Bag, Filter, and Hose at Once</h3>
+<p>The actual cause remains unknown.</p>
+<h3>Comparing Different Attachments</h3>
+<p>Different openings create different resistance.</p>
+<h3>Ignoring Dust Loading Over Time</h3>
+<p>A vacuum may test well while clean and fail during work.</p>
+<h3>Using Unsafe Improvised Instruments</h3>
+<p>Objects can be drawn into the hose.</p>
+<hr />
+<h2>Frequently Asked Questions</h2>
+<h4>How can I tell whether my vacuum has lost suction?</h4>
+<p>Compare each airflow stage against a clean baseline and observe pickup time under the same conditions.</p>
+<h4>Is the hand-over-hose test accurate?</h4>
+<p>It provides limited information. It does not distinguish pressure from airflow.</p>
+<h4>Why does the hose pull strongly but debris remains?</h4>
+<p>The attachment may be too restrictive or the capture area may be poorly designed.</p>
+<h4>How do I know whether the bag or filter is clogged?</h4>
+<p>Service one component at a time and compare performance.</p>
+<h4>Can an air leak reduce suction?</h4>
+<p>Yes. The motor may draw air through the leak instead of the nozzle.</p>
+<h4>Should I test the vacuum when the bag is full?</h4>
+<p>Test both clean and working conditions to understand performance decline.</p>
+<hr />
+<h2>Key Takeaways</h2>
+<p>A proper vacuum test follows the airflow path:</p>
+<ul>
+<li>Inlet</li>
+<li>Hose</li>
+<li>Adapter</li>
+<li>Attachment</li>
+<li>Bag</li>
+<li>Filter</li>
+<li>Exhaust</li>
+</ul>
+<p>Test one stage at a time.</p>
+<p><strong>The most useful performance measurement is not how hard the vacuum pulls against a blocked hose. It is how much useful air reaches the debris throughout the job.</strong></p>
+<hr />
+<h2>Related guides</h2>
+<ul>
+<li><a href="https://mukbuddy.com/blog/shop-vacuum-maintenance-checklist/" rel="noopener noreferrer" target="_self">the guide to shop vacuum maintenance checklist</a></li>
+<li><a href="https://mukbuddy.com/blog/shop-vacuum-troubleshooting/" rel="noopener noreferrer" target="_self">the complete shop vacuum troubleshooting guide</a></li>
+<li><a href="https://mukbuddy.com/blog/shop-vacuum-blowing-hot-air/" rel="noopener noreferrer" target="_self">a vac blowing hot air</a></li>
+<li><a href="https://mukbuddy.com/blog/shop-vacuum-suction-pulsing/" rel="noopener noreferrer" target="_self">surging suction under load</a></li>
+</ul>
+<p><a href="https://mukbuddy.com/" rel="noopener noreferrer" target="_self">see how Muk Buddy’s two-chamber system works</a></p>
+</article>
+  
+  <aside class="author-box">
+  <p class="name">About Jason Brouk</p>
+  <p>Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors — and still building the tools contractors wish already existed.</p>
+
+</aside>
+
+  <p style="margin-top:32px"><a href="/blog/draft-preview/05165ab10f21c0dcc3c7edd39d7e03fa1b5995aed98de6fe/">&larr; All drafts</a></p>
+</main>
+
+<footer class="foot">
+  Muk Buddy · <a href="/">Home</a> · <a href="/blog/">Blog</a> · <a href="/#contact">Contact</a><br/>
+  <small>© 2026 Muk Buddy</small>
+</footer>
+</body></html>

@@ -1,5 +1,6 @@
 import Header from "@/components/sections/Header";
 import Hero from "@/components/sections/Hero";
+import WhatIsMukBuddy from "@/components/sections/WhatIsMukBuddy";
 import BagsVsMukBuddy from "@/components/sections/BagsVsMukBuddy";
 import Problem from "@/components/sections/Problem";
 import Difference from "@/components/sections/Difference";
@@ -33,6 +34,7 @@ export default function Landing() {
       />
       <Header />
       <Hero />
+      <WhatIsMukBuddy />
       <BagsVsMukBuddy />
       <Problem />
       <Money />

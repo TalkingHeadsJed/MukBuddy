@@ -257,6 +257,11 @@ function loadPosts() {
         faq: Array.isArray(data.faq)
           ? data.faq.filter((f) => f && f.q && f.a)
           : [],
+        // ── Optional ItemList block (for roundup / "best-of" posts) ──
+        item_list_name: data.item_list_name || "",
+        item_list: Array.isArray(data.item_list)
+          ? data.item_list.filter((it) => it && it.name)
+          : [],
         _isDraft: isDraft,
         html,
       };
@@ -449,6 +454,22 @@ function renderPost(p) {
         "@type": "Question",
         name: f.q,
         acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
+    });
+  }
+
+  if (p.item_list.length) {
+    graph.push({
+      "@type": "ItemList",
+      name: p.item_list_name || p.title,
+      numberOfItems: p.item_list.length,
+      itemListOrder: "https://schema.org/ItemListOrderAscending",
+      itemListElement: p.item_list.map((it, idx) => ({
+        "@type": "ListItem",
+        position: idx + 1,
+        name: it.name,
+        ...(it.url ? { url: it.url } : {}),
+        ...(it.description ? { description: it.description } : {}),
       })),
     });
   }
@@ -705,6 +726,13 @@ function renderSitemap(posts) {
   const today = new Date().toISOString().slice(0, 10);
   const base = [
     { loc: `${SITE_URL}/`, priority: "1.0", changefreq: "weekly" },
+    {
+      // Money page — dedicated "reusable shop vac bag" SEO destination.
+      // Higher priority than blog index because the blog CTAs point here.
+      loc: `${SITE_URL}/muk-buddy-reusable-bag/`,
+      priority: "0.9",
+      changefreq: "monthly",
+    },
     { loc: `${SITE_URL}/blog/`, priority: "0.8", changefreq: "weekly" },
   ];
   const postUrls = posts.map((p) => ({
