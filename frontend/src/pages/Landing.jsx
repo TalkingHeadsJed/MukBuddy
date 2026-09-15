@@ -24,7 +24,7 @@ export default function Landing() {
     <main data-testid="landing-page" className="bg-cream text-ink overflow-x-hidden">
       <PageHead
         title="Reusable Shop Vac Bags & Filter Bags, 12–20 Gal | Muk Buddy"
-        description="The patent-pending Muk Buddy 2-chamber reusable shop vac bag replaces disposable bags in Ridgid, Shop-Vac, DeWalt, Craftsman and Stanley wet/dry vacs. High-efficiency dust filtration, captures fine drywall and concrete dust, $99 — saves crews thousands per year."
+        description="The patent-pending Muk Buddy 2-chamber reusable muk bag replaces disposable shop vac bags. Fits Ridgid, Shop-Vac, DeWalt, Craftsman. $99 — saves crews thousands."
         canonical="https://mukbuddy.com/"
         ogImage="https://mukbuddy.com/og-image-home.png"
         productPrice="99.00"
