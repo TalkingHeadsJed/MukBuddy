@@ -1713,7 +1713,7 @@ Choose one that fits the work.
 - [reusable bag against a cyclone setup](https://mukbuddy.com/blog/reusable-vacuum-bag-vs-cyclone/)
 - [Why Does My Shop Vacuum Bag Collapse](https://mukbuddy.com/blog/shop-vacuum-bag-collapses/)
 - [Why Does My Shop Vacuum Bag Keep Falling Off](https://mukbuddy.com/blog/shop-vacuum-bag-falling-off/)
-- [Can You Use a Shop Vacuum Without a Bag](https://mukbuddy.com/blog/use-shop-vacuum-without-bag/)
+- [Do You Need a Bag in a Shop Vac?](https://mukbuddy.com/blog/do-you-need-a-bag-in-a-shop-vac/)
 - [How Vacuum Bag Material Affects Suction, Filtration, and Capacity](https://mukbuddy.com/blog/vacuum-bag-material/)
 - [what happens when you try to reuse a paper bag](https://mukbuddy.com/blog/can-you-reuse-a-shop-vac-bag/)
 

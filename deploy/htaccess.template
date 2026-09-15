@@ -26,6 +26,11 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^www\.mukbuddy\.com$ [NC]
 RewriteRule ^(.*)$ https://mukbuddy.com/$1 [R=301,L]
 
+# --- BEGIN blog-redirects: 301 redirects for consolidated blog posts ---
+# Cannibalization fix: use-shop-vacuum-without-bag → do-you-need-a-bag-in-a-shop-vac
+RewriteRule ^blog/use-shop-vacuum-without-bag/?$ /blog/do-you-need-a-bag-in-a-shop-vac/ [R=301,L]
+# --- END blog-redirects ---
+
 # Security headers
 <IfModule mod_headers.c>
   Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
