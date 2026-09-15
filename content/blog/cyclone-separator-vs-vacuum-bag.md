@@ -2063,6 +2063,6 @@ It is whether the collection system removes enough dust before it reaches the fi
 - [the guide to multi-stage shop vacuum filtration: how bags, filters, and cyclones work together](https://mukbuddy.com/blog/multi-stage-shop-vacuum-filtration/)
 - [the shop vacuum bag comparison guide](https://mukbuddy.com/blog/paper-vs-fleece-vs-reusable-vacuum-bags/)
 - [learn more about why does my shop vacuum bag collapse](https://mukbuddy.com/blog/shop-vacuum-bag-collapses/)
-- [learn more about can you use a shop vacuum without a bag](https://mukbuddy.com/blog/use-shop-vacuum-without-bag/)
+- [do you need a bag in a shop vac](https://mukbuddy.com/blog/do-you-need-a-bag-in-a-shop-vac/)
 
 [check Muk Buddy fit and ordering](https://thefloorlord.com/product/muk-buddy/)
