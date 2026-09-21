@@ -444,5 +444,8 @@ Manual cleaning prioritizes simplicity and lower equipment cost.
 - [the guide to shop vacuum maintenance checklist](https://mukbuddy.com/blog/shop-vacuum-maintenance-checklist/)
 - [multi-stage shop vacuum filtration: how bags, filters, and cyclones work together](https://mukbuddy.com/blog/multi-stage-shop-vacuum-filtration/)
 - [shop vacuum filter ratings and micron claims explained](https://mukbuddy.com/blog/shop-vacuum-filter-ratings-micron-claims/)
+- [related: vacuum filter clogging fast for automatic vs manual filter cleaning users](https://mukbuddy.com/blog/vacuum-filter-clogging-fast/)
+- [related: why fine dust destroys vacuums for automatic vs manual filter cleaning users](https://mukbuddy.com/blog/why-fine-dust-destroys-vacuums/)
+- [related: shop vacuum keeps clogging for automatic vs manual filter cleaning users](https://mukbuddy.com/blog/shop-vacuum-keeps-clogging/)
 
 [see how Muk Buddy’s two-chamber system works](https://mukbuddy.com/)

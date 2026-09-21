@@ -1716,5 +1716,8 @@ Choose one that fits the work.
 - [Do You Need a Bag in a Shop Vac?](https://mukbuddy.com/blog/do-you-need-a-bag-in-a-shop-vac/)
 - [How Vacuum Bag Material Affects Suction, Filtration, and Capacity](https://mukbuddy.com/blog/vacuum-bag-material/)
 - [what happens when you try to reuse a paper bag](https://mukbuddy.com/blog/can-you-reuse-a-shop-vac-bag/)
+- [the shop vac bags that hold up to fine dust](https://mukbuddy.com/blog/best-shop-vac-bags/)
+- [related: shop vacuum blowing dust for paper vs fleece vs reusable vacuum bags users](https://mukbuddy.com/blog/shop-vacuum-blowing-dust/)
+- [related: why fine dust destroys vacuums for paper vs fleece vs reusable vacuum bags users](https://mukbuddy.com/blog/why-fine-dust-destroys-vacuums/)
 
 [see the Muk Buddy product details](https://thefloorlord.com/product/muk-buddy/)

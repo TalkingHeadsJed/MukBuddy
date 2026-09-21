@@ -463,5 +463,8 @@ A dust collector works best for:
 - [the guide to connecting shop vacuums to power tools](https://mukbuddy.com/blog/connect-shop-vacuum-power-tools/)
 - [dust collector vs. shop vacuum](https://mukbuddy.com/blog/dust-collector-vs-shop-vacuum/)
 - [running bagged vs. bagless for sawdust](https://mukbuddy.com/blog/do-you-need-a-bag-in-a-shop-vac/)
+- [related: why fine dust destroys vacuums for vacuum sawdust shop vacuum users](https://mukbuddy.com/blog/why-fine-dust-destroys-vacuums/)
+- [related: shop vacuum without filter for vacuum sawdust shop vacuum users](https://mukbuddy.com/blog/shop-vacuum-without-filter/)
+- [related: shop vacuum keeps clogging for vacuum sawdust shop vacuum users](https://mukbuddy.com/blog/shop-vacuum-keeps-clogging/)
 
 [see how Muk Buddy’s two-chamber system works](https://mukbuddy.com/)

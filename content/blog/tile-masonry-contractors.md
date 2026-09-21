@@ -389,5 +389,9 @@ The strongest system separates these materials and uses the correct configuratio
 - [learn more about best shop vacuum for concrete dust](https://mukbuddy.com/blog/best-shop-vacuum-concrete-dust/)
 - [learn more about why is dust escaping from my power tool shroud](https://mukbuddy.com/blog/dust-escaping-power-tool-shroud/)
 - [silica-rated collection for masonry crews](https://mukbuddy.com/blog/hepa-shop-vac-bag-fine-dust-silica/)
+- [the right bag for fine dust collection](https://mukbuddy.com/blog/best-shop-vac-bags/)
+- [the destruction fine particles cause](https://mukbuddy.com/blog/why-fine-dust-destroys-vacuums/)
+- [when an extractor beats a shop vac](https://mukbuddy.com/blog/shop-vacuum-vs-dust-extractor/)
+- [what HEPA filtration actually means](https://mukbuddy.com/blog/hepa-filters-explained/)
 
 [check fit for your crew](https://mukbuddy.com/contact/)

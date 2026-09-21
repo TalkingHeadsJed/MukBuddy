@@ -1547,5 +1547,8 @@ When you understand the shop vacuum as one connected airflow system, troubleshoo
 - [How to Test Shop Vacuum Suction and Airflow](https://mukbuddy.com/blog/test-shop-vacuum-suction-airflow/)
 - [Why Vacuum Motors Overheat](https://mukbuddy.com/blog/vacuum-motor-overheating/)
 - [what every hour of a dead vac costs on site](https://mukbuddy.com/blog/shop-vac-downtime-costing-your-crew/)
+- [steps to clean a dust loaded filter](https://mukbuddy.com/blog/clean-shop-vacuum-filter/)
+- [when filters load faster than expected](https://mukbuddy.com/blog/vacuum-filter-clogging-fast/)
+- [related: shop vacuum without filter for shop vacuum troubleshooting users](https://mukbuddy.com/blog/shop-vacuum-without-filter/)
 
 [see how Muk Buddy’s two-chamber system works](https://mukbuddy.com/)

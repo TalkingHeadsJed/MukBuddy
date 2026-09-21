@@ -470,5 +470,8 @@ Dust control in occupied homes requires:
 - [our complete guide to drywall dust](https://mukbuddy.com/blog/drywall-dust-cleanup/)
 - [connecting a sander for dust extraction](https://mukbuddy.com/blog/connect-drywall-sander-shop-vacuum/)
 - [why drywall dust destroys filters](https://mukbuddy.com/blog/drywall-dust-ruins-vacuum-filters/)
+- [safe drywall dust collection](https://mukbuddy.com/blog/vacuum-drywall-dust-safely/)
+- [what HEPA filtration actually means](https://mukbuddy.com/blog/hepa-filters-explained/)
+- [shop vac versus HEPA extractor for renovations](https://mukbuddy.com/blog/shop-vacuum-vs-hepa-dust-extractor-renovation/)
 
 [see how Muk Buddy helps protect vacuum airflow](https://mukbuddy.com/)

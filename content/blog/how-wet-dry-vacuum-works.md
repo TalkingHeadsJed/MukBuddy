@@ -556,5 +556,6 @@ Wet pickup depends on:
 - [How to Switch a Shop Vacuum From Dry to Wet Pickup](https://mukbuddy.com/blog/switch-shop-vacuum-dry-to-wet/)
 - [whether your vac can handle mud](https://mukbuddy.com/blog/vacuum-mud-with-shop-vacuum/)
 - [picking up water safely](https://mukbuddy.com/blog/vacuum-water-with-shop-vacuum/)
+- [related: shop vacuum maintenance checklist for how wet dry vacuum works users](https://mukbuddy.com/blog/shop-vacuum-maintenance-checklist/)
 
 [learn how Muk Buddy keeps debris out of the airflow path](https://mukbuddy.com/)

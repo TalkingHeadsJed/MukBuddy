@@ -374,5 +374,7 @@ The main risks are:
 - [the complete wet/dry vacuum guide](https://mukbuddy.com/blog/how-wet-dry-vacuum-works/)
 - [learn more about how to prevent mold and bacteria in a wet/dry vacuum](https://mukbuddy.com/blog/prevent-mold-wet-dry-vacuum/)
 - [learn more about how to store a shop vacuum properly](https://mukbuddy.com/blog/store-shop-vacuum/)
+- [switching from dry to wet mode](https://mukbuddy.com/blog/switch-shop-vacuum-dry-to-wet/)
+- [wet pickup basics](https://mukbuddy.com/blog/vacuum-water-with-shop-vacuum/)
 
 [see how Muk Buddy helps protect vacuum airflow](https://mukbuddy.com/)

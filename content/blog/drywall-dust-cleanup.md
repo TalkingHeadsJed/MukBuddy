@@ -1063,5 +1063,9 @@ Whether you're a professional contractor tackling drywall every day or a homeown
 - [dust control when people still live there](https://mukbuddy.com/blog/control-construction-dust-occupied-home/)
 - [the way joint compound blinds a filter](https://mukbuddy.com/blog/drywall-dust-ruins-vacuum-filters/)
 - [the safe way to pull drywall dust](https://mukbuddy.com/blog/vacuum-drywall-dust-safely/)
+- [bags rated for serious dust work](https://mukbuddy.com/blog/best-shop-vac-bags/)
+- [what HEPA filtration actually means](https://mukbuddy.com/blog/hepa-filters-explained/)
+- [related: shop vacuum without filter for drywall dust cleanup users](https://mukbuddy.com/blog/shop-vacuum-without-filter/)
+- [shop vac versus HEPA extractor for renovations](https://mukbuddy.com/blog/shop-vacuum-vs-hepa-dust-extractor-renovation/)
 
 [see how Muk Buddy’s two-chamber system works](https://mukbuddy.com/)

@@ -442,5 +442,8 @@ Excessive heat often indicates:
 - [the complete shop vacuum troubleshooting guide](https://mukbuddy.com/blog/shop-vacuum-troubleshooting/)
 - [learn more about why is my shop vacuum leaving dust behind](https://mukbuddy.com/blog/shop-vacuum-leaving-dust/)
 - [learn more about why shop vacuums lose suction](https://mukbuddy.com/blog/shop-vacuum-lost-suction/)
+- [why the vacuum motor overheats](https://mukbuddy.com/blog/vacuum-motor-overheating/)
+- [related: test shop vacuum suction airflow for shop vacuum blowing hot air users](https://mukbuddy.com/blog/test-shop-vacuum-suction-airflow/)
+- [preventing repeated blockages](https://mukbuddy.com/blog/shop-vacuum-keeps-clogging/)
 
 [see how Muk Buddy’s two-chamber system works](https://mukbuddy.com/)

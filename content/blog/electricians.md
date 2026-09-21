@@ -368,5 +368,8 @@ The best electrician vacuum should be:
 - [the shop vacuum guide for contractors](https://mukbuddy.com/blog/contractors/)
 - [what commercial cleaning work demands from a vac](https://mukbuddy.com/blog/commercial-cleaning/)
 - [vac selection for flooring work](https://mukbuddy.com/blog/flooring-contractors/)
+- [related: shop vacuum buying guide for electricians users](https://mukbuddy.com/blog/shop-vacuum-buying-guide/)
+- [related: why fine dust destroys vacuums for electricians users](https://mukbuddy.com/blog/why-fine-dust-destroys-vacuums/)
+- [related: what size shop vacuum for electricians users](https://mukbuddy.com/blog/what-size-shop-vacuum/)
 
 [ask about vacuum fit and crew pricing](https://mukbuddy.com/contact/)

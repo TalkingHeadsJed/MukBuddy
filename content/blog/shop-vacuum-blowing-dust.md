@@ -74,5 +74,8 @@ Your vacuum should perform two jobs simultaneously.
 - [complete shop vacuum troubleshooting guide](https://mukbuddy.com/blog/shop-vacuum-troubleshooting/)
 - [learn more about why does my shop vacuum smell like it’s burning](https://mukbuddy.com/blog/shop-vacuum-burning-smell/)
 - [learn more about why does my shop vacuum keep clogging](https://mukbuddy.com/blog/shop-vacuum-keeps-clogging/)
+- [running a shop vac without a filter](https://mukbuddy.com/blog/shop-vacuum-without-filter/)
+- [restoring airflow by cleaning the filter](https://mukbuddy.com/blog/clean-shop-vacuum-filter/)
+- [the fine dust problem explained](https://mukbuddy.com/blog/why-fine-dust-destroys-vacuums/)
 
 [see how Muk Buddy helps protect vacuum airflow](https://mukbuddy.com/)

@@ -1384,5 +1384,8 @@ It works better every day of its life.
 - [shop vacuum dust disposal guide](https://mukbuddy.com/blog/shop-vacuum-dust-disposal/)
 - [shop vacuum safety guide](https://mukbuddy.com/blog/shop-vacuum-safety/)
 - [what a stalled vac costs a crew per hour](https://mukbuddy.com/blog/shop-vac-downtime-costing-your-crew/)
+- [clearing a loaded filter to recover performance](https://mukbuddy.com/blog/clean-shop-vacuum-filter/)
+- [related: shop vacuum without filter for shop vacuum maintenance checklist users](https://mukbuddy.com/blog/shop-vacuum-without-filter/)
+- [filter replacement timing](https://mukbuddy.com/blog/replace-shop-vacuum-filter/)
 
 [learn how Muk Buddy keeps debris out of the airflow path](https://mukbuddy.com/)

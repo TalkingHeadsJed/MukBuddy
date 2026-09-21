@@ -541,5 +541,8 @@ The complete system must include:
 - [the guide to shop vacuum accessories guide](https://mukbuddy.com/blog/shop-vacuum-accessories/)
 - [Dust Collector vs. Shop Vacuum](https://mukbuddy.com/blog/dust-collector-vs-shop-vacuum/)
 - [Can You Vacuum Sawdust With a Shop Vacuum](https://mukbuddy.com/blog/vacuum-sawdust-shop-vacuum/)
+- [related: shop vacuum hose collapsing for connect shop vacuum power tools users](https://mukbuddy.com/blog/shop-vacuum-hose-collapsing/)
+- [understanding CFM and water lift specs](https://mukbuddy.com/blog/cfm-vs-water-lift-vs-horsepower/)
+- [choosing between vac and extractor](https://mukbuddy.com/blog/shop-vacuum-vs-dust-extractor/)
 
 [see how Muk Buddy’s two-chamber system works](https://mukbuddy.com/)

@@ -499,5 +499,8 @@ Remember:
 - [complete shop vacuum troubleshooting guide](https://mukbuddy.com/blog/shop-vacuum-troubleshooting/)
 - [how to increase shop vacuum suction](https://mukbuddy.com/blog/increase-shop-vacuum-suction/)
 - [cutting down vacuum noise](https://mukbuddy.com/blog/shop-vacuum-too-loud/)
+- [preventing motor heat damage](https://mukbuddy.com/blog/vacuum-motor-overheating/)
+- [safe shop vacuum operation](https://mukbuddy.com/blog/shop-vacuum-safety/)
+- [the maintenance steps for shop vacs](https://mukbuddy.com/blog/shop-vacuum-maintenance-checklist/)
 
 [see how Muk Buddy helps protect vacuum airflow](https://mukbuddy.com/)

@@ -421,5 +421,8 @@ Remove the source instead of masking it.
 - [the complete wet/dry vacuum guide](https://mukbuddy.com/blog/how-wet-dry-vacuum-works/)
 - [best vacuum for pool and hot tub cleanup](https://mukbuddy.com/blog/best-vacuum-pool-hot-tub-cleanup/)
 - [vacuuming mud without wrecking the vac](https://mukbuddy.com/blog/vacuum-mud-with-shop-vacuum/)
+- [preventing mold in wet dry vacuums](https://mukbuddy.com/blog/prevent-mold-wet-dry-vacuum/)
+- [dealing with a wet filter](https://mukbuddy.com/blog/shop-vacuum-filter-wet/)
+- [wet dry vac cleaning steps](https://mukbuddy.com/blog/clean-wet-dry-vacuum/)
 
 [see how Muk Buddy’s two-chamber system works](https://mukbuddy.com/)

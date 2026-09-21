@@ -1423,5 +1423,8 @@ It is the one that maintains the right balance throughout the job.
 - [complete shop vacuum troubleshooting guide](https://mukbuddy.com/blog/shop-vacuum-troubleshooting/)
 - [a hose that collapses or whistles](https://mukbuddy.com/blog/shop-vacuum-hose-collapsing/)
 - [why does my shop vacuum keep tripping the breaker](https://mukbuddy.com/blog/shop-vacuum-trips-breaker/)
+- [testing suction to find restrictions](https://mukbuddy.com/blog/test-shop-vacuum-suction-airflow/)
+- [why suction drops and how to fix it](https://mukbuddy.com/blog/shop-vacuum-lost-suction/)
+- [sizing a shop vac for your work](https://mukbuddy.com/blog/what-size-shop-vacuum/)
 
 [learn how Muk Buddy keeps debris out of the airflow path](https://mukbuddy.com/)

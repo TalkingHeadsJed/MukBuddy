@@ -552,5 +552,8 @@ A contractor vacuum should be inspected for:
 - [shop vacuum safety guide](https://mukbuddy.com/blog/shop-vacuum-safety/)
 - [why the hose shocks you](https://mukbuddy.com/blog/shop-vacuum-static-shocks/)
 - [the downtime these checks are meant to prevent](https://mukbuddy.com/blog/shop-vac-downtime-costing-your-crew/)
+- [disposing of collected dust safely](https://mukbuddy.com/blog/shop-vacuum-dust-disposal/)
+- [related: clean shop vacuum filter for contractor vacuum pre use inspection users](https://mukbuddy.com/blog/clean-shop-vacuum-filter/)
+- [related: why fine dust destroys vacuums for contractor vacuum pre use inspection users](https://mukbuddy.com/blog/why-fine-dust-destroys-vacuums/)
 
 [see how Muk Buddy helps protect vacuum airflow](https://mukbuddy.com/)

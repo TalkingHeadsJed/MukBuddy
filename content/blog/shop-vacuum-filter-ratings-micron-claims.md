@@ -504,5 +504,8 @@ Filter claims should be evaluated through four questions:
 - [HEPA filters explained](https://mukbuddy.com/blog/hepa-filters-explained/)
 - [multi-stage shop vacuum filtration: how bags, filters, and cyclones work together](https://mukbuddy.com/blog/multi-stage-shop-vacuum-filtration/)
 - [what micron claims mean for bags and silica](https://mukbuddy.com/blog/hepa-shop-vac-bag-fine-dust-silica/)
+- [related: shop vacuum blowing dust for shop vacuum filter ratings micron claims users](https://mukbuddy.com/blog/shop-vacuum-blowing-dust/)
+- [related: why fine dust destroys vacuums for shop vacuum filter ratings micron claims users](https://mukbuddy.com/blog/why-fine-dust-destroys-vacuums/)
+- [related: replace shop vacuum filter for shop vacuum filter ratings micron claims users](https://mukbuddy.com/blog/replace-shop-vacuum-filter/)
 
 [see how Muk Buddy helps protect vacuum airflow](https://mukbuddy.com/)

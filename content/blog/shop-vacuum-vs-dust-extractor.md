@@ -1745,5 +1745,9 @@ The most important distinction is simple:
 - [the shop vacuum buying guide](https://mukbuddy.com/blog/shop-vacuum-buying-guide/)
 - [how many years a shop vac gives you](https://mukbuddy.com/blog/how-long-shop-vacuums-last/)
 - [shop vacuum accessories guide](https://mukbuddy.com/blog/shop-vacuum-accessories/)
+- [comparing bags for drywall and masonry cleanup](https://mukbuddy.com/blog/best-shop-vac-bags/)
+- [choosing the right vacuum size](https://mukbuddy.com/blog/what-size-shop-vacuum/)
+- [understanding CFM and water lift specs](https://mukbuddy.com/blog/cfm-vs-water-lift-vs-horsepower/)
+- [related: why fine dust destroys vacuums for shop vacuum vs dust extractor users](https://mukbuddy.com/blog/why-fine-dust-destroys-vacuums/)
 
 [check Muk Buddy fit and ordering](https://thefloorlord.com/product/muk-buddy/)

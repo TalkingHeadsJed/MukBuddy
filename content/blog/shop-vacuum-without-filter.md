@@ -440,5 +440,8 @@ It protects:
 - [shop vacuum filter ratings and micron claims explained](https://mukbuddy.com/blog/shop-vacuum-filter-ratings-micron-claims/)
 - [what the bag does that the filter can't](https://mukbuddy.com/blog/do-you-need-a-bag-in-a-shop-vac/)
 - [the filter bill you pay for skipping the bag](https://mukbuddy.com/blog/running-shop-vac-without-bag-cost/)
+- [layered filtration for fine dust](https://mukbuddy.com/blog/multi-stage-shop-vacuum-filtration/)
+- [fixing exhaust dust problems](https://mukbuddy.com/blog/shop-vacuum-blowing-dust/)
+- [related: why fine dust destroys vacuums for shop vacuum without filter users](https://mukbuddy.com/blog/why-fine-dust-destroys-vacuums/)
 
 [see how Muk Buddy helps protect vacuum airflow](https://mukbuddy.com/)

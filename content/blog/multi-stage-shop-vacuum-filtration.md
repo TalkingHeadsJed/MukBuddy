@@ -640,5 +640,9 @@ Multi-stage filtration works by dividing the dust burden.
 - [paper vs. fleece vs. reusable shop vacuum bags](https://mukbuddy.com/blog/paper-vs-fleece-vs-reusable-vacuum-bags/)
 - [learn more about HEPA filters explained](https://mukbuddy.com/blog/hepa-filters-explained/)
 - [learn more about why fine dust destroys vacuums](https://mukbuddy.com/blog/why-fine-dust-destroys-vacuums/)
+- [picking a bag that handles renovation debris](https://mukbuddy.com/blog/best-shop-vac-bags/)
+- [the causes of dust leaving the exhaust](https://mukbuddy.com/blog/shop-vacuum-blowing-dust/)
+- [when and how to replace the filter](https://mukbuddy.com/blog/replace-shop-vacuum-filter/)
+- [related: vacuum bag material for multi stage shop vacuum filtration users](https://mukbuddy.com/blog/vacuum-bag-material/)
 
 [learn how Muk Buddy keeps debris out of the airflow path](https://mukbuddy.com/)

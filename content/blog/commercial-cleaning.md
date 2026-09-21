@@ -478,5 +478,8 @@ It is the one that completes the cleaning route reliably with the least labor, d
 - [shop vacuum guide for contractors](https://mukbuddy.com/blog/contractors/)
 - [learn more about best shop vacuum for dog groomers](https://mukbuddy.com/blog/dog-groomers/)
 - [learn more about best shop vacuum for remodeling contractors](https://mukbuddy.com/blog/remodeling-contractors/)
+- [related: what size shop vacuum for commercial cleaning users](https://mukbuddy.com/blog/what-size-shop-vacuum/)
+- [shop vac versus HEPA extractor for renovations](https://mukbuddy.com/blog/shop-vacuum-vs-hepa-dust-extractor-renovation/)
+- [understanding CFM and water lift specs](https://mukbuddy.com/blog/cfm-vs-water-lift-vs-horsepower/)
 
 [check fit for your crew](https://mukbuddy.com/contact/)

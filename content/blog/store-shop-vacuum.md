@@ -474,5 +474,6 @@ Empty it, dry it, inspect it, and protect the airflow path.
 - [complete wet/dry vacuum guide](https://mukbuddy.com/blog/how-wet-dry-vacuum-works/)
 - [how to prevent mold and bacteria in a wet/dry vacuum](https://mukbuddy.com/blog/prevent-mold-wet-dry-vacuum/)
 - [what to change before vacuuming water](https://mukbuddy.com/blog/vacuum-water-with-shop-vacuum/)
+- [related: switch shop vacuum dry to wet for store shop vacuum users](https://mukbuddy.com/blog/switch-shop-vacuum-dry-to-wet/)
 
 [learn how Muk Buddy keeps debris out of the airflow path](https://mukbuddy.com/)

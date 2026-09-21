@@ -539,5 +539,8 @@ Dry the tank, hose, filter, float, and attachments completely.
 - [the complete wet/dry vacuum guide](https://mukbuddy.com/blog/how-wet-dry-vacuum-works/)
 - [how to switch a shop vacuum from dry to wet pickup](https://mukbuddy.com/blog/switch-shop-vacuum-dry-to-wet/)
 - [using the vac for standing water](https://mukbuddy.com/blog/vacuum-water-with-shop-vacuum/)
+- [cleaning after wet pickup](https://mukbuddy.com/blog/clean-wet-dry-vacuum/)
+- [eliminating vacuum odors](https://mukbuddy.com/blog/shop-vacuum-smells-bad/)
+- [storing the vacuum properly](https://mukbuddy.com/blog/store-shop-vacuum/)
 
 [see how Muk Buddy helps protect vacuum airflow](https://mukbuddy.com/)

@@ -374,5 +374,9 @@ The central rule is simple:
 - [the full drywall dust cleanup process](https://mukbuddy.com/blog/drywall-dust-cleanup/)
 - [hooking a drywall sander to your vac](https://mukbuddy.com/blog/connect-drywall-sander-shop-vacuum/)
 - [keeping dust out of a client's living space](https://mukbuddy.com/blog/control-construction-dust-occupied-home/)
+- [reusable bags ranked by suction retention](https://mukbuddy.com/blog/best-shop-vac-bags/)
+- [related: multi stage shop vacuum filtration for best shop vacuum drywall dust users](https://mukbuddy.com/blog/multi-stage-shop-vacuum-filtration/)
+- [related: why fine dust destroys vacuums for best shop vacuum drywall dust users](https://mukbuddy.com/blog/why-fine-dust-destroys-vacuums/)
+- [shop vac versus HEPA extractor for renovations](https://mukbuddy.com/blog/shop-vacuum-vs-hepa-dust-extractor-renovation/)
 
 [see the Muk Buddy product details](https://thefloorlord.com/product/muk-buddy/)

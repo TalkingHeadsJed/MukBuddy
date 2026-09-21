@@ -1510,5 +1510,8 @@ The correct size is the machine that provides enough capacity without creating u
 - [the difference between a vac and an extractor](https://mukbuddy.com/blog/shop-vacuum-vs-dust-extractor/)
 - [DeWalt and Craftsman sizing for a reusable bag](https://mukbuddy.com/blog/reusable-shop-vac-bag-for-dewalt-craftsman/)
 - [RIDGID sizing for a reusable bag](https://mukbuddy.com/blog/reusable-shop-vac-bag-for-ridgid/)
+- [understanding CFM and water lift specs](https://mukbuddy.com/blog/cfm-vs-water-lift-vs-horsepower/)
+- [tank capacity considerations](https://mukbuddy.com/blog/shop-vacuum-tank-size-capacity/)
+- [related: why fine dust destroys vacuums for what size shop vacuum users](https://mukbuddy.com/blog/why-fine-dust-destroys-vacuums/)
 
 [check Muk Buddy fit and ordering](https://thefloorlord.com/product/muk-buddy/)

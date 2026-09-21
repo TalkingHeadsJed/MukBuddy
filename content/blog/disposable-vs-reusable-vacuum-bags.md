@@ -326,5 +326,8 @@ The best choice is the one that maintains airflow, protects the filter, minimize
 - [separator or bag - which actually helps](https://mukbuddy.com/blog/cyclone-separator-vs-vacuum-bag/)
 - [do you need a bag in a shop vac](https://mukbuddy.com/blog/do-you-need-a-bag-in-a-shop-vac/)
 - [why crews are moving off disposables](https://mukbuddy.com/blog/10-reasons-reusable-shop-vac-bag/)
+- [the bags we recommend after testing on fine dust](https://mukbuddy.com/blog/best-shop-vac-bags/)
+- [bag fabric and its effect on capture](https://mukbuddy.com/blog/vacuum-bag-material/)
+- [related: are reusable shop vacuum bags worth it for disposable vs reusable vacuum bags users](https://mukbuddy.com/blog/are-reusable-shop-vacuum-bags-worth-it/)
 
 [check Muk Buddy fit and ordering](https://thefloorlord.com/product/muk-buddy/)

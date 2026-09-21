@@ -703,5 +703,8 @@ Choose accessories as a system.
 - [the shop vacuum buying guide](https://mukbuddy.com/blog/shop-vacuum-buying-guide/)
 - [learn more about what shop vacuum hose size do you need](https://mukbuddy.com/blog/shop-vacuum-hose-size/)
 - [learn more about shop vacuum tank size vs. usable capacity](https://mukbuddy.com/blog/shop-vacuum-tank-size-capacity/)
+- [shop vac bags reviewed for heavy dust use](https://mukbuddy.com/blog/best-shop-vac-bags/)
+- [related: what size shop vacuum for shop vacuum accessories users](https://mukbuddy.com/blog/what-size-shop-vacuum/)
+- [related: why fine dust destroys vacuums for shop vacuum accessories users](https://mukbuddy.com/blog/why-fine-dust-destroys-vacuums/)
 
 [check Muk Buddy fit and ordering](https://thefloorlord.com/product/muk-buddy/)

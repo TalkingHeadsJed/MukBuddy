@@ -438,5 +438,6 @@ The complete process includes:
 - [complete wet/dry vacuum guide](https://mukbuddy.com/blog/how-wet-dry-vacuum-works/)
 - [how to clean the vac after a wet job](https://mukbuddy.com/blog/clean-wet-dry-vacuum/)
 - [why is my shop vacuum filter wet](https://mukbuddy.com/blog/shop-vacuum-filter-wet/)
+- [mold prevention after wet pickup](https://mukbuddy.com/blog/prevent-mold-wet-dry-vacuum/)
 
 [learn how Muk Buddy keeps debris out of the airflow path](https://mukbuddy.com/)

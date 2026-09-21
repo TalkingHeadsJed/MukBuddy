@@ -414,5 +414,9 @@ It is the system that:
 - [what electricians need from a shop vac](https://mukbuddy.com/blog/electricians/)
 - [what flooring crews need from a vac](https://mukbuddy.com/blog/flooring-contractors/)
 - [Best Shop Vacuum for Remodeling Contractors](https://mukbuddy.com/blog/remodeling-contractors/)
+- [a breakdown of bag choices for concrete and drywall](https://mukbuddy.com/blog/best-shop-vac-bags/)
+- [tank and motor size guidance](https://mukbuddy.com/blog/what-size-shop-vacuum/)
+- [what to look for in a shop vacuum](https://mukbuddy.com/blog/shop-vacuum-buying-guide/)
+- [understanding CFM and water lift specs](https://mukbuddy.com/blog/cfm-vs-water-lift-vs-horsepower/)
 
 [check fit for your crew](https://mukbuddy.com/contact/)

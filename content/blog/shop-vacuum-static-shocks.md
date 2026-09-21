@@ -417,5 +417,6 @@ Static control may require:
 - [shop vacuum safety guide](https://mukbuddy.com/blog/shop-vacuum-safety/)
 - [learn more about shop vacuum dust disposal guide](https://mukbuddy.com/blog/shop-vacuum-dust-disposal/)
 - [learn more about shop vacuum maintenance checklist](https://mukbuddy.com/blog/shop-vacuum-maintenance-checklist/)
+- [pre job vacuum inspection steps](https://mukbuddy.com/blog/contractor-vacuum-pre-use-inspection/)
 
 [see how Muk Buddy helps protect vacuum airflow](https://mukbuddy.com/)

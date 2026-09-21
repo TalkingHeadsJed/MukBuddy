@@ -509,5 +509,9 @@ A successful drywall-sander connection requires:
 - [how to clean up after a drywall job](https://mukbuddy.com/blog/drywall-dust-cleanup/)
 - [what drywall dust does to a filter](https://mukbuddy.com/blog/drywall-dust-ruins-vacuum-filters/)
 - [vacuuming drywall dust without damage](https://mukbuddy.com/blog/vacuum-drywall-dust-safely/)
+- [a guide to bags that work on drywall debris](https://mukbuddy.com/blog/best-shop-vac-bags/)
+- [dust control for occupied spaces](https://mukbuddy.com/blog/control-construction-dust-occupied-home/)
+- [vacuums suited for drywall cleanup](https://mukbuddy.com/blog/best-shop-vacuum-drywall-dust/)
+- [shop vac versus HEPA extractor for renovations](https://mukbuddy.com/blog/shop-vacuum-vs-hepa-dust-extractor-renovation/)
 
 [learn how Muk Buddy keeps debris out of the airflow path](https://mukbuddy.com/)

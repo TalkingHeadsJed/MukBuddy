@@ -490,5 +490,9 @@ It's based on **cost over time**.
 - [where an extractor beats a shop vac](https://mukbuddy.com/blog/shop-vacuum-vs-dust-extractor/)
 - [picking the right tank size](https://mukbuddy.com/blog/what-size-shop-vacuum/)
 - [what a reusable bag removes from your running costs](https://mukbuddy.com/blog/10-reasons-reusable-shop-vac-bag/)
+- [choosing the right bag for fine dust exposure](https://mukbuddy.com/blog/best-shop-vac-bags/)
+- [cutting bag and filter expenses](https://mukbuddy.com/blog/reduce-vacuum-bag-filter-costs/)
+- [shop vacuum lifespan expectations](https://mukbuddy.com/blog/how-long-shop-vacuums-last/)
+- [understanding CFM and water lift specs](https://mukbuddy.com/blog/cfm-vs-water-lift-vs-horsepower/)
 
 [check Muk Buddy fit and ordering](https://thefloorlord.com/product/muk-buddy/)
