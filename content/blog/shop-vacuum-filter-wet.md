@@ -464,5 +464,7 @@ Correct the cause before returning the vacuum to service.
 - [the complete wet/dry vacuum guide](https://mukbuddy.com/blog/how-wet-dry-vacuum-works/)
 - [washing down the tank after wet pickup](https://mukbuddy.com/blog/clean-wet-dry-vacuum/)
 - [why does my shop vacuum smell bad](https://mukbuddy.com/blog/shop-vacuum-smells-bad/)
+- [vacuuming liquids safely](https://mukbuddy.com/blog/vacuum-water-with-shop-vacuum/)
+- [the dry to wet transition](https://mukbuddy.com/blog/switch-shop-vacuum-dry-to-wet/)
 
 [see how Muk Buddy helps protect vacuum airflow](https://mukbuddy.com/)

@@ -425,5 +425,8 @@ Protect the airflow, and you'll protect the performance and lifespan of your vac
 - [complete shop vacuum troubleshooting guide](https://mukbuddy.com/blog/shop-vacuum-troubleshooting/)
 - [the airflow that does the cleaning and the cooling](https://mukbuddy.com/blog/shop-vacuum-airflow/)
 - [why vacuum motors overheat](https://mukbuddy.com/blog/vacuum-motor-overheating/)
+- [how to clean a clogged shop vacuum filter](https://mukbuddy.com/blog/clean-shop-vacuum-filter/)
+- [why shop vacuum hoses collapse under suction](https://mukbuddy.com/blog/shop-vacuum-hose-collapsing/)
+- [why the filter clogs so quickly](https://mukbuddy.com/blog/vacuum-filter-clogging-fast/)
 
 [learn how Muk Buddy keeps debris out of the airflow path](https://mukbuddy.com/)

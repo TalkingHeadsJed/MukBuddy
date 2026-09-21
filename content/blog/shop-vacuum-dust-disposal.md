@@ -477,5 +477,9 @@ A complete dust-control process should:
 - [the guide to paper vs. fleece vs. reusable shop vacuum bags](https://mukbuddy.com/blog/paper-vs-fleece-vs-reusable-vacuum-bags/)
 - [contractor shop vacuum pre-use inspection checklist](https://mukbuddy.com/blog/contractor-vacuum-pre-use-inspection/)
 - [static build-up in a vacuum hose](https://mukbuddy.com/blog/shop-vacuum-static-shocks/)
+- [a look at bags built for construction dust](https://mukbuddy.com/blog/best-shop-vac-bags/)
+- [keeping your vacuum running well](https://mukbuddy.com/blog/shop-vacuum-maintenance-checklist/)
+- [related: why fine dust destroys vacuums for shop vacuum dust disposal users](https://mukbuddy.com/blog/why-fine-dust-destroys-vacuums/)
+- [related: clean shop vacuum filter for shop vacuum dust disposal users](https://mukbuddy.com/blog/clean-shop-vacuum-filter/)
 
 [see how Muk Buddy helps protect vacuum airflow](https://mukbuddy.com/)

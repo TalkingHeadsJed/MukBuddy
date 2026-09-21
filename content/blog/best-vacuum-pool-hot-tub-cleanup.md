@@ -356,5 +356,7 @@ Prioritize safe positioning, float protection, practical drainage, and complete 
 - [complete wet/dry vacuum guide](https://mukbuddy.com/blog/how-wet-dry-vacuum-works/)
 - [how to store a shop vacuum properly](https://mukbuddy.com/blog/store-shop-vacuum/)
 - [picking up mud with a shop vac](https://mukbuddy.com/blog/vacuum-mud-with-shop-vacuum/)
+- [using a shop vac for water](https://mukbuddy.com/blog/vacuum-water-with-shop-vacuum/)
+- [related: switch shop vacuum dry to wet for best vacuum pool hot tub cleanup users](https://mukbuddy.com/blog/switch-shop-vacuum-dry-to-wet/)
 
 [see the Muk Buddy product details](https://thefloorlord.com/product/muk-buddy/)

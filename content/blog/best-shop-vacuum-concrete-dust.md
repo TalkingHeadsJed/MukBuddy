@@ -364,5 +364,8 @@ It is chosen by how effectively the entire system:
 - [the complete concrete dust cleanup guide](https://mukbuddy.com/blog/concrete-dust-cleanup/)
 - [learn more about why is dust escaping from my power tool shroud](https://mukbuddy.com/blog/dust-escaping-power-tool-shroud/)
 - [learn more about best shop vacuum for tile and masonry contractors](https://mukbuddy.com/blog/tile-masonry-contractors/)
+- [the bags that actually protect the motor from fines](https://mukbuddy.com/blog/best-shop-vac-bags/)
+- [related: why fine dust destroys vacuums for best shop vacuum concrete dust users](https://mukbuddy.com/blog/why-fine-dust-destroys-vacuums/)
+- [shop vac versus dust extractor comparison](https://mukbuddy.com/blog/shop-vacuum-vs-dust-extractor/)
 
 [check Muk Buddy fit and ordering](https://thefloorlord.com/product/muk-buddy/)

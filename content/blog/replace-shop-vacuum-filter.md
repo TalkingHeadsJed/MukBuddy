@@ -497,5 +497,8 @@ It's **making every filter last as long as it can without sacrificing performanc
 - [the guide to shop vacuum maintenance checklist](https://mukbuddy.com/blog/shop-vacuum-maintenance-checklist/)
 - [how to clean a shop vacuum filter](https://mukbuddy.com/blog/clean-shop-vacuum-filter/)
 - [what happens if you use a shop vacuum without a filter](https://mukbuddy.com/blog/shop-vacuum-without-filter/)
+- [the stages of shop vacuum filtration](https://mukbuddy.com/blog/multi-stage-shop-vacuum-filtration/)
+- [related: vacuum filter clogging fast for replace shop vacuum filter users](https://mukbuddy.com/blog/vacuum-filter-clogging-fast/)
+- [related: shop vacuum blowing dust for replace shop vacuum filter users](https://mukbuddy.com/blog/shop-vacuum-blowing-dust/)
 
 [see how Muk Buddy’s two-chamber system works](https://mukbuddy.com/)

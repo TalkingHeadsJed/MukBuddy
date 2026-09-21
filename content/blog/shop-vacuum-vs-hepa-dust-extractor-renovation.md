@@ -490,5 +490,9 @@ A shop vacuum prioritizes:
 - [the shop vacuum buying guide](https://mukbuddy.com/blog/shop-vacuum-buying-guide/)
 - [how much does a shop vacuum really cost to own](https://mukbuddy.com/blog/shop-vacuum-cost-of-ownership/)
 - [what size vac the job calls for](https://mukbuddy.com/blog/what-size-shop-vacuum/)
+- [how to pick a bag that handles gypsum and silica](https://mukbuddy.com/blog/best-shop-vac-bags/)
+- [understanding filter micron ratings](https://mukbuddy.com/blog/shop-vacuum-filter-ratings-micron-claims/)
+- [related: multi stage shop vacuum filtration for shop vacuum vs hepa dust extractor renovation users](https://mukbuddy.com/blog/multi-stage-shop-vacuum-filtration/)
+- [what HEPA filtration actually means](https://mukbuddy.com/blog/hepa-filters-explained/)
 
 [check Muk Buddy fit and ordering](https://thefloorlord.com/product/muk-buddy/)

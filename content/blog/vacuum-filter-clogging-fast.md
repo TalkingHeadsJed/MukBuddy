@@ -587,5 +587,8 @@ They simply understand one fundamental principle:
 - [how to clean a shop vacuum filter](https://mukbuddy.com/blog/clean-shop-vacuum-filter/)
 - [how often should you replace a shop vacuum filter](https://mukbuddy.com/blog/replace-shop-vacuum-filter/)
 - [why bagless running kills filters so fast](https://mukbuddy.com/blog/running-shop-vac-without-bag-cost/)
+- [how bags and filters work together](https://mukbuddy.com/blog/multi-stage-shop-vacuum-filtration/)
+- [understanding fine particle damage](https://mukbuddy.com/blog/why-fine-dust-destroys-vacuums/)
+- [related: shop vacuum blowing dust for vacuum filter clogging fast users](https://mukbuddy.com/blog/shop-vacuum-blowing-dust/)
 
 [learn how Muk Buddy keeps debris out of the airflow path](https://mukbuddy.com/)

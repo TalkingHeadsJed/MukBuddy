@@ -1778,5 +1778,9 @@ Buy a complete system.
 - [shop vac against a dust extractor](https://mukbuddy.com/blog/shop-vacuum-vs-dust-extractor/)
 - [Shop Vacuum vs. HEPA Dust Extractor for Renovation Work](https://mukbuddy.com/blog/shop-vacuum-vs-hepa-dust-extractor-renovation/)
 - [sizing a shop vac to the work](https://mukbuddy.com/blog/what-size-shop-vacuum/)
+- [bags that work when fine dust is the problem](https://mukbuddy.com/blog/best-shop-vac-bags/)
+- [understanding CFM and water lift specs](https://mukbuddy.com/blog/cfm-vs-water-lift-vs-horsepower/)
+- [related: multi stage shop vacuum filtration for shop vacuum buying guide users](https://mukbuddy.com/blog/multi-stage-shop-vacuum-filtration/)
+- [related: why fine dust destroys vacuums for shop vacuum buying guide users](https://mukbuddy.com/blog/why-fine-dust-destroys-vacuums/)
 
 [see the Muk Buddy product details](https://thefloorlord.com/product/muk-buddy/)

@@ -378,5 +378,9 @@ A vacuum bag usually falls off because of:
 - [how long a reusable bag holds up](https://mukbuddy.com/blog/reusable-vacuum-bag-lifespan/)
 - [a bag that seats properly on DeWalt and Craftsman tanks](https://mukbuddy.com/blog/reusable-shop-vac-bag-for-dewalt-craftsman/)
 - [why RIDGID collars pop loose and what seats properly](https://mukbuddy.com/blog/reusable-shop-vac-bag-for-ridgid/)
+- [the shop vac bag guide for fine particle work](https://mukbuddy.com/blog/best-shop-vac-bags/)
+- [installing a bag correctly](https://mukbuddy.com/blog/install-shop-vacuum-bag/)
+- [when dust bypasses the bag](https://mukbuddy.com/blog/dust-getting-around-vacuum-bag/)
+- [related: vacuum bag material for shop vacuum bag falling off users](https://mukbuddy.com/blog/vacuum-bag-material/)
 
 [check Muk Buddy fit and ordering](https://thefloorlord.com/product/muk-buddy/)

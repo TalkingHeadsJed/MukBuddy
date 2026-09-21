@@ -474,5 +474,8 @@ Do not evaluate suction by how tightly the hose pulls inward.
 - [complete shop vacuum troubleshooting guide](https://mukbuddy.com/blog/shop-vacuum-troubleshooting/)
 - [learn more about why does my shop vacuum keep tripping the breaker](https://mukbuddy.com/blog/shop-vacuum-trips-breaker/)
 - [learn more about how to test shop vacuum suction and airflow](https://mukbuddy.com/blog/test-shop-vacuum-suction-airflow/)
+- [recovering lost shop vacuum performance](https://mukbuddy.com/blog/shop-vacuum-lost-suction/)
+- [why suction pulses during operation](https://mukbuddy.com/blog/shop-vacuum-suction-pulsing/)
+- [related: shop vacuum keeps clogging for shop vacuum hose collapsing users](https://mukbuddy.com/blog/shop-vacuum-keeps-clogging/)
 
 [learn how Muk Buddy keeps debris out of the airflow path](https://mukbuddy.com/)

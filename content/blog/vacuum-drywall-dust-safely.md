@@ -486,5 +486,9 @@ And your vacuum will perform better for much longer.
 - [the drywall cleanup method that spares your vac](https://mukbuddy.com/blog/drywall-dust-cleanup/)
 - [vac picks for heavy drywall dust](https://mukbuddy.com/blog/best-shop-vacuum-drywall-dust/)
 - [containing construction dust in an occupied home](https://mukbuddy.com/blog/control-construction-dust-occupied-home/)
+- [bags that keep airflow steady through heavy loads](https://mukbuddy.com/blog/best-shop-vac-bags/)
+- [why drywall dust is so hard on vacuums](https://mukbuddy.com/blog/why-fine-dust-destroys-vacuums/)
+- [what HEPA filtration actually means](https://mukbuddy.com/blog/hepa-filters-explained/)
+- [shop vac versus HEPA extractor for renovations](https://mukbuddy.com/blog/shop-vacuum-vs-hepa-dust-extractor-renovation/)
 
 [learn how Muk Buddy keeps debris out of the airflow path](https://mukbuddy.com/)

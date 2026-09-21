@@ -497,5 +497,8 @@ A properly maintained filter lasts longer, protects your motor, and keeps your v
 - [paper vs. fleece vs. reusable shop vacuum bags](https://mukbuddy.com/blog/paper-vs-fleece-vs-reusable-vacuum-bags/)
 - [learn more about automatic filter cleaning vs. manual filter cleaning](https://mukbuddy.com/blog/automatic-vs-manual-filter-cleaning/)
 - [learn more about what happens if you use a shop vacuum without a filter](https://mukbuddy.com/blog/shop-vacuum-without-filter/)
+- [combining bags with filters for better capture](https://mukbuddy.com/blog/multi-stage-shop-vacuum-filtration/)
+- [related: shop vacuum blowing dust for clean shop vacuum filter users](https://mukbuddy.com/blog/shop-vacuum-blowing-dust/)
+- [swapping out a worn filter](https://mukbuddy.com/blog/replace-shop-vacuum-filter/)
 
 [learn how Muk Buddy keeps debris out of the airflow path](https://mukbuddy.com/)

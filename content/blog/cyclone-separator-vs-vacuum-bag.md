@@ -2064,5 +2064,9 @@ It is whether the collection system removes enough dust before it reaches the fi
 - [the shop vacuum bag comparison guide](https://mukbuddy.com/blog/paper-vs-fleece-vs-reusable-vacuum-bags/)
 - [learn more about why does my shop vacuum bag collapse](https://mukbuddy.com/blog/shop-vacuum-bag-collapses/)
 - [do you need a bag in a shop vac](https://mukbuddy.com/blog/do-you-need-a-bag-in-a-shop-vac/)
+- [finding a bag that keeps suction through the job](https://mukbuddy.com/blog/best-shop-vac-bags/)
+- [the value of switching to reusable bags](https://mukbuddy.com/blog/are-reusable-shop-vacuum-bags-worth-it/)
+- [related: vacuum bag material for cyclone separator vs vacuum bag users](https://mukbuddy.com/blog/vacuum-bag-material/)
+- [disposable versus reusable bags](https://mukbuddy.com/blog/disposable-vs-reusable-vacuum-bags/)
 
 [check Muk Buddy fit and ordering](https://thefloorlord.com/product/muk-buddy/)

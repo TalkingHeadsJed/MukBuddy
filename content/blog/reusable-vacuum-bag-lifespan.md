@@ -534,5 +534,9 @@ Reusable bag lifespan depends on:
 - [learn more about why is my reusable vacuum bag losing airflow](https://mukbuddy.com/blog/reusable-vacuum-bag-losing-airflow/)
 - [learn more about how vacuum bag material affects suction, filtration, and capacity](https://mukbuddy.com/blog/vacuum-bag-material/)
 - [reusing a bag vs. replacing it every job](https://mukbuddy.com/blog/can-you-reuse-a-shop-vac-bag/)
+- [bags that maintain performance on fine dust](https://mukbuddy.com/blog/best-shop-vac-bags/)
+- [reusable bag maintenance steps](https://mukbuddy.com/blog/clean-reusable-shop-vacuum-bag/)
+- [related: are reusable shop vacuum bags worth it for reusable vacuum bag lifespan users](https://mukbuddy.com/blog/are-reusable-shop-vacuum-bags-worth-it/)
+- [lowering consumable costs](https://mukbuddy.com/blog/reduce-vacuum-bag-filter-costs/)
 
 [check Muk Buddy fit and ordering](https://thefloorlord.com/product/muk-buddy/)

@@ -2343,5 +2343,7 @@ Choose the system that delivers the right kind of airflow where the dust is actu
 - [what shop vacuum hose size do you need](https://mukbuddy.com/blog/shop-vacuum-hose-size/)
 - [guide to connecting shop vacuums to power tools](https://mukbuddy.com/blog/connect-shop-vacuum-power-tools/)
 - [can you vacuum sawdust with a shop vacuum](https://mukbuddy.com/blog/vacuum-sawdust-shop-vacuum/)
+- [understanding CFM and water lift specs](https://mukbuddy.com/blog/cfm-vs-water-lift-vs-horsepower/)
+- [related: why fine dust destroys vacuums for dust collector vs shop vacuum users](https://mukbuddy.com/blog/why-fine-dust-destroys-vacuums/)
 
 [learn how Muk Buddy keeps debris out of the airflow path](https://mukbuddy.com/)

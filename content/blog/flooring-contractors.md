@@ -373,5 +373,9 @@ They need a system that:
 - [the shop vacuum guide for contractors](https://mukbuddy.com/blog/contractors/)
 - [choosing a vac for commercial cleaning](https://mukbuddy.com/blog/commercial-cleaning/)
 - [best shop vacuum for dog groomers](https://mukbuddy.com/blog/dog-groomers/)
+- [the bag lineup for contractors who vacuum fines](https://mukbuddy.com/blog/best-shop-vac-bags/)
+- [related: what size shop vacuum for flooring contractors users](https://mukbuddy.com/blog/what-size-shop-vacuum/)
+- [how to pick the right shop vacuum](https://mukbuddy.com/blog/shop-vacuum-buying-guide/)
+- [understanding CFM and water lift specs](https://mukbuddy.com/blog/cfm-vs-water-lift-vs-horsepower/)
 
 [ask about vacuum fit and crew pricing](https://mukbuddy.com/contact/)

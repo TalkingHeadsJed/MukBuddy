@@ -465,5 +465,8 @@ Do not repeatedly reset the breaker or bypass protective devices.
 - [the complete shop vacuum troubleshooting guide](https://mukbuddy.com/blog/shop-vacuum-troubleshooting/)
 - [suction that pulses or surges](https://mukbuddy.com/blog/shop-vacuum-suction-pulsing/)
 - [how to test shop vacuum suction and airflow](https://mukbuddy.com/blog/test-shop-vacuum-suction-airflow/)
+- [why dust escapes through the exhaust](https://mukbuddy.com/blog/shop-vacuum-blowing-dust/)
+- [related: shop vacuum keeps clogging for shop vacuum trips breaker users](https://mukbuddy.com/blog/shop-vacuum-keeps-clogging/)
+- [diagnosing motor odor problems](https://mukbuddy.com/blog/shop-vacuum-burning-smell/)
 
 [see how Muk Buddy helps protect vacuum airflow](https://mukbuddy.com/)

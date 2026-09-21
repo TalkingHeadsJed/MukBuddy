@@ -403,5 +403,9 @@ Correct installation requires:
 - [fitting a reusable bag to a RIDGID wet/dry vac](https://mukbuddy.com/blog/reusable-shop-vac-bag-for-ridgid/)
 - [deciding whether your job needs a bag at all](https://mukbuddy.com/blog/do-you-need-a-bag-in-a-shop-vac/)
 - [why a correctly fitted paper bag still splits](https://mukbuddy.com/blog/why-disposable-shop-vac-bags-fail/)
+- [shop vac bags that earn their cost on fine dust](https://mukbuddy.com/blog/best-shop-vac-bags/)
+- [related: vacuum bag material for install shop vacuum bag users](https://mukbuddy.com/blog/vacuum-bag-material/)
+- [related: are reusable shop vacuum bags worth it for install shop vacuum bag users](https://mukbuddy.com/blog/are-reusable-shop-vacuum-bags-worth-it/)
+- [related: clean reusable shop vacuum bag for install shop vacuum bag users](https://mukbuddy.com/blog/clean-reusable-shop-vacuum-bag/)
 
 [check Muk Buddy fit and ordering](https://thefloorlord.com/product/muk-buddy/)

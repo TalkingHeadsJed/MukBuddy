@@ -384,5 +384,6 @@ Prioritize a clog-resistant airflow path, effective filtration, simple wet/dry c
 - [the shop vacuum guide for contractors](https://mukbuddy.com/blog/contractors/)
 - [vac choice for electrical work](https://mukbuddy.com/blog/electricians/)
 - [best shop vacuum for remodeling contractors](https://mukbuddy.com/blog/remodeling-contractors/)
+- [related: shop vacuum buying guide for dog groomers users](https://mukbuddy.com/blog/shop-vacuum-buying-guide/)
 
 [ask about vacuum fit and crew pricing](https://mukbuddy.com/contact/)

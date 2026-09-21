@@ -574,5 +574,8 @@ The greatest threats are:
 - [shop vacuum accessories guide](https://mukbuddy.com/blog/shop-vacuum-accessories/)
 - [shop vacuum tank size vs. usable capacity](https://mukbuddy.com/blog/shop-vacuum-tank-size-capacity/)
 - [downtime as the hidden cost of a dying vac](https://mukbuddy.com/blog/shop-vac-downtime-costing-your-crew/)
+- [related: what size shop vacuum for how long shop vacuums last users](https://mukbuddy.com/blog/what-size-shop-vacuum/)
+- [related: shop vacuum lost suction for how long shop vacuums last users](https://mukbuddy.com/blog/shop-vacuum-lost-suction/)
+- [understanding CFM and water lift specs](https://mukbuddy.com/blog/cfm-vs-water-lift-vs-horsepower/)
 
 [learn how Muk Buddy keeps debris out of the airflow path](https://mukbuddy.com/)

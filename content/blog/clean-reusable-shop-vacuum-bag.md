@@ -569,5 +569,9 @@ Protect:
 - [shop vacuum bag comparison guide](https://mukbuddy.com/blog/paper-vs-fleece-vs-reusable-vacuum-bags/)
 - [how many jobs a reusable bag lasts](https://mukbuddy.com/blog/reusable-vacuum-bag-lifespan/)
 - [why is my reusable vacuum bag losing airflow](https://mukbuddy.com/blog/reusable-vacuum-bag-losing-airflow/)
+- [bags that protect filters from fine particles](https://mukbuddy.com/blog/best-shop-vac-bags/)
+- [related: vacuum bag material for clean reusable shop vacuum bag users](https://mukbuddy.com/blog/vacuum-bag-material/)
+- [related: are reusable shop vacuum bags worth it for clean reusable shop vacuum bag users](https://mukbuddy.com/blog/are-reusable-shop-vacuum-bags-worth-it/)
+- [related: multi stage shop vacuum filtration for clean reusable shop vacuum bag users](https://mukbuddy.com/blog/multi-stage-shop-vacuum-filtration/)
 
 [see the Muk Buddy product details](https://thefloorlord.com/product/muk-buddy/)

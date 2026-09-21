@@ -506,5 +506,8 @@ Then dry the entire system before dry fine-dust use.
 - [complete wet/dry vacuum guide](https://mukbuddy.com/blog/how-wet-dry-vacuum-works/)
 - [learn more about best vacuum for pool and hot tub cleanup](https://mukbuddy.com/blog/best-vacuum-pool-hot-tub-cleanup/)
 - [learn more about why does my shop vacuum smell bad](https://mukbuddy.com/blog/shop-vacuum-smells-bad/)
+- [keeping the tank mold free](https://mukbuddy.com/blog/prevent-mold-wet-dry-vacuum/)
+- [preparing for wet pickup](https://mukbuddy.com/blog/switch-shop-vacuum-dry-to-wet/)
+- [related: clean shop vacuum filter for clean wet dry vacuum users](https://mukbuddy.com/blog/clean-shop-vacuum-filter/)
 
 [learn how Muk Buddy keeps debris out of the airflow path](https://mukbuddy.com/)

@@ -502,5 +502,8 @@ Listening early often prevents bigger problems later.
 - [the complete shop vacuum troubleshooting guide](https://mukbuddy.com/blog/shop-vacuum-troubleshooting/)
 - [learn more about CFM vs. water lift vs. horsepower](https://mukbuddy.com/blog/cfm-vs-water-lift-vs-horsepower/)
 - [learn more about how to increase shop vacuum suction](https://mukbuddy.com/blog/increase-shop-vacuum-suction/)
+- [chronic clogging and its root causes](https://mukbuddy.com/blog/shop-vacuum-keeps-clogging/)
+- [related: shop vacuum hose collapsing for shop vacuum too loud users](https://mukbuddy.com/blog/shop-vacuum-hose-collapsing/)
+- [stopping dust blowback from the vacuum](https://mukbuddy.com/blog/shop-vacuum-blowing-dust/)
 
 [see how Muk Buddy’s two-chamber system works](https://mukbuddy.com/)

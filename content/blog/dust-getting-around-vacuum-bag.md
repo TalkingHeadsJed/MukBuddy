@@ -397,5 +397,9 @@ Dust gets around a vacuum bag through:
 - [why a reused disposable leaks at the collar](https://mukbuddy.com/blog/can-you-reuse-a-shop-vac-bag/)
 - [getting a clean seal on a RIDGID tank](https://mukbuddy.com/blog/reusable-shop-vac-bag-for-ridgid/)
 - [the failure that dumps dust into the tank](https://mukbuddy.com/blog/why-disposable-shop-vac-bags-fail/)
+- [the best bag options for dusty renovation work](https://mukbuddy.com/blog/best-shop-vac-bags/)
+- [related: vacuum bag material for dust getting around vacuum bag users](https://mukbuddy.com/blog/vacuum-bag-material/)
+- [related: are reusable shop vacuum bags worth it for dust getting around vacuum bag users](https://mukbuddy.com/blog/are-reusable-shop-vacuum-bags-worth-it/)
+- [related: shop vacuum blowing dust for dust getting around vacuum bag users](https://mukbuddy.com/blog/shop-vacuum-blowing-dust/)
 
 [see the Muk Buddy product details](https://thefloorlord.com/product/muk-buddy/)

@@ -566,5 +566,9 @@ Focus on:
 - [the real difference between disposable and reusable](https://mukbuddy.com/blog/disposable-vs-reusable-vacuum-bags/)
 - [the fastest way to stop buying bags every month](https://mukbuddy.com/blog/10-reasons-reusable-shop-vac-bag/)
 - [the real price of going without a bag](https://mukbuddy.com/blog/running-shop-vac-without-bag-cost/)
+- [bags tested on the fine particles that ruin vacuums](https://mukbuddy.com/blog/best-shop-vac-bags/)
+- [the materials used in vacuum bags](https://mukbuddy.com/blog/vacuum-bag-material/)
+- [how long reusable bags actually last](https://mukbuddy.com/blog/reusable-vacuum-bag-lifespan/)
+- [how to keep a reusable bag working](https://mukbuddy.com/blog/clean-reusable-shop-vacuum-bag/)
 
 [see the Muk Buddy product details](https://thefloorlord.com/product/muk-buddy/)

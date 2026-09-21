@@ -549,5 +549,6 @@ Hose size should match:
 - [shop vacuum buying guide](https://mukbuddy.com/blog/shop-vacuum-buying-guide/)
 - [learn more about how much does a shop vacuum really cost to own](https://mukbuddy.com/blog/shop-vacuum-cost-of-ownership/)
 - [learn more about shop vacuum vs. HEPA dust extractor for renovation work](https://mukbuddy.com/blog/shop-vacuum-vs-hepa-dust-extractor-renovation/)
+- [related: what size shop vacuum for shop vacuum hose size users](https://mukbuddy.com/blog/what-size-shop-vacuum/)
 
 [see the Muk Buddy product details](https://thefloorlord.com/product/muk-buddy/)

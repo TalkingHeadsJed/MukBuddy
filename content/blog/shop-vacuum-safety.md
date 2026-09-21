@@ -560,5 +560,8 @@ Safe shop vacuum use requires:
 - [stopping static shocks off the hose](https://mukbuddy.com/blog/shop-vacuum-static-shocks/)
 - [learn more about contractor shop vacuum pre-use inspection checklist](https://mukbuddy.com/blog/contractor-vacuum-pre-use-inspection/)
 - [learn more about shop vacuum dust disposal guide](https://mukbuddy.com/blog/shop-vacuum-dust-disposal/)
+- [the risks of filterless operation](https://mukbuddy.com/blog/shop-vacuum-without-filter/)
+- [routine vacuum care checklist](https://mukbuddy.com/blog/shop-vacuum-maintenance-checklist/)
+- [related: clean shop vacuum filter for shop vacuum safety users](https://mukbuddy.com/blog/clean-shop-vacuum-filter/)
 
 [see how Muk Buddy helps protect vacuum airflow](https://mukbuddy.com/)

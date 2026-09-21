@@ -366,5 +366,9 @@ Service it when it reaches the first limit:
 - [dust bypassing the bag entirely](https://mukbuddy.com/blog/dust-getting-around-vacuum-bag/)
 - [how to install a shop vacuum bag correctly](https://mukbuddy.com/blog/install-shop-vacuum-bag/)
 - [emptying and reusing a bag instead of tossing it](https://mukbuddy.com/blog/can-you-reuse-a-shop-vac-bag/)
+- [bags designed for the dust you actually encounter](https://mukbuddy.com/blog/best-shop-vac-bags/)
+- [comparing bag construction materials](https://mukbuddy.com/blog/vacuum-bag-material/)
+- [calculating the reusable bag payoff](https://mukbuddy.com/blog/are-reusable-shop-vacuum-bags-worth-it/)
+- [why reusable bags lose airflow](https://mukbuddy.com/blog/reusable-vacuum-bag-losing-airflow/)
 
 [see the Muk Buddy product details](https://thefloorlord.com/product/muk-buddy/)

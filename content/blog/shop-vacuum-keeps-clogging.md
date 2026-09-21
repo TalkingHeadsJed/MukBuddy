@@ -531,5 +531,8 @@ And more time getting work done.
 - [the complete shop vacuum troubleshooting guide](https://mukbuddy.com/blog/shop-vacuum-troubleshooting/)
 - [why does my shop vacuum smell like it’s burning](https://mukbuddy.com/blog/shop-vacuum-burning-smell/)
 - [why the vac got louder](https://mukbuddy.com/blog/shop-vacuum-too-loud/)
+- [filter cleaning steps that restore suction](https://mukbuddy.com/blog/clean-shop-vacuum-filter/)
+- [the causes of premature filter clogging](https://mukbuddy.com/blog/vacuum-filter-clogging-fast/)
+- [how fine dust damages vacuum systems](https://mukbuddy.com/blog/why-fine-dust-destroys-vacuums/)
 
 [see how Muk Buddy’s two-chamber system works](https://mukbuddy.com/)

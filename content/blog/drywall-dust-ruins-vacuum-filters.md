@@ -453,5 +453,9 @@ Understand that relationship, and you'll understand why drywall dust is one of t
 - [drywall dust cleanup start to finish](https://mukbuddy.com/blog/drywall-dust-cleanup/)
 - [which vacuums survive drywall work](https://mukbuddy.com/blog/best-shop-vacuum-drywall-dust/)
 - [drywall dust pickup that won't kill your vac](https://mukbuddy.com/blog/vacuum-drywall-dust-safely/)
+- [filtration bags compared for construction dust](https://mukbuddy.com/blog/best-shop-vac-bags/)
+- [managing dust when people are living there](https://mukbuddy.com/blog/control-construction-dust-occupied-home/)
+- [shop vac versus HEPA extractor for renovations](https://mukbuddy.com/blog/shop-vacuum-vs-hepa-dust-extractor-renovation/)
+- [related: multi stage shop vacuum filtration for drywall dust ruins vacuum filters users](https://mukbuddy.com/blog/multi-stage-shop-vacuum-filtration/)
 
 [learn how Muk Buddy keeps debris out of the airflow path](https://mukbuddy.com/)

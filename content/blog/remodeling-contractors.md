@@ -448,5 +448,8 @@ No single configuration is ideal for every stage.
 - [shop vacuum guide for contractors](https://mukbuddy.com/blog/contractors/)
 - [shop vacuums suited to electrical trades](https://mukbuddy.com/blog/electricians/)
 - [shop vacuums built for flooring contractors](https://mukbuddy.com/blog/flooring-contractors/)
+- [which bag to buy once you stop buying disposables](https://mukbuddy.com/blog/best-shop-vac-bags/)
+- [related: what size shop vacuum for remodeling contractors users](https://mukbuddy.com/blog/what-size-shop-vacuum/)
+- [the buying guide for shop vacs](https://mukbuddy.com/blog/shop-vacuum-buying-guide/)
 
 [check fit for your crew](https://mukbuddy.com/contact/)
