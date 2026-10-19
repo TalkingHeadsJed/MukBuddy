@@ -50,7 +50,7 @@ The advice you see everywhere online to never reuse a vacuum bag is correct, abo
 
 ## How a reusable bag saves money
 
-The math is simple. A disposable bag costs roughly $5 to $13 depending on the brand (RIDGID VF3502 runs about $12.49 per bag at Home Depot; Craftsman CMXZVBE38749 runs about $5.50 per bag on Amazon). A crew burning fine dust can go through two or three a week. That's $500 to $700 a year per vac, year after year.
+The math is simple. A disposable bag costs roughly $5 to $13 depending on the brand (RIDGID VF3502 runs about $12.49 per bag at Home Depot; Craftsman CMXZVBE38749 runs about $5.50 per bag on Amazon). A crew burning fine dust can go through two or three a week. That's roughly $500 to $2,000 a year per vac, year after year.
 
 A reusable bag is one purchase. Muk Buddy is $99. It pays for itself in weeks to months depending on how hard you run your vac, then keeps saving after that.
 

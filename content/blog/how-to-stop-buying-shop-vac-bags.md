@@ -13,7 +13,7 @@ faq:
   - q: "How do I stop buying shop vac bags?"
     a: "Switch to a reusable bag. A reusable shop vac bag is designed to be emptied and reloaded instead of thrown away. You buy it once and stop the rebuy cycle. Muk Buddy is $99 and replaces years of disposable purchases."
   - q: "Why do disposable shop vac bags cost so much over time?"
-    a: "Because you're not buying one bag. You're buying the same bag over and over. Disposables run $5 to $13 each depending on brand, and a busy crew can burn two or three a week. That's $500 to $700 a year per vac. The vac was a one-time purchase; the bags are a recurring bill that never ends."
+    a: "Because you're not buying one bag. You're buying the same bag over and over. Disposables run $5 to $13 each depending on brand, and a busy crew can burn two or three a week. That's roughly $500 to $2,000 a year per vac. The vac was a one-time purchase; the bags are a recurring bill that never ends."
   - q: "Is a reusable shop vac bag cheaper than disposables?"
     a: "Yes, over any reasonable time frame. A reusable bag like Muk Buddy costs $99 once. It pays for itself in weeks to months of regular use, then keeps saving after that. The more you vac, the faster it pays off."
   - q: "Does a reusable bag work as well as a disposable?"
@@ -26,7 +26,7 @@ How to stop buying shop vac bags is one of those questions that sounds like it h
 
 ## The short answer
 
-**You stop buying shop vac bags by switching to a reusable one.** A reusable bag is designed to be emptied and reloaded, not thrown away. You buy it once, and the rebuy cycle ends. Muk Buddy is $99. It replaces the $500 to $700 a year a busy crew spends on disposables, and it keeps suction steady instead of letting it die by lunch.
+**You stop buying shop vac bags by switching to a reusable one.** A reusable bag is designed to be emptied and reloaded, not thrown away. You buy it once, and the rebuy cycle ends. Muk Buddy is $99. It replaces the $500 to $2,000 a year a busy crew spends on disposables, and it keeps suction steady instead of letting it die by lunch.
 
 ## The subscription nobody signed up for
 
@@ -41,12 +41,12 @@ Let's put real numbers on it:
 | RIDGID | VF3502 (2-pack) | $24.98 at Home Depot | $12.49/bag |
 | DeWalt | DXVA19-4102 (3-pack) | $20.99 on Amazon | $7.00/bag |
 | Craftsman | CMXZVBE38749 (3-pack) | $16.55 on Amazon | $5.52/bag |
-| Shop-Vac | Type F, 10-14 gal (3-pack) | $19.99 at shopvac.com | $6.66/bag |
+| Shop-Vac | Type F (3-pack) | $19.99 at shopvac.com | $6.66/bag |
 | Vacmaster | VHBL (3-pack) | $22.99 at vacmaster.com | $7.67/bag |
 
 *(Prices as of October 2026.)*
 
-A crew on fine dust can burn two or three bags a week. At $5 to $13 per bag, that's $500 to $700 a year, per vac, every year. The vac itself might have cost $150. The bags cost more than the machine, and they never stop.
+A crew on fine dust can burn two or three bags a week. At $5 to $13 per bag, that's roughly $500 to $2,000 a year, per vac, every year. The vac itself might have cost $150. The bags cost more than the machine, and they never stop.
 
 ## The one-time alternative
 

@@ -48,8 +48,8 @@ Not sure of your inlet size? Measure the port where the hose plugs in. A 2.5-inc
 DeWalt DXVA19-4102 bags run about $20.99 for a 3-pack on Amazon, or roughly $7 per bag (prices as of October 2026). That sounds reasonable until you run the numbers on a busy vac:
 
 - Fine-dust crew (drywall, concrete): 2 to 3 bags a week
-- Annual cost: roughly $350 to $550 per vac
-- Over 3 years: $1,000 to $1,650
+- Annual cost: roughly $730 to $1,100 per vac
+- Over 3 years: $2,200 to $3,300
 
 The vac itself might have cost $150. The bags cost more than the machine over its life, and the bill never stops.
 
@@ -79,7 +79,7 @@ We make Muk Buddy, so we're not neutral. But we're also not claiming it's right 
 
 ## The bottom line
 
-If you've been searching for a reusable bag for your DeWalt shop vac, here's the answer: Muk Buddy fits most DXV-series vacs with a 2.5-inch inlet, replaces the DXVA19-4102 disposables, holds suction better on fine dust, and costs $99 once instead of $350 a year. That's the switch.
+If you've been searching for a reusable bag for your DeWalt shop vac, here's the answer: Muk Buddy fits most DXV-series vacs with a 2.5-inch inlet, replaces the DXVA19-4102 disposables, holds suction better on fine dust, and costs $99 once instead of $700 or more a year. That's the switch.
 
 [See how Muk Buddy fits your DeWalt and how the 2-chamber design holds suction →](/)
 

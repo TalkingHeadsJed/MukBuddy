@@ -15,7 +15,7 @@ faq:
   - q: "Does Muk Buddy fit RIDGID vacs that use VF3502 bags?"
     a: "Yes. Muk Buddy fits the standard 2.5-inch inlet used by RIDGID vacs that take VF3502 Size A bags, including the WD1270, WD14500, WD1680, WD1850, WD18510, WD1950, and WD1956."
   - q: "How much do RIDGID VF3502 bags cost over a year?"
-    a: "The VF3502 2-pack runs about $24.98 at Home Depot, or $12.49 per bag. A crew on fine dust burning two to three bags a week spends $600 to $900 a year per vac. Muk Buddy is $99 once and replaces that recurring cost."
+    a: "The VF3502 2-pack runs about $24.98 at Home Depot, or $12.49 per bag. A crew on fine dust burning two to three bags a week spends roughly $1,300 to $1,950 a year per vac. Muk Buddy is $99 once and replaces that recurring cost."
   - q: "Is a reusable bag as good as the VF3502 on fine dust?"
     a: "Better. The VF3502 is a single-path bag that packs with fines and chokes airflow. Muk Buddy's 2-chamber design keeps dust off the airway, so suction holds through the job instead of fading by lunch."
   - q: "Are there cross-brand alternatives to VF3502?"
@@ -38,7 +38,7 @@ Here's what that looks like over time:
 |---|---|---|---|
 | Light (garage cleanup) | 0.5 | ~$325 | ~$975 |
 | Moderate (mixed jobs) | 1 | ~$650 | ~$1,950 |
-| Heavy (drywall/concrete daily) | 2-3 | ~$600-$900 | ~$2,600-$3,900 |
+| Heavy (drywall/concrete daily) | 2-3 | ~$1,300-$1,950 | ~$3,900-$5,850 |
 
 The vac itself cost $150 to $250. The bags can cost more than the machine over its life, and the bill never ends.
 
@@ -48,10 +48,10 @@ If you're comparing disposables, here are the cross-brand equivalents in the sam
 
 | Brand | Part number | Fits | Price | Per-bag cost |
 |---|---|---|---|---|
-| **RIDGID** | VF3502 (Size A) | RIDGID 12-16 gal | $24.98/2-pack | $12.49/bag |
-| **DeWalt** | DXVA19-4102 | DeWalt 12-16 gal | $20.99/3-pack | $7.00/bag |
-| **Vacmaster** | VHBL | Vacmaster 12-16 gal, some Shop-Vac 12-14 gal | $22.99/3-pack | $7.67/bag |
-| **Craftsman** | CMXZVBE38749 | Craftsman 16-20 gal | $16.55/3-pack | $5.52/bag |
+| **RIDGID** | VF3502 (Size A) | RIDGID WD1270, WD14500, WD1680, WD1850, WD18510, WD1950, WD1956 | $24.98/2-pack | $12.49/bag |
+| **DeWalt** | DXVA19-4102 | DeWalt DXV12P, DXV14P, DXV16P and similar | $20.99/3-pack | $7.00/bag |
+| **Vacmaster** | VHBL | Select Vacmaster and Shop-Vac models | $22.99/3-pack | $7.67/bag |
+| **Craftsman** | CMXZVBE38749 | Select Craftsman wet/dry vacs | $16.55/3-pack | $5.52/bag |
 
 *(Prices as of October 2026.)*
 
