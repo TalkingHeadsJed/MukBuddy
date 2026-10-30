@@ -56,7 +56,7 @@ A reusable shop vac bag isn't a disposable you're being cheap with. It's enginee
 - A **patent-pending 2-chamber design** (dust loads into the first chamber before it reaches the filter) that keeps suction steady on fine dust and protects the motor.
 - No seal to tear, because it's made to open, empty, and go back to work.
 
-That's what [Muk Buddy](/) is (full disclosure: it's the bag I build). It does the job a bag is supposed to do — clean filter, steady suction on drywall and concrete dust — and you buy it once instead of forever. It fits most 14–18 gallon wet/dry vacs (Shop-Vac, Ridgid, Craftsman, Stanley, DeWalt).
+That's what [Muk Buddy](/) is (full disclosure: it's the bag I build). It does the job a bag is supposed to do — clean filter, steady suction on drywall and concrete dust — and you buy it once instead of forever. It fits most 16–20 gallon wet/dry vacs (Shop-Vac, Ridgid, Craftsman, Stanley, DeWalt).
 
 ## What actually makes a bag reusable (and a disposable not)
 

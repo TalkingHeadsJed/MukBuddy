@@ -59,7 +59,7 @@ export default function Hero() {
             data-testid="hero-subhead"
             className="text-base sm:text-lg text-ink/85 max-w-xl leading-relaxed font-semibold"
           >
-            High-efficiency reusable shop vac dust bag — a 2-chamber alternative to disposable HEPA-style filter bags. Fits Ridgid, Shop-Vac, DeWalt, Craftsman, Stanley and most 14–18 gallon wet/dry vacs.
+            High-efficiency reusable shop vac dust bag — a 2-chamber alternative to disposable HEPA-style filter bags. Fits Ridgid, Shop-Vac, DeWalt, Craftsman, Stanley and most 16–20 gallon wet/dry vacs.
           </p>
 
           <p className="text-base sm:text-lg text-ink/80 max-w-xl leading-relaxed font-semibold">

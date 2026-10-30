@@ -23,7 +23,7 @@ export default function Landing() {
   return (
     <main data-testid="landing-page" className="bg-cream text-ink overflow-x-hidden">
       <PageHead
-        title="Reusable Shop Vac Bags & Filter Bags, 14–18 Gal | Muk Buddy"
+        title="Reusable Shop Vac Bags & Filter Bags, 16–20 Gal | Muk Buddy"
         description="The patent-pending Muk Buddy 2-chamber reusable muk bag replaces disposable shop vac bags. Fits Ridgid, Shop-Vac, DeWalt, Craftsman. $99 — saves crews thousands."
         canonical="https://mukbuddy.com/"
         ogImage="https://mukbuddy.com/og-image-home.png"

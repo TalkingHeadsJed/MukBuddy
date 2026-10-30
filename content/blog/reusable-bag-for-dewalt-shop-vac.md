@@ -13,7 +13,7 @@ faq:
   - q: "Is there a reusable bag for DeWalt shop vacs?"
     a: "Yes. Muk Buddy is a reusable shop vac bag that fits most DeWalt wet/dry vacs using the standard 2.5-inch inlet. It replaces the DXVA19-4102 disposable bags, and you buy it once instead of rebuying packs."
   - q: "Does Muk Buddy fit a DeWalt DXV12P, DXV14P, or DXV16P?"
-    a: "Yes. Muk Buddy fits most DeWalt DXV-series wet/dry vacs with a 2.5-inch inlet, including the DXV12P, DXV14P, DXV16P, DXV16PA, and DXV16S. Check your vac's inlet diameter before ordering."
+    a: "It fits the 16-gallon models: the DXV16P, DXV16PA, and DXV16S. The DXV12P and DXV14P are smaller than Muk Buddy's 16 to 20 gallon range, so it is not made for those. Check your vac's inlet diameter before ordering."
   - q: "How much do DeWalt disposable bags cost compared to a reusable?"
     a: "DeWalt DXVA19-4102 bags run about $20.99 for a 3-pack on Amazon, or roughly $7 per bag. A crew on fine dust can burn two or three a week. Muk Buddy is $99 once and replaces that recurring cost entirely."
   - q: "Will a reusable bag hold suction as well as the DeWalt disposable?"
@@ -26,16 +26,16 @@ A reusable bag for DeWalt shop vac is what you're really asking for when you sea
 
 ## The short answer
 
-**Muk Buddy is a reusable bag that fits most DeWalt wet/dry vacs.** It replaces the DXVA19-4102 disposable bags you keep rebuying for the DXV12P, DXV14P, DXV16P, DXV16PA, DXV16S, and similar models. At $99 once, it pays for itself in weeks to months of regular use, then keeps saving. It also holds suction better on fine dust, because the 2-chamber design keeps debris off the airflow path.
+**Muk Buddy is a reusable bag that fits most DeWalt wet/dry vacs.** It replaces the DXVA19-4102 disposable bags you keep rebuying for the DXV16P, DXV16PA, DXV16S, and similar 16 to 20 gallon models. At $99 once, it pays for itself in weeks to months of regular use, then keeps saving. It also holds suction better on fine dust, because the 2-chamber design keeps debris off the airflow path.
 
 ## Which DeWalt vacs does it fit?
 
-Muk Buddy is built for the standard 2.5-inch inlet on mid-size DeWalt wet/dry vacs. If your vac takes DXVA19-4102 bags, Muk Buddy fits.
+Muk Buddy is built for the standard 2.5-inch inlet on mid-size DeWalt wet/dry vacs. If you run a 16-gallon or larger DeWalt that takes DXVA19-4102 bags, Muk Buddy fits.
 
 | DeWalt model | Disposable it uses | Muk Buddy fit? |
 |---|---|---|
-| DXV12P | DXVA19-4102 | Yes |
-| DXV14P | DXVA19-4102 | Yes |
+| DXV12P | DXVA19-4102 | No, Muk Buddy is for 16 to 20 gallon vacs |
+| DXV14P | DXVA19-4102 | No, Muk Buddy is for 16 to 20 gallon vacs |
 | DXV16P | DXVA19-4102 | Yes |
 | DXV16PA | DXVA19-4102 | Yes |
 | DXV16S | DXVA19-4102 | Yes |

@@ -1,7 +1,7 @@
 ---
 title: "The Reusable Shop Vac Bag for DeWalt & Craftsman Wet/Dry Vacs"
 slug: "reusable-shop-vac-bag-for-dewalt-craftsman"
-excerpt: "Tired of rebuying DeWalt or Craftsman dust bags? Here's the reusable bag that fits most 14–18 gallon DeWalt and Craftsman wet/dry vacs — what it fits, what the disposables cost you, and why you only buy it once."
+excerpt: "Tired of rebuying DeWalt or Craftsman dust bags? Here's the reusable bag that fits most 16–20 gallon DeWalt and Craftsman wet/dry vacs — what it fits, what the disposables cost you, and why you only buy it once."
 hero_image: "https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg"
 hero_alt: "A reusable Muk Buddy bag beside a DeWalt and a Craftsman wet/dry vac with their disposable dust bags"
 author: "Jason Brouk"
@@ -11,11 +11,11 @@ publish_date: "2026-07-02"
 published: true
 faq:
   - q: "Does Muk Buddy fit a DeWalt wet/dry vac?"
-    a: "Yes — Muk Buddy fits most 14–18 gallon DeWalt wet/dry vacs (the DXV series and similar) that use the standard 2.5-inch inlet. Check your vac's gallon rating and inlet size before ordering; if it's a 14–18 gallon DeWalt with a 2.5-inch port, it's in range. It replaces the disposable DeWalt dust bags you'd otherwise keep rebuying."
+    a: "Yes — Muk Buddy fits most 16–20 gallon DeWalt wet/dry vacs (the DXV series and similar) that use the standard 2.5-inch inlet. Check your vac's gallon rating and inlet size before ordering; if it's a 16–20 gallon DeWalt with a 2.5-inch port, it's in range. It replaces the disposable DeWalt dust bags you'd otherwise keep rebuying."
   - q: "Does Muk Buddy fit a Craftsman shop vac?"
-    a: "Yes — most 14–18 gallon Craftsman wet/dry vacs use the same standard 2.5-inch inlet, so Muk Buddy fits them too. DeWalt and Craftsman share a lot of wet/dry vac design, which is why one reusable bag covers both. Confirm your gallon size and inlet before buying."
+    a: "Yes — most 16–20 gallon Craftsman wet/dry vacs use the same standard 2.5-inch inlet, so Muk Buddy fits them too. DeWalt and Craftsman share a lot of wet/dry vac design, which is why one reusable bag covers both. Confirm your gallon size and inlet before buying."
   - q: "Will one reusable bag work across a mixed DeWalt, Craftsman, and RIDGID fleet?"
-    a: "That's the point. Muk Buddy fits the standard 2.5-inch inlet used across most 14–18 gallon DeWalt, Craftsman, RIDGID, Shop-Vac, and Stanley vacs — so instead of stocking a different disposable bag for every machine, one reusable bag covers the crew."
+    a: "That's the point. Muk Buddy fits the standard 2.5-inch inlet used across most 16–20 gallon DeWalt, Craftsman, RIDGID, Shop-Vac, and Stanley vacs — so instead of stocking a different disposable bag for every machine, one reusable bag covers the crew."
   - q: "How much do DeWalt and Craftsman dust bags cost over a year?"
     a: "Branded disposable bags run roughly $5–8 each, and a crew on fine dust burns through them fast — two a week is common, which is around $500 a year, per vac. A one-time reusable bag is a single purchase against that recurring bill."
   - q: "Do I still need the filter in my DeWalt or Craftsman vac?"
@@ -27,19 +27,19 @@ If you run a **DeWalt** or **Craftsman** wet/dry vac, the bags are the part that
 
 There is — and because DeWalt and Craftsman wet/dry vacs share so much design, one reusable bag covers both.
 
-**Short answer:** Muk Buddy is a reusable dust bag that fits most **14–18 gallon DeWalt (DXV series) and Craftsman wet/dry vacs** using the standard 2.5-inch inlet. Instead of rebuying branded disposable bags, you buy one reusable bag, empty and reload it, and stop the reorder. Its patent-pending 2-chamber design keeps fine dust off the pleated filter, so the vac holds suction through the job instead of choking as a disposable fills.
+**Short answer:** Muk Buddy is a reusable dust bag that fits most **16–20 gallon DeWalt (DXV series) and Craftsman wet/dry vacs** using the standard 2.5-inch inlet. Instead of rebuying branded disposable bags, you buy one reusable bag, empty and reload it, and stop the reorder. Its patent-pending 2-chamber design keeps fine dust off the pleated filter, so the vac holds suction through the job instead of choking as a disposable fills.
 
 ## Which DeWalt and Craftsman vacs does it fit?
 
-Muk Buddy is built for the standard **2.5-inch inlet** on mid-to-large wet/dry vacs. Both brands' 14–18 gallon machines are the target range.
+Muk Buddy is built for the standard **2.5-inch inlet** on mid-to-large wet/dry vacs. Both brands' 16–20 gallon machines are the target range.
 
 | Your vac | Typical models | Reusable fit? |
 |---|---|---|
-| DeWalt 14–18 gallon | DXV14 / DXV16 / DXV18 series | **Yes** — core fit |
-| Craftsman 14–18 gallon | Full-size Craftsman wet/dry vacs | **Yes** — core fit |
-| DeWalt / Craftsman 12 gallon and smaller | DXV12 and compact / portable units | No — too small; Muk Buddy is for 14–18 gal |
+| DeWalt 16–20 gallon | DXV16 / DXV18 series | **Yes** — core fit |
+| Craftsman 16–20 gallon | Full-size Craftsman wet/dry vacs | **Yes** — core fit |
+| DeWalt / Craftsman 14 gallon and smaller | DXV12 / DXV14 and compact / portable units | No — too small; Muk Buddy is for 16–20 gal |
 
-Not sure of your size? Check the gallon rating on the tank and the diameter of the inlet (the port the hose plugs into). A 14–18 gallon DeWalt or Craftsman with a 2.5-inch inlet is exactly what Muk Buddy is made for. If you're between sizes, measure before you order.
+Not sure of your size? Check the gallon rating on the tank and the diameter of the inlet (the port the hose plugs into). A 16–20 gallon DeWalt or Craftsman with a 2.5-inch inlet is exactly what Muk Buddy is made for. If you're between sizes, measure before you order.
 
 ## The rebuy trap
 
@@ -68,6 +68,6 @@ If you're weighing your options, we put Muk Buddy head-to-head with the disposab
 
 ## The bottom line for DeWalt and Craftsman owners
 
-If your DeWalt or Craftsman is a 14–18 gallon machine and you're done rebuying dust bags, the reusable version fits both, protects your filter, and ends the recurring bill. One purchase instead of a forever line item — and if your crew runs a mix of DeWalt, Craftsman, and RIDGID, one bag covers all of them.
+If your DeWalt or Craftsman is a 16–20 gallon machine and you're done rebuying dust bags, the reusable version fits both, protects your filter, and ends the recurring bill. One purchase instead of a forever line item — and if your crew runs a mix of DeWalt, Craftsman, and RIDGID, one bag covers all of them.
 
 [See how Muk Buddy fits your DeWalt or Craftsman — one reusable bag, no more reorders →](/)

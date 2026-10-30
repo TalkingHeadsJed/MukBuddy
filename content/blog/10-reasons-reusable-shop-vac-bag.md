@@ -13,7 +13,7 @@ faq:
   - q: "Is a reusable shop vac bag actually worth it?"
     a: "For anyone running a wet/dry vac regularly, yes. You stop rebuying disposables, the filter and motor last longer, and the suction holds through the job. The bag pays for itself fast and keeps saving after that."
   - q: "Will a reusable bag fit my vac?"
-    a: "Muk Buddy fits the standard 2.5-inch inlet used by Shop-Vac, Ridgid, Craftsman, Stanley, DeWalt and most 14–18 gallon wet/dry vacs. Check your inlet if you're unsure."
+    a: "Muk Buddy fits the standard 2.5-inch inlet used by Shop-Vac, Ridgid, Craftsman, Stanley, DeWalt and most 16–20 gallon wet/dry vacs. Check your inlet if you're unsure."
   - q: "What makes a reusable bag better than disposable?"
     a: "A 2-chamber reusable bag separates debris from the airflow, so suction stays strong and the filter doesn't clog. It's built to be emptied and reused instead of ripping or blowing out like thin disposable bags."
 # hero_image: recommended -> blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg (already on your Desktop)

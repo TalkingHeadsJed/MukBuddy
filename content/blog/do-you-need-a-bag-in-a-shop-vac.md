@@ -67,7 +67,7 @@ On a drywall tearout I've watched suction drop noticeably in under an hour of ru
 
 Here's the part most "do you need a bag" answers skip. Once you've established that fine dust *needs* a bag, the only real decision left is what kind. And disposables have a catch: they're a recurring cost you pay for the life of the vac (we broke that down in [why shop vac bags are so expensive](/blog/why-are-shop-vac-bags-so-expensive/)).
 
-A **reusable** bag solves both problems at once — you get the fine-dust protection a bag is for, without rebuying one every couple of weeks. That's what [Muk Buddy](/) is (full disclosure: it's the bag I build): a reusable bag whose **patent-pending 2-chamber design** (dust loads into the first chamber before it reaches the filter) keeps suction steady on fine dust, and that you empty and run again instead of throwing away. It fits most 14–18 gallon wet/dry vacs (Shop-Vac, Ridgid, Craftsman, Stanley, DeWalt).
+A **reusable** bag solves both problems at once — you get the fine-dust protection a bag is for, without rebuying one every couple of weeks. That's what [Muk Buddy](/) is (full disclosure: it's the bag I build): a reusable bag whose **patent-pending 2-chamber design** (dust loads into the first chamber before it reaches the filter) keeps suction steady on fine dust, and that you empty and run again instead of throwing away. It fits most 16–20 gallon wet/dry vacs (Shop-Vac, Ridgid, Craftsman, Stanley, DeWalt).
 
 So: do you need a bag in a shop vac? Not for chips and water. Absolutely for fine dust — and when you do, a reusable one means you only buy it once.
 

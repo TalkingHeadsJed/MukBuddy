@@ -22,7 +22,7 @@ export default function HeadlinePeek({
   className = "top-6 right-2 lg:top-4 lg:right-4",
   rotate = 0,
   testId,
-  alt = "Muk Buddy patent-pending 2-chamber reusable shop vac bag — fits 14-18 gallon wet/dry vacs",
+  alt = "Muk Buddy patent-pending 2-chamber reusable shop vac bag — fits 16-20 gallon wet/dry vacs",
 }) {
   const src = VARIANTS[variant] ?? VARIANTS.tilt1;
   return (

@@ -22,7 +22,7 @@ def test_home_200_and_h1():
 def test_home_subhead_has_keywords():
     _, html = fetch("/")
     # subhead phrases
-    for needle in ["14", "18 gallon", "HEPA", "shop vac dust bag"]:
+    for needle in ["16", "20 gallon", "HEPA", "shop vac dust bag"]:
         assert needle.lower() in html.lower(), f"missing '{needle}' on homepage"
 
 
@@ -36,7 +36,7 @@ def test_home_title_tag_exact():
     m = re.search(r"<title>([^<]+)</title>", html)
     assert m, "no <title>"
     title = m.group(1).strip()
-    expected = "Reusable Shop Vac Bags & Filter Bags, 14\u201318 Gal | Muk Buddy"
+    expected = "Reusable Shop Vac Bags & Filter Bags, 16\u201320 Gal | Muk Buddy"
     assert title == expected, f"title mismatch: got '{title}'"
 
 
@@ -194,6 +194,6 @@ def test_llms_txt_present():
     first = lines[0]
     assert first.startswith("#") and "muk buddy" in first.lower(), f"first heading: '{first}'"
     low = text.lower()
-    assert "14-18 gallon" in low or "14\u201318 gallon" in low, "llms.txt missing '14-18 gallon'"
+    assert "16-20 gallon" in low or "16\u201320 gallon" in low, "llms.txt missing '16-20 gallon'"
     assert "made in the usa" in low, "llms.txt missing 'Made in the USA'"
     assert "patent pending" in low, "llms.txt missing 'patent pending'"

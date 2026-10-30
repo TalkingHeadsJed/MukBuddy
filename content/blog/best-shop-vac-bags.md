@@ -13,7 +13,7 @@ item_list_name: "The 5 Best Shop Vac Bags for Drywall, Concrete, and Fine Dust"
 item_list:
   - name: "Muk Buddy — Best Overall (Reusable 2-Chamber Shop Vac Bag)"
     url: "https://thefloorlord.com/product/muk-buddy/"
-    description: "The only reusable bag on the list. Patent-pending 2-chamber design separates debris from airflow so suction holds on fine drywall and concrete dust. Fits most 14-18 gallon wet/dry vacs. Buy once."
+    description: "The only reusable bag on the list. Patent-pending 2-chamber design separates debris from airflow so suction holds on fine drywall and concrete dust. Fits most 16-20 gallon wet/dry vacs. Buy once."
   - name: "RIDGID VF3502 (Size A) — Best Disposable for RIDGID Owners"
     description: "Standard single-path disposable for RIDGID 12-16 gallon vacs. Reliable for general cleanup; suction fades on fine dust as it fills."
   - name: "Shop-Vac Type H (9067100) — Best Disposable for Fine Dust on a Shop-Vac"
@@ -28,7 +28,7 @@ faq:
   - q: "Are reusable shop vac bags actually better than disposable?"
     a: "For anyone running a vac regularly, yes — on two fronts. Performance: a 2-chamber reusable separates debris from the airflow, so the filter doesn't clog and the motor isn't fighting choked airflow. Cost: you buy it once instead of rebuying disposables every few weeks. A disposable can only ever win on the sticker price of a single bag."
   - q: "Will these bags fit my shop vac?"
-    a: "Disposable bags are sized to specific brands and gallon ranges (for example, RIDGID VF3502 fits 12-16 gal RIDGID vacs; Shop-Vac Type H fits certain Shop-Vac models). Muk Buddy fits the standard 2.5-inch inlet used by Shop-Vac, Ridgid, Craftsman, Stanley, DeWalt and most 14-18 gallon wet/dry vacs, so one bag works across a mixed fleet."
+    a: "Disposable bags are sized to specific brands and gallon ranges (for example, RIDGID VF3502 fits 12-16 gal RIDGID vacs; Shop-Vac Type H fits certain Shop-Vac models). Muk Buddy fits the standard 2.5-inch inlet used by Shop-Vac, Ridgid, Craftsman, Stanley, DeWalt and most 16-20 gallon wet/dry vacs, so one bag works across a mixed fleet."
   - q: "Why do disposable shop vac bags lose suction so fast?"
     a: "Because the dust and the airflow share the same path. As the bag fills, fine dust packs against the filter media and chokes the air the motor is trying to pull. That's not a defect — it's how a single-chamber bag works. Separating the dust from the airflow (a 2-chamber design) is what keeps suction steady."
   - q: "What about running a bagless vac or a foam sleeve filter?"
@@ -47,7 +47,7 @@ So we ranked the bags contractors actually use on fine dust. **We judged each on
 
 | Bag | Type | Fits | Approx. cost | Suction on fine dust |
 |---|---|---|---|---|
-| **Muk Buddy** | ♻️ Reusable (2-chamber) | Most 14–18 gal (Shop-Vac, Ridgid, Craftsman, Stanley, DeWalt) | **$99 once** | Holds — dust kept off the airflow |
+| **Muk Buddy** | ♻️ Reusable (2-chamber) | Most 16–20 gal (Shop-Vac, Ridgid, Craftsman, Stanley, DeWalt) | **$99 once** | Holds — dust kept off the airflow |
 | RIDGID VF3502 (Size A) | Disposable | RIDGID 12–16 gal | ~$13–17 / 2-pk | Fades as it fills |
 | Shop-Vac Type H (9067100) | Disposable | Select Shop-Vac models | ~$12–16 / 2-pk | Better, still fades |
 | Dustless WunderBag (HEPA) | Disposable | Universal, 4–18 gal sizes | ~$20–30 / 2-pk | Strong capture, still single-path |
@@ -72,7 +72,7 @@ What that means on the job:
 - **The motor is protected** — it's not straining against a choked filter, which is what burns vacs out early.
 - **You buy it once.** Empty it, run it again, job after job. At **$99**, it pays for itself against a $12–15 disposable pack in roughly two months of regular use — and keeps saving every month after.
 
-It fits the standard 2.5-inch inlet on Shop-Vac, Ridgid, Craftsman, Stanley, DeWalt and most 14–18 gallon wet/dry vacs, so one bag covers a mixed crew. It's the only pick that wins on **both** performance *and* cost — every disposable below can only ever win on the sticker price of a single bag.
+It fits the standard 2.5-inch inlet on Shop-Vac, Ridgid, Craftsman, Stanley, DeWalt and most 16–20 gallon wet/dry vacs, so one bag covers a mixed crew. It's the only pick that wins on **both** performance *and* cost — every disposable below can only ever win on the sticker price of a single bag.
 
 **One honest call-out:** Muk Buddy is built for fine dry debris. For heavy wet pickup — concrete slurry, standing water — empty it before the wet pull rather than soaking a full load. It's a dust tool first.
 
