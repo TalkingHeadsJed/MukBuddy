@@ -166,7 +166,7 @@ export default function About() {
           </h2>
 
           <p>
-            If you run a 12&ndash;20 gallon wet/dry shop vac for a living
+            If you run a 14&ndash;18 gallon wet/dry shop vac for a living
             &mdash; drywall, concrete, demolition, restoration, auto detail,
             janitorial &mdash; this was built for you. If you push a vac around
             your garage on weekends, it&rsquo;ll work for you too. We just

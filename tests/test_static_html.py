@@ -22,7 +22,7 @@ def test_home_200_and_h1():
 def test_home_subhead_has_keywords():
     _, html = fetch("/")
     # subhead phrases
-    for needle in ["12", "20 gallon", "HEPA", "shop vac dust bag"]:
+    for needle in ["14", "18 gallon", "HEPA", "shop vac dust bag"]:
         assert needle.lower() in html.lower(), f"missing '{needle}' on homepage"
 
 
@@ -194,6 +194,6 @@ def test_llms_txt_present():
     first = lines[0]
     assert first.startswith("#") and "muk buddy" in first.lower(), f"first heading: '{first}'"
     low = text.lower()
-    assert "12-20 gallon" in low or "12\u201320 gallon" in low, "llms.txt missing '12-20 gallon'"
+    assert "14-18 gallon" in low or "14\u201318 gallon" in low, "llms.txt missing '14-18 gallon'"
     assert "made in the usa" in low, "llms.txt missing 'Made in the USA'"
     assert "patent pending" in low, "llms.txt missing 'patent pending'"

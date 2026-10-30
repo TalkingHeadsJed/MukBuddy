@@ -1400,7 +1400,7 @@ function FAQ() {
   const items = [
     {
       q: "Will it fit my vacuum?",
-      a: "Muk Buddy fits 12–20 gallon wet/dry vacs from Shop-Vac, Ridgid, Craftsman, Stanley, and most DeWalt models. Not sure about yours? Send us your model number and we'll confirm in one business day.",
+      a: "Muk Buddy fits 14–18 gallon wet/dry vacs from Shop-Vac, Ridgid, Craftsman, Stanley, and most DeWalt models. Not sure about yours? Send us your model number and we'll confirm in one business day.",
     },
     {
       q: "Is it actually reusable?",

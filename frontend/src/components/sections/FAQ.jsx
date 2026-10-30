@@ -30,7 +30,7 @@ const faqs = [
   },
   {
     q: "Will it fit my vacuum?",
-    a: "Muk Buddy is designed for most 12–20 gallon wet/dry vacs from Shop-Vac, Ridgid, Craftsman, Stanley, DeWalt, Milwaukee, Vacmaster, and Armor All — and crews regularly use it on smaller sizes too. Specific fit details are on the product page — check the product page before ordering or contact us with your model number.",
+    a: "Muk Buddy is designed for most 14–18 gallon wet/dry vacs from Shop-Vac, Ridgid, Craftsman, Stanley, DeWalt, Milwaukee, Vacmaster, and Armor All. Specific fit details are on the product page — check the product page before ordering or contact us with your model number.",
   },
   {
     q: "Does it replace my filter?",

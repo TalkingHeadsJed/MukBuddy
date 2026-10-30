@@ -11,7 +11,7 @@ publish_date: "2026-07-01"
 published: true
 faq:
   - q: "Does Muk Buddy fit a RIDGID wet/dry vac?"
-    a: "Yes — Muk Buddy fits most 12–20 gallon RIDGID wet/dry vacs that use the standard 2.5-inch inlet, the same machines that take RIDGID's VF3502 'Size A' dust bags. Check your vac's gallon rating and inlet size before ordering; if it's a 12–20 gallon RIDGID, you're in range."
+    a: "Yes — Muk Buddy fits most 14–18 gallon RIDGID wet/dry vacs that use the standard 2.5-inch inlet, the same machines that take RIDGID's VF3502 'Size A' dust bags. Check your vac's gallon rating and inlet size before ordering; if it's a 14–18 gallon RIDGID, you're in range."
   - q: "What is the RIDGID VF3502 bag, and what's the reusable version?"
     a: "The VF3502 is RIDGID's disposable high-efficiency 'Size A' dust bag for 12–16 gallon vacs — you use it, fill it, throw it out, and buy another. Muk Buddy is the reusable alternative: one bag that empties and reloads instead of getting tossed, so you stop rebuying VF3502 two-packs."
   - q: "How much do RIDGID VF3502 bags cost over a year?"
@@ -27,7 +27,7 @@ If you run a RIDGID wet/dry vac on a jobsite, you already know the drill: the va
 
 There is. Here's what fits a RIDGID, what the disposable bags are actually costing you, and how a reusable bag changes the math.
 
-**Short answer:** Muk Buddy is a reusable dust bag that fits most **12–20 gallon RIDGID wet/dry vacs** — the same machines that use RIDGID's VF3502 "Size A" disposable bags. Instead of buying VF3502 two-packs over and over, you buy one reusable bag, empty and reload it, and stop the reorder. Its patent-pending 2-chamber design also keeps fine dust off the pleated filter, so a RIDGID holds its suction longer than it does on a packed disposable.
+**Short answer:** Muk Buddy is a reusable dust bag that fits most **14–18 gallon RIDGID wet/dry vacs** — the same machines that use RIDGID's VF3502 "Size A" disposable bags. Instead of buying VF3502 two-packs over and over, you buy one reusable bag, empty and reload it, and stop the reorder. Its patent-pending 2-chamber design also keeps fine dust off the pleated filter, so a RIDGID holds its suction longer than it does on a packed disposable.
 
 ## Which RIDGID vacs does it fit?
 
@@ -35,11 +35,12 @@ Muk Buddy is built for the standard **2.5-inch inlet** on mid-to-large RIDGID we
 
 | Your RIDGID vac | Disposable bag it uses | Reusable fit? |
 |---|---|---|
-| 12–16 gallon (most jobsite RIDGIDs) | VF3502 "Size A" | **Yes** — this is the core fit |
-| 16–20 gallon | Size A / large fleece bags | **Yes** — within the 12–20 gal range |
-| 5–9 gallon (small/compact) | VF3500 / VF3501 | No — too small; Muk Buddy is for 12–20 gal |
+| 14–16 gallon (most jobsite RIDGIDs) | VF3502 "Size A" | **Yes** — this is the core fit |
+| 18 gallon | Size A / large fleece bags | **Yes** — within the 14–18 gal range |
+| 12 gallon and smaller | VF3500 / VF3501 / VF3502 | No — Muk Buddy is for 14–18 gal |
+| 20 gallon and larger | Large fleece bags | No — Muk Buddy is for 14–18 gal |
 
-Not sure of your size? Check the gallon rating on the tank and the inlet diameter (the port the hose plugs into). A 12–20 gallon RIDGID with a 2.5-inch inlet is exactly what Muk Buddy is made for. If you're between sizes, measure before you order.
+Not sure of your size? Check the gallon rating on the tank and the inlet diameter (the port the hose plugs into). A 14–18 gallon RIDGID with a 2.5-inch inlet is exactly what Muk Buddy is made for. If you're between sizes, measure before you order.
 
 ## The VF3502 cost trap
 
@@ -68,6 +69,6 @@ If you're comparing your options, we put Muk Buddy head-to-head with the disposa
 
 ## The bottom line for RIDGID owners
 
-If your RIDGID is a 12–20 gallon machine and you're tired of rebuying VF3502s, the reusable version fits, protects your filter, and ends the recurring bag bill. One purchase instead of a forever line item.
+If your RIDGID is a 14–18 gallon machine and you're tired of rebuying VF3502s, the reusable version fits, protects your filter, and ends the recurring bag bill. One purchase instead of a forever line item.
 
 [See how Muk Buddy fits your RIDGID — one reusable bag, no more reorders →](/)
