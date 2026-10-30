@@ -36,7 +36,7 @@ def test_home_title_tag_exact():
     m = re.search(r"<title>([^<]+)</title>", html)
     assert m, "no <title>"
     title = m.group(1).strip()
-    expected = "Reusable Shop Vac Bags & Filter Bags, 12\u201320 Gal | Muk Buddy"
+    expected = "Reusable Shop Vac Bags & Filter Bags, 14\u201318 Gal | Muk Buddy"
     assert title == expected, f"title mismatch: got '{title}'"
 
 
