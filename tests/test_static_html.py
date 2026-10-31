@@ -1,4 +1,6 @@
 """Static HTML verification of the prerendered Muk Buddy site against the SEO/EEAT spec."""
+import html as htmllib
+import json
 import os
 import re
 import requests
@@ -16,7 +18,12 @@ def fetch(path):
 def test_home_200_and_h1():
     code, html = fetch("/")
     assert code == 200
-    assert re.search(r"<h1[^>]*>[^<]*Shop Vac Bag[^<]*</h1>", html, re.I), "h1 must contain 'Shop Vac Bag'"
+    # The h1 wraps part of its text in a <span> (highlight), so match on the h1's
+    # text content with inner tags stripped, not on raw HTML between the tags.
+    h1s = re.findall(r"<h1[^>]*>(.*?)</h1>", html, re.I | re.S)
+    assert len(h1s) == 1, f"expected exactly 1 <h1>, found {len(h1s)}"
+    h1_text = re.sub(r"\s+", " ", htmllib.unescape(re.sub(r"<[^>]+>", " ", h1s[0]))).strip()
+    assert "shop vac bag" in h1_text.lower(), f"h1 must contain 'Shop Vac Bag', got '{h1_text}'"
 
 
 def test_home_subhead_has_keywords():
@@ -35,7 +42,9 @@ def test_home_title_tag_exact():
     _, html = fetch("/")
     m = re.search(r"<title>([^<]+)</title>", html)
     assert m, "no <title>"
-    title = m.group(1).strip()
+    # <title> content is HTML-encoded in the page source (& is served as &amp;),
+    # so decode entities before comparing to the human-readable title.
+    title = htmllib.unescape(m.group(1)).strip()
     expected = "Reusable Shop Vac Bags & Filter Bags, 16\u201320 Gal | Muk Buddy"
     assert title == expected, f"title mismatch: got '{title}'"
 
@@ -46,11 +55,32 @@ def test_home_product_price_meta():
         "missing product:price:amount meta with 99.00"
 
 
+def _jsonld_top_level_entities(html):
+    """Top-level JSON-LD entities: each script's root object(s) plus any @graph members."""
+    entities = []
+    for block in re.findall(r'<script[^>]*type=["\']application/ld\+json["\'][^>]*>(.*?)</script>', html, re.I | re.S):
+        data = json.loads(block)
+        for obj in (data if isinstance(data, list) else [data]):
+            entities.extend(obj.get("@graph", [obj]))
+    return entities
+
+
 def test_home_jsonld_single_product():
     _, html = fetch("/")
-    # find all Product JSON-LD scripts
-    products = re.findall(r'"@type"\s*:\s*"Product"', html)
-    assert len(products) == 1, f"expected exactly 1 Product JSON-LD entity, found {len(products)}"
+    # Count top-level Product entities only. The product's isAccessoryOrSparePartFor
+    # legitimately nests a generic {"@type": "Product", "name": "Wet/Dry Vacuum"}
+    # describing compatible vacs; that is a property value, not a second product.
+    products = [e for e in _jsonld_top_level_entities(html) if e.get("@type") == "Product"]
+    assert len(products) == 1, f"expected exactly 1 top-level Product JSON-LD entity, found {len(products)}"
+    product = products[0]
+    assert product.get("mpn") == "MUKBUD1420", "Product mpn must be MUKBUD1420"
+    offers = product.get("offers")
+    offers = offers if isinstance(offers, list) else [offers]
+    assert any(o and o.get("price") == "99.00" and o.get("priceCurrency") == "USD" for o in offers), \
+        "Product must have an Offer at 99.00 USD"
+    for nested in (product.get("isAccessoryOrSparePartFor") or []):
+        if isinstance(nested, dict):
+            assert "offers" not in nested, "nested compatible-vac Product must not carry offers"
     assert "MUKBUD1420" in html, "missing mpn MUKBUD1420"
     assert '"price":"99.00"' in html or '"price": "99.00"' in html, "missing price 99.00"
     assert "USD" in html
@@ -146,8 +176,12 @@ def test_about_200_and_h1():
 BLOG_VIDEO_MAP = {
     "/blog/10-reasons-reusable-shop-vac-bag/": "jK-Ocvafh24",
     "/blog/why-shop-vac-clogs-on-drywall-dust/": "qR-Ow0woAmw",
-    "/blog/shop-vac-lost-suction-how-to-fix/": "HwfeHKGOzQM",
+    # Swapped from HwfeHKGOzQM in a1cf296 (2026-07-01); "Your Shop Vac Shouldn't Get Weaker as You Work".
+    "/blog/shop-vac-lost-suction-how-to-fix/": "POKKMf2BD4Y",
     "/blog/why-disposable-shop-vac-bags-fail/": "KkaqjZcYN0s",
+    # Deliberately still Ks0oA7Pnogc ("Every Time Your Crew Stops for the Vac, You're
+    # Losing Money"). a1cf296 swapped the live post to QUa8FHTqgws, which is the drywall-dust
+    # clip -- looks like a mis-pick. Pending Jed's call; update here only if that swap was intended.
     "/blog/shop-vac-downtime-costing-your-crew/": "Ks0oA7Pnogc",
     "/blog/disposable-vs-reusable-shop-vac-bags/": "8wKa1mR66gk",
 }
@@ -168,10 +202,14 @@ def test_blog_videos_embedded():
     assert not failures, f"blog video embed failures: {failures}"
 
 
-def test_blog_no_bag_post_has_no_video():
+def test_blog_no_bag_post_video():
+    # This post had no video when the test was written; a1cf296 (2026-07-01) added
+    # HfsaV45oXJ4 ("Not Using a Wet/Dry Vac Bag is clogging your filter"). Pin that exact clip.
     code, html = fetch("/blog/running-shop-vac-without-bag-cost/")
     assert code == 200
-    assert not re.search(r"<iframe[^>]+youtube", html, re.I), "this post should NOT have a youtube iframe"
+    srcs = re.findall(r"<iframe[^>]+src=[\"']([^\"']*youtube[^\"']*)[\"']", html, re.I)
+    assert len(srcs) == 1, f"expected exactly 1 youtube iframe, found {len(srcs)}"
+    assert "HfsaV45oXJ4" in srcs[0], f"wrong video embedded: {srcs[0]}"
 
 
 def test_blog_author_bio_text():
