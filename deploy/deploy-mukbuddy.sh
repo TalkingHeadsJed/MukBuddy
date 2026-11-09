@@ -101,10 +101,13 @@ CI=false GENERATE_SOURCEMAP=false REACT_APP_BACKEND_URL="$BACKEND_URL" yarn buil
   || die "yarn build:blog failed"
 [ -s build/index.html ] || die "build produced no index.html"
 
+# Hard gate: a build without the API address ships a lead form that 404s.
+grep -rqF 'undefined/api' build/static/js/ 2>/dev/null \
+  && die "build JS contains \"undefined/api\" - REACT_APP_BACKEND_URL not baked in"
 if grep -rqF "$BACKEND_URL" build/static/js/ 2>/dev/null; then
   say "verified: $BACKEND_URL baked into build JS"
 else
-  say "WARN: $BACKEND_URL NOT found in build JS - frontend may not reach the API"
+  die "$BACKEND_URL NOT found in build JS - frontend would not reach the API"
 fi
 if ls build/static/js/*.map >/dev/null 2>&1 || ls build/static/css/*.map >/dev/null 2>&1; then
   say "stripping stray source maps from build"

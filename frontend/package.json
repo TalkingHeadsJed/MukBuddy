@@ -60,7 +60,8 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
-    "build:blog": "bash ../scripts/sync-blog-from-github.sh && NODE_PATH=./node_modules node ../scripts/build-blog.js && craco build && NODE_PATH=./node_modules node ../scripts/prerender.js",
+    "postbuild": "bash ../scripts/check-build-backend.sh build",
+    "build:blog": "bash ../scripts/sync-blog-from-github.sh && NODE_PATH=./node_modules node ../scripts/build-blog.js && craco build && NODE_PATH=./node_modules node ../scripts/prerender.js && bash ../scripts/check-build-backend.sh build",
     "blog:render": "NODE_PATH=./node_modules node ../scripts/build-blog.js",
     "blog:deploy": "NODE_PATH=./node_modules BLOG_OUTPUT_DIR=./build node ../scripts/build-blog.js",
     "prerender": "NODE_PATH=./node_modules node ../scripts/prerender.js",

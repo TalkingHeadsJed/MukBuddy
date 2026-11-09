@@ -18,6 +18,13 @@
 > tar -xzOf mukbuddy-prebuilt-LATEST.tar.gz build/ads/index.html | grep -c "STOP"
 > # Should print a number > 0. If it prints 0, the build is broken — do not deploy.
 > ```
+>
+> ### And that the lead form can reach the API
+> ```sh
+> bash scripts/check-build-backend.sh mukbuddy-prebuilt-LATEST.tar.gz
+> # Must print "OK: bundle posts to mukbuddy-api.tal.one". On FAIL, do not deploy:
+> # the /ads and home-page forms would post to "undefined/api" and 404.
+> ```
 
 Generated automatically by Emergent. The `build/` tree below is the
 **complete static site** — every page fully prerendered with real

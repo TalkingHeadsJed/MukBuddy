@@ -128,3 +128,6 @@ credentials.json
 
 # Generated draft blog previews (token-gated, never commit)
 frontend/public/blog/draft-preview/
+
+# Production build config is public and must be committed (see file header)
+!frontend/.env.production
