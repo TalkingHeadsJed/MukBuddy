@@ -1540,7 +1540,7 @@ When you understand the shop vacuum as one connected airflow system, troubleshoo
 - [diagnosing a collapsing vacuum hose](https://mukbuddy.com/blog/shop-vacuum-hose-collapsing/)
 - [Why Does My Shop Vacuum Keep Clogging](https://mukbuddy.com/blog/shop-vacuum-keeps-clogging/)
 - [Why Is My Shop Vacuum Leaving Dust Behind](https://mukbuddy.com/blog/shop-vacuum-leaving-dust/)
-- [Why Shop Vacuums Lose Suction](https://mukbuddy.com/blog/shop-vacuum-lost-suction/)
+- [Why Shop Vacuums Lose Suction](https://mukbuddy.com/blog/shop-vac-lost-suction-how-to-fix/)
 - [why the pull comes and goes](https://mukbuddy.com/blog/shop-vacuum-suction-pulsing/)
 - [a shop vac that's too loud to work beside](https://mukbuddy.com/blog/shop-vacuum-too-loud/)
 - [Why Does My Shop Vacuum Keep Tripping the Breaker](https://mukbuddy.com/blog/shop-vacuum-trips-breaker/)

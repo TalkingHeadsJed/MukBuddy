@@ -466,7 +466,7 @@ Correct:
 - [the guide to shop vacuum maintenance checklist](https://mukbuddy.com/blog/shop-vacuum-maintenance-checklist/)
 - [the complete shop vacuum troubleshooting guide](https://mukbuddy.com/blog/shop-vacuum-troubleshooting/)
 - [how airflow actually works inside the vac](https://mukbuddy.com/blog/shop-vacuum-airflow/)
-- [why shop vacuums lose suction](https://mukbuddy.com/blog/shop-vacuum-lost-suction/)
+- [why shop vacuums lose suction](https://mukbuddy.com/blog/shop-vac-lost-suction-how-to-fix/)
 - [bags that deliver on fine dust claims](https://mukbuddy.com/blog/best-shop-vac-bags/)
 - [stopping rapid filter loading](https://mukbuddy.com/blog/vacuum-filter-clogging-fast/)
 - [measuring shop vacuum performance](https://mukbuddy.com/blog/test-shop-vacuum-suction-airflow/)

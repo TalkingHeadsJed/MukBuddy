@@ -925,7 +925,7 @@ It is restoring the vacuum’s ability to breathe.
 - [the complete shop vacuum troubleshooting guide](https://mukbuddy.com/blog/shop-vacuum-troubleshooting/)
 - [CFM vs. water lift vs. horsepower](https://mukbuddy.com/blog/cfm-vs-water-lift-vs-horsepower/)
 - [why your hose is whistling under load](https://mukbuddy.com/blog/shop-vacuum-hose-collapsing/)
-- [the causes of sudden suction loss](https://mukbuddy.com/blog/shop-vacuum-lost-suction/)
+- [the causes of sudden suction loss](https://mukbuddy.com/blog/shop-vac-lost-suction-how-to-fix/)
 - [breaking the clogging cycle](https://mukbuddy.com/blog/shop-vacuum-keeps-clogging/)
 - [the filter cleaning process for shop vacs](https://mukbuddy.com/blog/clean-shop-vacuum-filter/)
 

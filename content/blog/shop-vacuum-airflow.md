@@ -515,7 +515,7 @@ Protect the vacuum.
 - [learn more about why is my shop vacuum blowing dust out the exhaust](https://mukbuddy.com/blog/shop-vacuum-blowing-dust/)
 - [learn more about why vacuum motors overheat](https://mukbuddy.com/blog/vacuum-motor-overheating/)
 - [how to check if airflow is adequate](https://mukbuddy.com/blog/test-shop-vacuum-suction-airflow/)
-- [troubleshooting weak shop vacuum airflow](https://mukbuddy.com/blog/shop-vacuum-lost-suction/)
+- [troubleshooting weak shop vacuum airflow](https://mukbuddy.com/blog/shop-vac-lost-suction-how-to-fix/)
 - [collapsed hose symptoms and solutions](https://mukbuddy.com/blog/shop-vacuum-hose-collapsing/)
 
 [see how Muk Buddy’s two-chamber system works](https://mukbuddy.com/)

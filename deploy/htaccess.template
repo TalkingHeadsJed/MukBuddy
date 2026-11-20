@@ -26,9 +26,17 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^www\.mukbuddy\.com$ [NC]
 RewriteRule ^(.*)$ https://mukbuddy.com/$1 [R=301,L]
 
+# --- BEGIN index-html-canonical (FIX 1 Jed 2026-09-14; re-added 2026-11-20): /index.html -> / ---
+# Use THE_REQUEST so DirectoryIndex internal rewrites do not loop.
+RewriteCond %{THE_REQUEST} \s/index\.html[\s?] [NC]
+RewriteRule ^index\.html$ https://mukbuddy.com/ [R=301,L]
+# --- END index-html-canonical ---
+
 # --- BEGIN blog-redirects: 301 redirects for consolidated blog posts ---
 # Cannibalization fix: use-shop-vacuum-without-bag → do-you-need-a-bag-in-a-shop-vac
 RewriteRule ^blog/use-shop-vacuum-without-bag/?$ /blog/do-you-need-a-bag-in-a-shop-vac/ [R=301,L]
+# Cannibalization fix (2026-11-20): shop-vacuum-lost-suction -> shop-vac-lost-suction-how-to-fix
+Redirect 301 /blog/shop-vacuum-lost-suction/ https://mukbuddy.com/blog/shop-vac-lost-suction-how-to-fix/
 # --- END blog-redirects ---
 
 # Security headers

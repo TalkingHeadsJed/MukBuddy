@@ -468,6 +468,6 @@ First determine whether the motor remains powered.
 - [why is my shop vacuum leaving dust behind](https://mukbuddy.com/blog/shop-vacuum-leaving-dust/)
 - [when the hose is the airflow bottleneck](https://mukbuddy.com/blog/shop-vacuum-hose-collapsing/)
 - [diagnostic tests for vacuum suction](https://mukbuddy.com/blog/test-shop-vacuum-suction-airflow/)
-- [finding the restriction that killed suction](https://mukbuddy.com/blog/shop-vacuum-lost-suction/)
+- [finding the restriction that killed suction](https://mukbuddy.com/blog/shop-vac-lost-suction-how-to-fix/)
 
 [learn how Muk Buddy keeps debris out of the airflow path](https://mukbuddy.com/)

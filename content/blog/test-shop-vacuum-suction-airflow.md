@@ -529,7 +529,7 @@ Test one stage at a time.
 - [the complete shop vacuum troubleshooting guide](https://mukbuddy.com/blog/shop-vacuum-troubleshooting/)
 - [a vac blowing hot air](https://mukbuddy.com/blog/shop-vacuum-blowing-hot-air/)
 - [surging suction under load](https://mukbuddy.com/blog/shop-vacuum-suction-pulsing/)
-- [diagnosing why your shop vac lost suction](https://mukbuddy.com/blog/shop-vacuum-lost-suction/)
+- [diagnosing why your shop vac lost suction](https://mukbuddy.com/blog/shop-vac-lost-suction-how-to-fix/)
 - [the hose collapse problem and its fixes](https://mukbuddy.com/blog/shop-vacuum-hose-collapsing/)
 - [improving shop vacuum airflow](https://mukbuddy.com/blog/increase-shop-vacuum-suction/)
 

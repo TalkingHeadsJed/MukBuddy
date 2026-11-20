@@ -411,6 +411,6 @@ Protect your investment.
 - [learn more about why does my shop vacuum keep clogging](https://mukbuddy.com/blog/shop-vacuum-keeps-clogging/)
 - [what causes the burning smell](https://mukbuddy.com/blog/shop-vacuum-burning-smell/)
 - [related: vacuum filter clogging fast for vacuum motor overheating users](https://mukbuddy.com/blog/vacuum-filter-clogging-fast/)
-- [related: shop vacuum lost suction for vacuum motor overheating users](https://mukbuddy.com/blog/shop-vacuum-lost-suction/)
+- [related: shop vacuum lost suction for vacuum motor overheating users](https://mukbuddy.com/blog/shop-vac-lost-suction-how-to-fix/)
 
 [learn how Muk Buddy keeps debris out of the airflow path](https://mukbuddy.com/)
