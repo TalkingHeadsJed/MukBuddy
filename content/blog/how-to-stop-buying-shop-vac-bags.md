@@ -50,9 +50,9 @@ A crew on fine dust can burn two or three bags a week. At $5 to $13 per bag, tha
 
 ## The one-time alternative
 
-A reusable shop vac bag is the exit from that cycle. It's a different product: heavier material, designed to be dumped and reloaded, built to survive hundreds of jobs. You pay once and stop paying.
+A [shop vac bag you can reuse](/blog/shop-vac-bag-you-can-reuse/) is the exit from that cycle. It's a different product: heavier material, designed to be dumped and reloaded, built to survive hundreds of jobs. You pay once and stop paying. It's also what most people mean when they search for a [washable shop vac bag](/blog/washable-shop-vac-bag/).
 
-Muk Buddy is $99. It fits most 2.5-inch inlet wet/dry vacs (Shop-Vac, RIDGID, Craftsman, Stanley, DeWalt). At two disposable bags a week, it pays for itself in roughly two to three months. At three bags a week, even faster. After that, the savings continue as long as you own the vac.
+Muk Buddy is $99. It fits most 2.5-inch inlet wet/dry vacs (Shop-Vac, RIDGID, Craftsman, Stanley, DeWalt). DeWalt owners can see the [reusable bag for a DeWalt shop vac](/blog/reusable-bag-for-dewalt-shop-vac/), and RIDGID owners the [alternative to RIDGID VF3502 bags](/blog/alternative-to-ridgid-vf3502-bags/). At two disposable bags a week, it pays for itself in roughly two to three months. At three bags a week, even faster. After that, the savings continue as long as you own the vac.
 
 ## Why it works better (not just cheaper)
 

@@ -22,7 +22,7 @@ faq:
     a: "Better, for fine dust. A disposable sends dust and air down the same path, so the filter packs and suction dies by lunch. A reusable 2-chamber bag keeps dust off the airflow, so suction holds through the job. It's the same job with better performance and no recurring cost."
 ---
 
-A shop vac bag you can reuse is what most contractors eventually start looking for after spending months or years throwing away disposables. The good news: it exists. The even better news: it works better than the thing it replaces.
+A shop vac bag you can reuse is what most contractors eventually start looking for after spending months or years throwing away disposables and wondering [how to stop buying shop vac bags](/blog/how-to-stop-buying-shop-vac-bags/). The good news: it exists. The even better news: it works better than the thing it replaces.
 
 ## The short answer
 
@@ -44,13 +44,13 @@ The difference isn't just durability. The design changes how the vac performs. A
 
 ## Why reusing a disposable doesn't work
 
-If you've tried to empty and reuse a standard shop vac bag, you already know it fails. The seams tear. The seal won't close. Fine dust blows back into the air and into the motor. That's not a defect; that's how disposables are built. They're designed to be thrown away.
+If you've tried to empty and reuse a standard shop vac bag, you already know it fails. The seams tear. The seal won't close. Fine dust blows back into the air and into the motor. That's not a defect; that's how disposables are built. They're designed to be thrown away. Rinsing one doesn't save it either, which is why a real [washable shop vac bag](/blog/washable-shop-vac-bag/) is a reusable one.
 
 The advice you see everywhere online to never reuse a vacuum bag is correct, about disposables. It just doesn't apply to a bag that's actually built for reuse. We covered that distinction in detail in [can you reuse a shop vac bag](/blog/can-you-reuse-a-shop-vac-bag/).
 
 ## How a reusable bag saves money
 
-The math is simple. A disposable bag costs roughly $5 to $13 depending on the brand (RIDGID VF3502 runs about $12.49 per bag at Home Depot; Craftsman CMXZVBE38749 runs about $5.50 per bag on Amazon). A crew burning fine dust can go through two or three a week. That's roughly $500 to $2,000 a year per vac, year after year.
+The math is simple. A disposable bag costs roughly $5 to $13 depending on the brand (RIDGID VF3502 runs about $12.49 per bag at Home Depot; Craftsman CMXZVBE38749 runs about $5.50 per bag on Amazon). That RIDGID price is the main reason owners look for an [alternative to RIDGID VF3502 bags](/blog/alternative-to-ridgid-vf3502-bags/). A crew burning fine dust can go through two or three a week. That's roughly $500 to $2,000 a year per vac, year after year.
 
 A reusable bag is one purchase. Muk Buddy is $99. It pays for itself in weeks to months depending on how hard you run your vac, then keeps saving after that.
 
@@ -72,7 +72,7 @@ We make Muk Buddy, so we're not pretending to be neutral. But we're also not cla
 
 ## The bottom line
 
-If you've been searching for a shop vac bag you can reuse, you're asking the right question. The answer is yes: reusable bags exist, they work better on fine dust than disposables, and they're a one-time buy instead of a forever expense. The next step is picking one that fits your vac.
+If you've been searching for a shop vac bag you can reuse, you're asking the right question. The answer is yes: reusable bags exist, they work better on fine dust than disposables, and they're a one-time buy instead of a forever expense. The next step is picking one that fits your vac; DeWalt owners can start with our [reusable bag for a DeWalt shop vac](/blog/reusable-bag-for-dewalt-shop-vac/) guide.
 
 [See how Muk Buddy fits and how the 2-chamber design holds suction →](/)
 

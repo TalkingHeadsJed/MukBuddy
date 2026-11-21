@@ -22,7 +22,7 @@ faq:
     a: "Yes. Muk Buddy fits the standard 2.5-inch inlet used by most Shop-Vac, RIDGID, Craftsman, Stanley, and DeWalt wet/dry vacs. One bag covers a mixed fleet."
 ---
 
-A reusable bag for DeWalt shop vac is what you're really asking for when you search for DXVA19-4102 alternatives. The DeWalt disposable works fine until you do the math on how often you rebuy it. Here's the one-time replacement: what fits, what it costs, and why you stop buying bags after this one.
+A reusable bag for DeWalt shop vac is what you're really asking for when you search for DXVA19-4102 alternatives. The DeWalt disposable works fine until you do the math on how often you rebuy it, which is the whole case for working out [how to stop buying shop vac bags](/blog/how-to-stop-buying-shop-vac-bags/). Here's the one-time replacement: what fits, what it costs, and why you stop buying bags after this one.
 
 ## The short answer
 
@@ -55,7 +55,7 @@ The vac itself might have cost $150. The bags cost more than the machine over it
 
 ## What the reusable costs you
 
-Muk Buddy is $99 once. No packs. No reorders. No running to Home Depot or Amazon every few weeks.
+Muk Buddy is $99 once. No packs. No reorders. No running to Home Depot or Amazon every few weeks. It's a [shop vac bag you can reuse](/blog/shop-vac-bag-you-can-reuse/) on every job, and it's what most people actually want when they search for a [washable shop vac bag](/blog/washable-shop-vac-bag/).
 
 At two bags a week, it pays for itself in about two months. At three bags a week, faster. After that, the savings continue for as long as you own the vac.
 
@@ -75,7 +75,7 @@ Muk Buddy is a 2-chamber design. Debris drops into the first chamber. Airflow pa
 | **DXVA19-4102 (DeWalt)** | Disposable 3-pack, ~$21 | Light occasional use or convenience | Recurring cost, suction fades on fine dust |
 | **Generic replacements** | Third-party disposable packs | Lower per-bag cost | Variable quality, same single-path design |
 
-We make Muk Buddy, so we're not neutral. But we're also not claiming it's right for everyone. If you vac twice a month for light cleanup, a pack of disposables is fine. If you run a DeWalt every day on drywall or concrete, the reusable bag is the better buy.
+We make Muk Buddy, so we're not neutral. But we're also not claiming it's right for everyone. If you vac twice a month for light cleanup, a pack of disposables is fine. If you run a DeWalt every day on drywall or concrete, the reusable bag is the better buy. If you also run a RIDGID, the same math applies to our [alternative to RIDGID VF3502 bags](/blog/alternative-to-ridgid-vf3502-bags/).
 
 ## The bottom line
 

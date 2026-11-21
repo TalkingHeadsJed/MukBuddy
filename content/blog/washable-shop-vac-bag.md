@@ -22,7 +22,7 @@ faq:
     a: "Not usually. Most users dump the debris, shake out any fines, and reload. If the bag gets muddy or soaked on a wet pull, you can rinse it and let it dry before the next job. Washing is an option, not a requirement."
 ---
 
-A washable shop vac bag is what most people search for when they really want a reusable one. The idea makes sense: instead of filling a bag, throwing it out, and buying another, you want one you can clean and use again. Here's what that actually means in practice, why washing isn't the selling point, and what to look for instead.
+A washable shop vac bag is what most people search for when they really want a reusable one. The idea makes sense: instead of filling a bag, throwing it out, and buying another, you want one you can clean and use again, which is really a question of [how to stop buying shop vac bags](/blog/how-to-stop-buying-shop-vac-bags/). Here's what that actually means in practice, why washing isn't the selling point, and what to look for instead.
 
 ## The short answer
 
@@ -33,7 +33,7 @@ A washable shop vac bag is what most people search for when they really want a r
 When someone searches for a washable shop vac bag, they're usually asking one of two things:
 
 1. **Can I clean and reuse the bag I have?** (If it's a disposable, the answer is no. The seams will tear and the media will leak.)
-2. **Is there a bag I can use over and over instead of throwing away?** (Yes. That's what a reusable bag is for.)
+2. **Is there a bag I can use over and over instead of throwing away?** (Yes. That's what a [shop vac bag you can reuse](/blog/shop-vac-bag-you-can-reuse/) is for.)
 
 The word "washable" is how the question gets phrased, but the need is really about reuse. The bag you want is one that empties, reloads, and goes back to work, job after job.
 
@@ -64,7 +64,7 @@ This isn't a frequent thing. Most dry-debris jobs, you just dump, shake out the 
 | **Disposable bags** | Single-use filter bags, roughly $5-13 per bag | Light occasional use or one-time cleanups | Recurring cost, suction fades as bag fills |
 | **Bagless / foam sleeve** | No bag, just the filter and optional foam | Chunky debris with no fine dust | Filter clogs fast on fine dust, motor strains |
 
-Muk Buddy is what we build, and we think it's the right call for anyone running a vac regularly. But we're not pretending there's no trade-off. If you use a shop vac once a month for garage cleanup, a pack of disposables might be fine. If you run a vac daily on drywall or concrete, you'll spend more on disposables in a few months than a reusable costs once.
+Muk Buddy is what we build, and we think it's the right call for anyone running a vac regularly. But we're not pretending there's no trade-off. If you use a shop vac once a month for garage cleanup, a pack of disposables might be fine. If you run a vac daily on drywall or concrete, you'll spend more on disposables in a few months than a reusable costs once. Running a specific brand? See the [reusable bag for a DeWalt shop vac](/blog/reusable-bag-for-dewalt-shop-vac/) or the [alternative to RIDGID VF3502 bags](/blog/alternative-to-ridgid-vf3502-bags/).
 
 ## The bottom line
 

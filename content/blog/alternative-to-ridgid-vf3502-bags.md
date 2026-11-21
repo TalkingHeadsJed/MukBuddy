@@ -22,7 +22,7 @@ faq:
     a: "Yes. DeWalt DXVA19-4102 and Vacmaster VHBL are cross-brand disposables in the same size family. They cost roughly the same and have the same single-path design. Muk Buddy is the only reusable alternative that fits across brands and eliminates the rebuy entirely."
 ---
 
-An alternative to RIDGID VF3502 bags is what you're really searching for when you're about to buy your tenth 2-pack. The VF3502 works. It also costs $12.49 per bag and dies by lunch on fine dust. Here's the one-time alternative: what it is, what it fits, and why you stop buying bags after this one.
+An alternative to RIDGID VF3502 bags is what you're really searching for when you're about to buy your tenth 2-pack and wondering [how to stop buying shop vac bags](/blog/how-to-stop-buying-shop-vac-bags/). The VF3502 works. It also costs $12.49 per bag and dies by lunch on fine dust. Here's the one-time alternative: what it is, what it fits, and why you stop buying bags after this one.
 
 ## The short answer
 
@@ -55,11 +55,11 @@ If you're comparing disposables, here are the cross-brand equivalents in the sam
 
 *(Prices as of October 2026.)*
 
-These all share the same basic design: single-path, disposable, recurring cost. Switching brands might save a few dollars per bag, but you're still buying bags forever.
+These all share the same basic design: single-path, disposable, recurring cost. Switching brands might save a few dollars per bag, but you're still buying bags forever. The way out is a [shop vac bag you can reuse](/blog/shop-vac-bag-you-can-reuse/), which is also what most people mean by a [washable shop vac bag](/blog/washable-shop-vac-bag/).
 
 ## The one-time alternative
 
-Muk Buddy is a reusable bag that fits across all of those brands. It uses the same 2.5-inch inlet, works with RIDGID, DeWalt, Craftsman, Vacmaster, Shop-Vac, and Stanley wet/dry vacs, and costs $99 once.
+Muk Buddy is a reusable bag that fits across all of those brands. It uses the same 2.5-inch inlet, works with RIDGID, DeWalt, Craftsman, Vacmaster, Shop-Vac, and Stanley wet/dry vacs, and costs $99 once. DeWalt owners have their own guide: the [reusable bag for a DeWalt shop vac](/blog/reusable-bag-for-dewalt-shop-vac/).
 
 At $12.49 per VF3502, Muk Buddy pays for itself after about eight bags. A crew burning two to three a week hits that in roughly a month. After that, the savings continue for as long as you own the vac.
 
