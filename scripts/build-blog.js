@@ -254,6 +254,11 @@ function loadPosts() {
         video_date: data.video_date || data.publish_date || today,
         video_vertical: data.video_vertical === true,
         // ── Optional FAQ block ──
+        // Optional SEO overrides: seo_title is used verbatim for <title>/og/twitter
+        // (H1 stays title). faq_display:false = FAQPage schema only, for posts whose
+        // body already shows every Q&A, so the accordion would duplicate it.
+        seo_title: data.seo_title || "",
+        faq_display: data.faq_display !== false,
         faq: Array.isArray(data.faq)
           ? data.faq.filter((f) => f && f.q && f.a)
           : [],
@@ -483,7 +488,7 @@ function renderPost(p) {
 </main>`;
 
   return pageShell({
-    title: `${p.title} | Muk Buddy Blog`,
+    title: p.seo_title || `${p.title} | Muk Buddy Blog`,
     description: p.excerpt,
     canonical: url,
     ogImage: p.hero_image || `${SITE_URL}/og-image-home.png`,
@@ -509,7 +514,7 @@ function renderVideoBlock(p) {
 }
 
 function renderFaqBlock(p) {
-  if (!p.faq.length) return "";
+  if (!p.faq.length || !p.faq_display) return "";
   const items = p.faq
     .map((f) => {
       const rendered = sanitizeHtml(
