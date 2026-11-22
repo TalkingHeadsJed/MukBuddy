@@ -8,6 +8,7 @@ author: "Jason Brouk"
 author_bio: "Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors, and still building the tools contractors wish already existed."
 tags: ["shop-vac", "shop-vac-bags", "reusable", "wet-dry-vac", "contractor", "buying-guide"]
 publish_date: "2026-10-18"
+video: "a-AMZJtoHik"
 published: true
 faq:
   - q: "Is there a shop vac bag you can reuse?"

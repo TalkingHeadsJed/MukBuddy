@@ -8,6 +8,7 @@ author: "Jason Brouk"
 author_bio: "Founder of Floor Lord Industries and inventor of Muk Buddy. 28 years doing floors, and still building the tools contractors wish already existed."
 tags: ["shop-vac", "shop-vac-bags", "ridgid", "vf3502", "reusable", "fitment", "contractor"]
 publish_date: "2026-10-18"
+video: "HZDdLH8tttQ"
 published: true
 faq:
   - q: "What is a good alternative to RIDGID VF3502 bags?"
