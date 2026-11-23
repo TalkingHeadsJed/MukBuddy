@@ -82,7 +82,7 @@ It fits the standard 2.5-inch inlet on Shop-Vac, Ridgid, Craftsman, Stanley, DeW
 
 ## 2. RIDGID VF3502 (Size A) — Best Disposable for RIDGID Owners
 
-If you run a 12–16 gallon RIDGID and you want a throwaway, the VF3502 ("Size A," about $13–17 a 2-pack) is the honest pick — right fit, does the basic job. It's a standard single-path bag, though, so on a drywall or concrete load it packs against the filter and the suction fades by the back half of the job. Fine for general shop cleanup; on fine dust you'll be changing it often and rebuying it for the life of the vac.
+If you run a 12–16 gallon RIDGID and you want a throwaway, the VF3502 ("Size A," about $13–17 a 2-pack) is the honest pick — right fit, does the basic job. It's a standard single-path bag, though, so on a drywall or concrete load it packs against the filter and the suction fades by the back half of the job. Fine for general shop cleanup; on fine dust you'll be changing it often and rebuying it for the life of the vac. Every disposable that fits a 16 gallon vac, with per-bag prices, is in our [16 gallon shop vac bags](/blog/16-gallon-shop-vac-bags/) guide.
 
 **Best for:** RIDGID 12–16 gal owners who want a simple disposable and mostly vac chips and general debris.
 
