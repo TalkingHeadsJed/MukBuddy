@@ -9,6 +9,7 @@ author: "Jason Brouk"
 author_bio: "Founder of Floor Lord Industries and inventor of Muk Buddy. Floor Lord is his flooring contracting business, and Muk Buddy is the bag he built after 28 years of watching crews burn through disposables. Still building the tools contractors wish already existed."
 tags: ["shop-vac-bags", "16-gallon", "reusable", "buying-guide", "shop-vac", "craftsman", "ridgid"]
 publish_date: "2026-11-23"
+video: "ylEdUGT4G6o"
 published: true
 # FAQ schema only: the 5 Q&As are already visible in the body as H3 + paragraph,
 # so the generator skips the duplicate accordion (faq_display: false).
