@@ -7,7 +7,7 @@
 #   Override the expected host with EXPECT_API_HOST.
 set -euo pipefail
 target="${1:?usage: $0 <build-dir|tarball>}"
-host="${EXPECT_API_HOST:-mukbuddy-api.tal.one}"
+host="${EXPECT_API_HOST:-https://mukbuddy.com}"
 
 if [ -d "$target" ]; then
   js=$(cat "$target"/static/js/main.*.js 2>/dev/null) || { echo "FAIL: no main.*.js under $target/static/js" >&2; exit 1; }
@@ -23,5 +23,8 @@ if grep -qF 'undefined/api' <<<"$js"; then
 fi
 if ! grep -qF "$host" <<<"$js"; then
   echo "FAIL: bundle does not reference $host — lead form would post elsewhere" >&2; exit 1
+fi
+if grep -qF 'tal.one' <<<"$js"; then
+  echo "FAIL: bundle still references tal.one (retired 2026-11-22; API is now https://mukbuddy.com/api)" >&2; exit 1
 fi
 echo "OK: bundle posts to $host"
