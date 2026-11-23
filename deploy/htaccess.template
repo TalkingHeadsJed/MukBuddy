@@ -26,6 +26,13 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^www\.mukbuddy\.com$ [NC]
 RewriteRule ^(.*)$ https://mukbuddy.com/$1 [R=301,L]
 
+# --- BEGIN api-proxy (2026-11-22, Jed): lead-form API served on the site's own address ---
+# The home page and /ads forms POST to https://mukbuddy.com/api/leads. Apache hands /api/*
+# to the FastAPI app on this same server (uvicorn 127.0.0.1:8001). This replaced the old
+# mukbuddy-api.tal.one Cloudflare tunnel, which sat on a former employee's personal account.
+RewriteRule ^api/(.*)$ http://127.0.0.1:8001/api/$1 [P,L]
+# --- END api-proxy ---
+
 # --- BEGIN index-html-canonical (FIX 1 Jed 2026-09-14; re-added 2026-11-20): /index.html -> / ---
 # Use THE_REQUEST so DirectoryIndex internal rewrites do not loop.
 RewriteCond %{THE_REQUEST} \s/index\.html[\s?] [NC]
