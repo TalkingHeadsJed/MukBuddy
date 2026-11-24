@@ -41,7 +41,7 @@ Yet contractors do it with shop vacuums every day.
 
 The purchase price is often one of the **smallest** expenses over the life of the machine.
 
-The real cost comes from everything that happens after you bring it to the jobsite.
+The real cost comes from everything that happens after you bring it to the jobsite. Every number on bag prices and yearly costs, with sources, is on our [shop vac bag statistics](/blog/shop-vac-bag-statistics/) page.
 
 ---
 

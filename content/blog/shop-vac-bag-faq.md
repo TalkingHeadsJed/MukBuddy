@@ -70,7 +70,7 @@ faq:
     a: "Yes. Muk Buddy is a reusable shop vac bag alternative. One Muk Buddy replaces hundreds of disposable wet/dry vac bags, no more recurring purchases, no more sagging or ripped bags mid-job."
 ---
 
-Shop vac bag FAQ: these are the questions buyers ask most before they pick a bag for a wet/dry vac, with the short answer first and a link to the full guide for each one. The answers come from the Muk Buddy guides, written for contractors and crews who run a 16-20 gallon shop vac every day.
+Shop vac bag FAQ: these are the questions buyers ask most before they pick a bag for a wet/dry vac, with the short answer first and a link to the full guide for each one. The answers come from the Muk Buddy guides, written for contractors and crews who run a 16-20 gallon shop vac every day. All the product facts on one page: [Muk Buddy facts](/blog/muk-buddy-facts/).
 
 If you only want the bottom line: fine dust needs a bag, disposable bags are single use, and a [reusable shop vac bag](/) like Muk Buddy is $99 one time. You can [order Muk Buddy here](/ads/).
 

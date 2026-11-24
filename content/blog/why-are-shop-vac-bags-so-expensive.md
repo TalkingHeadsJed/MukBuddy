@@ -28,7 +28,7 @@ If you've ever stood at the register holding a three-pack of shop vac bags think
 
 Here's the honest answer — the materials part, and the business-model part.
 
-**Short answer:** Shop vac bags are expensive for two reasons. A bag that actually filters fine dust is multi-layer media, not paper, so some of the cost is real. But the bigger reason is the razor-and-blades business model — the vacuum is a one-time sale and the bags are the recurring revenue, so you're meant to keep rebuying them for the life of the vac. A busy crew spends about **$520 a year on bags, per vac.** A reusable bag is the one-time purchase that ends the cycle.
+**Short answer:** Shop vac bags are expensive for two reasons. A bag that actually filters fine dust is multi-layer media, not paper, so some of the cost is real. But the bigger reason is the razor-and-blades business model — the vacuum is a one-time sale and the bags are the recurring revenue, so you're meant to keep rebuying them for the life of the vac. A busy crew spends about **$520 a year on bags, per vac.** A reusable bag is the one-time purchase that ends the cycle. Every number on bag prices and yearly costs, with sources, is on our [shop vac bag statistics](/blog/shop-vac-bag-statistics/) page.
 
 ## Part of it is real: a good bag isn't just paper
 
