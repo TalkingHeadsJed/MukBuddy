@@ -33,6 +33,17 @@ RewriteRule ^(.*)$ https://mukbuddy.com/$1 [R=301,L]
 RewriteRule ^api/(.*)$ http://127.0.0.1:8001/api/$1 [P,L]
 # --- END api-proxy ---
 
+# --- BEGIN yt-tracking-redirects (2026-11-25, seo-operator-mukbuddy for Jed) ---
+# /yt/<n> short links used in YouTube descriptions. 302 (not 301) so the target
+# can change later. Kept out of the sitemap; X-Robots-Tag noindex set below.
+RewriteRule ^yt/1/?$ https://mukbuddy.com/ads/?utm_source=youtube&utm_medium=video&utm_content=ylEdUGT4G6o [R=302,NE,L]
+RewriteRule ^yt/2/?$ https://mukbuddy.com/ads/?utm_source=youtube&utm_medium=video&utm_content=HZDdLH8tttQ [R=302,NE,L]
+RewriteRule ^yt/3/?$ https://mukbuddy.com/ads/?utm_source=youtube&utm_medium=video&utm_content=9A_fwrGo4a4 [R=302,NE,L]
+RewriteRule ^yt/4/?$ https://mukbuddy.com/ads/?utm_source=youtube&utm_medium=video&utm_content=S1Vb_XFW7fY [R=302,NE,L]
+RewriteRule ^yt/5/?$ https://mukbuddy.com/ads/?utm_source=youtube&utm_medium=video&utm_content=a-AMZJtoHik [R=302,NE,L]
+RewriteRule ^yt/6/?$ https://mukbuddy.com/ads/?utm_source=youtube&utm_medium=video&utm_content=jUr0UwyQN00 [R=302,NE,L]
+# --- END yt-tracking-redirects ---
+
 # --- BEGIN index-html-canonical (FIX 1 Jed 2026-09-14; re-added 2026-11-20): /index.html -> / ---
 # Use THE_REQUEST so DirectoryIndex internal rewrites do not loop.
 RewriteCond %{THE_REQUEST} \s/index\.html[\s?] [NC]
@@ -58,4 +69,9 @@ Redirect 301 /blog/shop-vacuum-lost-suction/ https://mukbuddy.com/blog/shop-vac-
 # Noindex the paid /ads landing page
 <If "%{REQUEST_URI} =~ m#^/ads/?#">
   Header set X-Robots-Tag "noindex, follow"
+</If>
+
+# Noindex the /yt/ tracking redirects ("always" so it rides on the 302)
+<If "%{REQUEST_URI} =~ m#^/yt/#">
+  Header always set X-Robots-Tag "noindex, nofollow"
 </If>

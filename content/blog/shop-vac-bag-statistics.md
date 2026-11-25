@@ -2,13 +2,17 @@
 title: "Shop Vac Bag Statistics 2026: Prices, Yearly Costs, Search Demand and Dust Rules"
 seo_title: "Shop Vac Bag Statistics 2026: Prices, Costs, Dust Rules"
 slug: "shop-vac-bag-statistics"
-excerpt: "Shop vac bag statistics for 2026: disposable bags cost $5.33 to $12.99 each, a busy vac burns $574 to $2,026 a year, and OSHA's silica limit is 50 micrograms."
+excerpt: "Shop vac bag statistics for 2026: disposable bags cost $5.33 to $12.99 each, a busy vac burns $574 to $2,026 a year, and OSHA's silica limit is 50 mcg."
 hero_image: "https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg"
 hero_alt: "The reusable Muk Buddy bag for 16-20 gallon wet/dry shop vacs"
 author: "Jason Brouk"
 author_bio: "Founder of Floor Lord Industries and inventor of Muk Buddy. Floor Lord is his flooring contracting business, and Muk Buddy is the bag he built after 28 years of watching crews burn through disposables. Still building the tools contractors wish already existed."
 tags: ["shop-vac-bags", "statistics", "cost", "silica"]
 publish_date: "2026-11-24"
+video: "9A_fwrGo4a4"
+video_title: "How to Stop Buying Shop Vac Bags: Buy One You Never Have to Rebuy (Muk Buddy, 2026)"
+video_date: "2026-11-22"
+video_after: "How much shop vac bags cost per year"
 published: true
 # FAQ schema only: the 5 Q&As are already visible in the body as H3 + paragraph,
 # so the generator skips the duplicate accordion (faq_display: false).

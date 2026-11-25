@@ -253,6 +253,12 @@ function loadPosts() {
         video_thumb: data.video_thumb || "",
         video_date: data.video_date || data.publish_date || today,
         video_vertical: data.video_vertical === true,
+        // video_after: exact text of an H2 in the body. The video block is placed
+        // at the end of that section (just before the next H2) instead of under
+        // the hero. Unknown heading = build error, so a typo cannot hide the video.
+        video_after: data.video_after || "",
+        // ── Optional Product schema (adds a Product node to the JSON-LD graph) ──
+        product: data.product && typeof data.product === "object" ? data.product : null,
         // ── Optional FAQ block ──
         // Optional SEO overrides: seo_title is used verbatim for <title>/og/twitter
         // (H1 stays title). faq_display:false = FAQPage schema only, for posts whose
@@ -343,7 +349,7 @@ main.wide{max-width:1100px}
 h1.title{font-family:'Bowlby One',Impact,sans-serif;font-size:clamp(2rem,4vw,3.5rem);line-height:1.05;margin:0 0 16px;color:var(--ink)}
 .byline{font-family:Inter,sans-serif;font-size:14px;color:#5A4A72;margin-bottom:32px}
 .byline .dot{margin:0 8px;opacity:.5}
-.hero-img{width:100%;border:4px solid var(--ink);margin:8px 0 36px;display:block}
+.hero-img{width:100%;height:auto;border:4px solid var(--ink);margin:8px 0 36px;display:block}
 .post{font-size:18px}
 .post p,.post ul,.post ol,.post blockquote,.post table{margin:0 0 22px}
 .post h2{font-family:Anton,Impact,sans-serif;font-size:32px;line-height:1.1;margin:40px 0 18px;letter-spacing:.01em}
@@ -415,18 +421,94 @@ ${body}
 </body></html>`;
 }
 
+/* ─── hero image: <picture> with a WebP source when one is committed ───
+ * If frontend/public/blog-images/<name>.webp exists next to the JPEG/PNG hero,
+ * serve it via <source type="image/webp"> with the original as fallback.
+ * Applies to every post that uses that hero, no frontmatter needed. */
+function renderHero(p) {
+  if (!p.hero_image) return "";
+  const m = String(p.hero_image).match(/\/blog-images\/([^/?#]+)\.(jpe?g|png)$/i);
+  if (!m) return `<img class="hero-img" src="${esc(p.hero_image)}" alt="${esc(p.hero_alt)}" />`;
+  const webpName = `${m[1]}.webp`;
+  const sized = heroSize(m[1] + "." + m[2]);
+  const imgTag = sized
+    ? `<img class="hero-img" src="${esc(p.hero_image)}" alt="${esc(p.hero_alt)}" width="${sized.w}" height="${sized.h}" />`
+    : `<img class="hero-img" src="${esc(p.hero_image)}" alt="${esc(p.hero_alt)}" />`;
+  if (!fs.existsSync(path.join(PUBLIC_DIR, "blog-images", webpName))) return imgTag;
+  const webpUrl = String(p.hero_image).replace(/\.(jpe?g|png)$/i, ".webp");
+  return `<picture><source type="image/webp" srcset="${esc(webpUrl)}" />${imgTag}</picture>`;
+}
+
+// Read pixel size from a JPEG/PNG header so the <img> reserves space (CLS).
+function heroSize(name) {
+  try {
+    const b = fs.readFileSync(path.join(PUBLIC_DIR, "blog-images", name));
+    if (b[0] === 0x89 && b[1] === 0x50) return { w: b.readUInt32BE(16), h: b.readUInt32BE(20) };
+    let i = 2;
+    while (i < b.length) {
+      if (b[i] !== 0xff) return null;
+      const mk = b[i + 1];
+      if (mk >= 0xc0 && mk <= 0xcf && mk !== 0xc4 && mk !== 0xc8 && mk !== 0xcc)
+        return { h: b.readUInt16BE(i + 5), w: b.readUInt16BE(i + 7) };
+      i += 2 + b.readUInt16BE(i + 2);
+    }
+  } catch (e) {}
+  return null;
+}
+
+// Insert the video block at the end of the H2 section named by video_after.
+// Returns { html, placed }.
+function placeVideoInline(html, heading, block) {
+  if (!heading || !block) return { html, placed: false };
+  const norm = (t) => t.replace(/<[^>]+>/g, "").replace(/&amp;/g, "&").trim().toLowerCase();
+  const re = /<h2[^>]*>([\s\S]*?)<\/h2>/g;
+  let m, start = -1;
+  while ((m = re.exec(html))) {
+    if (start >= 0) return { html: html.slice(0, m.index) + block + "\n" + html.slice(m.index), placed: true };
+    if (norm(m[1]) === heading.trim().toLowerCase()) start = m.index;
+  }
+  if (start >= 0) return { html: html + "\n" + block, placed: true };
+  return { html, placed: false };
+}
+
+function productNode(p) {
+  const pr = p.product;
+  if (!pr || !pr.name) return null;
+  const node = { "@type": "Product", name: pr.name };
+  if (pr.description) node.description = pr.description;
+  node.image = pr.image ? [pr.image] : p.hero_image ? [p.hero_image] : undefined;
+  if (pr.brand) node.brand = { "@type": "Brand", name: pr.brand };
+  if (pr.manufacturer) node.manufacturer = { "@type": "Organization", name: pr.manufacturer };
+  if (pr.price != null) {
+    const u = pr.offer_url || "";
+    node.offers = {
+      "@type": "Offer",
+      price: String(pr.price),
+      priceCurrency: pr.currency || "USD",
+      availability: `https://schema.org/${pr.availability || "InStock"}`,
+      url: /^https?:/.test(u) ? u : `${SITE_URL}${u.startsWith("/") ? u : "/" + u}`,
+    };
+  }
+  return node;
+}
+
 function renderPost(p) {
   const url = postUrl(p.slug);
-  const heroImg = p.hero_image
-    ? `<img class="hero-img" src="${esc(p.hero_image)}" alt="${esc(p.hero_alt)}" />`
-    : "";
+  const heroImg = renderHero(p);
   const tags = p.tags.length
     ? `<div style="margin-bottom:24px">${p.tags
         .map((t) => `<span class="tag">${esc(t)}</span>`)
         .join("")}</div>`
     : "";
 
-  const videoBlock = renderVideoBlock(p);
+  let videoBlock = renderVideoBlock(p);
+  let postHtml = p.html;
+  if (videoBlock && p.video_after) {
+    const r = placeVideoInline(postHtml, p.video_after, videoBlock);
+    if (!r.placed) throw new Error(`${p.slug}: video_after heading "${p.video_after}" not found in body`);
+    postHtml = r.html;
+    videoBlock = "";
+  }
   const faqBlock = renderFaqBlock(p);
   const authorBlock = renderAuthorBlock(p);
 
@@ -463,6 +545,9 @@ function renderPost(p) {
     });
   }
 
+  const prod = productNode(p);
+  if (prod) graph.push(prod);
+
   if (p.faq.length) {
     graph.push({
       "@type": "FAQPage",
@@ -490,7 +575,7 @@ function renderPost(p) {
   ${heroImg}
   ${videoBlock}
   ${tags}
-  <article class="post">${p.html}</article>
+  <article class="post">${postHtml}</article>
   ${faqBlock}
   ${authorBlock}
 
@@ -570,9 +655,7 @@ const DRAFT_BANNER = `
 </div>`;
 
 function renderDraftPost(p, token) {
-  const heroImg = p.hero_image
-    ? `<img class="hero-img" src="${esc(p.hero_image)}" alt="${esc(p.hero_alt)}" />`
-    : "";
+  const heroImg = renderHero(p);
   const tags = p.tags.length
     ? `<div style="margin-bottom:24px">${p.tags
         .map((t) => `<span class="tag">${esc(t)}</span>`)
