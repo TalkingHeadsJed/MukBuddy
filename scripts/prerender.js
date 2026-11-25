@@ -138,6 +138,11 @@ async function main() {
       // Tell client code it's running under prerender — useful if we ever
       // want to skip a side-effect (analytics fire, video autoplay, etc.).
       await page.setUserAgent("MukBuddyPrerender/1.0 puppeteer-core");
+      // Fraud Blocker: don't report prerender visits as traffic.
+      await page.setRequestInterception(true);
+      page.on("request", (req) =>
+        /monitor\.fraudblocker\.com/.test(req.url()) ? req.abort() : req.continue()
+      );
       await page.goto(url, { waitUntil: "networkidle0", timeout: 30000 });
 
       // Give react-helmet-async + any deferred rendering a final tick.
@@ -153,7 +158,11 @@ async function main() {
         .replace(/http%3A%2F%2Flocalhost%3A5050/g, "https%3A%2F%2Fmukbuddy.com")
         .replace(/http:\/\/localhost:5050/g, "https://mukbuddy.com")
         .replace(/domain=localhost/g, "domain=mukbuddy.com")
-        .replace(/localhost:5050/g, "mukbuddy.com");
+        .replace(/localhost:5050/g, "mukbuddy.com")
+        // The Fraud Blocker loader (public/index.html) appends its own
+        // <script src=fbt.js> at runtime; drop that copy so the shipped page
+        // keeps only the loader and fbt.js is not fetched twice.
+        .replace(/<script[^>]*\ssrc="https:\/\/monitor\.fraudblocker\.com\/fbt\.js[^"]*"[^>]*><\/script>/g, "");
       // Restore the original CRA shell as the fallback for the NEXT route's
       // prerender. (Skip on the last route — `/` should keep its prerendered
       // content as the served index.html.)

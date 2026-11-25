@@ -282,6 +282,22 @@ function pageShell({ title, description, canonical, ogImage, robots, jsonLd, bod
   return `<!doctype html>
 <html lang="en">
 <head>
+<!-- Fraud Blocker Tracker -->
+<script type="text/javascript">
+(function () {
+  var h = document.getElementsByTagName('head')[0];
+  var s = document.createElement('script');
+  s.async = 1;
+  s.src = "https://monitor.fraudblocker.com/fbt.js?sid=M85pVho01o0MBYobNUK6S";
+  h.appendChild(s);
+})();
+</script>
+<noscript>
+  <a href="https://fraudblocker.com" rel="nofollow">
+    <img src="https://monitor.fraudblocker.com/fbt.gif?sid=M85pVho01o0MBYobNUK6S" alt="Fraud Blocker" />
+  </a>
+</noscript>
+<!-- End Fraud Blocker Tracker -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>${esc(title)}</title>
