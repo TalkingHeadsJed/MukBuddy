@@ -55,7 +55,7 @@ For the same 5-vac fleet: **$500–$800/year in filters alone.**
 
 Some contractors try to skip both costs and run **bagless**. It feels free — until it isn't.
 
-Without a bag to catch the bulk, drywall dust hammers the pleated filter directly. The filter clogs in 1–2 jobs instead of 3 months. Then suction crashes. Then dust blasts back into your face. Then the motor overheats because the airflow it needs is gone.
+Without a bag to catch the bulk, drywall dust hammers the pleated filter directly. The filter clogs in 1–2 jobs instead of 3 months. Then suction crashes. Then dust blasts back into your face. Then [the motor overheats](/blog/vacuum-motor-overheating/) because the airflow it needs is gone.
 
 We see this pattern every week: a contractor burns through replacement filters for a quarter, then the motor gives up. **A new motor or a new vac is $200–$300+ on the low end and $500–$850+ on the high end.** Multiply by however many vacs you cycle through your fleet.
 

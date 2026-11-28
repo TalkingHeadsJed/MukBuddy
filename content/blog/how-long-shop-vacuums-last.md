@@ -16,7 +16,7 @@ There is no fixed lifespan for a shop vacuum.
 
 A lightly used vacuum may remain functional for many years.
 
-A machine exposed daily to drywall dust, concrete dust, water, clogs, and overheating may fail much sooner.
+A machine exposed daily to drywall dust, concrete dust, water, clogs, and [overheating](/blog/vacuum-motor-overheating/) may fail much sooner.
 
 Vacuum life depends on:
 

@@ -585,7 +585,7 @@ A tool that is too narrow may choke the system.
 
 ## How Hose Diameter Changes Performance
 
-Hose diameter has a major effect on vacuum behavior.
+[Hose diameter](/blog/shop-vacuum-hose-size/) has a major effect on vacuum behavior.
 
 ### Larger-Diameter Hose
 

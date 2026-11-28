@@ -243,7 +243,7 @@ Over time...
 
 Each layer becomes a little thicker.
 
-Eventually the hose diameter becomes smaller and smaller.
+Eventually the [hose diameter](/blog/shop-vacuum-hose-size/) becomes smaller and smaller.
 
 ---
 

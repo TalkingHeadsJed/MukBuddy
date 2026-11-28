@@ -219,7 +219,7 @@ If an extension cord is required, make sure it is:
 - Free from visible damage
 - Fully uncoiled when required to prevent heat buildup
 
-An undersized or damaged extension cord may reduce voltage and contribute to poor motor performance or overheating.
+An undersized or damaged extension cord may reduce voltage and contribute to poor motor performance or [overheating](/blog/vacuum-motor-overheating/).
 
 Follow the vacuum manufacturer’s electrical recommendations.
 

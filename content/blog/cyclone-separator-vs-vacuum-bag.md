@@ -1893,7 +1893,7 @@ Output:
 
 #### Myth: The largest separator works best.
 
-**Reality:** Separator design must match the vacuum’s airflow and hose size.
+**Reality:** Separator design must match the vacuum’s airflow and [hose size](/blog/shop-vacuum-hose-size/).
 
 ---
 

@@ -402,7 +402,7 @@ A longer hose may be convenient, but added length and repeated bends can reduce 
 
 ## Step 10 — Use the Correct Hose Diameter
 
-Hose diameter changes how the vacuum behaves.
+[Hose diameter](/blog/shop-vacuum-hose-size/) changes how the vacuum behaves.
 
 A smaller hose can create higher air velocity in some applications, making it useful for fine dust and tool extraction.
 

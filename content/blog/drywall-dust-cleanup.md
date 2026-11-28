@@ -733,7 +733,7 @@ When the filter becomes clogged:
 
 This doesn't usually destroy the motor immediately.
 
-Instead, repeated overheating can shorten the life of bearings, brushes, insulation, and other internal components over time.
+Instead, [repeated overheating](/blog/vacuum-motor-overheating/) can shorten the life of bearings, brushes, insulation, and other internal components over time.
 
 Keeping airflow high is one of the simplest ways to protect your investment.
 
