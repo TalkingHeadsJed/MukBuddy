@@ -2,6 +2,8 @@
 title: "What Shop Vacuum Hose Size Do You Need?"
 slug: "shop-vacuum-hose-size"
 excerpt: "Compare small, medium, and large shop vacuum hose sizes for suction, airflow, power tools, fine dust, water, sawdust, pet hair, and construction debris."
+seo_title: "Shop Vac Hose Sizes: 1 1/4, 1 7/8 and 2 1/2 Inch Chart"
+meta_description: "Shop vac hose sizes compared: small 1 to 1 1/4 inch for sanders, medium 1 1/2 to 1 7/8 inch for general cleanup, large 2 to 2 1/2 inch for bulky debris."
 hero_image: "https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg"
 hero_alt: "What Shop Vacuum Hose Size Do You Need? — Muk Buddy shop vac guide"
 author: "Jason Brouk"

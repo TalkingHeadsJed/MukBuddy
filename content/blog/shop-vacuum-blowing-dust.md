@@ -2,6 +2,8 @@
 title: "Why Is My Shop Vacuum Blowing Dust Out the Exhaust?"
 slug: "shop-vacuum-blowing-dust"
 excerpt: "Is your shop vacuum blowing dust out the exhaust? Learn the most common causes, how to diagnose the problem, and how to stop dust from escaping while protecting your vacuum."
+seo_title: "Shop Vac Blowing Dust Out the Back? Causes and Fixes"
+meta_description: "Shop vac blowing dust out the exhaust? Fine dust is getting past the filter: a missing, torn or badly seated filter, a leaking seal or a damaged bag."
 hero_image: "https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg"
 hero_alt: "Why Is My Shop Vacuum Blowing Dust Out the Exhaust? — Muk Buddy shop vac guide"
 author: "Jason Brouk"

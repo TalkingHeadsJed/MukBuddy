@@ -264,6 +264,9 @@ function loadPosts() {
         // (H1 stays title). faq_display:false = FAQPage schema only, for posts whose
         // body already shows every Q&A, so the accordion would duplicate it.
         seo_title: data.seo_title || "",
+        // meta_description: verbatim <meta name=description> + og/twitter description.
+        // Head tags only; excerpt still feeds schema, the index card and the RSS feed.
+        meta_description: data.meta_description || "",
         faq_display: data.faq_display !== false,
         faq: Array.isArray(data.faq)
           ? data.faq.filter((f) => f && f.q && f.a)
@@ -590,7 +593,7 @@ function renderPost(p) {
 
   return pageShell({
     title: p.seo_title || `${p.title} | Muk Buddy Blog`,
-    description: p.excerpt,
+    description: p.meta_description || p.excerpt,
     canonical: url,
     ogImage: p.hero_image || `${SITE_URL}/og-image-home.png`,
     jsonLd,

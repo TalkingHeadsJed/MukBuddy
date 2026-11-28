@@ -2,6 +2,8 @@
 title: "Why Is My Shop Vacuum So Loud?"
 slug: "shop-vacuum-too-loud"
 excerpt: "Is your shop vacuum louder than it used to be? Learn the most common causes of excessive vacuum noise, how to diagnose the problem, and when it's time for repairs."
+seo_title: "Why Is My Shop Vac So Loud? 6 Causes by Sound | Muk Buddy"
+meta_description: "Why is your shop vac so loud? A dirty filter, clogged hose, air leak, worn bearings, brush wear or debris hitting the fan. The noise tells you which."
 hero_image: "https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg"
 hero_alt: "Why Is My Shop Vacuum So Loud? — Muk Buddy shop vac guide"
 author: "Jason Brouk"

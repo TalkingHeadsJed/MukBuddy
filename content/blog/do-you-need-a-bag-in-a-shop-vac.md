@@ -2,6 +2,8 @@
 title: "Do You Need a Bag in a Shop Vac? (When You Do, When You Don't)"
 slug: "do-you-need-a-bag-in-a-shop-vac"
 excerpt: "You don't always need a bag in a shop vac — but skip it on the wrong job and you'll pay for it in clogged filters and a strained motor. Here's the straight answer for each kind of mess."
+seo_title: "Do Wet and Dry Vacuums Need Bags? The Shop Vac Answer"
+meta_description: "Not always. Wet messes and big debris can go bagless, but fine dust like drywall, concrete or sawdust clogs the filter and strains the motor without a bag."
 hero_image: "https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg"
 hero_alt: "A shop vac running with and without a collection bag — fine dust vs. coarse debris"
 author: "Jason Brouk"

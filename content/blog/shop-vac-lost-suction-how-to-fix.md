@@ -2,6 +2,8 @@
 title: "Why Your Shop Vac Lost Its Suction (and How to Get It Back)"
 slug: "shop-vac-lost-suction-how-to-fix"
 excerpt: "Shop vac barely pulling air? Suction loss almost always traces back to one of four things. Here's how to find it fast — and keep it from coming back."
+seo_title: "Shop Vac Not Sucking? 4 Causes of Lost Suction | Muk Buddy"
+meta_description: "Shop vac not sucking? Lost suction almost always comes from a clogged filter, a full bag, a hose clog or a leaking seal. Find yours in two minutes."
 hero_alt: "Contractor checking a wet/dry vac that has lost suction on a jobsite"
 hero_image: "https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg"
 author: "Jason Brouk"

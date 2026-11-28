@@ -2,6 +2,8 @@
 title: "Why Vacuum Motors Overheat"
 slug: "vacuum-motor-overheating"
 excerpt: "Learn why shop vacuum motors overheat, how restricted airflow causes excessive heat, and what contractors can do to extend motor life and maintain peak performance."
+seo_title: "Why Does a Vacuum Cleaner Overheat? Causes and Fixes"
+meta_description: "A vacuum cleaner overheats when airflow is restricted. Clogged filters, packed bags, blocked hoses and leaks cut the air that cools the motor."
 hero_image: "https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg"
 hero_alt: "Why Vacuum Motors Overheat — Muk Buddy shop vac guide"
 author: "Jason Brouk"

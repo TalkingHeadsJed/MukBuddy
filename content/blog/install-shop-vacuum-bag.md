@@ -2,6 +2,8 @@
 title: "How to Install a Shop Vacuum Bag Correctly"
 slug: "install-shop-vacuum-bag"
 excerpt: "Learn how to install a shop vacuum bag without blocking the inlet, damaging the collar, interfering with the float, or allowing dust to bypass the collection system."
+seo_title: "How to Install a Shop Vac Bag: Step by Step | Muk Buddy"
+meta_description: "How to install a shop vac bag: unplug, empty the tank, seat the collar fully on the inlet, unfold the bag and keep it clear of the float and lid seal."
 hero_image: "https://mukbuddy.com/blog-images/muk-buddy-reusable-wet-dry-vac-bag.jpg"
 hero_alt: "How to Install a Shop Vacuum Bag Correctly — Muk Buddy shop vac guide"
 author: "Jason Brouk"
